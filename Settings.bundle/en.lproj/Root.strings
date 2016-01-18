@@ -1,0 +1,27 @@
+/* 
+  File.strings
+  aBike—Lyon
+
+  Created by Clément Padovani on 5/25/14.
+  Copyright (c) 2014 Clément Padovani. All rights reserved.
+*/
+
+"About" = "About";
+
+"Version" = "Version";
+
+"Unit System" = "Unit System";
+
+"Default" = "Default";
+
+"Metric" = "Metric";
+
+"Imperial" = "Imperial";
+
+"Nearby Stations" = "Nearby Stations";
+
+"3 stations" = "3 stations";
+
+"5 stations" = "5 stations";
+
+"7 stations" = "7 stations";

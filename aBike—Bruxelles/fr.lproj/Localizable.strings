@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  aBike—Bruxelles
+
+  Created by Clément Padovani on 7/14/14.
+  Copyright (c) 2014 Clément Padovani. All rights reserved.
+*/
+
+"Brussels" = "bruxelloise";
+
+"Brussels_name" = "Bruxelles";

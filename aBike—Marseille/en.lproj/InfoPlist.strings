@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+"NSLocationUsageDescription" = "aBike cannot operate without knowing your location.";
+
+"NSLocationWhenInUseUsageDescription" = "aBike cannot operate without knowing your location.";

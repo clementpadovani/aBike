@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LightStation" representedClassName="LightStation" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="open" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="available" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="availableBikes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="availableBikeStations" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="banking" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="bonusStation" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="canLoadData" optional="YES" transient="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="contractIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataContentAge" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mapItem" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mapItemPlacemark" optional="YES" attributeType="Transformable" valueTransformerName="VEMKPlacemarkValueTransformer" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="processedStationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="processedStationNumberString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserSettings" representedClassName="UserSettings" syncable="YES">
+        <attribute name="canLoadData" transient="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="cityRect" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="contractIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasShownMenuItemsHintAnimation" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="largerCityRect" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="lastDataImportDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mapType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="setup" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+    </entity>
+    <configuration name="Memory">
+        <memberEntity name="LightStation"/>
+    </configuration>
+    <configuration name="Stations">
+        <memberEntity name="Station"/>
+    </configuration>
+    <configuration name="User">
+        <memberEntity name="UserSettings"/>
+    </configuration>
+    <elements>
+        <element name="LightStation" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Station" positionX="0" positionY="0" width="128" height="283"/>
+        <element name="UserSettings" positionX="0" positionY="0" width="128" height="165"/>
+    </elements>
+</model>

@@ -1,0 +1,89 @@
+/* VETimeFormatter_FormattedDurationSingularMinute */
+"%.0f minute" = "%.0f minute";
+
+/* VETimeFormatter_FormattedDurationPlurialMinutes */
+"%.0f minutes" = "%.0f minutes";
+
+/* VELocationManager_not_userincity_can_geodecode */
+"aBike—%@ is designed for the %@ area but feel free to roam around.\nIt’s a long way from %@, good luck!" = "aBike—%@ est conçu pour la région %@ mais n’hésitez pas à la découvrir.\nLe trajet est long depuis %@, bonne chance !";
+
+/* VELocationManager_not_userincity_can_not_geodecode */
+"aBike—%@ is designed for the %@ area but feel free to roam around.\nIt’s a long way, good luck!" = "aBike—%@ est conçu pour la région %@ mais n’hésitez pas à la découvrir.\nLe trajet est long, bonne chance !";
+
+/* VEStationsTableViewCellETALabelView_eta_label_error */
+"An error occured when\nloading the ETA." = "Une erreur est survenue\nlors du chargement\nde la durée.";
+
+/* nointernet_error_desc_key */
+"Cannot connect to %@" = "Connexion impossible à %@";
+
+/* No comment provided by engineer. */
+"Cellular" = "Céllulaire";
+
+/* VELocationManager_locationdisabled_alert_title */
+"Location Services are necessary for %@" = "Le Service de Localisation est nécessaire pour %@";
+
+/* No comment provided by engineer. */
+"No Connection" = "Pas de connexion";
+
+/* alertView_cancelButton_okay */
+"Okay" = "OK";
+
+/* nointernet_error_failure_reason_key */
+"Please check your internet connection." = "Veuillez vérifier votre connexion internet.";
+
+/* VELocationManager_locationdisabled_alert_message_isDenied */
+"Please enable Location Services for %@ in your Privacy Settings." = "Veuillez activer le service de localisation pour %@ dans vos Réglages de Confidentialité.";
+
+/* VELocationManager_locationdisabled_alert_message_isRestricted */
+"Please remove Location Services from your Restrictions. %@ cannot operate without Location Services." = "Veuillez autoriser le service de localisation dans vos Réglages de Restrictions. %@ ne peut fonctionner sans.";
+
+/* No comment provided by engineer. */
+"WiFi" = "WiFi";
+
+/* VEStationView_available_bike */
+"%lu Available Bike" = "%lu vélo disponible";
+
+/* VEStationView_available_bikes */
+"%lu Available Bikes" = "%lu vélos disponibles";
+
+/* VEStationView_available_stand */
+"%lu Available Stand" = "%lu place disponible";
+
+/* VEStationView_available_stands */
+"%lu Available Stands" = "%lu places disponibles";
+
+/* VEStationView_directions_error */
+"An error occured." = "Une erreur est survenue.";
+
+/* VEStationView_loading_directions */
+"Loading Directions…" = "Chargement des directions…";
+
+/* VEStationView_bonus_station */
+"BONUS" = "BONUS";
+
+/* VELocationManager user not in city, show app */
+"Show aBike—%@" = "Afficher aBike—%@";
+
+/* VELocationManager_open_settings */
+"Settings" = "Réglages";
+
+/* VEAdStationView_loading_iap */
+"Loading…" = "Chargement…";
+
+/* VEAdStationView_restore_button */
+"Restore" = "Restaurer";
+
+/* VEAdStationView_load_failed_title */
+"Failed to load product" = "Échec lors du chargmenet du produit";
+
+/* VEAdStationView_load_failed_description */
+"An error occured while loading the ad remover." = "Une erreur s’est produite lors du chargement du produit.";
+
+/* VEAdStationView_disabled_purchases_title */
+"Purchases are disabled on this device due to restrictions." = "Les achats sont désactivés sur cet appareil à cause des restrictions.";
+
+/* VEAdStationView_alert_title_thanks */
+"Thanks!" = "Merci !";
+
+/* VEAdStationView_alert_message_thanks */
+"Ads are now disabled, thanks for your support! :-)" = "Les publicités sont désactivées, merci de votre soutien ! :-)";

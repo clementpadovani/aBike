@@ -1,0 +1,53 @@
+/* VETimeFormatter_FormattedDurationSingularMinute */
+"%.0f minute" = "%.0f 分";
+
+/* VETimeFormatter_FormattedDurationPlurialMinutes */
+"%.0f minutes" = "%.0f 分";
+
+/* VELocationManager_not_userincity_can_geodecode */
+"aBike—%@ is designed for the %@ area but feel free to roam around.\nIt’s a long way from %@, good luck!" = "aBike-%1$@ %2$@ エリア用に設計されたが、周りのローミングお気軽にされている。これは、%3$@、幸運から長い道のりです！";
+
+/* VELocationManager_not_userincity_can_not_geodecode */
+"aBike—%@ is designed for the %@ area but feel free to roam around.\nIt’s a long way, good luck!" = "aBike-%1$@ %2$@ エリア用に設計されたが、周りのローミングお気軽にされている。それは長い道のり、幸運です！";
+
+/* VEStationsTableViewCellETALabelView_eta_label_error */
+"An error occured when\nloading the ETA." = "ETAの読み込み時にエラーが発生しました。";
+
+/* nointernet_error_desc_key */
+"Cannot connect to %@" = "%@ に接続できません ";
+
+/* No comment provided by engineer. */
+"Cellular" = "Cellular";
+
+/* VELocationManager_locationdisabled_alert_title */
+"Location Services are necessary for %@" = "位置情報サービスは、%@ のために必要である";
+
+/* No comment provided by engineer. */
+"No Connection" = "No Connection";
+
+/* alertView_cancelButton_okay */
+"Okay" = "オーケー";
+
+/* nointernet_error_failure_reason_key */
+"Please check your internet connection." = "あなたのインターネット接続を確認してください...";
+
+/* VELocationManager_locationdisabled_alert_message_isDenied */
+"Please enable Location Services for %@ in your Privacy Settings." = "あなたのプライバシー設定の ％@ のための位置情報サービスを有効にしてください。";
+
+/* VELocationManager_locationdisabled_alert_message_isRestricted */
+"Please remove Location Services from your Restrictions. %@ cannot operate without Location Services." = "あなたの制約から位置情報サービスを削除してください。%@ は位置情報サービスなしで動作できない。";
+
+/* No comment provided by engineer. */
+"WiFi" = "WiFi";
+
+/* VEStationView_available_bikes */
+"%lu Available Bikes" = "%lu 自転車";
+
+/* VEStationView_available_stands */
+"%lu Available Stands" = "%lu 台";
+
+/* VEStationView_directions_error */
+"An error occured." = "エラーが発生しました。";
+
+/* VEStationView_loading_directions */
+"Loading Directions…" = "行き方ロード...";

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>About</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>2.9.4 (364)</string>
+			<key>Key</key>
+			<string>appVersion</string>
+			<key>Title</key>
+			<string>Version</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>default</string>
+			<key>Key</key>
+			<string>unitSystem</string>
+			<key>Title</key>
+			<string>Unit System</string>
+			<key>Titles</key>
+			<array>
+				<string>Default</string>
+				<string>Metric</string>
+				<string>Imperial</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>default</string>
+				<string>metric</string>
+				<string>imperial</string>
+			</array>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<integer>5</integer>
+			<key>Key</key>
+			<string>numberOfBikeStations</string>
+			<key>Title</key>
+			<string>Nearby Stations</string>
+			<key>Titles</key>
+			<array>
+				<string>3 stations</string>
+				<string>5 stations</string>
+				<string>7 stations</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<integer>3</integer>
+				<integer>5</integer>
+				<integer>7</integer>
+			</array>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
