@@ -376,7 +376,15 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		fetchResults = [standardContext executeFetchRequest: stationsFetchRequest error: &fetchError];
 		
 	//}];
-	
+
+	#if kEnableCrashlytics
+
+		if (fetchError)
+			[[Crashlytics sharedInstance] recordError: fetchError];
+
+	#endif
+
+
 	NSAssert(!fetchError, @"Error while fetching on-disk stations: %@", fetchError);
 	
 	[temporaryContext performBlockAndWait: ^{
@@ -878,6 +886,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 	}];
 
+	#if kEnableCrashlytics
+
+		if (resultsError)
+			[[Crashlytics sharedInstance] recordError: resultsError];
+
+	#endif
+
 	
 	NSAssert(!resultsError, @"Fetch error: %@", resultsError);
 	
@@ -921,7 +936,15 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 		fetchedStations = [standardContext executeFetchRequest: stationFetchRequest error: &stationFetchRequestError];
 	//}];
-	
+
+	#if kEnableCrashlytics
+
+		if (stationFetchRequestError)
+			[[Crashlytics sharedInstance] recordError: stationFetchRequestError];
+
+	#endif
+
+
 	NSAssert(!stationFetchRequestError, @"Station fetch request error: %@", stationFetchRequestError);
 		
 	NSMutableArray *sortedFetchedStations = [NSMutableArray arrayWithCapacity: numberOfStations];
@@ -1040,6 +1063,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 		if (error)
 		{
+		#if kEnableCrashlytics
+
+			[[Crashlytics sharedInstance] recordError: error];
+
+		#endif
+
+
 			CPLog(@"error: %@", error);
 			
 			return;
@@ -1260,6 +1290,14 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		CPLog(@"save error: %@", error);
 	else
 		CPLog(@"did save");
+
+#if kEnableCrashlytics
+
+	if (error)
+		[[Crashlytics sharedInstance] recordError: error];
+
+#endif
+
 }
 
 #pragma mark -
@@ -1269,6 +1307,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 - (void) mapView: (MKMapView *) mapView didFailToLocateUserWithError: (NSError *) error
 {
 	CPLog(@"did fail with error: %@", error);
+
+	#if kEnableCrashlytics
+
+	[[Crashlytics sharedInstance] recordError: error];
+
+	#endif
+
 }
 
 - (void) mapView: (MKMapView *) mapView regionDidChangeAnimated: (BOOL) animated

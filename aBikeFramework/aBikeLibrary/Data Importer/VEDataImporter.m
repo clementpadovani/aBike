@@ -201,9 +201,8 @@ static BOOL _isImportingData;
 	if (serializationError)
 	{
 		#if kEnableCrashlytics
-		
-		[Answers logCustomEventWithName: @"Stations serialization error"
-					customAttributes: @{@"error" : [[serializationError userInfo] description]}];
+
+		[[Crashlytics sharedInstance] recordError: serializationError];
 		
 		#endif
 	}
@@ -261,7 +260,7 @@ static BOOL _isImportingData;
 				{
 					CPLog(@"save error: %@", saveError);
 					
-					
+					[[Crashlytics sharedInstance] recordError: saveError];
 				}
 				else
 				{
@@ -326,7 +325,7 @@ static BOOL _isImportingData;
 		{
 			CPLog(@"final save error: %@", finalSaveError);
 			
-			
+			[[Crashlytics sharedInstance] recordError: finalSaveError];
 		}
 		else
 		{

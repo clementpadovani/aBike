@@ -321,10 +321,9 @@ static VELocationManager *_sharedLocationManager = nil;
 				}
 				
 				#if kEnableCrashlytics
-				
-				[Answers logCustomEventWithName: @"Not in city rect (no location)"
-							customAttributes: @{@"error" : [[error userInfo] description]}];
-				
+
+				[[Crashlytics sharedInstance] recordError: error];
+
 				#endif
 				
 				NSString *cityName = [[VEConsul sharedConsul] cityName];
@@ -630,10 +629,9 @@ static VELocationManager *_sharedLocationManager = nil;
 	CPLog(@"location mananger did fail with error: %@", error);
 	
 	#if kEnableCrashlytics
-	
-	[Answers logCustomEventWithName: @"Location error"
-				customAttributes: @{@"error" : [[error userInfo] description]}];
-	
+
+	[[Crashlytics sharedInstance] recordError: error];
+
 	#endif
 }
 
@@ -801,7 +799,14 @@ static VELocationManager *_sharedLocationManager = nil;
 									 CPLog(@"OK");
 								 else
 									 CPLog(@"error: %@", error);
+
+								#if kEnableCrashlytics
+
+									 if (!result)
+										 [[Crashlytics sharedInstance] recordError: error];
 								 
+								#endif
+
 							 }];
 	
 	[[[VEConsul sharedConsul] mapViewController] presentViewController: storeViewController

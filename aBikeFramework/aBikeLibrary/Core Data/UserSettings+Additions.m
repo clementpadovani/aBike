@@ -257,7 +257,15 @@ static UserSettings *_sharedSettings = nil;
 			fetchedResults = [userContext executeFetchRequest: fetchRequest error: &fetchError];
 			
 		}];
-		
+
+		#if kEnableCrashlytics
+
+			if (fetchError)
+				[[Crashlytics sharedInstance] recordError: fetchError];
+
+		#endif
+
+
 		NSAssert(!fetchError, @"Fetch error: %@", fetchError);
 		
 		UserSettings *fetchedUserSettings = [fetchedResults firstObject];
@@ -358,7 +366,7 @@ static UserSettings *_sharedSettings = nil;
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
 	#if kEnableCrashlytics
-	
+
 		[Answers logCustomEventWithName: @"User isn't a nice one"
 					customAttributes: nil];
 	

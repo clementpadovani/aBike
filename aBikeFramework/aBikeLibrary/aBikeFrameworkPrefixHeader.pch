@@ -91,9 +91,9 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #if kEnableCrashlytics
 
-#import <Fabric/Fabric.h>
+@import Fabric;
 
-#import <Crashlytics/Crashlytics.h>
+@import Crashlytics;
 
 #endif
 

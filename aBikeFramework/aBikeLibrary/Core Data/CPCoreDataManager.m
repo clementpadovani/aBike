@@ -81,7 +81,24 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	}];
 
 	BOOL hasSaved = (hasSavedStandard && hasSavedUser);
-	
+
+	#if kEnableCrashlytics
+
+	if (!hasSaved)
+	{
+		if (!hasSavedStandard)
+		{
+			[[Crashlytics sharedInstance] recordError: standardSaveError];
+		}
+
+		if (!hasSavedUser)
+		{
+			[[Crashlytics sharedInstance] recordError: userSaveError];
+		}
+	}
+
+	#endif
+
 	if (hasSaved)
 		completionBlock(YES, nil);
 	
@@ -144,7 +161,14 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 														  URL: storeURL
 													   options: storeOptions
 														error: &storeError];
-		
+
+		#if kEnableCrashlytics
+
+		if (storeError || !newStore)
+			[[Crashlytics sharedInstance] recordError: storeError];
+
+		#endif
+
 		NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
 		
 		[persistentStoreCoordinator setName: @"Main Persistent Store Coordinator"];
@@ -198,7 +222,15 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 															 URL: storeURL
 														  options: storeOptions
 														    error: &storeError];
-		
+
+		#if kEnableCrashlytics
+
+		if (storeError || !newStore)
+			[[Crashlytics sharedInstance] recordError: storeError];
+
+		#endif
+
+
 		NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
 		
 		[userPersistentStoreCoordinator setName: @"User Persistent Store Coordinator"];
@@ -242,7 +274,16 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 															   URL: nil
 														    options: nil
 															 error: &storeError];
-		
+
+		#if kEnableCrashlytics
+
+			if (storeError || !newStore)
+				[[Crashlytics sharedInstance] recordError: storeError];
+
+		#endif
+
+
+
 		NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
 		
 		[memoryPersistentStoreCoordinator setName: @"Memory Persistent Store Coordinator"];
@@ -296,7 +337,16 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 													  URL: storeURL
 												   options: storeOptions
 													error: &storeError];
-	
+
+	#if kEnableCrashlytics
+
+		if (storeError || !newStore)
+			[[Crashlytics sharedInstance] recordError: storeError];
+
+	#endif
+
+
+
 	NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
 	
 	[persistentStoreCoordinator setName: @"Import Persistent Store Coordinator"];
@@ -329,7 +379,14 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	hasRemoved = [documentsURL setResourceValue: @(YES)
 								  forKey: NSURLIsExcludedFromBackupKey
 								   error: &error];
-	
+
+	#if kEnableCrashlytics
+
+		if (!hasRemoved)
+			[[Crashlytics sharedInstance] recordError: error];
+
+	#endif
+
 	NSAssert(hasRemoved, @"Remove from backups error: %@", error);
 }
 
@@ -370,7 +427,15 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 										   withIntermediateDirectories: YES
 														attributes: nil
 															error: &creationError];
-		
+
+#if kEnableCrashlytics
+
+		if (!hasCreated)
+			[[Crashlytics sharedInstance] recordError: creationError];
+
+#endif
+
+
 		NSAssert(hasCreated, @"Error while creating documents directory. Error: %@.", creationError);
 		
 	}

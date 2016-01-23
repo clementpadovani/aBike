@@ -661,9 +661,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 			CPLog(@"error: %@", error);
 			
 			#if kEnableCrashlytics
-			
-				[Answers logCustomEventWithName: @"Station ETA error"
-							customAttributes: @{@"error" : [[error userInfo] description]}];
+
+				[[Crashlytics sharedInstance] recordError: error];
 			
 			#endif
 			

@@ -154,21 +154,19 @@ static VEConsul *_sharedConsul = nil;
 {
 	#if kEnableCrashlytics
 	
+		[Fabric with: @[[Crashlytics class]]];
+	
+	#endif
+
+#if kEnableCrashlytics
+
 	if (launchOptions &&
 	    [launchOptions allKeys] &&
 	    [[launchOptions allKeys] count])
 		[Answers logCustomEventWithName: @"Launch with options"
 					customAttributes: launchOptions];
 
-	#endif
-	
-	#if kEnableCrashlytics
-	
-		//NSString *crashlyticsKey = [[self delegate] crashlyticsAPIKeyForConsul: self];
-	
-		[Fabric with: @[[Crashlytics class]]];
-	
-	#endif
+#endif
 
 	[VELocationManager sharedLocationManager];
 
@@ -337,10 +335,9 @@ static VEConsul *_sharedConsul = nil;
 		if (downloadError)
 		{
 			#if kEnableCrashlytics
-			
-				[Answers logCustomEventWithName: @"Stations download error"
-							customAttributes: @{@"error" : [[downloadError userInfo] description]}];
-			
+
+				[[Crashlytics sharedInstance] recordError: downloadError];
+
 			#endif
 			
 			dispatch_sync(dispatch_get_main_queue(), ^{

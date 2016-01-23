@@ -579,11 +579,9 @@ static VEAdStationView *_sharedAdStationView = nil;
 	CPLog(@"failed with error: %@", error);
 	
 	#if kEnableCrashlytics
-	
-		NSDictionary *dictionary = @{@"Error" : [error description]};
-	
-		[Answers logCustomEventWithName: @"Ad Remover request error"
-					customAttributes: dictionary];
+
+		if (error)
+			[[Crashlytics sharedInstance] recordError: error];
 	
 	#endif
 	
@@ -705,12 +703,10 @@ static VEAdStationView *_sharedAdStationView = nil;
 	NSError *transactionError = error;
 	
 	#if kEnableCrashlytics
-		
-		NSDictionary *errorDictionary = @{@"Error" : [error description]};
-	
-		[Answers logCustomEventWithName: @"Ad Remover Restore Error"
-					customAttributes: errorDictionary];
-	
+
+	if (error)
+		[[Crashlytics sharedInstance] recordError: error];
+
 	#endif
 	
 	[self showAlertForError: transactionError];
@@ -783,7 +779,9 @@ static VEAdStationView *_sharedAdStationView = nil;
 	CPLog(@"error: %@", transactionError);
 	
 	#if kEnableCrashlytics
-	
+
+	[[Crashlytics sharedInstance] recordError: transactionError];
+
 		NSDictionary *errorDictionary = @{@"Error" : [[aTransaction error] description]};
 	
 		[Answers logPurchaseWithPrice: [[self adRemover] price]

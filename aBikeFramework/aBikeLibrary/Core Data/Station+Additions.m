@@ -172,7 +172,15 @@ static const NSTimeInterval kStationReloadDataThreshold = 300;
 	NSError *fetchRequestError;
 	
 	NSArray *result = [context executeFetchRequest: stationFetchRequest error: &fetchRequestError];
-	
+
+	#if kEnableCrashlytics
+
+	if (fetchRequestError)
+			[[Crashlytics sharedInstance] recordError: fetchRequestError];
+
+	#endif
+
+
 	if (fetchRequestError)
 	{
 		CPLog(@"fetch request error: %@", fetchRequestError);
@@ -404,15 +412,16 @@ static const NSTimeInterval kStationReloadDataThreshold = 300;
 										    {
 											    CPLog(@"error: %@", error);
 											    
+											     #if kEnableCrashlytics
+
+											    [[Crashlytics sharedInstance] recordError: error];
+
+											    #endif
+
 											    if (![[VEConsul sharedConsul] isReachable])
 												    return;
 											    
-											    #if kEnableCrashlytics
-											    
-											    [Answers logCustomEventWithName: @"Station update error"
-														    customAttributes: @{@"Error" : [[error userInfo] description]}];
-											    
-											    #endif
+											   
 											    
 											    if ([error code] != NSURLErrorTimedOut)
 											    {
@@ -433,10 +442,9 @@ static const NSTimeInterval kStationReloadDataThreshold = 300;
 										    if (serializationError)
 										    {
 											    #if kEnableCrashlytics
+
+											    [[Crashlytics sharedInstance] recordError: serializationError];
 											    
-											    [Answers logCustomEventWithName: @"Station update serialization error"
-														    customAttributes: @{@"error" : [[serializationError userInfo] description]}];
-											    											    
 											    #endif
 											    
 										    }
