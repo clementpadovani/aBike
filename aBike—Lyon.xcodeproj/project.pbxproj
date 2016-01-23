@@ -640,6 +640,7 @@
 		599CFC4C1C4BB18F00A244B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		599CFC4D1C4BB19000A244B3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		599CFC561C4BB7F700A244B3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		59A23FC51C53DA1600776B09 /* locations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = locations; sourceTree = "<group>"; };
 		59AAFCC71C497BF800ED7202 /* aBike—LyonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—LyonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_LyonUITests.swift; sourceTree = "<group>"; };
 		59AAFCCB1C497BF800ED7202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -662,7 +663,6 @@
 		59FACE221C49588A005DB202 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		59FACE231C49588B005DB202 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59FACE241C495E29005DB202 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		59FACE261C496759005DB202 /* locations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = locations; path = ../../locations; sourceTree = "<group>"; };
 		6815774FC7652D04293506AB /* Pods-aBike—Paris.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Paris.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.screenshots.xcconfig"; sourceTree = "<group>"; };
 		74BAF2889E79DF030706D98C /* Pods-aBike—Marseille.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Marseille.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.release.xcconfig"; sourceTree = "<group>"; };
 		79EA44ED7568348A2C2A6F20 /* Pods-aBike—Lyon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Lyon.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Lyon/Pods-aBike—Lyon.release.xcconfig"; sourceTree = "<group>"; };
@@ -829,6 +829,7 @@
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
+				59A23FC51C53DA1600776B09 /* locations */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
@@ -848,7 +849,6 @@
 				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
 				593ADB0F1C49574F003B686A /* iAd.framework */,
 				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
-				59FACE261C496759005DB202 /* locations */,
 			);
 			sourceTree = "<group>";
 		};
