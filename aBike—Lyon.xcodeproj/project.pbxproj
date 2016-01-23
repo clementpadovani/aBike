@@ -649,7 +649,7 @@
 		59ABE1D71C4BA62A00108AD4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VEImageAdditions.h"; sourceTree = "<group>"; };
 		59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VEImageAdditions.m"; sourceTree = "<group>"; };
-		59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Warnings.xcconfig; path = ../../Warnings.xcconfig; sourceTree = "<group>"; };
+		59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		59BA8FD11C4BE5CE0053C37E /* CLSimulationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSimulationManager.h; sourceTree = "<group>"; };
 		59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Reveal-tvOS.framework"; sourceTree = "<group>"; };
 		59DDCBC91C4BADD400E3DA02 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAppDelegate.h; sourceTree = "<group>"; };
