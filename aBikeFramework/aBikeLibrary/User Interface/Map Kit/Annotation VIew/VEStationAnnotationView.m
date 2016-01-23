@@ -16,6 +16,8 @@
 
 #import "UIImage+VEImageAdditions.h"
 
+#import "VEConsul.h"
+
 static const NSTimeInterval kVEStationAnnotationViewAnimationDuration = .3;
 
 static const CGPoint kVEStationAnnotationViewIdleCenterOffSet = { 0, -15 };
@@ -45,11 +47,10 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 
-		UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+		UIColor *tintColor = [[VEConsul sharedConsul] mainColor];
 
-		_tintedImage = [self ve_doCreateTintedImageForTintColor: [window tintColor]];
+		_tintedImage = [self ve_doCreateTintedImageForTintColor: tintColor];
 	});
-
 
 	return _tintedImage;
 }
@@ -58,15 +59,11 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 {
 	UIImage *image = [UIImage ve_imageNamed: @"selectedPin"];
 
-
 	UIGraphicsBeginImageContextWithOptions([image size], NO, [image scale]);
 
 	CGRect rect = CGRectZero;
 
 	rect.size = [image size];
-
-	//			[image drawInRect: rect blendMode: kCGBlendModeDestinationIn alpha: 1];
-
 
 	[tintColor set];
 
