@@ -71,7 +71,6 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 
 	[image drawInRect: rect blendMode: kCGBlendModeDestinationIn alpha: 1];
 
-
 	image = UIGraphicsGetImageFromCurrentImageContext();
 
 	UIGraphicsEndImageContext();
@@ -192,17 +191,11 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 	{
 		doWithAnimations = NO;
 	}
-	
-	if (![NSThread isMainThread])
-		CPLog(@"NOT MAIN THREAD");
-	
+
 	_tableViewSelected = tableViewSelected;
 	
 	void (^animations)() = ^{
 		
-		if (![NSThread isMainThread])
-			CPLog(@"NOT MAIN THREAD");
-
 		UIImage *selectedPinImage = [VEStationAnnotationView ve_tintedImage];
 
 		UIImage *pinImage = [UIImage ve_imageNamed: @"pin"];
