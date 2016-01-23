@@ -641,6 +641,7 @@
 		599CFC4D1C4BB19000A244B3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		599CFC561C4BB7F700A244B3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		59A23FC51C53DA1600776B09 /* locations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = locations; sourceTree = "<group>"; };
+		59A23FC61C53DA5500776B09 /* VEConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VEConstants.h; sourceTree = "<group>"; };
 		59AAFCC71C497BF800ED7202 /* aBike—LyonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—LyonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_LyonUITests.swift; sourceTree = "<group>"; };
 		59AAFCCB1C497BF800ED7202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -829,7 +830,6 @@
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
-				59A23FC51C53DA1600776B09 /* locations */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
@@ -846,9 +846,11 @@
 				59ABE1D51C4BA62300108AD4 /* Security.framework */,
 				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
 				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
+				59A23FC61C53DA5500776B09 /* VEConstants.h */,
 				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
 				593ADB0F1C49574F003B686A /* iAd.framework */,
 				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
+				59A23FC51C53DA1600776B09 /* locations */,
 			);
 			sourceTree = "<group>";
 		};

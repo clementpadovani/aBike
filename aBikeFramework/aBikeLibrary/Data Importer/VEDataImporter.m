@@ -20,11 +20,7 @@
 
 #import "VEConnectionManager.h"
 
-//#define kJCDecauxAPIKey @"2d93849e709748d86c10c303ba94a773f14de3a2"
-//#define kVEDataImporterStationListURL @"https://api.jcdecaux.com/vls/v1/stations?contract=%@&apiKey=%@"
-//#define kVEDataImporterStationInformationURL @"https://api.jcdecaux.com/vls/v1/stations/%@?contract=%@&apiKey=%@"
-
-static NSString * const kJCDecauxAPIKey = @"2d93849e709748d86c10c303ba94a773f14de3a2";
+#import "VEConstants.h"
 
 static NSString * const kVEDataImporterStationListURL = @"https://api.jcdecaux.com/vls/v1/stations?contract=%@&apiKey=%@";
 
