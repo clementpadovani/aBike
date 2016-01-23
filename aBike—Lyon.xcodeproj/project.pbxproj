@@ -466,7 +466,7 @@
 		2E1A50DC4E5F2D3C80FD01C0 /* Pods_aBike_Paris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Paris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		361E2CEF3D8FEBB1F0EF9463 /* Pods-aBikeFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBikeFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.release.xcconfig"; sourceTree = "<group>"; };
 		3DCE8EAD6E00A2E5965A4923 /* Pods-aBike—Toulouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Toulouse.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.screenshots.xcconfig"; sourceTree = "<group>"; };
-		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aBikeTVFrameworkPrefixHeader.pch; path = ../aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
+		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		591150C01C4ACB2900F87EA6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		591150C11C4ACB2900F87EA6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		593AD9221C4951E7003B686A /* aBike—Lyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Lyon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -829,26 +829,26 @@
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
-				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
-				59ABE1D51C4BA62300108AD4 /* Security.framework */,
-				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
-				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
-				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
-				593ADB0F1C49574F003B686A /* iAd.framework */,
-				593AD9241C4951E7003B686A /* aBike—Lyon */,
+				068B773FC6FD206626AF2F3C /* Frameworks */,
+				EEBD019FA48AF977C993F023 /* Pods */,
+				593AD9231C4951E7003B686A /* Products */,
 				593AD9541C495217003B686A /* aBikeFramework */,
-				59AAFCC81C497BF800ED7202 /* aBike—LyonUITests */,
-				59567E071C4A50850042767D /* aBike—Lyon TV */,
 				59567E211C4A50920042767D /* aBikeTVFramework */,
 				597A40831C4BACE800E4B781 /* aBike—Bruxelles */,
+				593AD9241C4951E7003B686A /* aBike—Lyon */,
+				59567E071C4A50850042767D /* aBike—Lyon TV */,
+				59AAFCC81C497BF800ED7202 /* aBike—LyonUITests */,
 				5975F2731C4BBF2800839B95 /* aBike—Marseille */,
 				5975F2A91C4BC37C00839B95 /* aBike—Mulhouse */,
 				5975F2E01C4BC5DA00839B95 /* aBike—Paris */,
 				5975F3171C4BC83100839B95 /* aBike—Toulouse */,
-				593AD9231C4951E7003B686A /* Products */,
+				59ABE1D51C4BA62300108AD4 /* Security.framework */,
+				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
+				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
+				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
+				593ADB0F1C49574F003B686A /* iAd.framework */,
+				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
 				59FACE261C496759005DB202 /* locations */,
-				EEBD019FA48AF977C993F023 /* Pods */,
-				068B773FC6FD206626AF2F3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -872,13 +872,13 @@
 		593AD9241C4951E7003B686A /* aBike—Lyon */ = {
 			isa = PBXGroup;
 			children = (
+				593AD9251C4951E7003B686A /* Supporting Files */,
 				591150C01C4ACB2900F87EA6 /* Crashlytics.framework */,
 				591150C11C4ACB2900F87EA6 /* Fabric.framework */,
 				593AD9361C4951E7003B686A /* Info.plist */,
-				593AD9251C4951E7003B686A /* Supporting Files */,
+				59FACE241C495E29005DB202 /* Launch Screen.storyboard */,
 				593ADB071C4953F6003B686A /* VEAppDelegate.h */,
 				593ADB081C4953F6003B686A /* VEAppDelegate.m */,
-				59FACE241C495E29005DB202 /* Launch Screen.storyboard */,
 			);
 			path = "aBike—Lyon";
 			sourceTree = "<group>";
@@ -886,20 +886,20 @@
 		593AD9251C4951E7003B686A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				593ADB0B1C4955BF003B686A /* Images.xcassets */,
 				59FACE1B1C495873005DB202 /* InfoPlist.strings */,
 				59FACE1E1C495877005DB202 /* Localizable.strings */,
-				593ADB0B1C4955BF003B686A /* Images.xcassets */,
 				593AD9261C4951E7003B686A /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		593AD9541C495217003B686A /* aBikeFramework */ = {
 			isa = PBXGroup;
 			children = (
 				593ADA421C495394003B686A /* aBikeLibrary */,
-				593AD9551C495217003B686A /* aBikeFramework.h */,
 				593AD9571C495217003B686A /* Info.plist */,
+				593AD9551C495217003B686A /* aBikeFramework.h */,
 			);
 			path = aBikeFramework;
 			sourceTree = "<group>";
@@ -925,6 +925,7 @@
 			children = (
 				593ADA451C495394003B686A /* CLLocation+Additions.h */,
 				593ADA461C495394003B686A /* CLLocation+Additions.m */,
+				59BA8FD11C4BE5CE0053C37E /* CLSimulationManager.h */,
 				593ADA471C495394003B686A /* NSBundle+VELibrary.h */,
 				593ADA481C495394003B686A /* NSBundle+VELibrary.m */,
 				593ADA491C495394003B686A /* NSNumber+Extensions.h */,
@@ -935,15 +936,14 @@
 				593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */,
 				593ADA4F1C495394003B686A /* UIDevice+Additions.h */,
 				593ADA501C495394003B686A /* UIDevice+Additions.m */,
+				59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */,
+				59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */,
 				593ADA511C495394003B686A /* VEConnectionManager.h */,
 				593ADA521C495394003B686A /* VEConnectionManager.m */,
-				59BA8FD11C4BE5CE0053C37E /* CLSimulationManager.h */,
 				593ADA531C495394003B686A /* VELocationManager.h */,
 				593ADA541C495394003B686A /* VELocationManager.m */,
 				593ADA551C495394003B686A /* VETimeFormatter.h */,
 				593ADA561C495394003B686A /* VETimeFormatter.m */,
-				59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */,
-				59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -951,7 +951,6 @@
 		593ADA571C495394003B686A /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				593ADA581C495394003B686A /* aBike.xcdatamodeld */,
 				593ADA5E1C495394003B686A /* CPCoreDataManager.h */,
 				593ADA5F1C495394003B686A /* CPCoreDataManager.m */,
 				593ADA601C495394003B686A /* LightStation.h */,
@@ -966,10 +965,11 @@
 				593ADA691C495394003B686A /* UserSettings.m */,
 				593ADA6A1C495394003B686A /* VEBaseModel.h */,
 				593ADA6B1C495394003B686A /* VEBaseModel.m */,
-				593ADA6C1C495394003B686A /* VEManagedObjectContext.h */,
-				593ADA6D1C495394003B686A /* VEManagedObjectContext.m */,
 				593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */,
 				593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */,
+				593ADA6C1C495394003B686A /* VEManagedObjectContext.h */,
+				593ADA6D1C495394003B686A /* VEManagedObjectContext.m */,
+				593ADA581C495394003B686A /* aBike.xcdatamodeld */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -987,13 +987,13 @@
 			isa = PBXGroup;
 			children = (
 				593ADB0D1C4955D7003B686A /* Images.xcassets */,
-				593ADA771C495394003B686A /* aBikeLibrary-Prefix.pch */,
-				593ADA7B1C495394003B686A /* aBikeCities.plist */,
 				593ADA7D1C495394003B686A /* Localizable.strings */,
 				593ADA831C495394003B686A /* Reachability.h */,
 				593ADA841C495394003B686A /* Reachability.m */,
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
+				593ADA7B1C495394003B686A /* aBikeCities.plist */,
+				593ADA771C495394003B686A /* aBikeLibrary-Prefix.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -1073,12 +1073,12 @@
 			children = (
 				593ADA9F1C495394003B686A /* VEAdStationView.h */,
 				593ADAA01C495394003B686A /* VEAdStationView.m */,
+				593ADAA51C495394003B686A /* VEStationView.h */,
+				593ADAA61C495394003B686A /* VEStationView.m */,
 				593ADAA11C495394003B686A /* VEStationsScrollView.h */,
 				593ADAA21C495394003B686A /* VEStationsScrollView.m */,
 				593ADAA31C495394003B686A /* VEStationsView.h */,
 				593ADAA41C495394003B686A /* VEStationsView.m */,
-				593ADAA51C495394003B686A /* VEStationView.h */,
-				593ADAA61C495394003B686A /* VEStationView.m */,
 			);
 			path = "Stations View";
 			sourceTree = "<group>";
@@ -1086,11 +1086,11 @@
 		59567E071C4A50850042767D /* aBike—Lyon TV */ = {
 			isa = PBXGroup;
 			children = (
+				59567E081C4A50850042767D /* Supporting Files */,
 				59567E0B1C4A50850042767D /* AppDelegate.h */,
 				59567E0C1C4A50850042767D /* AppDelegate.m */,
 				59567E141C4A50850042767D /* Assets.xcassets */,
 				59567E161C4A50850042767D /* Info.plist */,
-				59567E081C4A50850042767D /* Supporting Files */,
 				590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */,
 			);
 			path = "aBike—Lyon TV";
@@ -1102,14 +1102,14 @@
 				59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */,
 				59567E091C4A50850042767D /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		59567E211C4A50920042767D /* aBikeTVFramework */ = {
 			isa = PBXGroup;
 			children = (
-				59567E221C4A50920042767D /* aBikeTVFramework.h */,
 				59567E241C4A50920042767D /* Info.plist */,
+				59567E221C4A50920042767D /* aBikeTVFramework.h */,
 			);
 			path = aBikeTVFramework;
 			sourceTree = "<group>";
@@ -1117,14 +1117,14 @@
 		5975F2731C4BBF2800839B95 /* aBike—Marseille */ = {
 			isa = PBXGroup;
 			children = (
-				5975F29C1C4BC1B300839B95 /* InfoPlist.strings */,
-				5975F29F1C4BC1B800839B95 /* Localizable.strings */,
-				5975F2941C4BC12500839B95 /* Launch Screen.storyboard */,
-				5975F28A1C4BBF5500839B95 /* VEAppDelegate.h */,
-				5975F28B1C4BBF5500839B95 /* VEAppDelegate.m */,
+				5975F2741C4BBF2800839B95 /* Supporting Files */,
 				5975F2801C4BBF2800839B95 /* Assets.xcassets */,
 				5975F2851C4BBF2800839B95 /* Info.plist */,
-				5975F2741C4BBF2800839B95 /* Supporting Files */,
+				5975F29C1C4BC1B300839B95 /* InfoPlist.strings */,
+				5975F2941C4BC12500839B95 /* Launch Screen.storyboard */,
+				5975F29F1C4BC1B800839B95 /* Localizable.strings */,
+				5975F28A1C4BBF5500839B95 /* VEAppDelegate.h */,
+				5975F28B1C4BBF5500839B95 /* VEAppDelegate.m */,
 			);
 			path = "aBike—Marseille";
 			sourceTree = "<group>";
@@ -1134,20 +1134,20 @@
 			children = (
 				5975F2751C4BBF2800839B95 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5975F2A91C4BC37C00839B95 /* aBike—Mulhouse */ = {
 			isa = PBXGroup;
 			children = (
-				5975F2D91C4BC54A00839B95 /* Launch Screen.storyboard */,
-				5975F2C71C4BC41200839B95 /* VEAppDelegate.h */,
-				5975F2C81C4BC41200839B95 /* VEAppDelegate.m */,
-				5975F2D01C4BC43000839B95 /* InfoPlist.strings */,
-				5975F2D31C4BC43600839B95 /* Localizable.strings */,
+				5975F2AA1C4BC37C00839B95 /* Supporting Files */,
 				5975F2B61C4BC37C00839B95 /* Assets.xcassets */,
 				5975F2BB1C4BC37C00839B95 /* Info.plist */,
-				5975F2AA1C4BC37C00839B95 /* Supporting Files */,
+				5975F2D01C4BC43000839B95 /* InfoPlist.strings */,
+				5975F2D91C4BC54A00839B95 /* Launch Screen.storyboard */,
+				5975F2D31C4BC43600839B95 /* Localizable.strings */,
+				5975F2C71C4BC41200839B95 /* VEAppDelegate.h */,
+				5975F2C81C4BC41200839B95 /* VEAppDelegate.m */,
 			);
 			path = "aBike—Mulhouse";
 			sourceTree = "<group>";
@@ -1157,20 +1157,20 @@
 			children = (
 				5975F2AB1C4BC37C00839B95 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5975F2E01C4BC5DA00839B95 /* aBike—Paris */ = {
 			isa = PBXGroup;
 			children = (
-				5975F30F1C4BC7AE00839B95 /* Launch Screen.storyboard */,
+				5975F2E11C4BC5DA00839B95 /* Supporting Files */,
+				5975F2ED1C4BC5DA00839B95 /* Assets.xcassets */,
+				5975F2F21C4BC5DA00839B95 /* Info.plist */,
 				5975F3071C4BC66500839B95 /* InfoPlist.strings */,
+				5975F30F1C4BC7AE00839B95 /* Launch Screen.storyboard */,
 				5975F30A1C4BC66A00839B95 /* Localizable.strings */,
 				5975F2FE1C4BC63300839B95 /* VEAppDelegate.h */,
 				5975F2FF1C4BC63300839B95 /* VEAppDelegate.m */,
-				5975F2ED1C4BC5DA00839B95 /* Assets.xcassets */,
-				5975F2F21C4BC5DA00839B95 /* Info.plist */,
-				5975F2E11C4BC5DA00839B95 /* Supporting Files */,
 			);
 			path = "aBike—Paris";
 			sourceTree = "<group>";
@@ -1180,20 +1180,20 @@
 			children = (
 				5975F2E21C4BC5DA00839B95 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5975F3171C4BC83100839B95 /* aBike—Toulouse */ = {
 			isa = PBXGroup;
 			children = (
-				5975F3421C4BC96A00839B95 /* InfoPlist.strings */,
-				5975F33F1C4BC96400839B95 /* Localizable.strings */,
-				5975F3371C4BC92E00839B95 /* Launch Screen.storyboard */,
-				5975F3341C4BC89400839B95 /* VEAppDelegate.h */,
-				5975F3351C4BC89400839B95 /* VEAppDelegate.m */,
+				5975F3181C4BC83100839B95 /* Supporting Files */,
 				5975F3241C4BC83100839B95 /* Assets.xcassets */,
 				5975F3291C4BC83200839B95 /* Info.plist */,
-				5975F3181C4BC83100839B95 /* Supporting Files */,
+				5975F3421C4BC96A00839B95 /* InfoPlist.strings */,
+				5975F3371C4BC92E00839B95 /* Launch Screen.storyboard */,
+				5975F33F1C4BC96400839B95 /* Localizable.strings */,
+				5975F3341C4BC89400839B95 /* VEAppDelegate.h */,
+				5975F3351C4BC89400839B95 /* VEAppDelegate.m */,
 			);
 			path = "aBike—Toulouse";
 			sourceTree = "<group>";
@@ -1203,16 +1203,16 @@
 			children = (
 				5975F3191C4BC83100839B95 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		597A40831C4BACE800E4B781 /* aBike—Bruxelles */ = {
 			isa = PBXGroup;
 			children = (
-				59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */,
+				597A40841C4BACE800E4B781 /* Supporting Files */,
 				597A40901C4BACE900E4B781 /* Assets.xcassets */,
 				597A40951C4BACE900E4B781 /* Info.plist */,
-				597A40841C4BACE800E4B781 /* Supporting Files */,
+				59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */,
 				59DDCBC91C4BADD400E3DA02 /* VEAppDelegate.h */,
 				59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */,
 			);
@@ -1226,15 +1226,15 @@
 				599CFC491C4BB18400A244B3 /* Localizable.strings */,
 				597A40851C4BACE800E4B781 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		59AAFCC81C497BF800ED7202 /* aBike—LyonUITests */ = {
 			isa = PBXGroup;
 			children = (
+				59AAFCCB1C497BF800ED7202 /* Info.plist */,
 				59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */,
 				59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */,
-				59AAFCCB1C497BF800ED7202 /* Info.plist */,
 			);
 			path = "aBike—LyonUITests";
 			sourceTree = "<group>";
@@ -2421,21 +2421,23 @@
 		593ADA7B1C495394003B686A /* aBikeCities.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
-				593ADA7C1C495394003B686A /* en-GB */,
 				593ADA7F1C495394003B686A /* en */,
+				593ADA7C1C495394003B686A /* en-GB */,
 				593ADA811C495394003B686A /* fr */,
 			);
 			name = aBikeCities.plist;
+			path = .;
 			sourceTree = "<group>";
 		};
 		593ADA7D1C495394003B686A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				593ADA7E1C495394003B686A /* en-GB */,
 				593ADA801C495394003B686A /* en */,
+				593ADA7E1C495394003B686A /* en-GB */,
 				593ADA821C495394003B686A /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F29C1C4BC1B300839B95 /* InfoPlist.strings */ = {
@@ -2446,26 +2448,29 @@
 				5975F2A11C4BC1C100839B95 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F29F1C4BC1B800839B95 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5975F29E1C4BC1B800839B95 /* en */,
-				5975F2A21C4BC1C400839B95 /* fr */,
 				5975F2A31C4BC1C500839B95 /* en-GB */,
+				5975F2A21C4BC1C400839B95 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F2D01C4BC43000839B95 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5975F2CF1C4BC43000839B95 /* en */,
-				5975F2D61C4BC43F00839B95 /* fr */,
 				5975F2D71C4BC44000839B95 /* en-GB */,
+				5975F2D61C4BC43F00839B95 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F2D31C4BC43600839B95 /* Localizable.strings */ = {
@@ -2476,16 +2481,18 @@
 				5975F2D51C4BC43B00839B95 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F3071C4BC66500839B95 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5975F3061C4BC66500839B95 /* en */,
-				5975F30D1C4BC69400839B95 /* fr */,
 				5975F30E1C4BC69800839B95 /* en-GB */,
+				5975F30D1C4BC69400839B95 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F30A1C4BC66A00839B95 /* Localizable.strings */ = {
@@ -2496,16 +2503,18 @@
 				5975F30C1C4BC68D00839B95 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F33F1C4BC96400839B95 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5975F33E1C4BC96400839B95 /* en */,
-				5975F3451C4BC98900839B95 /* fr */,
 				5975F3461C4BC98B00839B95 /* en-GB */,
+				5975F3451C4BC98900839B95 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F3421C4BC96A00839B95 /* InfoPlist.strings */ = {
@@ -2516,16 +2525,18 @@
 				5975F3441C4BC98500839B95 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		599CFC461C4BB17F00A244B3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				599CFC451C4BB17F00A244B3 /* en */,
-				599CFC4C1C4BB18F00A244B3 /* fr */,
 				599CFC4D1C4BB19000A244B3 /* en-GB */,
+				599CFC4C1C4BB18F00A244B3 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		599CFC491C4BB18400A244B3 /* Localizable.strings */ = {
@@ -2536,6 +2547,7 @@
 				599CFC4B1C4BB18C00A244B3 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		59FACE1B1C495873005DB202 /* InfoPlist.strings */ = {
@@ -2546,6 +2558,7 @@
 				59FACE231C49588B005DB202 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		59FACE1E1C495877005DB202 /* Localizable.strings */ = {
@@ -2556,6 +2569,7 @@
 				59FACE211C495886005DB202 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

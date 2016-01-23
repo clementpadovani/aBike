@@ -39,9 +39,6 @@ extern NSString * const kStationAvailableBikes;
 extern NSString * const kStationContentAge;
 
 @interface VEDataImporter : NSObject
-{
-	
-}
 
 + (BOOL) isImportingData;
 

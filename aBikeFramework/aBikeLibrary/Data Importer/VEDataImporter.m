@@ -259,8 +259,12 @@ static BOOL _isImportingData;
 				if (![importContext attemptToSave: &saveError])
 				{
 					CPLog(@"save error: %@", saveError);
-					
-					[[Crashlytics sharedInstance] recordError: saveError];
+
+					#if kEnableCrashlytics
+
+						[[Crashlytics sharedInstance] recordError: saveError];
+
+					#endif
 				}
 				else
 				{
@@ -324,8 +328,12 @@ static BOOL _isImportingData;
 		if (![importContext attemptToSave: &finalSaveError])
 		{
 			CPLog(@"final save error: %@", finalSaveError);
-			
-			[[Crashlytics sharedInstance] recordError: finalSaveError];
+
+			#if kEnableCrashlytics
+
+				[[Crashlytics sharedInstance] recordError: finalSaveError];
+
+			#endif
 		}
 		else
 		{
