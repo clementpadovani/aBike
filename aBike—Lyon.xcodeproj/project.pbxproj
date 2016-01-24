@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A34E3B9EBD6BF8B2723623B /* Pods_aBike_Marseille.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A8198520282A57F404411 /* Pods_aBike_Marseille.framework */; };
 		43821C4DC2B60011A1196C92 /* Pods_aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01924533FB6D38255F9C4899 /* Pods_aBikeFramework.framework */; };
-		4CF90E0792AC8C459C7F7BB5 /* Pods_aBike_Mulhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D5E265820A3A2F884DB7D /* Pods_aBike_Mulhouse.framework */; };
 		5906FBE81C4A5FBB00A2D3D1 /* CLLocation+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA451C495394003B686A /* CLLocation+Additions.h */; };
 		5906FBE91C4A5FBB00A2D3D1 /* NSBundle+VELibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA471C495394003B686A /* NSBundle+VELibrary.h */; };
 		5906FBEA1C4A5FBB00A2D3D1 /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA491C495394003B686A /* NSNumber+Extensions.h */; };
@@ -290,9 +288,6 @@
 		59FACE191C495873005DB202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		59FACE1C1C495877005DB202 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		59FACE251C495E29005DB202 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE241C495E29005DB202 /* Launch Screen.storyboard */; };
-		71AC1C80148FCB7019F4580D /* Pods_aBike_Paris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1A50DC4E5F2D3C80FD01C0 /* Pods_aBike_Paris.framework */; };
-		B36E430BC91484E6980A012A /* Pods_aBike_Bruxelles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6134E00D349FF12F22E6EF2 /* Pods_aBike_Bruxelles.framework */; };
-		C3DADEE6484CDD19F005E6BE /* Pods_aBike_Toulouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA76D0CB1182F842B4D50F5 /* Pods_aBike_Toulouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -780,7 +775,6 @@
 				5975F28D1C4BBF7E00839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35B1C4BCAAB00839B95 /* Security.framework in Frameworks */,
 				5975F3511C4BCA9800839B95 /* Fabric.framework in Frameworks */,
-				3A34E3B9EBD6BF8B2723623B /* Pods_aBike_Marseille.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,7 +789,6 @@
 				5975F2C11C4BC3C300839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35A1C4BCAAA00839B95 /* Security.framework in Frameworks */,
 				5975F3521C4BCA9900839B95 /* Fabric.framework in Frameworks */,
-				4CF90E0792AC8C459C7F7BB5 /* Pods_aBike_Mulhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,7 +803,6 @@
 				5975F2F81C4BC61400839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F3591C4BCAA900839B95 /* Security.framework in Frameworks */,
 				5975F3531C4BCA9A00839B95 /* Fabric.framework in Frameworks */,
-				71AC1C80148FCB7019F4580D /* Pods_aBike_Paris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,7 +817,6 @@
 				5975F3331C4BC85B00839B95 /* iAd.framework in Frameworks */,
 				5975F34E1C4BCA9300839B95 /* Crashlytics.framework in Frameworks */,
 				5975F32E1C4BC85400839B95 /* aBikeFramework.framework in Frameworks */,
-				C3DADEE6484CDD19F005E6BE /* Pods_aBike_Toulouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,7 +831,6 @@
 				597A409A1C4BAD3200E4B781 /* aBikeFramework.framework in Frameworks */,
 				5975F35C1C4BCAAB00839B95 /* Security.framework in Frameworks */,
 				5975F3501C4BCA9800839B95 /* Fabric.framework in Frameworks */,
-				B36E430BC91484E6980A012A /* Pods_aBike_Bruxelles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1561,13 +1551,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F2891C4BBF2800839B95 /* Build configuration list for PBXNativeTarget "aBike—Marseille" */;
 			buildPhases = (
-				E50BA29CD6B77D18D1BD1841 /* Check Pods Manifest.lock */,
 				5975F26E1C4BBF2800839B95 /* Sources */,
 				5975F26F1C4BBF2800839B95 /* Frameworks */,
 				5975F2701C4BBF2800839B95 /* Resources */,
 				5975F2911C4BBF7E00839B95 /* Embed Frameworks */,
-				4746D7194F15C8AC8547ECAB /* Embed Pods Frameworks */,
-				8426FB40C852102744ADDD27 /* Copy Pods Resources */,
 				5975F3641C4BCAF200839B95 /* Fabric */,
 			);
 			buildRules = (
@@ -1584,13 +1571,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F2BC1C4BC37C00839B95 /* Build configuration list for PBXNativeTarget "aBike—Mulhouse" */;
 			buildPhases = (
-				7507E21F86ECFCD1F9A3EB45 /* Check Pods Manifest.lock */,
 				5975F2A41C4BC37C00839B95 /* Sources */,
 				5975F2A51C4BC37C00839B95 /* Frameworks */,
 				5975F2A61C4BC37C00839B95 /* Resources */,
 				5975F2C51C4BC3C400839B95 /* Embed Frameworks */,
-				578001C381AA96EC24523E42 /* Embed Pods Frameworks */,
-				8C577C3A6BE58C947F07215D /* Copy Pods Resources */,
 				5975F3631C4BCAEB00839B95 /* Fabric */,
 			);
 			buildRules = (
@@ -1607,13 +1591,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F2F31C4BC5DA00839B95 /* Build configuration list for PBXNativeTarget "aBike—Paris" */;
 			buildPhases = (
-				170FCDB59820FECC376D98E0 /* Check Pods Manifest.lock */,
 				5975F2DB1C4BC5DA00839B95 /* Sources */,
 				5975F2DC1C4BC5DA00839B95 /* Frameworks */,
 				5975F2DD1C4BC5DA00839B95 /* Resources */,
 				5975F2FC1C4BC61400839B95 /* Embed Frameworks */,
-				844878F22EB6F34E0FAAD1C6 /* Embed Pods Frameworks */,
-				7646B41AF1B4A2FF43B0A15E /* Copy Pods Resources */,
 				5975F3621C4BCAE300839B95 /* Fabric */,
 			);
 			buildRules = (
@@ -1630,13 +1611,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F32A1C4BC83200839B95 /* Build configuration list for PBXNativeTarget "aBike—Toulouse" */;
 			buildPhases = (
-				EA075FF166AA8B47961D4B89 /* Check Pods Manifest.lock */,
 				5975F3121C4BC83100839B95 /* Sources */,
 				5975F3131C4BC83100839B95 /* Frameworks */,
 				5975F3141C4BC83100839B95 /* Resources */,
 				5975F3321C4BC85400839B95 /* Embed Frameworks */,
-				13418361986A540B9D46D957 /* Embed Pods Frameworks */,
-				6FD571B3613CC3182C41C8C9 /* Copy Pods Resources */,
 				5975F3611C4BCAD900839B95 /* Fabric */,
 			);
 			buildRules = (
@@ -1653,13 +1631,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 597A40991C4BACE900E4B781 /* Build configuration list for PBXNativeTarget "aBike—Bruxelles" */;
 			buildPhases = (
-				0A73A651B3154096E9661D44 /* Check Pods Manifest.lock */,
 				597A407E1C4BACE800E4B781 /* Sources */,
 				597A407F1C4BACE800E4B781 /* Frameworks */,
 				597A40801C4BACE800E4B781 /* Resources */,
 				597A409E1C4BAD3300E4B781 /* Embed Frameworks */,
-				4A0C5A9306A8E73CF8E12FB4 /* Embed Pods Frameworks */,
-				6B7D5AE908B024BDA11DA3F6 /* Copy Pods Resources */,
 				5975F3651C4BCAFA00839B95 /* Fabric */,
 			);
 			buildRules = (
@@ -2040,96 +2015,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A73A651B3154096E9661D44 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		13418361986A540B9D46D957 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		170FCDB59820FECC376D98E0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4746D7194F15C8AC8547ECAB /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A0C5A9306A8E73CF8E12FB4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		578001C381AA96EC24523E42 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5945D9341C54F08000813FF2 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2242,111 +2127,6 @@
 			shellPath = /bin/sh;
 			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
 		};
-		6B7D5AE908B024BDA11DA3F6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FD571B3613CC3182C41C8C9 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7507E21F86ECFCD1F9A3EB45 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7646B41AF1B4A2FF43B0A15E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8426FB40C852102744ADDD27 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		844878F22EB6F34E0FAAD1C6 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C577C3A6BE58C947F07215D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A796787A32F4ED803E9EDF78 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2363,36 +2143,6 @@
 			showEnvVarsInLog = 0;
 		};
 		D60C0B923F8F90BBBBD5D620 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E50BA29CD6B77D18D1BD1841 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EA075FF166AA8B47961D4B89 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2893,7 +2643,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 368;
+				CP_CURRENT_BUILD = 369;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2942,7 +2692,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 368;
+				CP_CURRENT_BUILD = 369;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = YES;
@@ -3868,7 +3618,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 368;
+				CP_CURRENT_BUILD = 369;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
