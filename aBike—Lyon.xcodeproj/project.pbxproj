@@ -278,6 +278,10 @@
 		59DDCBCB1C4BADD400E3DA02 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */; };
 		59DDCBCE1C4BAF8000E3DA02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */; };
 		59F9EC791C54ED8D0007D069 /* aBike_BruxellesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9EC781C54ED8D0007D069 /* aBike_BruxellesUITests.swift */; };
+		59F9EC881C54EDEC0007D069 /* aBike_MarseilleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9EC871C54EDEC0007D069 /* aBike_MarseilleUITests.swift */; };
+		59F9EC971C54EDF90007D069 /* aBike_MulhouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9EC961C54EDF90007D069 /* aBike_MulhouseUITests.swift */; };
+		59F9ECA61C54EE030007D069 /* aBike_ParisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9ECA51C54EE030007D069 /* aBike_ParisUITests.swift */; };
+		59F9ECB51C54EE0F0007D069 /* aBike_ToulouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9ECB41C54EE0F0007D069 /* aBike_ToulouseUITests.swift */; };
 		59FACE191C495873005DB202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		59FACE1C1C495877005DB202 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		59FACE251C495E29005DB202 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE241C495E29005DB202 /* Launch Screen.storyboard */; };
@@ -384,6 +388,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 597A40811C4BACE800E4B781;
 			remoteInfo = "aBike—Bruxelles";
+		};
+		59F9EC8A1C54EDEC0007D069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5975F2711C4BBF2800839B95;
+			remoteInfo = "aBike—Marseille";
+		};
+		59F9EC991C54EDF90007D069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5975F2A71C4BC37C00839B95;
+			remoteInfo = "aBike—Mulhouse";
+		};
+		59F9ECA81C54EE030007D069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5975F2DE1C4BC5DA00839B95;
+			remoteInfo = "aBike—Paris";
+		};
+		59F9ECB71C54EE0F0007D069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5975F3151C4BC83100839B95;
+			remoteInfo = "aBike—Toulouse";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -667,6 +699,18 @@
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F9EC781C54ED8D0007D069 /* aBike_BruxellesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_BruxellesUITests.swift; sourceTree = "<group>"; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MarseilleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F9EC871C54EDEC0007D069 /* aBike_MarseilleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_MarseilleUITests.swift; sourceTree = "<group>"; };
+		59F9EC891C54EDEC0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59F9EC941C54EDF90007D069 /* aBike—MulhouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MulhouseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F9EC961C54EDF90007D069 /* aBike_MulhouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_MulhouseUITests.swift; sourceTree = "<group>"; };
+		59F9EC981C54EDF90007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59F9ECA31C54EE030007D069 /* aBike—ParisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—ParisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F9ECA51C54EE030007D069 /* aBike_ParisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_ParisUITests.swift; sourceTree = "<group>"; };
+		59F9ECA71C54EE030007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59F9ECB21C54EE0F0007D069 /* aBike—ToulouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—ToulouseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F9ECB41C54EE0F0007D069 /* aBike_ToulouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_ToulouseUITests.swift; sourceTree = "<group>"; };
+		59F9ECB61C54EE0F0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59FACE1A1C495873005DB202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59FACE1D1C495877005DB202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		59FACE201C495885005DB202 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -814,6 +858,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59F9EC821C54EDEC0007D069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9EC911C54EDF90007D069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9ECA01C54EE030007D069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9ECAF1C54EE0F0007D069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -835,6 +907,10 @@
 			isa = PBXGroup;
 			children = (
 				59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */,
+				59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */,
+				59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */,
+				59F9ECA41C54EE030007D069 /* aBike—ParisUITests */,
+				59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
@@ -873,6 +949,10 @@
 				5975F2DF1C4BC5DA00839B95 /* aBike—Paris.app */,
 				5975F3161C4BC83100839B95 /* aBike—Toulouse.app */,
 				59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */,
+				59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */,
+				59F9EC941C54EDF90007D069 /* aBike—MulhouseUITests.xctest */,
+				59F9ECA31C54EE030007D069 /* aBike—ParisUITests.xctest */,
+				59F9ECB21C54EE0F0007D069 /* aBike—ToulouseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1256,6 +1336,42 @@
 			path = "aBike—BruxellesUITests";
 			sourceTree = "<group>";
 		};
+		59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59F9EC871C54EDEC0007D069 /* aBike_MarseilleUITests.swift */,
+				59F9EC891C54EDEC0007D069 /* Info.plist */,
+			);
+			path = "aBike—MarseilleUITests";
+			sourceTree = "<group>";
+		};
+		59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59F9EC961C54EDF90007D069 /* aBike_MulhouseUITests.swift */,
+				59F9EC981C54EDF90007D069 /* Info.plist */,
+			);
+			path = "aBike—MulhouseUITests";
+			sourceTree = "<group>";
+		};
+		59F9ECA41C54EE030007D069 /* aBike—ParisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59F9ECA51C54EE030007D069 /* aBike_ParisUITests.swift */,
+				59F9ECA71C54EE030007D069 /* Info.plist */,
+			);
+			path = "aBike—ParisUITests";
+			sourceTree = "<group>";
+		};
+		59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59F9ECB41C54EE0F0007D069 /* aBike_ToulouseUITests.swift */,
+				59F9ECB61C54EE0F0007D069 /* Info.plist */,
+			);
+			path = "aBike—ToulouseUITests";
+			sourceTree = "<group>";
+		};
 		EEBD019FA48AF977C993F023 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1601,6 +1717,78 @@
 			productReference = 59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		59F9EC841C54EDEC0007D069 /* aBike—MarseilleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F9EC8C1C54EDEC0007D069 /* Build configuration list for PBXNativeTarget "aBike—MarseilleUITests" */;
+			buildPhases = (
+				59F9EC811C54EDEC0007D069 /* Sources */,
+				59F9EC821C54EDEC0007D069 /* Frameworks */,
+				59F9EC831C54EDEC0007D069 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F9EC8B1C54EDEC0007D069 /* PBXTargetDependency */,
+			);
+			name = "aBike—MarseilleUITests";
+			productName = "aBike—MarseilleUITests";
+			productReference = 59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		59F9EC931C54EDF90007D069 /* aBike—MulhouseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F9EC9B1C54EDF90007D069 /* Build configuration list for PBXNativeTarget "aBike—MulhouseUITests" */;
+			buildPhases = (
+				59F9EC901C54EDF90007D069 /* Sources */,
+				59F9EC911C54EDF90007D069 /* Frameworks */,
+				59F9EC921C54EDF90007D069 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F9EC9A1C54EDF90007D069 /* PBXTargetDependency */,
+			);
+			name = "aBike—MulhouseUITests";
+			productName = "aBike—MulhouseUITests";
+			productReference = 59F9EC941C54EDF90007D069 /* aBike—MulhouseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		59F9ECA21C54EE030007D069 /* aBike—ParisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F9ECAA1C54EE030007D069 /* Build configuration list for PBXNativeTarget "aBike—ParisUITests" */;
+			buildPhases = (
+				59F9EC9F1C54EE030007D069 /* Sources */,
+				59F9ECA01C54EE030007D069 /* Frameworks */,
+				59F9ECA11C54EE030007D069 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F9ECA91C54EE030007D069 /* PBXTargetDependency */,
+			);
+			name = "aBike—ParisUITests";
+			productName = "aBike—ParisUITests";
+			productReference = 59F9ECA31C54EE030007D069 /* aBike—ParisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		59F9ECB11C54EE0F0007D069 /* aBike—ToulouseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F9ECB91C54EE0F0007D069 /* Build configuration list for PBXNativeTarget "aBike—ToulouseUITests" */;
+			buildPhases = (
+				59F9ECAE1C54EE0F0007D069 /* Sources */,
+				59F9ECAF1C54EE0F0007D069 /* Frameworks */,
+				59F9ECB01C54EE0F0007D069 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F9ECB81C54EE0F0007D069 /* PBXTargetDependency */,
+			);
+			name = "aBike—ToulouseUITests";
+			productName = "aBike—ToulouseUITests";
+			productReference = 59F9ECB21C54EE0F0007D069 /* aBike—ToulouseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1655,6 +1843,22 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 597A40811C4BACE800E4B781;
 					};
+					59F9EC841C54EDEC0007D069 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5975F2711C4BBF2800839B95;
+					};
+					59F9EC931C54EDF90007D069 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5975F2A71C4BC37C00839B95;
+					};
+					59F9ECA21C54EE030007D069 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5975F2DE1C4BC5DA00839B95;
+					};
+					59F9ECB11C54EE0F0007D069 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5975F3151C4BC83100839B95;
+					};
 				};
 			};
 			buildConfigurationList = 593AD91D1C4951E7003B686A /* Build configuration list for PBXProject "aBike—Lyon" */;
@@ -1684,6 +1888,10 @@
 				5975F2DE1C4BC5DA00839B95 /* aBike—Paris */,
 				5975F3151C4BC83100839B95 /* aBike—Toulouse */,
 				59F9EC751C54ED8D0007D069 /* aBike—BruxellesUITests */,
+				59F9EC841C54EDEC0007D069 /* aBike—MarseilleUITests */,
+				59F9EC931C54EDF90007D069 /* aBike—MulhouseUITests */,
+				59F9ECA21C54EE030007D069 /* aBike—ParisUITests */,
+				59F9ECB11C54EE0F0007D069 /* aBike—ToulouseUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1799,6 +2007,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		59F9EC741C54ED8D0007D069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9EC831C54EDEC0007D069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9EC921C54EDF90007D069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9ECA11C54EE030007D069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9ECB01C54EE0F0007D069 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2336,6 +2572,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59F9EC811C54EDEC0007D069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F9EC881C54EDEC0007D069 /* aBike_MarseilleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9EC901C54EDF90007D069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F9EC971C54EDF90007D069 /* aBike_MulhouseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9EC9F1C54EE030007D069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F9ECA61C54EE030007D069 /* aBike_ParisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F9ECAE1C54EE0F0007D069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F9ECB51C54EE0F0007D069 /* aBike_ToulouseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2408,6 +2676,26 @@
 			isa = PBXTargetDependency;
 			target = 597A40811C4BACE800E4B781 /* aBike—Bruxelles */;
 			targetProxy = 59F9EC7B1C54ED8D0007D069 /* PBXContainerItemProxy */;
+		};
+		59F9EC8B1C54EDEC0007D069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5975F2711C4BBF2800839B95 /* aBike—Marseille */;
+			targetProxy = 59F9EC8A1C54EDEC0007D069 /* PBXContainerItemProxy */;
+		};
+		59F9EC9A1C54EDF90007D069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5975F2A71C4BC37C00839B95 /* aBike—Mulhouse */;
+			targetProxy = 59F9EC991C54EDF90007D069 /* PBXContainerItemProxy */;
+		};
+		59F9ECA91C54EE030007D069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5975F2DE1C4BC5DA00839B95 /* aBike—Paris */;
+			targetProxy = 59F9ECA81C54EE030007D069 /* PBXContainerItemProxy */;
+		};
+		59F9ECB81C54EE0F0007D069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5975F3151C4BC83100839B95 /* aBike—Toulouse */;
+			targetProxy = 59F9ECB71C54EE0F0007D069 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3370,6 +3658,182 @@
 			};
 			name = Screenshots;
 		};
+		59F9EC8D1C54EDEC0007D069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "aBike—MarseilleUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-MarseilleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "aBike—Marseille";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59F9EC8E1C54EDEC0007D069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—MarseilleUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-MarseilleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Marseille";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		59F9EC8F1C54EDEC0007D069 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—MarseilleUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-MarseilleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Marseille";
+				USES_XCTRUNNER = YES;
+			};
+			name = Screenshots;
+		};
+		59F9EC9C1C54EDF90007D069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "aBike—MulhouseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-MulhouseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "aBike—Mulhouse";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59F9EC9D1C54EDF90007D069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—MulhouseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-MulhouseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Mulhouse";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		59F9EC9E1C54EDF90007D069 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—MulhouseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-MulhouseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Mulhouse";
+				USES_XCTRUNNER = YES;
+			};
+			name = Screenshots;
+		};
+		59F9ECAB1C54EE030007D069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "aBike—ParisUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-ParisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "aBike—Paris";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59F9ECAC1C54EE030007D069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—ParisUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-ParisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Paris";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		59F9ECAD1C54EE030007D069 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—ParisUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-ParisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Paris";
+				USES_XCTRUNNER = YES;
+			};
+			name = Screenshots;
+		};
+		59F9ECBA1C54EE0F0007D069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "aBike—ToulouseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-ToulouseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "aBike—Toulouse";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59F9ECBB1C54EE0F0007D069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—ToulouseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-ToulouseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Toulouse";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		59F9ECBC1C54EE0F0007D069 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—ToulouseUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-ToulouseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Toulouse";
+				USES_XCTRUNNER = YES;
+			};
+			name = Screenshots;
+		};
 		59FACE271C496793005DB202 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3589,6 +4053,42 @@
 				59F9EC7E1C54ED8D0007D069 /* Debug */,
 				59F9EC7F1C54ED8D0007D069 /* Release */,
 				59F9EC801C54ED8D0007D069 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59F9EC8C1C54EDEC0007D069 /* Build configuration list for PBXNativeTarget "aBike—MarseilleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F9EC8D1C54EDEC0007D069 /* Debug */,
+				59F9EC8E1C54EDEC0007D069 /* Release */,
+				59F9EC8F1C54EDEC0007D069 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59F9EC9B1C54EDF90007D069 /* Build configuration list for PBXNativeTarget "aBike—MulhouseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F9EC9C1C54EDF90007D069 /* Debug */,
+				59F9EC9D1C54EDF90007D069 /* Release */,
+				59F9EC9E1C54EDF90007D069 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59F9ECAA1C54EE030007D069 /* Build configuration list for PBXNativeTarget "aBike—ParisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F9ECAB1C54EE030007D069 /* Debug */,
+				59F9ECAC1C54EE030007D069 /* Release */,
+				59F9ECAD1C54EE030007D069 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59F9ECB91C54EE0F0007D069 /* Build configuration list for PBXNativeTarget "aBike—ToulouseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F9ECBA1C54EE0F0007D069 /* Debug */,
+				59F9ECBB1C54EE0F0007D069 /* Release */,
+				59F9ECBC1C54EE0F0007D069 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
