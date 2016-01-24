@@ -14,9 +14,7 @@ static const NSTimeInterval kLaunchImageDelay = .5;
 
 @interface VEWindow ()
 
-+ (NSString *) imagePathForCurrentDevice;
-
-@property (weak, nonatomic) UIImageView *launchImageView;
+@property (nonatomic, weak) UIView *launchView;
 
 @end
 
@@ -28,25 +26,16 @@ static const NSTimeInterval kLaunchImageDelay = .5;
 	
 	if (self)
 	{
-		//CPLog(@"frame: %@", NSStringFromCGRect(frame));
-		
-//		CGFloat height = CGRectGetHeight(frame);
-//				
-//		NSString *imageName = (height > 480) ? @"LaunchImage-700-568h@2x" : @"LaunchImage-700@2x";
-//		
-//		NSString *imagePath = [[NSBundle mainBundle] pathForResource: imageName ofType: @"png"];
+		UIViewController *viewController = [[UIStoryboard storyboardWithName: @"Launch Screen"
+														  bundle: nil] instantiateInitialViewController];
 
-		NSString *imagePath = [[self class] imagePathForCurrentDevice];
-		
-		UIImage *launchImage = [UIImage imageWithContentsOfFile: imagePath];
-		
-		UIImageView *launchImageView = [[UIImageView alloc] initWithImage: launchImage];
-		
-		[launchImageView setOpaque: YES];
-		
-		[self addSubview: launchImageView];
-		
-		_launchImageView = launchImageView;
+		UIView *launchView = [viewController view];
+
+		[launchView setOpaque: YES];
+
+		[self addSubview: launchView];
+
+		_launchView = launchView;
 	}
 	
 	return self;
@@ -54,83 +43,32 @@ static const NSTimeInterval kLaunchImageDelay = .5;
 
 - (void) showLaunchImage
 {
-	[self bringSubviewToFront: [self launchImageView]];
+	[self bringSubviewToFront: [self launchView]];
 }
 
 - (void) hideLaunchImage
 {
 	dispatch_async(dispatch_get_main_queue(), ^{
 		
-		[[self launchImageView] setOpaque: NO];
+		[[self launchView] setOpaque: NO];
 		
 		[UIView animateWithDuration: kLaunchImageHideDuration
 						  delay: kLaunchImageDelay
 						options: UIViewAnimationOptionTransitionCrossDissolve
 					  animations: ^{
-						  [[self launchImageView] setAlpha: 0];
+						  [[self launchView] setAlpha: 0];
 					  }
 					  completion: ^(BOOL finished) {
 						  
 						  [self setWindowLevel: UIWindowLevelNormal];
 						  
-						  [[self launchImageView] removeFromSuperview];
+						  [[self launchView] removeFromSuperview];
 						  
-						  [self setLaunchImageView: nil];
+						  [self setLaunchView: nil];
 						  
 					  }];
 		
 	});
-}
-
-//- (void) tintColorDidChange
-//{
-//	//CPLog(@"tint did change");
-//	
-//	[super tintColorDidChange];
-//	
-//	CPLog(@"tint mode: %@", NSStringFromUIViewTintMode([self tintAdjustmentMode]));
-//}
-
-+ (NSString *) imagePathForCurrentDevice
-{
-	CGRect bounds = [[UIScreen mainScreen] bounds];
-	
-	CGFloat height = CGRectGetHeight(bounds);
-	
-	//CPLog(@"bounds: %@", NSStringFromCGRect(bounds));
-	
-	//CPLog(@"height: %f", height);
-	
-	NSString *imagePath;
-	
-	NSString *imageName;
-	
-	if (height == 480)
-	{
-		imageName = @"LaunchImage-700@2x";
-	}
-	else if (height == 568)
-	{
-		imageName = @"LaunchImage-700-568h@2x";
-	}
-	else if (height == 667)
-	{
-		imageName = @"LaunchImage-800-667h@2x";
-	}
-	else if (height == 736)
-	{
-		imageName = @"LaunchImage-800-Portrait-736h@3x";
-	}
-	else
-	{
-		CPLog(@"unknown height");
-	}
-	
-	//CPLog(@"image name: %@", imageName);
-	
-	imagePath = [[NSBundle mainBundle] pathForResource: imageName ofType: @"png"];
-	
-	return imagePath;
 }
 
 @end
