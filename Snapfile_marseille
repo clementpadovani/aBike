@@ -32,7 +32,7 @@ ios_version "9.2"
 configuration "Snapshots"
 
 # Where should the resulting screenshots be stored?
-output_directory "./screenshots"
+output_directory "./screenshots/marseille/"
 
 clear_previous_screenshots true # remove the '#' to clear all previously generated screenshots before creating new ones
 
