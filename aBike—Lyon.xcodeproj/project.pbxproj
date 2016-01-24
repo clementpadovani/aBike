@@ -1509,6 +1509,7 @@
 				593AD9501C495217003B686A /* Headers */,
 				593AD9511C495217003B686A /* Resources */,
 				A796787A32F4ED803E9EDF78 /* Copy Pods Resources */,
+				5945D9341C54F08000813FF2 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2128,6 +2129,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5945D9341C54F08000813FF2 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
 		};
 		5975F3611C4BCAD900839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2878,7 +2893,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 365;
+				CP_CURRENT_BUILD = 366;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2927,7 +2942,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 365;
+				CP_CURRENT_BUILD = 366;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = YES;
@@ -3853,7 +3868,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 365;
+				CP_CURRENT_BUILD = 366;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -4055,6 +4070,7 @@
 				59F9EC801C54ED8D0007D069 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		59F9EC8C1C54EDEC0007D069 /* Build configuration list for PBXNativeTarget "aBike—MarseilleUITests" */ = {
 			isa = XCConfigurationList;
@@ -4064,6 +4080,7 @@
 				59F9EC8F1C54EDEC0007D069 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		59F9EC9B1C54EDF90007D069 /* Build configuration list for PBXNativeTarget "aBike—MulhouseUITests" */ = {
 			isa = XCConfigurationList;
@@ -4073,6 +4090,7 @@
 				59F9EC9E1C54EDF90007D069 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		59F9ECAA1C54EE030007D069 /* Build configuration list for PBXNativeTarget "aBike—ParisUITests" */ = {
 			isa = XCConfigurationList;
@@ -4082,6 +4100,7 @@
 				59F9ECAD1C54EE030007D069 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		59F9ECB91C54EE0F0007D069 /* Build configuration list for PBXNativeTarget "aBike—ToulouseUITests" */ = {
 			isa = XCConfigurationList;
@@ -4091,6 +4110,7 @@
 				59F9ECBC1C54EE0F0007D069 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 /* End XCConfigurationList section */
 
