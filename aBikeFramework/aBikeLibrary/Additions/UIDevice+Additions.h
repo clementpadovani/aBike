@@ -8,8 +8,6 @@
 
 @interface UIDevice (Additions)
 
-+ (BOOL) ve_isAniPad;
-
 + (NSString *) ve_freeMemory;
 
 @end

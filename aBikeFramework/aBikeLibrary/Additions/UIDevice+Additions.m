@@ -12,11 +12,6 @@
 
 @implementation UIDevice (Additions)
 
-+ (BOOL) ve_isAniPad
-{
-	return [[[UIDevice currentDevice] model] rangeOfString: @"ipad" options: NSCaseInsensitiveSearch].location != NSNotFound;
-}
-
 + (NSString *) ve_freeMemory
 {
 	@try

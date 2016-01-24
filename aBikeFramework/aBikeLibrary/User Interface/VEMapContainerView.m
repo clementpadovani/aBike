@@ -50,9 +50,6 @@
 				
 		VEMapViewBlurImageView *blurImageView = [[VEMapViewBlurImageView alloc] init];
 		
-		if ([UIDevice ve_isAniPad])
-			[blurImageView setAlpha: 0];
-		
 		[self addSubview: mapView];
 		
 		[self addSubview: blurImageView];
