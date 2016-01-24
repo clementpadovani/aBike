@@ -277,11 +277,16 @@
 		59C312D01C4A6CF6002F1657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		59DDCBCB1C4BADD400E3DA02 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */; };
 		59DDCBCE1C4BAF8000E3DA02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */; };
-		59F9EC791C54ED8D0007D069 /* aBike_BruxellesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9EC781C54ED8D0007D069 /* aBike_BruxellesUITests.swift */; };
-		59F9EC881C54EDEC0007D069 /* aBike_MarseilleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9EC871C54EDEC0007D069 /* aBike_MarseilleUITests.swift */; };
-		59F9EC971C54EDF90007D069 /* aBike_MulhouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9EC961C54EDF90007D069 /* aBike_MulhouseUITests.swift */; };
-		59F9ECA61C54EE030007D069 /* aBike_ParisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9ECA51C54EE030007D069 /* aBike_ParisUITests.swift */; };
-		59F9ECB51C54EE0F0007D069 /* aBike_ToulouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F9ECB41C54EE0F0007D069 /* aBike_ToulouseUITests.swift */; };
+		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
+		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
+		59F9ECBF1C54EED10007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
+		59F9ECC01C54EED20007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
+		59F9ECC11C54EED20007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
+		59F9ECC21C54EEE60007D069 /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
+		59F9ECC31C54EEE60007D069 /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
+		59F9ECC41C54EEE70007D069 /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
+		59F9ECC51C54EEE70007D069 /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
+		59F9ECC61C54EEE80007D069 /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
 		59FACE191C495873005DB202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		59FACE1C1C495877005DB202 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		59FACE251C495E29005DB202 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE241C495E29005DB202 /* Launch Screen.storyboard */; };
@@ -697,19 +702,14 @@
 		59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEAppDelegate.m; sourceTree = "<group>"; };
 		59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F9EC781C54ED8D0007D069 /* aBike_BruxellesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_BruxellesUITests.swift; sourceTree = "<group>"; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MarseilleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F9EC871C54EDEC0007D069 /* aBike_MarseilleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_MarseilleUITests.swift; sourceTree = "<group>"; };
 		59F9EC891C54EDEC0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9EC941C54EDF90007D069 /* aBike—MulhouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MulhouseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F9EC961C54EDF90007D069 /* aBike_MulhouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_MulhouseUITests.swift; sourceTree = "<group>"; };
 		59F9EC981C54EDF90007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9ECA31C54EE030007D069 /* aBike—ParisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—ParisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F9ECA51C54EE030007D069 /* aBike_ParisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_ParisUITests.swift; sourceTree = "<group>"; };
 		59F9ECA71C54EE030007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9ECB21C54EE0F0007D069 /* aBike—ToulouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—ToulouseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F9ECB41C54EE0F0007D069 /* aBike_ToulouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_ToulouseUITests.swift; sourceTree = "<group>"; };
 		59F9ECB61C54EE0F0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59FACE1A1C495873005DB202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59FACE1D1C495877005DB202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -1330,7 +1330,6 @@
 		59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				59F9EC781C54ED8D0007D069 /* aBike_BruxellesUITests.swift */,
 				59F9EC7A1C54ED8D0007D069 /* Info.plist */,
 			);
 			path = "aBike—BruxellesUITests";
@@ -1339,7 +1338,6 @@
 		59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				59F9EC871C54EDEC0007D069 /* aBike_MarseilleUITests.swift */,
 				59F9EC891C54EDEC0007D069 /* Info.plist */,
 			);
 			path = "aBike—MarseilleUITests";
@@ -1348,7 +1346,6 @@
 		59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */ = {
 			isa = PBXGroup;
 			children = (
-				59F9EC961C54EDF90007D069 /* aBike_MulhouseUITests.swift */,
 				59F9EC981C54EDF90007D069 /* Info.plist */,
 			);
 			path = "aBike—MulhouseUITests";
@@ -1357,7 +1354,6 @@
 		59F9ECA41C54EE030007D069 /* aBike—ParisUITests */ = {
 			isa = PBXGroup;
 			children = (
-				59F9ECA51C54EE030007D069 /* aBike_ParisUITests.swift */,
 				59F9ECA71C54EE030007D069 /* Info.plist */,
 			);
 			path = "aBike—ParisUITests";
@@ -1366,7 +1362,6 @@
 		59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */ = {
 			isa = PBXGroup;
 			children = (
-				59F9ECB41C54EE0F0007D069 /* aBike_ToulouseUITests.swift */,
 				59F9ECB61C54EE0F0007D069 /* Info.plist */,
 			);
 			path = "aBike—ToulouseUITests";
@@ -2568,7 +2563,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F9EC791C54ED8D0007D069 /* aBike_BruxellesUITests.swift in Sources */,
+				59F9ECC61C54EEE80007D069 /* aBike_LyonUITests.swift in Sources */,
+				59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2576,7 +2572,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F9EC881C54EDEC0007D069 /* aBike_MarseilleUITests.swift in Sources */,
+				59F9ECC51C54EEE70007D069 /* aBike_LyonUITests.swift in Sources */,
+				59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2584,7 +2581,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F9EC971C54EDF90007D069 /* aBike_MulhouseUITests.swift in Sources */,
+				59F9ECC41C54EEE70007D069 /* aBike_LyonUITests.swift in Sources */,
+				59F9ECBF1C54EED10007D069 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2592,7 +2590,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F9ECA61C54EE030007D069 /* aBike_ParisUITests.swift in Sources */,
+				59F9ECC31C54EEE60007D069 /* aBike_LyonUITests.swift in Sources */,
+				59F9ECC01C54EED20007D069 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2600,7 +2599,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F9ECB51C54EE0F0007D069 /* aBike_ToulouseUITests.swift in Sources */,
+				59F9ECC21C54EEE60007D069 /* aBike_LyonUITests.swift in Sources */,
+				59F9ECC11C54EED20007D069 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
