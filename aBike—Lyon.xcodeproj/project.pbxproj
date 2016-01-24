@@ -2893,7 +2893,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 366;
+				CP_CURRENT_BUILD = 368;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2942,7 +2942,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 366;
+				CP_CURRENT_BUILD = 368;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = YES;
@@ -3868,7 +3868,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 366;
+				CP_CURRENT_BUILD = 368;
 				CP_CURRENT_VERSION = 2.9.5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
