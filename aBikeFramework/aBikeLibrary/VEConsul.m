@@ -691,10 +691,10 @@ static VEConsul *_sharedConsul = nil;
 	
 	CPLog(@"%@", [[UIWindow keyWindow] _autolayoutTrace]);
 	
-	//[[UIWindow keyWindow] exerciseAmbiguityInLayout];
-	
-	//CPLog(@"%@", [[UIWindow keyWindow] _autolayoutTrace]);
-	
+//	[[UIWindow keyWindow] exerciseAmbiguityInLayout];
+
+//	CPLog(@"%@", [[UIWindow keyWindow] _autolayoutTra/ce]);
+
 	//[self applicationWillResignActive];
 }
 

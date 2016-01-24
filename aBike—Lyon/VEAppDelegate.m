@@ -116,19 +116,19 @@
 	[[VEConsul sharedConsul] applicationDidReceiveMemoryWarning];
 }
 
-//#ifdef DEBUG
-//
-//- (void) motionBegan: (UIEventSubtype) motion withEvent: (UIEvent *) event
-//{
-//	if (motion == UIEventSubtypeMotionShake)
-//	{
-//		[[VEConsul sharedConsul] motionShake];
-//
-//		return;
-//	}
-//
-//	[super motionBegan: motion withEvent: event];
-//}
-//#endif
+#ifdef DEBUG
+
+- (void) motionBegan: (UIEventSubtype) motion withEvent: (UIEvent *) event
+{
+	if (motion == UIEventSubtypeMotionShake)
+	{
+		[[VEConsul sharedConsul] motionShake];
+
+		return;
+	}
+
+	[super motionBegan: motion withEvent: event];
+}
+#endif
 
 @end

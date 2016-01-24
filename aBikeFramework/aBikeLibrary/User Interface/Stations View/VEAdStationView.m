@@ -44,7 +44,7 @@ static VEAdStationView *_sharedAdStationView = nil;
 
 @property (nonatomic, strong) SKProduct *adRemover;
 
-- (void) setupConstraints;
+@property (nonatomic, assign) BOOL hasSetupConstraints;
 
 - (void) setupLabels;
 
@@ -103,8 +103,6 @@ static VEAdStationView *_sharedAdStationView = nil;
 		
 		[self setupSpinners];
 		
-		[self setupConstraints];
-		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(appWillReOpen:) name: UIApplicationWillEnterForegroundNotification object: nil];
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(contentSizeDidChange:) name: UIContentSizeCategoryDidChangeNotification object: nil];
@@ -131,8 +129,8 @@ static VEAdStationView *_sharedAdStationView = nil;
 	
 	//[adRemoverTitleLabel setBackgroundColor: [UIColor purpleColor]];
 	
-	[adRemoverTitleLabel setContentCompressionResistancePriority: UILayoutPriorityRequired forAxis: UILayoutConstraintAxisVertical];
-	
+//	[adRemoverTitleLabel setContentCompressionResistancePriority: UILayoutPriorityRequired forAxis: UILayoutConstraintAxisVertical];
+
 	[adRemoverTitleLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
 	
 	UILabel *adRemoverDescriptionLabel = [[UILabel alloc] init];
@@ -178,7 +176,7 @@ static VEAdStationView *_sharedAdStationView = nil;
 	[self addSubview: adRemoverDescriptionLabel];
 	
 	[self addSubview: disabledPurchasesLabel];
-	
+
 	[self setAdRemoverTitleLabel: adRemoverTitleLabel];
 	
 	[self setAdRemoverDescriptionLabel: adRemoverDescriptionLabel];
@@ -200,8 +198,8 @@ static VEAdStationView *_sharedAdStationView = nil;
 	
 	UIButton *adRemoverRestoreButton = [UIButton buttonWithType: UIButtonTypeSystem];
 	
-	[adRemoverRestoreButton setContentCompressionResistancePriority: UILayoutPriorityRequired forAxis: UILayoutConstraintAxisHorizontal];
-	
+//	[adRemoverRestoreButton setContentCompressionResistancePriority: UILayoutPriorityRequired forAxis: UILayoutConstraintAxisHorizontal];
+
 	[adRemoverRestoreButton setTitle: @"" forState: UIControlStateNormal];
 	
 	[adRemoverRestoreButton setEnabled: NO];
@@ -221,9 +219,7 @@ static VEAdStationView *_sharedAdStationView = nil;
 
 - (void) setupSpinners
 {
-	UIActivityIndicatorView *buySpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite];
-
-	[buySpinner setColor: [UIColor grayColor]];
+	UIActivityIndicatorView *buySpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray];
 
 	[buySpinner setHidesWhenStopped: YES];
 	
@@ -233,9 +229,7 @@ static VEAdStationView *_sharedAdStationView = nil;
 	
 	[buySpinner setTranslatesAutoresizingMaskIntoConstraints: NO];
 	
-	UIActivityIndicatorView *restoreSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite];
-
-	[restoreSpinner setColor: [UIColor grayColor]];
+	UIActivityIndicatorView *restoreSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray];
 	
 	[restoreSpinner setHidesWhenStopped: YES];
 	
@@ -256,113 +250,188 @@ static VEAdStationView *_sharedAdStationView = nil;
 
 - (void) setupConstraints
 {
-	NSDictionary *viewsDictionary = @{@"_adRemoverTitleLabel" : [self adRemoverTitleLabel],
-							    @"_adRemoverDescriptionLabel" : [self adRemoverDescriptionLabel],
-							    @"_disabledPurchasesLabel" : [self disabledPurchasesLabel],
-							    @"_adRemoverBuyButton" : [self adRemoverBuyButton],
-							    @"_adRemoverRestoreButton" : [self adRemoverRestoreButton],
-							    @"_buySpinner" : [self buySpinner],
-							    @"_restoreSpinner" : [self restoreSpinner]};
-	
-	NSDictionary *metricsDictionary = @{@"leftPadding" : @(15),
-								 @"rightPadding" : @(15),
-								 @"topPadding" : @(15),
-								 @"bottomPadding" : @(35),
-								 @"titleDescriptionMinimumVerticalPadding" : @(5),
-								 @"titleDescriptionMaximumVerticalPadding" : @(25),
-								 @"labelButtonMinimumPadding" : @(40),
-								 @"labelButtonMaximumPadding" : @(60),
-								 @"descriptionDisabledMinimumVerticalPadding" : @(15)};
-	
-	NSArray *titleLabelBuyButtonHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-(==leftPadding)-[_adRemoverTitleLabel]-(>=labelButtonMinimumPadding)-[_adRemoverBuyButton]-(==rightPadding)-|"
-																			  options: NSLayoutFormatAlignAllCenterY
-																			  metrics: metricsDictionary
-																			    views: viewsDictionary];
-	
-	[self addConstraints: titleLabelBuyButtonHorizontalConstraints];
-	
-	NSArray *descriptionLabelRestoreButtonHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-(==leftPadding)-[_adRemoverDescriptionLabel]-(>=labelButtonMinimumPadding,<=labelButtonMaximumPadding)-[_adRemoverRestoreButton]-(==rightPadding)-|"
-																					  options: NSLayoutFormatAlignAllCenterY
-																					  metrics: metricsDictionary
-																					    views: viewsDictionary];
-	
-	[self addConstraints: descriptionLabelRestoreButtonHorizontalConstraints];
+	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_adRemoverTitleLabel,
+													   _adRemoverDescriptionLabel,
+													   _adRemoverBuyButton,
+													   _adRemoverRestoreButton,
+													   _buySpinner,
+													   _restoreSpinner);
 
-	NSArray *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-topPadding-[_adRemoverTitleLabel]-titleDescriptionMinimumVerticalPadding-[_adRemoverDescriptionLabel]-(>=descriptionDisabledMinimumVerticalPadding@1000)-[_disabledPurchasesLabel]-bottomPadding-|"
-															 options: 0
-															 metrics: metricsDictionary
-															   views: viewsDictionary];
+	NSDictionary *metricsDictionary = nil;
 
-	[self addConstraints: verticalConstraints];
-	
-	NSArray *disabledPurchasesLabelHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-leftPadding-[_disabledPurchasesLabel]-rightPadding-|"
-																				options: 0
-																				metrics: metricsDictionary
-																				  views: viewsDictionary];
-	
-	[self addConstraints: disabledPurchasesLabelHorizontalConstraints];
-	
-	NSLayoutConstraint *buySpinnerHorizontalConstraint = [NSLayoutConstraint constraintWithItem: [self buySpinner]
-																	  attribute: NSLayoutAttributeCenterX
-																	  relatedBy: NSLayoutRelationEqual
-																		toItem: [self adRemoverBuyButton]
-																	  attribute: NSLayoutAttributeCenterX
-																	 multiplier: 1
-																	   constant: 0];
-	
-	[self addConstraint: buySpinnerHorizontalConstraint];
-	
-	NSLayoutConstraint *buySpinnerVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self buySpinner]
-																	attribute: NSLayoutAttributeCenterY
-																	relatedBy: NSLayoutRelationEqual
-																	   toItem: [self adRemoverBuyButton]
-																	attribute: NSLayoutAttributeCenterY
-																    multiplier: 1
-																	 constant: 0];
-	
-	[self addConstraint: buySpinnerVerticalConstraint];
-	
-//	NSLayoutConstraint *buySpinnerHeightConstraint = [NSLayoutConstraint constraintWithItem: [self buySpinner]
-//																   attribute: NSLayoutAttributeHeight
-//																   relatedBy: NSLayoutRelationEqual
-//																	 toItem: [self adRemoverBuyButton]
-//																   attribute: NSLayoutAttributeHeight
-//																  multiplier: 1
-//																    constant: 0];
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-15-[_adRemoverTitleLabel]-(>=0)-[_adRemoverBuyButton]-15-|"
+													  options: 0
+													  metrics: metricsDictionary
+													    views: viewsDictionary]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self adRemoverTitleLabel]
+											attribute: NSLayoutAttributeCenterY
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self adRemoverBuyButton]
+											attribute: NSLayoutAttributeCenterY
+										    multiplier: 1
+											 constant: 0]];
+
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-15-[_adRemoverBuyButton]-10-[_adRemoverRestoreButton]-(>=0)-|"
+													  options: 0
+													  metrics: metricsDictionary
+													    views: viewsDictionary]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self adRemoverDescriptionLabel]
+											attribute: NSLayoutAttributeLeft
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self adRemoverTitleLabel]
+											attribute: NSLayoutAttributeLeft
+										    multiplier: 1
+											 constant: 0]];
+
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_adRemoverTitleLabel]-5-[_adRemoverDescriptionLabel]"
+													  options: 0
+													  metrics: metricsDictionary
+													    views: viewsDictionary]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self adRemoverBuyButton]
+											attribute: NSLayoutAttributeRight
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self adRemoverRestoreButton]
+											attribute: NSLayoutAttributeRight
+										    multiplier: 1
+											 constant: 0]];
+
+	void (^addSpinnerConstraints)(UIActivityIndicatorView *spinnerView, UIButton *button) = ^(UIActivityIndicatorView *spinnerView, UIButton *button){
+
+
+		for (NSNumber *anAttribute in @[@(NSLayoutAttributeCenterX), @(NSLayoutAttributeCenterY), @(NSLayoutAttributeHeight)])
+		{
+			NSLayoutAttribute theAttribute = (NSLayoutAttribute) [anAttribute integerValue];
+
+			[self addConstraint: [NSLayoutConstraint constraintWithItem: spinnerView
+													attribute: theAttribute
+													relatedBy: NSLayoutRelationEqual
+													   toItem: button
+													attribute: theAttribute
+												    multiplier: 1
+													 constant: 0]];
+		}
+
+	};
+
+
+	addSpinnerConstraints([self buySpinner], [self adRemoverBuyButton]);
+
+	addSpinnerConstraints([self restoreSpinner], [self adRemoverRestoreButton]);
+
+}
+
+//- (void) setupConstraints
+//{
+//	NSDictionary *viewsDictionary = @{@"_adRemoverTitleLabel" : [self adRemoverTitleLabel],
+//							    @"_adRemoverDescriptionLabel" : [self adRemoverDescriptionLabel],
+//							    @"_disabledPurchasesLabel" : [self disabledPurchasesLabel],
+//							    @"_adRemoverBuyButton" : [self adRemoverBuyButton],
+//							    @"_adRemoverRestoreButton" : [self adRemoverRestoreButton],
+//							    @"_buySpinner" : [self buySpinner],
+//							    @"_restoreSpinner" : [self restoreSpinner]};
 //	
-//	[self addConstraint: buySpinnerHeightConstraint];
-	
-	NSLayoutConstraint *restoreSpinnerHorizontalConstraint = [NSLayoutConstraint constraintWithItem: [self restoreSpinner]
-																		 attribute: NSLayoutAttributeCenterX
-																		 relatedBy: NSLayoutRelationEqual
-																		    toItem: [self adRemoverRestoreButton]
-																		 attribute: NSLayoutAttributeCenterX
-																		multiplier: 1
-																		  constant: 0];
-	
-	[self addConstraint: restoreSpinnerHorizontalConstraint];
-	
-	NSLayoutConstraint *restoreSpinnerVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self restoreSpinner]
-																	    attribute: NSLayoutAttributeCenterY
-																	    relatedBy: NSLayoutRelationEqual
-																		  toItem: [self adRemoverRestoreButton]
-																	    attribute: NSLayoutAttributeCenterY
-																	   multiplier: 1
-																		constant: 0];
-	
-	[self addConstraint: restoreSpinnerVerticalConstraint];
-	
-//	NSLayoutConstraint *restoreSpinnerHeightConstraint = [NSLayoutConstraint constraintWithItem: [self restoreSpinner]
-//																	  attribute: NSLayoutAttributeHeight
+//	NSDictionary *metricsDictionary = @{@"leftPadding" : @(15),
+//								 @"rightPadding" : @(15),
+//								 @"topPadding" : @(15),
+//								 @"bottomPadding" : @(35),
+//								 @"titleDescriptionMinimumVerticalPadding" : @(5),
+//								 @"titleDescriptionMaximumVerticalPadding" : @(25),
+//								 @"labelButtonMinimumPadding" : @(40),
+//								 @"labelButtonMaximumPadding" : @(60),
+//								 @"descriptionDisabledMinimumVerticalPadding" : @(15)};
+//	
+//	NSArray *titleLabelBuyButtonHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-(==leftPadding)-[_adRemoverTitleLabel]-(>=labelButtonMinimumPadding)-[_adRemoverBuyButton]-(==rightPadding)-|"
+//																			  options: NSLayoutFormatAlignAllCenterY
+//																			  metrics: metricsDictionary
+//																			    views: viewsDictionary];
+//	
+//	[self addConstraints: titleLabelBuyButtonHorizontalConstraints];
+//	
+//	NSArray *descriptionLabelRestoreButtonHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-(==leftPadding)-[_adRemoverDescriptionLabel]-(>=labelButtonMinimumPadding,<=labelButtonMaximumPadding)-[_adRemoverRestoreButton]-(==rightPadding)-|"
+//																					  options: NSLayoutFormatAlignAllCenterY
+//																					  metrics: metricsDictionary
+//																					    views: viewsDictionary];
+//	
+//	[self addConstraints: descriptionLabelRestoreButtonHorizontalConstraints];
+//
+//	NSArray *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-topPadding-[_adRemoverTitleLabel]-titleDescriptionMinimumVerticalPadding-[_adRemoverDescriptionLabel]-(>=descriptionDisabledMinimumVerticalPadding@1000)-[_disabledPurchasesLabel]-bottomPadding-|"
+//															 options: 0
+//															 metrics: metricsDictionary
+//															   views: viewsDictionary];
+//
+//	[self addConstraints: verticalConstraints];
+//	
+//	NSArray *disabledPurchasesLabelHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-leftPadding-[_disabledPurchasesLabel]-rightPadding-|"
+//																				options: 0
+//																				metrics: metricsDictionary
+//																				  views: viewsDictionary];
+//	
+//	[self addConstraints: disabledPurchasesLabelHorizontalConstraints];
+//	
+//	NSLayoutConstraint *buySpinnerHorizontalConstraint = [NSLayoutConstraint constraintWithItem: [self buySpinner]
+//																	  attribute: NSLayoutAttributeCenterX
 //																	  relatedBy: NSLayoutRelationEqual
-//																		toItem: [self adRemoverRestoreButton]
-//																	  attribute: NSLayoutAttributeHeight
+//																		toItem: [self adRemoverBuyButton]
+//																	  attribute: NSLayoutAttributeCenterX
 //																	 multiplier: 1
 //																	   constant: 0];
 //	
-//	[self addConstraint: restoreSpinnerHeightConstraint];
-
-}
+//	[self addConstraint: buySpinnerHorizontalConstraint];
+//	
+//	NSLayoutConstraint *buySpinnerVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self buySpinner]
+//																	attribute: NSLayoutAttributeCenterY
+//																	relatedBy: NSLayoutRelationEqual
+//																	   toItem: [self adRemoverBuyButton]
+//																	attribute: NSLayoutAttributeCenterY
+//																    multiplier: 1
+//																	 constant: 0];
+//	
+//	[self addConstraint: buySpinnerVerticalConstraint];
+//	
+////	NSLayoutConstraint *buySpinnerHeightConstraint = [NSLayoutConstraint constraintWithItem: [self buySpinner]
+////																   attribute: NSLayoutAttributeHeight
+////																   relatedBy: NSLayoutRelationEqual
+////																	 toItem: [self adRemoverBuyButton]
+////																   attribute: NSLayoutAttributeHeight
+////																  multiplier: 1
+////																    constant: 0];
+////	
+////	[self addConstraint: buySpinnerHeightConstraint];
+//	
+//	NSLayoutConstraint *restoreSpinnerHorizontalConstraint = [NSLayoutConstraint constraintWithItem: [self restoreSpinner]
+//																		 attribute: NSLayoutAttributeCenterX
+//																		 relatedBy: NSLayoutRelationEqual
+//																		    toItem: [self adRemoverRestoreButton]
+//																		 attribute: NSLayoutAttributeCenterX
+//																		multiplier: 1
+//																		  constant: 0];
+//	
+//	[self addConstraint: restoreSpinnerHorizontalConstraint];
+//	
+//	NSLayoutConstraint *restoreSpinnerVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self restoreSpinner]
+//																	    attribute: NSLayoutAttributeCenterY
+//																	    relatedBy: NSLayoutRelationEqual
+//																		  toItem: [self adRemoverRestoreButton]
+//																	    attribute: NSLayoutAttributeCenterY
+//																	   multiplier: 1
+//																		constant: 0];
+//	
+//	[self addConstraint: restoreSpinnerVerticalConstraint];
+//	
+////	NSLayoutConstraint *restoreSpinnerHeightConstraint = [NSLayoutConstraint constraintWithItem: [self restoreSpinner]
+////																	  attribute: NSLayoutAttributeHeight
+////																	  relatedBy: NSLayoutRelationEqual
+////																		toItem: [self adRemoverRestoreButton]
+////																	  attribute: NSLayoutAttributeHeight
+////																	 multiplier: 1
+////																	   constant: 0];
+////	
+////	[self addConstraint: restoreSpinnerHeightConstraint];
+//
+//}
 
 - (void) loadProducts
 {
@@ -879,6 +948,18 @@ static VEAdStationView *_sharedAdStationView = nil;
 			  withCompletionBlock: NULL];
 }
 
+- (void) updateConstraints
+{
+	if (![self hasSetupConstraints])
+	{
+		[self setupConstraints];
+
+		[self setHasSetupConstraints: YES];
+	}
+
+	[super updateConstraints];
+}
+
 - (void) appWillReOpen: (NSNotification *) notification
 {
 	BOOL canPurchase = [SKPaymentQueue canMakePayments];
@@ -959,7 +1040,13 @@ static VEAdStationView *_sharedAdStationView = nil;
 	
 	[[SKPaymentQueue defaultQueue] removeTransactionObserver: self];
 	
-	[[NSNotificationCenter defaultCenter] removeObserver: self];
+	[[NSNotificationCenter defaultCenter] removeObserver: self
+										   name: UIApplicationWillEnterForegroundNotification
+										 object: nil];
+
+	[[NSNotificationCenter defaultCenter] removeObserver: self
+										   name: UIContentSizeCategoryDidChangeNotification
+										 object: nil];
 	
 	//CPLog(@"ad station view dealloc");
 }

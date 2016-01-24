@@ -1,10 +1,13 @@
 PODS:
+  - Reveal-iOS-SDK (1.6.2)
   - SimulatorStatusMagic (1.7)
 
 DEPENDENCIES:
+  - Reveal-iOS-SDK
   - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SimulatorStatusMagic: 46c90a12f73abeda6d7c16876e1e0998b6ca5f4f
 
 COCOAPODS: 0.39.0

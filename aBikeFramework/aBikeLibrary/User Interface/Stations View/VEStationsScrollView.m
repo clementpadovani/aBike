@@ -68,11 +68,6 @@
 	return self;
 }
 
-- (BOOL)canBecomeFocused
-{
-	return YES;
-}
-
 - (void) setupViews
 {
 	NSUInteger numberOfStations = [VETimeFormatter numberOfBikeStations];
@@ -186,13 +181,6 @@
 	[self setStationViewsArray: [stationsViewArray copy]];
 }
 
-//- (void) updateConstraints
-//{
-//	[self setupConstraints];
-//	
-//	[super updateConstraints];
-//}
-
 - (void) setStations: (NSArray *) stations
 {
 	[stations enumerateObjectsUsingBlock: ^(Station *aStation, NSUInteger index, BOOL *stop) {
@@ -296,11 +284,6 @@
 - (void) dealloc
 {
 	[[NSNotificationCenter defaultCenter] removeObserver: self];
-}
-
-+ (BOOL) requiresConstraintBasedLayout
-{
-	return YES;
 }
 
 @end

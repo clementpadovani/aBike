@@ -34,8 +34,6 @@
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
-@property (nonatomic, copy) NSArray *currentConstraints;
-
 - (void) setCurrentStationIndex: (NSUInteger) currentStationIndex withNotification: (BOOL) notifies;
 
 - (void) pageControlDidChangeValue;
@@ -115,16 +113,6 @@
 	return self;
 }
 
-//- (UIView *) preferredFocusedView
-//{
-//	return [self stationsScrollView];
-//}
-
-- (BOOL)canBecomeFocused
-{
-	return YES;
-}
-
 - (void) tintColorDidChange
 {
 	//CPLog(@"pager tint did change");
@@ -179,21 +167,7 @@
 	[[self delegate] userDidScrollToNewStationForIndex: page];
 }
 
-- (void) layoutSubviews
-{
-	[super layoutSubviews];
-}
-
-- (void) traitCollectionDidChange:(UITraitCollection *)previousTraitCollection
-{
-	[super traitCollectionDidChange: previousTraitCollection];
-
-	[self removeConstraints: [self currentConstraints]];
-
-	[self setupConstraintsForTraitCollection: [self traitCollection]];
-}
-
-- (void) setupConstraintsForTraitCollection: (UITraitCollection * __nonnull) traitCollection
+- (void) setupConstraints
 {
 	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(self,
 													   _shadowView,
@@ -256,8 +230,6 @@
 	
 	[newConstraints addObjectsFromArray: verticalConstraints];
 
-		[self setCurrentConstraints: newConstraints];
-
 		[self addConstraints: newConstraints];
 }
 
@@ -265,7 +237,7 @@
 {
 	if (![self hasSetupConstraints])
 	{
-		[self setupConstraintsForTraitCollection: [self traitCollection]];
+		[self setupConstraints];
 
 		[self setHasSetupConstraints: YES];
 	}

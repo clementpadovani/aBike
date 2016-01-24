@@ -152,7 +152,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[self setStationsView: stationsView];
 	
-	[self setupConstraintsWithTraitCollection: nil];
+	[self setupConstraints];
 }
 
 - (void) viewDidAppear: (BOOL) animated
@@ -426,7 +426,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //	[[self originalContentView] layoutIfNeeded];
 //}
 
-- (void) setupConstraintsWithTraitCollection: (UITraitCollection * __nullable) traitCollection
+- (void) setupConstraints
 {	
 	NSDictionary *viewsDictionary = @{@"_mapContainerView" : [self mapContainerView],
 							    @"_stationsView" : [self stationsView]};
@@ -464,11 +464,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[newConstraints addObjectsFromArray: stationViewVerticalConstraints];
 
-		[NSLayoutConstraint deactivateConstraints: [self currentConstraints]];
-
-		[self setCurrentConstraints: newConstraints];
-
-		[NSLayoutConstraint activateConstraints: newConstraints];
+	[[self originalContentView] addConstraints: newConstraints];
 }
 
 - (void) dealloc

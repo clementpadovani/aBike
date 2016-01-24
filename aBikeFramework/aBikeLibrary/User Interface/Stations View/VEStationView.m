@@ -54,6 +54,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 @property (nonatomic, readwrite) BOOL loadedDirections;
 
+@property (nonatomic, assign) BOOL hasSetupConstraints;
+
 - (void) setupStationNameAndNumberLabels;
 
 - (void) setupHorizontalSeperatorView;
@@ -61,8 +63,6 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 - (void) setupAvailableLabels;
 
 - (void) setupAdditionalViews;
-
-- (void) setupConstraints;
 
 - (void) populateLabels;
 
@@ -105,8 +105,6 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 		[self setOpaque: NO];
 		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
-		
-		[self setupConstraints];
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(userInCityRectValueChanged:) name: kVELocationManagerUserInCityRectDidChangeNotification object: nil];
 		
@@ -339,6 +337,18 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	_directionsLabel = directionsLabel;
 	
 	_directionsButton = directionsButton;
+}
+
+- (void) updateConstraints
+{
+	if (![self hasSetupConstraints])
+	{
+		[self setupConstraints];
+
+		[self setHasSetupConstraints: YES];
+	}
+
+	[super updateConstraints];
 }
 
 - (void) setupConstraints

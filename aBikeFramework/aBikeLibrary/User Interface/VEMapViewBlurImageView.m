@@ -18,7 +18,7 @@
 
 @property (nonatomic, weak) UIVisualEffectView *blurEffectView;
 
-- (void) setupConstraints;
+@property (nonatomic, assign) BOOL hasSetupConstraints;
 
 @end
 
@@ -42,7 +42,6 @@
 
 		[blurEffectView setTranslatesAutoresizingMaskIntoConstraints: NO];
 
-
 		[self addSubview: blurEffectView];
 		
 		[self addSubview: shadowView];
@@ -56,8 +55,11 @@
 		[self setBackgroundColor: [UIColor clearColor]];
 		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
-		
-		[self setupConstraints];
+
+		[[NSNotificationCenter defaultCenter] addObserver: self
+										 selector: @selector(applicationStatusBarDidChangeFrame:)
+											name: UIApplicationDidChangeStatusBarFrameNotification
+										   object: nil];
 	}
 	
 	return self;
@@ -99,11 +101,39 @@
 		[self addConstraints: blurEffectViewVerticalConstraints];
 }
 
+- (void) applicationStatusBarDidChangeFrame: (NSNotification *) notification
+{
+	[self invalidateIntrinsicContentSize];
+}
+
 - (CGSize) intrinsicContentSize
 {
 	CGFloat statusBarHeight = [[VEConsul sharedConsul] statusBarHeight];
 	
 	return CGSizeMake(UIViewNoIntrinsicMetric, statusBarHeight);
+}
+
+- (void) dealloc
+{
+	[[NSNotificationCenter defaultCenter] removeObserver: self
+									  forKeyPath: UIApplicationDidChangeStatusBarFrameNotification];
+}
+
+- (void) updateConstraints
+{
+	if (![self hasSetupConstraints])
+	{
+		[self setupConstraints];
+
+		[self setHasSetupConstraints: YES];
+	}
+
+	[super updateConstraints];
+}
+
++ (BOOL) requiresConstraintBasedLayout
+{
+	return YES;
 }
 
 @end

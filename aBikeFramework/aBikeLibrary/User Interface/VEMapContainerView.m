@@ -24,6 +24,8 @@
 
 @property (weak, nonatomic, readwrite) MKMapView *mapView;
 
+@property (nonatomic, assign) BOOL hasSetupConstraints;
+
 - (void) setupConstraints;
 
 @end
@@ -60,8 +62,6 @@
 		_blurImageView = blurImageView;
 		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
-		
-		[self setupConstraints];
 	}
 	
 	return self;
@@ -103,6 +103,23 @@
 
 		
 	[self addConstraints: blurViewVerticalConstraints];
+}
+
+- (void) updateConstraints
+{
+	if (![self hasSetupConstraints])
+	{
+		[self setupConstraints];
+
+		[self setHasSetupConstraints: YES];
+	}
+
+	[super updateConstraints];
+}
+
++ (BOOL) requiresConstraintBasedLayout
+{
+	return YES;
 }
 
 @end
