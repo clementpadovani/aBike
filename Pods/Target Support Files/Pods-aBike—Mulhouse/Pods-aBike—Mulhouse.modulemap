@@ -1,6 +1,0 @@
-framework module Pods_aBike_Mulhouse {
-  umbrella header "Pods-aBike—Mulhouse-umbrella.h"
-
-  export *
-  module * { export * }
-}
