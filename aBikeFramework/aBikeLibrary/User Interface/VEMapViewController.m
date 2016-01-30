@@ -882,6 +882,20 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 	}];
 
+	if ([resultsArray count] != numberOfStations)
+	{
+		if ([resultsArray count] > numberOfStations)
+		{
+			resultsArray = [resultsArray subarrayWithRange: NSMakeRange(0, numberOfStations)];
+		}
+		else
+		{
+			CPLog(@"count differs: %lu", (unsigned long) numberOfStations);
+
+			CPLog(@"results: %lu", (unsigned long) [resultsArray count]);
+		}
+	}
+
 	#if kEnableCrashlytics
 
 		if (resultsError)
@@ -902,7 +916,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		}
 		
 	}];
-	
+
 	NSArray *sortedNumbersToFetch = [tempNumbersToFetch sortedArrayUsingSelector: @selector(compare:)];
 	
 	NSAssert(!resultsError, @"Fetch error: %@", resultsError);
@@ -932,6 +946,20 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 		fetchedStations = [standardContext executeFetchRequest: stationFetchRequest error: &stationFetchRequestError];
 	//}];
+
+	if ([fetchedStations count] != numberOfStations)
+	{
+		if ([fetchedStations count] > numberOfStations)
+		{
+			fetchedStations = [fetchedStations subarrayWithRange: NSMakeRange(0, numberOfStations)];
+		}
+		else
+		{
+			CPLog(@"numbers to fetch: %lu", (unsigned long) numberOfStations);
+
+			CPLog(@"fetched stations: %lu", (unsigned long) [fetchedStations count]);
+		}
+	}
 
 	#if kEnableCrashlytics
 

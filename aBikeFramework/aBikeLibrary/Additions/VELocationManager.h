@@ -26,7 +26,7 @@ static NSString * const kVELocationManagerUserInCityRectDidChangeNotification = 
 
 @end
 
-@interface VELocationManager : NSObject <CLLocationManagerDelegate>
+@interface VELocationManager : NSObject
 
 @property (nonatomic, weak) id <VELocationManagerDelegate> delegate;
 @property (nonatomic, readonly, getter = userIsInCity) BOOL userInCity;

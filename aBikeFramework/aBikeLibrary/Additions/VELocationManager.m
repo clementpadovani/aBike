@@ -61,7 +61,7 @@ static NSString * const kCrashlyticsAuthorizationStateKey = @"Authorization Stat
 
 static NSString * const kCrashlyticsCurrentLocationKey = @"Current Location";
 
-@interface VELocationManager () <SKStoreProductViewControllerDelegate>
+@interface VELocationManager () <SKStoreProductViewControllerDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
@@ -160,12 +160,7 @@ static VELocationManager *_sharedLocationManager = nil;
 		
 		[locationManager setDelegate: self];
 		
-		if ([locationManager respondsToSelector: @selector(requestWhenInUseAuthorization)])
-		{
-//			#ifndef SCREENSHOTS
-				[locationManager requestWhenInUseAuthorization];
-//			#endif
-		}
+		[locationManager requestWhenInUseAuthorization];
 
 		[locationManager setDesiredAccuracy: kCLLocationAccuracyBest];
 
@@ -714,9 +709,14 @@ static VELocationManager *_sharedLocationManager = nil;
 {
 	CPLog(@"did resume location updates");
 	
-	
 	if ([[self delegate] respondsToSelector: @selector(locationUpdatesHaveResumed)])
 		[[self delegate] locationUpdatesHaveResumed];
+
+	CLLocation *location = [manager location];
+
+	if (location)
+		if ([[self delegate] respondsToSelector: @selector(userHasMovedToNewLocation:)])
+			[[self delegate] userHasMovedToNewLocation: location];
 }
 
 - (void) locationManagerDidPauseLocationUpdates: (CLLocationManager *) manager
