@@ -621,7 +621,7 @@
 				5F244FD900EA1237D21420B805D9FD12 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		8882149AEDAEDFB3C206F32DBCF2DE87 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */ = {
 			isa = XCConfigurationList;
@@ -631,7 +631,7 @@
 				C6E327F208D6A0949BD19A42A6673A66 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		A7A65C31F4FE78F74FBBDE8CA10FF45B /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
 			isa = XCConfigurationList;
@@ -641,7 +641,7 @@
 				5D50B67C450FBB77495EEBA381F81354 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 /* End XCConfigurationList section */
 	};
