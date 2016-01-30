@@ -21,14 +21,14 @@ extern BOOL VECityRectContainsLocationCoordinates(VECityRect const aCityRect, CL
 
 extern VECityRect VECityRectMakeLarger(VECityRect aCityRect);
 
-#ifndef RELEASE
-
-static inline NSString * NSStringFromVECityRect(VECityRect const aCityRect)
-{
-	return [NSString stringWithFormat: @"Min: {%f:%f} Max: {%f: %f}", aCityRect.minLat, aCityRect.minLon, aCityRect.maxLat, aCityRect.maxLon];
-}
-
-#endif
+//#ifndef RELEASE
+//
+//static inline NSString * NSStringFromVECityRect(VECityRect const aCityRect)
+//{
+//	return [NSString stringWithFormat: @"Min: {%f:%f} Max: {%f: %f}", aCityRect.minLat, aCityRect.minLon, aCityRect.maxLat, aCityRect.maxLon];
+//}
+//
+//#endif
 
 static NSString * const kUserSettingsCityRectChangedValueNotification = @"kUserSettingsCityRectChangedValueNotification";
 

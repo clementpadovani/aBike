@@ -111,20 +111,20 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 300;
 
 @interface NSData (CityRect)
 
-+ (NSData *) dataWithCityRect: (VECityRect) cityRect;
++ (NSData *) ve_dataWithCityRect: (VECityRect) cityRect;
 
-@property (NS_NONATOMIC_IOSONLY, readonly) VECityRect cityRect;
+@property (NS_NONATOMIC_IOSONLY, readonly) VECityRect ve_cityRect;
 
 @end
 
 @implementation NSData (CityRect)
 
-+ (NSData *) dataWithCityRect: (VECityRect) cityRect
++ (NSData *) ve_dataWithCityRect: (VECityRect) cityRect
 {
 	return [NSData dataWithBytes: &cityRect length: sizeof(VECityRect)];
 }
 
-- (VECityRect) cityRect
+- (VECityRect) ve_cityRect
 {
 	VECityRect cityRect;
 	
@@ -169,7 +169,7 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 300;
 {
 	[self willChangeValueForKey: @"largerCityRect"];
 	
-	[self setPrimitiveLargerCityRect: [NSData dataWithCityRect: largerCityRect]];
+	[self setPrimitiveLargerCityRect: [NSData ve_dataWithCityRect: largerCityRect]];
 	
 	[self didChangeValueForKey: @"largerCityRect"];
 	
@@ -495,7 +495,7 @@ static UserSettings *_sharedSettings = nil;
 {
 	[self willAccessValueForKey: @"cityRect"];
 	
-	VECityRect cityRect = [[self primitiveCityRect] cityRect];
+	VECityRect cityRect = [[self primitiveCityRect] ve_cityRect];
 	
 	[self didAccessValueForKey: @"cityRect"];
 	
@@ -506,7 +506,7 @@ static UserSettings *_sharedSettings = nil;
 {
 	[self willChangeValueForKey: @"cityRect"];
 	
-	[self setPrimitiveCityRect: [NSData dataWithCityRect: cityRect]];
+	[self setPrimitiveCityRect: [NSData ve_dataWithCityRect: cityRect]];
 	
 	[self didChangeValueForKey: @"cityRect"];
 }
@@ -515,7 +515,7 @@ static UserSettings *_sharedSettings = nil;
 {
 	[self willAccessValueForKey: @"largerCityRect"];
 	
-	VECityRect largerCityRect = [[self primitiveLargerCityRect] cityRect];
+	VECityRect largerCityRect = [[self primitiveLargerCityRect] ve_cityRect];
 	
 	[self didAccessValueForKey: @"largerCityRect"];
 	

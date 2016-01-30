@@ -35,13 +35,13 @@ static NSCache *_colorsCache;
 
 @interface UIColor (Notifications)
 
-+ (void) receivedMemoryWarning: (NSNotification *) notification;
++ (void) ve_receivedMemoryWarning: (NSNotification *) notification;
 
 @end
 
 @implementation UIColor (Notifications)
 
-+ (void) receivedMemoryWarning: (NSNotification *) notification
++ (void) ve_receivedMemoryWarning: (NSNotification *) notification
 {
 	//CPLog(@"received mem warning");
 	
@@ -52,44 +52,9 @@ static NSCache *_colorsCache;
 
 @end
 
-@interface UIColor (ColorMix)
-
-+ (UIColor *) colorByMixingAColor: (UIColor *) aColor withAnotherColor: (UIColor *) anotherColor;
-
-@end
-
-@implementation UIColor (ColorMix)
-
 #pragma clang diagnostic push
 
 #pragma clang diagnostic ignored "-Wunreachable-code"
-
-+ (UIColor *) colorByMixingAColor: (UIColor *) aColor withAnotherColor: (UIColor *) anotherColor
-{
-	CGFloat aColorRed, aColorGreen, aColorBlue, aColorAlpha;
-	
-	CGFloat anotherColorRed, anotherColorGreen, anotherColorBlue, anotherColorAlpha;
-	
-	[aColor getRed: &aColorRed green: &aColorGreen blue: &aColorBlue alpha: &aColorAlpha];
-	
-	[anotherColor getRed: &anotherColorRed green: &anotherColorGreen blue: &anotherColorBlue alpha: &anotherColorAlpha];
-	
-	CGFloat finalRed, finalGreen, finalBlue, finalAlpha;
-	
-	CGFloat averager = 2.f;
-	
-	finalRed = (aColorRed + anotherColorRed) / averager;
-	
-	finalGreen = (aColorGreen + anotherColorGreen) / averager;
-	
-	finalBlue = (aColorBlue + anotherColorBlue) / averager;
-	
-	finalAlpha = (aColorAlpha + anotherColorAlpha) / averager;
-	
-	return [UIColor colorWithRed: finalRed green: finalGreen blue: finalBlue alpha: finalAlpha];
-}
-
-@end
 
 @implementation UIColor (VEMainColor)
 
@@ -98,7 +63,7 @@ static NSCache *_colorsCache;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 		
-		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(receivedMemoryWarning:) name: UIApplicationDidReceiveMemoryWarningNotification object: nil];
+		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(ve_receivedMemoryWarning:) name: UIApplicationDidReceiveMemoryWarningNotification object: nil];
 		
 		_colorsCache = [[NSCache alloc] init];
 		

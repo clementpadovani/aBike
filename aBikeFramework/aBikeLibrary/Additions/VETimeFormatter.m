@@ -270,7 +270,7 @@ BOOL includesAdRemover = YES;
 	{
 		CPLog(@"invalid");
 		
-		[[NSUserDefaults standardUserDefaults] setObject: [NSNumber numberWithUnsignedInteger: kNumberOfBikeStationsDefault] forKey: kNumberOfBikeStations];
+		[[NSUserDefaults standardUserDefaults] setObject: @((NSUInteger) kNumberOfBikeStationsDefault) forKey: kNumberOfBikeStations];
 		
 		[[NSUserDefaults standardUserDefaults] synchronize];
 		
@@ -278,22 +278,22 @@ BOOL includesAdRemover = YES;
 	}
 }
 
-+ (NSString *) formattedDurationForLastUpdate: (NSDate *) lastUpdate
-{
-	NSTimeInterval duration = [[NSDate date] timeIntervalSinceDate: lastUpdate];
-	
-	NSTimeInterval goodTimeInterval = (duration / 60);
-	
-	goodTimeInterval = ceil(goodTimeInterval);
-	
-	NSString *formattedDurationString;
-	
-	if (goodTimeInterval > 1)
-		formattedDurationString = [NSString stringWithFormat: NSLocalizedString(@"%.0f minutes ago", @"VETimeFormatter_LastUpdate_FormattedDurationPlurialMinutes"), goodTimeInterval];
-	else
-		formattedDurationString = [NSString stringWithFormat: NSLocalizedString(@"%.0f minute ago", @"VETimeFormatter_LastUpdate_FormattedDurationSingularMinute"), goodTimeInterval];
-	
-	return formattedDurationString;
-}
+//+ (NSString *) formattedDurationForLastUpdate: (NSDate *) lastUpdate
+//{
+//	NSTimeInterval duration = [[NSDate date] timeIntervalSinceDate: lastUpdate];
+//	
+//	NSTimeInterval goodTimeInterval = (duration / 60);
+//	
+//	goodTimeInterval = ceil(goodTimeInterval);
+//	
+//	NSString *formattedDurationString;
+//	
+//	if (goodTimeInterval > 1)
+//		formattedDurationString = [NSString stringWithFormat: NSLocalizedString(@"%.0f minutes ago", @"VETimeFormatter_LastUpdate_FormattedDurationPlurialMinutes"), goodTimeInterval];
+//	else
+//		formattedDurationString = [NSString stringWithFormat: NSLocalizedString(@"%.0f minute ago", @"VETimeFormatter_LastUpdate_FormattedDurationSingularMinute"), goodTimeInterval];
+//	
+//	return formattedDurationString;
+//}
 
 @end
