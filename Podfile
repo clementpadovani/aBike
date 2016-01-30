@@ -18,6 +18,8 @@ end
 
 target 'aBike—Lyon' do
 
+normalPods
+
 end
 
 target 'aBikeFramework' do
@@ -40,31 +42,37 @@ end
 
 target 'aBike—Bruxelles' do
 
-# normalPods
+normalPods
 
 end
 
 target 'aBike—Marseille' do
 
-# normalPods
+normalPods
 
 end
 
 target 'aBike—Mulhouse' do
 
-# normalPods
+normalPods
+
+end
+
+target 'aBike—Nantes' do
+
+normalPods
 
 end
 
 target 'aBike—Paris' do
 
-# normalPods
+normalPods
 
 end
 
 target 'aBike—Toulouse' do
 
-# normalPods
+normalPods
 
 end
 

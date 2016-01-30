@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192B456925B12100F4224555 /* Pods_aBike_Lyon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10591A7DA26D8EA4B6D010E4 /* Pods_aBike_Lyon.framework */; };
+		2726B28B7E34A3963E346EFA /* Pods_aBike_Paris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1A50DC4E5F2D3C80FD01C0 /* Pods_aBike_Paris.framework */; };
+		43777945ECAB1FE19B2D1E70 /* Pods_aBike_Marseille.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A8198520282A57F404411 /* Pods_aBike_Marseille.framework */; };
 		43821C4DC2B60011A1196C92 /* Pods_aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01924533FB6D38255F9C4899 /* Pods_aBikeFramework.framework */; };
+		45BFBBB076446FD0707CA39A /* Pods_aBike_Mulhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D5E265820A3A2F884DB7D /* Pods_aBike_Mulhouse.framework */; };
 		5906FBE81C4A5FBB00A2D3D1 /* CLLocation+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA451C495394003B686A /* CLLocation+Additions.h */; };
 		5906FBE91C4A5FBB00A2D3D1 /* NSBundle+VELibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA471C495394003B686A /* NSBundle+VELibrary.h */; };
 		5906FBEA1C4A5FBB00A2D3D1 /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA491C495394003B686A /* NSNumber+Extensions.h */; };
@@ -184,6 +188,8 @@
 		59567E7F1C4A510A0042767D /* aBikeCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7B1C495394003B686A /* aBikeCities.plist */; };
 		59567E801C4A510A0042767D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7D1C495394003B686A /* Localizable.strings */; };
 		59567E811C4A511E0042767D /* VEConsulDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAB11C495394003B686A /* VEConsulDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59664B6F1C5D1D64009A721B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
+		59664B701C5D1D64009A721B /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
 		596990B41C5D080B00AEFFBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 596990B31C5D080B00AEFFBC /* main.m */; };
 		596990BF1C5D080B00AEFFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596990BE1C5D080B00AEFFBC /* Assets.xcassets */; };
 		596990C81C5D083A00AEFFBC /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -199,8 +205,6 @@
 		596990DA1C5D0AFB00AEFFBC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 596990DC1C5D0AFB00AEFFBC /* Localizable.strings */; };
 		596990E11C5D0B4800AEFFBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 596990E31C5D0B4800AEFFBC /* InfoPlist.strings */; };
 		596990E81C5D0B8E00AEFFBC /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 596990E71C5D0B8E00AEFFBC /* VEAppDelegate.m */; };
-		596990F81C5D0C4600AEFFBC /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
-		596990F91C5D0C4600AEFFBC /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
 		5975F2761C4BBF2800839B95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975F2751C4BBF2800839B95 /* main.m */; };
 		5975F2811C4BBF2800839B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975F2801C4BBF2800839B95 /* Assets.xcassets */; };
 		5975F28C1C4BBF5500839B95 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975F28B1C4BBF5500839B95 /* VEAppDelegate.m */; };
@@ -305,9 +309,19 @@
 		59FACE191C495873005DB202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		59FACE1C1C495877005DB202 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		59FACE251C495E29005DB202 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE241C495E29005DB202 /* Launch Screen.storyboard */; };
+		AC04BEDC71E49F2DBFE68CFF /* Pods_aBike_Bruxelles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6134E00D349FF12F22E6EF2 /* Pods_aBike_Bruxelles.framework */; };
+		D4EAA4C1D41CACB762F9AA63 /* Pods_aBike_Toulouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA76D0CB1182F842B4D50F5 /* Pods_aBike_Toulouse.framework */; };
+		D96E30EA4BC2F683332FF635 /* Pods_aBike_Nantes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBCF2B188FA8F79AF6626F0 /* Pods_aBike_Nantes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5913E2D21C5D1175003385FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 596990AF1C5D080A00AEFFBC;
+			remoteInfo = "aBike—Nantes";
+		};
 		593AD9581C495217003B686A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
@@ -543,10 +557,16 @@
 
 /* Begin PBXFileReference section */
 		01924533FB6D38255F9C4899 /* Pods_aBikeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9BFCB2786792CA92CB4B36 /* Pods-aBike—Mulhouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Mulhouse.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.screenshots.xcconfig"; sourceTree = "<group>"; };
+		0C0A92739F18F72A0793B248 /* Pods-aBike—Paris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Paris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.debug.xcconfig"; sourceTree = "<group>"; };
 		10591A7DA26D8EA4B6D010E4 /* Pods_aBike_Lyon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Lyon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		211D5E265820A3A2F884DB7D /* Pods_aBike_Mulhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Mulhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1A50DC4E5F2D3C80FD01C0 /* Pods_aBike_Paris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Paris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3329AC4A3E0814B10C61FD15 /* Pods-aBike—Lyon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Lyon.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Lyon/Pods-aBike—Lyon.release.xcconfig"; sourceTree = "<group>"; };
 		361E2CEF3D8FEBB1F0EF9463 /* Pods-aBikeFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBikeFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.release.xcconfig"; sourceTree = "<group>"; };
+		3D648FA63CCFCA97EA8A036B /* Pods-aBike—Paris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Paris.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.release.xcconfig"; sourceTree = "<group>"; };
+		45D70B156703717D27937739 /* Pods-aBike—Marseille.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Marseille.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.screenshots.xcconfig"; sourceTree = "<group>"; };
+		47A420D0AB06D1E696100585 /* Pods-aBike—Bruxelles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Bruxelles.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.release.xcconfig"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		591150C01C4ACB2900F87EA6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		591150C11C4ACB2900F87EA6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -770,11 +790,27 @@
 		59FACE221C49588A005DB202 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		59FACE231C49588B005DB202 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59FACE241C495E29005DB202 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5FBCF2B188FA8F79AF6626F0 /* Pods_aBike_Nantes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Nantes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA76D0CB1182F842B4D50F5 /* Pods_aBike_Toulouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Toulouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80EAD3679E42194A67C40C01 /* Pods-aBike—Toulouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Toulouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.debug.xcconfig"; sourceTree = "<group>"; };
+		811AB524723F4DA1365D6799 /* Pods-aBike—Mulhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Mulhouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.release.xcconfig"; sourceTree = "<group>"; };
+		817E483F75FD295A8028734D /* Pods-aBike—Marseille.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Marseille.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.debug.xcconfig"; sourceTree = "<group>"; };
+		81FA3D19AF95DCD95279A5E7 /* Pods-aBike—Bruxelles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Bruxelles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.debug.xcconfig"; sourceTree = "<group>"; };
 		8527C84202BE6B2916687945 /* Pods-aBikeFramework.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBikeFramework.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.screenshots.xcconfig"; sourceTree = "<group>"; };
+		96020BA1A18489247748C27E /* Pods-aBike—Marseille.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Marseille.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.release.xcconfig"; sourceTree = "<group>"; };
+		9ED429724507D802108A238E /* Pods-aBike—Toulouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Toulouse.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.screenshots.xcconfig"; sourceTree = "<group>"; };
+		A0C10EA479299E749175F1F4 /* Pods-aBike—Nantes.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Nantes.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.screenshots.xcconfig"; sourceTree = "<group>"; };
 		A6134E00D349FF12F22E6EF2 /* Pods_aBike_Bruxelles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Bruxelles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23F123F50C1C21B77DE846C /* Pods-aBike—Nantes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Nantes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0D0A1F9D146B7A0BFF45B1 /* Pods-aBikeFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBikeFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		D66BD8C81B1753AD7C7E7060 /* Pods-aBike—Bruxelles.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Bruxelles.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.screenshots.xcconfig"; sourceTree = "<group>"; };
+		E04E93D7BF74EB75E96C6BB3 /* Pods-aBike—Paris.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Paris.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.screenshots.xcconfig"; sourceTree = "<group>"; };
 		E06A8198520282A57F404411 /* Pods_aBike_Marseille.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Marseille.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2F6F9F50ED1D7B9B9E3BED /* Pods-aBike—Lyon.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Lyon.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Lyon/Pods-aBike—Lyon.screenshots.xcconfig"; sourceTree = "<group>"; };
+		EA55E1E1D9BD644827FBDFA2 /* Pods-aBike—Mulhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Mulhouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.debug.xcconfig"; sourceTree = "<group>"; };
+		F652CB4ED4DB151A12F0F60F /* Pods-aBike—Lyon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Lyon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Lyon/Pods-aBike—Lyon.debug.xcconfig"; sourceTree = "<group>"; };
+		FC75F37D5CE0EEBC37C775F1 /* Pods-aBike—Toulouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Toulouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.release.xcconfig"; sourceTree = "<group>"; };
+		FDE3938AE6AA018A940A57F9 /* Pods-aBike—Nantes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Nantes.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -789,6 +825,7 @@
 				591150C21C4ACB2900F87EA6 /* Crashlytics.framework in Frameworks */,
 				593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */,
 				591150C41C4ACB2900F87EA6 /* Fabric.framework in Frameworks */,
+				192B456925B12100F4224555 /* Pods_aBike_Lyon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +869,7 @@
 				596990C81C5D083A00AEFFBC /* aBikeFramework.framework in Frameworks */,
 				596990D31C5D0A8900AEFFBC /* iAd.framework in Frameworks */,
 				596990D51C5D0A9300AEFFBC /* Fabric.framework in Frameworks */,
+				D96E30EA4BC2F683332FF635 /* Pods_aBike_Nantes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +891,7 @@
 				5975F28D1C4BBF7E00839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35B1C4BCAAB00839B95 /* Security.framework in Frameworks */,
 				5975F3511C4BCA9800839B95 /* Fabric.framework in Frameworks */,
+				43777945ECAB1FE19B2D1E70 /* Pods_aBike_Marseille.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +906,7 @@
 				5975F2C11C4BC3C300839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35A1C4BCAAA00839B95 /* Security.framework in Frameworks */,
 				5975F3521C4BCA9900839B95 /* Fabric.framework in Frameworks */,
+				45BFBBB076446FD0707CA39A /* Pods_aBike_Mulhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +921,7 @@
 				5975F2F81C4BC61400839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F3591C4BCAA900839B95 /* Security.framework in Frameworks */,
 				5975F3531C4BCA9A00839B95 /* Fabric.framework in Frameworks */,
+				2726B28B7E34A3963E346EFA /* Pods_aBike_Paris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +936,7 @@
 				5975F3331C4BC85B00839B95 /* iAd.framework in Frameworks */,
 				5975F34E1C4BCA9300839B95 /* Crashlytics.framework in Frameworks */,
 				5975F32E1C4BC85400839B95 /* aBikeFramework.framework in Frameworks */,
+				D4EAA4C1D41CACB762F9AA63 /* Pods_aBike_Toulouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,6 +951,7 @@
 				597A409A1C4BAD3200E4B781 /* aBikeFramework.framework in Frameworks */,
 				5975F35C1C4BCAAB00839B95 /* Security.framework in Frameworks */,
 				5975F3501C4BCA9800839B95 /* Fabric.framework in Frameworks */,
+				AC04BEDC71E49F2DBFE68CFF /* Pods_aBike_Bruxelles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +1010,7 @@
 				2E1A50DC4E5F2D3C80FD01C0 /* Pods_aBike_Paris.framework */,
 				7AA76D0CB1182F842B4D50F5 /* Pods_aBike_Toulouse.framework */,
 				01924533FB6D38255F9C4899 /* Pods_aBikeFramework.framework */,
+				5FBCF2B188FA8F79AF6626F0 /* Pods_aBike_Nantes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1476,6 +1520,27 @@
 				BE0D0A1F9D146B7A0BFF45B1 /* Pods-aBikeFramework.debug.xcconfig */,
 				361E2CEF3D8FEBB1F0EF9463 /* Pods-aBikeFramework.release.xcconfig */,
 				8527C84202BE6B2916687945 /* Pods-aBikeFramework.screenshots.xcconfig */,
+				F652CB4ED4DB151A12F0F60F /* Pods-aBike—Lyon.debug.xcconfig */,
+				3329AC4A3E0814B10C61FD15 /* Pods-aBike—Lyon.release.xcconfig */,
+				EA2F6F9F50ED1D7B9B9E3BED /* Pods-aBike—Lyon.screenshots.xcconfig */,
+				81FA3D19AF95DCD95279A5E7 /* Pods-aBike—Bruxelles.debug.xcconfig */,
+				47A420D0AB06D1E696100585 /* Pods-aBike—Bruxelles.release.xcconfig */,
+				D66BD8C81B1753AD7C7E7060 /* Pods-aBike—Bruxelles.screenshots.xcconfig */,
+				817E483F75FD295A8028734D /* Pods-aBike—Marseille.debug.xcconfig */,
+				96020BA1A18489247748C27E /* Pods-aBike—Marseille.release.xcconfig */,
+				45D70B156703717D27937739 /* Pods-aBike—Marseille.screenshots.xcconfig */,
+				EA55E1E1D9BD644827FBDFA2 /* Pods-aBike—Mulhouse.debug.xcconfig */,
+				811AB524723F4DA1365D6799 /* Pods-aBike—Mulhouse.release.xcconfig */,
+				0B9BFCB2786792CA92CB4B36 /* Pods-aBike—Mulhouse.screenshots.xcconfig */,
+				B23F123F50C1C21B77DE846C /* Pods-aBike—Nantes.debug.xcconfig */,
+				FDE3938AE6AA018A940A57F9 /* Pods-aBike—Nantes.release.xcconfig */,
+				A0C10EA479299E749175F1F4 /* Pods-aBike—Nantes.screenshots.xcconfig */,
+				0C0A92739F18F72A0793B248 /* Pods-aBike—Paris.debug.xcconfig */,
+				3D648FA63CCFCA97EA8A036B /* Pods-aBike—Paris.release.xcconfig */,
+				E04E93D7BF74EB75E96C6BB3 /* Pods-aBike—Paris.screenshots.xcconfig */,
+				80EAD3679E42194A67C40C01 /* Pods-aBike—Toulouse.debug.xcconfig */,
+				FC75F37D5CE0EEBC37C775F1 /* Pods-aBike—Toulouse.release.xcconfig */,
+				9ED429724507D802108A238E /* Pods-aBike—Toulouse.screenshots.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1585,11 +1650,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 593AD9391C4951E7003B686A /* Build configuration list for PBXNativeTarget "aBike—Lyon" */;
 			buildPhases = (
+				AB62D366D08C017A125C412F /* Check Pods Manifest.lock */,
 				593AD91E1C4951E7003B686A /* Sources */,
 				593AD91F1C4951E7003B686A /* Frameworks */,
 				593AD9201C4951E7003B686A /* Resources */,
 				593AD94D1C495208003B686A /* Embed Frameworks */,
 				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
+				67AF793D6A0E4865AB9083E8 /* Embed Pods Frameworks */,
+				99E02C19C74CB353C04C79DF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1611,6 +1679,7 @@
 				593AD94F1C495217003B686A /* Frameworks */,
 				593AD9501C495217003B686A /* Headers */,
 				593AD9511C495217003B686A /* Resources */,
+				59BC1A191C5D196D00BD5500 /* Embed Pods Frameworks */,
 				A796787A32F4ED803E9EDF78 /* Copy Pods Resources */,
 				5945D9341C54F08000813FF2 /* Fabric */,
 			);
@@ -1664,10 +1733,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 596990C71C5D080B00AEFFBC /* Build configuration list for PBXNativeTarget "aBike—Nantes" */;
 			buildPhases = (
+				A4FABE3BECFD696E56E715E2 /* Check Pods Manifest.lock */,
 				596990AC1C5D080A00AEFFBC /* Sources */,
 				596990AD1C5D080A00AEFFBC /* Frameworks */,
 				596990AE1C5D080A00AEFFBC /* Resources */,
 				596990CC1C5D083A00AEFFBC /* Embed Frameworks */,
+				82DEDEDBAEF43E64116988DE /* Embed Pods Frameworks */,
+				134C30BD191F862C8A8C702E /* Copy Pods Resources */,
 				596990D01C5D0A4400AEFFBC /* Fabric */,
 			);
 			buildRules = (
@@ -1702,11 +1774,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F2891C4BBF2800839B95 /* Build configuration list for PBXNativeTarget "aBike—Marseille" */;
 			buildPhases = (
+				4FA2244234B79D9346E9DF55 /* Check Pods Manifest.lock */,
 				5975F26E1C4BBF2800839B95 /* Sources */,
 				5975F26F1C4BBF2800839B95 /* Frameworks */,
 				5975F2701C4BBF2800839B95 /* Resources */,
 				5975F2911C4BBF7E00839B95 /* Embed Frameworks */,
 				5975F3641C4BCAF200839B95 /* Fabric */,
+				56222586094D80AF3BEDA1CE /* Embed Pods Frameworks */,
+				2C90A88F271C8A1D23B8CB74 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1722,11 +1797,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F2BC1C4BC37C00839B95 /* Build configuration list for PBXNativeTarget "aBike—Mulhouse" */;
 			buildPhases = (
+				FE274B861C232B55A68E236E /* Check Pods Manifest.lock */,
 				5975F2A41C4BC37C00839B95 /* Sources */,
 				5975F2A51C4BC37C00839B95 /* Frameworks */,
 				5975F2A61C4BC37C00839B95 /* Resources */,
 				5975F2C51C4BC3C400839B95 /* Embed Frameworks */,
 				5975F3631C4BCAEB00839B95 /* Fabric */,
+				0FAB002E5FEB86C53C8E0236 /* Embed Pods Frameworks */,
+				604AA3CD7B0B93C7A3450E47 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1742,10 +1820,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F2F31C4BC5DA00839B95 /* Build configuration list for PBXNativeTarget "aBike—Paris" */;
 			buildPhases = (
+				A9D6D1A95D62A5C39F8A5F88 /* Check Pods Manifest.lock */,
 				5975F2DB1C4BC5DA00839B95 /* Sources */,
 				5975F2DC1C4BC5DA00839B95 /* Frameworks */,
 				5975F2DD1C4BC5DA00839B95 /* Resources */,
 				5975F2FC1C4BC61400839B95 /* Embed Frameworks */,
+				A7F877425E10DB0B94A1FB34 /* Embed Pods Frameworks */,
+				101CC53A395EB09FD10185DE /* Copy Pods Resources */,
 				5975F3621C4BCAE300839B95 /* Fabric */,
 			);
 			buildRules = (
@@ -1762,11 +1843,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5975F32A1C4BC83200839B95 /* Build configuration list for PBXNativeTarget "aBike—Toulouse" */;
 			buildPhases = (
+				32510849AA6AE71CE80F002C /* Check Pods Manifest.lock */,
 				5975F3121C4BC83100839B95 /* Sources */,
 				5975F3131C4BC83100839B95 /* Frameworks */,
 				5975F3141C4BC83100839B95 /* Resources */,
 				5975F3321C4BC85400839B95 /* Embed Frameworks */,
 				5975F3611C4BCAD900839B95 /* Fabric */,
+				3D0AA418F2B9E9F031B30208 /* Embed Pods Frameworks */,
+				3BEA90604F14C71EC3BDD3BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1782,11 +1866,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 597A40991C4BACE900E4B781 /* Build configuration list for PBXNativeTarget "aBike—Bruxelles" */;
 			buildPhases = (
+				AB6175AA6B03B4856CB95DA7 /* Check Pods Manifest.lock */,
 				597A407E1C4BACE800E4B781 /* Sources */,
 				597A407F1C4BACE800E4B781 /* Frameworks */,
 				597A40801C4BACE800E4B781 /* Resources */,
 				597A409E1C4BAD3300E4B781 /* Embed Frameworks */,
 				5975F3651C4BCAFA00839B95 /* Fabric */,
+				B2C5286E4021E9833C9AF187 /* Embed Pods Frameworks */,
+				E4FD9D0D50EC9C615EE4913D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1815,6 +1902,7 @@
 				59BF6A711C4C198000AF11E3 /* PBXTargetDependency */,
 				59DF857E1C4C1AAC00EE5269 /* PBXTargetDependency */,
 				5989169D1C4C1BCE00DDD3F4 /* PBXTargetDependency */,
+				5913E2D31C5D1175003385FF /* PBXTargetDependency */,
 			);
 			name = "aBike—LyonUITests";
 			productName = "aBike—LyonUITests";
@@ -2195,6 +2283,141 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0FAB002E5FEB86C53C8E0236 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		101CC53A395EB09FD10185DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		134C30BD191F862C8A8C702E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C90A88F271C8A1D23B8CB74 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32510849AA6AE71CE80F002C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BEA90604F14C71EC3BDD3BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0AA418F2B9E9F031B30208 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA2244234B79D9346E9DF55 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56222586094D80AF3BEDA1CE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5945D9341C54F08000813FF2 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2321,6 +2544,96 @@
 			shellPath = /bin/sh;
 			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
 		};
+		59BC1A191C5D196D00BD5500 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		604AA3CD7B0B93C7A3450E47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67AF793D6A0E4865AB9083E8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Lyon/Pods-aBike—Lyon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82DEDEDBAEF43E64116988DE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E02C19C74CB353C04C79DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Lyon/Pods-aBike—Lyon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FABE3BECFD696E56E715E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		A796787A32F4ED803E9EDF78 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2336,7 +2649,112 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A7F877425E10DB0B94A1FB34 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D6D1A95D62A5C39F8A5F88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6175AA6B03B4856CB95DA7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB62D366D08C017A125C412F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C5286E4021E9833C9AF187 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D60C0B923F8F90BBBBD5D620 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FD9D0D50EC9C615EE4913D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE274B861C232B55A68E236E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2477,8 +2895,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				596990F91C5D0C4600AEFFBC /* aBike_LyonUITests.swift in Sources */,
-				596990F81C5D0C4600AEFFBC /* SnapshotHelper.swift in Sources */,
+				59664B701C5D1D64009A721B /* aBike_LyonUITests.swift in Sources */,
+				59664B6F1C5D1D64009A721B /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2584,6 +3002,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5913E2D31C5D1175003385FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 596990AF1C5D080A00AEFFBC /* aBike—Nantes */;
+			targetProxy = 5913E2D21C5D1175003385FF /* PBXContainerItemProxy */;
+		};
 		593AD9591C495217003B686A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 593AD9521C495217003B686A /* aBikeFramework */;
@@ -2961,6 +3384,7 @@
 		};
 		593AD93A1C4951E7003B686A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F652CB4ED4DB151A12F0F60F /* Pods-aBike—Lyon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2992,6 +3416,7 @@
 		};
 		593AD93B1C4951E7003B686A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3329AC4A3E0814B10C61FD15 /* Pods-aBike—Lyon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
@@ -3265,6 +3690,7 @@
 		};
 		596990C41C5D080B00AEFFBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23F123F50C1C21B77DE846C /* Pods-aBike—Nantes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3286,6 +3712,7 @@
 		};
 		596990C51C5D080B00AEFFBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE3938AE6AA018A940A57F9 /* Pods-aBike—Nantes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
@@ -3307,16 +3734,19 @@
 		};
 		596990C61C5D080B00AEFFBC /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C10EA479299E749175F1F4 /* Pods-aBike—Nantes.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "aBike—Nantes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3335,7 +3765,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-NantesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "65315aed-3811-4349-9a49-f63d83d7e179";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "aBike—Nantes";
 				USES_XCTRUNNER = YES;
@@ -3351,7 +3781,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-NantesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "65315aed-3811-4349-9a49-f63d83d7e179";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = "aBike—Nantes";
 				USES_XCTRUNNER = YES;
 			};
@@ -3361,12 +3791,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_NS_ASSERTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "aBike—NantesUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-NantesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "65315aed-3811-4349-9a49-f63d83d7e179";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "aBike—Nantes";
 				USES_XCTRUNNER = YES;
 			};
@@ -3374,6 +3806,7 @@
 		};
 		5975F2861C4BBF2800839B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817E483F75FD295A8028734D /* Pods-aBike—Marseille.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3395,6 +3828,7 @@
 		};
 		5975F2871C4BBF2800839B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96020BA1A18489247748C27E /* Pods-aBike—Marseille.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
@@ -3417,6 +3851,7 @@
 		};
 		5975F2881C4BBF2800839B95 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D70B156703717D27937739 /* Pods-aBike—Marseille.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3437,6 +3872,7 @@
 		};
 		5975F2BD1C4BC37C00839B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA55E1E1D9BD644827FBDFA2 /* Pods-aBike—Mulhouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3457,6 +3893,7 @@
 		};
 		5975F2BE1C4BC37C00839B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811AB524723F4DA1365D6799 /* Pods-aBike—Mulhouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
@@ -3478,6 +3915,7 @@
 		};
 		5975F2BF1C4BC37C00839B95 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9BFCB2786792CA92CB4B36 /* Pods-aBike—Mulhouse.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3498,6 +3936,7 @@
 		};
 		5975F2F41C4BC5DA00839B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0A92739F18F72A0793B248 /* Pods-aBike—Paris.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3518,6 +3957,7 @@
 		};
 		5975F2F51C4BC5DA00839B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D648FA63CCFCA97EA8A036B /* Pods-aBike—Paris.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
@@ -3539,6 +3979,7 @@
 		};
 		5975F2F61C4BC5DA00839B95 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04E93D7BF74EB75E96C6BB3 /* Pods-aBike—Paris.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3559,6 +4000,7 @@
 		};
 		5975F32B1C4BC83200839B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EAD3679E42194A67C40C01 /* Pods-aBike—Toulouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3579,6 +4021,7 @@
 		};
 		5975F32C1C4BC83200839B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC75F37D5CE0EEBC37C775F1 /* Pods-aBike—Toulouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
@@ -3600,6 +4043,7 @@
 		};
 		5975F32D1C4BC83200839B95 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED429724507D802108A238E /* Pods-aBike—Toulouse.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3620,6 +4064,7 @@
 		};
 		597A40961C4BACE900E4B781 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FA3D19AF95DCD95279A5E7 /* Pods-aBike—Bruxelles.debug.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3641,6 +4086,7 @@
 		};
 		597A40971C4BACE900E4B781 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A420D0AB06D1E696100585 /* Pods-aBike—Bruxelles.release.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3663,6 +4109,7 @@
 		};
 		597A40981C4BACE900E4B781 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66BD8C81B1753AD7C7E7060 /* Pods-aBike—Bruxelles.screenshots.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3997,6 +4444,7 @@
 		};
 		59FACE281C496793005DB202 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2F6F9F50ED1D7B9B9E3BED /* Pods-aBike—Lyon.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -20,6 +20,20 @@
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "596990EC1C5D0C2C00AEFFBC"
+               BuildableName = "aBike&#x2014;NantesUITests.xctest"
+               BlueprintName = "aBike&#x2014;NantesUITests"
+               ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -37,6 +51,10 @@
                BlueprintName = "aBike&#x2014;NantesUITests"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
+            <LocationScenarioReference
+               identifier = "../locations/Nantes.gpx"
+               referenceType = "0">
+            </LocationScenarioReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>

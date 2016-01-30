@@ -47,6 +47,12 @@
 		[mapView setUserTrackingMode: MKUserTrackingModeNone];
 		
 		[mapView setTranslatesAutoresizingMaskIntoConstraints: NO];
+
+		#if (SCREENSHOTS==1)
+
+			[mapView setUserInteractionEnabled: NO];
+
+		#endif
 				
 		VEMapViewBlurImageView *blurImageView = [[VEMapViewBlurImageView alloc] init];
 		

@@ -21,13 +21,17 @@
                BlueprintName = "aBike&#x2014;NantesUITests"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
+            <LocationScenarioReference
+               identifier = "../locations/Nantes.gpx"
+               referenceType = "0">
+            </LocationScenarioReference>
          </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Screenshots"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
