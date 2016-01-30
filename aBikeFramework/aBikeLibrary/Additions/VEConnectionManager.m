@@ -92,8 +92,8 @@ static VEConnectionManager *_sharedConnectionManager = nil;
 		
 		_reachable = reachable;
 		
-		//CPLog(@"reachable: %@", reachable ? @"YES" : @"NO");
-		
+		CPLog(@"reachable: %@", reachable ? @"YES" : @"NO");
+
 		if (![self canCallBack])
 			return;
 		

@@ -627,10 +627,14 @@ static VELocationManager *_sharedLocationManager = nil;
 - (void) locationManager: (CLLocationManager *) manager didFailWithError: (NSError *) error
 {
 	CPLog(@"location mananger did fail with error: %@", error);
-	
+
 	#if kEnableCrashlytics
 
-	[[Crashlytics sharedInstance] recordError: error];
+	BOOL isUnknownError = ([[error domain] isEqualToString: kCLErrorDomain] &&
+					   [error code] == kCLErrorLocationUnknown);
+
+	if (!isUnknownError)
+		[[Crashlytics sharedInstance] recordError: error];
 
 	#endif
 }
@@ -683,12 +687,12 @@ static VELocationManager *_sharedLocationManager = nil;
 	
 	
 	
-//	#if !(TARGET_IPHONE_SIMULATOR)
-//	
-//		[Crashlytics setObjectValue: lastLocation forKey: kCrashlyticsCurrentLocationKey];
-//	
-//	#endif
+	#if kEnableCrashlytics
 	
+		[Crashlytics setObjectValue: lastLocation forKey: kCrashlyticsCurrentLocationKey];
+	
+	#endif
+
 	BOOL abort = NO;
 	
 	[self userInCityCheckForLocation: lastLocation withAbort: &abort];

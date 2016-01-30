@@ -768,17 +768,18 @@ static VEAdStationView *_sharedAdStationView = nil;
 	{
 		NSAssert(NO, @"WTF? Restored failed w/ out spinner");
 	}
-	
-	NSError *transactionError = error;
-	
+
 	#if kEnableCrashlytics
 
-	if (error)
+	BOOL isCancelledError = ([[error domain] isEqualToString: SKErrorDomain] &&
+						[error code] == SKErrorPaymentCancelled);
+
+	if (error && !isCancelledError)
 		[[Crashlytics sharedInstance] recordError: error];
 
 	#endif
 	
-	[self showAlertForError: transactionError];
+	[self showAlertForError: error];
 }
 
 - (void) paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue

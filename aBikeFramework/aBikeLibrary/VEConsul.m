@@ -625,8 +625,8 @@ static VEConsul *_sharedConsul = nil;
 
 - (void) applicationWillTerminate
 {
-	//CPLog(@"will terminate");
-	
+	CPLog(@"will terminate");
+
 	[[VEDataImporter aBikeSession] invalidateAndCancel];
 	
 	//CPLog(@"will terminate");

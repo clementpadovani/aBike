@@ -669,10 +669,15 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 		if (error)
 		{
 			CPLog(@"error: %@", error);
-			
+
 			#if kEnableCrashlytics
 
-				[[Crashlytics sharedInstance] recordError: error];
+			BOOL isInternetOfflineError = ([[error domain] isEqualToString: NSURLErrorDomain] &&
+									 [error code] == NSURLErrorNotConnectedToInternet);
+
+
+				if (!isInternetOfflineError)
+					[[Crashlytics sharedInstance] recordError: error];
 			
 			#endif
 			

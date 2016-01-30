@@ -1303,13 +1303,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 - (void) mapView: (MKMapView *) mapView didFailToLocateUserWithError: (NSError *) error
 {
 	CPLog(@"did fail with error: %@", error);
-
-	#if kEnableCrashlytics
-
-	[[Crashlytics sharedInstance] recordError: error];
-
-	#endif
-
 }
 
 - (void) mapView: (MKMapView *) mapView regionDidChangeAnimated: (BOOL) animated
@@ -1399,50 +1392,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 				
 				[popoverPresentationController setSourceView: [strongSelf view]];
 			}
-			
-			#if kEnableCrashlytics
-			
-			//__weak UIActivityViewController *weakController = shareViewController;
-			
-			if ([shareViewController respondsToSelector: @selector(setCompletionWithItemsHandler:)])
-			{
-				UIActivityViewControllerCompletionWithItemsHandler completionHandler = ^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
-				
-					//__strong UIActivityViewController *strongController = weakController;
-					
-					//if (!strongController)
-					//	CPLog(@"nil strong controller");
-					
-					//[strongController dismissViewControllerAnimated: YES completion: NULL];
-					
-					CPLog(@"activity: %@", activityType);
-					
-					if (!completed)
-						CPLog(@"error: %@", activityError);
-					
-//					NSString *event = completed ? @"Has Done Activity" : @"Canceled Acivity";
-					
-					NSMutableDictionary *segmentation = [@{@"Activity Type" : activityType ?: @"Canceled"} mutableCopy];
-					
-					if (activityError)
-						segmentation[@"Error"] = [activityError description];
-					
-					#if kEnableCrashlytics
-					[Answers logShareWithMethod: activityType
-								 contentName: @"Station share"
-								 contentType: nil
-								   contentId: nil
-							 customAttributes: nil];
-					
-					#endif
-					
-				};
-				
-				[shareViewController setCompletionWithItemsHandler: completionHandler];
-			}
-
-			
-			#endif
 			
 			CPLog(@"will present");
 			
