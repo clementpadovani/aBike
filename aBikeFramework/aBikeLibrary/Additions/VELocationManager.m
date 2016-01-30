@@ -30,27 +30,6 @@
  *
  */
 
-#if kEnableCrashlytics
-
-static inline NSString *NSStringFromCLAuthorizationStatus(CLAuthorizationStatus authorizationStatus)
-{
-	switch (authorizationStatus)
-	{
-		case kCLAuthorizationStatusNotDetermined:	return @"kCLAuthorizationStatusNotDetermined";
-			
-		case kCLAuthorizationStatusRestricted:		return @"kCLAuthorizationStatusRestricted";
-			
-		case kCLAuthorizationStatusDenied:			return @"kCLAuthorizationStatusDenied";
-
-		case kCLAuthorizationStatusAuthorizedAlways: return @"kCLAuthorizationStatusAuthorizedAlways";
-			
-		case kCLAuthorizationStatusAuthorizedWhenInUse: return @"kCLAuthorizationStatusAuthorizedWhenInUse";
-		
-	}
-}
-
-#endif
-
 static const CLLocationDistance kVELocationManagerDistanceFilter = 32;
 
 //static const CLLocationDistance kVELocationManagerDistanceFilter = 0;
@@ -505,19 +484,6 @@ static VELocationManager *_sharedLocationManager = nil;
 			break;
 	}
 	
-	#if kEnableCrashlytics
-	
-	NSString *authorizationState = [NSStringFromCLAuthorizationStatus(status) copy];
-	
-	#endif
-		
-	#if kEnableCrashlytics
-	
-	[Answers logCustomEventWithName: @"Location authorization"
-				customAttributes: @{@"State" : authorizationState}];
-	
-	#endif
-	
 	
 	if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse)
 	{
@@ -684,7 +650,7 @@ static VELocationManager *_sharedLocationManager = nil;
 	
 	#if kEnableCrashlytics
 	
-		[Crashlytics setObjectValue: lastLocation forKey: kCrashlyticsCurrentLocationKey];
+		[[Crashlytics sharedInstance] setObjectValue: lastLocation forKey: kCrashlyticsCurrentLocationKey];
 	
 	#endif
 
