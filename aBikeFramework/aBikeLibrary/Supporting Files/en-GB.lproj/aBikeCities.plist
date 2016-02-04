@@ -74,5 +74,17 @@
 		<key>name</key>
 		<string>Mulhouse</string>
 	</dict>
+	<dict>
+		<key>appId</key>
+		<integer>1073604521</integer>
+		<key>coords</key>
+		<data>
+		saNxqN+bR0ByiSMPRNb4vw==
+		</data>
+		<key>distance</key>
+		<real>6336.5459999999994</real>
+		<key>name</key>
+		<string>Nantes</string>
+	</dict>
 </array>
 </plist>
