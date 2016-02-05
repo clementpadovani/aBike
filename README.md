@@ -23,3 +23,6 @@ Create a new `UI Test` target with **Swift** as its language. Delete the generat
 You can duplicate an existing folder in the `Deliver` directory and edit the `Snapfile` file to make it work with your new target.
 
 Run `snapshot run` inside the directory (you might want to clean your simulators first by using `snapshot reset_simulators`).
+
+##Thanks
+Thanks [@MathieuWhite](https://twitter.com/MathieuWhite) & [GitHub](https://github.com/MathieuWhite)
