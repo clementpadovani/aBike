@@ -2077,7 +2077,7 @@
 				7C8D12019B3E82404B08383F949EA1F7 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		27EBAF318C0C98CAF9443E0F2974F97E /* Build configuration list for PBXNativeTarget "Pods-aBike—Nantes" */ = {
 			isa = XCConfigurationList;
@@ -2087,7 +2087,7 @@
 				682D24E488384B5CB0CECA4EE2B5ECC4 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
@@ -2097,7 +2097,7 @@
 				5F244FD900EA1237D21420B805D9FD12 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		34A5994A1E3F2FF4DAE87BE152A4B68A /* Build configuration list for PBXNativeTarget "Pods-aBike—Mulhouse" */ = {
 			isa = XCConfigurationList;
@@ -2107,7 +2107,7 @@
 				E9ECD12BDE7461100109C0E179117D99 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		48B14BC7405CA7D08375BAAB37073CA8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Marseille" */ = {
 			isa = XCConfigurationList;
@@ -2117,7 +2117,7 @@
 				2070A5BDA0431221A98F1ED55E476AD9 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		4A6ACFD7B878BCFABA67FC2AA2978B8E /* Build configuration list for PBXNativeTarget "Pods-aBike—Créteil" */ = {
 			isa = XCConfigurationList;
@@ -2127,7 +2127,7 @@
 				7811F4F7DD3FB6356873BDDCB943871D /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		75D31AF6CC12F25FF5D9FD60E4E687F8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Toulouse" */ = {
 			isa = XCConfigurationList;
@@ -2137,7 +2137,7 @@
 				A97F91F274AB2D25BF4F8DAAAF500170 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		8882149AEDAEDFB3C206F32DBCF2DE87 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */ = {
 			isa = XCConfigurationList;
@@ -2147,7 +2147,7 @@
 				C6E327F208D6A0949BD19A42A6673A66 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		A7A65C31F4FE78F74FBBDE8CA10FF45B /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
 			isa = XCConfigurationList;
@@ -2157,7 +2157,7 @@
 				5D50B67C450FBB77495EEBA381F81354 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		C77D57D23ADA4DED324EDDED34EB6054 /* Build configuration list for PBXNativeTarget "Pods-aBike—Bruxelles" */ = {
 			isa = XCConfigurationList;
@@ -2167,7 +2167,7 @@
 				A0FAA56B80C433DC4D9326DF37F1D038 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		D846C63CF1E3FDCB027B2499887CFABA /* Build configuration list for PBXNativeTarget "Pods-aBike—Lyon" */ = {
 			isa = XCConfigurationList;
@@ -2177,7 +2177,7 @@
 				CBBC440A0AAA41EB63EB0A9B87F833C0 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 /* End XCConfigurationList section */
 	};

@@ -156,6 +156,7 @@
 		593ADB091C4953F6003B686A /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADB081C4953F6003B686A /* VEAppDelegate.m */; };
 		593ADB0C1C4955BF003B686A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0B1C4955BF003B686A /* Images.xcassets */; };
 		593ADB101C49574F003B686A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
+		5949F8E71C649A2D008398F4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5949F8E91C649A2D008398F4 /* Localizable.strings */; };
 		59567E0A1C4A50850042767D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59567E091C4A50850042767D /* main.m */; };
 		59567E0D1C4A50850042767D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59567E0C1C4A50850042767D /* AppDelegate.m */; };
 		59567E151C4A50850042767D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59567E141C4A50850042767D /* Assets.xcassets */; };
@@ -723,6 +724,9 @@
 		593ADB0B1C4955BF003B686A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		593ADB0D1C4955D7003B686A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		593ADB0F1C49574F003B686A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		5949F8E81C649A2D008398F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5949F8EA1C649A2F008398F4 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5949F8EB1C649A30008398F4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		59567E061C4A50850042767D /* aBike—Lyon TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Lyon TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59567E091C4A50850042767D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		59567E0B1C4A50850042767D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1103,6 +1107,7 @@
 				59159CB91C6493EF00811AE3 /* VEAppDelegate.h */,
 				59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */,
 				591483ED1C649313007EDABB /* Assets.xcassets */,
+				5949F8E91C649A2D008398F4 /* Localizable.strings */,
 				591483F21C649313007EDABB /* Info.plist */,
 				59159CC61C6495FF00811AE3 /* InfoPlist.strings */,
 				591483E11C649313007EDABB /* Supporting Files */,
@@ -1775,6 +1780,7 @@
 				591483FB1C649365007EDABB /* Embed Frameworks */,
 				1F995F47B482D3137179F93A /* Embed Pods Frameworks */,
 				0A41338A05CB3392E437BDF4 /* Copy Pods Resources */,
+				5949F8E41C649A06008398F4 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2288,6 +2294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5949F8E71C649A2D008398F4 /* Localizable.strings in Resources */,
 				59159CCC1C64969200811AE3 /* Settings.bundle in Resources */,
 				59159CBB1C6493EF00811AE3 /* Launch Screen.storyboard in Resources */,
 				59159CC41C6495FF00811AE3 /* InfoPlist.strings in Resources */,
@@ -2649,6 +2656,20 @@
 			showEnvVarsInLog = 0;
 		};
 		5945D9341C54F08000813FF2 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+		};
+		5949F8E41C649A06008398F4 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3385,6 +3406,17 @@
 			name = Localizable.strings;
 			path = .;
 			sourceTree = "<group>";
+		};
+		5949F8E91C649A2D008398F4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5949F8E81C649A2D008398F4 /* en */,
+				5949F8EA1C649A2F008398F4 /* en-GB */,
+				5949F8EB1C649A30008398F4 /* fr */,
+			);
+			name = Localizable.strings;
+			path = "aBike—Créteil";
+			sourceTree = SOURCE_ROOT;
 		};
 		596990DC1C5D0AFB00AEFFBC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
