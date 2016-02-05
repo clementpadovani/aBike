@@ -25,4 +25,4 @@ You can duplicate an existing folder in the `Deliver` directory and edit the `Sn
 Run `snapshot run` inside the directory (you might want to clean your simulators first by using `snapshot reset_simulators`).
 
 ##Thanks
-Thanks [@MathieuWhite](https://twitter.com/MathieuWhite) & [GitHub](https://github.com/MathieuWhite)
+Thanks [@MathieuWhite](https://twitter.com/MathieuWhite) ([GitHub](https://github.com/MathieuWhite))
