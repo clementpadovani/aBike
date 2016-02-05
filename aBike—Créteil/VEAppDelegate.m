@@ -61,7 +61,7 @@
 
 - (CLLocation *) locationForScreenshots
 {
-	return [[CLLocation alloc] initWithLatitude: 48.7904589 longitude: 2.3855322];
+	return [[CLLocation alloc] initWithLatitude: 48.7988375 longitude: 2.4663965];
 }
 
 #endif
