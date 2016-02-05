@@ -56,6 +56,20 @@
 		591150C41C4ACB2900F87EA6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		591150C51C4ACB2900F87EA6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
+		591483E31C649313007EDABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591483E21C649313007EDABB /* main.m */; };
+		591483EE1C649313007EDABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591483ED1C649313007EDABB /* Assets.xcassets */; };
+		591483F71C649364007EDABB /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
+		591483F81C649364007EDABB /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		59159CBB1C6493EF00811AE3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */; };
+		59159CBC1C6493EF00811AE3 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */; };
+		59159CC41C6495FF00811AE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59159CC61C6495FF00811AE3 /* InfoPlist.strings */; };
+		59159CC91C64968E00811AE3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
+		59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
+		59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
+		59159CCC1C64969200811AE3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
+		59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
+		59159CCE1C6496B300811AE3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
+		59159CCF1C6496B300811AE3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		593AD9271C4951E7003B686A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593AD9261C4951E7003B686A /* main.m */; };
 		593AD9561C495217003B686A /* aBikeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 593AD9551C495217003B686A /* aBikeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -322,6 +336,13 @@
 			remoteGlobalIDString = 596990AF1C5D080A00AEFFBC;
 			remoteInfo = "aBike—Nantes";
 		};
+		591483F91C649364007EDABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 593AD9521C495217003B686A;
+			remoteInfo = aBikeFramework;
+		};
 		593AD9581C495217003B686A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
@@ -465,6 +486,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		591483FB1C649365007EDABB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				591483F81C649364007EDABB /* aBikeFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		593AD94D1C495208003B686A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +602,16 @@
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		591150C01C4ACB2900F87EA6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		591150C11C4ACB2900F87EA6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		591483DF1C649313007EDABB /* aBike—Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../aBike—Créteil/main.m"; sourceTree = "<group>"; };
+		591483ED1C649313007EDABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../aBike—Créteil/Assets.xcassets"; sourceTree = "<group>"; };
+		591483F21C649313007EDABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../aBike—Créteil/Info.plist"; sourceTree = "<group>"; };
+		59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "aBike—Créteil/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		59159CB91C6493EF00811AE3 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VEAppDelegate.h; path = "aBike—Créteil/VEAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VEAppDelegate.m; path = "aBike—Créteil/VEAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		59159CC51C6495FF00811AE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		59159CC71C64961700811AE3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		59159CC81C64961900811AE3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		593AD9221C4951E7003B686A /* aBike—Lyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Lyon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		593AD9261C4951E7003B686A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		593AD9361C4951E7003B686A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -814,6 +856,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		591483DC1C649313007EDABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59159CCF1C6496B300811AE3 /* Fabric.framework in Frameworks */,
+				59159CC91C64968E00811AE3 /* Security.framework in Frameworks */,
+				59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */,
+				59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */,
+				591483F71C649364007EDABB /* aBikeFramework.framework in Frameworks */,
+				59159CCE1C6496B300811AE3 /* Crashlytics.framework in Frameworks */,
+				59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		593AD91F1C4951E7003B686A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1015,6 +1071,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		591483E01C649313007EDABB /* aBike—Créteil */ = {
+			isa = PBXGroup;
+			children = (
+				59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */,
+				59159CB91C6493EF00811AE3 /* VEAppDelegate.h */,
+				59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */,
+				591483ED1C649313007EDABB /* Assets.xcassets */,
+				591483F21C649313007EDABB /* Info.plist */,
+				59159CC61C6495FF00811AE3 /* InfoPlist.strings */,
+				591483E11C649313007EDABB /* Supporting Files */,
+			);
+			path = "aBike—Créteil";
+			sourceTree = "<group>";
+		};
+		591483E11C649313007EDABB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				591483E21C649313007EDABB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
@@ -1025,6 +1103,7 @@
 				59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */,
 				596990B11C5D080A00AEFFBC /* aBike—Nantes */,
 				596990EE1C5D0C2C00AEFFBC /* aBike—NantesUITests */,
+				591483E01C649313007EDABB /* aBike—Créteil */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
@@ -1069,6 +1148,7 @@
 				59F9ECB21C54EE0F0007D069 /* aBike—ToulouseUITests.xctest */,
 				596990B01C5D080A00AEFFBC /* aBike—Nantes.app */,
 				596990ED1C5D0C2C00AEFFBC /* aBike—NantesUITests.xctest */,
+				591483DF1C649313007EDABB /* aBike—Créteil.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1646,6 +1726,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		591483DE1C649313007EDABB /* aBike—Créteil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591483F61C649313007EDABB /* Build configuration list for PBXNativeTarget "aBike—Créteil" */;
+			buildPhases = (
+				591483DB1C649313007EDABB /* Sources */,
+				591483DC1C649313007EDABB /* Frameworks */,
+				591483DD1C649313007EDABB /* Resources */,
+				591483FB1C649365007EDABB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				591483FA1C649364007EDABB /* PBXTargetDependency */,
+			);
+			name = "aBike—Créteil";
+			productName = "aBike—Créteil";
+			productReference = 591483DF1C649313007EDABB /* aBike—Créteil.app */;
+			productType = "com.apple.product-type.application";
+		};
 		593AD9211C4951E7003B686A /* aBike—Lyon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 593AD9391C4951E7003B686A /* Build configuration list for PBXNativeTarget "aBike—Lyon" */;
@@ -2009,6 +2108,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Clement Padovani";
 				TargetAttributes = {
+					591483DE1C649313007EDABB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = W48L6Z4654;
+					};
 					593AD9211C4951E7003B686A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = W48L6Z4654;
@@ -2111,11 +2214,23 @@
 				59F9ECB11C54EE0F0007D069 /* aBike—ToulouseUITests */,
 				596990AF1C5D080A00AEFFBC /* aBike—Nantes */,
 				596990EC1C5D0C2C00AEFFBC /* aBike—NantesUITests */,
+				591483DE1C649313007EDABB /* aBike—Créteil */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		591483DD1C649313007EDABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59159CCC1C64969200811AE3 /* Settings.bundle in Resources */,
+				59159CBB1C6493EF00811AE3 /* Launch Screen.storyboard in Resources */,
+				59159CC41C6495FF00811AE3 /* InfoPlist.strings in Resources */,
+				591483EE1C649313007EDABB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		593AD9201C4951E7003B686A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2756,6 +2871,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		591483DB1C649313007EDABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591483E31C649313007EDABB /* main.m in Sources */,
+				59159CBC1C6493EF00811AE3 /* VEAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		593AD91E1C4951E7003B686A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2991,6 +3115,11 @@
 			target = 596990AF1C5D080A00AEFFBC /* aBike—Nantes */;
 			targetProxy = 5913E2D21C5D1175003385FF /* PBXContainerItemProxy */;
 		};
+		591483FA1C649364007EDABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 593AD9521C495217003B686A /* aBikeFramework */;
+			targetProxy = 591483F91C649364007EDABB /* PBXContainerItemProxy */;
+		};
 		593AD9591C495217003B686A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 593AD9521C495217003B686A /* aBikeFramework */;
@@ -3094,6 +3223,17 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		59159CC61C6495FF00811AE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59159CC51C6495FF00811AE3 /* en */,
+				59159CC71C64961700811AE3 /* en-GB */,
+				59159CC81C64961900811AE3 /* fr */,
+			);
+			name = InfoPlist.strings;
+			path = "aBike—Créteil";
+			sourceTree = SOURCE_ROOT;
+		};
 		593ADA7B1C495394003B686A /* aBikeCities.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3271,6 +3411,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		591483F31C649313007EDABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CP_CURRENT_BUILD = "$(inherited)";
+				CP_CURRENT_VERSION = "$(inherited)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aBike—Lyon",
+				);
+				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		591483F41C649313007EDABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CP_CURRENT_BUILD = "$(inherited)";
+				CP_CURRENT_VERSION = "$(inherited)";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aBike—Lyon",
+				);
+				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6491589a-1adc-4599-9b84-20060961a174";
+			};
+			name = Release;
+		};
+		591483F51C649313007EDABB /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CP_CURRENT_BUILD = "$(inherited)";
+				CP_CURRENT_VERSION = "$(inherited)";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aBike—Lyon",
+				);
+				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Screenshots;
+		};
 		593AD9371C4951E7003B686A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */;
@@ -4485,6 +4687,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		591483F61C649313007EDABB /* Build configuration list for PBXNativeTarget "aBike—Créteil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591483F31C649313007EDABB /* Debug */,
+				591483F41C649313007EDABB /* Release */,
+				591483F51C649313007EDABB /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
+		};
 		593AD91D1C4951E7003B686A /* Build configuration list for PBXProject "aBike—Lyon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

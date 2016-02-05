@@ -59,7 +59,7 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #define lowDataRefreshTimes 0
 
-#define enableNumberOfStations 1
+#define enableNumberOfStations 0
 
 #define kUnitSystemKey @"unitSystem"
 
