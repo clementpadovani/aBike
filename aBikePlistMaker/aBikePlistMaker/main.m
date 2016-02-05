@@ -25,7 +25,7 @@ int main(int argc, const char * argv[])
 		NSMutableArray *mainArray = [NSMutableArray array];
 		
 		
-		for (NSUInteger i = 0; i < 7; i++)
+		for (NSUInteger i = 0; i < 8; i++)
 		{
 			NSMutableDictionary *city = [NSMutableDictionary dictionary];
 			
@@ -75,6 +75,7 @@ NSString * nameForCityNumber(NSUInteger cityNumber)
 		case 4:	return @"Toulouse";
 		case 5:	return @"Mulhouse";
 		case 6:	return @"Nantes";
+		case 7:	return @"Créteil";
 			
 		default:
 			return nil;
@@ -92,6 +93,7 @@ CLLocationCoordinate2D coordsForCityNumber(NSUInteger cityNumber)
 		case 4:	return CLLocationCoordinate2DMake(43.602394, 1.432450);
 		case 5:	return CLLocationCoordinate2DMake(47.746809, 7.331784);
 		case 6:	return CLLocationCoordinate2DMake(47.217763, -1.552311);
+		case 7:	return CLLocationCoordinate2DMake(48.783898, 2.451457);
 			
 		default:
 			return CLLocationCoordinate2DMake(0, 0);
@@ -109,6 +111,7 @@ CLLocationDegrees spanForCityNumber(NSUInteger cityNumber)
 		case 4:	return 0.090266;
 		case 5:	return 0.027193;
 		case 6:	return 0.057086;
+		case 7:	return 0.029879;
 			
 		default:
 			return 0;
@@ -126,6 +129,7 @@ NSNumber * appIdForCityNumber(NSUInteger cityNumber)
 		case 4:	return @(907384126);
 		case 5:	return @(907384332);
 		case 6:	return @(1073604521);
+		case 7:	return @(1081759410);
 			
 		default:
 			return nil;

@@ -86,5 +86,17 @@
 		<key>name</key>
 		<string>Nantes</string>
 	</dict>
+	<dict>
+		<key>appId</key>
+		<integer>1081759410</integer>
+		<key>coords</key>
+		<data>
+		LbMIxVZkSED1ZtR8lZwDQA==
+		</data>
+		<key>distance</key>
+		<real>3316.569</real>
+		<key>name</key>
+		<string>Créteil</string>
+	</dict>
 </array>
 </plist>
