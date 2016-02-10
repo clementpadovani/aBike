@@ -323,6 +323,8 @@
 		59ABE1DD1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */; };
 		59ABE1DE1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */; };
 		59ABE1DF1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */; };
+		59BAF6E81C6B4A630038B609 /* aBike_DublinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BAF6E71C6B4A630038B609 /* aBike_DublinUITests.swift */; };
+		59BAF6F71C6B4A6A0038B609 /* aBike_LuxembourgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BAF6F61C6B4A6A0038B609 /* aBike_LuxembourgUITests.swift */; };
 		59C312CE1C4A68BB002F1657 /* Reveal-tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */; };
 		59C312CF1C4A6CEB002F1657 /* aBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA581C495394003B686A /* aBike.xcdatamodeld */; };
 		59C312D01C4A6CF6002F1657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
@@ -469,6 +471,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 593AD9521C495217003B686A;
 			remoteInfo = aBikeFramework;
+		};
+		59BAF6EA1C6B4A630038B609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59FEC1E61C6B41F500809D75;
+			remoteInfo = "aBike—Dublin";
+		};
+		59BAF6F91C6B4A6A0038B609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59AB74791C6B4691003EBFF1;
+			remoteInfo = "aBike—Luxembourg";
 		};
 		59BE2E451C64984C00D5718B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -911,6 +927,12 @@
 		59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VEImageAdditions.m"; sourceTree = "<group>"; };
 		59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		59BA8FD11C4BE5CE0053C37E /* CLSimulationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSimulationManager.h; sourceTree = "<group>"; };
+		59BAF6E51C6B4A630038B609 /* aBike—DublinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—DublinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59BAF6E71C6B4A630038B609 /* aBike_DublinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_DublinUITests.swift; sourceTree = "<group>"; };
+		59BAF6E91C6B4A630038B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BAF6F41C6B4A6A0038B609 /* aBike—LuxembourgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—LuxembourgUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59BAF6F61C6B4A6A0038B609 /* aBike_LuxembourgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_LuxembourgUITests.swift; sourceTree = "<group>"; };
+		59BAF6F81C6B4A6A0038B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59BE2E401C64984C00D5718B /* aBike—CréteilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—CréteilUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BE2E441C64984C00D5718B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../aBike—CréteilUITests/Info.plist"; sourceTree = "<group>"; };
 		59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Reveal-tvOS.framework"; sourceTree = "<group>"; };
@@ -1156,6 +1178,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59BAF6E21C6B4A630038B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BAF6F11C6B4A6A0038B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59BE2E3D1C64984C00D5718B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1271,6 +1307,8 @@
 				59BE2E411C64984C00D5718B /* aBike—CréteilUITests */,
 				59FEC1E81C6B41F500809D75 /* aBike—Dublin */,
 				59AB747B1C6B4691003EBFF1 /* aBike—Luxembourg */,
+				59BAF6E61C6B4A630038B609 /* aBike—DublinUITests */,
+				59BAF6F51C6B4A6A0038B609 /* aBike—LuxembourgUITests */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
@@ -1319,6 +1357,8 @@
 				59BE2E401C64984C00D5718B /* aBike—CréteilUITests.xctest */,
 				59FEC1E71C6B41F500809D75 /* aBike—Dublin.app */,
 				59AB747A1C6B4691003EBFF1 /* aBike—Luxembourg.app */,
+				59BAF6E51C6B4A630038B609 /* aBike—DublinUITests.xctest */,
+				59BAF6F41C6B4A6A0038B609 /* aBike—LuxembourgUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1745,6 +1785,24 @@
 				59AB747D1C6B4691003EBFF1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59BAF6E61C6B4A630038B609 /* aBike—DublinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59BAF6E71C6B4A630038B609 /* aBike_DublinUITests.swift */,
+				59BAF6E91C6B4A630038B609 /* Info.plist */,
+			);
+			path = "aBike—DublinUITests";
+			sourceTree = "<group>";
+		};
+		59BAF6F51C6B4A6A0038B609 /* aBike—LuxembourgUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59BAF6F61C6B4A6A0038B609 /* aBike_LuxembourgUITests.swift */,
+				59BAF6F81C6B4A6A0038B609 /* Info.plist */,
+			);
+			path = "aBike—LuxembourgUITests";
 			sourceTree = "<group>";
 		};
 		59BE2E411C64984C00D5718B /* aBike—CréteilUITests */ = {
@@ -2267,6 +2325,42 @@
 			productReference = 59AB747A1C6B4691003EBFF1 /* aBike—Luxembourg.app */;
 			productType = "com.apple.product-type.application";
 		};
+		59BAF6E41C6B4A630038B609 /* aBike—DublinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59BAF6EC1C6B4A630038B609 /* Build configuration list for PBXNativeTarget "aBike—DublinUITests" */;
+			buildPhases = (
+				59BAF6E11C6B4A630038B609 /* Sources */,
+				59BAF6E21C6B4A630038B609 /* Frameworks */,
+				59BAF6E31C6B4A630038B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59BAF6EB1C6B4A630038B609 /* PBXTargetDependency */,
+			);
+			name = "aBike—DublinUITests";
+			productName = "aBike—DublinUITests";
+			productReference = 59BAF6E51C6B4A630038B609 /* aBike—DublinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		59BAF6F31C6B4A6A0038B609 /* aBike—LuxembourgUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59BAF6FB1C6B4A6A0038B609 /* Build configuration list for PBXNativeTarget "aBike—LuxembourgUITests" */;
+			buildPhases = (
+				59BAF6F01C6B4A6A0038B609 /* Sources */,
+				59BAF6F11C6B4A6A0038B609 /* Frameworks */,
+				59BAF6F21C6B4A6A0038B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59BAF6FA1C6B4A6A0038B609 /* PBXTargetDependency */,
+			);
+			name = "aBike—LuxembourgUITests";
+			productName = "aBike—LuxembourgUITests";
+			productReference = 59BAF6F41C6B4A6A0038B609 /* aBike—LuxembourgUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		59BE2E3F1C64984C00D5718B /* aBike—CréteilUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59BE2E471C64984C00D5718B /* Build configuration list for PBXNativeTarget "aBike—CréteilUITests" */;
@@ -2464,6 +2558,14 @@
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = W48L6Z4654;
 					};
+					59BAF6E41C6B4A630038B609 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 59FEC1E61C6B41F500809D75;
+					};
+					59BAF6F31C6B4A6A0038B609 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 59AB74791C6B4691003EBFF1;
+					};
 					59BE2E3F1C64984C00D5718B = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 591483DE1C649313007EDABB;
@@ -2531,6 +2633,8 @@
 				59BE2E3F1C64984C00D5718B /* aBike—CréteilUITests */,
 				59FEC1E61C6B41F500809D75 /* aBike—Dublin */,
 				59AB74791C6B4691003EBFF1 /* aBike—Luxembourg */,
+				59BAF6E41C6B4A630038B609 /* aBike—DublinUITests */,
+				59BAF6F31C6B4A6A0038B609 /* aBike—LuxembourgUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2685,6 +2789,20 @@
 				59AB74A71C6B4878003EBFF1 /* InfoPlist.strings in Resources */,
 				59AB74A21C6B485A003EBFF1 /* Settings.bundle in Resources */,
 				59AB74891C6B4691003EBFF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BAF6E31C6B4A630038B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BAF6F21C6B4A6A0038B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3596,6 +3714,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59BAF6E11C6B4A630038B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BAF6E81C6B4A630038B609 /* aBike_DublinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BAF6F01C6B4A6A0038B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BAF6F71C6B4A6A0038B609 /* aBike_LuxembourgUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59BE2E3C1C64984C00D5718B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3736,6 +3870,16 @@
 			isa = PBXTargetDependency;
 			target = 593AD9521C495217003B686A /* aBikeFramework */;
 			targetProxy = 59AB74991C6B484B003EBFF1 /* PBXContainerItemProxy */;
+		};
+		59BAF6EB1C6B4A630038B609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59FEC1E61C6B41F500809D75 /* aBike—Dublin */;
+			targetProxy = 59BAF6EA1C6B4A630038B609 /* PBXContainerItemProxy */;
+		};
+		59BAF6FA1C6B4A6A0038B609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59AB74791C6B4691003EBFF1 /* aBike—Luxembourg */;
+			targetProxy = 59BAF6F91C6B4A6A0038B609 /* PBXContainerItemProxy */;
 		};
 		59BE2E461C64984C00D5718B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5042,6 +5186,94 @@
 			};
 			name = Screenshots;
 		};
+		59BAF6ED1C6B4A630038B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "aBike—DublinUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-DublinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "aBike—Dublin";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59BAF6EE1C6B4A630038B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—DublinUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-DublinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Dublin";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		59BAF6EF1C6B4A630038B609 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—DublinUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-DublinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Dublin";
+				USES_XCTRUNNER = YES;
+			};
+			name = Screenshots;
+		};
+		59BAF6FC1C6B4A6A0038B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "aBike—LuxembourgUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LuxembourgUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "aBike—Luxembourg";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59BAF6FD1C6B4A6A0038B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—LuxembourgUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LuxembourgUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Luxembourg";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		59BAF6FE1C6B4A6A0038B609 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "aBike—LuxembourgUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LuxembourgUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "aBike—Luxembourg";
+				USES_XCTRUNNER = YES;
+			};
+			name = Screenshots;
+		};
 		59BE2E481C64984C00D5718B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5617,6 +5849,24 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Screenshots;
+		};
+		59BAF6EC1C6B4A630038B609 /* Build configuration list for PBXNativeTarget "aBike—DublinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BAF6ED1C6B4A630038B609 /* Debug */,
+				59BAF6EE1C6B4A630038B609 /* Release */,
+				59BAF6EF1C6B4A630038B609 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59BAF6FB1C6B4A6A0038B609 /* Build configuration list for PBXNativeTarget "aBike—LuxembourgUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BAF6FC1C6B4A6A0038B609 /* Debug */,
+				59BAF6FD1C6B4A6A0038B609 /* Release */,
+				59BAF6FE1C6B4A6A0038B609 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		59BE2E471C64984C00D5718B /* Build configuration list for PBXNativeTarget "aBike—CréteilUITests" */ = {
 			isa = XCConfigurationList;
