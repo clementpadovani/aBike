@@ -1,1 +1,21 @@
 Bug fixes
+
+Check out the other 9 aBike apps for a city near you!
+
+	Belgium
+	- Brussels
+
+	France
+	- Créteil
+	- Lyon
+	- Marseille
+	- Mulhouse
+	- Nantes
+	- Paris
+	- Toulouse
+
+	Ireland
+	- Dublin
+
+	Luxembourg
+	- Luxembourg

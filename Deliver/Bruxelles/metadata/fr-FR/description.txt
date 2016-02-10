@@ -1,3 +1,20 @@
 aBike—Bruxelles est une app faîte pour le système de location de vélos villo©, un service opéré par JCDecaux, présent dans l’agglomération bruxelloise. 
 
 Vous pouvez voir les 5 bornes les plus proches avec leur temps de parcours ainsi que les directions pour s’y rendre.
+
+Découvrez les 9 autres applis aBike pour les villes suivantes :
+
+	France
+	- Créteil
+	- Lyon
+	- Marseille
+	- Mulhouse
+	- Nantes
+	- Paris
+	- Toulouse
+
+	Irelande
+	- Dublin
+
+	Luxembourg
+	- Luxembourg
