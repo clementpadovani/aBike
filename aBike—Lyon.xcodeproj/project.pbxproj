@@ -1404,8 +1404,8 @@
 				593ADA441C495394003B686A /* Additions */,
 				593ADA571C495394003B686A /* Core Data */,
 				593ADA711C495394003B686A /* Data Importer */,
-				593ADA761C495394003B686A /* Supporting Files */,
 				593ADA871C495394003B686A /* User Interface */,
+				593ADA761C495394003B686A /* Supporting Files */,
 				593ADAAF1C495394003B686A /* VEConsul.h */,
 				593ADAB01C495394003B686A /* VEConsul.m */,
 				593ADAB11C495394003B686A /* VEConsulDefines.h */,
@@ -4259,7 +4259,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 376;
+				CP_CURRENT_BUILD = 377;
 				CP_CURRENT_VERSION = 2.9.8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -4308,7 +4308,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 376;
+				CP_CURRENT_BUILD = 377;
 				CP_CURRENT_VERSION = 2.9.8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = YES;
@@ -5564,7 +5564,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 376;
+				CP_CURRENT_BUILD = 377;
 				CP_CURRENT_VERSION = 2.9.8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
