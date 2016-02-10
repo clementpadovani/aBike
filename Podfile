@@ -81,3 +81,15 @@ target 'aBike—Créteil' do
 normalPods
 
 end
+
+target 'aBike—Dublin' do
+
+normalPods
+
+end
+
+target 'aBike—Luxembourg' do
+
+normalPods
+
+end
