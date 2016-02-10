@@ -98,5 +98,29 @@
 		<key>name</key>
 		<string>Créteil</string>
 	</dict>
+	<dict>
+		<key>appId</key>
+		<integer>1083001230</integer>
+		<key>coords</key>
+		<data>
+		Goums5OrSkAC8iVUcDgZwA==
+		</data>
+		<key>distance</key>
+		<real>370.40700000000004</real>
+		<key>name</key>
+		<string>Dublin</string>
+	</dict>
+	<dict>
+		<key>appId</key>
+		<integer>1083005672</integer>
+		<key>coords</key>
+		<data>
+		g8DKoUXOSEBtVn2utoIYQA==
+		</data>
+		<key>distance</key>
+		<real>421.80000000000001</real>
+		<key>name</key>
+		<string>Luxembourg</string>
+	</dict>
 </array>
 </plist>
