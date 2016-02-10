@@ -2253,9 +2253,9 @@
 				59AB74771C6B4691003EBFF1 /* Frameworks */,
 				59AB74781C6B4691003EBFF1 /* Resources */,
 				59AB749B1C6B484C003EBFF1 /* Embed Frameworks */,
-				59AB74B11C6B48E7003EBFF1 /* Fabric */,
 				134A2187873BA7326DFAAAF4 /* Embed Pods Frameworks */,
 				B443E7E07F8CB39C6DF59806 /* Copy Pods Resources */,
+				59AB74B11C6B48E7003EBFF1 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2384,9 +2384,9 @@
 				59FEC1E41C6B41F500809D75 /* Frameworks */,
 				59FEC1E51C6B41F500809D75 /* Resources */,
 				59FEC2031C6B424900809D75 /* Embed Frameworks */,
-				59FEC21E1C6B464300809D75 /* Fabric */,
 				969CA2E163969521DFD48995 /* Embed Pods Frameworks */,
 				38E97C5D91A8E32F5EC05574 /* Copy Pods Resources */,
+				59FEC21E1C6B464300809D75 /* Fabric */,
 			);
 			buildRules = (
 			);
