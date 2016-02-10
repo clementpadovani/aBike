@@ -52,14 +52,7 @@ int main(int argc, const char * argv[])
 		
 		path = [path stringByExpandingTildeInPath];
 		
-		NSLog(@"path: %@", path);
-		
-		
-		
-		BOOL done = [mainArray writeToURL: [NSURL fileURLWithPath: path] atomically: YES];
-		
-		NSLog(@"done: %@", done ? @"YES" : @"NO");
-		
+		[mainArray writeToURL: [NSURL fileURLWithPath: path] atomically: YES];
 	}
 	return 0;
 }
