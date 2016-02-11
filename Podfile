@@ -24,6 +24,8 @@ target 'aBikeFramework' do
 
 pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 
+pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
+
 end
 
 target 'aBike—LyonUITests' do

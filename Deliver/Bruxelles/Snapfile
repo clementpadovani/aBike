@@ -11,8 +11,9 @@ devices([
  ])
 
 languages([
-  "en-US",
-  "fr-FR"
+#   "en-US",
+#   "fr-FR"
+     "en-GB"
 ])
 
 # clean true

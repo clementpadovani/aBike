@@ -7,52 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006BC16E4E884CECFFC4D0E0BE78487C /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BDEEE63A6C7E433383F2B1C2748E03 /* SDStatusBarOverriderPost9_0.m */; };
 		04E0D60913019735A9EBD1B23E725C26 /* Pods-aBike—Nantes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F75A2CAA3DD62D7987EB6EB96986C6 /* Pods-aBike—Nantes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09BA8E4FA1F9D090426801A10BCF1F54 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BDEEE63A6C7E433383F2B1C2748E03 /* SDStatusBarOverriderPost9_0.m */; };
-		0ADC8756A45F195790282E6CDBCDF1C5 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CB7CD40DAEF737121C39058305563 /* SDStatusBarOverriderPre8_3.m */; };
+		0F9D66034FB451ECA9B1373E1C1CDA5A /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0578FF5929A1DA7ADC11591973B07BAA /* SDStatusBarOverriderPost8_3.m */; };
 		1A276D947B4AC781809B0E943F9DBA71 /* Pods-aBike—Mulhouse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB4AFB8BD7B439F4E454753E360D1FF /* Pods-aBike—Mulhouse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C0769B92824B783A6E6FB15B12BE80F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		1CB5C1CCD4F14160064407E189FEA036 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 593782D9CED707C1E4E09B2208835855 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F4E98B3F834AA526407C7FEA52A2C37 /* Pods-aBike—Marseille-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3708E9E51B7A4991E3229670EF6FA /* Pods-aBike—Marseille-dummy.m */; };
 		2368CE730485113140E27265A533C6FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		24065115166FA322A5A87F15F0C288D8 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2898FCA663E8C99A44F28765E0517E08 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28AD5C6F6DAE89A80CB912BCA994B88E /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 28FE46AD17CB211443DC29A48285BF6C /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29DBBB73841162C5931DC56726CF2CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		2C3F5751A4571DA700198B89C641A0C2 /* Pods-aBike—Lyon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A4768326BE212223F5FC720765E7EA /* Pods-aBike—Lyon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D7BB56AB7A586767D65A4C42980F982 /* Pods-aBike—Paris-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CAA4C491C3A7368848F712E316A3F8 /* Pods-aBike—Paris-dummy.m */; };
 		30B6A230B8246642A138295178F86436 /* Pods-aBike—Mulhouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFD8167A17E32573A1EC4AD6053A1AC /* Pods-aBike—Mulhouse-dummy.m */; };
 		3450CC4B1477D0EB53FC4894D19F51BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		36FDF5ED8FC88D319A2B328868ED0EAA /* Pods-aBike—Dublin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFAF628D34571F9DAD603387E6D53AF /* Pods-aBike—Dublin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373DFAB1D92FB4112F8FF75EF924275D /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 287DA8797FC52765EE1BCA4131EDDC56 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3864492BEC730428212F6FAD1374D83D /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C8F77793BFF7E4E50A49ED84845A70 /* SDStatusBarManager.m */; };
 		3D13B6CDE527B222560F243AEFD466BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		4022FC570C4E42787303473325016F0C /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0578FF5929A1DA7ADC11591973B07BAA /* SDStatusBarOverriderPost8_3.m */; };
 		4D81CA3AF1314365D14EC4BC84941664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		51EFA9D27386451395120207B2428B4C /* Pods-aBike—Créteil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F63BFB7B8D60BA9AC85DA72DFCE90C /* Pods-aBike—Créteil-dummy.m */; };
-		5376EA251A677085EACAD9D1F23EC6E5 /* Pods-aBikeFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 569E4A7B78E5F57471688BD4696EAC08 /* Pods-aBikeFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		566AB308EA569AE7E214D5F566E7121F /* Pods-aBike—Lyon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C40C6F2C59F84AFD7FF5F9A34152D3 /* Pods-aBike—Lyon-dummy.m */; };
 		56B78D325AC5A85B98885A9983AEDBC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		5711CF5E8D5380F4EA7EAD8173CB1AB8 /* Pods-aBike—Paris-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B28E1FD7A5B03051F1820DD52197E6F5 /* Pods-aBike—Paris-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60ACCF064E72AD83FAD580E36C995B4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		61EF64B46C5108433E9722F55A42179F /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9C4A4FF3C763EB27B0DDCC3D5AD817 /* SimulatorStatusMagic-dummy.m */; };
 		65FD5E4BF0565D2C086F8896FD0EB3D6 /* Pods-aBike—Luxembourg-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3AF6074EF353334AE760ECD7C9283 /* Pods-aBike—Luxembourg-dummy.m */; };
 		75921BD4E8B0A59CE1559B7C64CC1F60 /* Pods-aBike—Marseille-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C457822DE2BCE0612745C1286591882A /* Pods-aBike—Marseille-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8C803DCD43779B929C54343129AE32 /* Pods-aBikeFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F3FF2C76B94F33F05CD152CA0E87D /* Pods-aBikeFramework-dummy.m */; };
 		7EA0335CE2DE080C14654E9284AB80D3 /* Pods-aBike—Bruxelles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 693C528DD3BF1534F9898AF520C05368 /* Pods-aBike—Bruxelles-dummy.m */; };
 		809D890AC639AF5A8EBC894F4B2AC06C /* Pods-aBike—Luxembourg-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 878F1B48A3E16AF9DFAB6C0DBBEC61F4 /* Pods-aBike—Luxembourg-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8959190E9B23F4E242F69B8A624CE26C /* Pods-aBike—Toulouse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C45D814155E86C2C13C7AA42F87C441 /* Pods-aBike—Toulouse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A0EC963388E3FEEB039325350C9014B /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2898FCA663E8C99A44F28765E0517E08 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D1FE408B3A872D315B20A25737CDC3A /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A87F559077A29E0520C698DE9B53F942 /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94462171D32B5E6461C395355250BA44 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 593782D9CED707C1E4E09B2208835855 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98AC77046865552279A77536EF75ADAE /* Pods-aBikeFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F3FF2C76B94F33F05CD152CA0E87D /* Pods-aBikeFramework-dummy.m */; };
 		9A440112FBF239B93C4FFA51031652B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		9FE32D2BF9233FC83E925C19A457B8D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		A2CC607AFAE404861757F91BD0AF7537 /* Pods-aBikeFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 569E4A7B78E5F57471688BD4696EAC08 /* Pods-aBikeFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A773A3456792CCE3D0099CC1D3608885 /* Pods-aBike—Dublin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CEA55AAD49E88C5982D43BAF89335 /* Pods-aBike—Dublin-dummy.m */; };
 		B0141937D9690344779CCCD37B540B57 /* Pods-aBike—Toulouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EBDCD47FB4DEE7050EA0691FA397DC /* Pods-aBike—Toulouse-dummy.m */; };
-		B41F7B2B663297C673702B362D0823BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		B519CB0714EA36F5EA8714C57BCED658 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9C4A4FF3C763EB27B0DDCC3D5AD817 /* SimulatorStatusMagic-dummy.m */; };
 		B9C828E772C0DB5FB60EF2AAFE10CC65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		BBA952F49EFCC0569BC36DEBCD906E8F /* Pods-aBike—Bruxelles-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B87710C5AB450228D03C71AC17FD00A /* Pods-aBike—Bruxelles-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBB69D30789751AE2407EDC26986FECC /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = D570A57D43D698EC31AE9077EB440910 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59F79F3D726F786410C36DEF8098A8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
 		C7018ECDB52546D425810398CAB3FB29 /* Pods-aBike—Créteil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BADFE656A1C9D1929827BC8E61E252FD /* Pods-aBike—Créteil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C75BA14F8F818B9E4953B388544E645F /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = D570A57D43D698EC31AE9077EB440910 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0F566266ED7208A4026377247FFE1B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 		D192C8F60513D20C316078BCF4D1F675 /* Pods-aBike—Nantes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E3F1CAA4F6AECCBFBBEE0B225098D /* Pods-aBike—Nantes-dummy.m */; };
 		DAA7575EC69E357D24FD6773A1767736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		E052FF3319291C734EBBAC324447D120 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A87F559077A29E0520C698DE9B53F942 /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4525BDBF2E2A441E47E6D647190AA9C /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C8F77793BFF7E4E50A49ED84845A70 /* SDStatusBarManager.m */; };
-		F3B22E1E31FB23BFFC5A4FDBA2E9006A /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 287DA8797FC52765EE1BCA4131EDDC56 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2605BAF29365733854EF9C24AEC0C5D /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CB7CD40DAEF737121C39058305563 /* SDStatusBarOverriderPre8_3.m */; };
+		F4F1685795386326CA6DB105D1FE77C8 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 28FE46AD17CB211443DC29A48285BF6C /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE619F18F22FDDABC0B07E828BB57C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,70 +60,77 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		2B363E291CBDC35F74E32E45BF0CF993 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		51C5DAB6C1E9C8E88A27E597A441F894 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		5DE7C170FC968A49CAB6547E86AA7AB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		638BED9753937ED50A91E629CC311395 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		79C362D9DE2E78D7DE3D4CEDD3CC4CA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		7C69BE301C86637316D4654164F8E13E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
+			remoteInfo = SimulatorStatusMagic;
+		};
+		A57F1BD14491F246BF0EBA4EB97A3955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		C4E6AF6B99521BC168EFC52CD7BE1DEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		CAED76D75397E707FB275E30BFB7C3E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 		D0A90A05B4836E315B70DE67893E3F08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10E7ECB543EA0495ADD4FB7C1E63F3AF;
+			remoteGlobalIDString = 07EF2A35E81A806C01C56E6E3AE832D2;
 			remoteInfo = SimulatorStatusMagic;
 		};
 /* End PBXContainerItemProxy section */
@@ -284,15 +291,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0707A69F7B5E481EEE9EF485B55D3117 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B41F7B2B663297C673702B362D0823BE /* Foundation.framework in Frameworks */,
-				60ACCF064E72AD83FAD580E36C995B4B /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0FE22F53400695E53DAD9432B6961729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +331,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4622DA3E138C17F3944E814645B1A31F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE619F18F22FDDABC0B07E828BB57C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		530A393472DD20797898816FFF3E71E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,14 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0769B92824B783A6E6FB15B12BE80F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		889E46F03DA3FAD9F98ACA2E4107A83B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FE32D2BF9233FC83E925C19A457B8D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +376,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D13B6CDE527B222560F243AEFD466BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26AF29C64D5593CADF4EC8EA41A991B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29DBBB73841162C5931DC56726CF2CB0 /* Foundation.framework in Frameworks */,
+				C59F79F3D726F786410C36DEF8098A8B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +724,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		024026945389EEC123E551446CB965E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1FE408B3A872D315B20A25737CDC3A /* SDStatusBarManager.h in Headers */,
+				C75BA14F8F818B9E4953B388544E645F /* SDStatusBarOverrider.h in Headers */,
+				F4F1685795386326CA6DB105D1FE77C8 /* SDStatusBarOverriderPost8_3.h in Headers */,
+				94462171D32B5E6461C395355250BA44 /* SDStatusBarOverriderPost9_0.h in Headers */,
+				373DFAB1D92FB4112F8FF75EF924275D /* SDStatusBarOverriderPre8_3.h in Headers */,
+				8A0EC963388E3FEEB039325350C9014B /* SimulatorStatusMagic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14E359D8FE4E9246D58EA83A47031DBD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -749,32 +769,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57AA854DAFA517388B05937CA31D42FD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E052FF3319291C734EBBAC324447D120 /* SDStatusBarManager.h in Headers */,
-				BBB69D30789751AE2407EDC26986FECC /* SDStatusBarOverrider.h in Headers */,
-				28AD5C6F6DAE89A80CB912BCA994B88E /* SDStatusBarOverriderPost8_3.h in Headers */,
-				1CB5C1CCD4F14160064407E189FEA036 /* SDStatusBarOverriderPost9_0.h in Headers */,
-				F3B22E1E31FB23BFFC5A4FDBA2E9006A /* SDStatusBarOverriderPre8_3.h in Headers */,
-				24065115166FA322A5A87F15F0C288D8 /* SimulatorStatusMagic-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C9559B328C5DB06D9531887F34A4862 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1A276D947B4AC781809B0E943F9DBA71 /* Pods-aBike—Mulhouse-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EE87B7C6AA3442BB453BF73FCA467C4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5376EA251A677085EACAD9D1F23EC6E5 /* Pods-aBikeFramework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +798,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FDF5ED8FC88D319A2B328868ED0EAA /* Pods-aBike—Dublin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FBDEE6D8506F28EEE294FAEC597706 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CC607AFAE404861757F91BD0AF7537 /* Pods-aBikeFramework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,13 +846,13 @@
 			productReference = 41FF4237CFF036F2F972F4ADD1843C3A /* Pods_aBike_Marseille.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */ = {
+		07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B810EAB155EE6BE8E14DD075DAF6EA1B /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
+			buildConfigurationList = A7A65C31F4FE78F74FBBDE8CA10FF45B /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
 			buildPhases = (
-				49ACF1C662B048582D050859901FADA2 /* Sources */,
-				0707A69F7B5E481EEE9EF485B55D3117 /* Frameworks */,
-				57AA854DAFA517388B05937CA31D42FD /* Headers */,
+				D70DD968DC2C7321764C5C6EE60AE757 /* Sources */,
+				C26AF29C64D5593CADF4EC8EA41A991B /* Frameworks */,
+				024026945389EEC123E551446CB965E5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -872,6 +879,24 @@
 			name = "Pods-aBike—Créteil";
 			productName = "Pods-aBike—Créteil";
 			productReference = E08BE050FCD2907C65E5DA76EBC47E28 /* Pods_aBike_Cr_teil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2AA1CB4655BDD6DE3C28D20F29EE0D5A /* Pods-aBikeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8882149AEDAEDFB3C206F32DBCF2DE87 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */;
+			buildPhases = (
+				5784F7803B3BC94A41A964AD2EBEC9E6 /* Sources */,
+				4622DA3E138C17F3944E814645B1A31F /* Frameworks */,
+				D1FBDEE6D8506F28EEE294FAEC597706 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E63C4E7534E422BA4289D0F674028AF2 /* PBXTargetDependency */,
+			);
+			name = "Pods-aBikeFramework";
+			productName = "Pods-aBikeFramework";
+			productReference = 1B3214DC554EDB6E4E06D0C21B85C551 /* Pods_aBikeFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		36A0334DDE05A484D446083CCF6017A9 /* Pods-aBike—Mulhouse */ = {
@@ -908,23 +933,6 @@
 			name = "Pods-aBike—Lyon";
 			productName = "Pods-aBike—Lyon";
 			productReference = 4EB914CC1532BBB74DAEE54E5AD3A6F9 /* Pods_aBike_Lyon.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		819EAEE45D75D907D84DE96090CC81C5 /* Pods-aBikeFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 34F415346ECBD9700AD428384658DB38 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */;
-			buildPhases = (
-				3CC178127CA11CCD854FE0E4B9AC659B /* Sources */,
-				889E46F03DA3FAD9F98ACA2E4107A83B /* Frameworks */,
-				7EE87B7C6AA3442BB453BF73FCA467C4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-aBikeFramework";
-			productName = "Pods-aBikeFramework";
-			productReference = 1B3214DC554EDB6E4E06D0C21B85C551 /* Pods_aBikeFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A93E229D15C23FE08945134E24089F40 /* Pods-aBike—Dublin */ = {
@@ -1056,7 +1064,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				819EAEE45D75D907D84DE96090CC81C5 /* Pods-aBikeFramework */,
+				2AA1CB4655BDD6DE3C28D20F29EE0D5A /* Pods-aBikeFramework */,
 				DB46DB4714005D2F6ED37CD376FF404F /* Pods-aBike—Bruxelles */,
 				16B752536057BAECD115F8E0BAB3EE5B /* Pods-aBike—Créteil */,
 				A93E229D15C23FE08945134E24089F40 /* Pods-aBike—Dublin */,
@@ -1067,7 +1075,7 @@
 				EF9E34BE39FF88229D45BA43763DB6FF /* Pods-aBike—Nantes */,
 				ED638999207DBFD4BBAD5F91D42C69AD /* Pods-aBike—Paris */,
 				F9450AE237C5426314C4C137FE403E1A /* Pods-aBike—Toulouse */,
-				10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */,
+				07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */,
 			);
 		};
 /* End PBXProject section */
@@ -1097,31 +1105,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CC178127CA11CCD854FE0E4B9AC659B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D8C803DCD43779B929C54343129AE32 /* Pods-aBikeFramework-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49ACF1C662B048582D050859901FADA2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4525BDBF2E2A441E47E6D647190AA9C /* SDStatusBarManager.m in Sources */,
-				4022FC570C4E42787303473325016F0C /* SDStatusBarOverriderPost8_3.m in Sources */,
-				09BA8E4FA1F9D090426801A10BCF1F54 /* SDStatusBarOverriderPost9_0.m in Sources */,
-				0ADC8756A45F195790282E6CDBCDF1C5 /* SDStatusBarOverriderPre8_3.m in Sources */,
-				B519CB0714EA36F5EA8714C57BCED658 /* SimulatorStatusMagic-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4D173F65DB6CCFB2FF2C2241B8198E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7EA0335CE2DE080C14654E9284AB80D3 /* Pods-aBike—Bruxelles-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5784F7803B3BC94A41A964AD2EBEC9E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98AC77046865552279A77536EF75ADAE /* Pods-aBikeFramework-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,6 +1153,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D70DD968DC2C7321764C5C6EE60AE757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3864492BEC730428212F6FAD1374D83D /* SDStatusBarManager.m in Sources */,
+				0F9D66034FB451ECA9B1373E1C1CDA5A /* SDStatusBarOverriderPost8_3.m in Sources */,
+				006BC16E4E884CECFFC4D0E0BE78487C /* SDStatusBarOverriderPost9_0.m in Sources */,
+				E2605BAF29365733854EF9C24AEC0C5D /* SDStatusBarOverriderPre8_3.m in Sources */,
+				61EF64B46C5108433E9722F55A42179F /* SimulatorStatusMagic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA43D1C0A2863C78EB5BCA4DB8022A69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1179,61 +1187,67 @@
 		169373F6798377E88F32B0AC18899067 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 7C69BE301C86637316D4654164F8E13E /* PBXContainerItemProxy */;
 		};
 		4926A56CD08DA8EF168D8894545AF224 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 2B363E291CBDC35F74E32E45BF0CF993 /* PBXContainerItemProxy */;
 		};
 		52CD1566139093B332008181ED33A178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 14EE9B6C2BBE69EED1C5C7ED77983073 /* PBXContainerItemProxy */;
 		};
 		59BC9889957F709DCF6A1B4477BB6381 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 5DE7C170FC968A49CAB6547E86AA7AB4 /* PBXContainerItemProxy */;
 		};
 		80FA74EDFA296E94CC80C26BD421ADB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 638BED9753937ED50A91E629CC311395 /* PBXContainerItemProxy */;
 		};
 		9CB3C4400E2A9DA61B69A4D93D65E694 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = D0A90A05B4836E315B70DE67893E3F08 /* PBXContainerItemProxy */;
 		};
 		9F9FD0654545C475540CBDC2F6C104B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 79C362D9DE2E78D7DE3D4CEDD3CC4CA5 /* PBXContainerItemProxy */;
 		};
 		D9F5E59C9295FC207BA80FEB8E492968 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = CAED76D75397E707FB275E30BFB7C3E6 /* PBXContainerItemProxy */;
+		};
+		E63C4E7534E422BA4289D0F674028AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimulatorStatusMagic;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
+			targetProxy = A57F1BD14491F246BF0EBA4EB97A3955 /* PBXContainerItemProxy */;
 		};
 		F5E5349D173038445F4C653B1AC78544 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = C4E6AF6B99521BC168EFC52CD7BE1DEA /* PBXContainerItemProxy */;
 		};
 		FF12352CDCE2653BC2B0D3DF33CDD6D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 10E7ECB543EA0495ADD4FB7C1E63F3AF /* SimulatorStatusMagic */;
+			target = 07EF2A35E81A806C01C56E6E3AE832D2 /* SimulatorStatusMagic */;
 			targetProxy = 51C5DAB6C1E9C8E88A27E597A441F894 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1449,6 +1463,36 @@
 			};
 			name = Debug;
 		};
+		2976997016DD6CB2B53114093BFD9809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3615ACBCEA95F70779A015BC3FF6A4E2 /* Pods-aBikeFramework.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_aBikeFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2C41C0942F34C1E8A9BD5B510C7A48D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8ADA8A1BBCAB040D9B0474E799F932E5 /* Pods-aBike—Marseille.debug.xcconfig */;
@@ -1471,6 +1515,36 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_aBike_Marseille;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31DF7A22B0D29672F134B4524D96AA26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341FCF3C4F756DF9F1009EB87012132A /* Pods-aBikeFramework.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_aBikeFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1599,6 +1673,33 @@
 			};
 			name = Release;
 		};
+		53FC68F1A610ACF191A179546342C6C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD1E3CF333E4386EFDE475634F55BFE /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		582F64CC62B247702DC236805C2115DF /* Screenshots */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3203A3B75F79E66A4E79DA07C9C61509 /* Pods-aBike—Luxembourg.screenshots.xcconfig */;
@@ -1621,6 +1722,60 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_aBike_Luxembourg;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		5AAC5FE66FAEBE59E01F32E0638CD203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD1E3CF333E4386EFDE475634F55BFE /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D50B67C450FBB77495EEBA381F81354 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD1E3CF333E4386EFDE475634F55BFE /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimulatorStatusMagic;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1752,33 +1907,6 @@
 			};
 			name = Screenshots;
 		};
-		78A35AF1180D3EAD33A28A9EDA9EB9C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD1E3CF333E4386EFDE475634F55BFE /* SimulatorStatusMagic.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SimulatorStatusMagic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7C8D12019B3E82404B08383F949EA1F7 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAEA40397AAA83EE268727B4CE575C25 /* Pods-aBike—Paris.screenshots.xcconfig */;
@@ -1801,36 +1929,6 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_aBike_Paris;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Screenshots;
-		};
-		858AD4CF251C57E8D0B01DFF79F820BD /* Screenshots */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0983581A78638BCD75912E141D60899E /* Pods-aBikeFramework.screenshots.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_aBikeFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1898,36 +1996,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Screenshots;
-		};
-		A55F95BAB95535D7D37665B99805BB72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3615ACBCEA95F70779A015BC3FF6A4E2 /* Pods-aBikeFramework.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_aBikeFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2028,33 +2096,6 @@
 			};
 			name = Release;
 		};
-		BDE6F4DD3ADCAD2A9B73C7CBA9C27EA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD1E3CF333E4386EFDE475634F55BFE /* SimulatorStatusMagic.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SimulatorStatusMagic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C1E78D000D2E8DC4B1624F81696947A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FFBF8C1DC028A196DFA12E676C4E5D6E /* Pods-aBike—Créteil.release.xcconfig */;
@@ -2114,6 +2155,36 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C6E327F208D6A0949BD19A42A6673A66 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0983581A78638BCD75912E141D60899E /* Pods-aBikeFramework.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_aBikeFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
 		};
 		C74AFF5FE7A3651FBF2E7A91D8A51698 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2175,36 +2246,6 @@
 			};
 			name = Screenshots;
 		};
-		D6A8BE3F5C32DA3FF18900348C36994C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 341FCF3C4F756DF9F1009EB87012132A /* Pods-aBikeFramework.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_aBikeFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E0099F6789EE6E0A1189924805408954 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 191A26170E913A7C73D8572A9B1DED6F /* Pods-aBike—Dublin.debug.xcconfig */;
@@ -2234,33 +2275,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E472D0654680ABB99990191BF0D7D684 /* Screenshots */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD1E3CF333E4386EFDE475634F55BFE /* SimulatorStatusMagic.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SimulatorStatusMagic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Screenshots;
 		};
 		E9A0123F3160E20238D16C7E08CD972B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2427,7 +2441,7 @@
 				7C8D12019B3E82404B08383F949EA1F7 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		1DB1E664BECEF5903E91155B3B0347DF /* Build configuration list for PBXNativeTarget "Pods-aBike—Luxembourg" */ = {
 			isa = XCConfigurationList;
@@ -2437,7 +2451,7 @@
 				582F64CC62B247702DC236805C2115DF /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		27EBAF318C0C98CAF9443E0F2974F97E /* Build configuration list for PBXNativeTarget "Pods-aBike—Nantes" */ = {
 			isa = XCConfigurationList;
@@ -2447,7 +2461,7 @@
 				682D24E488384B5CB0CECA4EE2B5ECC4 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
@@ -2457,7 +2471,7 @@
 				5F244FD900EA1237D21420B805D9FD12 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		34A5994A1E3F2FF4DAE87BE152A4B68A /* Build configuration list for PBXNativeTarget "Pods-aBike—Mulhouse" */ = {
 			isa = XCConfigurationList;
@@ -2467,17 +2481,7 @@
 				E9ECD12BDE7461100109C0E179117D99 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		34F415346ECBD9700AD428384658DB38 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6A8BE3F5C32DA3FF18900348C36994C /* Debug */,
-				A55F95BAB95535D7D37665B99805BB72 /* Release */,
-				858AD4CF251C57E8D0B01DFF79F820BD /* Screenshots */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		48B14BC7405CA7D08375BAAB37073CA8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Marseille" */ = {
 			isa = XCConfigurationList;
@@ -2487,7 +2491,7 @@
 				2070A5BDA0431221A98F1ED55E476AD9 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		4A6ACFD7B878BCFABA67FC2AA2978B8E /* Build configuration list for PBXNativeTarget "Pods-aBike—Créteil" */ = {
 			isa = XCConfigurationList;
@@ -2497,7 +2501,7 @@
 				7811F4F7DD3FB6356873BDDCB943871D /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		75D31AF6CC12F25FF5D9FD60E4E687F8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Toulouse" */ = {
 			isa = XCConfigurationList;
@@ -2507,7 +2511,17 @@
 				A97F91F274AB2D25BF4F8DAAAF500170 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
+		};
+		8882149AEDAEDFB3C206F32DBCF2DE87 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DF7A22B0D29672F134B4524D96AA26 /* Debug */,
+				2976997016DD6CB2B53114093BFD9809 /* Release */,
+				C6E327F208D6A0949BD19A42A6673A66 /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		8FA5D2A2478A4E65BB1C83C5DF05A222 /* Build configuration list for PBXNativeTarget "Pods-aBike—Dublin" */ = {
 			isa = XCConfigurationList;
@@ -2517,17 +2531,17 @@
 				0AD5092A2076BBA81D42475E6F65332D /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
-		B810EAB155EE6BE8E14DD075DAF6EA1B /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
+		A7A65C31F4FE78F74FBBDE8CA10FF45B /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDE6F4DD3ADCAD2A9B73C7CBA9C27EA0 /* Debug */,
-				78A35AF1180D3EAD33A28A9EDA9EB9C7 /* Release */,
-				E472D0654680ABB99990191BF0D7D684 /* Screenshots */,
+				5AAC5FE66FAEBE59E01F32E0638CD203 /* Debug */,
+				53FC68F1A610ACF191A179546342C6C3 /* Release */,
+				5D50B67C450FBB77495EEBA381F81354 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		C77D57D23ADA4DED324EDDED34EB6054 /* Build configuration list for PBXNativeTarget "Pods-aBike—Bruxelles" */ = {
 			isa = XCConfigurationList;
@@ -2537,7 +2551,7 @@
 				A0FAA56B80C433DC4D9326DF37F1D038 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 		D846C63CF1E3FDCB027B2499887CFABA /* Build configuration list for PBXNativeTarget "Pods-aBike—Lyon" */ = {
 			isa = XCConfigurationList;
@@ -2547,7 +2561,7 @@
 				CBBC440A0AAA41EB63EB0A9B87F833C0 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Screenshots;
 		};
 /* End XCConfigurationList section */
 	};
