@@ -676,12 +676,12 @@
 		4E483FE9A874CAF8C49A568C /* Pods-aBike—Dublin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Dublin.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.release.xcconfig"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		591483DF1C649313007EDABB /* aBike—Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../aBike—Créteil/main.m"; sourceTree = "<group>"; };
-		591483ED1C649313007EDABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../aBike—Créteil/Assets.xcassets"; sourceTree = "<group>"; };
-		591483F21C649313007EDABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../aBike—Créteil/Info.plist"; sourceTree = "<group>"; };
-		59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "aBike—Créteil/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
-		59159CB91C6493EF00811AE3 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VEAppDelegate.h; path = "aBike—Créteil/VEAppDelegate.h"; sourceTree = SOURCE_ROOT; };
-		59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VEAppDelegate.m; path = "aBike—Créteil/VEAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		591483ED1C649313007EDABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		591483F21C649313007EDABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		59159CB91C6493EF00811AE3 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAppDelegate.h; sourceTree = "<group>"; };
+		59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEAppDelegate.m; sourceTree = "<group>"; };
 		59159CC51C6495FF00811AE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59159CC71C64961700811AE3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		59159CC81C64961900811AE3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -904,7 +904,7 @@
 		59BAF6F41C6B4A6A0038B609 /* aBike—LuxembourgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—LuxembourgUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BAF6F81C6B4A6A0038B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59BE2E401C64984C00D5718B /* aBike—CréteilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—CréteilUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59BE2E441C64984C00D5718B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../aBike—CréteilUITests/Info.plist"; sourceTree = "<group>"; };
+		59BE2E441C64984C00D5718B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Reveal-tvOS.framework"; sourceTree = "<group>"; };
 		59DDCBC91C4BADD400E3DA02 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAppDelegate.h; sourceTree = "<group>"; };
 		59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEAppDelegate.m; sourceTree = "<group>"; };
@@ -1221,14 +1221,14 @@
 		591483E01C649313007EDABB /* aBike—Créteil */ = {
 			isa = PBXGroup;
 			children = (
-				59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */,
-				59159CB91C6493EF00811AE3 /* VEAppDelegate.h */,
-				59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */,
+				591483E11C649313007EDABB /* Supporting Files */,
 				591483ED1C649313007EDABB /* Assets.xcassets */,
-				5949F8E91C649A2D008398F4 /* Localizable.strings */,
 				591483F21C649313007EDABB /* Info.plist */,
 				59159CC61C6495FF00811AE3 /* InfoPlist.strings */,
-				591483E11C649313007EDABB /* Supporting Files */,
+				59159CB81C6493EF00811AE3 /* Launch Screen.storyboard */,
+				5949F8E91C649A2D008398F4 /* Localizable.strings */,
+				59159CB91C6493EF00811AE3 /* VEAppDelegate.h */,
+				59159CBA1C6493EF00811AE3 /* VEAppDelegate.m */,
 			);
 			path = "aBike—Créteil";
 			sourceTree = "<group>";
@@ -1238,39 +1238,39 @@
 			children = (
 				591483E21C649313007EDABB /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
-				594AC0831C6F7ECF002FE220 /* Various */,
-				59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */,
-				59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */,
-				59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */,
-				59F9ECA41C54EE030007D069 /* aBike—ParisUITests */,
-				59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */,
-				596990B11C5D080A00AEFFBC /* aBike—Nantes */,
-				596990EE1C5D0C2C00AEFFBC /* aBike—NantesUITests */,
-				591483E01C649313007EDABB /* aBike—Créteil */,
-				59BE2E411C64984C00D5718B /* aBike—CréteilUITests */,
-				59FEC1E81C6B41F500809D75 /* aBike—Dublin */,
-				59AB747B1C6B4691003EBFF1 /* aBike—Luxembourg */,
-				59BAF6E61C6B4A630038B609 /* aBike—DublinUITests */,
-				59BAF6F51C6B4A6A0038B609 /* aBike—LuxembourgUITests */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
+				594AC0831C6F7ECF002FE220 /* Various */,
 				593AD9541C495217003B686A /* aBikeFramework */,
 				59567E211C4A50920042767D /* aBikeTVFramework */,
 				597A40831C4BACE800E4B781 /* aBike—Bruxelles */,
+				59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */,
+				591483E01C649313007EDABB /* aBike—Créteil */,
+				59BE2E411C64984C00D5718B /* aBike—CréteilUITests */,
+				59FEC1E81C6B41F500809D75 /* aBike—Dublin */,
+				59BAF6E61C6B4A630038B609 /* aBike—DublinUITests */,
+				59AB747B1C6B4691003EBFF1 /* aBike—Luxembourg */,
+				59BAF6F51C6B4A6A0038B609 /* aBike—LuxembourgUITests */,
 				593AD9241C4951E7003B686A /* aBike—Lyon */,
 				59567E071C4A50850042767D /* aBike—Lyon TV */,
 				59AAFCC81C497BF800ED7202 /* aBike—LyonUITests */,
 				5975F2731C4BBF2800839B95 /* aBike—Marseille */,
+				59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */,
 				5975F2A91C4BC37C00839B95 /* aBike—Mulhouse */,
+				59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */,
+				596990B11C5D080A00AEFFBC /* aBike—Nantes */,
+				596990EE1C5D0C2C00AEFFBC /* aBike—NantesUITests */,
 				5975F2E01C4BC5DA00839B95 /* aBike—Paris */,
+				59F9ECA41C54EE030007D069 /* aBike—ParisUITests */,
 				5975F3171C4BC83100839B95 /* aBike—Toulouse */,
+				59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */,
 				59ABE1D51C4BA62300108AD4 /* Security.framework */,
 				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
 				593ADB0F1C49574F003B686A /* iAd.framework */,
@@ -1348,8 +1348,8 @@
 				593ADA441C495394003B686A /* Additions */,
 				593ADA571C495394003B686A /* Core Data */,
 				593ADA711C495394003B686A /* Data Importer */,
-				593ADA871C495394003B686A /* User Interface */,
 				593ADA761C495394003B686A /* Supporting Files */,
+				593ADA871C495394003B686A /* User Interface */,
 				593ADAAF1C495394003B686A /* VEConsul.h */,
 				593ADAB01C495394003B686A /* VEConsul.m */,
 				593ADAB11C495394003B686A /* VEConsulDefines.h */,
@@ -1521,13 +1521,13 @@
 		594AC0831C6F7ECF002FE220 /* Various */ = {
 			isa = PBXGroup;
 			children = (
+				5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */,
 				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
 				59A23FC61C53DA5500776B09 /* VEConstants.h */,
-				5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */,
 				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
 				5960916A1C6F730E00473C8F /* sendToFabric.sh */,
 			);
-			name = Various;
+			path = Various;
 			sourceTree = "<group>";
 		};
 		59567E071C4A50850042767D /* aBike—Lyon TV */ = {
@@ -1564,14 +1564,14 @@
 		596990B11C5D080A00AEFFBC /* aBike—Nantes */ = {
 			isa = PBXGroup;
 			children = (
-				596990E61C5D0B8E00AEFFBC /* VEAppDelegate.h */,
-				596990E71C5D0B8E00AEFFBC /* VEAppDelegate.m */,
-				596990DC1C5D0AFB00AEFFBC /* Localizable.strings */,
-				596990E31C5D0B4800AEFFBC /* InfoPlist.strings */,
-				596990CE1C5D091600AEFFBC /* Launch Screen.storyboard */,
+				596990B21C5D080B00AEFFBC /* Supporting Files */,
 				596990BE1C5D080B00AEFFBC /* Assets.xcassets */,
 				596990C31C5D080B00AEFFBC /* Info.plist */,
-				596990B21C5D080B00AEFFBC /* Supporting Files */,
+				596990E31C5D0B4800AEFFBC /* InfoPlist.strings */,
+				596990CE1C5D091600AEFFBC /* Launch Screen.storyboard */,
+				596990DC1C5D0AFB00AEFFBC /* Localizable.strings */,
+				596990E61C5D0B8E00AEFFBC /* VEAppDelegate.h */,
+				596990E71C5D0B8E00AEFFBC /* VEAppDelegate.m */,
 			);
 			path = "aBike—Nantes";
 			sourceTree = "<group>";
@@ -1581,7 +1581,7 @@
 			children = (
 				596990B31C5D080B00AEFFBC /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		596990EE1C5D0C2C00AEFFBC /* aBike—NantesUITests */ = {
@@ -1720,14 +1720,14 @@
 		59AB747B1C6B4691003EBFF1 /* aBike—Luxembourg */ = {
 			isa = PBXGroup;
 			children = (
-				59AB74A91C6B4878003EBFF1 /* InfoPlist.strings */,
-				59AB74AC1C6B487C003EBFF1 /* Localizable.strings */,
-				59AB74921C6B4710003EBFF1 /* Launch Screen.storyboard */,
-				59AB74931C6B4710003EBFF1 /* VEAppDelegate.h */,
-				59AB74941C6B4710003EBFF1 /* VEAppDelegate.m */,
+				59AB747C1C6B4691003EBFF1 /* Supporting Files */,
 				59AB74881C6B4691003EBFF1 /* Assets.xcassets */,
 				59AB748D1C6B4691003EBFF1 /* Info.plist */,
-				59AB747C1C6B4691003EBFF1 /* Supporting Files */,
+				59AB74A91C6B4878003EBFF1 /* InfoPlist.strings */,
+				59AB74921C6B4710003EBFF1 /* Launch Screen.storyboard */,
+				59AB74AC1C6B487C003EBFF1 /* Localizable.strings */,
+				59AB74931C6B4710003EBFF1 /* VEAppDelegate.h */,
+				59AB74941C6B4710003EBFF1 /* VEAppDelegate.m */,
 			);
 			path = "aBike—Luxembourg";
 			sourceTree = "<group>";
@@ -1737,7 +1737,7 @@
 			children = (
 				59AB747D1C6B4691003EBFF1 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		59BAF6E61C6B4A630038B609 /* aBike—DublinUITests */ = {
@@ -1807,14 +1807,14 @@
 		59FEC1E81C6B41F500809D75 /* aBike—Dublin */ = {
 			isa = PBXGroup;
 			children = (
-				59FEC2141C6B437400809D75 /* VEAppDelegate.h */,
-				59FEC2151C6B437400809D75 /* VEAppDelegate.m */,
-				59FEC20C1C6B428E00809D75 /* InfoPlist.strings */,
-				59FEC2111C6B42B700809D75 /* Localizable.strings */,
-				59FEC2041C6B428000809D75 /* Launch Screen.storyboard */,
+				59FEC1E91C6B41F500809D75 /* Supporting Files */,
 				59FEC1F51C6B41F500809D75 /* Assets.xcassets */,
 				59FEC1FA1C6B41F500809D75 /* Info.plist */,
-				59FEC1E91C6B41F500809D75 /* Supporting Files */,
+				59FEC20C1C6B428E00809D75 /* InfoPlist.strings */,
+				59FEC2041C6B428000809D75 /* Launch Screen.storyboard */,
+				59FEC2111C6B42B700809D75 /* Localizable.strings */,
+				59FEC2141C6B437400809D75 /* VEAppDelegate.h */,
+				59FEC2151C6B437400809D75 /* VEAppDelegate.m */,
 			);
 			path = "aBike—Dublin";
 			sourceTree = "<group>";
@@ -1824,7 +1824,7 @@
 			children = (
 				59FEC1EA1C6B41F500809D75 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EEBD019FA48AF977C993F023 /* Pods */ = {
@@ -3063,7 +3063,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		5949F8E41C649A06008398F4 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3077,7 +3077,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		596990D01C5D0A4400AEFFBC /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3091,7 +3091,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		5975F3611C4BCAD900839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3105,7 +3105,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		5975F3621C4BCAE300839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3119,7 +3119,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		5975F3631C4BCAEB00839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3133,7 +3133,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		5975F3641C4BCAF200839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3147,7 +3147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		5975F3651C4BCAFA00839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3161,7 +3161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		599CFC591C4BBA0300A244B3 /* Settings Bundle */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3175,7 +3175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\nbuiltInfoPlistPath=${PRODUCT_SETTINGS_PATH}\n\nversionString=${CP_CURRENT_VERSION}\n\nversionString+=\" (\"\n\nversionString+=${CP_CURRENT_BUILD}\n\nversionString+=\")\"\n\nsettingsRootPlistPath=${PROJECT_DIR}\n\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $versionString\" \"${settingsRootPlistPath}/Settings.bundle/Root.plist\"";
+			shellScript = "#!/bin/bash\n\nbuiltInfoPlistPath=${PRODUCT_SETTINGS_PATH}\n\nversionString=${CP_CURRENT_VERSION}\n\nversionString+=\" (\"\n\nversionString+=${CP_CURRENT_BUILD}\n\nversionString+=\")\"\n\nsettingsRootPlistPath=${PROJECT_DIR}\n\nsettingsRootPlistPath+=\"/Various\"\n\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $versionString\" \"${settingsRootPlistPath}/Settings.bundle/Root.plist\"";
 		};
 		59AB74B11C6B48E7003EBFF1 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3189,7 +3189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		59ABE1D01C4BA4BD00108AD4 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3203,7 +3203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		59FEC21E1C6B464300809D75 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3217,7 +3217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
+			shellScript = "\"${SRCROOT}/Various/sendToFabric.sh\"";
 		};
 		604AA3CD7B0B93C7A3450E47 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3890,8 +3890,8 @@
 				59159CC81C64961900811AE3 /* fr */,
 			);
 			name = InfoPlist.strings;
-			path = "aBike—Créteil";
-			sourceTree = SOURCE_ROOT;
+			path = .;
+			sourceTree = "<group>";
 		};
 		593ADA7B1C495394003B686A /* aBikeCities.plist */ = {
 			isa = PBXVariantGroup;
@@ -3923,17 +3923,18 @@
 				5949F8EB1C649A30008398F4 /* fr */,
 			);
 			name = Localizable.strings;
-			path = "aBike—Créteil";
-			sourceTree = SOURCE_ROOT;
+			path = .;
+			sourceTree = "<group>";
 		};
 		596990DC1C5D0AFB00AEFFBC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				596990DB1C5D0AFB00AEFFBC /* en */,
-				596990DD1C5D0B1900AEFFBC /* fr */,
 				596990DE1C5D0B1B00AEFFBC /* en-GB */,
+				596990DD1C5D0B1900AEFFBC /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		596990E31C5D0B4800AEFFBC /* InfoPlist.strings */ = {
@@ -3944,6 +3945,7 @@
 				596990E51C5D0B6700AEFFBC /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		5975F29C1C4BC1B300839B95 /* InfoPlist.strings */ = {
@@ -4064,6 +4066,7 @@
 				59AB74AE1C6B48B9003EBFF1 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		59AB74AC1C6B487C003EBFF1 /* Localizable.strings */ = {
@@ -4074,6 +4077,7 @@
 				59AB74B01C6B48BE003EBFF1 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		59FACE1B1C495873005DB202 /* InfoPlist.strings */ = {
@@ -4102,20 +4106,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				59FEC20B1C6B428E00809D75 /* en */,
-				59FEC20D1C6B429D00809D75 /* fr */,
 				59FEC20E1C6B42A000809D75 /* en-GB */,
+				59FEC20D1C6B429D00809D75 /* fr */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		59FEC2111C6B42B700809D75 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				59FEC2101C6B42B700809D75 /* en */,
-				59FEC2121C6B42B900809D75 /* fr */,
 				59FEC2131C6B42BA00809D75 /* en-GB */,
+				59FEC2121C6B42B900809D75 /* fr */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
