@@ -82,7 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Screenshots" ]]; then
-  install_framework "Pods-aBike—Mulhouse/SimulatorStatusMagic.framework"
-fi

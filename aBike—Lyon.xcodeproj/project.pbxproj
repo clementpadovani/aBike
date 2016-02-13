@@ -51,10 +51,6 @@
 		5906FC0C1C4A5FBB00A2D3D1 /* VEConsul.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAF1C495394003B686A /* VEConsul.h */; };
 		5906FC0D1C4A617A00A2D3D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		5906FC0E1C4A617A00A2D3D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
-		591150C21C4ACB2900F87EA6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		591150C31C4ACB2900F87EA6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		591150C41C4ACB2900F87EA6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
-		591150C51C4ACB2900F87EA6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		591483E31C649313007EDABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591483E21C649313007EDABB /* main.m */; };
 		591483EE1C649313007EDABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591483ED1C649313007EDABB /* Assets.xcassets */; };
@@ -68,8 +64,6 @@
 		59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59159CCC1C64969200811AE3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
-		59159CCE1C6496B300811AE3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		59159CCF1C6496B300811AE3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		593AD9271C4951E7003B686A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593AD9261C4951E7003B686A /* main.m */; };
 		593AD9561C495217003B686A /* aBikeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 593AD9551C495217003B686A /* aBikeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -213,8 +207,6 @@
 		596990D11C5D0A8900AEFFBC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		596990D21C5D0A8900AEFFBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		596990D31C5D0A8900AEFFBC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
-		596990D41C5D0A9300AEFFBC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		596990D51C5D0A9300AEFFBC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		596990D61C5D0A9C00AEFFBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
 		596990D71C5D0ACE00AEFFBC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		596990DA1C5D0AFB00AEFFBC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 596990DC1C5D0AFB00AEFFBC /* Localizable.strings */; };
@@ -263,16 +255,6 @@
 		5975F3481C4BCA6500839B95 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		5975F3491C4BCA7600839B95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		5975F34A1C4BCA7D00839B95 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
-		5975F34B1C4BCA9100839B95 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		5975F34C1C4BCA9100839B95 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		5975F34D1C4BCA9200839B95 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		5975F34E1C4BCA9300839B95 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		5975F34F1C4BCA9400839B95 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		5975F3501C4BCA9800839B95 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
-		5975F3511C4BCA9800839B95 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
-		5975F3521C4BCA9900839B95 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
-		5975F3531C4BCA9A00839B95 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
-		5975F3541C4BCA9A00839B95 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		5975F3551C4BCA9F00839B95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		5975F3561C4BCAA000839B95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		5975F3571C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
@@ -307,8 +289,6 @@
 		59AB74961C6B4710003EBFF1 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AB74941C6B4710003EBFF1 /* VEAppDelegate.m */; };
 		59AB74971C6B484B003EBFF1 /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		59AB74981C6B484B003EBFF1 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		59AB749C1C6B4855003EBFF1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		59AB749D1C6B4855003EBFF1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		59AB749E1C6B4855003EBFF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59AB749F1C6B4855003EBFF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59AB74A01C6B4855003EBFF1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
@@ -357,8 +337,6 @@
 		59FEC2181C6B43A900809D75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59FEC2191C6B43A900809D75 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59FEC21A1C6B43AB00809D75 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
-		59FEC21B1C6B43B100809D75 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C01C4ACB2900F87EA6 /* Crashlytics.framework */; };
-		59FEC21C1C6B43B100809D75 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591150C11C4ACB2900F87EA6 /* Fabric.framework */; };
 		59FEC21D1C6B43B600809D75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		6B827124594F257BAB247309 /* Pods_aBike_Luxembourg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F06A72050FBFD5FEC5F792 /* Pods_aBike_Luxembourg.framework */; };
 		782CBCA57E248907AA6B1F09 /* Pods_aBike_Dublin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A677B794E34B3D78FB7D5423 /* Pods_aBike_Dublin.framework */; };
@@ -702,8 +680,6 @@
 		47A420D0AB06D1E696100585 /* Pods-aBike—Bruxelles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Bruxelles.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.release.xcconfig"; sourceTree = "<group>"; };
 		4E483FE9A874CAF8C49A568C /* Pods-aBike—Dublin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Dublin.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.release.xcconfig"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
-		591150C01C4ACB2900F87EA6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		591150C11C4ACB2900F87EA6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		591483DF1C649313007EDABB /* aBike—Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../aBike—Créteil/main.m"; sourceTree = "<group>"; };
 		591483ED1C649313007EDABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../aBike—Créteil/Assets.xcassets"; sourceTree = "<group>"; };
@@ -825,6 +801,8 @@
 		59567E201C4A50920042767D /* aBikeTVFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = aBikeTVFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59567E221C4A50920042767D /* aBikeTVFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFramework.h; sourceTree = "<group>"; };
 		59567E241C4A50920042767D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5960916A1C6F730E00473C8F /* sendToFabric.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sendToFabric.sh; sourceTree = "<group>"; };
+		5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CurrentVersion.xcconfig; sourceTree = "<group>"; };
 		596990B01C5D080A00AEFFBC /* aBike—Nantes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Nantes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596990B31C5D080B00AEFFBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		596990BE1C5D080B00AEFFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1004,12 +982,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59159CCF1C6496B300811AE3 /* Fabric.framework in Frameworks */,
 				59159CC91C64968E00811AE3 /* Security.framework in Frameworks */,
 				59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */,
 				59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */,
 				591483F71C649364007EDABB /* aBikeFramework.framework in Frameworks */,
-				59159CCE1C6496B300811AE3 /* Crashlytics.framework in Frameworks */,
 				59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */,
 				7831083EEF66B53ABC3E07BF /* Pods_aBike_Cr_teil.framework in Frameworks */,
 			);
@@ -1023,9 +999,7 @@
 				59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */,
 				59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */,
 				593ADB101C49574F003B686A /* iAd.framework in Frameworks */,
-				591150C21C4ACB2900F87EA6 /* Crashlytics.framework in Frameworks */,
 				593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */,
-				591150C41C4ACB2900F87EA6 /* Fabric.framework in Frameworks */,
 				192B456925B12100F4224555 /* Pods_aBike_Lyon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1034,8 +1008,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				591150C31C4ACB2900F87EA6 /* Crashlytics.framework in Frameworks */,
-				591150C51C4ACB2900F87EA6 /* Fabric.framework in Frameworks */,
 				599DB9D41C54D2EC0063B56B /* Security.framework in Frameworks */,
 				599DB9D51C54D2EC0063B56B /* SystemConfiguration.framework in Frameworks */,
 				599DB9D61C54D2EC0063B56B /* libc++.tbd in Frameworks */,
@@ -1065,11 +1037,9 @@
 			files = (
 				596990D11C5D0A8900AEFFBC /* Security.framework in Frameworks */,
 				596990D61C5D0A9C00AEFFBC /* libc++.tbd in Frameworks */,
-				596990D41C5D0A9300AEFFBC /* Crashlytics.framework in Frameworks */,
 				596990D21C5D0A8900AEFFBC /* SystemConfiguration.framework in Frameworks */,
 				596990C81C5D083A00AEFFBC /* aBikeFramework.framework in Frameworks */,
 				596990D31C5D0A8900AEFFBC /* iAd.framework in Frameworks */,
-				596990D51C5D0A9300AEFFBC /* Fabric.framework in Frameworks */,
 				D96E30EA4BC2F683332FF635 /* Pods_aBike_Nantes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1088,10 +1058,8 @@
 				5975F2921C4BBF8D00839B95 /* iAd.framework in Frameworks */,
 				5975F35F1C4BCAB300839B95 /* libc++.tbd in Frameworks */,
 				5975F3571C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */,
-				5975F34C1C4BCA9100839B95 /* Crashlytics.framework in Frameworks */,
 				5975F28D1C4BBF7E00839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35B1C4BCAAB00839B95 /* Security.framework in Frameworks */,
-				5975F3511C4BCA9800839B95 /* Fabric.framework in Frameworks */,
 				43777945ECAB1FE19B2D1E70 /* Pods_aBike_Marseille.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1103,10 +1071,8 @@
 				5975F2C61C4BC3CA00839B95 /* iAd.framework in Frameworks */,
 				5975F35E1C4BCAB200839B95 /* libc++.tbd in Frameworks */,
 				5975F3561C4BCAA000839B95 /* SystemConfiguration.framework in Frameworks */,
-				5975F34D1C4BCA9200839B95 /* Crashlytics.framework in Frameworks */,
 				5975F2C11C4BC3C300839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35A1C4BCAAA00839B95 /* Security.framework in Frameworks */,
-				5975F3521C4BCA9900839B95 /* Fabric.framework in Frameworks */,
 				45BFBBB076446FD0707CA39A /* Pods_aBike_Mulhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1118,10 +1084,8 @@
 				5975F2FD1C4BC61700839B95 /* iAd.framework in Frameworks */,
 				5975F35D1C4BCAB200839B95 /* libc++.tbd in Frameworks */,
 				5975F3551C4BCA9F00839B95 /* SystemConfiguration.framework in Frameworks */,
-				5975F34F1C4BCA9400839B95 /* Crashlytics.framework in Frameworks */,
 				5975F2F81C4BC61400839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F3591C4BCAA900839B95 /* Security.framework in Frameworks */,
-				5975F3531C4BCA9A00839B95 /* Fabric.framework in Frameworks */,
 				2726B28B7E34A3963E346EFA /* Pods_aBike_Paris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1130,12 +1094,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5975F3541C4BCA9A00839B95 /* Fabric.framework in Frameworks */,
 				5975F34A1C4BCA7D00839B95 /* libc++.tbd in Frameworks */,
 				5975F3491C4BCA7600839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F3481C4BCA6500839B95 /* Security.framework in Frameworks */,
 				5975F3331C4BC85B00839B95 /* iAd.framework in Frameworks */,
-				5975F34E1C4BCA9300839B95 /* Crashlytics.framework in Frameworks */,
 				5975F32E1C4BC85400839B95 /* aBikeFramework.framework in Frameworks */,
 				D4EAA4C1D41CACB762F9AA63 /* Pods_aBike_Toulouse.framework in Frameworks */,
 			);
@@ -1148,10 +1110,8 @@
 				599CFC3F1C4BB0C300A244B3 /* iAd.framework in Frameworks */,
 				5975F3601C4BCAB400839B95 /* libc++.tbd in Frameworks */,
 				5975F3581C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */,
-				5975F34B1C4BCA9100839B95 /* Crashlytics.framework in Frameworks */,
 				597A409A1C4BAD3200E4B781 /* aBikeFramework.framework in Frameworks */,
 				5975F35C1C4BCAAB00839B95 /* Security.framework in Frameworks */,
-				5975F3501C4BCA9800839B95 /* Fabric.framework in Frameworks */,
 				AC04BEDC71E49F2DBFE68CFF /* Pods_aBike_Bruxelles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1167,13 +1127,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59AB749C1C6B4855003EBFF1 /* Crashlytics.framework in Frameworks */,
 				59AB74A11C6B4857003EBFF1 /* libc++.tbd in Frameworks */,
 				59AB749F1C6B4855003EBFF1 /* SystemConfiguration.framework in Frameworks */,
 				59AB74971C6B484B003EBFF1 /* aBikeFramework.framework in Frameworks */,
 				59AB74A01C6B4855003EBFF1 /* iAd.framework in Frameworks */,
 				59AB749E1C6B4855003EBFF1 /* Security.framework in Frameworks */,
-				59AB749D1C6B4855003EBFF1 /* Fabric.framework in Frameworks */,
 				6B827124594F257BAB247309 /* Pods_aBike_Luxembourg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1238,12 +1196,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59FEC21C1C6B43B100809D75 /* Fabric.framework in Frameworks */,
 				59FEC2171C6B43A900809D75 /* Security.framework in Frameworks */,
 				59FEC21A1C6B43AB00809D75 /* libc++.tbd in Frameworks */,
 				59FEC2181C6B43A900809D75 /* SystemConfiguration.framework in Frameworks */,
 				59FEC1FF1C6B424800809D75 /* aBikeFramework.framework in Frameworks */,
-				59FEC21B1C6B43B100809D75 /* Crashlytics.framework in Frameworks */,
 				59FEC2191C6B43A900809D75 /* iAd.framework in Frameworks */,
 				782CBCA57E248907AA6B1F09 /* Pods_aBike_Dublin.framework in Frameworks */,
 			);
@@ -1296,6 +1252,7 @@
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
+				5960916A1C6F730E00473C8F /* sendToFabric.sh */,
 				59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */,
 				59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */,
 				59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */,
@@ -1326,6 +1283,7 @@
 				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
 				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
 				59A23FC61C53DA5500776B09 /* VEConstants.h */,
+				5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */,
 				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
 				593ADB0F1C49574F003B686A /* iAd.framework */,
 				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
@@ -1367,8 +1325,6 @@
 			isa = PBXGroup;
 			children = (
 				593AD9251C4951E7003B686A /* Supporting Files */,
-				591150C01C4ACB2900F87EA6 /* Crashlytics.framework */,
-				591150C11C4ACB2900F87EA6 /* Fabric.framework */,
 				593AD9361C4951E7003B686A /* Info.plist */,
 				59FACE241C495E29005DB202 /* Launch Screen.storyboard */,
 				593ADB071C4953F6003B686A /* VEAppDelegate.h */,
@@ -2047,9 +2003,9 @@
 				593AD91F1C4951E7003B686A /* Frameworks */,
 				593AD9201C4951E7003B686A /* Resources */,
 				593AD94D1C495208003B686A /* Embed Frameworks */,
-				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
 				67AF793D6A0E4865AB9083E8 /* Embed Pods Frameworks */,
 				99E02C19C74CB353C04C79DF /* Copy Pods Resources */,
+				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2170,9 +2126,9 @@
 				5975F26F1C4BBF2800839B95 /* Frameworks */,
 				5975F2701C4BBF2800839B95 /* Resources */,
 				5975F2911C4BBF7E00839B95 /* Embed Frameworks */,
-				5975F3641C4BCAF200839B95 /* Fabric */,
 				56222586094D80AF3BEDA1CE /* Embed Pods Frameworks */,
 				2C90A88F271C8A1D23B8CB74 /* Copy Pods Resources */,
+				5975F3641C4BCAF200839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2193,9 +2149,9 @@
 				5975F2A51C4BC37C00839B95 /* Frameworks */,
 				5975F2A61C4BC37C00839B95 /* Resources */,
 				5975F2C51C4BC3C400839B95 /* Embed Frameworks */,
-				5975F3631C4BCAEB00839B95 /* Fabric */,
 				0FAB002E5FEB86C53C8E0236 /* Embed Pods Frameworks */,
 				604AA3CD7B0B93C7A3450E47 /* Copy Pods Resources */,
+				5975F3631C4BCAEB00839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2239,9 +2195,9 @@
 				5975F3131C4BC83100839B95 /* Frameworks */,
 				5975F3141C4BC83100839B95 /* Resources */,
 				5975F3321C4BC85400839B95 /* Embed Frameworks */,
-				5975F3611C4BCAD900839B95 /* Fabric */,
 				3D0AA418F2B9E9F031B30208 /* Embed Pods Frameworks */,
 				3BEA90604F14C71EC3BDD3BD /* Copy Pods Resources */,
+				5975F3611C4BCAD900839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2262,9 +2218,9 @@
 				597A407F1C4BACE800E4B781 /* Frameworks */,
 				597A40801C4BACE800E4B781 /* Resources */,
 				597A409E1C4BAD3300E4B781 /* Embed Frameworks */,
-				5975F3651C4BCAFA00839B95 /* Fabric */,
 				B2C5286E4021E9833C9AF187 /* Embed Pods Frameworks */,
 				E4FD9D0D50EC9C615EE4913D /* Copy Pods Resources */,
+				5975F3651C4BCAFA00839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -3113,7 +3069,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		5949F8E41C649A06008398F4 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3127,7 +3083,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		596990D01C5D0A4400AEFFBC /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3141,7 +3097,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		5975F3611C4BCAD900839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3155,7 +3111,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		5975F3621C4BCAE300839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3169,7 +3125,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		5975F3631C4BCAEB00839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3183,7 +3139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		5975F3641C4BCAF200839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3197,7 +3153,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		5975F3651C4BCAFA00839B95 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3211,7 +3167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		599CFC591C4BBA0300A244B3 /* Settings Bundle */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3239,7 +3195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		59ABE1D01C4BA4BD00108AD4 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3253,7 +3209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		59FEC21E1C6B464300809D75 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3267,7 +3223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "releaseConfig=\"Release\"\nscreenshotsConfig=\"Screenshots\"\n\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Release\"\n\nif [ \"$screenshotsConfig\" = \"${CONFIGURATION}\" ]; then\n\necho \"Screenshots\"\n\nexit\n\nfi\n\nif [[ \"${SDKROOT}\" == *Simulator* ]]\nthen\n\necho \"Simulator\"\nexit\nfi\n\necho \"Not simulator\"\n\n\"${PROJECT_DIR}/Fabric.framework/run\" 9dfaba5dced813ed66e1f2291c22464b97fe3be3 9b9ce5921627b461c0347829020735887526444b662d5db383e852f43e932b00\n\nfi";
+			shellScript = "\"${SRCROOT}/sendToFabric.sh\"";
 		};
 		604AA3CD7B0B93C7A3450E47 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4259,8 +4215,8 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 377;
-				CP_CURRENT_VERSION = 2.9.8;
+				CP_CURRENT_BUILD = "$(inherited)";
+				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -4308,8 +4264,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 377;
-				CP_CURRENT_VERSION = 2.9.8;
+				CP_CURRENT_BUILD = "$(inherited)";
+				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5547,6 +5503,7 @@
 		};
 		59FACE271C496793005DB202 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -5564,8 +5521,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = 377;
-				CP_CURRENT_VERSION = 2.9.8;
+				CP_CURRENT_BUILD = "$(inherited)";
+				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
