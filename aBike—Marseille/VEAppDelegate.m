@@ -117,7 +117,7 @@
 	[[VEConsul sharedConsul] applicationDidReceiveMemoryWarning];
 }
 
-#ifdef DEBUG
+#if DEBUG == 1
 
 - (void) motionBegan: (UIEventSubtype) motion withEvent: (UIEvent *) event
 {

@@ -54,7 +54,7 @@
 
 - (void) applicationDidReceiveMemoryWarning;
 
-#ifdef DEBUG
+#if DEBUG == 1
 
 - (void) motionShake;
 

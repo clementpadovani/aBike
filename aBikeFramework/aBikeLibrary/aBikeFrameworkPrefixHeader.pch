@@ -73,7 +73,7 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #if !(TARGET_IPHONE_SIMULATOR)
 
-#ifdef RELEASE
+#if RELEASE == 1
 
 #define kEnableCrashlytics 1
 
@@ -99,7 +99,7 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #if kEnableCrashlytics
 
-#ifdef DEBUG
+#if DEBUG == 1
 
 #define CPLog(__FORMAT__, ...) CLSNSLog((@"%s line %d $ " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 

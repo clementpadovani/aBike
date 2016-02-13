@@ -34,7 +34,7 @@
 
 static VEConsul *_sharedConsul = nil;
 
-#ifdef DEBUG
+#if DEBUG == 1
 
 @interface UIWindow ()
 
@@ -683,7 +683,7 @@ static VEConsul *_sharedConsul = nil;
 	return height;
 }
 
-#ifdef DEBUG
+#if DEBUG == 1
 
 - (void) motionShake
 {
