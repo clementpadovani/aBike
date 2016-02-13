@@ -6,18 +6,17 @@
 //  Copyright (c) 2013 Clément Padovani. All rights reserved.
 //
 
-@import SCNetworkReachability;
-
 #import "VEConnectionManager.h"
 
 #import "VEConsul.h"
 
+#import "VEReachability.h"
 
 static NSString * const kVEConnectionManagerReachabilityHost = @"www.apple.com";
 
 @interface VEConnectionManager ()
 
-@property (strong, nonatomic) SCNetworkReachability *reacher;
+@property (strong, nonatomic) VEReachability *reacher;
 
 @property (nonatomic, readwrite, getter = isReachable) BOOL reachable;
 
@@ -50,25 +49,26 @@ static VEConnectionManager *_sharedConnectionManager = nil;
 	{
 		_reachable = YES;
 
-		SCNetworkReachability *reacher = [[SCNetworkReachability alloc] initWithHost: kVEConnectionManagerReachabilityHost];
+		VEReachability *reacher = [VEReachability reachabilityWithHostname: kVEConnectionManagerReachabilityHost];
 
 		//CPLog(@"init");
 		
 		__weak VEConnectionManager *weakSelf = self;
 
-		[reacher observeReachability: ^(SCNetworkStatus status) {
+		[reacher setReachableBlock: ^(VEReachability * reachability) {
 
-			if (status == SCNetworkStatusNotReachable)
-				[weakSelf setReachable: NO];
-			else
-				[weakSelf setReachable: YES];
-
+			[weakSelf setReachable: YES];
 		}];
-		
+
+		[reacher setUnreachableBlock: ^(VEReachability * reachability) {
+
+			[weakSelf setReachable: NO];
+		}];
+
 		_reacher = reacher;
 
-		//[[self reacher] startNotifier];
-		
+		[[self reacher] startNotifier];
+
 
 		//CPLog(@"done init");
 	}

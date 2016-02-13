@@ -33,15 +33,11 @@ end
 
 target 'aBikeFramework' do
 
-     platform :ios, '8.0'
-
      pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
 
 	pod 'Fabric', :configurations => ['Release']
 	
 	pod 'Crashlytics', :configurations => ['Release']
-	
-	pod 'SCNetworkReachability'
 
 end
 

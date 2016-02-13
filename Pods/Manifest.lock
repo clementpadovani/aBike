@@ -2,27 +2,19 @@ PODS:
   - Crashlytics (3.6.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.5)
-  - macros_blocks (0.0.1)
   - Reveal-iOS-SDK (1.6.2)
-  - SCNetworkReachability (2.0.5):
-    - SCNetworkReachability/Core (= 2.0.5)
-  - SCNetworkReachability/Core (2.0.5):
-    - macros_blocks (= 0.0.1)
   - SimulatorStatusMagic (1.7)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
   - Reveal-iOS-SDK
-  - SCNetworkReachability
   - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
   Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
   Fabric: 338ffd3c2afcab120638907b4251189de9ad17b3
-  macros_blocks: da2106a0975514e16f3669f2f50a02efaff642cf
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
-  SCNetworkReachability: 14026e754d9abb264c157131539e8e2c2131cb62
   SimulatorStatusMagic: 46c90a12f73abeda6d7c16876e1e0998b6ca5f4f
 
 COCOAPODS: 0.39.0
