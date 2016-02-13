@@ -26,7 +26,7 @@ static const NSTimeInterval kStationReloadDataThreshold = 10;
 
 #else
 
-static const NSTimeInterval kStationReloadDataThreshold = 300;
+static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 
 #endif
 
