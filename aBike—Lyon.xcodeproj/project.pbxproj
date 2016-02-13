@@ -1250,7 +1250,7 @@
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
-				5960916A1C6F730E00473C8F /* sendToFabric.sh */,
+				594AC0831C6F7ECF002FE220 /* Various */,
 				59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */,
 				59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */,
 				59F9EC951C54EDF90007D069 /* aBike—MulhouseUITests */,
@@ -1278,11 +1278,7 @@
 				5975F2E01C4BC5DA00839B95 /* aBike—Paris */,
 				5975F3171C4BC83100839B95 /* aBike—Toulouse */,
 				59ABE1D51C4BA62300108AD4 /* Security.framework */,
-				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
 				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
-				59A23FC61C53DA5500776B09 /* VEConstants.h */,
-				5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */,
-				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
 				593ADB0F1C49574F003B686A /* iAd.framework */,
 				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
 				59A23FC51C53DA1600776B09 /* locations */,
@@ -1528,6 +1524,18 @@
 				593ADAA41C495394003B686A /* VEStationsView.m */,
 			);
 			path = "Stations View";
+			sourceTree = "<group>";
+		};
+		594AC0831C6F7ECF002FE220 /* Various */ = {
+			isa = PBXGroup;
+			children = (
+				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
+				59A23FC61C53DA5500776B09 /* VEConstants.h */,
+				5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */,
+				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
+				5960916A1C6F730E00473C8F /* sendToFabric.sh */,
+			);
+			name = Various;
 			sourceTree = "<group>";
 		};
 		59567E071C4A50850042767D /* aBike—Lyon TV */ = {

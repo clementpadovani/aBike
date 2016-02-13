@@ -12,9 +12,14 @@ def normalPods
 	
 	pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 	
-	pod 'Fabric', :configurations => ['Release']
-	
-	pod 'Crashlytics', :configurations => ['Release']
+# 	pod 'Fabric', :configurations => ['Release']
+# 	
+# 	pod 'Crashlytics', :configurations => ['Release']
+
+# 	pod 'Fabric', :configurations => ['Debug']
+# 	
+# 	pod 'Crashlytics', :configurations => ['Debug']
+
 
 end
 
@@ -26,10 +31,17 @@ end
 
 target 'aBikeFramework' do
 
-platform :ios, '8.0'
+     platform :ios, '8.0'
 
-pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
+     pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
 
+# 	pod 'Fabric', :configurations => ['Release']
+# 	
+# 	pod 'Crashlytics', :configurations => ['Release']
+
+	pod 'Fabric', :configurations => ['Debug']
+	
+	pod 'Crashlytics', :configurations => ['Debug']
 end
 
 target 'aBike—LyonUITests' do
