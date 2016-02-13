@@ -1032,13 +1032,13 @@ static VEAdStationView *_sharedAdStationView = nil;
 
 - (void) dealloc
 {
-	if ([self productRequest])
+	if (_productRequest)
 	{
-		[[self productRequest] cancel];
-		
-		[self setProductRequest: nil];
+		[_productRequest cancel];
+
+		_productRequest = nil;
 	}
-	
+
 	[[SKPaymentQueue defaultQueue] removeTransactionObserver: self];
 	
 	[[NSNotificationCenter defaultCenter] removeObserver: self

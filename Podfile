@@ -35,13 +35,12 @@ target 'aBikeFramework' do
 
      pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
 
-# 	pod 'Fabric', :configurations => ['Release']
-# 	
-# 	pod 'Crashlytics', :configurations => ['Release']
-
-	pod 'Fabric', :configurations => ['Debug']
+	pod 'Fabric', :configurations => ['Release']
 	
-	pod 'Crashlytics', :configurations => ['Debug']
+	pod 'Crashlytics', :configurations => ['Release']
+	
+	pod 'Reachability'
+
 end
 
 target 'aBike—LyonUITests' do

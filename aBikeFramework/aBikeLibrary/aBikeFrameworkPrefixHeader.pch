@@ -85,7 +85,7 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #else
 
-#define kEnableCrashlytics 1
+#define kEnableCrashlytics 0
 
 #endif
 

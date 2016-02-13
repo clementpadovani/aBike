@@ -888,10 +888,10 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 {
 	if ([self isShowingDirections])
 		[self setShowingDirections: NO];
-	
-	if ([[self currentStationDirections] isCalculating])
-		[[self currentStationDirections] cancel];
-	
+
+	if ([_currentStationDirections isCalculating])
+		[_currentStationDirections cancel];
+
 	[[NSNotificationCenter defaultCenter] removeObserver: self];
 	
 	//CPLog(@"has dealloced");

@@ -265,7 +265,9 @@ BOOL includesAdRemover = YES;
 	}
 	
 	if (isValid)
+	{
 		return currentNumber;
+	}
 	else
 	{
 		CPLog(@"invalid");

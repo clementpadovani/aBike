@@ -43,7 +43,7 @@ static const CGFloat kVERouteRendererDirectionsRouteAlpha = .85f;
 //	[super drawMapRect: mapRect zoomScale: zoomScale inContext: context];
 //}
 
-#ifdef DEBUG
+#if (DEBUG == 1)
 
 - (id) debugQuickLookObject
 {

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Clément Padovani. All rights reserved.
 //
 
-#import "Reachability.h"
+@import Reachability;
 
 #import "VEConnectionManager.h"
 
@@ -139,7 +139,9 @@ static VEConnectionManager *_sharedConnectionManager = nil;
 
 - (void) dealloc
 {
-	[[self reacher] stopNotifier];
+	[_reacher stopNotifier];
+
+	_reacher = nil;
 }
 
 @end

@@ -139,11 +139,11 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 			#endif
 		}
 		
-		[self setDirectionsAccessoryView: directionsAccessoryView];
+		_directionsAccessoryView = directionsAccessoryView;
 		
 		#if kEnableSharing
-		
-			[self setSharingAccessoryView: sharingAccessoryView];
+
+			_sharingAccessoryView = sharingAccessoryView;
 		
 		#endif
 		

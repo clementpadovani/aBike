@@ -2,18 +2,21 @@ PODS:
   - Crashlytics (3.6.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.5)
+  - Reachability (3.2)
   - Reveal-iOS-SDK (1.6.2)
   - SimulatorStatusMagic (1.7)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - Reachability
   - Reveal-iOS-SDK
   - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
   Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
   Fabric: 338ffd3c2afcab120638907b4251189de9ad17b3
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SimulatorStatusMagic: 46c90a12f73abeda6d7c16876e1e0998b6ca5f4f
 

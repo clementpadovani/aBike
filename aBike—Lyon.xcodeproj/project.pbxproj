@@ -31,7 +31,6 @@
 		5906FBF81C4A5FBB00A2D3D1 /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; };
 		5906FBF91C4A5FBB00A2D3D1 /* VEMKPlacemarkValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */; };
 		5906FBFA1C4A5FBB00A2D3D1 /* VEDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA721C495394003B686A /* VEDataImporter.h */; };
-		5906FBFB1C4A5FBB00A2D3D1 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA831C495394003B686A /* Reachability.h */; };
 		5906FBFC1C4A5FBB00A2D3D1 /* UIColor+MainColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA851C495394003B686A /* UIColor+MainColor.h */; };
 		5906FBFD1C4A5FBB00A2D3D1 /* VEAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8D1C495394003B686A /* VEAlertControllerManager.h */; };
 		5906FBFE1C4A5FBB00A2D3D1 /* VEAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8F1C495394003B686A /* VEAlertManager.h */; };
@@ -109,8 +108,6 @@
 		593ADADA1C495394003B686A /* VEDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA731C495394003B686A /* VEDataImporter.m */; };
 		593ADADE1C495394003B686A /* aBikeCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7B1C495394003B686A /* aBikeCities.plist */; };
 		593ADADF1C495394003B686A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7D1C495394003B686A /* Localizable.strings */; };
-		593ADAE01C495394003B686A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA831C495394003B686A /* Reachability.h */; };
-		593ADAE11C495394003B686A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA841C495394003B686A /* Reachability.m */; };
 		593ADAE21C495394003B686A /* UIColor+MainColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA851C495394003B686A /* UIColor+MainColor.h */; };
 		593ADAE31C495394003B686A /* UIColor+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA861C495394003B686A /* UIColor+MainColor.m */; };
 		593ADAE61C495394003B686A /* VEAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8D1C495394003B686A /* VEAlertControllerManager.h */; };
@@ -175,7 +172,6 @@
 		59567E501C4A50A50042767D /* VEManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6D1C495394003B686A /* VEManagedObjectContext.m */; };
 		59567E521C4A50A50042767D /* VEMKPlacemarkValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */; };
 		59567E541C4A50A50042767D /* VEDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA731C495394003B686A /* VEDataImporter.m */; };
-		59567E591C4A50A50042767D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA841C495394003B686A /* Reachability.m */; };
 		59567E5B1C4A50A50042767D /* UIColor+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA861C495394003B686A /* UIColor+MainColor.m */; };
 		59567E5F1C4A50A50042767D /* VEAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA8E1C495394003B686A /* VEAlertControllerManager.m */; };
 		59567E611C4A50A50042767D /* VEAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA901C495394003B686A /* VEAlertManager.m */; };
@@ -744,8 +740,6 @@
 		593ADA801C495394003B686A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		593ADA811C495394003B686A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/aBikeCities.plist; sourceTree = "<group>"; };
 		593ADA821C495394003B686A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		593ADA831C495394003B686A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		593ADA841C495394003B686A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		593ADA851C495394003B686A /* UIColor+MainColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MainColor.h"; sourceTree = "<group>"; };
 		593ADA861C495394003B686A /* UIColor+MainColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MainColor.m"; sourceTree = "<group>"; };
 		593ADA8D1C495394003B686A /* VEAlertControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAlertControllerManager.h; sourceTree = "<group>"; };
@@ -1432,8 +1426,6 @@
 			children = (
 				593ADB0D1C4955D7003B686A /* Images.xcassets */,
 				593ADA7D1C495394003B686A /* Localizable.strings */,
-				593ADA831C495394003B686A /* Reachability.h */,
-				593ADA841C495394003B686A /* Reachability.m */,
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
 				593ADA7B1C495394003B686A /* aBikeCities.plist */,
@@ -1912,7 +1904,6 @@
 				593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */,
 				593ADB021C495394003B686A /* VEWindow.h in Headers */,
 				593ADAC11C495394003B686A /* VELocationManager.h in Headers */,
-				593ADAE01C495394003B686A /* Reachability.h in Headers */,
 				593ADAD91C495394003B686A /* VEDataImporter.h in Headers */,
 				593ADAF21C495394003B686A /* VERouteRenderer.h in Headers */,
 				593ADAFA1C495394003B686A /* VEStationView.h in Headers */,
@@ -1950,7 +1941,6 @@
 				5906FBF81C4A5FBB00A2D3D1 /* VEManagedObjectContext.h in Headers */,
 				5906FBF91C4A5FBB00A2D3D1 /* VEMKPlacemarkValueTransformer.h in Headers */,
 				5906FBFA1C4A5FBB00A2D3D1 /* VEDataImporter.h in Headers */,
-				5906FBFB1C4A5FBB00A2D3D1 /* Reachability.h in Headers */,
 				5906FBFC1C4A5FBB00A2D3D1 /* UIColor+MainColor.h in Headers */,
 				5906FBFD1C4A5FBB00A2D3D1 /* VEAlertControllerManager.h in Headers */,
 				5906FBFE1C4A5FBB00A2D3D1 /* VEAlertManager.h in Headers */,
@@ -3509,7 +3499,6 @@
 				593ADACB1C495394003B686A /* Station+Additions.m in Sources */,
 				593ADAE71C495394003B686A /* VEAlertControllerManager.m in Sources */,
 				593ADB011C495394003B686A /* VEMapViewController.m in Sources */,
-				593ADAE11C495394003B686A /* Reachability.m in Sources */,
 				593ADAB61C495394003B686A /* NSBundle+VELibrary.m in Sources */,
 				593ADADA1C495394003B686A /* VEDataImporter.m in Sources */,
 				593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */,
@@ -3569,7 +3558,6 @@
 				59567E501C4A50A50042767D /* VEManagedObjectContext.m in Sources */,
 				59567E521C4A50A50042767D /* VEMKPlacemarkValueTransformer.m in Sources */,
 				59567E541C4A50A50042767D /* VEDataImporter.m in Sources */,
-				59567E591C4A50A50042767D /* Reachability.m in Sources */,
 				59567E5B1C4A50A50042767D /* UIColor+MainColor.m in Sources */,
 				59567E5F1C4A50A50042767D /* VEAlertControllerManager.m in Sources */,
 				59567E611C4A50A50042767D /* VEAlertManager.m in Sources */,
@@ -4160,7 +4148,7 @@
 			baseConfigurationReference = 0A16BE5741866FA09AE16D83 /* Pods-aBike—Créteil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -4173,7 +4161,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6491589a-1adc-4599-9b84-20060961a174";
+				PROVISIONING_PROFILE = "c2b07500-739c-4075-9098-6deeb2e25fe2";
 			};
 			name = Release;
 		};
@@ -4232,6 +4220,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 					"SCREENSHOTS=0",
+					"RELEASE=0",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -4277,8 +4266,10 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
 					"RELEASE=1",
 					"SCREENSHOTS=0",
+					"DEBUG=0",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -4352,7 +4343,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b8ffb7aa-4f80-4244-936c-02e11b354a83";
+				PROVISIONING_PROFILE = "07186bf4-8702-45bf-99ce-0f77edbd874b";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -4406,7 +4397,7 @@
 			baseConfigurationReference = 361E2CEF3D8FEBB1F0EF9463 /* Pods-aBikeFramework.release.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
@@ -4435,7 +4426,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.aBikeFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "06ce1246-61d9-40b2-b730-e079ecdf930f";
+				PROVISIONING_PROFILE = "0c92587e-51ae-43e8-9f4c-319f0cfca1ea";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4640,7 +4631,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9d03766b-61b3-49a3-9000-681c62dd4313";
+				PROVISIONING_PROFILE = "7f5e5747-b19c-4e9d-bbd0-ebecca355dce";
 			};
 			name = Release;
 		};
@@ -4757,7 +4748,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ceda84fa-4928-4aec-91a4-95077ed72527";
+				PROVISIONING_PROFILE = "03db36b0-e7a4-4079-a1ec-ab7dc06ff601";
 			};
 			name = Release;
 		};
@@ -4821,7 +4812,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cfb6236c-2f6a-4ebd-8151-33f090ef69d2";
+				PROVISIONING_PROFILE = "7434d196-e341-4dbf-a41f-bd1ec7d4f376";
 			};
 			name = Release;
 		};
@@ -4885,7 +4876,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1c06c2e8-575e-48a5-a0e5-7a2f40d78a0a";
+				PROVISIONING_PROFILE = "65a23e06-a141-4a4f-b6ea-ae665b615d4a";
 			};
 			name = Release;
 		};
@@ -4949,7 +4940,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4c897c82-3098-46b8-85be-b344e12f807c";
+				PROVISIONING_PROFILE = "ca45f27f-c5d7-443a-98a3-b5ab326837eb";
 			};
 			name = Release;
 		};
@@ -5015,7 +5006,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bb001b05-0a17-4f79-8cbe-4abde0c39bf7";
+				PROVISIONING_PROFILE = "f50d15a5-0050-4061-8170-c154e12c0007";
 			};
 			name = Release;
 		};
@@ -5129,7 +5120,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "edbb320b-eec7-4ee5-b0a0-cf56f3804f58";
+				PROVISIONING_PROFILE = "2c96c2fb-4b58-479e-ae56-acaba9c341c5";
 			};
 			name = Release;
 		};
@@ -5534,8 +5525,10 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
 					"SCREENSHOTS=1",
 					"RELEASE=1",
+					"DEBUG=0",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -5648,7 +5641,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "81b7b0cc-f7b7-4ee2-ab6c-b52ae774a478";
+				PROVISIONING_PROFILE = "d979fcdf-f631-4268-8253-8a270fc24e74";
 			};
 			name = Release;
 		};
