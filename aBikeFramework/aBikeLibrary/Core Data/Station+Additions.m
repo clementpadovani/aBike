@@ -48,51 +48,51 @@ static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 
 - (NSUInteger) availableBikes
 {
-	[self willAccessValueForKey: @"availableBikes"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(availableBikes))];
 	
 	NSUInteger availableBikes = [[self primitiveAvailableBikes] unsignedIntegerValue];
 	
-	[self didAccessValueForKey: @"availableBikes"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(availableBikes))];
 	
 	return availableBikes;
 }
 
 - (void) setAvailableBikes: (NSUInteger) availableBikes
 {
-	[self willChangeValueForKey: @"availableBikes"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(availableBikes))];
 	
 	[self setPrimitiveAvailableBikes: @(availableBikes)];
 	
-	[self didChangeValueForKey: @"availableBikes"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(availableBikes))];
 }
 
 - (NSUInteger) availableBikeStations
 {
-	[self willAccessValueForKey: @"availableBikeStations"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(availableBikeStations))];
 	
 	NSUInteger availableBikeStations = [[self primitiveAvailableBikeStations] unsignedIntegerValue];
 	
-	[self didAccessValueForKey: @"availableBikeStations"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(availableBikeStations))];
 	
 	return availableBikeStations;
 }
 
 - (void) setAvailableBikeStations: (NSUInteger) availableBikeStations
 {
-	[self willChangeValueForKey: @"availableBikeStations"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(availableBikeStations))];
 	
 	[self setPrimitiveAvailableBikeStations: @(availableBikeStations)];
 	
-	[self didChangeValueForKey: @"availableBikeStations"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(availableBikeStations))];
 }
 
 - (MKMapItem *) mapItem
 {
-	[self willAccessValueForKey: @"mapItem"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(mapItem))];
 	
 	MKMapItem *mapItem = [self primitiveMapItem];
 	
-	[self didAccessValueForKey: @"mapItem"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(mapItem))];
 	
 	if (!mapItem)
 	{
@@ -106,7 +106,7 @@ static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 
 - (BOOL) canLoadData
 {
-	[self willAccessValueForKey: @"canLoadData"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	NSDate *lastDataUpdate = [self dataContentAge];
 	
@@ -131,22 +131,22 @@ static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 	}
 	
 	
-	[self didAccessValueForKey: @"canLoadData"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	return canLoadData;
 }
 
 - (void) setDataContentAge: (NSDate *) dataContentAge
 {
-	[self willChangeValueForKey: @"dataContentAge"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(dataContentAge))];
 	
-	[self willChangeValueForKey: @"canLoadData"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	[self setPrimitiveDataContentAge: dataContentAge];
 	
-	[self didChangeValueForKey: @"dataContentAge"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(dataContentAge))];
 	
-	[self didChangeValueForKey: @"canLoadData"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(canLoadData))];
 }
 
 @end
@@ -161,11 +161,11 @@ static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 
 + (Station *) stationFromStationDictionary: (NSDictionary *) stationDictionary inContext: (NSManagedObjectContext *) context
 {
-	NSFetchRequest *stationFetchRequest = [NSFetchRequest fetchRequestWithEntityName: @"Station"];
+	NSFetchRequest *stationFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [self entityName]];
 	
 	[stationFetchRequest setFetchLimit: 1];
 	
-	NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat: @"number == %@", stationDictionary[kStationNumber]];
+	NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat: @"%K == %@", NSStringFromSelector(@selector(number)), stationDictionary[kStationNumber]];
 	
 	[stationFetchRequest setPredicate: fetchPredicate];
 	

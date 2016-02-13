@@ -28,8 +28,6 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 
 @interface VEStationAnnotationView ()
 
-@property (nonatomic, getter = isDimmed) BOOL dimmed;
-
 @property (nonatomic) BOOL hasMotionEffects;
 
 @property (nonatomic, weak, readwrite) VEStationAnnotationDirectionsAccessoryView *directionsAccessoryView;
@@ -216,18 +214,6 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 - (void) setTableViewSelected: (BOOL) tableViewSelected
 {
 	[self setTableViewSelected: tableViewSelected animated: NO];
-}
-
-- (void) setDimmed: (BOOL) dimmed
-{
-	if (![self isTableViewSelected])
-	{
-		_dimmed = NO;
-		
-		return;
-	}
-	
-	_dimmed = dimmed;
 }
 
 @end

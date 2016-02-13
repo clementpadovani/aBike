@@ -22,10 +22,10 @@ const VECityRect VECityRectEmpty = { 0, 0, 0, 0 };
 
 BOOL VECityRectIsEqualToCityRect(VECityRect aCityRect, VECityRect anotherCityRect)
 {
-	return ((aCityRect.minLat == anotherCityRect.minLat) &&
-		   (aCityRect.maxLat == anotherCityRect.maxLat) &&
-		   (aCityRect.minLon == anotherCityRect.minLon) &&
-		   (aCityRect.maxLon == anotherCityRect.maxLon));
+	return (((ABS(aCityRect.minLat - anotherCityRect.minLat)) < DBL_EPSILON) &&
+		   ((ABS(aCityRect.maxLat - anotherCityRect.maxLat)) < DBL_EPSILON) &&
+		   ((ABS(aCityRect.minLon - anotherCityRect.minLon)) < DBL_EPSILON) &&
+		   ((ABS(aCityRect.maxLon - anotherCityRect.maxLon)) < DBL_EPSILON));
 }
 
 BOOL VECityRectIsValid(VECityRect aCityRect)
@@ -167,11 +167,11 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 300;
 
 - (void) setLargerCityRect: (VECityRect) largerCityRect withNotification: (BOOL) notifies
 {
-	[self willChangeValueForKey: @"largerCityRect"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(largerCityRect))];
 	
 	[self setPrimitiveLargerCityRect: [NSData ve_dataWithCityRect: largerCityRect]];
 	
-	[self didChangeValueForKey: @"largerCityRect"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(largerCityRect))];
 	
 	if (notifies)
 		[[NSNotificationCenter defaultCenter] postNotificationName: kUserSettingsCityRectChangedValueNotification object: nil userInfo: nil];
@@ -240,7 +240,7 @@ static UserSettings *_sharedSettings = nil;
 {	
 	if (!_sharedSettings)
 	{
-		NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: @"UserSettings"];
+		NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [self entityName]];
 		
 		[fetchRequest setReturnsObjectsAsFaults: NO];
 		
@@ -420,7 +420,7 @@ static UserSettings *_sharedSettings = nil;
 		//[self makeItSecret: [self getSecret]];
 	}
 	
-	[self willAccessValueForKey: @"canLoadData"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	BOOL canLoadData;
 	
@@ -454,70 +454,71 @@ static UserSettings *_sharedSettings = nil;
 		canLoadData = YES;
 	}
 	
-	[self didAccessValueForKey: @"canLoadData"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	return canLoadData;
 }
 
 - (void) setLastDataImportDate: (NSDate *) lastDataImportDate
 {
-	[self willChangeValueForKey: @"lastDataImportDate"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(lastDataImportDate))];
 	
-	[self willChangeValueForKey: @"canLoadData"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	[self setPrimitiveLastDataImportDate: lastDataImportDate];
 	
-	[self didChangeValueForKey: @"lastDataImportDate"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(lastDataImportDate))];
 	
-	[self didChangeValueForKey: @"canLoadData"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(canLoadData))];
 }
 
 - (void) setMapType: (MKMapType) mapType
 {
-	[self willChangeValueForKey: @"mapType"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(mapType))];
 	
 	[self setPrimitiveMapType: @(mapType)];
 	
-	[self didChangeValueForKey: @"mapType"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(mapType))];
 }
+
 - (MKMapType) mapType
 {
-	[self willAccessValueForKey: @"mapType"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(mapType))];
 	
 	MKMapType mapType = [[self primitiveMapType] unsignedIntegerValue];
 	
-	[self didAccessValueForKey: @"mapType"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(mapType))];
 	
 	return mapType;
 }
 
 - (VECityRect) cityRect
 {
-	[self willAccessValueForKey: @"cityRect"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(cityRect))];
 	
 	VECityRect cityRect = [[self primitiveCityRect] ve_cityRect];
 	
-	[self didAccessValueForKey: @"cityRect"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(cityRect))];
 	
 	return cityRect;
 }
 
 - (void) setCityRect: (VECityRect) cityRect
 {
-	[self willChangeValueForKey: @"cityRect"];
+	[self willChangeValueForKey: NSStringFromSelector(@selector(cityRect))];
 	
 	[self setPrimitiveCityRect: [NSData ve_dataWithCityRect: cityRect]];
 	
-	[self didChangeValueForKey: @"cityRect"];
+	[self didChangeValueForKey: NSStringFromSelector(@selector(cityRect))];
 }
 
 - (VECityRect) largerCityRect
 {
-	[self willAccessValueForKey: @"largerCityRect"];
+	[self willAccessValueForKey: NSStringFromSelector(@selector(largerCityRect))];
 	
 	VECityRect largerCityRect = [[self primitiveLargerCityRect] ve_cityRect];
 	
-	[self didAccessValueForKey: @"largerCityRect"];
+	[self didAccessValueForKey: NSStringFromSelector(@selector(largerCityRect))];
 	
 	if (!VECityRectIsValid(largerCityRect))
 	{

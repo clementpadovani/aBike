@@ -93,10 +93,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) showAnnotations;
 
-- (void) statusBarSizeDidChangeNotification: (NSNotification *) notification;
-
-- (void) numberOfBikeStationsHasChangedNotification: (NSNotification *) notification;
-
 @end
 
 @implementation VEMapViewController
@@ -261,11 +257,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	}
 	
 	[super viewDidLayoutSubviews];
-}
-
-- (void) statusBarSizeDidChangeNotification: (NSNotification *) notification
-{	
-	[self performMapViewAction: [self isShowingDirections] ? VEMapViewControllerMapActionShowOverlay : VEMapViewControllerMapActionShowAnnotations];
 }
 
 - (void) loadMapData
@@ -846,7 +837,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	if ([VETimeFormatter includesAdRemover])
 		numberOfStations -= 1;
 	
-	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: @"LightStation"];
+	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [LightStation entityName]];
 	
 	#if enableNumberOfStations
 		
@@ -854,7 +845,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	#endif
 	
-	NSSortDescriptor *lightSortDescriptor = [NSSortDescriptor sortDescriptorWithKey: @"location"
+	NSSortDescriptor *lightSortDescriptor = [NSSortDescriptor sortDescriptorWithKey: NSStringFromSelector(@selector(location))
 															ascending: YES
 														    comparator: ^NSComparisonResult(CLLocation *aStation, CLLocation *anotherStation) {
 															    
@@ -922,7 +913,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSAssert(!resultsError, @"Fetch error: %@", resultsError);
 	
 	
-	NSFetchRequest *stationFetchRequest = [NSFetchRequest fetchRequestWithEntityName: @"Station"];
+	NSFetchRequest *stationFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [Station entityName]];
 	
 	[stationFetchRequest setReturnsObjectsAsFaults: NO];
 	
@@ -932,7 +923,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	#endif
 	
-	NSPredicate *stationFetchRequestPredicate = [NSPredicate predicateWithFormat: @"%K in %@", @"number", sortedNumbersToFetch];
+	NSPredicate *stationFetchRequestPredicate = [NSPredicate predicateWithFormat: @"%K in %@", NSStringFromSelector(@selector(number)), sortedNumbersToFetch];
 	
 	[stationFetchRequest setPredicate: stationFetchRequestPredicate];
 	
@@ -1308,21 +1299,21 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	}];
 }
 
-- (void) didSaveImage: (UIImage *) image withError: (NSError *) error context: (void *) context
-{
-	if (error)
-		CPLog(@"save error: %@", error);
-	else
-		CPLog(@"did save");
-
-#if kEnableCrashlytics
-
-	if (error)
-		[[Crashlytics sharedInstance] recordError: error];
-
-#endif
-
-}
+//- (void) didSaveImage: (UIImage *) image withError: (NSError *) error context: (void *) context
+//{
+//	if (error)
+//		CPLog(@"save error: %@", error);
+//	else
+//		CPLog(@"did save");
+//
+//#if kEnableCrashlytics
+//
+//	if (error)
+//		[[Crashlytics sharedInstance] recordError: error];
+//
+//#endif
+//
+//}
 
 #pragma mark -
 
