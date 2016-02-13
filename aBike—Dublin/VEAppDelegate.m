@@ -53,7 +53,7 @@
 
 - (MKCoordinateRegion) mapRegionForConsul: (VEConsul *) consul
 {
-	return MKCoordinateRegionMake(CLLocationCoordinate2DMake(53.340445, -6.305116), MKCoordinateSpanMake(0.003337, 0.003337));
+	return MKCoordinateRegionMake(CLLocationCoordinate2DMake(53.344546, -6.266745), MKCoordinateSpanMake(0.003023, 0.003023));
 }
 
 #if (SCREENSHOTS==1)

@@ -89,7 +89,7 @@ CLLocationCoordinate2D coordsForCityNumber(NSUInteger cityNumber)
 		case 5:	return CLLocationCoordinate2DMake(47.746809, 7.331784);
 		case 6:	return CLLocationCoordinate2DMake(47.217763, -1.552311);
 		case 7:	return CLLocationCoordinate2DMake(48.783898, 2.451457);
-		case 8:	return CLLocationCoordinate2DMake(53.340445, -6.305116);
+		case 8:	return CLLocationCoordinate2DMake(53.344546, -6.266745);
 		case 9:	return CLLocationCoordinate2DMake(49.611500, 6.127650);
 			
 		default:
@@ -109,7 +109,7 @@ CLLocationDegrees spanForCityNumber(NSUInteger cityNumber)
 		case 5:	return 0.027193;
 		case 6:	return 0.057086;
 		case 7:	return 0.029879;
-		case 8:	return 0.003337;
+		case 8:	return 0.003023;
 		case 9:	return 0.003800;
 			
 		default:
