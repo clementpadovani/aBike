@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Clément Padovani. All rights reserved.
 //
 
-@import Reachability;
+@import SCNetworkReachability;
 
 #import "VEConnectionManager.h"
 
@@ -17,7 +17,7 @@ static NSString * const kVEConnectionManagerReachabilityHost = @"www.apple.com";
 
 @interface VEConnectionManager ()
 
-@property (strong, nonatomic) Reachability *reacher;
+@property (strong, nonatomic) SCNetworkReachability *reacher;
 
 @property (nonatomic, readwrite, getter = isReachable) BOOL reachable;
 
@@ -49,33 +49,24 @@ static VEConnectionManager *_sharedConnectionManager = nil;
 	if (self)
 	{
 		_reachable = YES;
-		
-		Reachability *reacher = [Reachability reachabilityWithHostname: kVEConnectionManagerReachabilityHost];
-		
+
+		SCNetworkReachability *reacher = [[SCNetworkReachability alloc] initWithHost: kVEConnectionManagerReachabilityHost];
+
 		//CPLog(@"init");
 		
 		__weak VEConnectionManager *weakSelf = self;
-		
-		[reacher setReachableBlock: ^(Reachability *aReacher) {
-			
-			//CPLog(@"isReachable");
-			
-			[weakSelf setReachable: YES];
-			
-		}];
-		
-		[reacher setUnreachableBlock: ^(Reachability *aReacher) {
-			
-			//CPLog(@"isUnreachable");
-			
-			[weakSelf setReachable: NO];
-			
+
+		[reacher observeReachability: ^(SCNetworkStatus status) {
+
+			if (status == SCNetworkStatusNotReachable)
+				[weakSelf setReachable: NO];
+			else
+				[weakSelf setReachable: YES];
+
 		}];
 		
 		_reacher = reacher;
-		
-		[_reacher startNotifier];
-		
+
 		//[[self reacher] startNotifier];
 		
 
@@ -135,13 +126,6 @@ static VEConnectionManager *_sharedConnectionManager = nil;
 		[weakSelf setReachable: isReachable];
 		
 	});
-}
-
-- (void) dealloc
-{
-	[_reacher stopNotifier];
-
-	_reacher = nil;
 }
 
 @end

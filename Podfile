@@ -4,6 +4,8 @@
 
 use_frameworks!
 
+inhibit_all_warnings!
+
 xcodeproj 'aBike—Lyon.xcodeproj', 'Debug' => :debug, 'Release' => :release, 'Screenshots' => :release
 
 def normalPods
@@ -39,7 +41,7 @@ target 'aBikeFramework' do
 	
 	pod 'Crashlytics', :configurations => ['Release']
 	
-	pod 'Reachability'
+	pod 'SCNetworkReachability'
 
 end
 
