@@ -26,7 +26,6 @@ static NSString * const kVEDataImporterStationListURL = @"https://api.jcdecaux.c
 
 static NSString * const kVEDataImporterStationInformationURL = @"https://api.jcdecaux.com/vls/v1/stations/%@?contract=%@&apiKey=%@";
 
-
 /*
  
  station number = "number" // string

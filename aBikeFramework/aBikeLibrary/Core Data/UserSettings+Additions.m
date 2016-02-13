@@ -105,7 +105,7 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 10;
 
 #else
 
-static const NSTimeInterval kUserSettingsReloadDataThreshold = 300;
+static const NSTimeInterval kUserSettingsReloadDataThreshold = 60. * 2.;
 
 #endif
 
@@ -432,18 +432,18 @@ static UserSettings *_sharedSettings = nil;
 		
 		NSTimeInterval lastFetchIntervalSinceNow = [[NSDate date] timeIntervalSinceDate: lastFetchDate];
 		
-		//CPLog(@"lastFetch interval: %f", lastFetchIntervalSinceNow);
-		
+		CPLog(@"lastFetch interval: %f", lastFetchIntervalSinceNow);
+
 		if (lastFetchIntervalSinceNow > kUserSettingsReloadDataThreshold)
 		{
-			//CPLog(@"can load data");
-			
+			CPLog(@"can load data");
+
 			canLoadData = YES;
 		}
 		else
 		{
-			//CPLog(@"can't load data");
-			
+			CPLog(@"can't load data");
+
 			canLoadData = NO;
 		}
 	}

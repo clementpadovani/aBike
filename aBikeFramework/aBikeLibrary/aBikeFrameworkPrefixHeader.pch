@@ -39,7 +39,7 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #define kEnableSharing 1
 
-#if (DEBUG && (TARGET_IPHONE_SIMULATOR))
+#if (DEBUG == 1 && (TARGET_IPHONE_SIMULATOR))
 
 #define kShowAdRemover 1
 

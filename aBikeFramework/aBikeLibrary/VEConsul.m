@@ -115,6 +115,8 @@ static VEConsul *_sharedConsul = nil;
 		_loadingSpinnerCounter = 0;
 		
 		_inBackground = NO;
+
+		_canUpdateStations = YES;
 		
 		[VEConnectionManager sharedConnectionManger];
 	}
@@ -501,7 +503,13 @@ static VEConsul *_sharedConsul = nil;
 	
 	CPLog(@"main thread: %@", [NSThread isMainThread] ? @"YES" : @"NO");
 	
-	
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		if ([self isReachable])
+		{
+			[self setCanUpdateStations: YES];
+		}
+	});
+
 	
 	[self setCanUpdateStations: NO];
 }
