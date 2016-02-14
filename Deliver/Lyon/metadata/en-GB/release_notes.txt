@@ -1,4 +1,4 @@
-Bug fixes
+- Fixed station update bug
 
 Check out the other 9 aBike apps for a city near you!
 

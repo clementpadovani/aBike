@@ -677,6 +677,7 @@
 		45D70B156703717D27937739 /* Pods-aBike—Marseille.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Marseille.screenshots.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.screenshots.xcconfig"; sourceTree = "<group>"; };
 		47A420D0AB06D1E696100585 /* Pods-aBike—Bruxelles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Bruxelles.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.release.xcconfig"; sourceTree = "<group>"; };
 		4E483FE9A874CAF8C49A568C /* Pods-aBike—Dublin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Dublin.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.release.xcconfig"; sourceTree = "<group>"; };
+		590375641C70D34400EBAF43 /* SimulatorStatusMagic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimulatorStatusMagic.framework; path = "Pods/../build/Debug-iphoneos/SimulatorStatusMagic.framework"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		591483DF1C649313007EDABB /* aBike—Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1207,6 +1208,7 @@
 		068B773FC6FD206626AF2F3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				590375641C70D34400EBAF43 /* SimulatorStatusMagic.framework */,
 				A6134E00D349FF12F22E6EF2 /* Pods_aBike_Bruxelles.framework */,
 				10591A7DA26D8EA4B6D010E4 /* Pods_aBike_Lyon.framework */,
 				E06A8198520282A57F404411 /* Pods_aBike_Marseille.framework */,
@@ -4385,6 +4387,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
@@ -4428,6 +4431,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
@@ -5518,7 +5522,7 @@
 		};
 		59FACE271C496793005DB202 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */;
+			baseConfigurationReference = 5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY = YES;
@@ -5583,7 +5587,10 @@
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5606,12 +5613,19 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SimulatorStatusMagic\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.aBikeFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

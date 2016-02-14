@@ -1,0 +1,22 @@
+aBike—Nantes is an app made for the JCDecaux operated Bicloo© bike-rental service for the Nantes area.
+ 
+View the 5 nearest stations with their travel time, and the directions just a tap away!
+
+Check out the other 9 aBike apps for a city near you!
+
+	Belgium
+	- Brussels
+
+	France
+	- Créteil
+	- Lyon
+	- Marseille
+	- Mulhouse
+	- Paris
+	- Toulouse
+
+	Ireland
+	- Dublin
+
+	Luxembourg
+	- Luxembourg

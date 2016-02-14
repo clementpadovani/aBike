@@ -1,4 +1,4 @@
-Correction de bugs
+Correction du bug de mise à jour des stations
 
 
 
