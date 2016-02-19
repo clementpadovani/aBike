@@ -10,19 +10,50 @@
 
 #import "UIColor+MainColor.h"
 
+#import "UserSettings+Additions.h"
+
+#import "VEConsul.h"
+
+#import "VEMapViewController.h"
+
 @interface VESearchStationView () <UISearchBarDelegate>
 
 @property (nonatomic, weak) UILabel *searchLabel;
 
 @property (nonatomic, weak) UISearchBar *searchBar;
 
+@property (nonatomic, weak) UIActivityIndicatorView *spinnerView;
+
 @property (nonatomic, weak) UIView *bottomBorderView;
+
+@property (nonatomic, strong) MKLocalSearch *localSearcher;
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
 @end
 
 @implementation VESearchStationView
+
++ (MKCoordinateRegion) currentCityRect
+{
+	static MKCoordinateRegion _currentCityRect;
+
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		VECityRect cityRect = [[VEConsul sharedConsul] largerCurrentCityRect];
+
+		MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(fabs(cityRect.maxLat - cityRect.minLat),
+													fabs(cityRect.maxLon - cityRect.minLon));
+
+		CLLocationCoordinate2D centerCoordinate = CLLocationCoordinate2DMake(((cityRect.maxLat + cityRect.minLat) / 2.),
+															    ((cityRect.maxLon + cityRect.minLon) / 2.));
+
+		_currentCityRect = MKCoordinateRegionMake(centerCoordinate,
+										  coordinateSpan);
+	});
+
+	return _currentCityRect;
+}
 
 - (instancetype) init
 {
@@ -60,11 +91,21 @@
 
 	[searchBar setSearchBarStyle: UISearchBarStyleMinimal];
 
+	[searchBar setKeyboardAppearance: UIKeyboardAppearanceLight];
+
+	[searchBar setBarStyle: UIBarStyleDefault];
+
 	[searchBar setPlaceholder: CPLocalizedString(@"Search for a place or area", @"VESearchStationView.searchTextFieldPlaceholder")];
 
 	[searchBar setDelegate: self];
 
 	[searchBar setTranslatesAutoresizingMaskIntoConstraints: NO];
+
+	UIActivityIndicatorView *spinnerView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray];
+
+	[spinnerView setHidesWhenStopped: YES];
+
+	[spinnerView setTranslatesAutoresizingMaskIntoConstraints: NO];
 
 	UIView *bottomBorderView = [[UIView alloc] init];
 
@@ -78,11 +119,15 @@
 
 	[self addSubview: searchBar];
 
+	[self addSubview: spinnerView];
+
 	[self addSubview: bottomBorderView];
 
 	[self setSearchLabel: searchLabel];
 
 	[self setSearchBar: searchBar];
+
+	[self setSpinnerView: spinnerView];
 
 	[self setBottomBorderView: bottomBorderView];
 
@@ -94,7 +139,10 @@
 
 - (void) userDidTap: (UITapGestureRecognizer *) tapGestureRecognizer
 {
-	[[self searchBar] resignFirstResponder];
+//	[UIView animateWithDuration: .2
+//				  animations: ^{
+					  [[self searchBar] resignFirstResponder];
+//				  }];
 }
 
 - (void) tintColorDidChange
@@ -104,6 +152,8 @@
 	[[self searchLabel] setTextColor: [self tintColor]];
 
 	[[self searchBar] setBarTintColor: [self tintColor]];
+
+	[[self spinnerView] setColor: [self tintColor]];
 }
 
 - (void) setVisible: (BOOL) visible
@@ -116,9 +166,29 @@
 
 - (BOOL) searchBarShouldEndEditing: (UISearchBar *) searchBar
 {
-	[searchBar resignFirstResponder];
+//	[searchBar resignFirstResponder];
 
 	return YES;
+}
+
+- (UIBarPosition) positionForBar: (id <UIBarPositioning>) bar
+{
+	return UIBarPositionTop;
+}
+
+- (void) searchBar: (UISearchBar *) searchBar textDidChange: (NSString *) searchText
+{
+
+}
+
+- (void) searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+	[searchBar setShowsCancelButton: YES animated: YES];
+}
+
+- (void) searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+	[searchBar setShowsCancelButton: NO animated: YES];
 }
 
 - (void) searchBarCancelButtonClicked: (UISearchBar *) searchBar
@@ -129,27 +199,115 @@
 - (void) searchBarSearchButtonClicked: (UISearchBar *) searchBar
 {
 	[searchBar resignFirstResponder];
+
+	if ([[self localSearcher] isSearching])
+	{
+		[[self spinnerView] stopAnimating];
+
+		[[self localSearcher] cancel];
+	}
+
+	NSString *searchText = [searchBar text];
+
+	if (!searchText ||
+	    ![searchText length])
+		return;
+
+	MKLocalSearchRequest *searchRequest = [[MKLocalSearchRequest alloc] init];
+
+	[searchRequest setNaturalLanguageQuery: searchText];
+
+	[searchRequest setRegion: [[self class] currentCityRect]];
+
+	MKLocalSearch *localSearch = [[MKLocalSearch alloc] initWithRequest: searchRequest];
+
+	__weak typeof(self) weakSelf = self;
+
+	[[self spinnerView] startAnimating];
+
+	[localSearch startWithCompletionHandler: ^(MKLocalSearchResponse * _Nullable response, NSError * _Nullable error) {
+
+		if (error)
+		{
+			CPLog(@"error: %@", error);
+
+			return;
+		}
+
+		__strong typeof(weakSelf) strongSelf = weakSelf;
+
+//		UIAlertController *alertController = [UIAlertController alertControllerWithTitle: CPLocalizedString(@"Search Results", @"VESearchStationView.localSearch.title")
+//																   message: nil
+//															 preferredStyle: UIAlertControllerStyleAlert];
+
+		UIAlertController *alertController = [UIAlertController alertControllerWithTitle: CPLocalizedString(@"Search Results", @"VESearchStationView.localSearch.title")
+																   message: nil
+															 preferredStyle: UIAlertControllerStyleActionSheet];
+
+		for (MKMapItem *anItem in [response mapItems])
+		{
+			UIAlertAction *alertAction = [UIAlertAction actionWithTitle: [anItem name]
+													    style: UIAlertActionStyleDefault
+													  handler: ^(UIAlertAction * _Nonnull action) {
+
+														  CPLog(@"chose: %@", anItem);
+
+													  }];
+
+			[alertController addAction: alertAction];
+		}
+
+
+		UIAlertAction *closeAction = [UIAlertAction actionWithTitle: CPLocalizedString(@"Close", @"Close")
+												    style: UIAlertActionStyleCancel
+												  handler: ^(UIAlertAction * _Nonnull action) {
+
+												  }];
+
+		[alertController addAction: closeAction];
+
+		VEMapViewController *mapViewController = [[VEConsul sharedConsul] mapViewController];
+
+		[mapViewController presentViewController: alertController
+								  animated: YES
+								completion: NULL];
+
+		[[strongSelf searchBar] resignFirstResponder];
+
+		[[strongSelf spinnerView] stopAnimating];
+	}];
+	
+	[self setLocalSearcher: localSearch];
 }
 
 - (void) setupConstraints
 {
 	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_searchLabel,
 													   _searchBar,
+													   _spinnerView,
 													   _bottomBorderView);
 
 	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
 
 	NSDictionary *metricsDictionary = @{@"shadowViewHeight" : @(shadowViewHeight)};
 
-	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_searchLabel]-(>=0)-|"
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_searchBar]-(>=0)-|"
 													  options: 0
 													  metrics: metricsDictionary
 													    views: viewsDictionary]];
 
 	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-[_searchLabel]-[_searchBar]"
-													  options: NSLayoutFormatAlignAllLeading
+													  options: 0
 													  metrics: metricsDictionary
 													    views: viewsDictionary]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self searchLabel]
+											attribute: NSLayoutAttributeLeading
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self searchBar]
+											attribute: NSLayoutAttributeLeadingMargin
+										    multiplier: 1
+											 constant: 0]];
 
 	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:[_searchBar]-|"
 													  options: 0
@@ -165,6 +323,48 @@
 													  options: 0
 													  metrics: metricsDictionary
 													    views: viewsDictionary]];
+
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:[_searchLabel]-(>=0)-[_spinnerView]-|"
+													  options: 0
+													  metrics: metricsDictionary
+													    views: viewsDictionary]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self spinnerView]
+											attribute: NSLayoutAttributeBottom
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self searchLabel]
+											attribute: NSLayoutAttributeBaseline
+										    multiplier: 1
+											 constant: 0]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self spinnerView]
+											attribute: NSLayoutAttributeHeight
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self searchLabel]
+											attribute: NSLayoutAttributeHeight
+										    multiplier: 1
+											 constant: 0]];
+
+//	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_searchBar][_spinnerViewTopSpacerView(==_spinnerView)][_spinnerView(==_spinnerViewBottomSpacerView)][_spinnerViewBottomSpacerView(==_spinnerViewTopSpacerView)][_bottomBorderView]"
+//													  options: 0
+//													  metrics: metricsDictionary
+//													    views: viewsDictionary]];
+
+//	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self spinnerView]
+//											attribute: NSLayoutAttributeCenterX
+//											relatedBy: NSLayoutRelationEqual
+//											   toItem: self
+//											attribute: NSLayoutAttributeCenterX
+//										    multiplier: 1
+//											 constant: 0]];
+
+	[self addConstraint: [NSLayoutConstraint constraintWithItem: [self spinnerView]
+											attribute: NSLayoutAttributeWidth
+											relatedBy: NSLayoutRelationEqual
+											   toItem: [self spinnerView]
+											attribute: NSLayoutAttributeHeight
+										    multiplier: 1
+											 constant: 0]];
 }
 
 - (void) updateConstraints
