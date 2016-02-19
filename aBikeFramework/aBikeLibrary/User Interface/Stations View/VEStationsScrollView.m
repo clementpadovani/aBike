@@ -18,6 +18,8 @@
 
 #import "CPCoreDataManager.h"
 
+#import "VESearchStationView.h"
+
 @class Station;
 
 @interface VEStationsScrollView () <UIScrollViewDelegate>
@@ -81,14 +83,25 @@
 	for (NSUInteger i = 0; i < numberOfStations; i++)
 	{
 		BOOL isLast = NO;
+
+		BOOL isSearch = NO;
 		
 		if (!showAdRemover)
 		{
 			isLast = NO;
+
+			if (i == numberOfStations - 2)
+			{
+				isSearch = YES;
+			}
 		}
 		else
 		{
-			if ((i + 1) == numberOfStations)
+			if (i == numberOfStations - 2)
+			{
+				isSearch = YES;
+			}
+			else if ((i + 1) == numberOfStations)
 			{
 				isLast = YES;
 			}
@@ -98,9 +111,17 @@
 		
 		if (!isLast)
 		{
+			if (isSearch)
+			{
+				aStationView = (VEStationView *) [[VESearchStationView alloc] init];
+			}
+			else
+			{
 			aStationView = [[VEStationView alloc] init];
 		
 			[aStationView setDelegate: [self stationViewDelegate]];
+			}
+			
 		}
 		else
 		{
@@ -221,13 +242,13 @@
 	@try {
 		stationView = (VEStationView *) [self stationViewsArray][stationIndex];
 	}
-	@catch (NSException *exception) {
+	@catch (NSException * __unused exception) {
 		
 		return;
 		
 	}
 	
-	if ([stationView isKindOfClass: [VEAdStationView class]])
+	if (![stationView isKindOfClass: [VEStationView class]])
 		return;
 	
 	if (![stationView isShowingDirections])

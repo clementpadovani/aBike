@@ -179,7 +179,9 @@ BOOL includesAdRemover = YES;
 			showAds = [[UserSettings sharedSettings] canShowAds];
 			
 		}];
-		
+
+		currentNumberOfStations += 1;
+
 		if (showAds)
 		{
 			currentNumberOfStations += 1;
