@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VESearchStationView : UIView
 
+@property (nonatomic, assign, getter = isVisible) BOOL visible;
+
 - (instancetype) initWithFrame: (CGRect) frame NS_UNAVAILABLE;
 
 - (instancetype) initWithCoder: (NSCoder *) aDecoder NS_UNAVAILABLE;

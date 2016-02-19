@@ -8,11 +8,15 @@
 
 #import "VESearchStationView.h"
 
+#import "UIColor+MainColor.h"
+
 @interface VESearchStationView () <UISearchBarDelegate>
 
 @property (nonatomic, weak) UILabel *searchLabel;
 
 @property (nonatomic, weak) UISearchBar *searchBar;
+
+@property (nonatomic, weak) UIView *bottomBorderView;
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
@@ -62,13 +66,35 @@
 
 	[searchBar setTranslatesAutoresizingMaskIntoConstraints: NO];
 
+	UIView *bottomBorderView = [[UIView alloc] init];
+
+	[bottomBorderView setOpaque: NO];
+
+	[bottomBorderView setBackgroundColor: [UIColor ve_shadowColor]];
+
+	[bottomBorderView setTranslatesAutoresizingMaskIntoConstraints: NO];
+
 	[self addSubview: searchLabel];
 
 	[self addSubview: searchBar];
 
+	[self addSubview: bottomBorderView];
+
 	[self setSearchLabel: searchLabel];
 
 	[self setSearchBar: searchBar];
+
+	[self setBottomBorderView: bottomBorderView];
+
+	UITapGestureRecognizer *closeTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget: self
+																			  action: @selector(userDidTap:)];
+
+	[self addGestureRecognizer: closeTapGestureRecognizer];
+}
+
+- (void) userDidTap: (UITapGestureRecognizer *) tapGestureRecognizer
+{
+	[[self searchBar] resignFirstResponder];
 }
 
 - (void) tintColorDidChange
@@ -78,6 +104,14 @@
 	[[self searchLabel] setTextColor: [self tintColor]];
 
 	[[self searchBar] setBarTintColor: [self tintColor]];
+}
+
+- (void) setVisible: (BOOL) visible
+{
+	_visible = visible;
+
+	if (!visible)
+		[[self searchBar] resignFirstResponder];
 }
 
 - (BOOL) searchBarShouldEndEditing: (UISearchBar *) searchBar
@@ -100,21 +134,34 @@
 - (void) setupConstraints
 {
 	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_searchLabel,
-													   _searchBar);
-	
-	NSDictionary *metricsDictionary = nil;
+													   _searchBar,
+													   _bottomBorderView);
+
+	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
+
+	NSDictionary *metricsDictionary = @{@"shadowViewHeight" : @(shadowViewHeight)};
 
 	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_searchLabel]-(>=0)-|"
 													  options: 0
 													  metrics: metricsDictionary
 													    views: viewsDictionary]];
 
-	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-[_searchLabel]-[_searchBar]-(>=0)-|"
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-[_searchLabel]-[_searchBar]"
 													  options: NSLayoutFormatAlignAllLeading
 													  metrics: metricsDictionary
 													    views: viewsDictionary]];
 
 	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:[_searchBar]-|"
+													  options: 0
+													  metrics: metricsDictionary
+													    views: viewsDictionary]];
+
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[_bottomBorderView]|"
+													  options: 0
+													  metrics: metricsDictionary
+													    views: viewsDictionary]];
+
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_searchBar]-(>=0)-[_bottomBorderView(==shadowViewHeight)]|"
 													  options: 0
 													  metrics: metricsDictionary
 													    views: viewsDictionary]];

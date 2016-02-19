@@ -174,10 +174,12 @@
 													   _pager,
 													   _stationsScrollView,
 													   _blurEffectView);
-	
+
+	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
+
 	NSDictionary *metricsDictionary = @{@"selfWidth" : @(320),
 								 @"selfHeight" : @(152.5),
-								 @"shadowViewHeight" : @(.5)};
+								 @"shadowViewHeight" : @(shadowViewHeight)};
 
 		NSMutableArray *newConstraints = [@[] mutableCopy];
 	

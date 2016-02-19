@@ -363,7 +363,9 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 							    @"_stationAvailableSpotsLabel" : [self stationAvailableSpotsLabel],
 							    @"_directionsLabel" : [self directionsLabel],
 							    @"_directionsButton" : [self directionsButton]};
-	
+
+	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
+
 	NSDictionary *metricsDictionary = @{@"selfWidth" : @(320),
 								 @"selfHeight" : @(152),
 								 @"leftPadding" : @(15),
@@ -372,7 +374,7 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 								 @"buttonRightPadding" : @(.0),
 								 @"stationNameVerticalPadding" : @(8),
 								 @"stationNumberVerticalPaddingToStationName" : @(1),
-								 @"horizontalSeperatorViewHeight" : @(.5),
+								 @"horizontalSeperatorViewHeight" : @(shadowViewHeight),
 								 @"horizontalVerticalPaddingFromDirections" : @(8),
 								 @"availableBottomPadding" : @(-45),
 								 @"availableMinimumPadding" : @(10),

@@ -48,6 +48,35 @@ static const UIEdgeInsets kVEMapViewControllerMapViewOverlayPortraitInsets = { 3
 
 //static const UIEdgeInsets kVEMapViewControllerMapViewOverlayLandscapeInsets = { 30, 25, 152.5, 25 };
 
+static inline UIViewAnimationOptions VEUIViewAnimationOptionsFromAnimationCurve(UIViewAnimationCurve animationCurve)
+{
+	UIViewAnimationOptions animationOptions = UIViewAnimationOptionCurveEaseInOut;
+
+	switch (animationCurve)
+	{
+		case UIViewAnimationCurveEaseInOut: {
+			animationOptions = UIViewAnimationOptionCurveEaseInOut;
+			break;
+		}
+		case UIViewAnimationCurveEaseIn: {
+			animationOptions = UIViewAnimationOptionCurveEaseIn;
+			break;
+		}
+		case UIViewAnimationCurveEaseOut: {
+			animationOptions = UIViewAnimationOptionCurveEaseOut;
+			break;
+		}
+		case UIViewAnimationCurveLinear: {
+			animationOptions = UIViewAnimationOptionCurveLinear;
+			break;
+		}
+		default:
+			break;
+	}
+
+	return animationOptions;
+}
+
 typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	VEMapViewControllerMapActionShowAnnotations,
 	VEMapViewControllerMapActionShowOverlay
@@ -80,6 +109,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 @property (nonatomic, strong) MKMapSnapshotter *mapSnapshotter;
 
 @property (nonatomic, copy) NSArray *currentConstraints;
+
+@property (nonatomic, weak) NSLayoutConstraint *stationsViewBottomVerticalConstraint;
 
 - (void) setupUserSettings;
 
@@ -149,6 +180,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	[self setStationsView: stationsView];
 	
 	[self setupConstraints];
+
+	[[NSNotificationCenter defaultCenter] addObserver: self
+									 selector: @selector(keyboardWillChangeFrameWithNotification:)
+										name: UIKeyboardWillChangeFrameNotification
+									   object: nil];
 }
 
 - (void) viewDidAppear: (BOOL) animated
@@ -417,12 +453,44 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //	[[self originalContentView] layoutIfNeeded];
 //}
 
+- (void) keyboardWillChangeFrameWithNotification: (NSNotification *) notification
+{
+	NSDictionary *userInfo = [notification userInfo];
+
+	CGRect keyboardEndFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+
+	NSTimeInterval keyboardAnimationDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+
+	UIViewAnimationCurve keyboardAnimationCurve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
+
+	CGFloat keyboardVerticalOrigin = CGRectGetMinY(keyboardEndFrame);
+
+	CGFloat stationsViewBottomVerticalConstant = keyboardVerticalOrigin;
+
+	stationsViewBottomVerticalConstant -= CGRectGetHeight([[self originalContentView] bounds]);
+
+	[[self stationsViewBottomVerticalConstraint] setConstant: stationsViewBottomVerticalConstant];
+
+	[UIView animateWithDuration: keyboardAnimationDuration
+					  delay: 0
+					options: VEUIViewAnimationOptionsFromAnimationCurve(keyboardAnimationCurve)
+				  animations: ^{
+					  [[self view] layoutIfNeeded];
+				  }
+				  completion: NULL];
+}
+
 - (void) setupConstraints
 {	
 	NSDictionary *viewsDictionary = @{@"_mapContainerView" : [self mapContainerView],
 							    @"_stationsView" : [self stationsView]};
-	
-	NSDictionary *metricsDictionary = nil;
+
+
+	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
+
+	CGFloat stationsViewHeight = 152.f + shadowViewHeight;
+
+	NSDictionary *metricsDictionary = @{@"stationsViewHeight" : @(stationsViewHeight)};
 
 		NSMutableArray *newConstraints = [@[] mutableCopy];
 
@@ -448,12 +516,24 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[newConstraints addObjectsFromArray: stationViewHorizontalConstraints];
 	
-	NSArray *stationViewVerticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_stationsView(152.5)]|"
+	NSArray *stationViewVerticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_stationsView(stationsViewHeight)]"
 																	  options: 0
 																	  metrics: metricsDictionary
 																	    views: viewsDictionary];
 	
 	[newConstraints addObjectsFromArray: stationViewVerticalConstraints];
+
+	NSLayoutConstraint *stationsViewBottomVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self stationsView]
+																		   attribute: NSLayoutAttributeBottom
+																		   relatedBy: NSLayoutRelationEqual
+																			 toItem: [self originalContentView]
+																		   attribute: NSLayoutAttributeBottom
+																		  multiplier: 1
+																		    constant: 0];
+
+	[newConstraints addObject: stationsViewBottomVerticalConstraint];
+
+	[self setStationsViewBottomVerticalConstraint: stationsViewBottomVerticalConstraint];
 
 	[[self originalContentView] addConstraints: newConstraints];
 }

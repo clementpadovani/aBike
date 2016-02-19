@@ -117,9 +117,9 @@
 			}
 			else
 			{
-			aStationView = [[VEStationView alloc] init];
+				aStationView = [[VEStationView alloc] init];
 		
-			[aStationView setDelegate: [self stationViewDelegate]];
+				[aStationView setDelegate: [self stationViewDelegate]];
 			}
 			
 		}
@@ -248,20 +248,55 @@
 		
 	}
 	
-	if (![stationView isKindOfClass: [VEStationView class]])
-		return;
+	if ([stationView isKindOfClass: [VEStationView class]])
+	{
 	
 	if (![stationView isShowingDirections])
 		return;
 	else
 		[stationView setShowingDirections: NO];
+	}
+	else if ([stationView isKindOfClass: [VESearchStationView class]])
+	{
+		[(VESearchStationView *) stationView setVisible: NO];
+	}
+}
+
+- (VEStationView  * __nullable) stationViewAtIndex: (NSUInteger) stationIndex
+{
+	VEStationView *stationView = nil;
+
+	NSUInteger viewsCount = [[self stationViewsArray] count];
+
+	if (stationIndex >= viewsCount)
+		return nil;
+
+	@try {
+		stationView = (VEStationView *) [self stationViewsArray][stationIndex];
+	}
+	@catch (NSException * __unused exception) {
+
+		return nil;
+
+	}
+
+	return stationView;
 }
 
 - (void) setCurrentStationIndex: (NSUInteger) currentStationIndex
 {
 	if (currentStationIndex != [self currentStationIndex])
+	{
 		[self removeDirectionsForStationAtIndex: [self currentStationIndex]];
-	
+	}
+
+	VEStationView *newStationView = [self stationViewAtIndex: currentStationIndex];
+
+	if ([newStationView isKindOfClass: [VESearchStationView class]])
+	{
+		[(VESearchStationView *) newStationView setVisible: YES];
+	}
+
 	_currentStationIndex = currentStationIndex;
 }
 

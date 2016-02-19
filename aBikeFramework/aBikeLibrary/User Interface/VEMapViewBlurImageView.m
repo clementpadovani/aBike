@@ -69,8 +69,10 @@
 {
 	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_shadowView,
 													   _blurEffectView);
- 
-	NSDictionary *metricsDictionary = @{@"shadowViewHeight" : @(.5)};
+
+	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
+
+	NSDictionary *metricsDictionary = @{@"shadowViewHeight" : @(shadowViewHeight)};
 	
 	NSArray *shadowViewHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[_shadowView]|"
 																	   options: 0

@@ -613,10 +613,12 @@ static VEAdStationView *_sharedAdStationView = nil;
 	if (_purchasesAreDisabled)
 	{
 		AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-		
-		[NSThread sleepForTimeInterval: .5];
-		
-		AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+			AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+
+		});
 		
 		[[self adRemoverBuyButton] setEnabled: NO];
 		
