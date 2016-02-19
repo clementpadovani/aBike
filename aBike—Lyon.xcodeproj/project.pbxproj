@@ -1390,10 +1390,10 @@
 				593ADA521C495394003B686A /* VEConnectionManager.m */,
 				593ADA531C495394003B686A /* VELocationManager.h */,
 				593ADA541C495394003B686A /* VELocationManager.m */,
-				593ADA551C495394003B686A /* VETimeFormatter.h */,
-				593ADA561C495394003B686A /* VETimeFormatter.m */,
 				594D7FEA1C6FEF1900492477 /* VEReachability.h */,
 				594D7FEB1C6FEF1900492477 /* VEReachability.m */,
+				593ADA551C495394003B686A /* VETimeFormatter.h */,
+				593ADA561C495394003B686A /* VETimeFormatter.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -1533,7 +1533,7 @@
 				593ADA9F1C495394003B686A /* VEAdStationView.h */,
 				593ADAA01C495394003B686A /* VEAdStationView.m */,
 			);
-			name = "Ad Station View";
+			path = "Ad Station View";
 			sourceTree = "<group>";
 		};
 		593DF8CE1C779C0C002F8B07 /* Station Views */ = {
@@ -1544,7 +1544,7 @@
 				593ADAA51C495394003B686A /* VEStationView.h */,
 				593ADAA61C495394003B686A /* VEStationView.m */,
 			);
-			name = "Station Views";
+			path = "Station Views";
 			sourceTree = "<group>";
 		};
 		593DF8CF1C779C11002F8B07 /* Search Station View */ = {
@@ -1553,7 +1553,7 @@
 				593DF8C91C779C01002F8B07 /* VESearchStationView.h */,
 				593DF8CA1C779C01002F8B07 /* VESearchStationView.m */,
 			);
-			name = "Search Station View";
+			path = "Search Station View";
 			sourceTree = "<group>";
 		};
 		594AC0831C6F7ECF002FE220 /* Various */ = {
