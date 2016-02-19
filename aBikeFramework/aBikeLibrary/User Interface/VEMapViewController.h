@@ -14,9 +14,8 @@ static NSString * const kVEMapViewControllerViewGoToBackgroundNotification = @"k
 //static const NSUInteger kNumberOfStations = 5;
 
 @interface VEMapViewController : UIViewController <MKMapViewDelegate, VELocationManagerDelegate>
-{
-	
-}
+
+- (instancetype) initForSearchResult: (MKMapItem *) mapItem;
 
 - (void) loadMapData;
 

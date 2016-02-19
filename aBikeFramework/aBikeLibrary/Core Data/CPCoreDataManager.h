@@ -21,6 +21,7 @@ typedef void (^CPCoreDataManagerSaveCompletionBlock)(BOOL hasSaved, NSArray *err
 @property (strong, nonatomic, readonly) VEManagedObjectContext *standardContext;
 @property (strong, nonatomic, readonly) VEManagedObjectContext *userContext;
 @property (strong, nonatomic, readonly) VEManagedObjectContext *memoryContext;
+@property (strong, nonatomic, readonly) VEManagedObjectContext *searchMemoryContext;
 
 + (CPCoreDataManager *) sharedCoreDataManager;
 

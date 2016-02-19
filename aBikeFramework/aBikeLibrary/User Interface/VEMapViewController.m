@@ -112,6 +112,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 @property (nonatomic, weak) NSLayoutConstraint *stationsViewBottomVerticalConstraint;
 
+@property (nonatomic, strong) MKMapItem *searchResult;
+
 - (void) setupUserSettings;
 
 - (void) setupMemoryStore;
@@ -128,13 +130,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 @implementation VEMapViewController
 
-- (instancetype) init
+- (instancetype) initForSearchResult: (MKMapItem *) mapItem
 {
 	self = [super init];
 	
 	if (self)
 	{
-		//[self setupUserSettings];
+		_searchResult = mapItem;
 	}
 	
 	return self;
@@ -147,6 +149,16 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	return [self view];
 }
 
+#else
+
+- (UIView *) originalContentView
+{
+	if ([self searchResult])
+		return [self view];
+
+	return [super originalContentView];
+}
+
 #endif
 
 - (void) viewDidLoad
@@ -154,8 +166,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	[super viewDidLoad];
 	
 	//[self setAutomaticallyAdjustsScrollViewInsets: NO];
-	
-	[self setCanDisplayBannerAds: YES];
+
+	if (![self searchResult])
+		[self setCanDisplayBannerAds: YES];
 	
 	[self setCanShowUserLocationInCohort: YES];
 	
@@ -320,6 +333,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) setupUserSettings
 {
+	if ([self searchResult])
+	{
+		[self setCanDisplayBannerAds: NO];
+
+		return;
+	}
+	
 	[self setCanDisplayBannerAds: YES];
 	
 	__weak VEMapViewController *weakSelf = self;
@@ -397,7 +417,10 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	VEManagedObjectContext *standardContext = [[CPCoreDataManager sharedCoreDataManager] standardContext];
 	
 	VEManagedObjectContext *temporaryContext = [[CPCoreDataManager sharedCoreDataManager] memoryContext];
-	
+
+	if ([self searchResult])
+		temporaryContext = [[CPCoreDataManager sharedCoreDataManager] searchMemoryContext];
+
 	//[standardContext performBlockAndWait: ^{
 		
 		fetchResults = [standardContext executeFetchRequest: stationsFetchRequest error: &fetchError];
@@ -435,8 +458,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	if (![[VELocationManager sharedLocationManager] currentLocation])
 		return;
-	
-	[self userHasMovedToNewLocation: [[VELocationManager sharedLocationManager] currentLocation] withForce: YES];
+
+	CLLocation *location = [[VELocationManager sharedLocationManager] currentLocation];
+
+	if ([self searchResult])
+		location = [[[self searchResult] placemark] location];
+
+	[self userHasMovedToNewLocation: location withForce: YES];
 }
 
 //- (void) traitCollectionDidChange:(UITraitCollection *)previousTraitCollection
@@ -946,6 +974,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	__block NSError *resultsError;
 	
 	VEManagedObjectContext *memoryContext = [[CPCoreDataManager sharedCoreDataManager] memoryContext];
+
+	if ([self searchResult])
+		memoryContext = [[CPCoreDataManager sharedCoreDataManager] searchMemoryContext];
 	
 	[memoryContext performBlockAndWait: ^{
 		
@@ -1074,10 +1105,15 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 			if ([newLocation ve_isCircaEqual: [self currentLocation]])
 				return;
 	}
+
+	CLLocation *actualLocation = newLocation;
+
+	if ([self searchResult])
+		actualLocation = [[[self searchResult] placemark] location];
 	
-	[self sortStationsByClosestToUserLocation: newLocation];
+	[self sortStationsByClosestToUserLocation: actualLocation];
 	
-	[self userHasMovedToNewLocation: newLocation forceDisableUpdateStations: NO];
+	[self userHasMovedToNewLocation: actualLocation forceDisableUpdateStations: NO];
 	
 	//[mapView setMapType: [mapView mapType]];
 	
@@ -1085,7 +1121,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[[self stationsView] setStations: [self stations]];
 	
-	[self setCurrentLocation: newLocation];
+	[self setCurrentLocation: actualLocation];
 }
 
 - (CGFloat) actualMapViewHeight

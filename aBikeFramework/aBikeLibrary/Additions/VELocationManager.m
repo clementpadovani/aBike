@@ -447,6 +447,15 @@ static VELocationManager *_sharedLocationManager = nil;
 		
 		[[self delegate] userHasMovedToNewLocation: location];
 	}
+	else
+	{
+		CLLocation *location = [[self locationManager] location];
+
+		if (!location)
+			return;
+
+		[delegate userHasMovedToNewLocation: location];
+	}
 	
 	_delegate = delegate;
 }

@@ -16,6 +16,8 @@
 
 #import "VEMapViewController.h"
 
+#import "UIAlertAction+VEAdditions.h"
+
 @interface VESearchStationView () <UISearchBarDelegate>
 
 @property (nonatomic, weak) UILabel *searchLabel;
@@ -244,15 +246,30 @@
 																   message: nil
 															 preferredStyle: UIAlertControllerStyleActionSheet];
 
+		void (^handleAlertAction)(UIAlertAction *action) = ^(UIAlertAction *action) {
+
+			CPLog(@"action: %@", action);
+
+			VEMapViewController *mapViewController = [[VEMapViewController alloc] initForSearchResult: [action ve_mapItem]];
+
+			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mapViewController];
+
+			[[[VEConsul sharedConsul] mapViewController] presentViewController: navigationController
+														   animated: YES
+														 completion: ^{
+															 [mapViewController loadMapData];
+														 }];
+
+		};
+
+
 		for (MKMapItem *anItem in [response mapItems])
 		{
 			UIAlertAction *alertAction = [UIAlertAction actionWithTitle: [anItem name]
 													    style: UIAlertActionStyleDefault
-													  handler: ^(UIAlertAction * _Nonnull action) {
+													  handler: handleAlertAction];
 
-														  CPLog(@"chose: %@", anItem);
-
-													  }];
+			[alertAction ve_setMapItem: anItem];
 
 			[alertController addAction: alertAction];
 		}

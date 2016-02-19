@@ -29,6 +29,8 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 @property (strong, nonatomic, readwrite) VEManagedObjectContext *userContext;
 @property (strong, nonatomic, readwrite) VEManagedObjectContext *memoryContext;
 
+@property (strong, nonatomic, readwrite) VEManagedObjectContext *searchMemoryContext;
+
 @property (strong, nonatomic) NSURL *documentsDirectoryURL;
 
 @property (strong, nonatomic) NSURL *applicationSupportDirectoryURL;
@@ -310,6 +312,24 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	}
 	
 	return _memoryContext;
+}
+
+- (VEManagedObjectContext *) searchMemoryContext
+{
+	if (!_searchMemoryContext)
+	{
+		VEManagedObjectContext *memoryContext = [[VEManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
+
+		[memoryContext setUndoManager: nil];
+
+		[memoryContext setPersistentStoreCoordinator: [self memoryPersistentStoreCoordinator]];
+
+		[memoryContext setName: @"Search Managed Object Context"];
+
+		_searchMemoryContext = memoryContext;
+	}
+
+	return _searchMemoryContext;
 }
 
 - (VEManagedObjectContext *) newImportManagedObjectContext

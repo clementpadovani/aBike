@@ -49,6 +49,8 @@
 		5906FC0C1C4A5FBB00A2D3D1 /* VEConsul.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAF1C495394003B686A /* VEConsul.h */; };
 		5906FC0D1C4A617A00A2D3D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		5906FC0E1C4A617A00A2D3D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
+		590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */; };
+		590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */; };
 		5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		591483E31C649313007EDABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591483E21C649313007EDABB /* main.m */; };
 		591483EE1C649313007EDABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591483ED1C649313007EDABB /* Assets.xcassets */; };
@@ -680,6 +682,8 @@
 		47A420D0AB06D1E696100585 /* Pods-aBike—Bruxelles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Bruxelles.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.release.xcconfig"; sourceTree = "<group>"; };
 		4E483FE9A874CAF8C49A568C /* Pods-aBike—Dublin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aBike—Dublin.release.xcconfig"; path = "Pods/Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.release.xcconfig"; sourceTree = "<group>"; };
 		590375641C70D34400EBAF43 /* SimulatorStatusMagic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimulatorStatusMagic.framework; path = "Pods/../build/Debug-iphoneos/SimulatorStatusMagic.framework"; sourceTree = "<group>"; };
+		590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+VEAdditions.h"; sourceTree = "<group>"; };
+		590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+VEAdditions.m"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		591483DF1C649313007EDABB /* aBike—Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1552,6 +1556,8 @@
 			children = (
 				593DF8C91C779C01002F8B07 /* VESearchStationView.h */,
 				593DF8CA1C779C01002F8B07 /* VESearchStationView.m */,
+				590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */,
+				590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */,
 			);
 			path = "Search Station View";
 			sourceTree = "<group>";
@@ -1952,6 +1958,7 @@
 				593ADAEA1C495394003B686A /* VEStationAnnotationAccessoryView.h in Headers */,
 				593ADAE61C495394003B686A /* VEAlertControllerManager.h in Headers */,
 				593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */,
+				590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */,
 				593ADAF81C495394003B686A /* VEStationsView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3545,6 +3552,7 @@
 				593ADADA1C495394003B686A /* VEDataImporter.m in Sources */,
 				593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */,
 				593ADAF51C495394003B686A /* VEAdStationView.m in Sources */,
+				590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */,
 				593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */,
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
