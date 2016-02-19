@@ -6,6 +6,6 @@
 //  Copyright © 2016 Clement Padovani. All rights reserved.
 //
 
-CP_CURRENT_VERSION = 2.9.9
+CP_CURRENT_VERSION = 3.0
 
-CP_CURRENT_BUILD = 385
+CP_CURRENT_BUILD = 389
