@@ -145,6 +145,8 @@
 		593ADB091C4953F6003B686A /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADB081C4953F6003B686A /* VEAppDelegate.m */; };
 		593ADB0C1C4955BF003B686A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0B1C4955BF003B686A /* Images.xcassets */; };
 		593ADB101C49574F003B686A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
+		593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593DF8C91C779C01002F8B07 /* VESearchStationView.h */; };
+		593DF8CC1C779C01002F8B07 /* VESearchStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593DF8CA1C779C01002F8B07 /* VESearchStationView.m */; };
 		5949F8E71C649A2D008398F4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5949F8E91C649A2D008398F4 /* Localizable.strings */; };
 		594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 594D7FEA1C6FEF1900492477 /* VEReachability.h */; };
 		594D7FED1C6FEF1900492477 /* VEReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 594D7FEB1C6FEF1900492477 /* VEReachability.m */; };
@@ -785,6 +787,8 @@
 		593ADB0B1C4955BF003B686A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		593ADB0D1C4955D7003B686A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		593ADB0F1C49574F003B686A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		593DF8C91C779C01002F8B07 /* VESearchStationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VESearchStationView.h; sourceTree = "<group>"; };
+		593DF8CA1C779C01002F8B07 /* VESearchStationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VESearchStationView.m; sourceTree = "<group>"; };
 		5949F8E81C649A2D008398F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5949F8EA1C649A2F008398F4 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5949F8EB1C649A30008398F4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -1514,16 +1518,42 @@
 		593ADA9E1C495394003B686A /* Stations View */ = {
 			isa = PBXGroup;
 			children = (
-				593ADA9F1C495394003B686A /* VEAdStationView.h */,
-				593ADAA01C495394003B686A /* VEAdStationView.m */,
-				593ADAA51C495394003B686A /* VEStationView.h */,
-				593ADAA61C495394003B686A /* VEStationView.m */,
+				593DF8CE1C779C0C002F8B07 /* Station Views */,
 				593ADAA11C495394003B686A /* VEStationsScrollView.h */,
 				593ADAA21C495394003B686A /* VEStationsScrollView.m */,
 				593ADAA31C495394003B686A /* VEStationsView.h */,
 				593ADAA41C495394003B686A /* VEStationsView.m */,
 			);
 			path = "Stations View";
+			sourceTree = "<group>";
+		};
+		593DF8CD1C779C05002F8B07 /* Ad Station View */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA9F1C495394003B686A /* VEAdStationView.h */,
+				593ADAA01C495394003B686A /* VEAdStationView.m */,
+			);
+			name = "Ad Station View";
+			sourceTree = "<group>";
+		};
+		593DF8CE1C779C0C002F8B07 /* Station Views */ = {
+			isa = PBXGroup;
+			children = (
+				593DF8CD1C779C05002F8B07 /* Ad Station View */,
+				593DF8CF1C779C11002F8B07 /* Search Station View */,
+				593ADAA51C495394003B686A /* VEStationView.h */,
+				593ADAA61C495394003B686A /* VEStationView.m */,
+			);
+			name = "Station Views";
+			sourceTree = "<group>";
+		};
+		593DF8CF1C779C11002F8B07 /* Search Station View */ = {
+			isa = PBXGroup;
+			children = (
+				593DF8C91C779C01002F8B07 /* VESearchStationView.h */,
+				593DF8CA1C779C01002F8B07 /* VESearchStationView.m */,
+			);
+			name = "Search Station View";
 			sourceTree = "<group>";
 		};
 		594AC0831C6F7ECF002FE220 /* Various */ = {
@@ -1886,6 +1916,7 @@
 				593ADACA1C495394003B686A /* Station+Additions.h in Headers */,
 				593ADB061C495394003B686A /* VEConsulDefines.h in Headers */,
 				593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */,
+				593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */,
 				593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */,
 				593ADAF41C495394003B686A /* VEAdStationView.h in Headers */,
 				593ADAD21C495394003B686A /* VEBaseModel.h in Headers */,
@@ -3499,6 +3530,7 @@
 				593ADB051C495394003B686A /* VEConsul.m in Sources */,
 				593ADAD51C495394003B686A /* VEManagedObjectContext.m in Sources */,
 				593ADAF11C495394003B686A /* VEStationAnnotationView.m in Sources */,
+				593DF8CC1C779C01002F8B07 /* VESearchStationView.m in Sources */,
 				593ADAFB1C495394003B686A /* VEStationView.m in Sources */,
 				593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */,
 				593ADAB81C495394003B686A /* NSNumber+Extensions.m in Sources */,
