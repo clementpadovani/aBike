@@ -2,17 +2,19 @@
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 
+platform :ios, '8.0'
+
+workspace 'aBike—Lyon.xcworkspace'
+
+xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release
+
 use_frameworks!
 
 inhibit_all_warnings!
 
-xcodeproj 'aBike—Lyon.xcodeproj', 'Debug' => :debug, 'Release' => :release, 'Screenshots' => :release
-
 def normalPods
-
-	platform :ios, '8.0'
 	
-	pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
+	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 	
 	
 	
@@ -35,25 +37,17 @@ end
 
 target 'aBikeFramework' do
 
-     pod 'SimulatorStatusMagic', :configurations => ['Screenshots']
+     pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
      
-     pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+     pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
-     pod 'Fabric', :configurations => ['Release']
+     pod 'Fabric', :configuration => ['Release']
 	
-	pod 'Crashlytics', :configurations => ['Release']
+	pod 'Crashlytics', :configuration => ['Release']
 
 end
 
 target 'aBike—LyonUITests' do
-
-end
-
-target 'aBike—Lyon TV' do
-
-end
-
-target 'aBikeTVFramework' do
 
 end
 
