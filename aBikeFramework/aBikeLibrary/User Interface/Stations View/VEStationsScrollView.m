@@ -28,7 +28,7 @@
 
 @property (nonatomic, copy) NSArray *stationViewsArray;
 
-- (void) setupViews;
+@property (nonatomic, assign, getter = isSearching) BOOL searching;
 
 - (void) removeDirectionsForStationAtIndex: (NSUInteger) stationIndex;
 
@@ -38,12 +38,14 @@
 
 @implementation VEStationsScrollView
 
-- (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate
+- (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching
 {
 	self = [super init];
 	
 	if (self)
 	{
+		_searching = searching;
+
 		_stationViewDelegate = stationViewDelegate;
 		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
@@ -62,7 +64,7 @@
 		
 		[self setAccessibilityIdentifier: @"Stations Scroll View"];
 		
-		[self setupViews];
+		[self setupViewsForSearch: searching];
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(numberOfBikeStationsHasChangedNotification:) name: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
 	}
@@ -70,12 +72,24 @@
 	return self;
 }
 
-- (void) setupViews
+- (void) setupViewsForSearch: (BOOL) searching
 {
 	NSUInteger numberOfStations = [VETimeFormatter numberOfBikeStations];
 	
 	BOOL showAdRemover = [VETimeFormatter includesAdRemover];
-	
+
+	if (searching)
+	{
+		numberOfStations--;
+
+		if (showAdRemover)
+		{
+			numberOfStations--;
+
+			showAdRemover = NO;
+		}
+	}
+
 	NSMutableArray *stationsViewArray = [NSMutableArray arrayWithCapacity: numberOfStations];
 	
 	VEStationView *previousStation = nil;
@@ -106,6 +120,11 @@
 				isLast = YES;
 			}
 		}
+
+		if (searching)
+		{
+			isSearch = NO;
+		}
 		
 		VEStationView *aStationView;
 		
@@ -120,6 +139,8 @@
 				aStationView = [[VEStationView alloc] init];
 		
 				[aStationView setDelegate: [self stationViewDelegate]];
+
+				[aStationView setDirectionsEnabled: ![self isSearching]];
 			}
 			
 		}
@@ -316,7 +337,7 @@
 		[aStationView removeFromSuperview];
 	}
 	
-	[self setupViews];
+	[self setupViewsForSearch: [self isSearching]];
 	
 	[self updateConstraints];
 	

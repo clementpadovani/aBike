@@ -117,8 +117,7 @@
 
 - (void) dealloc
 {
-	[[NSNotificationCenter defaultCenter] removeObserver: self
-									  forKeyPath: UIApplicationDidChangeStatusBarFrameNotification];
+	[[NSNotificationCenter defaultCenter] removeObserver: self];
 }
 
 - (void) updateConstraints

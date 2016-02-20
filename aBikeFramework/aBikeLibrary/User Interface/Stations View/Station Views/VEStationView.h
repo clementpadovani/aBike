@@ -26,6 +26,8 @@ static NSString * const kVEStationViewDidLoadDirectionsNotification = @"kVEStati
 
 @property (nonatomic, readonly) BOOL loadedDirections;
 
+@property (nonatomic, assign, getter = areDirectionsEnabled) BOOL directionsEnabled;
+
 @property (nonatomic, weak) id <VEStationViewDelegate> delegate;
 
 @end

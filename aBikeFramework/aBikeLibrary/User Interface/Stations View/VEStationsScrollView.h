@@ -16,7 +16,7 @@
 
 @property (nonatomic, assign) NSUInteger currentStationIndex;
 
-- (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate;
+- (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching;
 
 - (void) setStations: (NSArray *) stations;
 

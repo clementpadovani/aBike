@@ -161,10 +161,27 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 #endif
 
+- (void) userWantsDismissal
+{
+	[self dismissViewControllerAnimated: YES
+						completion: NULL];
+}
+
 - (void) viewDidLoad
 {
 	[super viewDidLoad];
-	
+
+	if ([self searchResult])
+	{
+		[self setTitle: [[self searchResult] name]];
+
+		UIBarButtonItem *closeBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone
+																		    target: self
+																		    action: @selector(userWantsDismissal)];
+
+		[[self navigationItem] setLeftBarButtonItem: closeBarButtonItem];
+	}
+
 	//[self setAutomaticallyAdjustsScrollViewInsets: NO];
 
 	if (![self searchResult])
@@ -176,7 +193,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	VEMapContainerView *mapContainerView = [[VEMapContainerView alloc] initWithMapViewDelegate: self];
 	
-	VEStationsView *stationsView = [[VEStationsView alloc] initWithStationDelegate: self];
+	VEStationsView *stationsView = [[VEStationsView alloc] initWithStationDelegate: self isSearching: (BOOL) ([self searchResult])];
 	
 	[stationsView setDelegate: self];
 		
@@ -706,7 +723,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	//CPLog(@"annotations: %@", mapViewAnnotations);
 	
-	if (![self canShowUserLocationInCohort])
+	if (![self canShowUserLocationInCohort] ||
+	    [self searchResult])
 	{
 		MKUserLocation *userLocation = [mapView userLocation];
 		
@@ -715,6 +733,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		//CPLog(@"temp array: %@", tempArray);
 		
 		[tempArray removeObject: userLocation];
+
+		if ([self searchResult])
+			[tempArray addObject: [[self searchResult] placemark]];
 		
 		//CPLog(@"temp array: %@", tempArray);
 		
@@ -906,7 +927,12 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		{
 			[aStation fetchContentWithUserForceReload: NO];
 		}
-		
+
+		if ([self searchResult])
+		{
+			[self setStations: [[self stations] arrayByAddingObject: [[self searchResult] placemark]]];
+		}
+
 		[[[self mapContainerView] mapView] addAnnotations: [self stations]];
 		
 		//CPLog(@"added: %@", [self stations]);
@@ -943,6 +969,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSUInteger numberOfStations = [VETimeFormatter numberOfBikeStations];
 	
 	if ([VETimeFormatter includesAdRemover])
+		numberOfStations -= 1;
+
+	if ([self searchResult])
 		numberOfStations -= 1;
 	
 	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [LightStation entityName]];
@@ -1095,6 +1124,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSUInteger realNumberOfStations = [VETimeFormatter numberOfBikeStations];
 	
 	if ([VETimeFormatter includesAdRemover])
+		realNumberOfStations -= 1;
+
+	if ([self searchResult])
 		realNumberOfStations -= 1;
 	
 	if ([[self stations] count] == realNumberOfStations)
@@ -1557,6 +1589,20 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		#endif
 		return nil;
 	}
+	else if ([annotation isKindOfClass: [MKPlacemark class]])
+	{
+		MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation: annotation
+																 reuseIdentifier: nil];
+
+		if ([annotationView respondsToSelector: @selector(setPinTintColor:)])
+			[annotationView setPinTintColor: [[self view] tintColor]];
+		else
+			[annotationView setPinColor: MKPinAnnotationColorRed];
+
+		[annotationView setCanShowCallout: YES];
+
+		return annotationView;
+	}
 	
 	VEStationAnnotationView *stationAnnotationView = (VEStationAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier: kVEMapViewControllerStationAnnotationViewReuseIdentifier];
 	
@@ -1606,6 +1652,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {	
 	if ([[view annotation] isEqual: [mapView userLocation]])
 		return;
+	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
+		return;
 	
 	Station *station = [(VEStationAnnotationView *) view annotation];
 	
@@ -1616,7 +1664,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) mapView: (MKMapView *) mapView didDeselectAnnotationView: (MKAnnotationView *) view
 {
+	[(NSArray *) view firstObject];
+
 	if ([[view annotation] isEqual: [mapView userLocation]])
+		return;
+	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
 		return;
 	
 	if ([[self mapSnapshotter] isLoading])

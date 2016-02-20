@@ -10,7 +10,7 @@ xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release
 
 use_frameworks!
 
-inhibit_all_warnings!
+# inhibit_all_warnings!
 
 def normalPods
 	

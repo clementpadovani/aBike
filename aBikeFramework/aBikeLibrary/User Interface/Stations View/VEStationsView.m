@@ -32,6 +32,8 @@
 
 @property (nonatomic, assign) NSUInteger currentPage;
 
+@property (nonatomic, assign, getter = isSearching) BOOL searching;
+
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
 - (void) setCurrentStationIndex: (NSUInteger) currentStationIndex withNotification: (BOOL) notifies;
@@ -44,12 +46,14 @@
 
 @implementation VEStationsView
 
-- (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate
+- (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching
 {
 	self = [super init];
 	
 	if (self)
 	{
+		_searching = searching;
+
 		UIView *shadowView = [[UIView alloc] init];
 		
 		[shadowView setBackgroundColor: [UIColor ve_shadowColor]];
@@ -62,7 +66,7 @@
 
 			[blurEffectView setTranslatesAutoresizingMaskIntoConstraints: NO];
 
-		VEStationsScrollView *stationsScrollView = [[VEStationsScrollView alloc] initWithStationDelegate: stationViewDelegate];
+		VEStationsScrollView *stationsScrollView = [[VEStationsScrollView alloc] initWithStationDelegate: stationViewDelegate isSearching: searching];
 		
 		[stationsScrollView setDelegate: self];
 		
@@ -77,7 +81,19 @@
 		[pager setCurrentPage: 0];
 		
 		NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
-		
+
+		if ([self isSearching])
+		{
+			if ([VETimeFormatter includesAdRemover])
+			{
+				numberOfPages -= 2;
+			}
+			else
+			{
+				numberOfPages -= 1;
+			}
+		}
+
 		[pager setNumberOfPages: numberOfPages];
 		
 		[pager addTarget: self action: @selector(pageControlDidChangeValue) forControlEvents: UIControlEventValueChanged];
@@ -125,7 +141,19 @@
 - (void) numberOfBikeStationsHasChangedNotification: (NSNotification *) notification
 {
 	NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
-	
+
+	if ([self isSearching])
+	{
+		if ([VETimeFormatter includesAdRemover])
+		{
+			numberOfPages -= 2;
+		}
+		else
+		{
+			numberOfPages -= 1;
+		}
+	}
+
 	[[self pager] setNumberOfPages: numberOfPages];
 }
 
@@ -249,6 +277,30 @@
 
 - (void) setStations: (NSArray *) stations
 {
+	BOOL containsSearchResult = NO;
+
+	NSUInteger searchResultIndex = 0;
+
+	for (id anObject in stations)
+	{
+		if ([anObject isKindOfClass: [MKPlacemark class]])
+		{
+			containsSearchResult = YES;
+
+			searchResultIndex = [stations indexOfObject: anObject];
+			break;
+		}
+	}
+
+	if (containsSearchResult)
+	{
+		NSMutableArray *tempArray = [stations mutableCopy];
+
+		[tempArray removeObjectAtIndex: searchResultIndex];
+
+		stations = [tempArray copy];
+	}
+
 	[[self stationsScrollView] setStations: stations];
 	
 	[self setCurrentStationIndex: 0];

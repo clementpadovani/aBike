@@ -92,6 +92,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
 	if (self)
 	{
+		_directionsAreDisabled = NO;
+
 		[self setupStationNameAndNumberLabels];
 		
 		[self setupHorizontalSeperatorView];
@@ -116,6 +118,14 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	}
 	
 	return self;
+}
+
+- (void) setDirectionsEnabled: (BOOL) directionsEnabled
+{
+	_directionsEnabled = directionsEnabled;
+
+	if (!directionsEnabled)
+		[self disableDirections];
 }
 
 - (void) setupStationNameAndNumberLabels
@@ -609,6 +619,13 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 		return;
 	
 	#endif
+
+	if (![self areDirectionsEnabled])
+	{
+		[self disableDirections];
+		
+		return;
+	}
 	
 	[self setLoadedDirections: NO];
 	
