@@ -129,6 +129,16 @@
 	return self;
 }
 
+- (NSUInteger) searchStationIndex
+{
+	return [[self stationsScrollView] searchStationIndex];
+}
+
+- (NSUInteger) adStationIndex
+{
+	return [[self stationsScrollView] adStationIndex];
+}
+
 - (void) tintColorDidChange
 {
 	//CPLog(@"pager tint did change");

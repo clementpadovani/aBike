@@ -77,6 +77,23 @@ static inline UIViewAnimationOptions VEUIViewAnimationOptionsFromAnimationCurve(
 	return animationOptions;
 }
 
+static inline BOOL VECGFloatIsEqual(CGFloat aFloat, CGFloat anotherFloat)
+{
+	CGFloat VECGFLOAT_EPSILON;
+
+	#if CGFLOAT_IS_DOUBLE
+
+		VECGFLOAT_EPSILON = DBL_EPSILON;
+
+	#else
+
+		VECGFLOAT_EPSILON = FLT_EPSILON;
+
+	#endif
+
+	return (ABS(aFloat - anotherFloat) < VECGFLOAT_EPSILON);
+}
+
 typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	VEMapViewControllerMapActionShowAnnotations,
 	VEMapViewControllerMapActionShowOverlay
@@ -113,6 +130,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 @property (nonatomic, weak) NSLayoutConstraint *stationsViewBottomVerticalConstraint;
 
 @property (nonatomic, strong) MKMapItem *searchResult;
+
+@property (nonatomic, assign, getter = hasAppeared) BOOL appeared;
 
 - (void) setupUserSettings;
 
@@ -192,7 +211,10 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	[self setupUserSettings];
 	
 	VEMapContainerView *mapContainerView = [[VEMapContainerView alloc] initWithMapViewDelegate: self];
-	
+
+	if ([self searchResult])
+		[[mapContainerView mapView] setShowsUserLocation: NO];
+
 	VEStationsView *stationsView = [[VEStationsView alloc] initWithStationDelegate: self isSearching: (BOOL) ([self searchResult])];
 	
 	[stationsView setDelegate: self];
@@ -220,12 +242,15 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 - (void) viewDidAppear: (BOOL) animated
 {
 	[super viewDidAppear: animated];
+
+	if (![self hasAppeared])
+	{
+		MKCoordinateRegion region = [[VEConsul sharedConsul] initialMapRegion];
 	
-	//CPLog(@"view did appear");
-	
-	MKCoordinateRegion region = [[VEConsul sharedConsul] initialMapRegion];
-	
-	[[[self mapContainerView] mapView] setRegion: region];
+		[[[self mapContainerView] mapView] setRegion: region animated: animated];
+
+		[self setAppeared: YES];
+	}
 }
 
 //- (BOOL) shouldAutorotate
@@ -508,11 +533,18 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 	UIViewAnimationCurve keyboardAnimationCurve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
 
-	CGFloat keyboardVerticalOrigin = CGRectGetMinY(keyboardEndFrame);
+	CGFloat screenHeight = CGRectGetHeight([[UIScreen mainScreen] bounds]);
 
-	CGFloat stationsViewBottomVerticalConstant = keyboardVerticalOrigin;
+	CGFloat keyboardEndVerticalOrigin = CGRectGetMinY(keyboardEndFrame);
+
+	CGFloat stationsViewBottomVerticalConstant = keyboardEndVerticalOrigin;
 
 	stationsViewBottomVerticalConstant -= CGRectGetHeight([[self originalContentView] bounds]);
+
+	BOOL keyboardIsDismissing = (VECGFloatIsEqual(screenHeight, keyboardEndVerticalOrigin));
+
+	if (keyboardIsDismissing)
+		stationsViewBottomVerticalConstant = 0;
 
 	[[self stationsViewBottomVerticalConstraint] setConstant: stationsViewBottomVerticalConstant];
 
@@ -846,7 +878,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
-	if (index == [[self stations] count])
+	if (index == [[self stationsView] adStationIndex] ||
+	    index == [[self stationsView] searchStationIndex])
 	{
 		//CPLog(@"station is ad view");
 		
@@ -857,8 +890,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		[mapView deselectAnnotation: oldStation animated: YES];
 		
 		[self setCurrentStation: nil];
-		
-		[[VEAdStationView sharedAdStationView] canLoad];
+
+		if (index == [[self stationsView] adStationIndex])
+			[[VEAdStationView sharedAdStationView] canLoad];
 		
 		return;
 	}
@@ -925,7 +959,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 			
 		for (Station *aStation in [self stations])
 		{
-			[aStation fetchContentWithUserForceReload: NO];
+			if ([aStation isKindOfClass: [Station class]])
+				[aStation fetchContentWithUserForceReload: NO];
 		}
 
 		if ([self searchResult])
@@ -971,7 +1006,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	if ([VETimeFormatter includesAdRemover])
 		numberOfStations -= 1;
 
-	if ([self searchResult])
+//	if ([self searchResult])
 		numberOfStations -= 1;
 	
 	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [LightStation entityName]];

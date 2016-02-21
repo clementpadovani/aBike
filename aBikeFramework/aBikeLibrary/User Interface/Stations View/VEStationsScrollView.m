@@ -30,6 +30,10 @@
 
 @property (nonatomic, assign, getter = isSearching) BOOL searching;
 
+@property (nonatomic, assign, readwrite) NSUInteger adStationIndex;
+
+@property (nonatomic, assign, readwrite) NSUInteger searchStationIndex;
+
 - (void) removeDirectionsForStationAtIndex: (NSUInteger) stationIndex;
 
 - (void) numberOfBikeStationsHasChangedNotification: (NSNotification *) notification;
@@ -47,6 +51,10 @@
 		_searching = searching;
 
 		_stationViewDelegate = stationViewDelegate;
+
+		_adStationIndex = NSNotFound;
+
+		_searchStationIndex = NSNotFound;
 		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
 
@@ -133,6 +141,8 @@
 			if (isSearch)
 			{
 				aStationView = (VEStationView *) [[VESearchStationView alloc] init];
+
+				[self setSearchStationIndex: i];
 			}
 			else
 			{
@@ -147,6 +157,8 @@
 		else
 		{
 			aStationView = (VEStationView *) [VEAdStationView sharedAdStationView];
+
+			[self setAdStationIndex: i];
 		}
 		
 		[self addSubview: aStationView];

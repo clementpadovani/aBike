@@ -24,6 +24,10 @@
 
 @property (nonatomic, assign) NSUInteger currentStationIndex;
 
+@property (nonatomic, assign, readonly) NSUInteger adStationIndex;
+
+@property (nonatomic, assign, readonly) NSUInteger searchStationIndex;
+
 - (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching;
 
 - (void) setStations: (NSArray *) stations;
