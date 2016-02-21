@@ -1,4 +1,4 @@
-- Fixed station update bug
+- NEW: Added local searching
 
 Check out the other 9 aBike apps for a city near you!
 

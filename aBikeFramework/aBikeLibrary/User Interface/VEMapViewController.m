@@ -38,6 +38,8 @@
 
 @import StoreKit;
 
+@import MapKit;
+
 static NSString * const kVEMapViewControllerStationAnnotationViewReuseIdentifier = @"kVEMapViewControllerStationAnnotationViewReuseIdentifier";
 
 static const NSUInteger kVEMapViewControllerMemoryStoreBatchSize = 50;
@@ -190,19 +192,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {
 	[super viewDidLoad];
 
-	if ([self searchResult])
-	{
-		[self setTitle: [[self searchResult] name]];
-
-		UIBarButtonItem *closeBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone
-																		    target: self
-																		    action: @selector(userWantsDismissal)];
-
-		[[self navigationItem] setLeftBarButtonItem: closeBarButtonItem];
-	}
-
-	//[self setAutomaticallyAdjustsScrollViewInsets: NO];
-
 	if (![self searchResult])
 		[self setCanDisplayBannerAds: YES];
 	
@@ -212,12 +201,27 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	VEMapContainerView *mapContainerView = [[VEMapContainerView alloc] initWithMapViewDelegate: self];
 
-	if ([self searchResult])
-		[[mapContainerView mapView] setShowsUserLocation: NO];
+//	if ([self searchResult])
+//		[[mapContainerView mapView] setShowsUserLocation: NO];
 
 	VEStationsView *stationsView = [[VEStationsView alloc] initWithStationDelegate: self isSearching: (BOOL) ([self searchResult])];
 	
 	[stationsView setDelegate: self];
+
+	if ([self searchResult])
+	{
+		[self setTitle: [[self searchResult] name]];
+
+		UIBarButtonItem *closeBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone
+																		    target: self
+																		    action: @selector(userWantsDismissal)];
+
+		[[self navigationItem] setLeftBarButtonItem: closeBarButtonItem];
+
+//		MKUserTrackingBarButtonItem *mapBarButtonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView: [mapContainerView mapView]];
+//
+//		[[self navigationItem] setRightBarButtonItem: mapBarButtonItem];
+	}
 		
 	[[self originalContentView] addSubview: mapContainerView];
 	
@@ -483,10 +487,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 		for (NSDictionary *aStationDictionary in fetchResults)
 		{
-			@autoreleasepool
-			{
-				[LightStation lightStationFromStationDictionary: aStationDictionary inContext: temporaryContext];
-			}
+			[LightStation lightStationFromStationDictionary: aStationDictionary inContext: temporaryContext];
 		}
 		
 	}];
@@ -663,6 +664,12 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	if (directionsRoute)
 	{
+		#if kEnableCrashlytics == 1
+
+			[CrashlyticsKit throwException];
+
+		#endif
+
 		[self setDirectionsRoute: directionsRoute];
 		
 //		CLLocationCoordinate2D coords = [[[VELocationManager sharedLocationManager] currentLocation] coordinate];
@@ -749,6 +756,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (MKMapRect) mapRectForAnnotations
 {
+	return [self mapRectForAnnotationsWithUserLocation: (BOOL) ([self searchResult])];
+}
+
+- (MKMapRect) mapRectForAnnotationsWithUserLocation: (BOOL) showUserLocation
+{
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
 	NSArray *mapViewAnnotations = [mapView annotations];
@@ -763,8 +775,10 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		NSMutableArray *tempArray = [NSMutableArray arrayWithArray: mapViewAnnotations];
 		
 		//CPLog(@"temp array: %@", tempArray);
-		
-		[tempArray removeObject: userLocation];
+
+		if ([self searchResult] &&
+		    !showUserLocation)
+			[tempArray removeObject: userLocation];
 
 		if ([self searchResult])
 			[tempArray addObject: [[self searchResult] placemark]];
@@ -1507,6 +1521,19 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	CPLog(@"did fail with error: %@", error);
 }
 
+//- (void) mapView: (MKMapView *) mapView didChangeUserTrackingMode: (MKUserTrackingMode) mode animated: (BOOL) animated
+//{
+//	MKMapRect mapRect = MKMapRectNull;
+//
+//	if (mode == MKUserTrackingModeFollow ||
+//	    mode == MKUserTrackingModeFollowWithHeading)
+//		mapRect = [self mapRectForAnnotationsWithUserLocation: YES];
+//	else
+//		mapRect = [self mapRectForAnnotationsWithUserLocation: NO];
+//
+//	[mapView setVisibleMapRect: mapRect animated: animated];
+//}
+
 - (void) mapView: (MKMapView *) mapView regionDidChangeAnimated: (BOOL) animated
 {
 	//CPLog(@"did change region");
@@ -1687,6 +1714,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {	
 	if ([[view annotation] isEqual: [mapView userLocation]])
 		return;
+
 	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
 		return;
 	
@@ -1699,10 +1727,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) mapView: (MKMapView *) mapView didDeselectAnnotationView: (MKAnnotationView *) view
 {
-	[(NSArray *) view firstObject];
-
 	if ([[view annotation] isEqual: [mapView userLocation]])
 		return;
+
 	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
 		return;
 	

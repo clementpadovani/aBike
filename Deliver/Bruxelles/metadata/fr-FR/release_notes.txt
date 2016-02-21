@@ -1,6 +1,4 @@
-Correction du bug de mise à jour des stations
-
-
+- NOUVEAU: Vous pouvez désormais faire une recherche locale
 
 Découvrez les 9 autres applis aBike pour les villes suivantes :
 
