@@ -27,6 +27,35 @@ NSString * const kLightStationNumber = @"number";
 
 + (LightStation *) lightStationFromStationDictionary: (NSDictionary *) stationDictionary inContext: (NSManagedObjectContext *) context
 {
+	NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [self entityName]];
+
+	NSPredicate *predicate = [NSPredicate predicateWithFormat: @"%K == %@", NSStringFromSelector(@selector(number)), stationDictionary[kLightStationNumber]];
+
+	[fetchRequest setPredicate: predicate];
+
+	NSError *fetchError = nil;
+
+	NSArray *fetchResults = [context executeFetchRequest: fetchRequest
+										  error: &fetchError];
+
+	if (fetchError)
+	{
+		CPLog(@"fetch error: %@", fetchError);
+	}
+
+	LightStation *lightStation = [fetchResults firstObject];
+
+	if (!lightStation)
+	{
+		lightStation = [self internal_lightStationFromStationDictionary: stationDictionary
+												    inContext: context];
+	}
+
+	return lightStation;
+}
+
++ (LightStation *) internal_lightStationFromStationDictionary: (NSDictionary *) stationDictionary inContext: (NSManagedObjectContext *) context
+{
 	LightStation *newStation = [self newEntityInManagedObjectContext: context];
 	
 	[newStation setNumber: stationDictionary[kLightStationNumber]];
