@@ -26,3 +26,7 @@ Run `snapshot run` inside the directory (you might want to clean your simulators
 
 ##Thanks
 Thanks [@MathieuWhite](https://twitter.com/MathieuWhite) ([GitHub](https://github.com/MathieuWhite))
+
+#License
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">aBike</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/ClementPadovani/aBike" property="cc:attributionName" rel="cc:attributionURL">Clément PADOVANI</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/ClementPadovani/aBike" rel="dct:source">https://github.com/ClementPadovani/aBike</a>.
