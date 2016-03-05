@@ -14,4 +14,8 @@ SUBMIT_FOR_REVIEW = true
 
 AUTOMATIC_RELEASE = false
 
+SUBMISSION_INFORMATION = ({
+	add_id_info_uses_idfa: false
+})
+
 end
