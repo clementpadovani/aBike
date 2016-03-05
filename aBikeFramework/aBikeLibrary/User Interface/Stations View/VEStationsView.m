@@ -82,17 +82,22 @@
 		
 		NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
 
-		if ([self isSearching])
-		{
-			if ([VETimeFormatter includesAdRemover])
-			{
-				numberOfPages -= 2;
-			}
-			else
-			{
-				numberOfPages -= 1;
-			}
-		}
+//		if ([self isSearching])
+//		{
+//			if ([VETimeFormatter includesAdRemover])
+//			{
+//				numberOfPages -= 2;
+//			}
+//			else
+//			{
+//				numberOfPages -= 1;
+//			}
+//		}
+
+//		if ([VETimeFormatter includesAdRemover])
+//		{
+//			numberOfPages -= 1;
+//		}
 
 		[pager setNumberOfPages: numberOfPages];
 		
@@ -152,17 +157,22 @@
 {
 	NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
 
-	if ([self isSearching])
-	{
-		if ([VETimeFormatter includesAdRemover])
-		{
-			numberOfPages -= 2;
-		}
-		else
-		{
-			numberOfPages -= 1;
-		}
-	}
+//	if ([self isSearching])
+//	{
+//		if ([VETimeFormatter includesAdRemover])
+//		{
+//			numberOfPages -= 2;
+//		}
+//		else
+//		{
+//			numberOfPages -= 1;
+//		}
+//	}
+
+//	if ([VETimeFormatter includesAdRemover])
+//	{
+//		numberOfPages -= 1;
+//	}
 
 	[[self pager] setNumberOfPages: numberOfPages];
 }

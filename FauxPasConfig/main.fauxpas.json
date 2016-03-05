@@ -3,7 +3,7 @@
     // Xcode target to check (String)
     "target": "aBikeFramework",
     // Xcode build configuration to check (String)
-    "buildConfig": "Debug",
+    "buildConfig": "Release",
     // Rules to apply (Array of strings)
     "rules": ["APIAvailability","BuildSettingsSetInGUI","DefaultInExhaustiveSwitch","DotSyntax","IBOutletsInPublicInterface","IdentifierNaming","ImplicitAtomicProperty","InstanceMethodWritesToStaticVariable","MacroLiteral","MallocCast","MallocWithoutSizeof","NewInitializer","NonTypedefBlockDeclaration","OrderedComparisonOpDirection","ReservedIdentifierNaming","StrongInsteadOfRetain","ThrowingObjCException","UnusedMethod","UnusedResource","UnusedTranslation","UsedVariableMarkedUnused","XIBUnknownClassReference"],
     // Rules to apply only (Array of strings)

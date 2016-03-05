@@ -180,7 +180,7 @@ BOOL includesAdRemover = YES;
 			
 		}];
 
-		currentNumberOfStations += 1;
+//		currentNumberOfStations += 1;
 
 		if (showAds)
 		{

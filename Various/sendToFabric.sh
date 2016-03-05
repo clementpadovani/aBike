@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 #  sendToFabric.sh
 #  aBike—Lyon
 #

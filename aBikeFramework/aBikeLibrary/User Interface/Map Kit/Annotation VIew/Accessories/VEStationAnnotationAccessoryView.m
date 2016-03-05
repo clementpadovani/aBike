@@ -12,7 +12,7 @@
 
 + (instancetype) accessoryView
 {
-	VEStationAnnotationAccessoryView *accessoryView = [super buttonWithType: UIButtonTypeCustom];
+	VEStationAnnotationAccessoryView *accessoryView = [self buttonWithType: UIButtonTypeCustom];
 	
 	[accessoryView setContentHorizontalAlignment: UIControlContentHorizontalAlignmentCenter];
 	

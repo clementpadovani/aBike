@@ -86,17 +86,24 @@
 	
 	BOOL showAdRemover = [VETimeFormatter includesAdRemover];
 
-	if (searching)
-	{
-		numberOfStations--;
+//	if (searching)
+//	{
+//		numberOfStations--;
+//
+//		if (showAdRemover)
+//		{
+//			numberOfStations--;
+//
+//			showAdRemover = NO;
+//		}
+//	}
 
-		if (showAdRemover)
-		{
-			numberOfStations--;
-
-			showAdRemover = NO;
-		}
-	}
+//	if (showAdRemover)
+//	{
+//		numberOfStations--;
+//
+//		showAdRemover = NO;
+//	}
 
 	NSMutableArray *stationsViewArray = [NSMutableArray arrayWithCapacity: numberOfStations];
 	
@@ -108,32 +115,44 @@
 
 		BOOL isSearch = NO;
 		
+//		if (!showAdRemover)
+//		{
+//			isLast = NO;
+//
+//			if (i == numberOfStations - 2)
+//			{
+//				isSearch = YES;
+//			}
+//		}
+//		else
+//		{
+//			if (i == numberOfStations - 2)
+//			{
+//				isSearch = YES;
+//			}
+//			else if ((i + 1) == numberOfStations)
+//			{
+//				isLast = YES;
+//			}
+//		}
+
+//		if (searching)
+//		{
+//			isSearch = NO;
+//		}
+
 		if (!showAdRemover)
 		{
 			isLast = NO;
-
-			if (i == numberOfStations - 2)
-			{
-				isSearch = YES;
-			}
 		}
 		else
 		{
-			if (i == numberOfStations - 2)
-			{
-				isSearch = YES;
-			}
-			else if ((i + 1) == numberOfStations)
+			if ((i + 1) == numberOfStations)
 			{
 				isLast = YES;
 			}
 		}
 
-		if (searching)
-		{
-			isSearch = NO;
-		}
-		
 		VEStationView *aStationView;
 		
 		if (!isLast)

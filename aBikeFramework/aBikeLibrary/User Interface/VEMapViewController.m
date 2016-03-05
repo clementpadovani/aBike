@@ -192,9 +192,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {
 	[super viewDidLoad];
 
-	if (![self searchResult])
-		[self setCanDisplayBannerAds: YES];
-	
+//	if (![self searchResult])
+//		[self setCanDisplayBannerAds: YES];
+
 	[self setCanShowUserLocationInCohort: YES];
 	
 	[self setupUserSettings];
@@ -1021,8 +1021,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		numberOfStations -= 1;
 
 //	if ([self searchResult])
-		numberOfStations -= 1;
-	
+//		numberOfStations -= 1;
+
 	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [LightStation entityName]];
 	
 	#if enableNumberOfStations
@@ -1175,9 +1175,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	if ([VETimeFormatter includesAdRemover])
 		realNumberOfStations -= 1;
 
-	if ([self searchResult])
-		realNumberOfStations -= 1;
-	
+//	if ([self searchResult])
+//		realNumberOfStations -= 1;
+
 	if ([[self stations] count] == realNumberOfStations)
 	{
 		//CPLog(@"counts equal");

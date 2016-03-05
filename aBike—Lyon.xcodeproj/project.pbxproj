@@ -313,6 +313,7 @@
 		59DDA02F1C78A339006A8BAA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DDA02E1C78A339006A8BAA /* StoreKit.framework */; };
 		59DDCBCB1C4BADD400E3DA02 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */; };
 		59DDCBCE1C4BAF8000E3DA02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */; };
+		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
 		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBF1C54EED10007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
@@ -925,6 +926,7 @@
 		59DDCBC91C4BADD400E3DA02 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAppDelegate.h; sourceTree = "<group>"; };
 		59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEAppDelegate.m; sourceTree = "<group>"; };
 		59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMainThreadGuard.m; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MarseilleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1449,6 +1451,7 @@
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
 				593ADA7B1C495394003B686A /* aBikeCities.plist */,
+				59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -3550,6 +3553,7 @@
 				593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */,
 				593ADAB81C495394003B686A /* NSNumber+Extensions.m in Sources */,
 				593ADAED1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.m in Sources */,
+				59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */,
 				593ADAC21C495394003B686A /* VELocationManager.m in Sources */,
 				593ADAD11C495394003B686A /* UserSettings.m in Sources */,
 				593ADACB1C495394003B686A /* Station+Additions.m in Sources */,
@@ -4438,6 +4442,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -4482,6 +4487,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5668,6 +5674,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
