@@ -8,6 +8,8 @@
 
 #import "VEAppDelegate.h"
 
+@import WatchdogInspector;
+
 @implementation VEAppDelegate
 
 - (id) init
@@ -78,6 +80,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[TWWatchdogInspector start];
+
 	return [[VEConsul sharedConsul] applicationDidFinishLaunchingWithOptions: launchOptions];
 }
 

@@ -83,6 +83,16 @@ strip_invalid_archs() {
 }
 
 
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-aBike—Bruxelles/WatchdogInspector.framework"
+  install_framework "Pods-aBike—Bruxelles/YourStatusBar.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-aBike—Bruxelles/WatchdogInspector.framework"
+  install_framework "Pods-aBike—Bruxelles/YourStatusBar.framework"
+fi
 if [[ "$CONFIGURATION" == "Screenshots" ]]; then
   install_framework "Pods-aBike—Bruxelles/SimulatorStatusMagic.framework"
+  install_framework "Pods-aBike—Bruxelles/WatchdogInspector.framework"
+  install_framework "Pods-aBike—Bruxelles/YourStatusBar.framework"
 fi

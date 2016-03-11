@@ -16,7 +16,7 @@ def normalPods
 	
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 	
-	
+	pod 'WatchdogInspector'
 	
 # 	pod 'Fabric', :configurations => ['Release']
 # 	
