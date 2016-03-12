@@ -2,26 +2,19 @@ language: objective-c
 osx_image: xcode7.2
 podfile: Podfile
 cache: cocoapods
-sudo: true
+sudo: false
+env:
+  global:
+  - LC_CTYPE=en_US.UTF-8
+  - LANG=en_US.UTF-8
 matrix:
     include:
         - osx_image: xcode7.2
-          env:
-              - VESIMULATOR_SDK="iphonesimulator9.2"
-              - VESIMULATOR_VERSION="9.2"
+          env: VESIMULATOR_SDK="iphonesimulator9.2" VESIMULATOR_VERSION="9.2"
         - osx_image: xcode7
-          env:
-              - VESIMULATOR_SDK="iphonesimulator9.0"
-              - VESIMULATOR_VERSION="9.0"
+          env: VESIMULATOR_SDK="iphonesimulator9.0" VESIMULATOR_VERSION="9.0"
         - osx_image: xcode6.4
-          env:
-              - VESIMULATOR_SDK="iphonesimulator8.4"
-              - VESIMULATOR_VERSION="8.4"
-        - osx_image: xcode6.1
-          env:
-              - VESIMULATOR_SDK="iphonesimulator8.1"
-              - VESIMULATOR_VERSION="8.1"
-          rvm: 1.9.3
+          env: VESIMULATOR_SDK="iphonesimulator8.4" VESIMULATOR_VERSION="8.4"
 
 before_install:
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
