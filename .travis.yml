@@ -6,4 +6,4 @@ sudo: false
 before_install:
     - pod install
 xcode_workspace: aBike—Lyon.xcworkspace
-xcode_scheme: aBikeFrameworkTests
+xcode_scheme: aBikeFramework
