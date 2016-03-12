@@ -4,13 +4,12 @@ podfile: Podfile
 cache: cocoapods
 sudo: false
 matrix:
-    include:
-        - env:
-            - VESIMULATOR_SDK=iphonesimulator9.2
-            - VESIMULATOR_VERSION=9.2
-        - env:
-            - VESIMULATOR_SDK=iphonesimulator9.1
-            - VESIMULATOR_VERSION=9.1
+    - env:
+        - VESIMULATOR_SDK=iphonesimulator9.2
+        - VESIMULATOR_VERSION=9.2
+    - env:
+        - VESIMULATOR_SDK=iphonesimulator9.1
+        - VESIMULATOR_VERSION=9.1
 before_install:
     - pod install
 script:
