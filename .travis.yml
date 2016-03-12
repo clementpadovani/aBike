@@ -6,13 +6,21 @@ sudo: false
 matrix:
     include:
         - osx_image: xcode7.2
-          env: VESIMULATOR_SDK=iphonesimulator9.2 VESIMULATOR_VERSION=9.2
+          env:
+              - VESIMULATOR_SDK=iphonesimulator9.2
+              - VESIMULATOR_VERSION=9.2
         - osx_image: xcode7
-          env: VESIMULATOR_SDK=iphonesimulator9.0 VESIMULATOR_VERSION=9.0
+          env:
+              - VESIMULATOR_SDK=iphonesimulator9.0
+              - VESIMULATOR_VERSION=9.0
         - osx_image: xcode6.4
-          env: VESIMULATOR_SDK=iphonesimulator8.4 VESIMULATOR_VERSION=8.4
+          env:
+              - VESIMULATOR_SDK=iphonesimulator8.4
+              - VESIMULATOR_VERSION=8.4
         - osx_image: xcode6.1
-          env: VESIMULATOR_SDK=iphonesimulator8.1 VESIMULATOR_VERSION=8.1
+          env:
+              - VESIMULATOR_SDK=iphonesimulator8.1
+              - VESIMULATOR_VERSION=8.1
 
 before_install:
     - pod install
