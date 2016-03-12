@@ -1,0 +1,17 @@
+before_all do
+#   increment_build_number
+  cocoapods
+end
+
+lane :appstore do
+
+	gym(
+	     workspace: "aBike—Lyon.xcworkspace",
+	     scheme: "aBike—Lyon",
+	     clean: true,
+	     configuration: "Release",
+	     include_bitcode: true,
+	     export_team_id: "W48L6Z4654"
+	)
+
+end
