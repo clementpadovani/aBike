@@ -49,7 +49,7 @@
 		5906FC0C1C4A5FBB00A2D3D1 /* VEConsul.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAF1C495394003B686A /* VEConsul.h */; };
 		5906FC0D1C4A617A00A2D3D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		5906FC0E1C4A617A00A2D3D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
-		590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */; };
+		590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */; };
 		5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		591483E31C649313007EDABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591483E21C649313007EDABB /* main.m */; };
@@ -70,89 +70,89 @@
 		593AD9561C495217003B686A /* aBikeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 593AD9551C495217003B686A /* aBikeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		593AD95B1C495217003B686A /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		593ADAB31C495394003B686A /* CLLocation+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA451C495394003B686A /* CLLocation+Additions.h */; };
+		593ADAB31C495394003B686A /* CLLocation+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA451C495394003B686A /* CLLocation+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA461C495394003B686A /* CLLocation+Additions.m */; };
-		593ADAB51C495394003B686A /* NSBundle+VELibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA471C495394003B686A /* NSBundle+VELibrary.h */; };
+		593ADAB51C495394003B686A /* NSBundle+VELibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA471C495394003B686A /* NSBundle+VELibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAB61C495394003B686A /* NSBundle+VELibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA481C495394003B686A /* NSBundle+VELibrary.m */; };
-		593ADAB71C495394003B686A /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA491C495394003B686A /* NSNumber+Extensions.h */; };
+		593ADAB71C495394003B686A /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA491C495394003B686A /* NSNumber+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAB81C495394003B686A /* NSNumber+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4A1C495394003B686A /* NSNumber+Extensions.m */; };
-		593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4B1C495394003B686A /* NSString+NumberOfLines.h */; };
+		593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4B1C495394003B686A /* NSString+NumberOfLines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADABA1C495394003B686A /* NSString+NumberOfLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */; };
-		593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */; };
+		593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */; };
-		593ADABD1C495394003B686A /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4F1C495394003B686A /* UIDevice+Additions.h */; };
+		593ADABD1C495394003B686A /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4F1C495394003B686A /* UIDevice+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADABE1C495394003B686A /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA501C495394003B686A /* UIDevice+Additions.m */; };
-		593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA511C495394003B686A /* VEConnectionManager.h */; };
+		593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA511C495394003B686A /* VEConnectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC01C495394003B686A /* VEConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA521C495394003B686A /* VEConnectionManager.m */; };
-		593ADAC11C495394003B686A /* VELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA531C495394003B686A /* VELocationManager.h */; };
+		593ADAC11C495394003B686A /* VELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA531C495394003B686A /* VELocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC21C495394003B686A /* VELocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA541C495394003B686A /* VELocationManager.m */; };
-		593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA551C495394003B686A /* VETimeFormatter.h */; };
+		593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA551C495394003B686A /* VETimeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC41C495394003B686A /* VETimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA561C495394003B686A /* VETimeFormatter.m */; };
 		593ADAC51C495394003B686A /* aBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA581C495394003B686A /* aBike.xcdatamodeld */; };
-		593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA5E1C495394003B686A /* CPCoreDataManager.h */; };
+		593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA5E1C495394003B686A /* CPCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA5F1C495394003B686A /* CPCoreDataManager.m */; };
-		593ADAC81C495394003B686A /* LightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA601C495394003B686A /* LightStation.h */; };
+		593ADAC81C495394003B686A /* LightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA601C495394003B686A /* LightStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC91C495394003B686A /* LightStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA611C495394003B686A /* LightStation.m */; };
-		593ADACA1C495394003B686A /* Station+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA621C495394003B686A /* Station+Additions.h */; };
+		593ADACA1C495394003B686A /* Station+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA621C495394003B686A /* Station+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADACB1C495394003B686A /* Station+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA631C495394003B686A /* Station+Additions.m */; };
-		593ADACC1C495394003B686A /* Station.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA641C495394003B686A /* Station.h */; };
+		593ADACC1C495394003B686A /* Station.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA641C495394003B686A /* Station.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADACD1C495394003B686A /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA651C495394003B686A /* Station.m */; };
-		593ADACE1C495394003B686A /* UserSettings+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA661C495394003B686A /* UserSettings+Additions.h */; };
+		593ADACE1C495394003B686A /* UserSettings+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA661C495394003B686A /* UserSettings+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADACF1C495394003B686A /* UserSettings+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA671C495394003B686A /* UserSettings+Additions.m */; };
-		593ADAD01C495394003B686A /* UserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA681C495394003B686A /* UserSettings.h */; };
+		593ADAD01C495394003B686A /* UserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA681C495394003B686A /* UserSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAD11C495394003B686A /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA691C495394003B686A /* UserSettings.m */; };
-		593ADAD21C495394003B686A /* VEBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6A1C495394003B686A /* VEBaseModel.h */; };
+		593ADAD21C495394003B686A /* VEBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6A1C495394003B686A /* VEBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAD31C495394003B686A /* VEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6B1C495394003B686A /* VEBaseModel.m */; };
-		593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; };
+		593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAD51C495394003B686A /* VEManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6D1C495394003B686A /* VEManagedObjectContext.m */; };
-		593ADAD61C495394003B686A /* VEMKPlacemarkValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */; };
+		593ADAD61C495394003B686A /* VEMKPlacemarkValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAD71C495394003B686A /* VEMKPlacemarkValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */; };
-		593ADAD91C495394003B686A /* VEDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA721C495394003B686A /* VEDataImporter.h */; };
+		593ADAD91C495394003B686A /* VEDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA721C495394003B686A /* VEDataImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADADA1C495394003B686A /* VEDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA731C495394003B686A /* VEDataImporter.m */; };
 		593ADADE1C495394003B686A /* aBikeCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7B1C495394003B686A /* aBikeCities.plist */; };
 		593ADADF1C495394003B686A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7D1C495394003B686A /* Localizable.strings */; };
-		593ADAE21C495394003B686A /* UIColor+MainColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA851C495394003B686A /* UIColor+MainColor.h */; };
+		593ADAE21C495394003B686A /* UIColor+MainColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA851C495394003B686A /* UIColor+MainColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAE31C495394003B686A /* UIColor+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA861C495394003B686A /* UIColor+MainColor.m */; };
-		593ADAE61C495394003B686A /* VEAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8D1C495394003B686A /* VEAlertControllerManager.h */; };
+		593ADAE61C495394003B686A /* VEAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8D1C495394003B686A /* VEAlertControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAE71C495394003B686A /* VEAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA8E1C495394003B686A /* VEAlertControllerManager.m */; };
-		593ADAE81C495394003B686A /* VEAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8F1C495394003B686A /* VEAlertManager.h */; };
+		593ADAE81C495394003B686A /* VEAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8F1C495394003B686A /* VEAlertManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAE91C495394003B686A /* VEAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA901C495394003B686A /* VEAlertManager.m */; };
-		593ADAEA1C495394003B686A /* VEStationAnnotationAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA941C495394003B686A /* VEStationAnnotationAccessoryView.h */; };
+		593ADAEA1C495394003B686A /* VEStationAnnotationAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA941C495394003B686A /* VEStationAnnotationAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAEB1C495394003B686A /* VEStationAnnotationAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA951C495394003B686A /* VEStationAnnotationAccessoryView.m */; };
-		593ADAEC1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA961C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.h */; };
+		593ADAEC1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA961C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAED1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA971C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.m */; };
-		593ADAEE1C495394003B686A /* VEStationAnnotationShareAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA981C495394003B686A /* VEStationAnnotationShareAccessoryView.h */; };
+		593ADAEE1C495394003B686A /* VEStationAnnotationShareAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA981C495394003B686A /* VEStationAnnotationShareAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAEF1C495394003B686A /* VEStationAnnotationShareAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA991C495394003B686A /* VEStationAnnotationShareAccessoryView.m */; };
-		593ADAF01C495394003B686A /* VEStationAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9A1C495394003B686A /* VEStationAnnotationView.h */; };
+		593ADAF01C495394003B686A /* VEStationAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9A1C495394003B686A /* VEStationAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF11C495394003B686A /* VEStationAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA9B1C495394003B686A /* VEStationAnnotationView.m */; };
-		593ADAF21C495394003B686A /* VERouteRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9C1C495394003B686A /* VERouteRenderer.h */; };
+		593ADAF21C495394003B686A /* VERouteRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9C1C495394003B686A /* VERouteRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA9D1C495394003B686A /* VERouteRenderer.m */; };
-		593ADAF41C495394003B686A /* VEAdStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9F1C495394003B686A /* VEAdStationView.h */; };
+		593ADAF41C495394003B686A /* VEAdStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9F1C495394003B686A /* VEAdStationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF51C495394003B686A /* VEAdStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA01C495394003B686A /* VEAdStationView.m */; };
-		593ADAF61C495394003B686A /* VEStationsScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA11C495394003B686A /* VEStationsScrollView.h */; };
+		593ADAF61C495394003B686A /* VEStationsScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA11C495394003B686A /* VEStationsScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF71C495394003B686A /* VEStationsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA21C495394003B686A /* VEStationsScrollView.m */; };
-		593ADAF81C495394003B686A /* VEStationsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA31C495394003B686A /* VEStationsView.h */; };
+		593ADAF81C495394003B686A /* VEStationsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA31C495394003B686A /* VEStationsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF91C495394003B686A /* VEStationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA41C495394003B686A /* VEStationsView.m */; };
-		593ADAFA1C495394003B686A /* VEStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA51C495394003B686A /* VEStationView.h */; };
+		593ADAFA1C495394003B686A /* VEStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA51C495394003B686A /* VEStationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAFB1C495394003B686A /* VEStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA61C495394003B686A /* VEStationView.m */; };
-		593ADAFC1C495394003B686A /* VEMapContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA71C495394003B686A /* VEMapContainerView.h */; };
+		593ADAFC1C495394003B686A /* VEMapContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA71C495394003B686A /* VEMapContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAFD1C495394003B686A /* VEMapContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA81C495394003B686A /* VEMapContainerView.m */; };
-		593ADAFE1C495394003B686A /* VEMapViewBlurImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA91C495394003B686A /* VEMapViewBlurImageView.h */; };
+		593ADAFE1C495394003B686A /* VEMapViewBlurImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA91C495394003B686A /* VEMapViewBlurImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAFF1C495394003B686A /* VEMapViewBlurImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAAA1C495394003B686A /* VEMapViewBlurImageView.m */; };
-		593ADB001C495394003B686A /* VEMapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAB1C495394003B686A /* VEMapViewController.h */; };
+		593ADB001C495394003B686A /* VEMapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAB1C495394003B686A /* VEMapViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADB011C495394003B686A /* VEMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAAC1C495394003B686A /* VEMapViewController.m */; };
-		593ADB021C495394003B686A /* VEWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAD1C495394003B686A /* VEWindow.h */; };
+		593ADB021C495394003B686A /* VEWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAD1C495394003B686A /* VEWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADB031C495394003B686A /* VEWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAAE1C495394003B686A /* VEWindow.m */; };
-		593ADB041C495394003B686A /* VEConsul.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAF1C495394003B686A /* VEConsul.h */; };
+		593ADB041C495394003B686A /* VEConsul.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAAF1C495394003B686A /* VEConsul.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADB051C495394003B686A /* VEConsul.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAB01C495394003B686A /* VEConsul.m */; };
 		593ADB061C495394003B686A /* VEConsulDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAB11C495394003B686A /* VEConsulDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADB091C4953F6003B686A /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADB081C4953F6003B686A /* VEAppDelegate.m */; };
 		593ADB0C1C4955BF003B686A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0B1C4955BF003B686A /* Images.xcassets */; };
 		593ADB101C49574F003B686A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
-		593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593DF8C91C779C01002F8B07 /* VESearchStationView.h */; };
+		593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593DF8C91C779C01002F8B07 /* VESearchStationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593DF8CC1C779C01002F8B07 /* VESearchStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593DF8CA1C779C01002F8B07 /* VESearchStationView.m */; };
 		5949F8E71C649A2D008398F4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5949F8E91C649A2D008398F4 /* Localizable.strings */; };
-		594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 594D7FEA1C6FEF1900492477 /* VEReachability.h */; };
+		594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 594D7FEA1C6FEF1900492477 /* VEReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		594D7FED1C6FEF1900492477 /* VEReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 594D7FEB1C6FEF1900492477 /* VEReachability.m */; };
 		59567E0A1C4A50850042767D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59567E091C4A50850042767D /* main.m */; };
 		59567E0D1C4A50850042767D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59567E0C1C4A50850042767D /* AppDelegate.m */; };
@@ -301,7 +301,7 @@
 		59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59ABE1D81C4BA62A00108AD4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
-		59ABE1DC1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */; };
+		59ABE1DC1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59ABE1DD1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */; };
 		59ABE1DE1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */; };
 		59ABE1DF1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */; };
@@ -312,6 +312,8 @@
 		59C312CE1C4A68BB002F1657 /* Reveal-tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */; };
 		59C312CF1C4A6CEB002F1657 /* aBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA581C495394003B686A /* aBike.xcdatamodeld */; };
 		59C312D01C4A6CF6002F1657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
+		59C3C2361C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C3C2351C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m */; };
+		59CA2D9C1C949D030025CBAC /* aBikeFramework_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 596488861C949B540060C3A4 /* aBikeFramework_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59DDA02F1C78A339006A8BAA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DDA02E1C78A339006A8BAA /* StoreKit.framework */; };
 		59DDCBCB1C4BADD400E3DA02 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */; };
 		59DDCBCE1C4BAF8000E3DA02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */; };
@@ -492,6 +494,13 @@
 			remoteGlobalIDString = 5975F2A71C4BC37C00839B95;
 			remoteInfo = "aBike—Mulhouse";
 		};
+		59CE887E1C94934900831B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 593AD9211C4951E7003B686A;
+			remoteInfo = "aBike—Lyon";
+		};
 		59DF857D1C4C1AAC00EE5269 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
@@ -560,6 +569,15 @@
 				591483F81C649364007EDABB /* aBikeFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5924DD9E1C94962400BEE13D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		593AD94D1C495208003B686A /* Embed Frameworks */ = {
@@ -823,6 +841,7 @@
 		59567E241C4A50920042767D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5960916A1C6F730E00473C8F /* sendToFabric.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sendToFabric.sh; sourceTree = "<group>"; };
 		5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CurrentVersion.xcconfig; sourceTree = "<group>"; };
+		596488861C949B540060C3A4 /* aBikeFramework_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFramework_Private.h; sourceTree = "<group>"; };
 		596990B01C5D080A00AEFFBC /* aBike—Nantes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Nantes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596990B31C5D080B00AEFFBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		596990BE1C5D080B00AEFFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -903,6 +922,7 @@
 		599CFC561C4BB7F700A244B3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		59A23FC51C53DA1600776B09 /* locations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = locations; sourceTree = "<group>"; };
 		59A23FC61C53DA5500776B09 /* VEConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VEConstants.h; sourceTree = "<group>"; };
+		59A736901C948FE900431FA9 /* aBikeFrameworkTestsPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFrameworkTestsPrefixHeader.pch; sourceTree = "<group>"; };
 		59AAFCC71C497BF800ED7202 /* aBike—LyonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—LyonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aBike_LyonUITests.swift; sourceTree = "<group>"; };
 		59AAFCCB1C497BF800ED7202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -934,6 +954,8 @@
 		59BE2E401C64984C00D5718B /* aBike—CréteilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—CréteilUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BE2E441C64984C00D5718B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C312CD1C4A688C002F1657 /* Reveal-tvOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Reveal-tvOS.framework"; sourceTree = "<group>"; };
+		59C3C2341C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEaBikeFrameworkTestsConsulDelegate.h; sourceTree = "<group>"; };
+		59C3C2351C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEaBikeFrameworkTestsConsulDelegate.m; sourceTree = "<group>"; };
 		59DDA02E1C78A339006A8BAA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		59DDCBC91C4BADD400E3DA02 /* VEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAppDelegate.h; sourceTree = "<group>"; };
 		59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEAppDelegate.m; sourceTree = "<group>"; };
@@ -1286,6 +1308,9 @@
 			children = (
 				592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */,
 				592ADC891C948A39002E1FBE /* Info.plist */,
+				59A736901C948FE900431FA9 /* aBikeFrameworkTestsPrefixHeader.pch */,
+				59C3C2341C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.h */,
+				59C3C2351C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m */,
 			);
 			path = aBikeFrameworkTests;
 			sourceTree = "<group>";
@@ -1389,6 +1414,7 @@
 				593ADA421C495394003B686A /* aBikeLibrary */,
 				593AD9571C495217003B686A /* Info.plist */,
 				593AD9551C495217003B686A /* aBikeFramework.h */,
+				596488861C949B540060C3A4 /* aBikeFramework_Private.h */,
 			);
 			path = aBikeFramework;
 			sourceTree = "<group>";
@@ -1956,9 +1982,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593ADB061C495394003B686A /* VEConsulDefines.h in Headers */,
 				593ADAE21C495394003B686A /* UIColor+MainColor.h in Headers */,
 				593ADACA1C495394003B686A /* Station+Additions.h in Headers */,
-				593ADB061C495394003B686A /* VEConsulDefines.h in Headers */,
 				593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */,
 				593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */,
 				593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */,
@@ -1979,7 +2005,6 @@
 				593ADAEC1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.h in Headers */,
 				593ADAB31C495394003B686A /* CLLocation+Additions.h in Headers */,
 				593ADAE81C495394003B686A /* VEAlertManager.h in Headers */,
-				593AD9561C495217003B686A /* aBikeFramework.h in Headers */,
 				593ADAF01C495394003B686A /* VEStationAnnotationView.h in Headers */,
 				593ADB041C495394003B686A /* VEConsul.h in Headers */,
 				593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */,
@@ -1998,6 +2023,8 @@
 				593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */,
 				590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */,
 				593ADAF81C495394003B686A /* VEStationsView.h in Headers */,
+				59CA2D9C1C949D030025CBAC /* aBikeFramework_Private.h in Headers */,
+				593AD9561C495217003B686A /* aBikeFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2080,11 +2107,13 @@
 				592ADC811C948A39002E1FBE /* Sources */,
 				592ADC821C948A39002E1FBE /* Frameworks */,
 				592ADC831C948A39002E1FBE /* Resources */,
+				5924DD9E1C94962400BEE13D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				592ADC8C1C948A39002E1FBE /* PBXTargetDependency */,
+				59CE887F1C94934900831B0A /* PBXTargetDependency */,
 			);
 			name = aBikeFrameworkTests;
 			productName = aBikeFrameworkTests;
@@ -3594,6 +3623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */,
+				59C3C2361C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3974,6 +4004,11 @@
 			target = 5975F2A71C4BC37C00839B95 /* aBike—Mulhouse */;
 			targetProxy = 59BF6A701C4C198000AF11E3 /* PBXContainerItemProxy */;
 		};
+		59CE887F1C94934900831B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 593AD9211C4951E7003B686A /* aBike—Lyon */;
+			targetProxy = 59CE887E1C94934900831B0A /* PBXContainerItemProxy */;
+		};
 		59DF857E1C4C1AAC00EE5269 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5975F2DE1C4BC5DA00839B95 /* aBike—Paris */;
@@ -4330,15 +4365,21 @@
 		592ADC8E1C948A39002E1FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/aBike—Lyon",
 				);
+				GCC_PREFIX_HEADER = aBikeFrameworkTests/aBikeFrameworkTestsPrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = aBikeFrameworkTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clementandmathieu.aBikeFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -4347,10 +4388,19 @@
 		592ADC8F1C948A39002E1FBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aBike—Lyon",
+				);
+				GCC_PREFIX_HEADER = aBikeFrameworkTests/aBikeFrameworkTestsPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = aBikeFrameworkTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clementandmathieu.aBikeFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -4359,10 +4409,19 @@
 		592ADC901C948A39002E1FBE /* Screenshots */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aBike—Lyon",
+				);
+				GCC_PREFIX_HEADER = aBikeFrameworkTests/aBikeFrameworkTestsPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = aBikeFrameworkTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clementandmathieu.aBikeFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -4482,6 +4541,7 @@
 			baseConfigurationReference = F652CB4ED4DB151A12F0F60F /* Pods-aBike—Lyon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
@@ -4515,6 +4575,7 @@
 			baseConfigurationReference = 3329AC4A3E0814B10C61FD15 /* Pods-aBike—Lyon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
@@ -5753,6 +5814,7 @@
 			baseConfigurationReference = EA2F6F9F50ED1D7B9B9E3BED /* Pods-aBike—Lyon.screenshots.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
@@ -5900,6 +5962,7 @@
 				592ADC901C948A39002E1FBE /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		593AD91D1C4951E7003B686A /* Build configuration list for PBXProject "aBike—Lyon" */ = {
 			isa = XCConfigurationList;

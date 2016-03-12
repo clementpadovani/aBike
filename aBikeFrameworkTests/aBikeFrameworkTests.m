@@ -6,7 +6,13 @@
 //  Copyright © 2016 Clement Padovani. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+
+@import aBikeFramework;
+
+@import CoreData;
+
+#import "VEaBikeFrameworkTestsConsulDelegate.h"
 
 @interface aBikeFrameworkTests : XCTestCase
 
@@ -14,26 +20,31 @@
 
 @implementation aBikeFrameworkTests
 
++ (void) setUp
+{
+	[super setUp];
+
+	[VEaBikeFrameworkTestsConsulDelegate sharedDelegate];
+}
+
 - (void)setUp {
     [super setUp];
+
+	CPLog(@"setup");
+
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void) testSharedConsul
+{
+	XCTAssertNotNil([VEConsul sharedConsul]);
+
+	XCTAssertNotNil([[VEConsul sharedConsul] delegate]);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void) testCoreDataManager
+{
+	XCTAssertNotNil([[CPCoreDataManager sharedCoreDataManager] standardContext]);
 }
 
 @end
