@@ -23,6 +23,8 @@ matrix:
               - VESIMULATOR_VERSION=8.1
 
 before_install:
+    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - pod install
 script:
+    - set -o pipefail
     - xctool build test -sdk $VESIMULATOR_SDK -destination 'platform=iOS Simulator,name=iPhone 5s,OS=$VESIMULATOR_VERSION'
