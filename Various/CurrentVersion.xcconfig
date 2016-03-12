@@ -1,11 +1,2 @@
-//
-//  CurrentVersion.xcconfig
-//  aBike—Lyon
-//
-//  Created by Clément Padovani on 2/13/16.
-//  Copyright © 2016 Clement Padovani. All rights reserved.
-//
-
 CP_CURRENT_VERSION = 3.0.2
-
-CP_CURRENT_BUILD = 411
+CP_CURRENT_BUILD = 412
