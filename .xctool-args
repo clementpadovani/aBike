@@ -1,5 +1,5 @@
 [
   "-workspace", "aBike—Lyon.xcworkspace",
   "-scheme", "aBikeFramework",
-  "-configuration", "Debug"
+  "-configuration", "Test"
 ]
