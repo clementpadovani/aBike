@@ -22,4 +22,4 @@ matrix:
 script:
     - echo $VESIMULATOR_VERSION
     - echo $VESIMULATOR_SDK
-    - xctool build test -sdk \"$VESIMULATOR_SDK\" -destination 'platform=iOS Simulator,name=iPhone 5s,OS=$VESIMULATOR_VERSION'
+    - xctool "build test -sdk '$VESIMULATOR_SDK' -destination 'platform=iOS Simulator,name=iPhone 5s,OS=$VESIMULATOR_VERSION'"
