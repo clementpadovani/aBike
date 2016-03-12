@@ -44,7 +44,23 @@
 
 - (void) testCoreDataManager
 {
-	XCTAssertNotNil([[CPCoreDataManager sharedCoreDataManager] standardContext]);
+	CPCoreDataManager *manager = [CPCoreDataManager sharedCoreDataManager];
+
+	NSArray *contexts = @[[manager standardContext],
+					  [manager userContext],
+					  [manager memoryContext],
+					  [manager searchMemoryContext]];
+
+	XCTAssertEqual([contexts count], 4ul);
+}
+
+- (void) testURLSession
+{
+	NSURL *stationsDownloadURL = [VEDataImporter dataURLForIdentifier: [[VEaBikeFrameworkTestsConsulDelegate sharedDelegate] contractNameForConsul: nil]];
+
+	XCTAssertNotNil(stationsDownloadURL);
+
+	
 }
 
 @end
