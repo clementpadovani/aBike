@@ -10,7 +10,7 @@ env:
 matrix:
     include:
         - osx_image: xcode7.2
-          env: VESIMULATOR_SDK="iphonesimulator9.2" VESIMULATOR_VERSION="9.2"
+          env: VESIMULATOR_SDK=iphonesimulator9.2 VESIMULATOR_VERSION=9.2
         - osx_image: xcode7
           env: VESIMULATOR_SDK="iphonesimulator9.0" VESIMULATOR_VERSION="9.0"
         - osx_image: xcode6.4
@@ -22,5 +22,4 @@ matrix:
 script:
     - echo $VESIMULATOR_VERSION
     - echo $VESIMULATOR_SDK
-    - env
-    - "xctool build test -sdk $VESIMULATOR_SDK -destination 'platform=iOS Simulator,name=iPhone 5s,OS=$VESIMULATOR_VERSION'"
+    - xctool build test -sdk \"$VESIMULATOR_SDK\" -destination 'platform=iOS Simulator,name=iPhone 5s,OS=$VESIMULATOR_VERSION'
