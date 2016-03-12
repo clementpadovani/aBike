@@ -10,13 +10,13 @@ xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release
 
 use_frameworks!
 
-# inhibit_all_warnings!
+inhibit_all_warnings!
 
 def normalPods
 
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
-	pod 'WatchdogInspector', :configuration => ['Debug'], :inhibit_warnings => true
+	# pod 'WatchdogInspector', :configurations => ['Debug']
 
 # 	pod 'Fabric', :configurations => ['Release']
 #
@@ -43,7 +43,7 @@ target 'aBikeFramework' do
 
      pod 'Fabric', :configuration => ['Release']
 
-	pod 'Crashlytics', :configuration => ['Release']
+	 pod 'Crashlytics', :configuration => ['Release']
 
 end
 

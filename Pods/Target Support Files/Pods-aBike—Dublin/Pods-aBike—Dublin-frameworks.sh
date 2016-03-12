@@ -83,14 +83,6 @@ strip_invalid_archs() {
 }
 
 
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-aBike—Dublin/WatchdogInspector.framework"
-  install_framework "Pods-aBike—Dublin/YourStatusBar.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-aBike—Dublin/YourStatusBar.framework"
-fi
 if [[ "$CONFIGURATION" == "Screenshots" ]]; then
   install_framework "Pods-aBike—Dublin/SimulatorStatusMagic.framework"
-  install_framework "Pods-aBike—Dublin/YourStatusBar.framework"
 fi

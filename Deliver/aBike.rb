@@ -1,6 +1,6 @@
 module CPaBike
 
-VERSION = "3.0.1"
+VERSION = "3.0.2"
 
 RELEASE_NOTES = ({
 
@@ -12,7 +12,7 @@ RELEASE_NOTES = ({
 
 SUBMIT_FOR_REVIEW = true
 
-AUTOMATIC_RELEASE = false
+AUTOMATIC_RELEASE = true
 
 SUBMISSION_INFORMATION = ({
 	add_id_info_uses_idfa: false

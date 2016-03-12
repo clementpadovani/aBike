@@ -664,12 +664,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	if (directionsRoute)
 	{
-		#if kEnableCrashlytics == 1
-
-			[CrashlyticsKit throwException];
-
-		#endif
-
 		[self setDirectionsRoute: directionsRoute];
 		
 //		CLLocationCoordinate2D coords = [[[VELocationManager sharedLocationManager] currentLocation] coordinate];
