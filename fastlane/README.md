@@ -5,11 +5,6 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
-### lyon_appstore
-```
-fastlane lyon_appstore
-```
-
 ### appstore
 ```
 fastlane appstore

@@ -6,20 +6,11 @@ require 'aBike.rb'
 
 def copyDeliverfile
 
-	puts Dir.pwd
-
-	puts "other"
-
-	puts File.expand_path File.dirname(__FILE__)
-
 	deliverFile = File.expand_path File.dirname(__FILE__)
 
 	deliverFile += "/Deliverfile"
 
-	puts "deliver file: " + deliverFile
-
 	if File::exists?(deliverFile)
-		puts "exists"
 		copiedPath = Dir.pwd + "/Deliverfile"
 		FileUtils.cp deliverFile, copiedPath
 	else
@@ -41,7 +32,7 @@ def deleteDeliverfile
 
 end
 
-lane :lyon_appstore do
+private_lane :lyon_appstore do
 
 	gym(
 	     workspace: "aBike—Lyon.xcworkspace",
