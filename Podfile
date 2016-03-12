@@ -13,17 +13,17 @@ use_frameworks!
 # inhibit_all_warnings!
 
 def normalPods
-	
+
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
-	
-	pod 'WatchdogInspector'
-	
+
+	pod 'WatchdogInspector', :configuration => ['Debug'], :inhibit_warnings => true
+
 # 	pod 'Fabric', :configurations => ['Release']
-# 	
+#
 # 	pod 'Crashlytics', :configurations => ['Release']
 
 # 	pod 'Fabric', :configurations => ['Debug']
-# 	
+#
 # 	pod 'Crashlytics', :configurations => ['Debug']
 
 
@@ -38,11 +38,11 @@ end
 target 'aBikeFramework' do
 
      pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
-     
+
      pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
      pod 'Fabric', :configuration => ['Release']
-	
+
 	pod 'Crashlytics', :configuration => ['Release']
 
 end

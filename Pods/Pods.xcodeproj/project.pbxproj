@@ -18,6 +18,7 @@
 		1942EE3F40133F77E32DAD6E9A3488DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923650C42E3AA6832B8206939A0C914C /* Foundation.framework */; };
 		288EC22A3E2465D1E5552F502E3E7D80 /* WatchdogInspector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBBFE145F9F061FDBDE00F5C7C4153C /* WatchdogInspector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DBBB73841162C5931DC56726CF2CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923650C42E3AA6832B8206939A0C914C /* Foundation.framework */; };
+		318E36DF1B588DAD15FDA7ECD79539D6 /* TWWatchdogInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E40B949174758B01D709C2BCAA1FE1 /* TWWatchdogInspector.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		328765D07F9E612F2D4FA672EEF97A02 /* YourStatusBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454CA29F98BD7959D5A066B080A0ABC /* YourStatusBar.framework */; };
 		373DFAB1D92FB4112F8FF75EF924275D /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = A25A72D671C28F75097648940A0684D3 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3864492BEC730428212F6FAD1374D83D /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9ADFB01EB536E0DCFAB79C3549E192 /* SDStatusBarManager.m */; };
@@ -32,8 +33,6 @@
 		676788DB712FB0F49B204889512DD57D /* Pods-aBike—Luxembourg-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3AF6074EF353334AE760ECD7C9283 /* Pods-aBike—Luxembourg-dummy.m */; };
 		68BFF8A333665CAA547893B24384CF5D /* Pods-aBike—Dublin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFAF628D34571F9DAD603387E6D53AF /* Pods-aBike—Dublin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A0E4144C4964F6A3C8C09781896D409 /* Pods-aBike—Nantes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E3F1CAA4F6AECCBFBBEE0B225098D /* Pods-aBike—Nantes-dummy.m */; };
-		71D8005C2FC6DE794D64FA47A34A4483 /* WatchdogInspector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9652AAF76BB1E4FBB30ED9BD4376BC64 /* WatchdogInspector-dummy.m */; };
-		7E31E60FBC4D2678811269112D46EFC9 /* TWWatchdogInspectorStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B52B2D0C8B52ADB278D32B866E8142 /* TWWatchdogInspectorStatusBarView.m */; };
 		85E21DADB071B577A9E7196B0CAEA97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923650C42E3AA6832B8206939A0C914C /* Foundation.framework */; };
 		865A7DED98675386660A6CDE3DAF8CAC /* Pods-aBike—Paris-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B28E1FD7A5B03051F1820DD52197E6F5 /* Pods-aBike—Paris-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A0EC963388E3FEEB039325350C9014B /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BA29E8290D36EE28D3E6CF2BC12C1F /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +49,7 @@
 		BC1D8797B9D9B660C492C8FF353C6F64 /* YourStatusBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B80D54F1CEE71BAEB2E337CA92AA521A /* YourStatusBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C59F79F3D726F786410C36DEF8098A8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76310B19297C5C10E60777390B263BB /* UIKit.framework */; };
 		C75BA14F8F818B9E4953B388544E645F /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 392118A0DB714648EA12E91D88FB2A17 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C77D05078496063065E03CB6089532E2 /* WatchdogInspector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9652AAF76BB1E4FBB30ED9BD4376BC64 /* WatchdogInspector-dummy.m */; };
 		CF7050E3F01D57ABFA2DCF32950061D5 /* Pods-aBike—Bruxelles-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B87710C5AB450228D03C71AC17FD00A /* Pods-aBike—Bruxelles-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B732227294EC2E0B7565890D6993A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923650C42E3AA6832B8206939A0C914C /* Foundation.framework */; };
 		D38B9601BEF354EB1C5364DA4F62A4BE /* TWYourStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8034CEA39287210BA90CDEB078EE92E1 /* TWYourStatusBar.m */; };
@@ -61,10 +61,10 @@
 		F4F1685795386326CA6DB105D1FE77C8 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = A23DE75F75D3266112DBED5A76DE569A /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F529F5216240E29D78FF934FA0582609 /* Pods-aBike—Dublin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CEA55AAD49E88C5982D43BAF89335 /* Pods-aBike—Dublin-dummy.m */; };
 		F6A403246537067109A7B4A2C8C607B6 /* Pods-aBike—Mulhouse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB4AFB8BD7B439F4E454753E360D1FF /* Pods-aBike—Mulhouse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8330F852DE16DB1A63A69316F1C1DF2 /* TWWatchdogInspectorStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B52B2D0C8B52ADB278D32B866E8142 /* TWWatchdogInspectorStatusBarView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F9B84E185C0FC0A442097983CC1F54A0 /* Pods-aBike—Lyon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C40C6F2C59F84AFD7FF5F9A34152D3 /* Pods-aBike—Lyon-dummy.m */; };
 		FAE619F18F22FDDABC0B07E828BB57C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923650C42E3AA6832B8206939A0C914C /* Foundation.framework */; };
 		FBB6F82AB0D5E505D1EC190AFC412043 /* Pods-aBike—Bruxelles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 693C528DD3BF1534F9898AF520C05368 /* Pods-aBike—Bruxelles-dummy.m */; };
-		FBD732F3A9359B0651C46C71C5116378 /* TWWatchdogInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E40B949174758B01D709C2BCAA1FE1 /* TWWatchdogInspector.m */; };
 		FE5C47175DC26E882F7109A9532AF9FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923650C42E3AA6832B8206939A0C914C /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -1392,7 +1392,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E57D89695DDEECACC05B8C6067533E4 /* Build configuration list for PBXNativeTarget "WatchdogInspector" */;
 			buildPhases = (
-				417DE587B09BD99D0CA778372F33511B /* Sources */,
+				B7209930310974092B520D5C1B2079D4 /* Sources */,
 				A46FC7C346B622CB7AAEA7DB55F9EF57 /* Frameworks */,
 				D1E1C5CB3D35A9B3851B71B00A145445 /* Headers */,
 			);
@@ -1478,16 +1478,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		417DE587B09BD99D0CA778372F33511B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBD732F3A9359B0651C46C71C5116378 /* TWWatchdogInspector.m in Sources */,
-				7E31E60FBC4D2678811269112D46EFC9 /* TWWatchdogInspectorStatusBarView.m in Sources */,
-				71D8005C2FC6DE794D64FA47A34A4483 /* WatchdogInspector-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41ACA30061B65D83186F472E0EFF1F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1542,6 +1532,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1FAF6567C5E3C1B7CA6C5383900864 /* Pods-aBike—Mulhouse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7209930310974092B520D5C1B2079D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318E36DF1B588DAD15FDA7ECD79539D6 /* TWWatchdogInspector.m in Sources */,
+				F8330F852DE16DB1A63A69316F1C1DF2 /* TWWatchdogInspectorStatusBarView.m in Sources */,
+				C77D05078496063065E03CB6089532E2 /* WatchdogInspector-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

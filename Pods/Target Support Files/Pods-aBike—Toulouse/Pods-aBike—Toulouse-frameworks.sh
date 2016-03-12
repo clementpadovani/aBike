@@ -88,11 +88,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-aBike—Toulouse/YourStatusBar.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-aBike—Toulouse/WatchdogInspector.framework"
   install_framework "Pods-aBike—Toulouse/YourStatusBar.framework"
 fi
 if [[ "$CONFIGURATION" == "Screenshots" ]]; then
   install_framework "Pods-aBike—Toulouse/SimulatorStatusMagic.framework"
-  install_framework "Pods-aBike—Toulouse/WatchdogInspector.framework"
   install_framework "Pods-aBike—Toulouse/YourStatusBar.framework"
 fi
