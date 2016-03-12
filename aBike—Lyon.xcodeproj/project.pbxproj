@@ -64,6 +64,8 @@
 		59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59159CCC1C64969200811AE3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
+		592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */; };
+		592ADC8A1C948A39002E1FBE /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		593AD9271C4951E7003B686A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593AD9261C4951E7003B686A /* main.m */; };
 		593AD9561C495217003B686A /* aBikeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 593AD9551C495217003B686A /* aBikeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -358,6 +360,13 @@
 			remoteInfo = "aBike—Nantes";
 		};
 		591483F91C649364007EDABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 593AD9521C495217003B686A;
+			remoteInfo = aBikeFramework;
+		};
+		592ADC8B1C948A39002E1FBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
 			proxyType = 1;
@@ -697,6 +706,9 @@
 		59159CC51C6495FF00811AE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59159CC71C64961700811AE3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		59159CC81C64961900811AE3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aBikeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aBikeFrameworkTests.m; sourceTree = "<group>"; };
+		592ADC891C948A39002E1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		593AD9221C4951E7003B686A /* aBike—Lyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Lyon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		593AD9261C4951E7003B686A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		593AD9361C4951E7003B686A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1000,6 +1012,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		592ADC821C948A39002E1FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592ADC8A1C948A39002E1FBE /* aBikeFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		593AD91F1C4951E7003B686A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1261,9 +1281,19 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		592ADC861C948A39002E1FBE /* aBikeFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */,
+				592ADC891C948A39002E1FBE /* Info.plist */,
+			);
+			path = aBikeFrameworkTests;
+			sourceTree = "<group>";
+		};
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
+				592ADC861C948A39002E1FBE /* aBikeFrameworkTests */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
 				EEBD019FA48AF977C993F023 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
@@ -1325,6 +1355,7 @@
 				59AB747A1C6B4691003EBFF1 /* aBike—Luxembourg.app */,
 				59BAF6E51C6B4A630038B609 /* aBike—DublinUITests.xctest */,
 				59BAF6F41C6B4A6A0038B609 /* aBike—LuxembourgUITests.xctest */,
+				592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2042,6 +2073,24 @@
 			productReference = 591483DF1C649313007EDABB /* aBike—Créteil.app */;
 			productType = "com.apple.product-type.application";
 		};
+		592ADC841C948A39002E1FBE /* aBikeFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592ADC8D1C948A39002E1FBE /* Build configuration list for PBXNativeTarget "aBikeFrameworkTests" */;
+			buildPhases = (
+				592ADC811C948A39002E1FBE /* Sources */,
+				592ADC821C948A39002E1FBE /* Frameworks */,
+				592ADC831C948A39002E1FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				592ADC8C1C948A39002E1FBE /* PBXTargetDependency */,
+			);
+			name = aBikeFrameworkTests;
+			productName = aBikeFrameworkTests;
+			productReference = 592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		593AD9211C4951E7003B686A /* aBike—Lyon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 593AD9391C4951E7003B686A /* Build configuration list for PBXNativeTarget "aBike—Lyon" */;
@@ -2509,6 +2558,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = W48L6Z4654;
 					};
+					592ADC841C948A39002E1FBE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					593AD9211C4951E7003B686A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = W48L6Z4654;
@@ -2641,6 +2693,7 @@
 				59BAF6E41C6B4A630038B609 /* aBike—DublinUITests */,
 				59AB74791C6B4691003EBFF1 /* aBike—Luxembourg */,
 				59BAF6F31C6B4A6A0038B609 /* aBike—LuxembourgUITests */,
+				592ADC841C948A39002E1FBE /* aBikeFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -2655,6 +2708,13 @@
 				59159CBB1C6493EF00811AE3 /* Launch Screen.storyboard in Resources */,
 				59159CC41C6495FF00811AE3 /* InfoPlist.strings in Resources */,
 				591483EE1C649313007EDABB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592ADC831C948A39002E1FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3529,6 +3589,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		592ADC811C948A39002E1FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		593AD91E1C4951E7003B686A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3815,6 +3883,11 @@
 			isa = PBXTargetDependency;
 			target = 593AD9521C495217003B686A /* aBikeFramework */;
 			targetProxy = 591483F91C649364007EDABB /* PBXContainerItemProxy */;
+		};
+		592ADC8C1C948A39002E1FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 593AD9521C495217003B686A /* aBikeFramework */;
+			targetProxy = 592ADC8B1C948A39002E1FBE /* PBXContainerItemProxy */;
 		};
 		593AD9591C495217003B686A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4250,6 +4323,47 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Screenshots;
+		};
+		592ADC8E1C948A39002E1FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = aBikeFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clementandmathieu.aBikeFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		592ADC8F1C948A39002E1FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = aBikeFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clementandmathieu.aBikeFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		592ADC901C948A39002E1FBE /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = aBikeFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clementandmathieu.aBikeFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Screenshots;
@@ -5777,6 +5891,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Screenshots;
+		};
+		592ADC8D1C948A39002E1FBE /* Build configuration list for PBXNativeTarget "aBikeFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592ADC8E1C948A39002E1FBE /* Debug */,
+				592ADC8F1C948A39002E1FBE /* Release */,
+				592ADC901C948A39002E1FBE /* Screenshots */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		593AD91D1C4951E7003B686A /* Build configuration list for PBXProject "aBike—Lyon" */ = {
 			isa = XCConfigurationList;
