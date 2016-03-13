@@ -1585,7 +1585,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -2734,7 +2735,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5C2E1DA585C45DF66EC652F5D96658C /* Pods-aBikeFramework.tests.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

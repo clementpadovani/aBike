@@ -494,13 +494,6 @@
 			remoteGlobalIDString = 5975F2A71C4BC37C00839B95;
 			remoteInfo = "aBike—Mulhouse";
 		};
-		59CE887E1C94934900831B0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 593AD9211C4951E7003B686A;
-			remoteInfo = "aBike—Lyon";
-		};
 		59DF857D1C4C1AAC00EE5269 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
@@ -2135,7 +2128,6 @@
 			);
 			dependencies = (
 				592ADC8C1C948A39002E1FBE /* PBXTargetDependency */,
-				59CE887F1C94934900831B0A /* PBXTargetDependency */,
 			);
 			name = aBikeFrameworkTests;
 			productName = aBikeFrameworkTests;
@@ -4026,11 +4018,6 @@
 			target = 5975F2A71C4BC37C00839B95 /* aBike—Mulhouse */;
 			targetProxy = 59BF6A701C4C198000AF11E3 /* PBXContainerItemProxy */;
 		};
-		59CE887F1C94934900831B0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 593AD9211C4951E7003B686A /* aBike—Lyon */;
-			targetProxy = 59CE887E1C94934900831B0A /* PBXContainerItemProxy */;
-		};
 		59DF857E1C4C1AAC00EE5269 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5975F2DE1C4BC5DA00839B95 /* aBike—Paris */;
@@ -5405,9 +5392,9 @@
 			baseConfigurationReference = 66E78C35848180A90007AF0F /* Pods-aBikeFramework.tests.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
 				CURRENT_PROJECT_VERSION = 1;
