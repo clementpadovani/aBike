@@ -1,5 +1,5 @@
 language: objective-c
-# osx_image: xcode7.2
+osx_image: xcode7.2
 podfile: Podfile
 cache: cocoapods
 sudo: false
@@ -7,19 +7,14 @@ env:
   global:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
+  - secure: WCRdx2XVoS8v2kvJVMYYwP2B12KWlEfv5bX9eUxKfLLZKj/OkuF/HF0A3giaZ2stn7fF3ipfzNlYFUv6sfuMdQyPH8IAW8NqbWYKFxxd11YBVNeExwEOgrEEkOEuf64MKIHN4F9P0WtZxeCakVqkdnjRVoRV47mZtsQrGPCjjILOx9k0xrRvwp9SCZdF3VD6cLcT1aRrZU+X4T2gfIZU+rwkGoB+W3+LgpwUmFLGxCiwu27V08CqM6x2rA5HwpStrdhs/60xiWXDfZZJfGepq8fzsC6WgRVdun3r15z8nE/21InRqH1NDLZy/4w+9TPfL24hOezcfePS5vbm1Lu6+TrV1IjKpkxzJU4mvgC7aNN9OYy3rz64Tzlg98iYltG03p+KhGpmc4xlFPn83wvThuSDIJ6TvBEf29ARRpsvsiKQyOGEHq5zIXFWCBW0Bcyo9fYknN6ATbKMbinwoJRiZ+2+UfNb7GmVxlrhFUdW7sRjV0P+pfCAtbcwi5GTu25JQCZ55ifikPwcbcADdiv2zjDpTsEqLJbWsh9i4eDg5EUml0xQNPaky2Rtgg8BHmvaVle+k3/zOsX8b85VdDhJvD85VZh+xFJ55OidhYWQK3g8I7KoDNqYtR1UsaPXNRv0/1YGcGYj1hn1K5wA0eMFTZTOR4SpGp235Gb2THE+7zQ=
 matrix:
-    include:
-        - osx_image: xcode7.2
-          env: VESIMULATOR_SDK=iphonesimulator9.2 VESIMULATOR_VERSION=9.2
-        - osx_image: xcode7
-          env: VESIMULATOR_SDK="iphonesimulator9.0" VESIMULATOR_VERSION="9.0"
-        - osx_image: xcode6.4
-          env: VESIMULATOR_SDK="iphonesimulator8.4" VESIMULATOR_VERSION="8.4"
-
-# before_install:
-#     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-#     - pod install
+  include:
+  - osx_image: xcode7.2
+    env: VESIMULATOR_SDK=iphonesimulator9.2 VESIMULATOR_VERSION=9.2
+  - osx_image: xcode7
+    env: VESIMULATOR_SDK="iphonesimulator9.0" VESIMULATOR_VERSION="9.0"
+  - osx_image: xcode6.4
+    env: VESIMULATOR_SDK="iphonesimulator8.4" VESIMULATOR_VERSION="8.4"
 script:
-    - echo $VESIMULATOR_VERSION
-    - echo $VESIMULATOR_SDK
-    - xctool "build test -sdk '$VESIMULATOR_SDK' -destination 'platform=iOS Simulator,name=iPhone 5s,OS=$VESIMULATOR_VERSION'"
+- xctool "build test -sdk '$VESIMULATOR_SDK' -destination 'platform=iOS Simulator,name=iPhone5s,OS=\'$VESIMULATOR_VERSION\''"
