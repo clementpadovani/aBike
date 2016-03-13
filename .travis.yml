@@ -14,6 +14,7 @@ env:
   - secure: "dEYxDRYnFGxXsGpf4q4gA7jGoKKnpkLSO4IWyYW8QEyFe0e9Jbe/OW6h93aJOpQyjyxi7NNLl6PSm5uldTKqOy4E7enbWanFc6UTvVBjOZY/7ltOIhmR3xe4LKC3KfaiaBH8QKeHrUWmy1yPgvBstL6otgbl44JriUep+TCTTUkOYkVpSMScbtwz+Q5IsOr+I8+U1slouJ0MOVo8ruKbq5AsvBXYS41fMOLZ8t4cnWoMdSi6/FnyG0ImYcoBSStK2grtRqyGEjLU/WLHbD8OV9zE9FlL2q8b6g7lGOXl8bb6pPjySsjqVH22Vy88+hu42oaUrj/bCjkJDTgMoCXJ2qjrO7+nHtAjgMLLVSRBrowsO5YFZ+KarGefcCjristsYIEFJEwYlj0mxOXTgW8ZTuFRve3mdcrCKtEFyu3oVd2GXDEjS9Sn/UYXyVKUW+CTL8erpXS3qcwSxt/dEy1n/9eaB1SGaEkWEI4N8+3b+ObqMSHQss5BuH3dlVIxnajFIigxgMUOTD/41ZbwoeswG5OMF1mNmBDpwkMVX1qErX1LOH/0jareHw3kXzfiUB13PFNOU1o+IvTy6VIXVi0D1lDqPT8UjQNT5erOIkIX0LwFntDbi9nL8AtUE/cszwroqh+WMgEuepesQe98VP1h/7wrZDMQWcZ5T4TRpy4PstU="
 
 before_script:
+    - echo $ENCRYPTION_SECRET
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Certificate.cer.enc -d -a -out Vendor/Certificate.cer
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/key.p12.enc -d -a -out Vendor/key.p12
