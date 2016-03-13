@@ -1,6 +1,6 @@
 #aBike
 
-[![Build Status](https://travis-ci.org/ClementPadovani/aBike.svg?branch=feature/unitTests)](https://travis-ci.org/ClementPadovani/aBike)
+[![Build Status](https://travis-ci.org/ClementPadovani/aBike.svg?branch=master)](https://travis-ci.org/ClementPadovani/aBike)
 
 Hey, aBike is a collection of apps powered by JCDecaux’s cyclocity [API](https://developer.jcdecaux.com).
 
