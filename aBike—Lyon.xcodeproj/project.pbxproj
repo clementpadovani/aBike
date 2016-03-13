@@ -28,7 +28,6 @@
 		5906FBF61C4A5FBB00A2D3D1 /* UserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA681C495394003B686A /* UserSettings.h */; };
 		5906FBF71C4A5FBB00A2D3D1 /* VEBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6A1C495394003B686A /* VEBaseModel.h */; };
 		5906FBF81C4A5FBB00A2D3D1 /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; };
-		5906FBF91C4A5FBB00A2D3D1 /* VEMKPlacemarkValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */; };
 		5906FBFA1C4A5FBB00A2D3D1 /* VEDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA721C495394003B686A /* VEDataImporter.h */; };
 		5906FBFC1C4A5FBB00A2D3D1 /* UIColor+MainColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA851C495394003B686A /* UIColor+MainColor.h */; };
 		5906FBFD1C4A5FBB00A2D3D1 /* VEAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA8D1C495394003B686A /* VEAlertControllerManager.h */; };
@@ -105,8 +104,6 @@
 		593ADAD31C495394003B686A /* VEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6B1C495394003B686A /* VEBaseModel.m */; };
 		593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAD51C495394003B686A /* VEManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6D1C495394003B686A /* VEManagedObjectContext.m */; };
-		593ADAD61C495394003B686A /* VEMKPlacemarkValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADAD71C495394003B686A /* VEMKPlacemarkValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */; };
 		593ADAD91C495394003B686A /* VEDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA721C495394003B686A /* VEDataImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADADA1C495394003B686A /* VEDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA731C495394003B686A /* VEDataImporter.m */; };
 		593ADADE1C495394003B686A /* aBikeCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7B1C495394003B686A /* aBikeCities.plist */; };
@@ -177,7 +174,6 @@
 		59567E4C1C4A50A50042767D /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA691C495394003B686A /* UserSettings.m */; };
 		59567E4E1C4A50A50042767D /* VEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6B1C495394003B686A /* VEBaseModel.m */; };
 		59567E501C4A50A50042767D /* VEManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6D1C495394003B686A /* VEManagedObjectContext.m */; };
-		59567E521C4A50A50042767D /* VEMKPlacemarkValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */; };
 		59567E541C4A50A50042767D /* VEDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA731C495394003B686A /* VEDataImporter.m */; };
 		59567E5B1C4A50A50042767D /* UIColor+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA861C495394003B686A /* UIColor+MainColor.m */; };
 		59567E5F1C4A50A50042767D /* VEAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA8E1C495394003B686A /* VEAlertControllerManager.m */; };
@@ -768,8 +764,6 @@
 		593ADA6B1C495394003B686A /* VEBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBaseModel.m; sourceTree = "<group>"; };
 		593ADA6C1C495394003B686A /* VEManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEManagedObjectContext.h; sourceTree = "<group>"; };
 		593ADA6D1C495394003B686A /* VEManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEManagedObjectContext.m; sourceTree = "<group>"; };
-		593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEMKPlacemarkValueTransformer.h; sourceTree = "<group>"; };
-		593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMKPlacemarkValueTransformer.m; sourceTree = "<group>"; };
 		593ADA721C495394003B686A /* VEDataImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEDataImporter.h; sourceTree = "<group>"; };
 		593ADA731C495394003B686A /* VEDataImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEDataImporter.m; sourceTree = "<group>"; };
 		593ADA7C1C495394003B686A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "en-GB"; path = "en-GB.lproj/aBikeCities.plist"; sourceTree = "<group>"; };
@@ -909,6 +903,7 @@
 		597A40851C4BACE800E4B781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		597A40901C4BACE900E4B781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		597A40951C4BACE900E4B781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_0_3.xcdatamodel; sourceTree = "<group>"; };
 		599CFC451C4BB17F00A244B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		599CFC481C4BB18400A244B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		599CFC4A1C4BB18A00A244B3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -1486,8 +1481,6 @@
 				593ADA691C495394003B686A /* UserSettings.m */,
 				593ADA6A1C495394003B686A /* VEBaseModel.h */,
 				593ADA6B1C495394003B686A /* VEBaseModel.m */,
-				593ADA6E1C495394003B686A /* VEMKPlacemarkValueTransformer.h */,
-				593ADA6F1C495394003B686A /* VEMKPlacemarkValueTransformer.m */,
 				593ADA6C1C495394003B686A /* VEManagedObjectContext.h */,
 				593ADA6D1C495394003B686A /* VEManagedObjectContext.m */,
 				593ADA581C495394003B686A /* aBike.xcdatamodeld */,
@@ -2016,7 +2009,6 @@
 				593ADAF61C495394003B686A /* VEStationsScrollView.h in Headers */,
 				593ADAB51C495394003B686A /* NSBundle+VELibrary.h in Headers */,
 				593ADB001C495394003B686A /* VEMapViewController.h in Headers */,
-				593ADAD61C495394003B686A /* VEMKPlacemarkValueTransformer.h in Headers */,
 				593ADAEC1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.h in Headers */,
 				593ADAB31C495394003B686A /* CLLocation+Additions.h in Headers */,
 				593ADAE81C495394003B686A /* VEAlertManager.h in Headers */,
@@ -2066,7 +2058,6 @@
 				5906FBF61C4A5FBB00A2D3D1 /* UserSettings.h in Headers */,
 				5906FBF71C4A5FBB00A2D3D1 /* VEBaseModel.h in Headers */,
 				5906FBF81C4A5FBB00A2D3D1 /* VEManagedObjectContext.h in Headers */,
-				5906FBF91C4A5FBB00A2D3D1 /* VEMKPlacemarkValueTransformer.h in Headers */,
 				5906FBFA1C4A5FBB00A2D3D1 /* VEDataImporter.h in Headers */,
 				5906FBFC1C4A5FBB00A2D3D1 /* UIColor+MainColor.h in Headers */,
 				5906FBFD1C4A5FBB00A2D3D1 /* VEAlertControllerManager.h in Headers */,
@@ -3681,7 +3672,6 @@
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
 				593ADAD31C495394003B686A /* VEBaseModel.m in Sources */,
-				593ADAD71C495394003B686A /* VEMKPlacemarkValueTransformer.m in Sources */,
 				593ADAEB1C495394003B686A /* VEStationAnnotationAccessoryView.m in Sources */,
 				593ADB031C495394003B686A /* VEWindow.m in Sources */,
 				593ADAFF1C495394003B686A /* VEMapViewBlurImageView.m in Sources */,
@@ -3730,7 +3720,6 @@
 				59567E4C1C4A50A50042767D /* UserSettings.m in Sources */,
 				59567E4E1C4A50A50042767D /* VEBaseModel.m in Sources */,
 				59567E501C4A50A50042767D /* VEManagedObjectContext.m in Sources */,
-				59567E521C4A50A50042767D /* VEMKPlacemarkValueTransformer.m in Sources */,
 				59567E541C4A50A50042767D /* VEDataImporter.m in Sources */,
 				59567E5B1C4A50A50042767D /* UIColor+MainColor.m in Sources */,
 				59567E5F1C4A50A50042767D /* VEAlertControllerManager.m in Sources */,
@@ -6806,13 +6795,14 @@
 		593ADA581C495394003B686A /* aBike.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
 				593ADA591C495394003B686A /* aBike.xcdatamodel */,
 				593ADA5A1C495394003B686A /* aBike_1_1.xcdatamodel */,
 				593ADA5B1C495394003B686A /* aBike_1_2.xcdatamodel */,
 				593ADA5C1C495394003B686A /* aBike_2_0.xcdatamodel */,
 				593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */,
 			);
-			currentVersion = 593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */;
+			currentVersion = 599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */;
 			path = aBike.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
