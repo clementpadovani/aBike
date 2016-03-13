@@ -17,4 +17,4 @@ matrix:
   - osx_image: xcode6.4
     env: VESIMULATOR_SDK="iphonesimulator8.4" VESIMULATOR_VERSION="8.4"
 script:
-- xctool "build test -sdk '$VESIMULATOR_SDK' -destination 'platform=iOS Simulator,name=iPhone5s,OS=\'$VESIMULATOR_VERSION\''"
+    - xctool "build test -sdk '$VESIMULATOR_SDK' -destination 'platform=iOS Simulator,name=iPhone5s,OS=\'$VESIMULATOR_VERSION\'' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO"
