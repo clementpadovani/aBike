@@ -11,6 +11,9 @@ env:
   - 'DEVELOPER_NAME="iPhone Developer: Clement Padovani (L4ZPL65Y4M)"'
   - secure: JAm+PwxtfNPW1InTzZH9euFDkYwPAHJ+95G1zmiSSZfPPLaRdPQDUxg3NcqbQTHMXy6igZbv8mFS3g2at5QKeVmrMTNLHBeeII4hSgHyXBQR5yAFF2N8uaWyBR8FUq6KvD3YY49SifN0XzY3cnagmR0Gs42bLxn0feJDCmB32gU0+KGGhGCAIiKAj3l92lbtp5rOBLh8sDQPpucW/hAUmqHLaF787aA0LhctmdIiOGJFtMnghWoqN/IYEUrr4ka/Hk0iKXnYkXXQaC57UslUrdB34Z7VXaiTpcgoa2bkTJkCxQVB1ysZ+LjIhoe+lXkOpgv+yMaVjIwGEjL4r/ZZW5epf4sWAPHY2AvzoSxpGlDz++vLtz1IYN0+Ot88nGNXPpLujn87esgYXBkE8xGZqQEzKq6goeku+Ar9fvc2/A8/XPbXEgB8fw8Hut6VJ++k/8U73Z3SK6m9kPihzamM2QOb6O0bvu6UWV5ZmyQsxP/3YtSjfpdNPlBcTNXn2EiKEuNE6SehQNvtPNeajRBZbpvxxPc05ZCDaAWR5QuVBDTS0KbCRep+DVxYlV6y3L6tNF6JtPdJV/Z2dMlDwvU13FhvacrJuvqvSNbFZsn3N18LyOlm55DmOgH1LGaKie3KEC9ZJR19MhDut3rGEEV9sa5PoDWxEbmJWA35EQunQyA=
 before_script:
+    - set
+    - env
+    - export
 - echo $ENCRYPTION_SECRET
 - echo "$ENCRYPTION_SECRET"
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc
