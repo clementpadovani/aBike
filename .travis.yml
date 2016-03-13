@@ -9,8 +9,7 @@ env:
   - LANG=en_US.UTF-8
   - PROFILE_NAME="Travis Provisioning Profile"
   - 'DEVELOPER_NAME="iPhone Developer: Clement Padovani (L4ZPL65Y4M)"'
-  - secure: "iB3QVYQwRnJVoWPb2PD140p3pszZ9Vhgmekx3TJXOx8M+XcxrU/f5Vm0rDGs7q1/tJRR4EL9UTGplZLZ/Kzt6OBGKivUFrbwUwPRLfeHgURwr4IkH7tzOlmHgFmaocVaT+kYwWSOPgNbmIykz5rNTqU7Bh6A0h+ABjbtcWJthuwil/Ivq2wO1WeQA0ak/1I6PqSblHEnor4v/7KV7RarrP5z8Wt8yHKvA4hvHeidCfGc40u9Wiml8fgH6UmtuGsr8hDfivds1z7zGbDZSZP2ocKfu4PMrh/Kr0+YDCsyijgDs2ec+zZp4vqWLxS3pCFsFw/75bN/V5WWJUeXx/C58/iVEj6yhlU9Op5jpXQ8LDR3/N8K+EaM6WmGKQ3rwwdOyGiPvepjcODsxe0mpn5SNWkZXnmLDzoIjKmGScHY3c5Z0BI0oGTCUSOT3F00WfWBChOJS1fTTwsmxM2EJiSqqax28q6Afstt0irGqJU51nKZp5fwiVDZaJ1HnAmoOQNn8Ah0wC+UjLr8psMSaT3+yIJj+DSYbwFmoLDoljk0ggkDitlhItVNWngYwDlzsAwTez4yL4x4oZ1UZsLIs8SLmNoNkT61gV+hfgEyB1p0GRPvk3OxzrdWO5hkZj2fuorFSjHRu+hlYsTSooa0EyuZlg9yu766R8hf/7KWTYYJT/8="
-
+  
 before_script:
     - echo $ENCRYPTION_SECRET
     - echo "$ENCRYPTION_SECRET"
