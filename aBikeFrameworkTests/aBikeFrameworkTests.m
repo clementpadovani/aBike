@@ -75,9 +75,12 @@
 
 	if (![[self class] isRunningOnCI])
 		downloaderAPIToken = kJCDecauxAPIKey;
-//	else
+	else
+		downloaderAPIToken = [[NSProcessInfo processInfo] environment][@"JCDECAUXAPITOKEN"];
 
-	JCDECAUXAPITOKEN=2d93849e709748d86c10c303ba94a773f14de3a2
+	XCTAssertNotNil(downloaderAPIToken);
+
+	XCTAssertNotEqual([downloaderAPIToken length], 0ul);
 }
 
 @end
