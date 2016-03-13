@@ -14,15 +14,13 @@ before_script:
     - set
     - env
     - export
-- echo $ENCRYPTION_SECRET
-- echo "$ENCRYPTION_SECRET"
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc
-  -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Certificate.cer.enc -d -a
-  -out Vendor/Certificate.cer
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/key.p12.enc -d -a -out Vendor/key.p12
-- "./Vendor/add-key.sh"
+    - echo $ENCRYPTION_SECRET
+    - echo "$ENCRYPTION_SECRET"
+    - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
+    - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Certificate.cer.enc -d -a -out Vendor/Certificate.cer
+    - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/key.p12.enc -d -a -out Vendor/key.p12
+    - "./Vendor/add-key.sh"
 script:
-- xctool "build test -sdk iphonesimulator9.2 -destination 'platform=iOS Simulator,name=iPhone5s,OS=9.2'"
+    - xctool "build test -sdk iphonesimulator9.2 -destination 'platform=iOS Simulator,name=iPhone5s,OS=9.2'"
 after_script:
-- "./Vendor/remove-key.sh"
+    - "./Vendor/remove-key.sh"
