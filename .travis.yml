@@ -13,6 +13,7 @@ env:
 
 before_script:
     - echo $ENCRYPTION_SECRET
+    - echo "$ENCRYPTION_SECRET"
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Certificate.cer.enc -d -a -out Vendor/Certificate.cer
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/key.p12.enc -d -a -out Vendor/key.p12
