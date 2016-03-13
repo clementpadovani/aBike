@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-rm -v -f "./Various/VEConstants.h"
+set -e
 
-echo "Removed VEConstants.h"
+rm -f "./Various/VEConstants.h"

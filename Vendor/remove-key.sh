@@ -1,6 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+set -e
 
 security delete-keychain ios-build.keychain
-rm -f -v "~/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
-
-echo "Deleted provisioning profile"
+rm -f "~/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
