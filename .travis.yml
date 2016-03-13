@@ -21,6 +21,8 @@ before_install:
 script:
     - xctool test -sdk iphonesimulator9.2 -destination 'platform=iOS Simulator,name=iPhone 5s,OS=9.2'
 after_script:
-    - echo $(ls -a ./Vendor/)
+    - echo $(ls -A ./Vendor/)
+    - echo "done"
     - ./Vendor/remove-key.sh
     - ./Vendor/remove-constants.sh
+    - sleep 3
