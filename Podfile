@@ -6,7 +6,7 @@ platform :ios, '8.0'
 
 workspace 'aBike—Lyon.xcworkspace'
 
-xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release
+xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release, 'Tests' => :debug
 
 use_frameworks!
 

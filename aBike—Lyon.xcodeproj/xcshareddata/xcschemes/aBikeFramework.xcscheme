@@ -24,11 +24,21 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Screenshots"
+      buildConfiguration = "Tests"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "592ADC841C948A39002E1FBE"
+               BuildableName = "aBikeFrameworkTests.xctest"
+               BlueprintName = "aBikeFrameworkTests"
+               ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
