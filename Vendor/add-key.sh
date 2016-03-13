@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Create a custom keychain
 security create-keychain -p travis ios-build.keychain
@@ -22,3 +22,5 @@ security import ./Vendor/key.p12 -k ~/Library/Keychains/ios-build.keychain -P $K
 # Put the provisioning profile in place
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 cp "./Vendor/$PROFILE_NAME.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+
+echo "Copied provisioning profile"
