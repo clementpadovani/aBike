@@ -1,0 +1,6 @@
+framework module Pods_normalPods_aBike_Paris {
+  umbrella header "Pods-normalPods-aBike—Paris-umbrella.h"
+
+  export *
+  module * { export * }
+}

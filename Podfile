@@ -6,101 +6,70 @@ platform :ios, '8.0'
 
 workspace 'aBike—Lyon.xcworkspace'
 
-xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release, 'Tests' => :debug
+project 'aBike—Lyon.xcodeproj', 'Screenshots' => :release, 'Tests' => :debug
 
 use_frameworks!
 
 inhibit_all_warnings!
 
-def normalPods
+abstract_target 'normalPods' do
 
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
-	# pod 'WatchdogInspector', :configurations => ['Debug']
+	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
-# 	pod 'Fabric', :configurations => ['Release']
-#
-# 	pod 'Crashlytics', :configurations => ['Release']
+	pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
-# 	pod 'Fabric', :configurations => ['Debug']
-#
-# 	pod 'Crashlytics', :configurations => ['Debug']
+	pod 'Fabric', :configuration => ['Release']
 
+	pod 'Crashlytics', :configuration => ['Release']
 
-end
+	target 'aBike—Lyon' do
 
-target 'aBike—Lyon' do
+	end
 
-normalPods
+	target 'aBikeFramework' do
 
-end
+	end
 
-target 'aBikeFramework' do
+	target 'aBike—LyonUITests' do
 
-     pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
+	end
 
-     pod 'Reveal-iOS-SDK', :configuration => ['Debug']
+	target 'aBike—Bruxelles' do
 
-     pod 'Fabric', :configuration => ['Release']
+	end
 
-	 pod 'Crashlytics', :configuration => ['Release']
+	target 'aBike—Marseille' do
 
-end
+	end
 
-target 'aBike—LyonUITests' do
+	target 'aBike—Mulhouse' do
 
-end
+	end
 
-target 'aBike—Bruxelles' do
+	target 'aBike—Nantes' do
 
-normalPods
+	end
 
-end
+	target 'aBike—Paris' do
 
-target 'aBike—Marseille' do
+	end
 
-normalPods
+	target 'aBike—Toulouse' do
 
-end
+	end
 
-target 'aBike—Mulhouse' do
+	target 'aBike—Créteil' do
 
-normalPods
+	end
 
-end
+	target 'aBike—Dublin' do
 
-target 'aBike—Nantes' do
+	end
 
-normalPods
+	target 'aBike—Luxembourg' do
 
-end
-
-target 'aBike—Paris' do
-
-normalPods
-
-end
-
-target 'aBike—Toulouse' do
-
-normalPods
-
-end
-
-target 'aBike—Créteil' do
-
-normalPods
-
-end
-
-target 'aBike—Dublin' do
-
-normalPods
-
-end
-
-target 'aBike—Luxembourg' do
-
-normalPods
+	end
 
 end

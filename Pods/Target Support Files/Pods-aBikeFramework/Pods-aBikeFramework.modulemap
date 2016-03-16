@@ -1,6 +1,0 @@
-framework module Pods_aBikeFramework {
-  umbrella header "Pods-aBikeFramework-umbrella.h"
-
-  export *
-  module * { export * }
-}
