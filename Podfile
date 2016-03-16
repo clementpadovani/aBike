@@ -16,60 +16,54 @@ abstract_target 'normalPods' do
 
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
-	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
-
 	pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
 	pod 'Fabric', :configuration => ['Release']
 
 	pod 'Crashlytics', :configuration => ['Release']
 
-	target 'aBike—Lyon' do
-
-	end
-
 	target 'aBikeFramework' do
 
 	end
 
-	target 'aBike—LyonUITests' do
-
+	target 'aBike—Lyon' do
+		inherit! :search_paths
 	end
 
 	target 'aBike—Bruxelles' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Marseille' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Mulhouse' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Nantes' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Paris' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Toulouse' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Créteil' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Dublin' do
-
+		inherit! :search_paths
 	end
 
 	target 'aBike—Luxembourg' do
-
+		inherit! :search_paths
 	end
 
 end

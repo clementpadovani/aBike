@@ -1,6 +1,0 @@
-framework module Pods_normalPods_aBike_Nantes {
-  umbrella header "Pods-normalPods-aBike—Nantes-umbrella.h"
-
-  export *
-  module * { export * }
-}
