@@ -12,7 +12,7 @@ use_frameworks!
 
 inhibit_all_warnings!
 
-abstract_target 'normalPods' do
+target 'aBikeFramework' do
 
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
@@ -22,12 +22,12 @@ abstract_target 'normalPods' do
 
 	pod 'Crashlytics', :configuration => ['Release']
 
-	target 'aBikeFramework' do
-
-	end
-
 	target 'aBike—Lyon' do
 		inherit! :search_paths
+		
+		target 'aBike—LyonUITests' do
+			inherit! :search_paths
+		end
 	end
 
 	target 'aBike—Bruxelles' do
