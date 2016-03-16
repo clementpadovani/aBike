@@ -1,0 +1,3282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DF5366A7895AE8EB645697850E899BF /* Pods-aBike—Marseille-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22286AB80DCE6E03D312A8BBDEE4BF8A /* Pods-aBike—Marseille-dummy.m */; };
+		0EC69D4FC1CA6331441D2A4F443E8077 /* Pods-aBikeFramework-aBike—Lyon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C45DED5A5F3BD4CE594694AF4AC8C770 /* Pods-aBikeFramework-aBike—Lyon-dummy.m */; };
+		0F96073CC461AF6EFD97D509FBC59234 /* Pods-aBike—Dublin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84369568F5BDEC553FC9BD318273ECB6 /* Pods-aBike—Dublin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FD43C3C1005471A79C65E44360AD2EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		1121F031EB61025A48D563AC8E18DB3B /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B48D13834BFF50BD850F154F9907DD2 /* SDStatusBarOverriderPost8_3.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		20CCF233BE7C366A8BE260C7D9C2A054 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A8C74AF6A200C2488E806AF5A1748C /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2253ECBB6FF9FFD4FF85F6CB83CB6EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		2F1B11C3D64C2850280156BCF386DD34 /* Pods-aBike—Luxembourg-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 308DE919B40ADC5783541056DDF0F676 /* Pods-aBike—Luxembourg-dummy.m */; };
+		32B0C46F9BD64F1D897E36AE791FD28D /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D94ED2A7BE7209F57580927D433DC718 /* SimulatorStatusMagic-dummy.m */; };
+		35DC1E6EB12CC28063F87F9739EB051B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		3A62C9B38BC7C7D382DC763A3407A091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		4593C734619523656C5A69245C8836C2 /* Pods-aBike—Paris-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCC5FF99E606375A6DE2A785801250 /* Pods-aBike—Paris-dummy.m */; };
+		4CC53605992A00C0F45D8E69622AD764 /* Pods-aBikeFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A6860BC132B8D5149BFF3CB98F23F /* Pods-aBikeFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EAC15CAF404E759287C0EE9B796D5AF /* Pods-aBike—Mulhouse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6006FE05972A6C54BB8B4EECCA73A4E3 /* Pods-aBike—Mulhouse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56E3F2899902000C2F38D8DF2F7D3215 /* Pods-aBike—Paris-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF18AC027B9E2A8C36626DD5B49A1D27 /* Pods-aBike—Paris-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C87AE41BAD1683E1DC14AC5A92EFFA9 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 082BA52C9363C6CAB50EE6E5CD0BF707 /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F62E661A5A47123A6CE236979082187 /* Pods-aBike—Dublin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08741F5F90DCC3170C7FF6B408184590 /* Pods-aBike—Dublin-dummy.m */; };
+		644546E1118E52A1298FE055CFBC959C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		7C4A140C8344B4E77D93CAD660F34507 /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFBE410ADD576013D320FE4BFA16AF2 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E6ABA80EB9DF23F41864DB323171A82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		814B566E7154D4A4AD951307FE38AB7E /* Pods-aBike—Créteil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7F3297DA61B3D627B7016A485F87F8 /* Pods-aBike—Créteil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83721EDA72B10B4B90B848C6C07E08EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		83E8C5E238FB72845BF9CD6D02446683 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		90F27FFB7C37221B5B8050FFD8EBB259 /* Pods-aBike—LyonUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4FEF6B4048B150F2FE4FB69248C518 /* Pods-aBike—LyonUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		927CD10BD92BB46DE4BCA3A40262032F /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 540E3C91E78D6F9D904105BA6ADCAA40 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		933F58A5BC54BCBD08DA0038BEAF3017 /* Pods-aBike—Toulouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3AADBCAB936D78DF743D0C2D03AD /* Pods-aBike—Toulouse-dummy.m */; };
+		9A28F8197CAE1D386E4FF65F35BC1C66 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C8BAF9BA6B66AA7DCA6DBA413F273E18 /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D142A3BE23DE7DD388C883E5CB9A0AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		9FB933E6B3FFA244F5B9FCA159D8C32A /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD55BEA5233E0F24A8B174BE66A89676 /* SDStatusBarManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A90C1A25004F172D0FA1A24C02703729 /* Pods-aBike—Nantes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B284F68BCD1033D02D086204501435 /* Pods-aBike—Nantes-dummy.m */; };
+		AABCFE47F5E22141F49CDBCA6EC18475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		B210CEDB3CAF822630DB88BA45B5E7E8 /* Pods-aBike—Bruxelles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 124E270B0099B4C1680C7A41FA48EF57 /* Pods-aBike—Bruxelles-dummy.m */; };
+		B61668829EB6190351A492EEC2233BFE /* Pods-aBike—Nantes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E9FC92251EACCE99078BF8F560DDB1 /* Pods-aBike—Nantes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7835B6488E2CCC6BD06EE80E1D61CF6 /* Pods-aBike—Mulhouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DA81265800EE7A1DA2F0A254867819 /* Pods-aBike—Mulhouse-dummy.m */; };
+		B7FEE3886060CD2A5950ECD7CE5B8D1E /* Pods-aBikeFramework-aBike—Lyon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F49B7ABEA1C24F085030A62C189719C /* Pods-aBikeFramework-aBike—Lyon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89ABD335878018FB4DB5334409DA571 /* Pods-aBike—Marseille-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C91AAF4CFABBCE5D018B4C60CFB5E9 /* Pods-aBike—Marseille-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE3F2AC55515F87A6448494EBD6759AE /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12989B224A64D301C5182CBCFEF4FF /* SDStatusBarOverriderPost9_0.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C7E75B9B556CD2D5A36B3F55EF7A3A9F /* Pods-aBike—Créteil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A41CE08B8DB3D53279D80B48A8C783F6 /* Pods-aBike—Créteil-dummy.m */; };
+		CE122DECDE901B0C3D71DACAF0791411 /* Pods-aBike—Bruxelles-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C87B82F7B1F21C2D38E69CD3493791A2 /* Pods-aBike—Bruxelles-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D374A53A9B02625464E5138157F8956A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF066F8D85A4D7A3B3A04D25E4D2AC88 /* UIKit.framework */; };
+		D5DFF436E6C56328BDEABBACB5D60490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		D637A7CA096060790ADAB5F8306AE225 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744722078C50FB3793AD0453D1A6FF5 /* SDStatusBarOverriderPre8_3.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D73DA6C48F68AAAA6711D019812E58D2 /* Pods-aBike—Luxembourg-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA59A6724FB47578A4F1C01EAEFAEA9 /* Pods-aBike—Luxembourg-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD996E75C2C8C56850BF0BE343874041 /* Pods-aBikeFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F78BBCE136A378539939378F5BFC78 /* Pods-aBikeFramework-dummy.m */; };
+		E1E6A84BDCDE76E66A0E6A4FE67D0602 /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 811008547DDD88FBD1FD8A972FF341E4 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E657E3B0F6C00999E27CA290051AF6AA /* Pods-aBike—LyonUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A99F21E806733A1191BC5214B982EA /* Pods-aBike—LyonUITests-dummy.m */; };
+		F0E4CAA470D6F4252C4C0025FDB541E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+		F22CDC265CB2EA2027603A6F5E50900B /* Pods-aBike—Toulouse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B8DA52B275973E95A9DB0B82583EA6 /* Pods-aBike—Toulouse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB007BD6E735507F4AA83F146DCF2D1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635D41133915B228CE899EF89DD95CE /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B7C45240B1EB1B615FD3A05EE663996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D0E60FEF0FD37547F070A96F0B1EF9;
+			remoteInfo = SimulatorStatusMagic;
+		};
+		C7BAA6D6CFA53BD0263B0177489C4E1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D0E60FEF0FD37547F070A96F0B1EF9;
+			remoteInfo = SimulatorStatusMagic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0212FB4CAFDB838935E52ADDB9A14A02 /* Pods-aBike—Nantes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Nantes-acknowledgements.plist"; sourceTree = "<group>"; };
+		04EC0999C3553FCFEBA242355F3B2D08 /* Pods-aBikeFramework-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-acknowledgements.markdown"; sourceTree = "<group>"; };
+		069B122493D8E0094164ECDC5A327959 /* Pods-aBike—Créteil-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Créteil-acknowledgements.markdown"; sourceTree = "<group>"; };
+		082BA52C9363C6CAB50EE6E5CD0BF707 /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
+		08741F5F90DCC3170C7FF6B408184590 /* Pods-aBike—Dublin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Dublin-dummy.m"; sourceTree = "<group>"; };
+		0A661E3B39F587CA7D0203897A082DC7 /* Pods-aBikeFramework-aBike—Lyon.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—Lyon.tests.xcconfig"; sourceTree = "<group>"; };
+		0C1DEAC66910B2DF36605A8AD9C8FCB9 /* Pods-aBike—Mulhouse-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Mulhouse-resources.sh"; sourceTree = "<group>"; };
+		0D591104FFD75904841B94138917725A /* Pods-aBikeFramework-aBike—Lyon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-aBike—Lyon-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0DD310BD9A85BAB220E36ABFE1D6BB2E /* Pods-aBike—Paris.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Paris.modulemap"; sourceTree = "<group>"; };
+		0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
+		124E270B0099B4C1680C7A41FA48EF57 /* Pods-aBike—Bruxelles-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Bruxelles-dummy.m"; sourceTree = "<group>"; };
+		13FA451450395C1D146CCC364C2DFEDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C9A5E689CA7288E4A9FB0F676FE38C /* Pods-aBike—LyonUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—LyonUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
+		166E2DE0135B3091A1F613C1BB63E3FA /* Pods-aBike—Toulouse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Toulouse-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16BE6740F9E70A1E7BEDF8332FCB1E20 /* Pods-aBikeFramework-aBike—Lyon-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—Lyon-frameworks.sh"; sourceTree = "<group>"; };
+		190BF761B87AB5A736155EF5D507CD9F /* Pods-aBike—Créteil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.debug.xcconfig"; sourceTree = "<group>"; };
+		197EB6F155B32ACD58A88C72A2CF2C1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198019E59D11EB4A26EED07BD2FC4F14 /* Pods-aBike—Bruxelles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.debug.xcconfig"; sourceTree = "<group>"; };
+		1C13CCE83734DB63FEB03FFC99166780 /* Pods-aBike—Créteil-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Créteil-resources.sh"; sourceTree = "<group>"; };
+		1FC8D1DF7D8F9D27303C4C9F3E05564D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20013D6293521CC408B396484A3691F1 /* Pods-aBike—Dublin.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.screenshots.xcconfig"; sourceTree = "<group>"; };
+		20A99F21E806733A1191BC5214B982EA /* Pods-aBike—LyonUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—LyonUITests-dummy.m"; sourceTree = "<group>"; };
+		216D801779DB4E13AA6D59FCB055FA65 /* Pods-aBike—Nantes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Nantes-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21AB99B2B707EB60B9D5685FBD9F4E85 /* Pods-aBike—Mulhouse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Mulhouse-frameworks.sh"; sourceTree = "<group>"; };
+		22286AB80DCE6E03D312A8BBDEE4BF8A /* Pods-aBike—Marseille-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Marseille-dummy.m"; sourceTree = "<group>"; };
+		2385DF6D46E664E276A24DB9B6A0C9D3 /* Pods-aBike—Dublin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.debug.xcconfig"; sourceTree = "<group>"; };
+		2626117F3BAE3180FE64A427824F6287 /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
+		26B3202F9C3B5011984D6F89F8F09B10 /* Pods-aBike—Luxembourg-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Luxembourg-acknowledgements.plist"; sourceTree = "<group>"; };
+		274505A0A29E77C6066D142D983C9493 /* Pods-aBike—Paris-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Paris-frameworks.sh"; sourceTree = "<group>"; };
+		2962B3D983E913F9291BC40AF01EF21A /* Pods-aBike—Luxembourg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Luxembourg.release.xcconfig"; sourceTree = "<group>"; };
+		2C0DEE9081745CB51DCA82D3CD791757 /* Pods-aBike—Marseille-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Marseille-frameworks.sh"; sourceTree = "<group>"; };
+		2F49B7ABEA1C24F085030A62C189719C /* Pods-aBikeFramework-aBike—Lyon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—Lyon-umbrella.h"; sourceTree = "<group>"; };
+		2F772F392975FBEECCC07136531A1A1F /* Pods-aBike—Dublin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Dublin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		308DE919B40ADC5783541056DDF0F676 /* Pods-aBike—Luxembourg-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Luxembourg-dummy.m"; sourceTree = "<group>"; };
+		32E57843A8773903F80940CAC9049B67 /* Pods-aBike—Mulhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.debug.xcconfig"; sourceTree = "<group>"; };
+		34B82B0C59B6406F010B2BB03659AB6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E3BCC6236CF8917B4EBCA5ADE6C313 /* Pods-aBike—Marseille.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.debug.xcconfig"; sourceTree = "<group>"; };
+		386AD3A3EA5F7E4430CF355F6D347C8C /* Pods-aBike—Dublin.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.tests.xcconfig"; sourceTree = "<group>"; };
+		38D4E54800BA7B74B474B61A5D4C491E /* Pods-aBike—Bruxelles-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Bruxelles-resources.sh"; sourceTree = "<group>"; };
+		3BE19A85B8A4E9E26ADF5EEDED55354F /* Pods-aBike—Créteil-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Créteil-acknowledgements.plist"; sourceTree = "<group>"; };
+		3F3FEDB30CCC8F7493B6C05B782C2D13 /* Pods-aBike—Bruxelles-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Bruxelles-acknowledgements.plist"; sourceTree = "<group>"; };
+		40DE879C8E5A411EBBA032A955B4FE77 /* Pods-aBike—Nantes.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Nantes.tests.xcconfig"; sourceTree = "<group>"; };
+		4261FA1DFEE1B43B5EC94B06CA2BD2EC /* Pods-aBike—Marseille-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Marseille-acknowledgements.markdown"; sourceTree = "<group>"; };
+		465A4CDCAD37CCC4F442BD698D6BD1F0 /* Pods-aBike—LyonUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—LyonUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		480B430457873217A873B063938E397A /* Pods-aBike—LyonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—LyonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		484A170B37D7B98D9C729B93E7D2785D /* Pods-aBike—Toulouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.screenshots.xcconfig"; sourceTree = "<group>"; };
+		49119EDA73459067E958F200A0AF12ED /* Pods_aBikeFramework_aBike_Lyon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_Lyon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A12989B224A64D301C5182CBCFEF4FF /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
+		4C0BE91E974D883BDDA9381D41528DE1 /* Pods-aBikeFramework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-resources.sh"; sourceTree = "<group>"; };
+		4DBC5D87849DF7A44B095E9DC5B3A831 /* Pods-aBike—Toulouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.debug.xcconfig"; sourceTree = "<group>"; };
+		4F560F5DC37F9E300E3F05E0974FFF70 /* Pods-aBike—Luxembourg.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Luxembourg.screenshots.xcconfig"; sourceTree = "<group>"; };
+		51FBCC588B63AFF926E8B642F53F052F /* Pods-aBike—Nantes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Nantes-frameworks.sh"; sourceTree = "<group>"; };
+		52C78C0D0711C8C25EB6F4B2A2D01663 /* Pods-aBike—Luxembourg.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Luxembourg.tests.xcconfig"; sourceTree = "<group>"; };
+		5331E63C4AC8E2371C7DC8091F4CAA0A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C1D23E89A39058445880773A3E99F3 /* Pods-aBike—Paris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.release.xcconfig"; sourceTree = "<group>"; };
+		540E3C91E78D6F9D904105BA6ADCAA40 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
+		542DC133F66AC47969524BD69BC67E81 /* Pods-aBike—Mulhouse-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Mulhouse-acknowledgements.plist"; sourceTree = "<group>"; };
+		5592AF0182B53BDD2C117D945B7D1402 /* Pods-aBikeFramework-aBike—Lyon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—Lyon.debug.xcconfig"; sourceTree = "<group>"; };
+		571C5889273C46013AE539FB8023A595 /* Pods-aBike—Bruxelles.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Bruxelles.modulemap"; sourceTree = "<group>"; };
+		5A78B29EF53E0C4BD0C2647916922454 /* Pods-aBike—LyonUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—LyonUITests.tests.xcconfig"; sourceTree = "<group>"; };
+		5D0A04B6F92BE6C17A07D7D0B4F2D620 /* Pods-aBike—Dublin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Dublin.modulemap"; sourceTree = "<group>"; };
+		5D2C4B3C290249744FA55B9204121D32 /* Pods_aBike_Paris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Paris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFBE410ADD576013D320FE4BFA16AF2 /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
+		6006FE05972A6C54BB8B4EECCA73A4E3 /* Pods-aBike—Mulhouse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Mulhouse-umbrella.h"; sourceTree = "<group>"; };
+		62BBC0ED2149BA2D9B57BB8619A633F4 /* Pods-aBikeFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.release.xcconfig"; sourceTree = "<group>"; };
+		6544CE27A23F2D34F35DE14199DD537F /* Pods-aBike—Bruxelles-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Bruxelles-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6598499F9A093900845BF9049579CB8A /* SimulatorStatusMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimulatorStatusMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661AABFF9FB7C106EE4F0FFF3335B569 /* Pods_aBikeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		678084DFABDEAA27C04B01651406548E /* Pods-aBike—Luxembourg-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Luxembourg-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A4FEF6B4048B150F2FE4FB69248C518 /* Pods-aBike—LyonUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—LyonUITests-umbrella.h"; sourceTree = "<group>"; };
+		6A63C067461B5D0728920B9F8AD80965 /* Pods-aBike—Dublin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Dublin-frameworks.sh"; sourceTree = "<group>"; };
+		6A81FE7A35EF98149676A8EAFC355A6A /* Pods-aBike—Marseille.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.release.xcconfig"; sourceTree = "<group>"; };
+		6CC8934B9D7B9B2084AA4FAD85494857 /* Pods-aBikeFramework-aBike—Lyon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework-aBike—Lyon.modulemap"; sourceTree = "<group>"; };
+		700B46DB277ECE77AE0C646832874720 /* Pods-aBike—Marseille.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.screenshots.xcconfig"; sourceTree = "<group>"; };
+		73DA81265800EE7A1DA2F0A254867819 /* Pods-aBike—Mulhouse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Mulhouse-dummy.m"; sourceTree = "<group>"; };
+		76B8DA52B275973E95A9DB0B82583EA6 /* Pods-aBike—Toulouse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Toulouse-umbrella.h"; sourceTree = "<group>"; };
+		773B2E2365E2134BBAE45D27BDFDD99C /* Pods-aBike—Paris-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Paris-resources.sh"; sourceTree = "<group>"; };
+		7744722078C50FB3793AD0453D1A6FF5 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
+		7872EC82E9287BADCAAAF40590328B6E /* Pods-aBike—Mulhouse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Mulhouse.modulemap"; sourceTree = "<group>"; };
+		7B48D13834BFF50BD850F154F9907DD2 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
+		7E5564DBF884566B5175B7961619EB11 /* Pods-aBikeFramework-aBike—Lyon.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—Lyon.screenshots.xcconfig"; sourceTree = "<group>"; };
+		7F6A11AA324BD1CFB3FF75278C754496 /* Pods-aBike—Toulouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.release.xcconfig"; sourceTree = "<group>"; };
+		80109378C40E29FC0EFB2B56955F5B60 /* Pods-aBike—Créteil.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.screenshots.xcconfig"; sourceTree = "<group>"; };
+		811008547DDD88FBD1FD8A972FF341E4 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
+		82899648C8A7D285AE7AEE2B3587FB27 /* Pods-aBike—Paris-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Paris-acknowledgements.plist"; sourceTree = "<group>"; };
+		84369568F5BDEC553FC9BD318273ECB6 /* Pods-aBike—Dublin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Dublin-umbrella.h"; sourceTree = "<group>"; };
+		84C3913FE1E36A4E4405A18AACD9429C /* Pods-aBike—Toulouse-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Toulouse-acknowledgements.plist"; sourceTree = "<group>"; };
+		85F78BBCE136A378539939378F5BFC78 /* Pods-aBikeFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-dummy.m"; sourceTree = "<group>"; };
+		8686643C8AF9A167C478296DBC0E0FBF /* Pods-aBike—Luxembourg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Luxembourg.debug.xcconfig"; sourceTree = "<group>"; };
+		87431E6B57E768A9589F38C16B99A111 /* Pods-aBike—Mulhouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.screenshots.xcconfig"; sourceTree = "<group>"; };
+		8A62A06918FA6E0C7FA1318B1CCD83B0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		8ACCC5FF99E606375A6DE2A785801250 /* Pods-aBike—Paris-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Paris-dummy.m"; sourceTree = "<group>"; };
+		8F759D4E8957EFBA7C79D053B16B1595 /* Pods-aBikeFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C0A6FB8EA05264F3815FD2BA83C635 /* Pods-aBikeFramework-aBike—Lyon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—Lyon.release.xcconfig"; sourceTree = "<group>"; };
+		94E9FC92251EACCE99078BF8F560DDB1 /* Pods-aBike—Nantes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Nantes-umbrella.h"; sourceTree = "<group>"; };
+		9597CDD8E878145BA3F64BC9123FE9C9 /* Pods-aBike—Marseille.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.tests.xcconfig"; sourceTree = "<group>"; };
+		96410A4B5270E9EDD8D609B6308B74ED /* Pods-aBike—Paris.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.tests.xcconfig"; sourceTree = "<group>"; };
+		9AD027AB211AA9E1EB90F58E6EC3FD3D /* Pods_aBike_Bruxelles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Bruxelles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B17F144740102025547F979E7379EC1 /* Pods-aBike—LyonUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—LyonUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9D31D00205CA4BDF4FC0224765FA52BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFA33882D99CAF3E39CB98DF398EFF9 /* Pods-aBike—Luxembourg.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Luxembourg.modulemap"; sourceTree = "<group>"; };
+		A16E6F5B59B89D622479C4521A247B13 /* Pods-aBikeFramework-aBike—Lyon-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—Lyon-resources.sh"; sourceTree = "<group>"; };
+		A1DD5087F9785873F9C56A133EDCA39F /* Pods-aBike—Bruxelles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.release.xcconfig"; sourceTree = "<group>"; };
+		A39B5316CF40D34FBAA181AFE3395B9D /* Pods-aBike—Bruxelles.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.tests.xcconfig"; sourceTree = "<group>"; };
+		A41CE08B8DB3D53279D80B48A8C783F6 /* Pods-aBike—Créteil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Créteil-dummy.m"; sourceTree = "<group>"; };
+		A5591A6C143C91CB7A04D7EC27370B4F /* Pods-aBikeFramework.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.screenshots.xcconfig"; sourceTree = "<group>"; };
+		A6C3528EAF7283A4AD990FD619BB9642 /* Pods_aBike_Mulhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Mulhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB8D11E5461FBC05AEF7D14AC2F838B /* Pods_aBike_LyonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_LyonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6A57775F5E2788E14418E610C1B7BC /* Pods-aBike—Luxembourg-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Luxembourg-frameworks.sh"; sourceTree = "<group>"; };
+		ACBD7B620195F862748981E3A28C8705 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		ADCCA3183998EDF3578526423307810D /* Pods-aBike—Luxembourg-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Luxembourg-resources.sh"; sourceTree = "<group>"; };
+		AF066F8D85A4D7A3B3A04D25E4D2AC88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF7F3297DA61B3D627B7016A485F87F8 /* Pods-aBike—Créteil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Créteil-umbrella.h"; sourceTree = "<group>"; };
+		B0C91AAF4CFABBCE5D018B4C60CFB5E9 /* Pods-aBike—Marseille-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Marseille-umbrella.h"; sourceTree = "<group>"; };
+		B1A8C74AF6A200C2488E806AF5A1748C /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
+		B2667CEA0C2D74A5C00083D684C6E5EE /* Pods_aBike_Luxembourg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Luxembourg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B269903BCE2C2782C7D3289AFA8A9E73 /* Pods-aBike—Mulhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.release.xcconfig"; sourceTree = "<group>"; };
+		B4AE6057C601E3F0ADF06C2D73BEA9EF /* Pods-aBike—Toulouse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Toulouse.modulemap"; sourceTree = "<group>"; };
+		B7743685E407512ABC155C0D7552C1F9 /* Pods-aBike—Paris.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.screenshots.xcconfig"; sourceTree = "<group>"; };
+		BA1E640CDF1FD566F081092B926BD922 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE406943DBF017C89158BBD97029B3C /* Pods-aBike—Bruxelles-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Bruxelles-frameworks.sh"; sourceTree = "<group>"; };
+		BBB59DE363BEAEE7B3A7F440D40E3C68 /* Pods_aBike_Toulouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Toulouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDDF4639DD3492ABAB9A3BE4D452C6C /* Pods-aBike—Créteil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.release.xcconfig"; sourceTree = "<group>"; };
+		BCEB81AB19059A6A524CCD68DC84C7C1 /* Pods-aBike—Toulouse-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Toulouse-resources.sh"; sourceTree = "<group>"; };
+		BD9B867C398F1B5CBF921893505AB8D3 /* Pods-aBike—Nantes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Nantes.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6B333D12C34AAD2D2F7A5E77530B98 /* Pods_aBike_Marseille.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Marseille.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBF3AADBCAB936D78DF743D0C2D03AD /* Pods-aBike—Toulouse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Toulouse-dummy.m"; sourceTree = "<group>"; };
+		BF18AC027B9E2A8C36626DD5B49A1D27 /* Pods-aBike—Paris-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Paris-umbrella.h"; sourceTree = "<group>"; };
+		BF9D2944C74731C51973C457E01F7759 /* Pods-aBikeFramework-aBike—Lyon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-aBike—Lyon-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFA59A6724FB47578A4F1C01EAEFAEA9 /* Pods-aBike—Luxembourg-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Luxembourg-umbrella.h"; sourceTree = "<group>"; };
+		C1E0163889305456C6A27ACA353A8EC7 /* Pods-aBike—Créteil-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Créteil-frameworks.sh"; sourceTree = "<group>"; };
+		C2CF4C00823C5313F0E2042154B70AF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E59A6324F30BD982A32E761A9735DB /* Pods-aBike—Marseille.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Marseille.modulemap"; sourceTree = "<group>"; };
+		C45DED5A5F3BD4CE594694AF4AC8C770 /* Pods-aBikeFramework-aBike—Lyon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—Lyon-dummy.m"; sourceTree = "<group>"; };
+		C87B82F7B1F21C2D38E69CD3493791A2 /* Pods-aBike—Bruxelles-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Bruxelles-umbrella.h"; sourceTree = "<group>"; };
+		C8BAF9BA6B66AA7DCA6DBA413F273E18 /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
+		CAF7CCA525BFB7A4E66401EDD4799E15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4A6860BC132B8D5149BFF3CB98F23F /* Pods-aBikeFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-umbrella.h"; sourceTree = "<group>"; };
+		CD45EBE9505FCB0F32AD4C85B763C358 /* Pods-aBike—Marseille-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Marseille-resources.sh"; sourceTree = "<group>"; };
+		CDE7C6989649DDE52A7905FCDC0BBFD5 /* Pods-aBike—Paris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.debug.xcconfig"; sourceTree = "<group>"; };
+		CE603F7524D8CC925BD937F4793AC8AC /* Pods-aBike—Nantes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Nantes.release.xcconfig"; sourceTree = "<group>"; };
+		D315C0FA06C5BE84D6EB2287A582AC1C /* Pods-aBike—Toulouse.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.tests.xcconfig"; sourceTree = "<group>"; };
+		D38D9A1044E35FD1A97961A2B98C288C /* Pods-aBike—Dublin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Dublin-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3F9CF727034F03A53B8A094A8AEE060 /* Pods-aBike—Créteil.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.tests.xcconfig"; sourceTree = "<group>"; };
+		D4180A40E011A6FF2E061AAFEF4833ED /* Pods_aBike_Cr_teil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Cr_teil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D635D41133915B228CE899EF89DD95CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D67795B60863572F8C96128A5A52513C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94ED2A7BE7209F57580927D433DC718 /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
+		DC0EE8B9E1E9033005C5228181F536E0 /* Pods-aBikeFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework.modulemap"; sourceTree = "<group>"; };
+		DC5402B8A89F7679D24DEFB13D0A9B64 /* Pods-aBike—LyonUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—LyonUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD55BEA5233E0F24A8B174BE66A89676 /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
+		DF028554167251DC5742DD0379C44470 /* Pods-aBike—Bruxelles.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.screenshots.xcconfig"; sourceTree = "<group>"; };
+		DF2CF96AEDBBA4D55ABCFA491DA292E8 /* Pods-aBikeFramework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF969412821670C854196413B51F2238 /* Pods-aBike—LyonUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—LyonUITests-resources.sh"; sourceTree = "<group>"; };
+		E232A3FBF30E60BF4EEE2B73EAE6F36D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E281265EC85B2285A314D59A22AF7551 /* Pods-aBike—Mulhouse.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.tests.xcconfig"; sourceTree = "<group>"; };
+		E4621D4A31FA6EF36E200DB3A794FAEE /* Pods-aBike—Nantes.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Nantes.screenshots.xcconfig"; sourceTree = "<group>"; };
+		E485CC7863A388C65743B72E8E4F96F6 /* Pods-aBike—LyonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—LyonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E6AFB180834A8B0F0AFCCE054243EDBC /* Pods-aBike—Nantes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Nantes-resources.sh"; sourceTree = "<group>"; };
+		E6EC22683549C2C8303643765C2C7AE4 /* Pods_aBike_Nantes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Nantes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDCC429452FEED8F19E1E86168BB23D /* Pods-aBike—Nantes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Nantes.modulemap"; sourceTree = "<group>"; };
+		ED9769F0CE06B3C879FCA223695A0872 /* Pods-aBike—Mulhouse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Mulhouse-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE715B8CADB1C0E6A9BB442F52D51C7E /* Pods-aBike—Créteil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Créteil.modulemap"; sourceTree = "<group>"; };
+		EEA5BA7E9FB49356DA6659BA7183B171 /* Pods-aBike—Toulouse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Toulouse-frameworks.sh"; sourceTree = "<group>"; };
+		EEAEE5A9F3F413A1C7D0506AA40CDB8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8E81A067AB038B0FE75DD30831D41F /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
+		EFE429D270F83265DB51D6490ED673F4 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "Reveal-Framework-iOS-1.6.2/Reveal.framework"; sourceTree = "<group>"; };
+		F1534453AB461DC57F9DCCA545A4BF96 /* Pods-aBike—Paris-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Paris-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F21D18E6B2B6D5186C4B6AC9E4150262 /* Pods-aBike—Dublin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.release.xcconfig"; sourceTree = "<group>"; };
+		F280D5889C58C8AB79D643CC2F016F09 /* Pods_aBike_Dublin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Dublin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B284F68BCD1033D02D086204501435 /* Pods-aBike—Nantes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Nantes-dummy.m"; sourceTree = "<group>"; };
+		F49E99A641CDBB1B051E0F97D98D2FAD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DD6F7F816E8D07B09FE0AC82B6C478 /* Pods-aBike—LyonUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—LyonUITests.modulemap"; sourceTree = "<group>"; };
+		F7A4053E833243A217D71DDB24522204 /* Pods-aBikeFramework.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.tests.xcconfig"; sourceTree = "<group>"; };
+		F87EE53960F662037E21B1617C1127E3 /* Pods-aBikeFramework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-frameworks.sh"; sourceTree = "<group>"; };
+		F8D8AE364C2CE8E13CFAC420A4F6DE2B /* Pods-aBike—Marseille-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Marseille-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9BD0CB37280A9EDC5615DCD4619847E /* Pods-aBike—Dublin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Dublin-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0652F96703F0C583E9D24B5BC63D4A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A62C9B38BC7C7D382DC763A3407A091 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8A21590BC387432C78E18185F490EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DC1E6EB12CC28063F87F9739EB051B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABF79751A031789C54DD054A267454B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB007BD6E735507F4AA83F146DCF2D1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC541D88FBFDD2CB4716A84B65C0A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E8C5E238FB72845BF9CD6D02446683 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E92F9CB006C276EA1EAADCCE4EFA609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6ABA80EB9DF23F41864DB323171A82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6302361457AB1CE4D0AFD641E63B526A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABCFE47F5E22141F49CDBCA6EC18475 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BC2DDDCFA9C116916656F18BC4DFA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644546E1118E52A1298FE055CFBC959C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA917FC1BB4E6F341293B7FC406D467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83721EDA72B10B4B90B848C6C07E08EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE81886FBFC5C089BF5F041EA32E8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DFF436E6C56328BDEABBACB5D60490 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96204CFA2D0AFB4A39D5908F9223E1B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E4CAA470D6F4252C4C0025FDB541E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1913D435953EBB98276604D4E8BF6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD43C3C1005471A79C65E44360AD2EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7BDFD66B6CE0E80B5585E3284CA0369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D142A3BE23DE7DD388C883E5CB9A0AC /* Foundation.framework in Frameworks */,
+				D374A53A9B02625464E5138157F8956A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8BF472E8E0CDB202369474061AC0C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2253ECBB6FF9FFD4FF85F6CB83CB6EE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A746DB9C28D2AC1FB6023DC7FCD2AF /* Pods-aBike—Mulhouse */ = {
+			isa = PBXGroup;
+			children = (
+				F49E99A641CDBB1B051E0F97D98D2FAD /* Info.plist */,
+				7872EC82E9287BADCAAAF40590328B6E /* Pods-aBike—Mulhouse.modulemap */,
+				ED9769F0CE06B3C879FCA223695A0872 /* Pods-aBike—Mulhouse-acknowledgements.markdown */,
+				542DC133F66AC47969524BD69BC67E81 /* Pods-aBike—Mulhouse-acknowledgements.plist */,
+				73DA81265800EE7A1DA2F0A254867819 /* Pods-aBike—Mulhouse-dummy.m */,
+				21AB99B2B707EB60B9D5685FBD9F4E85 /* Pods-aBike—Mulhouse-frameworks.sh */,
+				0C1DEAC66910B2DF36605A8AD9C8FCB9 /* Pods-aBike—Mulhouse-resources.sh */,
+				6006FE05972A6C54BB8B4EECCA73A4E3 /* Pods-aBike—Mulhouse-umbrella.h */,
+				32E57843A8773903F80940CAC9049B67 /* Pods-aBike—Mulhouse.debug.xcconfig */,
+				B269903BCE2C2782C7D3289AFA8A9E73 /* Pods-aBike—Mulhouse.release.xcconfig */,
+				87431E6B57E768A9589F38C16B99A111 /* Pods-aBike—Mulhouse.screenshots.xcconfig */,
+				E281265EC85B2285A314D59A22AF7551 /* Pods-aBike—Mulhouse.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Mulhouse";
+			path = "Target Support Files/Pods-aBike—Mulhouse";
+			sourceTree = "<group>";
+		};
+		0B47B15B929CAC4192F520A293E0C8D8 /* Pods-aBike—Luxembourg */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E640CDF1FD566F081092B926BD922 /* Info.plist */,
+				9FFA33882D99CAF3E39CB98DF398EFF9 /* Pods-aBike—Luxembourg.modulemap */,
+				678084DFABDEAA27C04B01651406548E /* Pods-aBike—Luxembourg-acknowledgements.markdown */,
+				26B3202F9C3B5011984D6F89F8F09B10 /* Pods-aBike—Luxembourg-acknowledgements.plist */,
+				308DE919B40ADC5783541056DDF0F676 /* Pods-aBike—Luxembourg-dummy.m */,
+				AB6A57775F5E2788E14418E610C1B7BC /* Pods-aBike—Luxembourg-frameworks.sh */,
+				ADCCA3183998EDF3578526423307810D /* Pods-aBike—Luxembourg-resources.sh */,
+				BFA59A6724FB47578A4F1C01EAEFAEA9 /* Pods-aBike—Luxembourg-umbrella.h */,
+				8686643C8AF9A167C478296DBC0E0FBF /* Pods-aBike—Luxembourg.debug.xcconfig */,
+				2962B3D983E913F9291BC40AF01EF21A /* Pods-aBike—Luxembourg.release.xcconfig */,
+				4F560F5DC37F9E300E3F05E0974FFF70 /* Pods-aBike—Luxembourg.screenshots.xcconfig */,
+				52C78C0D0711C8C25EB6F4B2A2D01663 /* Pods-aBike—Luxembourg.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Luxembourg";
+			path = "Target Support Files/Pods-aBike—Luxembourg";
+			sourceTree = "<group>";
+		};
+		12DCCB2EFA78A443A7FB37796160CD6E /* SimulatorStatusMagic */ = {
+			isa = PBXGroup;
+			children = (
+				C8BAF9BA6B66AA7DCA6DBA413F273E18 /* SDStatusBarManager.h */,
+				DD55BEA5233E0F24A8B174BE66A89676 /* SDStatusBarManager.m */,
+				5FFBE410ADD576013D320FE4BFA16AF2 /* SDStatusBarOverrider.h */,
+				082BA52C9363C6CAB50EE6E5CD0BF707 /* SDStatusBarOverriderPost8_3.h */,
+				7B48D13834BFF50BD850F154F9907DD2 /* SDStatusBarOverriderPost8_3.m */,
+				540E3C91E78D6F9D904105BA6ADCAA40 /* SDStatusBarOverriderPost9_0.h */,
+				4A12989B224A64D301C5182CBCFEF4FF /* SDStatusBarOverriderPost9_0.m */,
+				811008547DDD88FBD1FD8A972FF341E4 /* SDStatusBarOverriderPre8_3.h */,
+				7744722078C50FB3793AD0453D1A6FF5 /* SDStatusBarOverriderPre8_3.m */,
+				7D45BB5DA8C1F8C1BC0A4D627640B538 /* Support Files */,
+			);
+			path = SimulatorStatusMagic;
+			sourceTree = "<group>";
+		};
+		206C78FFFB2A64DE668F9E1FF1741DCB /* Pods-aBike—LyonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEAEE5A9F3F413A1C7D0506AA40CDB8A /* Info.plist */,
+				F5DD6F7F816E8D07B09FE0AC82B6C478 /* Pods-aBike—LyonUITests.modulemap */,
+				465A4CDCAD37CCC4F442BD698D6BD1F0 /* Pods-aBike—LyonUITests-acknowledgements.markdown */,
+				DC5402B8A89F7679D24DEFB13D0A9B64 /* Pods-aBike—LyonUITests-acknowledgements.plist */,
+				20A99F21E806733A1191BC5214B982EA /* Pods-aBike—LyonUITests-dummy.m */,
+				9B17F144740102025547F979E7379EC1 /* Pods-aBike—LyonUITests-frameworks.sh */,
+				DF969412821670C854196413B51F2238 /* Pods-aBike—LyonUITests-resources.sh */,
+				6A4FEF6B4048B150F2FE4FB69248C518 /* Pods-aBike—LyonUITests-umbrella.h */,
+				480B430457873217A873B063938E397A /* Pods-aBike—LyonUITests.debug.xcconfig */,
+				E485CC7863A388C65743B72E8E4F96F6 /* Pods-aBike—LyonUITests.release.xcconfig */,
+				15C9A5E689CA7288E4A9FB0F676FE38C /* Pods-aBike—LyonUITests.screenshots.xcconfig */,
+				5A78B29EF53E0C4BD0C2647916922454 /* Pods-aBike—LyonUITests.tests.xcconfig */,
+			);
+			name = "Pods-aBike—LyonUITests";
+			path = "Target Support Files/Pods-aBike—LyonUITests";
+			sourceTree = "<group>";
+		};
+		2200FC55312AA663D7517D0D79D047FE /* Pods-aBike—Bruxelles */ = {
+			isa = PBXGroup;
+			children = (
+				C2CF4C00823C5313F0E2042154B70AF0 /* Info.plist */,
+				571C5889273C46013AE539FB8023A595 /* Pods-aBike—Bruxelles.modulemap */,
+				6544CE27A23F2D34F35DE14199DD537F /* Pods-aBike—Bruxelles-acknowledgements.markdown */,
+				3F3FEDB30CCC8F7493B6C05B782C2D13 /* Pods-aBike—Bruxelles-acknowledgements.plist */,
+				124E270B0099B4C1680C7A41FA48EF57 /* Pods-aBike—Bruxelles-dummy.m */,
+				BAE406943DBF017C89158BBD97029B3C /* Pods-aBike—Bruxelles-frameworks.sh */,
+				38D4E54800BA7B74B474B61A5D4C491E /* Pods-aBike—Bruxelles-resources.sh */,
+				C87B82F7B1F21C2D38E69CD3493791A2 /* Pods-aBike—Bruxelles-umbrella.h */,
+				198019E59D11EB4A26EED07BD2FC4F14 /* Pods-aBike—Bruxelles.debug.xcconfig */,
+				A1DD5087F9785873F9C56A133EDCA39F /* Pods-aBike—Bruxelles.release.xcconfig */,
+				DF028554167251DC5742DD0379C44470 /* Pods-aBike—Bruxelles.screenshots.xcconfig */,
+				A39B5316CF40D34FBAA181AFE3395B9D /* Pods-aBike—Bruxelles.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Bruxelles";
+			path = "Target Support Files/Pods-aBike—Bruxelles";
+			sourceTree = "<group>";
+		};
+		2441ACFDECA004BA5E0990724EC48695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE429D270F83265DB51D6490ED673F4 /* Reveal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2631665D3B3D7C47DEF78B4A298ED5DC /* Pods-aBike—Nantes */ = {
+			isa = PBXGroup;
+			children = (
+				E232A3FBF30E60BF4EEE2B73EAE6F36D /* Info.plist */,
+				EBDCC429452FEED8F19E1E86168BB23D /* Pods-aBike—Nantes.modulemap */,
+				216D801779DB4E13AA6D59FCB055FA65 /* Pods-aBike—Nantes-acknowledgements.markdown */,
+				0212FB4CAFDB838935E52ADDB9A14A02 /* Pods-aBike—Nantes-acknowledgements.plist */,
+				F2B284F68BCD1033D02D086204501435 /* Pods-aBike—Nantes-dummy.m */,
+				51FBCC588B63AFF926E8B642F53F052F /* Pods-aBike—Nantes-frameworks.sh */,
+				E6AFB180834A8B0F0AFCCE054243EDBC /* Pods-aBike—Nantes-resources.sh */,
+				94E9FC92251EACCE99078BF8F560DDB1 /* Pods-aBike—Nantes-umbrella.h */,
+				BD9B867C398F1B5CBF921893505AB8D3 /* Pods-aBike—Nantes.debug.xcconfig */,
+				CE603F7524D8CC925BD937F4793AC8AC /* Pods-aBike—Nantes.release.xcconfig */,
+				E4621D4A31FA6EF36E200DB3A794FAEE /* Pods-aBike—Nantes.screenshots.xcconfig */,
+				40DE879C8E5A411EBBA032A955B4FE77 /* Pods-aBike—Nantes.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Nantes";
+			path = "Target Support Files/Pods-aBike—Nantes";
+			sourceTree = "<group>";
+		};
+		2BE1328FCF6A46A69B158D21C37B86DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A62A06918FA6E0C7FA1318B1CCD83B0 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3593A8BD9C1D807FB8EB97BCFBFDC518 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				2BE1328FCF6A46A69B158D21C37B86DB /* Frameworks */,
+			);
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		4252923C52FD1951FD1FD6495DFE5FAA /* Pods-aBike—Marseille */ = {
+			isa = PBXGroup;
+			children = (
+				34B82B0C59B6406F010B2BB03659AB6A /* Info.plist */,
+				C3E59A6324F30BD982A32E761A9735DB /* Pods-aBike—Marseille.modulemap */,
+				4261FA1DFEE1B43B5EC94B06CA2BD2EC /* Pods-aBike—Marseille-acknowledgements.markdown */,
+				F8D8AE364C2CE8E13CFAC420A4F6DE2B /* Pods-aBike—Marseille-acknowledgements.plist */,
+				22286AB80DCE6E03D312A8BBDEE4BF8A /* Pods-aBike—Marseille-dummy.m */,
+				2C0DEE9081745CB51DCA82D3CD791757 /* Pods-aBike—Marseille-frameworks.sh */,
+				CD45EBE9505FCB0F32AD4C85B763C358 /* Pods-aBike—Marseille-resources.sh */,
+				B0C91AAF4CFABBCE5D018B4C60CFB5E9 /* Pods-aBike—Marseille-umbrella.h */,
+				34E3BCC6236CF8917B4EBCA5ADE6C313 /* Pods-aBike—Marseille.debug.xcconfig */,
+				6A81FE7A35EF98149676A8EAFC355A6A /* Pods-aBike—Marseille.release.xcconfig */,
+				700B46DB277ECE77AE0C646832874720 /* Pods-aBike—Marseille.screenshots.xcconfig */,
+				9597CDD8E878145BA3F64BC9123FE9C9 /* Pods-aBike—Marseille.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Marseille";
+			path = "Target Support Files/Pods-aBike—Marseille";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E294F3BD993E240DCFCB4DC1329C9F36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		515BAB5AFDAED676D3EB3E0BD92EF307 /* Pods-aBike—Toulouse */ = {
+			isa = PBXGroup;
+			children = (
+				5331E63C4AC8E2371C7DC8091F4CAA0A /* Info.plist */,
+				B4AE6057C601E3F0ADF06C2D73BEA9EF /* Pods-aBike—Toulouse.modulemap */,
+				166E2DE0135B3091A1F613C1BB63E3FA /* Pods-aBike—Toulouse-acknowledgements.markdown */,
+				84C3913FE1E36A4E4405A18AACD9429C /* Pods-aBike—Toulouse-acknowledgements.plist */,
+				BEBF3AADBCAB936D78DF743D0C2D03AD /* Pods-aBike—Toulouse-dummy.m */,
+				EEA5BA7E9FB49356DA6659BA7183B171 /* Pods-aBike—Toulouse-frameworks.sh */,
+				BCEB81AB19059A6A524CCD68DC84C7C1 /* Pods-aBike—Toulouse-resources.sh */,
+				76B8DA52B275973E95A9DB0B82583EA6 /* Pods-aBike—Toulouse-umbrella.h */,
+				4DBC5D87849DF7A44B095E9DC5B3A831 /* Pods-aBike—Toulouse.debug.xcconfig */,
+				7F6A11AA324BD1CFB3FF75278C754496 /* Pods-aBike—Toulouse.release.xcconfig */,
+				484A170B37D7B98D9C729B93E7D2785D /* Pods-aBike—Toulouse.screenshots.xcconfig */,
+				D315C0FA06C5BE84D6EB2287A582AC1C /* Pods-aBike—Toulouse.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Toulouse";
+			path = "Target Support Files/Pods-aBike—Toulouse";
+			sourceTree = "<group>";
+		};
+		615CE85555EC8736B44063EE66F6D317 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				D77B5AB9739E358617B376EFCAB7885E /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		73C9D217C2BC357DD7856006E5165717 /* Pods-aBikeFramework-aBike—Lyon */ = {
+			isa = PBXGroup;
+			children = (
+				1FC8D1DF7D8F9D27303C4C9F3E05564D /* Info.plist */,
+				6CC8934B9D7B9B2084AA4FAD85494857 /* Pods-aBikeFramework-aBike—Lyon.modulemap */,
+				0D591104FFD75904841B94138917725A /* Pods-aBikeFramework-aBike—Lyon-acknowledgements.markdown */,
+				BF9D2944C74731C51973C457E01F7759 /* Pods-aBikeFramework-aBike—Lyon-acknowledgements.plist */,
+				C45DED5A5F3BD4CE594694AF4AC8C770 /* Pods-aBikeFramework-aBike—Lyon-dummy.m */,
+				16BE6740F9E70A1E7BEDF8332FCB1E20 /* Pods-aBikeFramework-aBike—Lyon-frameworks.sh */,
+				A16E6F5B59B89D622479C4521A247B13 /* Pods-aBikeFramework-aBike—Lyon-resources.sh */,
+				2F49B7ABEA1C24F085030A62C189719C /* Pods-aBikeFramework-aBike—Lyon-umbrella.h */,
+				5592AF0182B53BDD2C117D945B7D1402 /* Pods-aBikeFramework-aBike—Lyon.debug.xcconfig */,
+				93C0A6FB8EA05264F3815FD2BA83C635 /* Pods-aBikeFramework-aBike—Lyon.release.xcconfig */,
+				7E5564DBF884566B5175B7961619EB11 /* Pods-aBikeFramework-aBike—Lyon.screenshots.xcconfig */,
+				0A661E3B39F587CA7D0203897A082DC7 /* Pods-aBikeFramework-aBike—Lyon.tests.xcconfig */,
+			);
+			name = "Pods-aBikeFramework-aBike—Lyon";
+			path = "Target Support Files/Pods-aBikeFramework-aBike—Lyon";
+			sourceTree = "<group>";
+		};
+		7D45BB5DA8C1F8C1BC0A4D627640B538 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				197EB6F155B32ACD58A88C72A2CF2C1A /* Info.plist */,
+				EF8E81A067AB038B0FE75DD30831D41F /* SimulatorStatusMagic.modulemap */,
+				0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */,
+				D94ED2A7BE7209F57580927D433DC718 /* SimulatorStatusMagic-dummy.m */,
+				2626117F3BAE3180FE64A427824F6287 /* SimulatorStatusMagic-prefix.pch */,
+				B1A8C74AF6A200C2488E806AF5A1748C /* SimulatorStatusMagic-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimulatorStatusMagic";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E60C36987EEE4D706273096C8CC8B2B1 /* Pods */,
+				95DD3D9215444323E4F61738FA8C7660 /* Products */,
+				F54098847B7A7704BDBA024BE5FCC679 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		876F361C705A126E7113FF926E788B8C /* Pods-aBike—Créteil */ = {
+			isa = PBXGroup;
+			children = (
+				9D31D00205CA4BDF4FC0224765FA52BA /* Info.plist */,
+				EE715B8CADB1C0E6A9BB442F52D51C7E /* Pods-aBike—Créteil.modulemap */,
+				069B122493D8E0094164ECDC5A327959 /* Pods-aBike—Créteil-acknowledgements.markdown */,
+				3BE19A85B8A4E9E26ADF5EEDED55354F /* Pods-aBike—Créteil-acknowledgements.plist */,
+				A41CE08B8DB3D53279D80B48A8C783F6 /* Pods-aBike—Créteil-dummy.m */,
+				C1E0163889305456C6A27ACA353A8EC7 /* Pods-aBike—Créteil-frameworks.sh */,
+				1C13CCE83734DB63FEB03FFC99166780 /* Pods-aBike—Créteil-resources.sh */,
+				AF7F3297DA61B3D627B7016A485F87F8 /* Pods-aBike—Créteil-umbrella.h */,
+				190BF761B87AB5A736155EF5D507CD9F /* Pods-aBike—Créteil.debug.xcconfig */,
+				BBDDF4639DD3492ABAB9A3BE4D452C6C /* Pods-aBike—Créteil.release.xcconfig */,
+				80109378C40E29FC0EFB2B56955F5B60 /* Pods-aBike—Créteil.screenshots.xcconfig */,
+				D3F9CF727034F03A53B8A094A8AEE060 /* Pods-aBike—Créteil.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Créteil";
+			path = "Target Support Files/Pods-aBike—Créteil";
+			sourceTree = "<group>";
+		};
+		95DD3D9215444323E4F61738FA8C7660 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AD027AB211AA9E1EB90F58E6EC3FD3D /* Pods_aBike_Bruxelles.framework */,
+				D4180A40E011A6FF2E061AAFEF4833ED /* Pods_aBike_Cr_teil.framework */,
+				F280D5889C58C8AB79D643CC2F016F09 /* Pods_aBike_Dublin.framework */,
+				B2667CEA0C2D74A5C00083D684C6E5EE /* Pods_aBike_Luxembourg.framework */,
+				AAB8D11E5461FBC05AEF7D14AC2F838B /* Pods_aBike_LyonUITests.framework */,
+				BE6B333D12C34AAD2D2F7A5E77530B98 /* Pods_aBike_Marseille.framework */,
+				A6C3528EAF7283A4AD990FD619BB9642 /* Pods_aBike_Mulhouse.framework */,
+				E6EC22683549C2C8303643765C2C7AE4 /* Pods_aBike_Nantes.framework */,
+				5D2C4B3C290249744FA55B9204121D32 /* Pods_aBike_Paris.framework */,
+				BBB59DE363BEAEE7B3A7F440D40E3C68 /* Pods_aBike_Toulouse.framework */,
+				661AABFF9FB7C106EE4F0FFF3335B569 /* Pods_aBikeFramework.framework */,
+				49119EDA73459067E958F200A0AF12ED /* Pods_aBikeFramework_aBike_Lyon.framework */,
+				6598499F9A093900845BF9049579CB8A /* SimulatorStatusMagic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF9032E3493077CF40684E4101A2EB35 /* Reveal-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2441ACFDECA004BA5E0990724EC48695 /* Frameworks */,
+			);
+			path = "Reveal-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		D26ACF20291AC057F96AF30094251017 /* Pods-aBikeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D67795B60863572F8C96128A5A52513C /* Info.plist */,
+				DC0EE8B9E1E9033005C5228181F536E0 /* Pods-aBikeFramework.modulemap */,
+				04EC0999C3553FCFEBA242355F3B2D08 /* Pods-aBikeFramework-acknowledgements.markdown */,
+				DF2CF96AEDBBA4D55ABCFA491DA292E8 /* Pods-aBikeFramework-acknowledgements.plist */,
+				85F78BBCE136A378539939378F5BFC78 /* Pods-aBikeFramework-dummy.m */,
+				F87EE53960F662037E21B1617C1127E3 /* Pods-aBikeFramework-frameworks.sh */,
+				4C0BE91E974D883BDDA9381D41528DE1 /* Pods-aBikeFramework-resources.sh */,
+				CB4A6860BC132B8D5149BFF3CB98F23F /* Pods-aBikeFramework-umbrella.h */,
+				8F759D4E8957EFBA7C79D053B16B1595 /* Pods-aBikeFramework.debug.xcconfig */,
+				62BBC0ED2149BA2D9B57BB8619A633F4 /* Pods-aBikeFramework.release.xcconfig */,
+				A5591A6C143C91CB7A04D7EC27370B4F /* Pods-aBikeFramework.screenshots.xcconfig */,
+				F7A4053E833243A217D71DDB24522204 /* Pods-aBikeFramework.tests.xcconfig */,
+			);
+			name = "Pods-aBikeFramework";
+			path = "Target Support Files/Pods-aBikeFramework";
+			sourceTree = "<group>";
+		};
+		D77B5AB9739E358617B376EFCAB7885E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACBD7B620195F862748981E3A28C8705 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCFACF7ACF9CA0B7C80FAD887CFD9F59 /* Pods-aBike—Paris */ = {
+			isa = PBXGroup;
+			children = (
+				13FA451450395C1D146CCC364C2DFEDC /* Info.plist */,
+				0DD310BD9A85BAB220E36ABFE1D6BB2E /* Pods-aBike—Paris.modulemap */,
+				F1534453AB461DC57F9DCCA545A4BF96 /* Pods-aBike—Paris-acknowledgements.markdown */,
+				82899648C8A7D285AE7AEE2B3587FB27 /* Pods-aBike—Paris-acknowledgements.plist */,
+				8ACCC5FF99E606375A6DE2A785801250 /* Pods-aBike—Paris-dummy.m */,
+				274505A0A29E77C6066D142D983C9493 /* Pods-aBike—Paris-frameworks.sh */,
+				773B2E2365E2134BBAE45D27BDFDD99C /* Pods-aBike—Paris-resources.sh */,
+				BF18AC027B9E2A8C36626DD5B49A1D27 /* Pods-aBike—Paris-umbrella.h */,
+				CDE7C6989649DDE52A7905FCDC0BBFD5 /* Pods-aBike—Paris.debug.xcconfig */,
+				53C1D23E89A39058445880773A3E99F3 /* Pods-aBike—Paris.release.xcconfig */,
+				B7743685E407512ABC155C0D7552C1F9 /* Pods-aBike—Paris.screenshots.xcconfig */,
+				96410A4B5270E9EDD8D609B6308B74ED /* Pods-aBike—Paris.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Paris";
+			path = "Target Support Files/Pods-aBike—Paris";
+			sourceTree = "<group>";
+		};
+		E294F3BD993E240DCFCB4DC1329C9F36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D635D41133915B228CE899EF89DD95CE /* Foundation.framework */,
+				AF066F8D85A4D7A3B3A04D25E4D2AC88 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E60C36987EEE4D706273096C8CC8B2B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3593A8BD9C1D807FB8EB97BCFBFDC518 /* Crashlytics */,
+				615CE85555EC8736B44063EE66F6D317 /* Fabric */,
+				BF9032E3493077CF40684E4101A2EB35 /* Reveal-iOS-SDK */,
+				12DCCB2EFA78A443A7FB37796160CD6E /* SimulatorStatusMagic */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F54098847B7A7704BDBA024BE5FCC679 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D26ACF20291AC057F96AF30094251017 /* Pods-aBikeFramework */,
+				73C9D217C2BC357DD7856006E5165717 /* Pods-aBikeFramework-aBike—Lyon */,
+				2200FC55312AA663D7517D0D79D047FE /* Pods-aBike—Bruxelles */,
+				876F361C705A126E7113FF926E788B8C /* Pods-aBike—Créteil */,
+				FC8A1C5312E49762EC01C8D32D4278C9 /* Pods-aBike—Dublin */,
+				0B47B15B929CAC4192F520A293E0C8D8 /* Pods-aBike—Luxembourg */,
+				206C78FFFB2A64DE668F9E1FF1741DCB /* Pods-aBike—LyonUITests */,
+				4252923C52FD1951FD1FD6495DFE5FAA /* Pods-aBike—Marseille */,
+				04A746DB9C28D2AC1FB6023DC7FCD2AF /* Pods-aBike—Mulhouse */,
+				2631665D3B3D7C47DEF78B4A298ED5DC /* Pods-aBike—Nantes */,
+				DCFACF7ACF9CA0B7C80FAD887CFD9F59 /* Pods-aBike—Paris */,
+				515BAB5AFDAED676D3EB3E0BD92EF307 /* Pods-aBike—Toulouse */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FC8A1C5312E49762EC01C8D32D4278C9 /* Pods-aBike—Dublin */ = {
+			isa = PBXGroup;
+			children = (
+				CAF7CCA525BFB7A4E66401EDD4799E15 /* Info.plist */,
+				5D0A04B6F92BE6C17A07D7D0B4F2D620 /* Pods-aBike—Dublin.modulemap */,
+				2F772F392975FBEECCC07136531A1A1F /* Pods-aBike—Dublin-acknowledgements.markdown */,
+				D38D9A1044E35FD1A97961A2B98C288C /* Pods-aBike—Dublin-acknowledgements.plist */,
+				08741F5F90DCC3170C7FF6B408184590 /* Pods-aBike—Dublin-dummy.m */,
+				6A63C067461B5D0728920B9F8AD80965 /* Pods-aBike—Dublin-frameworks.sh */,
+				F9BD0CB37280A9EDC5615DCD4619847E /* Pods-aBike—Dublin-resources.sh */,
+				84369568F5BDEC553FC9BD318273ECB6 /* Pods-aBike—Dublin-umbrella.h */,
+				2385DF6D46E664E276A24DB9B6A0C9D3 /* Pods-aBike—Dublin.debug.xcconfig */,
+				F21D18E6B2B6D5186C4B6AC9E4150262 /* Pods-aBike—Dublin.release.xcconfig */,
+				20013D6293521CC408B396484A3691F1 /* Pods-aBike—Dublin.screenshots.xcconfig */,
+				386AD3A3EA5F7E4430CF355F6D347C8C /* Pods-aBike—Dublin.tests.xcconfig */,
+			);
+			name = "Pods-aBike—Dublin";
+			path = "Target Support Files/Pods-aBike—Dublin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11377DC39A5BB5362D091C2A699594ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814B566E7154D4A4AD951307FE38AB7E /* Pods-aBike—Créteil-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8FDF0D3611B4F61F3DDCED4FD71DCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73DA6C48F68AAAA6711D019812E58D2 /* Pods-aBike—Luxembourg-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B4E49F70871A183ED47A1B4508B8A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC53605992A00C0F45D8E69622AD764 /* Pods-aBikeFramework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6005A0F6373CB7D6BC060988D3EB8BA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89ABD335878018FB4DB5334409DA571 /* Pods-aBike—Marseille-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84890CB5F0423C445237B5174865873C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61668829EB6190351A492EEC2233BFE /* Pods-aBike—Nantes-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85EFA5032EA98C3B368E77B1D0B7A623 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A28F8197CAE1D386E4FF65F35BC1C66 /* SDStatusBarManager.h in Headers */,
+				7C4A140C8344B4E77D93CAD660F34507 /* SDStatusBarOverrider.h in Headers */,
+				5C87AE41BAD1683E1DC14AC5A92EFFA9 /* SDStatusBarOverriderPost8_3.h in Headers */,
+				927CD10BD92BB46DE4BCA3A40262032F /* SDStatusBarOverriderPost9_0.h in Headers */,
+				E1E6A84BDCDE76E66A0E6A4FE67D0602 /* SDStatusBarOverriderPre8_3.h in Headers */,
+				20CCF233BE7C366A8BE260C7D9C2A054 /* SimulatorStatusMagic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7205C6AED03FB978C8AC6C0E117ADC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F96073CC461AF6EFD97D509FBC59234 /* Pods-aBike—Dublin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CB2002A49672410EB0623A3DD37BFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E3F2899902000C2F38D8DF2F7D3215 /* Pods-aBike—Paris-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E6B59D65303BC194A0A81166BFBB67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F27FFB7C37221B5B8050FFD8EBB259 /* Pods-aBike—LyonUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F8AFFEA6C44EAC1BE4FA87F667FA5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CDC265CB2EA2027603A6F5E50900B /* Pods-aBike—Toulouse-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CC3BFAC15FA4B4DAE4728C79C48F02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAC15CAF404E759287C0EE9B796D5AF /* Pods-aBike—Mulhouse-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDC885D7B142061B280827B2278E1FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FEE3886060CD2A5950ECD7CE5B8D1E /* Pods-aBikeFramework-aBike—Lyon-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA7EB452EF157564C04C1738ACB81AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE122DECDE901B0C3D71DACAF0791411 /* Pods-aBike—Bruxelles-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0665F556BE5C8CAC8DDE89522027B6C3 /* Pods-aBike—Créteil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 882E13DD3E1D5C64E4508947D6FA5B5C /* Build configuration list for PBXNativeTarget "Pods-aBike—Créteil" */;
+			buildPhases = (
+				71E843DE01A8FEEB26616EAAA0A70F64 /* Sources */,
+				5E92F9CB006C276EA1EAADCCE4EFA609 /* Frameworks */,
+				11377DC39A5BB5362D091C2A699594ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Créteil";
+			productName = "Pods-aBike—Créteil";
+			productReference = D4180A40E011A6FF2E061AAFEF4833ED /* Pods_aBike_Cr_teil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BC6B87267369ACBCA5135869BCB35B4 /* Pods-aBike—Nantes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B3D53A5AEB593F2C4EB4782B44F16B /* Build configuration list for PBXNativeTarget "Pods-aBike—Nantes" */;
+			buildPhases = (
+				6152674BEF65C5D91050929B5734C9A1 /* Sources */,
+				4AC541D88FBFDD2CB4716A84B65C0A6A /* Frameworks */,
+				84890CB5F0423C445237B5174865873C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Nantes";
+			productName = "Pods-aBike—Nantes";
+			productReference = E6EC22683549C2C8303643765C2C7AE4 /* Pods_aBike_Nantes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C5E0C5F3974E62E181A8F1B9C574029 /* Pods-aBikeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674E890FE6D36B3406DCD34EE11C2BC5 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */;
+			buildPhases = (
+				2C94A5AE0EECB482A209B8B3C6579912 /* Sources */,
+				66BC2DDDCFA9C116916656F18BC4DFA8 /* Frameworks */,
+				33B4E49F70871A183ED47A1B4508B8A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C56CD63421767C22A61F66E5AA88D39 /* PBXTargetDependency */,
+			);
+			name = "Pods-aBikeFramework";
+			productName = "Pods-aBikeFramework";
+			productReference = 661AABFF9FB7C106EE4F0FFF3335B569 /* Pods_aBikeFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A5758806678002F6A7A7B312D294061 /* Pods-aBike—LyonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F306AD30C694A24A4FE45949B0332C3A /* Build configuration list for PBXNativeTarget "Pods-aBike—LyonUITests" */;
+			buildPhases = (
+				159994F3598646F697E209ECFF480E60 /* Sources */,
+				6302361457AB1CE4D0AFD641E63B526A /* Frameworks */,
+				B3E6B59D65303BC194A0A81166BFBB67 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—LyonUITests";
+			productName = "Pods-aBike—LyonUITests";
+			productReference = AAB8D11E5461FBC05AEF7D14AC2F838B /* Pods_aBike_LyonUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B8650FC6CF84FF497C553B083B755D1 /* Pods-aBike—Dublin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7013C3AD569EBF8F404569FAD469B427 /* Build configuration list for PBXNativeTarget "Pods-aBike—Dublin" */;
+			buildPhases = (
+				FB925F71F217D670E888B927823F5A4C /* Sources */,
+				96204CFA2D0AFB4A39D5908F9223E1B1 /* Frameworks */,
+				8F7205C6AED03FB978C8AC6C0E117ADC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Dublin";
+			productName = "Pods-aBike—Dublin";
+			productReference = F280D5889C58C8AB79D643CC2F016F09 /* Pods_aBike_Dublin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E1E267C867C5F6CA08AD9995ED18881 /* Pods-aBike—Toulouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443654BC31A508DF32DCBA941BD04D8F /* Build configuration list for PBXNativeTarget "Pods-aBike—Toulouse" */;
+			buildPhases = (
+				ADD499817143FC40793FEB71FDD49F94 /* Sources */,
+				7CE81886FBFC5C089BF5F041EA32E8BB /* Frameworks */,
+				B8F8AFFEA6C44EAC1BE4FA87F667FA5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Toulouse";
+			productName = "Pods-aBike—Toulouse";
+			productReference = BBB59DE363BEAEE7B3A7F440D40E3C68 /* Pods_aBike_Toulouse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82FB15772F941954EEB1E1CFF2715DCC /* Pods-aBike—Bruxelles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C8F26B5ADCACC1A46D1E5975AC5C64 /* Build configuration list for PBXNativeTarget "Pods-aBike—Bruxelles" */;
+			buildPhases = (
+				091FF0F2FFE9F4F8854041510EECF2BC /* Sources */,
+				1D8A21590BC387432C78E18185F490EE /* Frameworks */,
+				FEA7EB452EF157564C04C1738ACB81AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Bruxelles";
+			productName = "Pods-aBike—Bruxelles";
+			productReference = 9AD027AB211AA9E1EB90F58E6EC3FD3D /* Pods_aBike_Bruxelles.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C510FDB2433B896152253020D126FB4 /* Pods-aBike—Luxembourg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2DC3323288DD621255EEA4CA89E55D /* Build configuration list for PBXNativeTarget "Pods-aBike—Luxembourg" */;
+			buildPhases = (
+				074F368946D3F79BDB78DE97C149ED06 /* Sources */,
+				C1913D435953EBB98276604D4E8BF6A2 /* Frameworks */,
+				2A8FDF0D3611B4F61F3DDCED4FD71DCD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Luxembourg";
+			productName = "Pods-aBike—Luxembourg";
+			productReference = B2667CEA0C2D74A5C00083D684C6E5EE /* Pods_aBike_Luxembourg.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B54D3602BD274A81161A0F717CBAA2A6 /* Pods-aBike—Marseille */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6C172E764611FE8A498CD1AF6A53E8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Marseille" */;
+			buildPhases = (
+				FAF184E7C8F2EBBFACC9424B256B5105 /* Sources */,
+				0652F96703F0C583E9D24B5BC63D4A1C /* Frameworks */,
+				6005A0F6373CB7D6BC060988D3EB8BA3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Marseille";
+			productName = "Pods-aBike—Marseille";
+			productReference = BE6B333D12C34AAD2D2F7A5E77530B98 /* Pods_aBike_Marseille.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4D0E60FEF0FD37547F070A96F0B1EF9 /* SimulatorStatusMagic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BD0BEBBDF9F406875B6186E015E9F7F /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
+			buildPhases = (
+				E43517B3DA130DB8A4C9E420967942DA /* Sources */,
+				D7BDFD66B6CE0E80B5585E3284CA0369 /* Frameworks */,
+				85EFA5032EA98C3B368E77B1D0B7A623 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimulatorStatusMagic;
+			productName = SimulatorStatusMagic;
+			productReference = 6598499F9A093900845BF9049579CB8A /* SimulatorStatusMagic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D66720D7EF699A3F6B5F014ACCC5A099 /* Pods-aBike—Mulhouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F182B7F5C913F92ECFA76E5993DC3A8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Mulhouse" */;
+			buildPhases = (
+				B70D805D9A29198541BBC3CDCF839E22 /* Sources */,
+				EB8BF472E8E0CDB202369474061AC0C1 /* Frameworks */,
+				E2CC3BFAC15FA4B4DAE4728C79C48F02 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Mulhouse";
+			productName = "Pods-aBike—Mulhouse";
+			productReference = A6C3528EAF7283A4AD990FD619BB9642 /* Pods_aBike_Mulhouse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8572236BA0A798552DF9D38257640B5 /* Pods-aBike—Paris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2829CA4F6CED0109C96B61A5F305C767 /* Build configuration list for PBXNativeTarget "Pods-aBike—Paris" */;
+			buildPhases = (
+				1C95894F98EBF4F760B773565A97257C /* Sources */,
+				6DA917FC1BB4E6F341293B7FC406D467 /* Frameworks */,
+				A3CB2002A49672410EB0623A3DD37BFF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aBike—Paris";
+			productName = "Pods-aBike—Paris";
+			productReference = 5D2C4B3C290249744FA55B9204121D32 /* Pods_aBike_Paris.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5B2CAA21AF7A51C6D756AC04125564E /* Pods-aBikeFramework-aBike—Lyon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB18255050585FAB86D09D816F83962 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework-aBike—Lyon" */;
+			buildPhases = (
+				218F6330700022E85F82B41795F067D4 /* Sources */,
+				3ABF79751A031789C54DD054A267454B /* Frameworks */,
+				EFDC885D7B142061B280827B2278E1FF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F21001FAE0F1148DA2685C6F28E8BEC5 /* PBXTargetDependency */,
+			);
+			name = "Pods-aBikeFramework-aBike—Lyon";
+			productName = "Pods-aBikeFramework-aBike—Lyon";
+			productReference = 49119EDA73459067E958F200A0AF12ED /* Pods_aBikeFramework_aBike_Lyon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 95DD3D9215444323E4F61738FA8C7660 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C5E0C5F3974E62E181A8F1B9C574029 /* Pods-aBikeFramework */,
+				F5B2CAA21AF7A51C6D756AC04125564E /* Pods-aBikeFramework-aBike—Lyon */,
+				82FB15772F941954EEB1E1CFF2715DCC /* Pods-aBike—Bruxelles */,
+				0665F556BE5C8CAC8DDE89522027B6C3 /* Pods-aBike—Créteil */,
+				6B8650FC6CF84FF497C553B083B755D1 /* Pods-aBike—Dublin */,
+				8C510FDB2433B896152253020D126FB4 /* Pods-aBike—Luxembourg */,
+				6A5758806678002F6A7A7B312D294061 /* Pods-aBike—LyonUITests */,
+				B54D3602BD274A81161A0F717CBAA2A6 /* Pods-aBike—Marseille */,
+				D66720D7EF699A3F6B5F014ACCC5A099 /* Pods-aBike—Mulhouse */,
+				4BC6B87267369ACBCA5135869BCB35B4 /* Pods-aBike—Nantes */,
+				D8572236BA0A798552DF9D38257640B5 /* Pods-aBike—Paris */,
+				7E1E267C867C5F6CA08AD9995ED18881 /* Pods-aBike—Toulouse */,
+				D4D0E60FEF0FD37547F070A96F0B1EF9 /* SimulatorStatusMagic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074F368946D3F79BDB78DE97C149ED06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1B11C3D64C2850280156BCF386DD34 /* Pods-aBike—Luxembourg-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091FF0F2FFE9F4F8854041510EECF2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B210CEDB3CAF822630DB88BA45B5E7E8 /* Pods-aBike—Bruxelles-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		159994F3598646F697E209ECFF480E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E657E3B0F6C00999E27CA290051AF6AA /* Pods-aBike—LyonUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C95894F98EBF4F760B773565A97257C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4593C734619523656C5A69245C8836C2 /* Pods-aBike—Paris-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		218F6330700022E85F82B41795F067D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC69D4FC1CA6331441D2A4F443E8077 /* Pods-aBikeFramework-aBike—Lyon-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A5AE0EECB482A209B8B3C6579912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD996E75C2C8C56850BF0BE343874041 /* Pods-aBikeFramework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6152674BEF65C5D91050929B5734C9A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90C1A25004F172D0FA1A24C02703729 /* Pods-aBike—Nantes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E843DE01A8FEEB26616EAAA0A70F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E75B9B556CD2D5A36B3F55EF7A3A9F /* Pods-aBike—Créteil-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD499817143FC40793FEB71FDD49F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933F58A5BC54BCBD08DA0038BEAF3017 /* Pods-aBike—Toulouse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70D805D9A29198541BBC3CDCF839E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7835B6488E2CCC6BD06EE80E1D61CF6 /* Pods-aBike—Mulhouse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43517B3DA130DB8A4C9E420967942DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB933E6B3FFA244F5B9FCA159D8C32A /* SDStatusBarManager.m in Sources */,
+				1121F031EB61025A48D563AC8E18DB3B /* SDStatusBarOverriderPost8_3.m in Sources */,
+				BE3F2AC55515F87A6448494EBD6759AE /* SDStatusBarOverriderPost9_0.m in Sources */,
+				D637A7CA096060790ADAB5F8306AE225 /* SDStatusBarOverriderPre8_3.m in Sources */,
+				32B0C46F9BD64F1D897E36AE791FD28D /* SimulatorStatusMagic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF184E7C8F2EBBFACC9424B256B5105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF5366A7895AE8EB645697850E899BF /* Pods-aBike—Marseille-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB925F71F217D670E888B927823F5A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F62E661A5A47123A6CE236979082187 /* Pods-aBike—Dublin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C56CD63421767C22A61F66E5AA88D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimulatorStatusMagic;
+			target = D4D0E60FEF0FD37547F070A96F0B1EF9 /* SimulatorStatusMagic */;
+			targetProxy = 6B7C45240B1EB1B615FD3A05EE663996 /* PBXContainerItemProxy */;
+		};
+		F21001FAE0F1148DA2685C6F28E8BEC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimulatorStatusMagic;
+			target = D4D0E60FEF0FD37547F070A96F0B1EF9 /* SimulatorStatusMagic */;
+			targetProxy = C7BAA6D6CFA53BD0263B0177489C4E1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00CEEEA8241B3E24D2E488A6A3156B99 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C78C0D0711C8C25EB6F4B2A2D01663 /* Pods-aBike—Luxembourg.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Luxembourg/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Luxembourg/Pods-aBike—Luxembourg.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Luxembourg;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		0A349E0EF2F6B3179FB120439F3AA7D2 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87431E6B57E768A9589F38C16B99A111 /* Pods-aBike—Mulhouse.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Mulhouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Mulhouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		0A388D48CBBF3491170C953B35745891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C1D23E89A39058445880773A3E99F3 /* Pods-aBike—Paris.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Paris/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Paris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F029D536F7EE3AC8268AF4265E0D4C1 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80109378C40E29FC0EFB2B56955F5B60 /* Pods-aBike—Créteil.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Créteil/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Créteil/Pods-aBike—Créteil.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Cr_teil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		0F26386829ECDEF9E619426E761581B5 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20013D6293521CC408B396484A3691F1 /* Pods-aBike—Dublin.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Dublin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Dublin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		0F50E34234B0709A861961EBFFA9F81C /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF028554167251DC5742DD0379C44470 /* Pods-aBike—Bruxelles.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Bruxelles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Bruxelles;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		1199D363E4D797CA6848EEAACDF39465 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E281265EC85B2285A314D59A22AF7551 /* Pods-aBike—Mulhouse.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Mulhouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Mulhouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		14E032C54192A4AA80FF8DCC40029E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBDDF4639DD3492ABAB9A3BE4D452C6C /* Pods-aBike—Créteil.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Créteil/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Créteil/Pods-aBike—Créteil.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Cr_teil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14FEB03A99E4F7F8A24CB254DF053558 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39B5316CF40D34FBAA181AFE3395B9D /* Pods-aBike—Bruxelles.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Bruxelles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Bruxelles;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		18187081A85B29B8C2F2F857FA8B4008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A81FE7A35EF98149676A8EAFC355A6A /* Pods-aBike—Marseille.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Marseille/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Marseille;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D35EE3FE6792D024AEC0877450B8B30 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5564DBF884566B5175B7961619EB11 /* Pods-aBikeFramework-aBike—Lyon.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Pods-aBikeFramework-aBike—Lyon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework_aBike_Lyon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		23E2B2F7C33340D4AE33D7439950910D /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386AD3A3EA5F7E4430CF355F6D347C8C /* Pods-aBike—Dublin.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Dublin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Dublin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		24C600C203E92207DA4C39E0262DA5F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F759D4E8957EFBA7C79D053B16B1595 /* Pods-aBikeFramework.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2822A59332935B74DA673F705EC00D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F21D18E6B2B6D5186C4B6AC9E4150262 /* Pods-aBike—Dublin.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Dublin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Dublin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29F1CF33F0A0678D27D0273688C2C0C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198019E59D11EB4A26EED07BD2FC4F14 /* Pods-aBike—Bruxelles.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Bruxelles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Bruxelles;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		314C762B0700E9DE80955F19CC8648C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33E2D1D598F8258A044CA5E5A0BB842A /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A661E3B39F587CA7D0203897A082DC7 /* Pods-aBikeFramework-aBike—Lyon.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Pods-aBikeFramework-aBike—Lyon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework_aBike_Lyon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		34B1F5A8A24897108F4FD4BAD8637397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2962B3D983E913F9291BC40AF01EF21A /* Pods-aBike—Luxembourg.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Luxembourg/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Luxembourg/Pods-aBike—Luxembourg.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Luxembourg;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47D0ECD8C0117D7BE8DF646E4904FEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190BF761B87AB5A736155EF5D507CD9F /* Pods-aBike—Créteil.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Créteil/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Créteil/Pods-aBike—Créteil.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Cr_teil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52A9C58D66ED46FFF1E071ECF1BED3A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2385DF6D46E664E276A24DB9B6A0C9D3 /* Pods-aBike—Dublin.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Dublin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Dublin/Pods-aBike—Dublin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Dublin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53C2BDA60F1F4892E8BCED4183079DA1 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7743685E407512ABC155C0D7552C1F9 /* Pods-aBike—Paris.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Paris/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Paris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		553C8C386583A21E9BCA8AF5224E5395 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D315C0FA06C5BE84D6EB2287A582AC1C /* Pods-aBike—Toulouse.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Toulouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Toulouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		567A0D5A7CC57B60A7F2B987EA4FF4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BBC0ED2149BA2D9B57BB8619A633F4 /* Pods-aBikeFramework.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AAC34858BC6BE34ED38250A6AE8FA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E3BCC6236CF8917B4EBCA5ADE6C313 /* Pods-aBike—Marseille.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Marseille/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Marseille;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EACAA40D16596403845FF25DE38C1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBC5D87849DF7A44B095E9DC5B3A831 /* Pods-aBike—Toulouse.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Toulouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Toulouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64134E6772E89767A59FA7968AA7BC7A /* Tests */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_TESTS=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Tests;
+		};
+		6B978DE46882E1671DE93CF7B1B748DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8686643C8AF9A167C478296DBC0E0FBF /* Pods-aBike—Luxembourg.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Luxembourg/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Luxembourg/Pods-aBike—Luxembourg.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Luxembourg;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F3CCDCFE96F34D5A85F21F346198E54 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_SCREENSHOTS=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Screenshots;
+		};
+		73F3F3981ECAFD1B29F5E0BF92C4D355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE7C6989649DDE52A7905FCDC0BBFD5 /* Pods-aBike—Paris.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Paris/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Paris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		778AAC1C8842D7CC648793AA34784644 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A78B29EF53E0C4BD0C2647916922454 /* Pods-aBike—LyonUITests.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—LyonUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—LyonUITests/Pods-aBike—LyonUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_LyonUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		7A86DBFCC3AB9B6409A1D45AA3DBC429 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5591A6C143C91CB7A04D7EC27370B4F /* Pods-aBikeFramework.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		7B15B80B0B7DD6BCFFCC31B59957FE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E485CC7863A388C65743B72E8E4F96F6 /* Pods-aBike—LyonUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—LyonUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—LyonUITests/Pods-aBike—LyonUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_LyonUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CC16913842D1BB7DDC1F2140CA12A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5592AF0182B53BDD2C117D945B7D1402 /* Pods-aBikeFramework-aBike—Lyon.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Pods-aBikeFramework-aBike—Lyon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework_aBike_Lyon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80F41E7CF39DDE2E708A315BF0416E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		811519CB8F683AC06F9C98B55AC40F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		882EB4391EC2E701934974DA86F7343F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8A5BE569D7177BEDF0A02540CFFE393D /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A4053E833243A217D71DDB24522204 /* Pods-aBikeFramework.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework/Pods-aBikeFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		8BDD68021ECF9DB4A285E308DDB18E43 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484A170B37D7B98D9C729B93E7D2785D /* Pods-aBike—Toulouse.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Toulouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Toulouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		8F2A3DE99BE70F41E2C4B6CE8EA6CDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B269903BCE2C2782C7D3289AFA8A9E73 /* Pods-aBike—Mulhouse.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Mulhouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Mulhouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91FAC059BC5064533532209C38BDABCE /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700B46DB277ECE77AE0C646832874720 /* Pods-aBike—Marseille.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Marseille/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Marseille;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		A2EF9E4EBF2E2EE896E595EA5C9E7842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480B430457873217A873B063938E397A /* Pods-aBike—LyonUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—LyonUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—LyonUITests/Pods-aBike—LyonUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_LyonUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4094699FFD27E3E48D42F2DC5ECB563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6A11AA324BD1CFB3FF75278C754496 /* Pods-aBike—Toulouse.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Toulouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Toulouse/Pods-aBike—Toulouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Toulouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A453FBFACC7BB2C3D6B7C05EF2AB65F1 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96410A4B5270E9EDD8D609B6308B74ED /* Pods-aBike—Paris.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Paris/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Paris/Pods-aBike—Paris.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Paris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		A82269D93DEE8E6F18F2F4BFB8B60992 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4621D4A31FA6EF36E200DB3A794FAEE /* Pods-aBike—Nantes.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Nantes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Nantes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		ADDB3663E9B58165C8D593B1F5068EE4 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DE879C8E5A411EBBA032A955B4FE77 /* Pods-aBike—Nantes.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Nantes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Nantes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		B31FF63A40362DA797AA639064A56575 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9597CDD8E878145BA3F64BC9123FE9C9 /* Pods-aBike—Marseille.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Marseille/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Marseille/Pods-aBike—Marseille.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Marseille;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		BB08EA4B2DB7B6B4611980DA161D7885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9B867C398F1B5CBF921893505AB8D3 /* Pods-aBike—Nantes.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Nantes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Nantes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCC63EF239CF1A7B75829351B3E0EA4A /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F9CF727034F03A53B8A094A8AEE060 /* Pods-aBike—Créteil.tests.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Créteil/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Créteil/Pods-aBike—Créteil.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Cr_teil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		C762C664E6E374D2580403C6BDBDAD72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE603F7524D8CC925BD937F4793AC8AC /* Pods-aBike—Nantes.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Nantes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Nantes/Pods-aBike—Nantes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Nantes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D34C5525C8E7251B726D7CAC0310149A /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15C9A5E689CA7288E4A9FB0F676FE38C /* Pods-aBike—LyonUITests.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—LyonUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—LyonUITests/Pods-aBike—LyonUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_LyonUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		D63553ABFCA86A1BD770BAFCD4936410 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Tests;
+		};
+		D82CB65F98EC802C5946AB83BDAF049D /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F560F5DC37F9E300E3F05E0974FFF70 /* Pods-aBike—Luxembourg.screenshots.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Luxembourg/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Luxembourg/Pods-aBike—Luxembourg.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Luxembourg;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		E0934D94E1DF951270CDCF4B1E864665 /* Screenshots */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E83CBECD8538594734B6F1CA9B5AB2D /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Screenshots;
+		};
+		EB4245C9186A40FB7019AEFC10DA1AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DD5087F9785873F9C56A133EDCA39F /* Pods-aBike—Bruxelles.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Bruxelles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Bruxelles/Pods-aBike—Bruxelles.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Bruxelles;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF8A535EB050D1260B4316EA9F6E85A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C0A6FB8EA05264F3815FD2BA83C635 /* Pods-aBikeFramework-aBike—Lyon.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBikeFramework-aBike—Lyon/Pods-aBikeFramework-aBike—Lyon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBikeFramework_aBike_Lyon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC17AC178F81CEECB66C665021A8018E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E57843A8773903F80940CAC9049B67 /* Pods-aBike—Mulhouse.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-aBike—Mulhouse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-aBike—Mulhouse/Pods-aBike—Mulhouse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_aBike_Mulhouse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C8F26B5ADCACC1A46D1E5975AC5C64 /* Build configuration list for PBXNativeTarget "Pods-aBike—Bruxelles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F1CF33F0A0678D27D0273688C2C0C4 /* Debug */,
+				EB4245C9186A40FB7019AEFC10DA1AA9 /* Release */,
+				0F50E34234B0709A861961EBFFA9F81C /* Screenshots */,
+				14FEB03A99E4F7F8A24CB254DF053558 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F182B7F5C913F92ECFA76E5993DC3A8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Mulhouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC17AC178F81CEECB66C665021A8018E /* Debug */,
+				8F2A3DE99BE70F41E2C4B6CE8EA6CDE8 /* Release */,
+				0A349E0EF2F6B3179FB120439F3AA7D2 /* Screenshots */,
+				1199D363E4D797CA6848EEAACDF39465 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2829CA4F6CED0109C96B61A5F305C767 /* Build configuration list for PBXNativeTarget "Pods-aBike—Paris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F3F3981ECAFD1B29F5E0BF92C4D355 /* Debug */,
+				0A388D48CBBF3491170C953B35745891 /* Release */,
+				53C2BDA60F1F4892E8BCED4183079DA1 /* Screenshots */,
+				A453FBFACC7BB2C3D6B7C05EF2AB65F1 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882EB4391EC2E701934974DA86F7343F /* Debug */,
+				811519CB8F683AC06F9C98B55AC40F11 /* Release */,
+				6F3CCDCFE96F34D5A85F21F346198E54 /* Screenshots */,
+				64134E6772E89767A59FA7968AA7BC7A /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443654BC31A508DF32DCBA941BD04D8F /* Build configuration list for PBXNativeTarget "Pods-aBike—Toulouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EACAA40D16596403845FF25DE38C1CC /* Debug */,
+				A4094699FFD27E3E48D42F2DC5ECB563 /* Release */,
+				8BDD68021ECF9DB4A285E308DDB18E43 /* Screenshots */,
+				553C8C386583A21E9BCA8AF5224E5395 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BD0BEBBDF9F406875B6186E015E9F7F /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F41E7CF39DDE2E708A315BF0416E9E /* Debug */,
+				314C762B0700E9DE80955F19CC8648C8 /* Release */,
+				E0934D94E1DF951270CDCF4B1E864665 /* Screenshots */,
+				D63553ABFCA86A1BD770BAFCD4936410 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674E890FE6D36B3406DCD34EE11C2BC5 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C600C203E92207DA4C39E0262DA5F6 /* Debug */,
+				567A0D5A7CC57B60A7F2B987EA4FF4EB /* Release */,
+				7A86DBFCC3AB9B6409A1D45AA3DBC429 /* Screenshots */,
+				8A5BE569D7177BEDF0A02540CFFE393D /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7013C3AD569EBF8F404569FAD469B427 /* Build configuration list for PBXNativeTarget "Pods-aBike—Dublin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A9C58D66ED46FFF1E071ECF1BED3A7 /* Debug */,
+				2822A59332935B74DA673F705EC00D50 /* Release */,
+				0F26386829ECDEF9E619426E761581B5 /* Screenshots */,
+				23E2B2F7C33340D4AE33D7439950910D /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6C172E764611FE8A498CD1AF6A53E8 /* Build configuration list for PBXNativeTarget "Pods-aBike—Marseille" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AAC34858BC6BE34ED38250A6AE8FA2F /* Debug */,
+				18187081A85B29B8C2F2F857FA8B4008 /* Release */,
+				91FAC059BC5064533532209C38BDABCE /* Screenshots */,
+				B31FF63A40362DA797AA639064A56575 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CB18255050585FAB86D09D816F83962 /* Build configuration list for PBXNativeTarget "Pods-aBikeFramework-aBike—Lyon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC16913842D1BB7DDC1F2140CA12A76 /* Debug */,
+				EF8A535EB050D1260B4316EA9F6E85A5 /* Release */,
+				1D35EE3FE6792D024AEC0877450B8B30 /* Screenshots */,
+				33E2D1D598F8258A044CA5E5A0BB842A /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		882E13DD3E1D5C64E4508947D6FA5B5C /* Build configuration list for PBXNativeTarget "Pods-aBike—Créteil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D0ECD8C0117D7BE8DF646E4904FEE0 /* Debug */,
+				14E032C54192A4AA80FF8DCC40029E27 /* Release */,
+				0F029D536F7EE3AC8268AF4265E0D4C1 /* Screenshots */,
+				BCC63EF239CF1A7B75829351B3E0EA4A /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0B3D53A5AEB593F2C4EB4782B44F16B /* Build configuration list for PBXNativeTarget "Pods-aBike—Nantes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB08EA4B2DB7B6B4611980DA161D7885 /* Debug */,
+				C762C664E6E374D2580403C6BDBDAD72 /* Release */,
+				A82269D93DEE8E6F18F2F4BFB8B60992 /* Screenshots */,
+				ADDB3663E9B58165C8D593B1F5068EE4 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2DC3323288DD621255EEA4CA89E55D /* Build configuration list for PBXNativeTarget "Pods-aBike—Luxembourg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B978DE46882E1671DE93CF7B1B748DA /* Debug */,
+				34B1F5A8A24897108F4FD4BAD8637397 /* Release */,
+				D82CB65F98EC802C5946AB83BDAF049D /* Screenshots */,
+				00CEEEA8241B3E24D2E488A6A3156B99 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F306AD30C694A24A4FE45949B0332C3A /* Build configuration list for PBXNativeTarget "Pods-aBike—LyonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EF9E4EBF2E2EE896E595EA5C9E7842 /* Debug */,
+				7B15B80B0B7DD6BCFFCC31B59957FE6E /* Release */,
+				D34C5525C8E7251B726D7CAC0310149A /* Screenshots */,
+				778AAC1C8842D7CC648793AA34784644 /* Tests */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -22,12 +22,12 @@ target 'aBikeFramework' do
 
 	pod 'Crashlytics', :configuration => ['Release']
 
-	target 'aBike—Lyon' do
+	target 'aBike—LyonUITests' do
 		inherit! :search_paths
-		
-		target 'aBike—LyonUITests' do
-			inherit! :search_paths
-		end
+	end
+
+	target 'aBike—Lyon' do
+		# inherit! :search_paths
 	end
 
 	target 'aBike—Bruxelles' do

@@ -27,6 +27,15 @@
             </LocationScenarioReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "593AD9521C495217003B686A"
+            BuildableName = "aBikeFramework.framework"
+            BlueprintName = "aBikeFramework"
+            ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

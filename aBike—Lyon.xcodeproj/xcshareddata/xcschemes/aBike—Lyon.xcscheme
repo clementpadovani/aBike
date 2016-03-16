@@ -11,6 +11,20 @@
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "593AD9521C495217003B686A"
+               BuildableName = "aBikeFramework.framework"
+               BlueprintName = "aBikeFramework"
+               ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES"
             hideIssues = "NO">
             <BuildableReference

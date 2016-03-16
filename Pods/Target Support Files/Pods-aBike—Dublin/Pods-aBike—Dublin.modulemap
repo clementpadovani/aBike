@@ -1,0 +1,6 @@
+framework module Pods_aBike_Dublin {
+  umbrella header "Pods-aBike—Dublin-umbrella.h"
+
+  export *
+  module * { export * }
+}
