@@ -4,9 +4,11 @@ config = File.expand_path('../../', __FILE__)
 $LOAD_PATH.unshift(config) unless $LOAD_PATH.include?(config)
 require 'aBike.rb'
 
-def copyDeliverfile
+def lyon_copyDeliverfile
 
 	deliverFile = File.expand_path File.dirname(__FILE__)
+
+	puts "deliver: #{deliverFile}"
 
 	deliverFile += "/Deliverfile"
 
@@ -20,7 +22,7 @@ def copyDeliverfile
 
 end
 
-def deleteDeliverfile
+def lyon_deleteDeliverfile
 
 	copiedPath = Dir.pwd + "/Deliverfile"
 
@@ -46,13 +48,13 @@ private_lane :lyon_appstore do |options|
 		 export_method: "app-store"
 	)
 
-	copyDeliverfile
+	lyon_copyDeliverfile
 
 	deliver(
 		automatic_release: options[:automatic_release],
 		skip_screenshots: options[:skip_screenshots]
 	)
 
-	deleteDeliverfile
+	lyon_deleteDeliverfile
 
 end
