@@ -6,15 +6,9 @@ def bumpBuildNumber
 
 	currentBuildNumber = build_settings["CP_CURRENT_BUILD"].to_i
 
-	puts "currentBuildNumber: #{currentBuildNumber}"
-
 	currentBuildNumber += 1
 
-	puts "currentBuildNumber: #{currentBuildNumber}"
-
 	build_settings["CP_CURRENT_BUILD"] = "#{currentBuildNumber}\n"
-
-	puts "currentBuildNumber: #{build_settings}"
 
 	File.open(xcconfig_path, "w")
 

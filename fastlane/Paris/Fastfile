@@ -32,17 +32,17 @@ def deleteDeliverfile
 
 end
 
-private_lane :lyon_appstore do |options|
+private_lane :paris_appstore do |options|
 
 	gym(
 	     workspace: "aBike—Lyon.xcworkspace",
-	     scheme: "aBike—Lyon",
+	     scheme: "aBike—Paris",
 	     clean: true,
 	     configuration: "Release",
 	     include_bitcode: true,
 	     export_team_id: "W48L6Z4654",
 		 output_directory: "./build",
-		 output_name: "aBike—Lyon",
+		 output_name: "aBike—Paris",
 		 export_method: "app-store"
 	)
 
