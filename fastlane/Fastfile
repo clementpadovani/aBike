@@ -11,6 +11,12 @@ end
 
 lane :appstore do
 
+	puts "Current build version: #{getCurrentBuildVersion}"
+
+	buildVersion = prompt(text: "Build Version: ")
+
+	updateBuildVersion(buildVersion)
+
 	bumpBuildNumber
 
 	lyon_appstore
