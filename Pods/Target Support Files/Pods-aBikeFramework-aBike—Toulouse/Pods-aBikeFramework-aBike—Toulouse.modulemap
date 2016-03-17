@@ -1,0 +1,6 @@
+framework module Pods_aBikeFramework_aBike_Toulouse {
+  umbrella header "Pods-aBikeFramework-aBike—Toulouse-umbrella.h"
+
+  export *
+  module * { export * }
+}

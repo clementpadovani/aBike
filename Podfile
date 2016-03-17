@@ -22,48 +22,76 @@ target 'aBikeFramework' do
 
 	pod 'Crashlytics', :configuration => ['Release']
 
-	target 'aBike—LyonUITests' do
+	target 'aBike—Lyon' do
 		inherit! :search_paths
+
 	end
 
-	target 'aBike—Lyon' do
+	target 'aBike—LyonUITests' do
 		# inherit! :search_paths
 	end
 
+
 	target 'aBike—Bruxelles' do
+	end
+
+	target 'aBike—BruxellesUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Marseille' do
+	end
+
+	target 'aBike—MarseilleUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Mulhouse' do
+	end
+
+	target 'aBike—MulhouseUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Nantes' do
+	end
+
+	target 'aBike—NantesUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Paris' do
+	end
+
+	target 'aBike—ParisUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Toulouse' do
+	end
+
+	target 'aBike—ToulouseUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Créteil' do
+	end
+
+	target 'aBike—CréteilUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Dublin' do
+	end
+
+	target 'aBike—DublinUITests' do
 		inherit! :search_paths
 	end
 
 	target 'aBike—Luxembourg' do
-		inherit! :search_paths
 	end
 
+	target 'aBike—LuxembourgUITests' do
+		inherit! :search_paths
+	end
 end
