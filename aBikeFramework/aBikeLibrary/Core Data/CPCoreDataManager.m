@@ -130,6 +130,9 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 	mainstoreURL = [[mainstoreURL URLByAppendingPathComponent: projectName] URLByAppendingPathExtension: @"sqlite"];
 
+	if (![[NSFileManager defaultManager] fileExistsAtPath: [mainstoreURL path]])
+		return;
+
 	NSPersistentStoreCoordinator *tempPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
 
 	NSError *addError = nil;
