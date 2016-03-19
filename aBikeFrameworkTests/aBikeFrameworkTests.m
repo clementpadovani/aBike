@@ -172,4 +172,20 @@
 	XCTAssertEqualObjects([fakeStation dataContentAge], updateDate);
 }
 
+- (void) testApplicationSupportDirectory
+{
+	NSURL *applicationSupportDirectory = [[CPCoreDataManager sharedCoreDataManager] applicationSupportDirectoryURL];
+
+	XCTAssertNotNil(applicationSupportDirectory);
+
+	BOOL isDirectory = NO;
+
+	BOOL objectExists = [[NSFileManager defaultManager] fileExistsAtPath: [applicationSupportDirectory path]
+															 isDirectory: &isDirectory];
+
+	XCTAssertTrue(objectExists);
+
+	XCTAssertTrue(isDirectory);
+}
+
 @end

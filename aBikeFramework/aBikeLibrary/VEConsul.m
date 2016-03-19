@@ -568,10 +568,19 @@ static VEConsul *_sharedConsul = nil;
 		return;
 	}
 	
-	[[CPCoreDataManager sharedCoreDataManager] performSaveWithCompletionBlock: ^(BOOL hasSaved, NSArray *saveErrors) {
+	[[CPCoreDataManager sharedCoreDataManager] performSaveWithCompletionBlock: ^(BOOL hasSaved, NSArray <NSError *> *saveErrors) {
 		
 		//CPLog(@"has saved: %@", hasSaved ? @"YES" : @"NO");
-		
+
+#if kEnableCrashlytics
+
+		for (NSError *anError in saveErrors)
+			[[Crashlytics sharedInstance] recordError: anError];
+
+#endif
+
+		CPLog(@"errors: %@", saveErrors);
+
 		NSAssert(hasSaved, @"Save errors: %@", saveErrors);
 		
 	}];
