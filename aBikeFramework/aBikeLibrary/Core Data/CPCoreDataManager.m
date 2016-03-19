@@ -14,7 +14,7 @@
 
 static CPCoreDataManager *_sharedCoreDataManager = nil;
 
-static const NSString * kCPCoreDataManagerProjectName;
+static NSString * kCPCoreDataManagerProjectName;
 
 static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
@@ -31,9 +31,9 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 @property (strong, nonatomic, readwrite) VEManagedObjectContext *searchMemoryContext;
 
-@property (strong, nonatomic) NSURL *documentsDirectoryURL;
+@property (copy, nonatomic) NSURL *documentsDirectoryURL;
 
-@property (strong, nonatomic) NSURL *applicationSupportDirectoryURL;
+@property (copy, nonatomic, readwrite) NSURL *applicationSupportDirectoryURL;
 
 - (void) removeDataStoreFromBackups;
 
@@ -43,9 +43,6 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 + (CPCoreDataManager *) sharedCoreDataManager
 {
-	if (_sharedCoreDataManager)
-		return _sharedCoreDataManager;
-	
 	static dispatch_once_t onceToken;
 	
 	dispatch_once(&onceToken, ^{
@@ -55,6 +52,8 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 		kCPCoreDataManagerProjectName = [[VEConsul sharedConsul] contractName];
 		
 		[_sharedCoreDataManager removeDataStoreFromBackups];
+
+		[_sharedCoreDataManager testVersions];
 	});
 	
 	return _sharedCoreDataManager;
@@ -101,8 +100,14 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 	#endif
 
+	NSError *anError = [NSError errorWithDomain: NSCocoaErrorDomain
+										   code: NSPersistentStoreIncompatibleSchemaError
+									   userInfo: nil];
+
+	NSArray *test = @[anError];
+
 	if (hasSaved)
-		completionBlock(YES, nil);
+		completionBlock(YES, test);
 	
 	NSMutableArray *saveTempErrors = nil;
 	
@@ -116,10 +121,56 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 		if (!hasSavedUser)
 			[saveTempErrors addObject: userSaveError];
 	}
-	
+
+
 	NSArray *saveErrors = [saveTempErrors copy];
 	
 	completionBlock(hasSaved, saveErrors);
+}
+
+- (void) testVersions
+{
+	NSError *mainError = nil;
+
+	NSURL *mainstoreURL = [self applicationSupportDirectoryURL];
+
+	NSString *projectName = (NSString *) kCPCoreDataManagerProjectName;
+
+	mainstoreURL = [[mainstoreURL URLByAppendingPathComponent: projectName] URLByAppendingPathExtension: @"sqlite"];
+
+	NSPersistentStoreCoordinator *tempPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
+
+	NSError *addError = nil;
+
+	NSDictionary *configuration = @{NSReadOnlyPersistentStoreOption : @(YES)};
+
+	NSPersistentStore *store = [tempPersistentStoreCoordinator addPersistentStoreWithType: NSSQLiteStoreType
+																			configuration: nil
+																					  URL: mainstoreURL
+																				  options: configuration
+																					error: &addError];
+
+	if (addError)
+		CPLog(@"error: %@", addError);
+
+//	NSDictionary *mainStoreMetadata = [[self persistentStoreCoordinator] metadataForPersistentStore: [[self persistentStoreCoordinator] persistentStores][0]];
+
+	NSDictionary *mainStoreMetadata = [store metadata];
+
+	if (mainError)
+		CPLog(@"error: %@", mainError);
+
+	NSManagedObjectModel *model = [self model];
+
+	BOOL isCompatible = [model isConfiguration: nil
+				   compatibleWithStoreMetadata: mainStoreMetadata];
+
+	CPLog(@"compatible: %@", isCompatible ? @"YES" : @"NO");
+
+	if (!isCompatible)
+	{
+
+	}
 }
 
 - (NSManagedObjectModel *) model
@@ -142,9 +193,9 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	{
 		NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
 		
-		NSError *storeError;
+		NSError *storeError = nil;
 		
-		NSPersistentStore *newStore;
+		NSPersistentStore *newStore = nil;
 		
 		NSURL *storeURL = [self applicationSupportDirectoryURL];
 		
@@ -170,6 +221,9 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 			[[Crashlytics sharedInstance] recordError: storeError];
 
 		#endif
+
+		if (storeError)
+			CPLog(@"store error: %@", storeError);
 
 		NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
 		
@@ -205,9 +259,9 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	{
 		NSPersistentStoreCoordinator *userPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
 		
-		NSError *storeError;
+		NSError *storeError = nil;
 		
-		NSPersistentStore *newStore;
+		NSPersistentStore *newStore = nil;
 		
 		NSURL *storeURL = [self documentsDirectoryURL];
 		
@@ -232,6 +286,8 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 		#endif
 
+		if (storeError)
+			CPLog(@"store error: %@", storeError);
 
 		NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
 		
@@ -267,9 +323,9 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	{
 		NSPersistentStoreCoordinator *memoryPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
 		
-		NSError *storeError;
+		NSError *storeError = nil;
 		
-		NSPersistentStore *newStore;
+		NSPersistentStore *newStore = nil;
 		
 		newStore = [memoryPersistentStoreCoordinator addPersistentStoreWithType: NSInMemoryStoreType
 													   configuration: @"Memory"
@@ -336,15 +392,13 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 {	
 	NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
 	
-	NSError *storeError;
+	NSError *storeError = nil;
 	
-	NSPersistentStore *newStore;
+	NSPersistentStore *newStore = nil;
 	
 	NSURL *storeURL = [self applicationSupportDirectoryURL];
-	
-	NSString *projectName = (NSString *) kCPCoreDataManagerProjectName;
-	
-	storeURL = [[storeURL URLByAppendingPathComponent: projectName] URLByAppendingPathExtension: @"sqlite"];
+
+	storeURL = [[storeURL URLByAppendingPathComponent: kCPCoreDataManagerProjectName] URLByAppendingPathExtension: @"sqlite"];
 	
 	NSDictionary *pragmaDictionary = @{ @"journal_mode" : @"DELETE" };
 
@@ -365,6 +419,8 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 	#endif
 
+	if (storeError)
+		CPLog(@"store error: %@", storeError);
 
 
 	NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
@@ -417,7 +473,7 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	
 	NSURL *documentsDirectoryURL = [self applicationSupportDirectoryURL];
 	
-	_documentsDirectoryURL = documentsDirectoryURL;
+	_documentsDirectoryURL = [documentsDirectoryURL copy];
 	
 	return _documentsDirectoryURL;
 	
@@ -434,11 +490,18 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	#if TARGET_OS_TV
 
 	NSURL *applicationSupportDirectoryURL = [[[NSFileManager defaultManager] URLsForDirectory: NSCachesDirectory inDomains: NSUserDomainMask] firstObject];
+
 	#else
 	NSURL *applicationSupportDirectoryURL = [[[NSFileManager defaultManager] URLsForDirectory: NSApplicationSupportDirectory inDomains: NSUserDomainMask] firstObject];
 
 	#endif
-	
+
+	NSURL *parentDirectory = [applicationSupportDirectoryURL copy];
+
+	applicationSupportDirectoryURL = [applicationSupportDirectoryURL URLByAppendingPathComponent: kCPCoreDataManagerProjectName
+																					 isDirectory: YES];
+
+
 	if (![[NSFileManager defaultManager] fileExistsAtPath: [applicationSupportDirectoryURL path] isDirectory: NULL])
 	{
 		NSError *creationError = nil;
@@ -447,6 +510,56 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 										   withIntermediateDirectories: YES
 														attributes: nil
 															error: &creationError];
+
+		NSURL *storeURL = parentDirectory;
+
+		storeURL = [[storeURL URLByAppendingPathComponent: kCPCoreDataManagerProjectName] URLByAppendingPathExtension: @"sqlite"];
+
+		// Migrate
+
+		if ([[NSFileManager defaultManager] fileExistsAtPath: [storeURL path]])
+		{
+			NSError *copyError = nil;
+
+			NSURL *newStoreURL = applicationSupportDirectoryURL;
+
+			newStoreURL = [[newStoreURL URLByAppendingPathComponent: kCPCoreDataManagerProjectName] URLByAppendingPathExtension: @"sqlite"];
+
+			if (![[NSFileManager defaultManager] moveItemAtURL: storeURL
+														 toURL: newStoreURL
+														 error: &copyError])
+			{
+				CPLog(@"copy error: %@", copyError);
+
+				#if kEnableCrashlytics
+					[[Crashlytics sharedInstance] recordError: copyError];
+				#endif
+			}
+		}
+
+		NSURL *userStoreURL = parentDirectory;
+
+		userStoreURL = [[userStoreURL URLByAppendingPathComponent: kCPCoreDataManagerUserFileName] URLByAppendingPathExtension: @"sqlite"];
+
+		if ([[NSFileManager defaultManager] fileExistsAtPath: [userStoreURL path]])
+		{
+			NSError *copyError = nil;
+
+			NSURL *newStoreURL = applicationSupportDirectoryURL;
+
+			newStoreURL = [[newStoreURL URLByAppendingPathComponent: kCPCoreDataManagerUserFileName] URLByAppendingPathExtension: @"sqlite"];
+
+			if (![[NSFileManager defaultManager] moveItemAtURL: userStoreURL
+														 toURL: newStoreURL
+														 error: &copyError])
+			{
+				CPLog(@"copy error: %@", copyError);
+
+#if kEnableCrashlytics
+				[[Crashlytics sharedInstance] recordError: copyError];
+#endif
+			}
+		}
 
 #if kEnableCrashlytics
 
@@ -484,7 +597,7 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	
 #endif
 	
-	_applicationSupportDirectoryURL = applicationSupportDirectoryURL;
+	_applicationSupportDirectoryURL = [applicationSupportDirectoryURL copy];
 	
 	return _applicationSupportDirectoryURL;
 }

@@ -1,6 +1,10 @@
+$:.unshift File.dirname("../.." + __FILE__)
+
+require '../Various/version.rb'
+
 module CPaBike
 
-VERSION = "3.0.2"
+VERSION = getCurrentBuildVersion
 
 RELEASE_NOTES = ({
 

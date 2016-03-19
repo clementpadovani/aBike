@@ -568,13 +568,46 @@ static VEConsul *_sharedConsul = nil;
 		return;
 	}
 	
-	[[CPCoreDataManager sharedCoreDataManager] performSaveWithCompletionBlock: ^(BOOL hasSaved, NSArray *saveErrors) {
+	[[CPCoreDataManager sharedCoreDataManager] performSaveWithCompletionBlock: ^(BOOL hasSaved, NSArray <NSError *> *saveErrors) {
 		
 		//CPLog(@"has saved: %@", hasSaved ? @"YES" : @"NO");
+
+		BOOL containsMigrationError = NO;
+
+		for (NSError *anError in saveErrors)
+		{
+			if ([[anError domain] isEqualToString: NSCocoaErrorDomain] &&
+				[anError code] == NSPersistentStoreIncompatibleSchemaError)
+			{
+				containsMigrationError = YES;
+
+				break;
+			}
+		}
+
+		if (containsMigrationError)
+		{
+			[self deleteCurrentStore];
+
+			return;
+		}
 		
 		NSAssert(hasSaved, @"Save errors: %@", saveErrors);
 		
 	}];
+}
+
+- (void) deleteCurrentStore
+{
+	NSURL *applicationSupportDirectoryURL = [[CPCoreDataManager sharedCoreDataManager] applicationSupportDirectoryURL];
+
+	NSError *deletionError = nil;
+
+	if (![[NSFileManager defaultManager] removeItemAtURL: applicationSupportDirectoryURL
+												   error: &deletionError])
+	{
+		CPLog(@"deletion error: %@", deletionError);
+	}
 }
 
 - (void) saveContext

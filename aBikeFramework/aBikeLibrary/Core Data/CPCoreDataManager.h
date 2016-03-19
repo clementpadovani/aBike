@@ -11,19 +11,20 @@
 #import "LightStation.h"
 #import "VEManagedObjectContext.h"
 
-typedef void (^CPCoreDataManagerSaveCompletionBlock)(BOOL hasSaved, NSArray *errors);
+typedef void (^CPCoreDataManagerSaveCompletionBlock)(BOOL hasSaved, NSArray <NSError *> *errors);
 
 @interface CPCoreDataManager : NSObject
-{
-
-}
 
 @property (strong, nonatomic, readonly) VEManagedObjectContext *standardContext;
 @property (strong, nonatomic, readonly) VEManagedObjectContext *userContext;
 @property (strong, nonatomic, readonly) VEManagedObjectContext *memoryContext;
 @property (strong, nonatomic, readonly) VEManagedObjectContext *searchMemoryContext;
 
+@property (copy, nonatomic, readonly) NSURL *applicationSupportDirectoryURL;
+
 + (CPCoreDataManager *) sharedCoreDataManager;
+
+- (instancetype) init NS_UNAVAILABLE;
 
 - (void) performSaveWithCompletionBlock: (CPCoreDataManagerSaveCompletionBlock) completionBlock;
 
