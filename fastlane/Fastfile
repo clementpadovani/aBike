@@ -3,6 +3,20 @@ $:.unshift File.dirname("../.." + __FILE__)
 require '../Various/version.rb'
 
 import './Lyon/Fastfile'
+import './Bruxelles/Fastfile'
+import './Dublin/Fastfile'
+import './Luxembourg/Fastfile'
+import './Marseille/Fastfile'
+import './Mulhouse/Fastfile'
+import './Nantes/Fastfile'
+import './Paris/Fastfile'
+import './Toulouse/Fastfile'
+
+default_platform :ios
+
+platform :ios do
+
+update_fastlane
 
 before_all do
 #   increment_build_number
@@ -11,10 +25,41 @@ end
 
 lane :appstore do
 
+	# verify_xcode
+
+	puts "Current build version: #{getCurrentBuildVersion}"
+
+	buildVersion = prompt(text: "Build Version: ")
+
+	updateBuildVersion(buildVersion)
+
 	bumpBuildNumber
 
-	lyon_appstore
+	options = {
+		:automatic_release => true,
+		:skip_screenshots => true
+	}
 
+	lyon_appstore(options)
 
+	bruxelles_appstore(options)
+
+	creteil_appstore(options)
+
+	dublin_appstore(options)
+
+	luxembourg_appstore(options)
+
+	marseille_appstore(options)
+
+	mulhouse_appstore(options)
+
+	nantes_appstore(options)
+
+	paris_appstore(options)
+
+	toulouse_appstore(options)
+
+end
 
 end

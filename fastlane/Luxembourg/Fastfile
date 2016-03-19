@@ -4,11 +4,9 @@ config = File.expand_path('../../', __FILE__)
 $LOAD_PATH.unshift(config) unless $LOAD_PATH.include?(config)
 require 'aBike.rb'
 
-def lyon_copyDeliverfile
+def luxembourg_copyDeliverfile
 
 	deliverFile = File.expand_path File.dirname(__FILE__)
-
-	puts "deliver: #{deliverFile}"
 
 	deliverFile += "/Deliverfile"
 
@@ -22,7 +20,7 @@ def lyon_copyDeliverfile
 
 end
 
-def lyon_deleteDeliverfile
+def luxembourg_deleteDeliverfile
 
 	copiedPath = Dir.pwd + "/Deliverfile"
 
@@ -34,27 +32,27 @@ def lyon_deleteDeliverfile
 
 end
 
-private_lane :lyon_appstore do |options|
+private_lane :luxembourg_appstore do |options|
 
 	gym(
 	     workspace: "aBike—Lyon.xcworkspace",
-	     scheme: "aBike—Lyon",
+	     scheme: "aBike—Luxembourg",
 	     clean: true,
 	     configuration: "Release",
 	     include_bitcode: true,
 	     export_team_id: "W48L6Z4654",
 		 output_directory: "./build",
-		 output_name: "aBike—Lyon",
+		 output_name: "aBike—Luxembourg",
 		 export_method: "app-store"
 	)
 
-	lyon_copyDeliverfile
+	luxembourg_copyDeliverfile
 
 	deliver(
 		automatic_release: options[:automatic_release],
 		skip_screenshots: options[:skip_screenshots]
 	)
 
-	lyon_deleteDeliverfile
+	luxembourg_deleteDeliverfile
 
 end

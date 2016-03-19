@@ -38,14 +38,6 @@
 	[VEaBikeFrameworkTestsConsulDelegate sharedDelegate];
 }
 
-- (void)setUp {
-    [super setUp];
-
-	CPLog(@"setup");
-
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
 - (void) testSharedConsul
 {
 	XCTAssertNotNil([VEConsul sharedConsul]);
@@ -170,6 +162,22 @@
 	NSDate *updateDate = [NSDate dateWithTimeIntervalSince1970: updateTimeInterval];
 
 	XCTAssertEqualObjects([fakeStation dataContentAge], updateDate);
+}
+
+- (void) testApplicationSupportDirectory
+{
+	NSURL *applicationSupportDirectory = [[CPCoreDataManager sharedCoreDataManager] applicationSupportDirectoryURL];
+
+	XCTAssertNotNil(applicationSupportDirectory);
+
+	BOOL isDirectory = NO;
+
+	BOOL objectExists = [[NSFileManager defaultManager] fileExistsAtPath: [applicationSupportDirectory path]
+															 isDirectory: &isDirectory];
+
+	XCTAssertTrue(objectExists);
+
+	XCTAssertTrue(isDirectory);
 }
 
 @end

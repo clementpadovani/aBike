@@ -5,9 +5,13 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
-### appstore
+
+----
+
+## iOS
+### ios appstore
 ```
-fastlane appstore
+fastlane ios appstore
 ```
 
 
