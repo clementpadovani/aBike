@@ -14,7 +14,7 @@ RELEASE_NOTES = ({
 
 })
 
-SUBMIT_FOR_REVIEW = true
+SUBMIT_FOR_REVIEW = false
 
 AUTOMATIC_RELEASE = true
 

@@ -4,6 +4,7 @@ require '../Various/version.rb'
 
 import './Lyon/Fastfile'
 import './Bruxelles/Fastfile'
+import './Créteil/Fastfile'
 import './Dublin/Fastfile'
 import './Luxembourg/Fastfile'
 import './Marseille/Fastfile'

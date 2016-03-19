@@ -36,13 +36,13 @@ private_lane :creteil_appstore do |options|
 
 	gym(
 	     workspace: "aBike—Lyon.xcworkspace",
-	     scheme: "aBike—Créteil",
+	     scheme: "aBike—Créteil",
 	     clean: true,
 	     configuration: "Release",
 	     include_bitcode: true,
 	     export_team_id: "W48L6Z4654",
 		 output_directory: "./build",
-		 output_name: "aBike—Créteil",
+		 output_name: "aBike—Créteil",
 		 export_method: "app-store"
 	)
 

@@ -39,7 +39,7 @@ def getCurrentBuildVersion
 
 	build_settings = Hash[*File.read(xcconfig_path).lines.map{|x| x.split(/\s*=\s*/, 2)}.flatten]
 
-	currentVersion = build_settings["CP_CURRENT_VERSION"]
+	currentVersion = build_settings["CP_CURRENT_VERSION"].chomp
 
 	currentVersion
 end
