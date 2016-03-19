@@ -100,14 +100,8 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 	#endif
 
-	NSError *anError = [NSError errorWithDomain: NSCocoaErrorDomain
-										   code: NSPersistentStoreIncompatibleSchemaError
-									   userInfo: nil];
-
-	NSArray *test = @[anError];
-
 	if (hasSaved)
-		completionBlock(YES, test);
+		completionBlock(YES, nil);
 	
 	NSMutableArray *saveTempErrors = nil;
 	
@@ -130,8 +124,6 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 - (void) testVersions
 {
-	NSError *mainError = nil;
-
 	NSURL *mainstoreURL = [self applicationSupportDirectoryURL];
 
 	NSString *projectName = (NSString *) kCPCoreDataManagerProjectName;
@@ -153,24 +145,36 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 	if (addError)
 		CPLog(@"error: %@", addError);
 
-//	NSDictionary *mainStoreMetadata = [[self persistentStoreCoordinator] metadataForPersistentStore: [[self persistentStoreCoordinator] persistentStores][0]];
-
-	NSDictionary *mainStoreMetadata = [store metadata];
-
-	if (mainError)
-		CPLog(@"error: %@", mainError);
-
-	NSManagedObjectModel *model = [self model];
-
-	BOOL isCompatible = [model isConfiguration: nil
-				   compatibleWithStoreMetadata: mainStoreMetadata];
-
-	CPLog(@"compatible: %@", isCompatible ? @"YES" : @"NO");
-
-	if (!isCompatible)
+	if ([[addError domain] isEqualToString: NSCocoaErrorDomain] &&
+		([addError code] == NSPersistentStoreIncompatibleSchemaError ||
+		[addError code] == NSPersistentStoreIncompatibleVersionHashError))
 	{
 
+		NSError *deletionError = nil;
+
+		if (![[NSFileManager defaultManager] removeItemAtURL: [self applicationSupportDirectoryURL]
+													   error: &deletionError])
+		{
+			CPLog(@"failed to delete");
+		}
+
+		[self setApplicationSupportDirectoryURL: nil];
+
+		[self applicationSupportDirectoryURL];
 	}
+
+	if (store)
+	{
+		NSError *removeError = nil;
+
+		if (![tempPersistentStoreCoordinator removePersistentStore: store
+															 error: &removeError])
+		{
+			CPLog(@"remove error: %@", removeError);
+		}
+	}
+
+	tempPersistentStoreCoordinator = nil;
 }
 
 - (NSManagedObjectModel *) model
