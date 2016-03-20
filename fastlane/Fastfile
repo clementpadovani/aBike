@@ -28,6 +28,10 @@ lane :appstore do
 
 	# verify_xcode
 
+	ensure_git_branch
+
+	ensure_git_status_clean
+
 	puts "Current build version: #{getCurrentBuildVersion}"
 
 	buildVersion = prompt(text: "Build Version: ")
@@ -60,6 +64,15 @@ lane :appstore do
 	paris_appstore(options)
 
 	toulouse_appstore(options)
+
+	git_add(path: ".")
+
+	git_commit(path: ".",
+	        message: "Version Bump #{buildVersion} (#{getCurrentBuildNumber})")
+
+	add_git_tag(prefix: 'v', build_number: getCurrentBuildNumber)
+
+	push_to_git_remote
 
 end
 

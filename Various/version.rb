@@ -43,3 +43,13 @@ def getCurrentBuildVersion
 
 	currentVersion
 end
+
+def getCurrentBuildNumber
+	xcconfig_path = File.expand_path File.dirname(__FILE__) + "/CurrentVersion.xcconfig"
+
+	build_settings = Hash[*File.read(xcconfig_path).lines.map{|x| x.split(/\s*=\s*/, 2)}.flatten]
+
+	currentBuildNumber = build_settings["CP_CURRENT_BUILD"].chomp.to_i
+
+	currentBuildNumber
+end
