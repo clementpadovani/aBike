@@ -2,11 +2,11 @@ sudo: false
 language: objective-c
 osx_image:
     - xcode7.2
-      env: CP_IOS_SIMULATOR="iphonesimulator9.2" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS='9.2'"
+      env: CP_IOS_SIMULATOR="iphonesimulator9.2" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=\'9.2\'"
     - xcode7.1
-      env: CP_IOS_SIMULATOR="iphonesimulator9.1" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS='9.1'"
+      env: CP_IOS_SIMULATOR="iphonesimulator9.1" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=\'9.1\'"
     - xcode7
-      env: CP_IOS_SIMULATOR="iphonesimulator9.0" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS='9.0'"
+      env: CP_IOS_SIMULATOR="iphonesimulator9.0" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=\'9.0\'"
 podfile: ./Podfile
 os: osx
 cache: cocoapods
