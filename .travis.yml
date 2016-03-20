@@ -11,6 +11,7 @@ matrix:
           env: CP_IOS_SIMULATOR="iphonesimulator9.0" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=9.0"
     exclude:
         - osx_image: xcode7.2
+          env:
 podfile: ./Podfile
 os: osx
 cache: cocoapods
