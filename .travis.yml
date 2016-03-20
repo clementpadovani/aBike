@@ -28,7 +28,7 @@ before_install:
     - ./Vendor/add-key.sh
     - ./Vendor/add-constants.sh
 script:
-    - xctool test -sdk $CP_IOS_SIMULATOR -destination 'platform=iOS Simulator,name=iPhone 5s,OS=\"$CP_IOS_SIMULATOR_OS\"'
+    - xctool test -sdk $CP_IOS_SIMULATOR -destination 'platform=iOS Simulator,name=iPhone 5s,OS="$CP_IOS_SIMULATOR_OS"'
 after_script:
     - ./Vendor/remove-key.sh
     - ./Vendor/remove-constants.sh
