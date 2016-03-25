@@ -76,4 +76,10 @@ lane :appstore do
 
 end
 
+lane :updloadSymbolsToFabric do
+
+lyon_uploadSymbolsToFabric
+
+end
+
 end

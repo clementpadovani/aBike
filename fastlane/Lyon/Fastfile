@@ -22,6 +22,36 @@ def lyon_copyDeliverfile
 
 end
 
+def lyon_copyAppfile
+
+	deliverFile = File.expand_path File.dirname(__FILE__)
+
+	puts "deliver: #{deliverFile}"
+
+	deliverFile += "/Appfile"
+
+	if File::exists?(deliverFile)
+		copiedPath = Dir.pwd + "/Appfile"
+		FileUtils.cp deliverFile, copiedPath
+	else
+		puts "doesn't exist"
+		raise "Appfile doesn't exist at path " + deliverFile
+	end
+
+end
+
+def lyon_deleteAppfile
+
+	copiedPath = Dir.pwd + "/Appfile"
+
+	if File::exists?(copiedPath)
+
+		FileUtils.rm copiedPath
+
+	end
+
+end
+
 def lyon_deleteDeliverfile
 
 	copiedPath = Dir.pwd + "/Deliverfile"
@@ -56,5 +86,21 @@ private_lane :lyon_appstore do |options|
 	)
 
 	lyon_deleteDeliverfile
+
+end
+
+private_lane :lyon_uploadSymbolsToFabric do
+
+clean_build_artifacts
+
+lyon_copyAppfile
+
+download_dsyms
+
+upload_symbols_to_crashlytics
+
+clean_build_artifacts
+
+lyon_deleteAppfile
 
 end
