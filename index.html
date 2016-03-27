@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>aBike by ClementPadovani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">aBike</h1>
+      <h2 class="project-tagline">Collection of aBike apps for iOS.</h2>
+      <a href="https://github.com/ClementPadovani/aBike" class="btn">View on GitHub</a>
+      <a href="https://github.com/ClementPadovani/aBike/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ClementPadovani/aBike/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="abike" class="anchor" href="#abike" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>aBike</h1>
+
+<p><a href="https://travis-ci.org/ClementPadovani/aBike"><img src="https://travis-ci.org/ClementPadovani/aBike.svg?branch=master" alt="Build Status"></a></p>
+
+<p>aBike is a collection of apps powered by JCDecaux’s cyclocity <a href="https://developer.jcdecaux.com">API</a>.</p>
+
+<p>aBike’s “raison d’être” is to be fast and efficient—it displays the 5 closest stations next to you, configurable to 3 or 7.</p>
+
+<h2>
+<a id="add-a-new-city" class="anchor" href="#add-a-new-city" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add a new city</h2>
+
+<p>To add a new city create a new target as usual. You can copy paste the <code>Info.plist</code> from another city, same for the <code>VEAppDelegate</code> file along with the <code>InfoPlist.strings</code>. In there you must change the following methods:</p>
+
+<ul>
+<li><code>- (NSString *) contractNameForConsul:(VEConsul *)consul</code></li>
+<li><code>- (NSString *) cityNameForConsul:(VEConsul *)consul</code></li>
+<li><code>- (NSString *) cityServiceNameForConsul:(VEConsul *)consul</code></li>
+<li><code>- (NSString *) cityRegionNameForConsul: (VEConsul *) consul</code></li>
+<li><code>- (UIColor *) mainColorForConsul: (VEConsul *) consul</code></li>
+</ul>
+
+<p>You can ignore the <code>- (MKCoordinateRegion) mapRegionForConsul: (VEConsul *) consul</code> for now, to retrieve its value set the value of <code>enableNumberOfStations</code> to <code>0</code>; once you run the app it will print out the map region of the city based on all of the bike stations (don’t forget to set it back to <code>1</code> after).</p>
+
+<p>Then set <code>- (CLLocation *) locationForScreenshots</code> to a position inside of the current city (usually a well-known area) to be set as the faked-location for the automated screenshots (via <a href="https://github.com/fastlane/snapshot"><code>snapshot</code></a>).</p>
+
+<p>Create a new <code>UI Test</code> target with <strong>Swift</strong> as its language. Delete the generated test <code>swift</code> file. Locate the following files: <code>SnapshotHelper.swift</code> &amp; <code>aBike_LyonUITests.swift</code>, make them part of your number target using the inspector.</p>
+
+<p>You can duplicate an existing folder in the <code>Deliver</code> directory and edit the <code>Snapfile</code> file to make it work with your new target.</p>
+
+<p>Run <code>snapshot run</code> inside the directory (you might want to clean your simulators first by using <code>snapshot reset_simulators</code>).</p>
+
+<h2>
+<a id="thanks" class="anchor" href="#thanks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thanks</h2>
+
+<p>Thanks <a href="https://twitter.com/MathieuWhite">@MathieuWhite</a> (<a href="https://github.com/MathieuWhite">GitHub</a>)</p>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>aBike by <a href="https://github.com/ClementPadovani/aBike">Clément PADOVANI</a> is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br>Based on a work at <a href="https://github.com/ClementPadovani/aBike"></a><a href="https://github.com/ClementPadovani/aBike">https://github.com/ClementPadovani/aBike</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ClementPadovani/aBike">aBike</a> is maintained by <a href="https://github.com/ClementPadovani">ClementPadovani</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
