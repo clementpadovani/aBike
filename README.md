@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ClementPadovani/aBike.svg?branch=master)](https://travis-ci.org/ClementPadovani/aBike)
 
-Hey, aBike is a collection of apps powered by JCDecaux’s cyclocity [API](https://developer.jcdecaux.com).
+aBike is a collection of apps powered by JCDecaux’s cyclocity [API](https://developer.jcdecaux.com).
 
 aBike’s “raison d’être” is to be fast and efficient—it displays the 5 closest stations next to you, configurable to 3 or 7.
 
