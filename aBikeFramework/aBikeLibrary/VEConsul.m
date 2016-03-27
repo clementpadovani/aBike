@@ -26,6 +26,8 @@
 
 #import "UIDevice+Additions.h"
 
+#import "VEWatchBikeStation.h"
+
 #if (SCREENSHOTS==1)
 
 @import SimulatorStatusMagic;
@@ -201,8 +203,60 @@ static VEConsul *_sharedConsul = nil;
 	[self setWindow: window];
 	
 	[[VEConnectionManager sharedConnectionManger] setCanCallBack: YES];
-		
+
+    if ([WCSession isSupported])
+    {
+        WCSession *sharedSession = [WCSession defaultSession];
+
+        [sharedSession setDelegate: self];
+
+        [sharedSession activateSession];
+    }
+
 	return YES;
+}
+
+- (void) sessionReachabilityDidChange:(WCSession *)session
+{
+    if ([session isReachable])
+    {
+        NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [Station entityName]];
+
+        [fetchRequest setFetchLimit: 1];
+
+        NSError *fetchError = nil;
+
+        NSArray *fetchResults = [[[CPCoreDataManager sharedCoreDataManager] standardContext] executeFetchRequest: fetchRequest error: &fetchError];
+
+        if (fetchError)
+        {
+            CPLog(@"fetch error: %@", fetchError);
+        }
+
+        Station *aStation = [fetchResults firstObject];
+
+        VEWatchBikeStation *station = [[VEWatchBikeStation alloc] init];
+
+        [station setStationName: [aStation processedStationName]];
+
+        [station setStationLocation: [aStation location]];
+
+        [station setAvailableBikes: [aStation availableBikes]];
+
+        [station setAvailableStands: [aStation availableBikeStations]];
+
+        NSData *archivedStation = [NSKeyedArchiver archivedDataWithRootObject: station];
+
+        NSError *updateError = nil;
+
+        NSDictionary *context = @{@"stations" : @[archivedStation]};
+
+        if (![[WCSession defaultSession] updateApplicationContext: context
+                                                            error: &updateError])
+            CPLog(@"update error: %@", updateError);
+        else
+            CPLog(@"sent");
+    }
 }
 
 - (BOOL) applicationOpenURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation

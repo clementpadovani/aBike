@@ -8,6 +8,8 @@
 
 #import "CPCoreDataManager.h"
 
+@import WatchConnectivity;
+
 @class VEConsul;
 
 @class VEWindow;
@@ -62,7 +64,7 @@
 
 @end
 
-@interface VEConsul : NSObject <VEAppDelegate>
+@interface VEConsul : NSObject <VEAppDelegate, WCSessionDelegate>
 
 @property (nonatomic, weak) id <VEConsulDelegate> delegate;
 
