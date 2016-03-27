@@ -10,7 +10,7 @@
 
 @import CoreLocation.CLLocation;
 
-@interface VEWatchBikeStation : NSObject <NSCoding>
+@interface VEWatchBikeStation : NSObject <NSSecureCoding>
 
 @property (nonatomic, copy) NSString *stationName;
 

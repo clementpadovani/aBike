@@ -14,10 +14,10 @@
 
 @property (nonatomic, strong) VEWatchBikeStation *currentBikeStation;
 
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceMap *stationMap;
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *stationNameLabel;
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *availableBikesLabel;
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *availableStandsLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceMap *stationMap;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *stationNameLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *availableBikesLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *availableStandsLabel;
 
 @end
 
@@ -33,11 +33,23 @@
     }
 }
 
-- (void) willActivate
+- (void) didAppear
 {
-    [super willActivate];
+    [super didAppear];
 
-    [[self stationMap] addAnnotation: [[[self currentBikeStation] stationLocation] coordinate]
+    CLLocationCoordinate2D location = [[[self currentBikeStation] stationLocation] coordinate];
+
+    CLLocationDegrees scalingFactor = ABS((cos(2 * M_PI * location.latitude / 360.0)));
+
+    static CLLocationDistance distance = 1000.;
+
+    MKCoordinateSpan span = MKCoordinateSpanMake(distance / 111., distance / (scalingFactor * 111.));
+
+    MKCoordinateRegion region = MKCoordinateRegionMake(location, span);
+
+    [[self stationMap] setRegion: region];
+
+    [[self stationMap] addAnnotation: location
                         withPinColor: WKInterfaceMapPinColorRed];
 
     [[self stationNameLabel] setText: [[self currentBikeStation] stationName]];

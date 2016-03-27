@@ -315,13 +315,16 @@
 		59DDCBCE1C4BAF8000E3DA02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */; };
 		59EC26471CA8549400D77605 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EC26451CA8549400D77605 /* Interface.storyboard */; };
 		59EC26491CA8549400D77605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EC26481CA8549400D77605 /* Assets.xcassets */; };
-		59EC26501CA8549500D77605 /* aBike—Lyon WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59EC264F1CA8549400D77605 /* aBike—Lyon WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59EC26501CA8549500D77605 /* aBikeLyonWatchExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59EC264F1CA8549400D77605 /* aBikeLyonWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		59EC265B1CA8549500D77605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EC265A1CA8549500D77605 /* Assets.xcassets */; };
 		59EC265F1CA8549500D77605 /* aBike—Lyon WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 59EC26431CA8549400D77605 /* aBike—Lyon WatchKit App.app */; };
 		59EC266E1CA8571F00D77605 /* VEMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC266D1CA8571F00D77605 /* VEMainInterfaceController.m */; };
 		59EC26711CA8573600D77605 /* VEExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26701CA8573600D77605 /* VEExtensionDelegate.m */; };
 		59EC26741CA85A2300D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
 		59EC26751CA8645E00D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
+		59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */; };
+		59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
+		59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
 		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
@@ -697,7 +700,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				59EC26501CA8549500D77605 /* aBike—Lyon WatchKit App Extension.appex in Embed App Extensions */,
+				59EC26501CA8549500D77605 /* aBikeLyonWatchExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1000,7 +1003,7 @@
 		59EC26461CA8549400D77605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		59EC26481CA8549400D77605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59EC264A1CA8549400D77605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59EC264F1CA8549400D77605 /* aBike—Lyon WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "aBike—Lyon WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59EC264F1CA8549400D77605 /* aBikeLyonWatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = aBikeLyonWatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EC265A1CA8549500D77605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59EC265C1CA8549500D77605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59EC266C1CA8571F00D77605 /* VEMainInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEMainInterfaceController.h; sourceTree = "<group>"; };
@@ -1009,6 +1012,8 @@
 		59EC26701CA8573600D77605 /* VEExtensionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEExtensionDelegate.m; sourceTree = "<group>"; };
 		59EC26721CA85A2300D77605 /* VEWatchBikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEWatchBikeStation.h; sourceTree = "<group>"; };
 		59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEWatchBikeStation.m; sourceTree = "<group>"; };
+		59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+VEAdditions.h"; sourceTree = "<group>"; };
+		59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+VEAdditions.m"; sourceTree = "<group>"; };
 		59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMainThreadGuard.m; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1448,7 +1453,7 @@
 				59BAF6F41C6B4A6A0038B609 /* aBike—LuxembourgUITests.xctest */,
 				592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */,
 				59EC26431CA8549400D77605 /* aBike—Lyon WatchKit App.app */,
-				59EC264F1CA8549400D77605 /* aBike—Lyon WatchKit App Extension.appex */,
+				59EC264F1CA8549400D77605 /* aBikeLyonWatchExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1959,6 +1964,8 @@
 				59EC266D1CA8571F00D77605 /* VEMainInterfaceController.m */,
 				59EC26721CA85A2300D77605 /* VEWatchBikeStation.h */,
 				59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */,
+				59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */,
+				59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */,
 			);
 			path = "aBike—Lyon WatchKit App Extension";
 			sourceTree = "<group>";
@@ -2110,6 +2117,7 @@
 				593ADB041C495394003B686A /* VEConsul.h in Headers */,
 				593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */,
 				593ADACC1C495394003B686A /* Station.h in Headers */,
+				59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */,
 				593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */,
 				593ADB021C495394003B686A /* VEWindow.h in Headers */,
 				594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */,
@@ -2230,8 +2238,8 @@
 				593AD94D1C495208003B686A /* Embed Frameworks */,
 				67AF793D6A0E4865AB9083E8 /* Embed Pods Frameworks */,
 				99E02C19C74CB353C04C79DF /* Copy Pods Resources */,
-				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
 				59EC266B1CA8549500D77605 /* Embed Watch Content */,
+				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2591,7 +2599,7 @@
 			);
 			name = "aBike—Lyon WatchKit App Extension";
 			productName = "aBike—Lyon WatchKit App Extension";
-			productReference = 59EC264F1CA8549400D77605 /* aBike—Lyon WatchKit App Extension.appex */;
+			productReference = 59EC264F1CA8549400D77605 /* aBikeLyonWatchExtension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		59F9EC751C54ED8D0007D069 /* aBike—BruxellesUITests */ = {
@@ -2729,6 +2737,9 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = W48L6Z4654;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
@@ -3829,6 +3840,7 @@
 				590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */,
 				593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */,
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
+				59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
 				593ADAD31C495394003B686A /* VEBaseModel.m in Sources */,
 				593ADAEB1C495394003B686A /* VEStationAnnotationAccessoryView.m in Sources */,
@@ -4016,6 +4028,7 @@
 				59EC26741CA85A2300D77605 /* VEWatchBikeStation.m in Sources */,
 				59EC266E1CA8571F00D77605 /* VEMainInterfaceController.m in Sources */,
 				59EC26711CA8573600D77605 /* VEExtensionDelegate.m in Sources */,
+				59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6334,12 +6347,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				ENABLE_NS_ASSERTIONS = NO;
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ebfe827-6280-450a-b783-d18180824b1b";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -6369,6 +6383,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -6376,7 +6391,7 @@
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "$(EXECUTABLE_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -6389,10 +6404,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "$(EXECUTABLE_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -6403,12 +6419,14 @@
 		59EC26661CA8549500D77605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "$(EXECUTABLE_NAME)";
+				PROVISIONING_PROFILE = "aad843ab-daf6-4054-87c9-e6201bb162ae";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -6421,10 +6439,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "$(EXECUTABLE_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -7060,6 +7079,7 @@
 				59EC26671CA8549500D77605 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		59EC266A1CA8549500D77605 /* Build configuration list for PBXNativeTarget "aBike—Lyon WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -7070,6 +7090,7 @@
 				59EC26631CA8549500D77605 /* Screenshots */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Screenshots;
 		};
 		59F9EC7D1C54ED8D0007D069 /* Build configuration list for PBXNativeTarget "aBike—BruxellesUITests" */ = {
 			isa = XCConfigurationList;

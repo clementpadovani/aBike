@@ -36,6 +36,10 @@
         }
     }
 
+    NSLog(@"did receive data");
+
+//    dispatch_async(dispatch_get_main_queue(), ^{
+
     WKInterfaceController *rootInterfaceController = [[WKExtension sharedExtension] rootInterfaceController];
 
     NSMutableArray *controllerNames = [NSMutableArray arrayWithCapacity: [stations count]];
@@ -45,8 +49,10 @@
         [controllerNames addObject: @"mainScene"];
     }
 
+
     [rootInterfaceController presentControllerWithNames: controllerNames
                                                contexts: stations];
+//    });
 }
 
 - (void) applicationDidFinishLaunching
@@ -58,6 +64,8 @@
         [session setDelegate: self];
 
         [session activateSession];
+
+        NSLog(@"activated");
 
         if ([session respondsToSelector: @selector(activationState)])
         {

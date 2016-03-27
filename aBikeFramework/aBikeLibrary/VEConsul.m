@@ -220,13 +220,21 @@ static VEConsul *_sharedConsul = nil;
 {
     if ([session isReachable])
     {
+        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
+
+        NSManagedObjectContext *parentContext = [[CPCoreDataManager sharedCoreDataManager] standardContext];
+
+        [context setParentContext: parentContext];
+
+        [context performBlock: ^{
+
         NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [Station entityName]];
 
         [fetchRequest setFetchLimit: 1];
 
         NSError *fetchError = nil;
 
-        NSArray *fetchResults = [[[CPCoreDataManager sharedCoreDataManager] standardContext] executeFetchRequest: fetchRequest error: &fetchError];
+        NSArray *fetchResults = [context executeFetchRequest: fetchRequest error: &fetchError];
 
         if (fetchError)
         {
@@ -249,14 +257,24 @@ static VEConsul *_sharedConsul = nil;
 
         NSError *updateError = nil;
 
-        NSDictionary *context = @{@"stations" : @[archivedStation]};
+        NSDictionary *_context = @{@"stations" : @[archivedStation]};
 
-        if (![[WCSession defaultSession] updateApplicationContext: context
+        if (![[WCSession defaultSession] updateApplicationContext: _context
                                                             error: &updateError])
             CPLog(@"update error: %@", updateError);
         else
             CPLog(@"sent");
+
+        }];
     }
+}
+
+- (void) session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError *)error
+{
+    if (error)
+        CPLog(@"error: %@", error);
+
+    [self sessionReachabilityDidChange: session];
 }
 
 - (BOOL) applicationOpenURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation
