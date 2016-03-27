@@ -1,8 +1,10 @@
 sudo: false
 language: objective-c
-osx_image: xcode7.2
+osx_image: xcode7.3
 matrix:
     include:
+        - osx_image: xcode7.2
+          env: CP_IOS_SIMULATOR="iphonesimulator9.2" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=9.2"
         - osx_image: xcode7.1
           env: CP_IOS_SIMULATOR="iphonesimulator9.1" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=9.1"
         - osx_image: xcode7
@@ -20,8 +22,9 @@ env:
         - secure: "qTmQnBvL1k97jSZohzT0wU75OXgafum6couLV7gBUG/CyzduUIMMgSYMHto7/m2h6opDdBLoVTjb5MPxYzGJpVTTtgnYJwaT60ZmSBzTutflg2a36V95wOlWfy2p/E+vl3hzatQEGn64oZ9n8sY0gNXt7MTHiyMSQduTvRaT3msBY/In3b/A7B2B/lvkHFkurJuE6OERvSukbTYliEAzwmkuatY2EplieHRkXMQY346I3logwzzcHd43LtobD7IJGmoKmrPI2Pb2tUNmJjqoow+ZWs60wc7nS3eR7Dq6Uy322i67LLCA1t/wInBzPc5GBgVbGje9bSdgbCat6kMWoH/JJspHLZ1Yw0lyBmHyPf0gDnMKs5GeeZH++ZcjKIsdM5H0vluZlwqsPKqUF+hTG5LdrN5vsBsvnWhDa7pOY/GVGXUX91+qn9kPQSN2vTcM1wDW/hhiHyTu+ar1OjUVD/etFraHkWGQuH26H1rxiaDUeA4bcoHL0cx3lDrnoI8718RIUb9wOiZJ+HOr478NrPbQPGBmIh0LFeg9kkee8tOnQoHcsqjVtWIrMhio4Nh9pm+tCGZaapun2HpVXMpbuOETQVzIIr2xrygdvt2UOUJXA7xZqVm/1OJnlCUH3jh9dTCJiNHmjrDbiDuXShJ/yU81/rsafLTmzcf5hmG34yU="
         - secure: "nszF/EN9+JlDL2a6DMBzIKAMzsjwbKW6FxGZYgm/qd98dHSF/mxYUdXrXIfnhQsEsdyflgt7utD0cTC8rbnJ5ribm7RNKbg1u/+gNNFF5oSnGp8E1EMu7p0TrTEZePYtQXy4mO5GnRgd3MCwdJ2N2a2VyuAWcYlriBVZzWRnsBNQvlwTKyu631ISiq8e+BROuLoO0QNKU/XSpzK/qROk4E2PfkpZTTlU/WLca6TbqGvM57V6MSH9ZhdEBMHU9ISP3DyHlYHdKCcQuISNRCNkdp7Q62jsCqoQ2cpxNCK7iF8f199xqvXOe4Q3ZT5WgLzb+NxB18KAX/tuROSMCf9ar58Pgh/2l3HW05FyRQcSh2a7t9kndtyPECSxVqoiHDH/QDlhfhwpmr0HngEO+tEGaWqDSPdL2PJuIgTwi5scPkVsC15UOw0gLTyxIceWon4AFn/+6BXutvhjWneAR/2lN+O6QY5K/1qj94EUIoSLNaq2r0CZG+N6Zhx43OjaRsVvD2Oazw2V8OivXWMTynbRHc08IzX4rFYhaZEfLDl/+tsoOkFCcAQmPh5XY6DAr8NQH/KedE/tG9Mq/HVId8qaiz+u4r1lTiyxDCbSv1bAN7QD3zI1jTJMs2wweP5TfqdEB0jm/wsUoFz8lBxMu9tAfOsHFmDwfkj5rxI/fgvOqRY="
     matrix:
-        - CP_IOS_SIMULATOR="iphonesimulator9.2" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=9.2"
+        - CP_IOS_SIMULATOR="iphonesimulator9.3" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=9.3"
 before_install:
+    - ./Vendor/upgrade-xctool.sh
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/certificate.cer.enc -d -a -out Vendor/certificate.cer
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/key.p12.enc -d -a -out Vendor/key.p12
