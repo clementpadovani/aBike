@@ -633,7 +633,8 @@ static VEConsul *_sharedConsul = nil;
 
 #endif
 
-		CPLog(@"errors: %@", saveErrors);
+        if (!hasSaved)
+            CPLog(@"errors: %@", saveErrors);
 
 		NSAssert(hasSaved, @"Save errors: %@", saveErrors);
 		
