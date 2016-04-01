@@ -88,9 +88,6 @@ static VEConsul *_sharedConsul = nil;
 
 + (VEConsul *) sharedConsul
 {
-	if (_sharedConsul)
-		return _sharedConsul;
-	
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 		_sharedConsul = [[self alloc] init];
@@ -386,21 +383,21 @@ static VEConsul *_sharedConsul = nil;
 
 - (void) processData: (NSData *) stationsData
 {
-	__weak VEConsul *weakSelf = self;
-	
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-		
-		[VEDataImporter importStationListDataWithStationsData: stationsData];
-		
-		dispatch_async(dispatch_get_main_queue(), ^{
-			
-			__strong VEConsul *strongSelf = weakSelf;
-			
-			[[strongSelf mapViewController] loadMapData];
-			
-			[strongSelf stopLoadingSpinner];
-		});
-		
+
+        __weak typeof(self) weakSelf = self;
+
+        void (^completionBlock)() = ^{
+
+            __strong VEConsul *strongSelf = weakSelf;
+
+            [[strongSelf mapViewController] loadMapData];
+
+            [strongSelf stopLoadingSpinner];
+        };
+
+		[VEDataImporter importStationListDataWithStationsData: stationsData withCompletionHandler: completionBlock];
+
 	});
 }
 
@@ -578,8 +575,8 @@ static VEConsul *_sharedConsul = nil;
 			[[Crashlytics sharedInstance] recordError: anError];
 
 #endif
-
-		CPLog(@"errors: %@", saveErrors);
+        if (!hasSaved)
+            CPLog(@"errors: %@", saveErrors);
 
 		NSAssert(hasSaved, @"Save errors: %@", saveErrors);
 		

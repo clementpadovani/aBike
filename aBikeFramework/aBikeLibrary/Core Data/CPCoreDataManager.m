@@ -396,54 +396,67 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 }
 
 - (VEManagedObjectContext *) newImportManagedObjectContext
-{	
-	NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
-	
-	NSError *storeError = nil;
-	
-	NSPersistentStore *newStore = nil;
-	
-	NSURL *storeURL = [self applicationSupportDirectoryURL];
+{
+    VEManagedObjectContext *newImportManagedObjectContext = [[VEManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
 
-	storeURL = [[storeURL URLByAppendingPathComponent: kCPCoreDataManagerProjectName] URLByAppendingPathExtension: @"sqlite"];
-	
-	NSDictionary *pragmaDictionary = @{ @"journal_mode" : @"DELETE" };
+    [newImportManagedObjectContext setUndoManager: nil];
 
-	NSDictionary *storeOptions = @{NSInferMappingModelAutomaticallyOption : @(YES),
-							 NSMigratePersistentStoresAutomaticallyOption : @(YES),
-							 NSSQLitePragmasOption : pragmaDictionary};
-	
-	newStore = [persistentStoreCoordinator addPersistentStoreWithType: NSSQLiteStoreType
-											  configuration: @"Stations"
-													  URL: storeURL
-												   options: storeOptions
-													error: &storeError];
+    [newImportManagedObjectContext setName: @"newImportManagedObjectContext"];
 
-	#if kEnableCrashlytics
+    [newImportManagedObjectContext setParentContext: [self standardContext]];
 
-		if (storeError || !newStore)
-			[[Crashlytics sharedInstance] recordError: storeError];
-
-	#endif
-
-	if (storeError)
-		CPLog(@"store error: %@", storeError);
-
-
-	NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
-	
-	[persistentStoreCoordinator setName: @"Import Persistent Store Coordinator"];
-
-	VEManagedObjectContext *importContext = [[VEManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
-	
-	[importContext setUndoManager: nil];
-	
-	[importContext setPersistentStoreCoordinator: persistentStoreCoordinator];
-	
-	[importContext setName: @"Import Managed Object Context"];
-
-	return importContext;
+    return newImportManagedObjectContext;
 }
+
+//- (VEManagedObjectContext *) newImportManagedObjectContext
+//{	
+//	NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
+//	
+//	NSError *storeError = nil;
+//	
+//	NSPersistentStore *newStore = nil;
+//	
+//	NSURL *storeURL = [self applicationSupportDirectoryURL];
+//
+//	storeURL = [[storeURL URLByAppendingPathComponent: kCPCoreDataManagerProjectName] URLByAppendingPathExtension: @"sqlite"];
+//	
+//	NSDictionary *pragmaDictionary = @{ @"journal_mode" : @"DELETE" };
+//
+//	NSDictionary *storeOptions = @{NSInferMappingModelAutomaticallyOption : @(YES),
+//							 NSMigratePersistentStoresAutomaticallyOption : @(YES),
+//							 NSSQLitePragmasOption : pragmaDictionary};
+//	
+//	newStore = [persistentStoreCoordinator addPersistentStoreWithType: NSSQLiteStoreType
+//											  configuration: @"Stations"
+//													  URL: storeURL
+//												   options: storeOptions
+//													error: &storeError];
+//
+//	#if kEnableCrashlytics
+//
+//		if (storeError || !newStore)
+//			[[Crashlytics sharedInstance] recordError: storeError];
+//
+//	#endif
+//
+//	if (storeError)
+//		CPLog(@"store error: %@", storeError);
+//
+//
+//	NSAssert(newStore, @"Failed to create new store. Error: %@", storeError);
+//	
+//	[persistentStoreCoordinator setName: @"Import Persistent Store Coordinator"];
+//
+//	VEManagedObjectContext *importContext = [[VEManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
+//	
+//	[importContext setUndoManager: nil];
+//	
+//	[importContext setPersistentStoreCoordinator: persistentStoreCoordinator];
+//	
+//	[importContext setName: @"Import Managed Object Context"];
+//
+//	return importContext;
+//}
 
 - (void) removeDataStoreFromBackups
 {

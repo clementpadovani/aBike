@@ -161,25 +161,30 @@ static BOOL _isImportingData;
 	return configuration;
 }
 
-+ (void) importStationListDataWithStationsData: (NSData *) stationsData
++ (void) importStationListDataWithStationsData: (NSData *) stationsData withCompletionHandler: (void(^)()) completionHandler
 {
 	if ([self isImportingData])
 	{
+        dispatch_async(dispatch_get_main_queue(), completionHandler);
+
 		return;
 	}
+
+    if (!stationsData ||
+        ![stationsData length])
+    {
+        //CPLog(@"have nil data... returning...");
+
+        dispatch_async(dispatch_get_main_queue(), completionHandler);
+
+        return;
+    }
 
 	[self setImportingData: YES];
-
-	if (!stationsData)
-	{
-		//CPLog(@"have nil data... returning...");
-		
-		return;
-	}
 	
 	//CPLog(@"starting import");
 	
-	dispatch_sync(dispatch_get_main_queue(), ^{
+	dispatch_async(dispatch_get_main_queue(), ^{
 		
 		//CPLog(@"denying saves");
 		
@@ -200,6 +205,18 @@ static BOOL _isImportingData;
 		[[Crashlytics sharedInstance] recordError: serializationError];
 		
 		#endif
+
+        CPLog(@"serialization error: %@", serializationError);
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+        [[VEConsul sharedConsul] setCanSave: YES];
+        });
+
+        [self setImportingData: NO];
+
+        dispatch_async(dispatch_get_main_queue(), completionHandler);
+
+        return;
 	}
 	
 	NSAssert(!serializationError, @"Serialization error: %@", serializationError);
@@ -226,7 +243,7 @@ static BOOL _isImportingData;
 		
 	}];
 	
-	[importContext performBlockAndWait: ^{
+	[importContext performBlock: ^{
 		
 		VECityRect cityRect;
 		
@@ -340,25 +357,32 @@ static BOOL _isImportingData;
 			[[UserSettings sharedSettings] setCityRect: cityRect];
 			
 			[[UserSettings sharedSettings] setLargerCityRect: marginalizedCityRect];
-			
-		}];
-		
-	}];
-	
-	[userContext performBlockAndWait: ^{
-		
-		[[UserSettings sharedSettings] setLastDataImportDate: [NSDate date]];
-		
-	}];
-	
-	dispatch_sync(dispatch_get_main_queue(), ^{
-		
-		[[VEConsul sharedConsul] setCanSave: YES];
-		
-		[[VEConsul sharedConsul] saveContext];
-	});
 
-	[self setImportingData: NO];
+            [[UserSettings sharedSettings] setLastDataImportDate: [NSDate date]];
+		}];
+
+        NSManagedObjectContext *parentContext = [importContext parentContext];
+
+        [parentContext performBlockAndWait: ^{
+
+            NSError *saveError = nil;
+
+            if (![parentContext save: &saveError])
+            {
+                CPLog(@"save error: %@", saveError);
+            }
+
+        }];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+            [[VEConsul sharedConsul] setCanSave: YES];
+        });
+
+        [self setImportingData: NO];
+
+        dispatch_async(dispatch_get_main_queue(), completionHandler);
+	}];
 }
 
 + (void) attemptToDownloadStationListForIdentifier: (NSString *) identifier withCompletionHandler: (void (^)(NSError *stationError, NSData *stationData)) completionHandler

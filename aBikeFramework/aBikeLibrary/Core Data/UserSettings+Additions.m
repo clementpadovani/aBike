@@ -407,19 +407,19 @@ static UserSettings *_sharedSettings = nil;
 
 - (BOOL) canLoadData
 {
-	BOOL canTest = NO;
-	
-	if (canTest)
-	{
-		NSData *data = [self makeItSecret: [self getSecret]];
-	
-		[self setAdRemover: data];
-	}
-	else
-	{
-		//[self makeItSecret: [self getSecret]];
-	}
-	
+//	BOOL canTest = NO;
+//	
+//	if (canTest)
+//	{
+//		NSData *data = [self makeItSecret: [self getSecret]];
+//	
+//		[self setAdRemover: data];
+//	}
+//	else
+//	{
+//		//[self makeItSecret: [self getSecret]];
+//	}
+
 	[self willAccessValueForKey: NSStringFromSelector(@selector(canLoadData))];
 	
 	BOOL canLoadData;
