@@ -388,14 +388,12 @@ static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 	
 	__weak Station *weakSelf = self;
 	
-	__weak VEManagedObjectContext *managedObjectContext = (VEManagedObjectContext *) [self managedObjectContext];
-	
 	NSURLSessionDataTask *dataTask = [dataSession dataTaskWithURL: stationDataURL
 									    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error) {
 										  
 										    __strong __block Station *strongSelf = weakSelf;
 										    
-										    __strong VEManagedObjectContext *strongManagedObjectContext = managedObjectContext;
+										    NSManagedObjectContext *strongManagedObjectContext = [strongSelf managedObjectContext];
 										    
 										    if (!strongSelf || !strongManagedObjectContext)
 										    {
