@@ -32,6 +32,36 @@ def nantes_deleteDeliverfile
 
 end
 
+def nantes_copyAppfile
+
+	deliverFile = File.expand_path File.dirname(__FILE__)
+
+	puts "deliver: #{deliverFile}"
+
+	deliverFile += "/Appfile"
+
+	if File::exists?(deliverFile)
+		copiedPath = Dir.pwd + "/Appfile"
+		FileUtils.cp deliverFile, copiedPath
+	else
+		puts "doesn't exist"
+		raise "Appfile doesn't exist at path " + deliverFile
+	end
+
+end
+
+def nantes_deleteAppfile
+
+	copiedPath = Dir.pwd + "/Appfile"
+
+	if File::exists?(copiedPath)
+
+		FileUtils.rm copiedPath
+
+	end
+
+end
+
 private_lane :nantes_appstore do |options|
 
 	gym(
@@ -54,5 +84,21 @@ private_lane :nantes_appstore do |options|
 	)
 
 	nantes_deleteDeliverfile
+
+end
+
+private_lane :nantes_uploadSymbolsToFabric do
+
+clean_build_artifacts
+
+nantes_copyAppfile
+
+download_dsyms
+
+upload_symbols_to_crashlytics
+
+clean_build_artifacts
+
+nantes_deleteAppfile
 
 end

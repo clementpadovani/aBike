@@ -32,6 +32,36 @@ def toulouse_deleteDeliverfile
 
 end
 
+def toulouse_copyAppfile
+
+	deliverFile = File.expand_path File.dirname(__FILE__)
+
+	puts "deliver: #{deliverFile}"
+
+	deliverFile += "/Appfile"
+
+	if File::exists?(deliverFile)
+		copiedPath = Dir.pwd + "/Appfile"
+		FileUtils.cp deliverFile, copiedPath
+	else
+		puts "doesn't exist"
+		raise "Appfile doesn't exist at path " + deliverFile
+	end
+
+end
+
+def toulouse_deleteAppfile
+
+	copiedPath = Dir.pwd + "/Appfile"
+
+	if File::exists?(copiedPath)
+
+		FileUtils.rm copiedPath
+
+	end
+
+end
+
 private_lane :toulouse_appstore do |options|
 
 	gym(
@@ -54,5 +84,21 @@ private_lane :toulouse_appstore do |options|
 	)
 
 	toulouse_deleteDeliverfile
+
+end
+
+private_lane :toulouse_uploadSymbolsToFabric do
+
+clean_build_artifacts
+
+toulouse_copyAppfile
+
+download_dsyms
+
+upload_symbols_to_crashlytics
+
+clean_build_artifacts
+
+toulouse_deleteAppfile
 
 end

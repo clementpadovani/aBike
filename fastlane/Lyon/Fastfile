@@ -22,6 +22,18 @@ def lyon_copyDeliverfile
 
 end
 
+def lyon_deleteDeliverfile
+
+	copiedPath = Dir.pwd + "/Deliverfile"
+
+	if File::exists?(copiedPath)
+
+		FileUtils.rm copiedPath
+
+	end
+
+end
+
 def lyon_copyAppfile
 
 	deliverFile = File.expand_path File.dirname(__FILE__)
@@ -43,18 +55,6 @@ end
 def lyon_deleteAppfile
 
 	copiedPath = Dir.pwd + "/Appfile"
-
-	if File::exists?(copiedPath)
-
-		FileUtils.rm copiedPath
-
-	end
-
-end
-
-def lyon_deleteDeliverfile
-
-	copiedPath = Dir.pwd + "/Deliverfile"
 
 	if File::exists?(copiedPath)
 

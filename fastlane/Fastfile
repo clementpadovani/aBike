@@ -78,7 +78,27 @@ end
 
 lane :updloadSymbolsToFabric do
 
+ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = getCurrentBuildNumber
+
 lyon_uploadSymbolsToFabric
+
+bruxelles_uploadSymbolsToFabric
+
+creteil_uploadSymbolsToFabric
+
+dublin_uploadSymbolsToFabric
+
+luxembourg_uploadSymbolsToFabric
+
+marseille_uploadSymbolsToFabric
+
+mulhouse_uploadSymbolsToFabric
+
+nantes_uploadSymbolsToFabric
+
+paris_uploadSymbolsToFabric
+
+toulouse_uploadSymbolsToFabric
 
 end
 
