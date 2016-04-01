@@ -78,7 +78,7 @@ end
 
 lane :uploadSymbolsToFabric do
 
-ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = getCurrentBuildNumber
+ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = "#{getCurrentBuildNumber}"
 
 lyon_uploadSymbolsToFabric
 
