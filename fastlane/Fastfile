@@ -76,7 +76,7 @@ lane :appstore do
 
 end
 
-lane :updloadSymbolsToFabric do
+lane :uploadSymbolsToFabric do
 
 ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = getCurrentBuildNumber
 
