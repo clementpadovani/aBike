@@ -4442,6 +4442,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4463,6 +4464,7 @@
 					"SCREENSHOTS=0",
 					"RELEASE=0",
 				);
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -4540,6 +4542,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
@@ -4548,6 +4552,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_PEDANTIC = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4574,6 +4580,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
@@ -4581,6 +4589,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4605,6 +4614,8 @@
 			baseConfigurationReference = 6123D1AB81E6E64CDFE10B7A /* Pods-aBikeFramework.debug.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
@@ -4621,6 +4632,9 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -4651,6 +4665,8 @@
 			baseConfigurationReference = 3A68E622C6BD449FF3330E28 /* Pods-aBikeFramework.release.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
@@ -4666,6 +4682,8 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -5335,6 +5353,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "$(inherited)";
 				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
 				SDKROOT = iphoneos;
@@ -5348,6 +5367,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CP_CURRENT_BUILD = "$(inherited)";
@@ -5356,6 +5377,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5381,6 +5403,8 @@
 			baseConfigurationReference = 66E78C35848180A90007AF0F /* Pods-aBikeFramework.tests.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -5397,6 +5421,8 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -6385,6 +6411,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
@@ -6394,6 +6422,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6412,6 +6441,8 @@
 			baseConfigurationReference = 1BEFE1C7C76D94F984787220 /* Pods-aBikeFramework.screenshots.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
@@ -6426,6 +6457,8 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				GCC_PREFIX_HEADER = aBikeFramework/aBikeLibrary/aBikeFrameworkPrefixHeader.pch;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

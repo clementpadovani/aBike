@@ -1323,7 +1323,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		{
 			UIGraphicsBeginImageContextWithOptions([userLocationAnnotationView bounds].size, NO, 0);
 			
-			[[userLocationAnnotationView layer] renderInContext: UIGraphicsGetCurrentContext()];
+			[[userLocationAnnotationView layer] renderInContext: (CGContextRef __nonnull) UIGraphicsGetCurrentContext()];
 			
 			//BOOL hasRendered = [userLocationAnnotationView drawViewHierarchyInRect: [userLocationAnnotationView bounds] afterScreenUpdates: NO];
 			

@@ -130,7 +130,7 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 	mainstoreURL = [[mainstoreURL URLByAppendingPathComponent: projectName] URLByAppendingPathExtension: @"sqlite"];
 
-	if (![[NSFileManager defaultManager] fileExistsAtPath: [mainstoreURL path]])
+	if (![[NSFileManager defaultManager] fileExistsAtPath: (NSString * __nonnull) [mainstoreURL path]])
 		return;
 
 	NSPersistentStoreCoordinator *tempPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self model]];
@@ -522,7 +522,7 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 																					 isDirectory: YES];
 
 
-	if (![[NSFileManager defaultManager] fileExistsAtPath: [applicationSupportDirectoryURL path] isDirectory: NULL])
+	if (![[NSFileManager defaultManager] fileExistsAtPath: (NSString * __nonnull) [applicationSupportDirectoryURL path] isDirectory: NULL])
 	{
 		NSError *creationError = nil;
 		
@@ -537,7 +537,7 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 		// Migrate
 
-		if ([[NSFileManager defaultManager] fileExistsAtPath: [storeURL path]])
+		if ([[NSFileManager defaultManager] fileExistsAtPath: (NSString * __nonnull) [storeURL path]])
 		{
 			NSError *copyError = nil;
 
@@ -561,7 +561,7 @@ static NSString * const kCPCoreDataManagerUserFileName = @"User";
 
 		userStoreURL = [[userStoreURL URLByAppendingPathComponent: kCPCoreDataManagerUserFileName] URLByAppendingPathExtension: @"sqlite"];
 
-		if ([[NSFileManager defaultManager] fileExistsAtPath: [userStoreURL path]])
+		if ([[NSFileManager defaultManager] fileExistsAtPath: (NSString * __nonnull) [userStoreURL path]])
 		{
 			NSError *copyError = nil;
 

@@ -48,7 +48,7 @@
 
 + (NSURL *) ve_fileURLForCities
 {
-	return [[NSBundle ve_libraryResources] URLForResource: @"aBikeCities" withExtension: @"plist"];
+	return (NSURL *__nonnull) [[NSBundle ve_libraryResources] URLForResource: @"aBikeCities" withExtension: @"plist"];
 }
 
 + (NSString *) ve_adRemoverProductIdentifier

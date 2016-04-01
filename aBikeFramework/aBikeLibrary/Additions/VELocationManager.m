@@ -109,7 +109,7 @@ static VELocationManager *_sharedLocationManager = nil;
 #else
 - (CLLocation *) currentLocation
 {
-	return [[self locationManager] location];
+	return (CLLocation * __nonnull) [[self locationManager] location];
 }
 #endif
 
@@ -554,7 +554,7 @@ static VELocationManager *_sharedLocationManager = nil;
 		
 			//CPLog(@"open settings");
 			
-			[[UIApplication sharedApplication] openURL: [NSURL URLWithString: UIApplicationOpenSettingsURLString]];
+			[[UIApplication sharedApplication] openURL: (NSURL *__nonnull) [NSURL URLWithString: UIApplicationOpenSettingsURLString]];
 			
 		};
 

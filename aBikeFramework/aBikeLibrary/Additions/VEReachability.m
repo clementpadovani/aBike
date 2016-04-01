@@ -95,7 +95,7 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
 
 +(instancetype)reachabilityWithHostname:(NSString*)hostname
 {
-    SCNetworkReachabilityRef ref = SCNetworkReachabilityCreateWithName(NULL, [hostname UTF8String]);
+    SCNetworkReachabilityRef ref = SCNetworkReachabilityCreateWithName(NULL, (const char *__nonnull) [hostname UTF8String]);
     if (ref) 
     {
         id reachability = [[self alloc] initWithReachabilityRef:CFBridgingRetain((__bridge id)ref)];
