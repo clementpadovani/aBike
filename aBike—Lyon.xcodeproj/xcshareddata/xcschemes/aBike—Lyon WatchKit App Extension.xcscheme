@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "59EC264E1CA8549400D77605"
-               BuildableName = "aBike&#x2014;Lyon WatchKit App Extension.appex"
+               BuildableName = "aBikeLyonWatchExtension.appex"
                BlueprintName = "aBike&#x2014;Lyon WatchKit App Extension"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59EC264E1CA8549400D77605"
-            BuildableName = "aBike&#x2014;Lyon WatchKit App Extension.appex"
+            BuildableName = "aBikeLyonWatchExtension.appex"
             BlueprintName = "aBike&#x2014;Lyon WatchKit App Extension"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
