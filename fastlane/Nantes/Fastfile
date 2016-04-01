@@ -89,15 +89,9 @@ end
 
 private_lane :nantes_uploadSymbolsToFabric do
 
-clean_build_artifacts
-
 nantes_copyAppfile
 
 download_dsyms
-
-upload_symbols_to_crashlytics
-
-clean_build_artifacts
 
 nantes_deleteAppfile
 

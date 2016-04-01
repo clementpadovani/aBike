@@ -89,15 +89,9 @@ end
 
 private_lane :mulhouse_uploadSymbolsToFabric do
 
-clean_build_artifacts
-
 mulhouse_copyAppfile
 
 download_dsyms
-
-upload_symbols_to_crashlytics
-
-clean_build_artifacts
 
 mulhouse_deleteAppfile
 

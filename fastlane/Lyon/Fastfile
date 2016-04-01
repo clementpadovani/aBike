@@ -91,15 +91,9 @@ end
 
 private_lane :lyon_uploadSymbolsToFabric do
 
-clean_build_artifacts
-
 lyon_copyAppfile
 
 download_dsyms
-
-upload_symbols_to_crashlytics
-
-clean_build_artifacts
 
 lyon_deleteAppfile
 

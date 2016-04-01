@@ -89,15 +89,9 @@ end
 
 private_lane :dublin_uploadSymbolsToFabric do
 
-clean_build_artifacts
-
 dublin_copyAppfile
 
 download_dsyms
-
-upload_symbols_to_crashlytics
-
-clean_build_artifacts
 
 dublin_deleteAppfile
 

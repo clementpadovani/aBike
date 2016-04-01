@@ -78,7 +78,11 @@ end
 
 lane :uploadSymbolsToFabric do
 
+clean_build_artifacts
+
 ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = "#{getCurrentBuildNumber}"
+
+debug
 
 lyon_uploadSymbolsToFabric
 
@@ -99,6 +103,10 @@ nantes_uploadSymbolsToFabric
 paris_uploadSymbolsToFabric
 
 toulouse_uploadSymbolsToFabric
+
+upload_symbols_to_crashlytics
+
+clean_build_artifacts
 
 end
 
