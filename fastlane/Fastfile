@@ -82,8 +82,6 @@ clean_build_artifacts
 
 ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = "#{getCurrentBuildNumber}"
 
-debug
-
 lyon_uploadSymbolsToFabric
 
 bruxelles_uploadSymbolsToFabric
