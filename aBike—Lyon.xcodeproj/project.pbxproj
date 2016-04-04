@@ -830,7 +830,6 @@
 		59567E221C4A50920042767D /* aBikeTVFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFramework.h; sourceTree = "<group>"; };
 		59567E241C4A50920042767D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5960916A1C6F730E00473C8F /* sendToFabric.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sendToFabric.sh; sourceTree = "<group>"; };
-		5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CurrentVersion.xcconfig; sourceTree = "<group>"; };
 		596488861C949B540060C3A4 /* aBikeFramework_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFramework_Private.h; sourceTree = "<group>"; };
 		596990B01C5D080A00AEFFBC /* aBike—Nantes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike—Nantes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596990B31C5D080B00AEFFBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1626,7 +1625,6 @@
 		594AC0831C6F7ECF002FE220 /* Various */ = {
 			isa = PBXGroup;
 			children = (
-				5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */,
 				599CFC561C4BB7F700A244B3 /* Settings.bundle */,
 				59A23FC61C53DA5500776B09 /* VEConstants.h */,
 				59B8C13D1C4AA60B00595F35 /* Warnings.xcconfig */,
@@ -4304,6 +4302,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4314,6 +4313,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -4325,6 +4325,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4336,6 +4337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2abca973-af4f-4fa7-8e38-27fa0b83f93f";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -4347,6 +4349,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4357,6 +4360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -4448,8 +4452,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = "$(inherited)";
-				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -4505,8 +4507,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = "$(inherited)";
-				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -4548,6 +4548,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -4571,6 +4572,7 @@
 				PROVISIONING_PROFILE = "303b1b47-3f83-4116-881e-bdc7b3150dfb";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "303b1b47-3f83-4116-881e-bdc7b3150dfb";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -4585,6 +4587,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -4606,6 +4609,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "579dfe78-2124-43ba-983b-1d371a6deea2";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -4621,7 +4625,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 437;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -4671,7 +4675,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 437;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -4873,6 +4877,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4883,6 +4888,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -4894,6 +4900,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4905,6 +4912,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "94873490-cdda-4ab5-a307-bf05036f7a93";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -4916,6 +4924,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4928,6 +4937,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -4990,6 +5000,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -4999,6 +5010,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -5011,6 +5023,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5022,6 +5035,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "656b04de-bfe8-435f-9e2a-9d5bc2dd78e1";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -5033,6 +5047,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5043,6 +5058,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -5055,6 +5071,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5064,6 +5081,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -5075,6 +5093,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5086,6 +5105,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8bb2f4be-7636-4c76-8fe3-4b1e70c576b1";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -5097,6 +5117,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5107,6 +5128,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -5119,6 +5141,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5128,6 +5151,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -5139,6 +5163,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5150,6 +5175,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "945e67ff-9af9-4988-bf33-fe6b51bd0c20";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -5161,6 +5187,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5171,6 +5198,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -5183,6 +5211,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5192,6 +5221,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -5203,6 +5233,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5214,6 +5245,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7c312d3f-f10d-4223-9ff0-f6ffedfdc04b";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -5225,6 +5257,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5235,6 +5268,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -5248,6 +5282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5257,6 +5292,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -5269,6 +5305,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5280,6 +5317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "dc56e2ab-7098-40dc-bca8-cc7135e43ce1";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -5292,6 +5330,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5302,12 +5341,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
 		599369CD1C94DF4700D177BF /* Tests */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY = YES;
@@ -5327,8 +5366,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = "$(inherited)";
-				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -5373,6 +5410,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5395,6 +5433,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5410,7 +5449,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 437;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -5531,6 +5570,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5540,6 +5580,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5553,6 +5594,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5562,6 +5604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5574,6 +5617,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5583,6 +5627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5595,6 +5640,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5604,6 +5650,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5616,6 +5663,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5625,6 +5673,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5717,6 +5766,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5727,6 +5777,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5756,6 +5807,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5766,6 +5818,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5794,6 +5847,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5804,6 +5858,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5832,6 +5887,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5842,6 +5898,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Tests;
 		};
@@ -5942,6 +5999,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5952,6 +6010,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -5963,6 +6022,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5974,6 +6034,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "727454f7-88f4-4b79-8ef2-cd96e9ab4bac";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -5985,6 +6046,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5995,6 +6057,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -6352,7 +6415,6 @@
 		};
 		59FACE271C496793005DB202 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5960916B1C6F73CD00473C8F /* CurrentVersion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY = YES;
@@ -6372,8 +6434,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CP_CURRENT_BUILD = "$(inherited)";
-				CP_CURRENT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6416,6 +6476,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6433,6 +6494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};
@@ -6446,7 +6508,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 437;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -6488,6 +6550,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6498,6 +6561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -6509,6 +6573,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6520,6 +6585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "70ebcbbf-55b8-429d-8aa4-3ff03b1345ac";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -6531,6 +6597,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
+				CURRENT_PROJECT_VERSION = 437;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6541,6 +6608,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Screenshots;
 		};

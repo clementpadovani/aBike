@@ -32,13 +32,15 @@ lane :appstore do
 
 	ensure_git_status_clean
 
-	puts "Current build version: #{getCurrentBuildVersion}"
+# 	puts "Current build version: #{getCurrentBuildVersion}"
+# 
+# 	buildVersion = prompt(text: "Build Version: ")
+# 
+# 	updateBuildVersion(buildVersion)
+# 
+# 	bumpBuildNumber
 
-	buildVersion = prompt(text: "Build Version: ")
-
-	updateBuildVersion(buildVersion)
-
-	bumpBuildNumber
+	increment_build_number
 
 	options = {
 		:automatic_release => true,
