@@ -1,6 +1,6 @@
 $:.unshift File.dirname("../.." + __FILE__)
 
-require '../Various/version.rb'
+# require '../Various/version.rb'
 
 import './Lyon/Fastfile'
 import './Bruxelles/Fastfile'
