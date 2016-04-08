@@ -24,7 +24,15 @@ before_all do
   # cocoapods
 end
 
-lane :appstore do
+lane :appstore do |options|
+
+	is_only_lyon = options[:only_lyon]
+	
+	if is_only_lyon == nil
+	
+		is_only_lyon = false
+	
+	end
 
 	# verify_xcode
 
@@ -32,15 +40,21 @@ lane :appstore do
 
 	ensure_git_status_clean
 
-# 	puts "Current build version: #{getCurrentBuildVersion}"
-# 
-# 	buildVersion = prompt(text: "Build Version: ")
+	currentBuildVersion = get_version_number
+
+	Helper.log.info "Current build version: #{currentBuildVersion}"
+
+	buildVersion = prompt(text: "Build Version: ")
+
+	increment_version_number(version_number: buildVersion)
 # 
 # 	updateBuildVersion(buildVersion)
 # 
 # 	bumpBuildNumber
 
 	increment_build_number
+	
+	currentBuildNumber = get_build_number
 
 	options = {
 		:automatic_release => true,
@@ -49,32 +63,35 @@ lane :appstore do
 
 	lyon_appstore(options)
 
-	bruxelles_appstore(options)
+	if (is_only_lyon == false)
+		bruxelles_appstore(options)
 
-	creteil_appstore(options)
+		creteil_appstore(options)
 
-	dublin_appstore(options)
+		dublin_appstore(options)
 
-	luxembourg_appstore(options)
+		luxembourg_appstore(options)
 
-	marseille_appstore(options)
+		marseille_appstore(options)
 
-	mulhouse_appstore(options)
+		mulhouse_appstore(options)
 
-	nantes_appstore(options)
+		nantes_appstore(options)
 
-	paris_appstore(options)
+		paris_appstore(options)
 
-	toulouse_appstore(options)
+		toulouse_appstore(options)
+	
+		git_add(path: ".")
 
-	git_add(path: ".")
+		git_commit(path: ".",
+				message: "Version Bump #{currentBuildVersion} (#{currentBuildNumber})")
 
-	git_commit(path: ".",
-	        message: "Version Bump #{buildVersion} (#{getCurrentBuildNumber})")
+		add_git_tag(prefix: 'v', build_number: currentBuildNumber)
 
-	add_git_tag(prefix: 'v', build_number: getCurrentBuildNumber)
-
-	push_to_git_remote
+		push_to_git_remote
+	
+		end
 
 end
 
@@ -82,7 +99,9 @@ lane :uploadSymbolsToFabric do
 
 clean_build_artifacts
 
-ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = "#{getCurrentBuildNumber}"
+currentBuildNumber = get_build_number
+
+ENV['DOWNLOAD_DSYMS_BUILD_NUMBER'] = "#{currentBuildNumber}"
 
 lyon_uploadSymbolsToFabric
 
