@@ -77,7 +77,16 @@ private_lane :lyon_appstore do |options|
 		 output_name: "aBike—Lyon",
 		 export_method: "app-store"
 	)
+	
+	is_only_lyon = options[:is_only_lyon]
+	
+	if (is_only_lyon == nil)
+	
+		is_only_lyon = false
+	
+	end
 
+	if (is_only_lyon == false)	
 	lyon_copyDeliverfile
 
 	deliver(
@@ -86,6 +95,7 @@ private_lane :lyon_appstore do |options|
 	)
 
 	lyon_deleteDeliverfile
+	end
 
 end
 

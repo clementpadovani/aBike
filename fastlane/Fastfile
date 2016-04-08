@@ -77,9 +77,17 @@ lane :cp_appstore do |actualOptions|
 		:skip_screenshots => true
 	}
 	
+	
+	
 	ENV['CP_CURRENT_VERSION'] = currentBuildVersion
 	
 	ENV['CP_CURRENT_BUILD'] = currentBuildNumber
+
+	if (is_only_lyon == true)
+	
+		options[:is_only_lyon] = true
+	
+	end
 
 	lyon_appstore(options)
 
