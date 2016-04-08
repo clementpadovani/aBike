@@ -9,9 +9,14 @@ sudo gem install fastlane
 ----
 
 ## iOS
-### ios appstore
+### ios testLyon
 ```
-fastlane ios appstore
+fastlane ios testLyon
+```
+
+### ios cp_appstore
+```
+fastlane ios cp_appstore
 ```
 
 ### ios uploadSymbolsToFabric

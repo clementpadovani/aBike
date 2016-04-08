@@ -24,15 +24,29 @@ before_all do
   # cocoapods
 end
 
-lane :appstore do |options|
+lane :testLyon do
 
-	is_only_lyon = options[:only_lyon]
+cp_appstore(only_lyon: true)
+
+end
+
+lane :cp_appstore do |actualOptions|
+
+	is_only_lyon = actualOptions[:only_lyon]
 	
 	if is_only_lyon == nil
 	
+		puts "is nil"
+	
 		is_only_lyon = false
 	
+	else
+	
+		puts "not nil"
+	
 	end
+	
+	puts "only lyon #{is_only_lyon}"
 
 	# verify_xcode
 
@@ -47,6 +61,8 @@ lane :appstore do |options|
 	buildVersion = prompt(text: "Build Version: ")
 
 	increment_version_number(version_number: buildVersion)
+	
+	currentBuildVersion = get_version_number
 # 
 # 	updateBuildVersion(buildVersion)
 # 
@@ -60,6 +76,10 @@ lane :appstore do |options|
 		:automatic_release => true,
 		:skip_screenshots => true
 	}
+	
+	ENV['CP_CURRENT_VERSION'] = currentBuildVersion
+	
+	ENV['CP_CURRENT_BUILD'] = currentBuildNumber
 
 	lyon_appstore(options)
 
