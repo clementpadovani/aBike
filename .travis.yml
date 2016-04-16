@@ -44,4 +44,6 @@ script:
 after_script:
     - ./Vendor/remove-key.sh
     - ./Vendor/remove-constants.sh
+    - echo ENV['status_message']
+    - echo $TRAVIS_TEST_RESULT
     - sleep 3
