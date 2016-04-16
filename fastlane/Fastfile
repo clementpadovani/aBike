@@ -15,6 +15,24 @@ import './Toulouse/Fastfile'
 
 default_platform :ios
 
+def submitForReviewDeliverBlock
+
+	currentBuildVersion = get_version_number
+	
+	currentBuildNumber = get_build_number
+
+deliver(
+		automatic_release: true,
+		skip_screenshots: true,
+		skip_metadata: true,
+		submit_for_review: true,
+		skip_binary_upload: true,
+		app_version: currentBuildVersion,
+		build_number: currentBuildNumber
+	)
+
+end
+
 platform :ios do
 
 update_fastlane
@@ -120,6 +138,90 @@ lane :cp_appstore do |actualOptions|
 		push_to_git_remote
 	
 		end
+
+end
+
+lane :submitForReview do
+
+	lyon_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	lyon_deleteDeliverfile
+
+//
+
+	bruxelles_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	bruxelles_deleteDeliverfile
+
+//
+
+	creteil_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	creteil_deleteDeliverfile
+
+//
+
+	dublin_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	dublin_deleteDeliverfile
+
+//
+
+	luxembourg_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	luxembourg_deleteDeliverfile
+
+//
+
+	marseille_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	marseille_deleteDeliverfile
+
+//
+
+	mulhouse_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	mulhouse_deleteDeliverfile
+
+//
+
+	nantes_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	nantes_deleteDeliverfile
+
+//
+
+	paris_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	paris_deleteDeliverfile
+
+//
+
+	toulouse_copyDeliverfile
+
+	submitForReviewDeliverBlock
+
+	toulouse_deleteDeliverfile
+
+//
 
 end
 

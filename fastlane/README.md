@@ -19,6 +19,11 @@ fastlane ios testLyon
 fastlane ios cp_appstore
 ```
 
+### ios submitForReview
+```
+fastlane ios submitForReview
+```
+
 ### ios uploadSymbolsToFabric
 ```
 fastlane ios uploadSymbolsToFabric
