@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0730"
-   version = "1.8">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -11,12 +11,11 @@
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES"
-            hideIssues = "NO">
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "597A40811C4BACE800E4B781"
-               BuildableName = "aBike&#x2014;Bruxelles.app"
+               BuildableName = "aBike_Bruxelles.app"
                BlueprintName = "aBike&#x2014;Bruxelles"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
@@ -48,7 +47,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "597A40811C4BACE800E4B781"
-            BuildableName = "aBike&#x2014;Bruxelles.app"
+            BuildableName = "aBike_Bruxelles.app"
             BlueprintName = "aBike&#x2014;Bruxelles"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
@@ -71,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "597A40811C4BACE800E4B781"
-            BuildableName = "aBike&#x2014;Bruxelles.app"
+            BuildableName = "aBike_Bruxelles.app"
             BlueprintName = "aBike&#x2014;Bruxelles"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
@@ -94,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "597A40811C4BACE800E4B781"
-            BuildableName = "aBike&#x2014;Bruxelles.app"
+            BuildableName = "aBike_Bruxelles.app"
             BlueprintName = "aBike&#x2014;Bruxelles"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>

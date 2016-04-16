@@ -1712,8 +1712,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
 		return;
 
-    NSAssert(NO, @"test");
-	
 	Station *station = [(VEStationAnnotationView *) view annotation];
 	
 	NSUInteger stationIndex = [[self stations] indexOfObject: station];

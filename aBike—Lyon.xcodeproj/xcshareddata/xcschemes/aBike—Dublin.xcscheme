@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "59FEC1E61C6B41F500809D75"
-               BuildableName = "aBike&#x2014;Dublin.app"
+               BuildableName = "aBike_Dublin.app"
                BlueprintName = "aBike&#x2014;Dublin"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59FEC1E61C6B41F500809D75"
-            BuildableName = "aBike&#x2014;Dublin.app"
+            BuildableName = "aBike_Dublin.app"
             BlueprintName = "aBike&#x2014;Dublin"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59FEC1E61C6B41F500809D75"
-            BuildableName = "aBike&#x2014;Dublin.app"
+            BuildableName = "aBike_Dublin.app"
             BlueprintName = "aBike&#x2014;Dublin"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
@@ -93,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59FEC1E61C6B41F500809D75"
-            BuildableName = "aBike&#x2014;Dublin.app"
+            BuildableName = "aBike_Dublin.app"
             BlueprintName = "aBike&#x2014;Dublin"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>

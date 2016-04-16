@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "596990AF1C5D080A00AEFFBC"
-               BuildableName = "aBike&#x2014;Nantes.app"
+               BuildableName = "aBike_Nantes.app"
                BlueprintName = "aBike&#x2014;Nantes"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "596990AF1C5D080A00AEFFBC"
-            BuildableName = "aBike&#x2014;Nantes.app"
+            BuildableName = "aBike_Nantes.app"
             BlueprintName = "aBike&#x2014;Nantes"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "596990AF1C5D080A00AEFFBC"
-            BuildableName = "aBike&#x2014;Nantes.app"
+            BuildableName = "aBike_Nantes.app"
             BlueprintName = "aBike&#x2014;Nantes"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
@@ -107,7 +107,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "596990AF1C5D080A00AEFFBC"
-            BuildableName = "aBike&#x2014;Nantes.app"
+            BuildableName = "aBike_Nantes.app"
             BlueprintName = "aBike&#x2014;Nantes"
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>

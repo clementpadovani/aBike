@@ -23,9 +23,9 @@
 	
 	if ((numberOfLines - 1) < lineNumber)
 	{
-		NSException *exception = [NSException exceptionWithName: NSRangeException reason: [NSString stringWithFormat: @"Trying to access a line past the number of lines of the string.\nString: %@ number of lines: %lu requested line number: %lu", self, (unsigned long) numberOfLines, (unsigned long) lineNumber] userInfo: nil];
-		
-		@throw exception;
+        [NSException raise: @"Trying to access a line past the number of lines of the string.\nString: %@ number of lines: %lu requested line number: %lu" format: self, (unsigned long) numberOfLines, (unsigned long) lineNumber];
+
+        return nil;
 	}
 	else
 	{
