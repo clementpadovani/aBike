@@ -719,6 +719,7 @@
 		592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aBikeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aBikeFrameworkTests.m; sourceTree = "<group>"; };
 		592ADC891C948A39002E1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_0_6.xcdatamodel; sourceTree = "<group>"; };
 		593AD9221C4951E7003B686A /* aBike_Lyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aBike_Lyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593AD9261C4951E7003B686A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		593AD9361C4951E7003B686A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -6888,6 +6889,7 @@
 		593ADA581C495394003B686A /* aBike.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */,
 				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
 				593ADA591C495394003B686A /* aBike.xcdatamodel */,
 				593ADA5A1C495394003B686A /* aBike_1_1.xcdatamodel */,
@@ -6895,7 +6897,7 @@
 				593ADA5C1C495394003B686A /* aBike_2_0.xcdatamodel */,
 				593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */,
 			);
-			currentVersion = 599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */;
+			currentVersion = 5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */;
 			path = aBike.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
