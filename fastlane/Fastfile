@@ -109,6 +109,8 @@ lane :cp_appstore do |actualOptions|
     
     end
 
+	ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
+
     lyon_appstore(options)
 
     if (is_only_lyon == false)
