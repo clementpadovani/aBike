@@ -36,10 +36,6 @@ static NSString * const kUserSettingsCityRectChangedValueNotification = @"kUserS
 
 @property (nonatomic, readonly) BOOL hasValidCityRect;
 
-@property (nonatomic, readonly) BOOL canShowAds;
-
 + (UserSettings *) sharedSettings;
-
-- (void) userIsANiceOne;
 
 @end

@@ -28,10 +28,6 @@ static NSString * const kVETimeFormatterNumberOfBikeStationsHasChangedNotificati
 
 + (NSUInteger) numberOfBikeStations;
 
-+ (BOOL) includesAdRemover;
-
-+ (void) updateAdRemover;
-
 //+ (NSString *) formattedDurationForLastUpdate: (NSDate *) lastUpdate;
 
 @end
