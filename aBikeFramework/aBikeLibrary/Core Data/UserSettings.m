@@ -10,7 +10,6 @@
 
 @implementation UserSettings
 
-@dynamic adRemover;
 @dynamic canLoadData;
 @dynamic mapType;
 @dynamic setup;
