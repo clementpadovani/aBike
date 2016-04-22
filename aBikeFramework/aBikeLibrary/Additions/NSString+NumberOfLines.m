@@ -37,7 +37,7 @@
 
 - (NSRange) ve_rangeOfSubstringAtLine: (NSUInteger) lineNumber
 {
-	NSRange subStringRange;
+    NSRange subStringRange = NSMakeRange(0, 0);
 	
 	NSString *subString = [self ve_substringAtLine: lineNumber];
 	
