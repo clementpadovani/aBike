@@ -307,16 +307,18 @@
 		}
 	}
 
+    NSArray *actualStations = [stations copy];
+
 	if (containsSearchResult)
 	{
 		NSMutableArray *tempArray = [stations mutableCopy];
 
 		[tempArray removeObjectAtIndex: searchResultIndex];
 
-		stations = [tempArray copy];
+		actualStations = [tempArray copy];
 	}
 
-	[[self stationsScrollView] setStations: stations];
+	[[self stationsScrollView] setStations: actualStations];
 	
 	[self setCurrentStationIndex: 0];
 }

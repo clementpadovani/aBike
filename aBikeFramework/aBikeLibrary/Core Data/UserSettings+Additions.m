@@ -157,10 +157,6 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 60. * 2.;
 
 - (void) setLargerCityRect: (VECityRect) largerCityRect withNotification: (BOOL) notifies;
 
-- (NSString *) getSecret;
-
-- (NSData *) makeItSecret: (NSString *) aSecret;
-
 @end
 
 @implementation UserSettings (PrivateAdditions)
@@ -175,59 +171,6 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 60. * 2.;
 	
 	if (notifies)
 		[[NSNotificationCenter defaultCenter] postNotificationName: kUserSettingsCityRectChangedValueNotification object: nil userInfo: nil];
-}
-
-- (NSString *) getSecret
-{
-	NSString *secret;
-	
-	NSUUID *aSecret = [[UIDevice currentDevice] identifierForVendor];
-	
-	if (!aSecret)
-		CPLog(@"NIL SECRET!");
-	
-	secret = [aSecret UUIDString];
-	
-	if (!secret)
-		CPLog(@"NIL SECRET");
-	
-	//CPLog(@"uuid: %@", secret);
-	
-	return secret;
-}
-
-- (NSData *) makeItSecret: (NSString *) aSecret
-{
-	NSData *theSecret;
-	
-	const char *something = [aSecret UTF8String];
-	
-	uint8_t anotherThing[CC_MD5_DIGEST_LENGTH];
-	
-	CC_MD5(something, (CC_LONG) strlen(something), anotherThing);
-
-	NSMutableString *somethingElse = [NSMutableString stringWithCapacity: CC_MD5_DIGEST_LENGTH * 2];
-	
-	for (NSUInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-	{
-		[somethingElse appendFormat: @"%02x", anotherThing[i]];
-	}
-	
-	//CPLog(@"something else: %@", somethingElse);
-	
-	theSecret = [somethingElse dataUsingEncoding: NSUTF8StringEncoding];
-	
-//	NSString *testString = [[NSString alloc] initWithData: theSecret encoding: NSUTF8StringEncoding];
-//	
-//	CPLog(@"test: %@", testString);
-//	
-//	CPLog(@"equal: %@", [testString isEqualToString: somethingElse] ? @"YES" : @"NO");
-//	
-//	CPLog(@"lenght: %d", CC_MD5_DIGEST_LENGTH);
-//	
-//	CPLog(@"data length: %lu", [theSecret length]);
-	
-	return theSecret;
 }
 
 @end
