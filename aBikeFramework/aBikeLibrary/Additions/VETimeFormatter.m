@@ -115,8 +115,8 @@ NSUInteger currentNumberOfStations = 0;
 
 + (void) userSettingsHaveChangedNotification: (NSNotification *) notification
 {
-	//CPLog(@"settings changed: %@", notification);
-	
+	CPLog(@"settings changed: %@", notification);
+
 	if ([self currentUnitSystem] != [_sharedFormatter units])
 	{
 		[_sharedFormatter setUnits: [self currentUnitSystem]];
@@ -125,10 +125,13 @@ NSUInteger currentNumberOfStations = 0;
 		
 		//CPLog(@"units not the same");
 	}
-	else
-	{
-		//CPLog(@"same units");
-	}
+
+        if (currentNumberOfStations != [self sanitizedNumberOfBikeStations])
+        {
+            currentNumberOfStations = [self sanitizedNumberOfBikeStations];
+
+            [[NSNotificationCenter defaultCenter] postNotificationName: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
+        }
 }
 
 + (NSUInteger) numberOfBikeStations
