@@ -54,23 +54,15 @@ lane :cp_appstore do |actualOptions|
 
 	is_only_lyon = actualOptions[:only_lyon]
 	
-	if is_only_lyon == nil
-	
-		puts "is nil"
-	
+	if is_only_lyon == nil	
 		is_only_lyon = false
-	
-	else
-	
-		puts "not nil"
-	
 	end
-	
-	puts "only lyon #{is_only_lyon}"
 
 	# verify_xcode
 
-	ensure_git_branch
+	if (is_only_lyon == false)
+		ensure_git_branch
+	end
 
 	ensure_git_status_clean
 
