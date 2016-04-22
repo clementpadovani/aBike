@@ -106,13 +106,13 @@ BOOL includesAdRemover = YES;
 
 + (NSString *) formattedStringForDuration: (NSTimeInterval) duration
 {
-	NSTimeInterval goodTimeInterval = (duration / 60);
+	NSTimeInterval goodTimeInterval = (duration / 60.);
 	
 	goodTimeInterval = ceil(goodTimeInterval);
 	
-		goodTimeInterval *= 60;
+    goodTimeInterval *= 60.;
 		
-		return [self ios8_formattedStringForDuration: goodTimeInterval];
+    return [self ios8_formattedStringForDuration: goodTimeInterval];
 }
 
 + (NSString *) ios8_formattedStringForDuration: (NSTimeInterval) duration
