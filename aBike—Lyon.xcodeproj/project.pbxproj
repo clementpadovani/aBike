@@ -37,7 +37,6 @@
 		5906FC011C4A5FBB00A2D3D1 /* VEStationAnnotationShareAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA981C495394003B686A /* VEStationAnnotationShareAccessoryView.h */; };
 		5906FC021C4A5FBB00A2D3D1 /* VEStationAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9A1C495394003B686A /* VEStationAnnotationView.h */; };
 		5906FC031C4A5FBB00A2D3D1 /* VERouteRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9C1C495394003B686A /* VERouteRenderer.h */; };
-		5906FC041C4A5FBB00A2D3D1 /* VEAdStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9F1C495394003B686A /* VEAdStationView.h */; };
 		5906FC051C4A5FBB00A2D3D1 /* VEStationsScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA11C495394003B686A /* VEStationsScrollView.h */; };
 		5906FC061C4A5FBB00A2D3D1 /* VEStationsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA31C495394003B686A /* VEStationsView.h */; };
 		5906FC071C4A5FBB00A2D3D1 /* VEStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA51C495394003B686A /* VEStationView.h */; };
@@ -124,8 +123,6 @@
 		593ADAF11C495394003B686A /* VEStationAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA9B1C495394003B686A /* VEStationAnnotationView.m */; };
 		593ADAF21C495394003B686A /* VERouteRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9C1C495394003B686A /* VERouteRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA9D1C495394003B686A /* VERouteRenderer.m */; };
-		593ADAF41C495394003B686A /* VEAdStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA9F1C495394003B686A /* VEAdStationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADAF51C495394003B686A /* VEAdStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA01C495394003B686A /* VEAdStationView.m */; };
 		593ADAF61C495394003B686A /* VEStationsScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA11C495394003B686A /* VEStationsScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAF71C495394003B686A /* VEStationsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA21C495394003B686A /* VEStationsScrollView.m */; };
 		593ADAF81C495394003B686A /* VEStationsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAA31C495394003B686A /* VEStationsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -183,7 +180,6 @@
 		59567E671C4A50A50042767D /* VEStationAnnotationShareAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA991C495394003B686A /* VEStationAnnotationShareAccessoryView.m */; };
 		59567E691C4A50A50042767D /* VEStationAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA9B1C495394003B686A /* VEStationAnnotationView.m */; };
 		59567E6B1C4A50A50042767D /* VERouteRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA9D1C495394003B686A /* VERouteRenderer.m */; };
-		59567E6D1C4A50A50042767D /* VEAdStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA01C495394003B686A /* VEAdStationView.m */; };
 		59567E6F1C4A50A50042767D /* VEStationsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA21C495394003B686A /* VEStationsScrollView.m */; };
 		59567E711C4A50A50042767D /* VEStationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA41C495394003B686A /* VEStationsView.m */; };
 		59567E731C4A50A50042767D /* VEStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADAA61C495394003B686A /* VEStationView.m */; };
@@ -789,8 +785,6 @@
 		593ADA9B1C495394003B686A /* VEStationAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEStationAnnotationView.m; sourceTree = "<group>"; };
 		593ADA9C1C495394003B686A /* VERouteRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VERouteRenderer.h; sourceTree = "<group>"; };
 		593ADA9D1C495394003B686A /* VERouteRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VERouteRenderer.m; sourceTree = "<group>"; };
-		593ADA9F1C495394003B686A /* VEAdStationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEAdStationView.h; sourceTree = "<group>"; };
-		593ADAA01C495394003B686A /* VEAdStationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEAdStationView.m; sourceTree = "<group>"; };
 		593ADAA11C495394003B686A /* VEStationsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEStationsScrollView.h; sourceTree = "<group>"; };
 		593ADAA21C495394003B686A /* VEStationsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEStationsScrollView.m; sourceTree = "<group>"; };
 		593ADAA31C495394003B686A /* VEStationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEStationsView.h; sourceTree = "<group>"; };
@@ -1592,19 +1586,9 @@
 			path = "Stations View";
 			sourceTree = "<group>";
 		};
-		593DF8CD1C779C05002F8B07 /* Ad Station View */ = {
-			isa = PBXGroup;
-			children = (
-				593ADA9F1C495394003B686A /* VEAdStationView.h */,
-				593ADAA01C495394003B686A /* VEAdStationView.m */,
-			);
-			path = "Ad Station View";
-			sourceTree = "<group>";
-		};
 		593DF8CE1C779C0C002F8B07 /* Station Views */ = {
 			isa = PBXGroup;
 			children = (
-				593DF8CD1C779C05002F8B07 /* Ad Station View */,
 				593DF8CF1C779C11002F8B07 /* Search Station View */,
 				593ADAA51C495394003B686A /* VEStationView.h */,
 				593ADAA61C495394003B686A /* VEStationView.m */,
@@ -1995,7 +1979,6 @@
 				593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */,
 				593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */,
 				593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */,
-				593ADAF41C495394003B686A /* VEAdStationView.h in Headers */,
 				593ADAD21C495394003B686A /* VEBaseModel.h in Headers */,
 				593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */,
 				593ADAB71C495394003B686A /* NSNumber+Extensions.h in Headers */,
@@ -2066,7 +2049,6 @@
 				5906FC011C4A5FBB00A2D3D1 /* VEStationAnnotationShareAccessoryView.h in Headers */,
 				5906FC021C4A5FBB00A2D3D1 /* VEStationAnnotationView.h in Headers */,
 				5906FC031C4A5FBB00A2D3D1 /* VERouteRenderer.h in Headers */,
-				5906FC041C4A5FBB00A2D3D1 /* VEAdStationView.h in Headers */,
 				5906FC051C4A5FBB00A2D3D1 /* VEStationsScrollView.h in Headers */,
 				5906FC061C4A5FBB00A2D3D1 /* VEStationsView.h in Headers */,
 				59ABE1DD1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h in Headers */,
@@ -3665,7 +3647,6 @@
 				593ADAB61C495394003B686A /* NSBundle+VELibrary.m in Sources */,
 				593ADADA1C495394003B686A /* VEDataImporter.m in Sources */,
 				593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */,
-				593ADAF51C495394003B686A /* VEAdStationView.m in Sources */,
 				590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */,
 				593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */,
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
@@ -3728,7 +3709,6 @@
 				59567E671C4A50A50042767D /* VEStationAnnotationShareAccessoryView.m in Sources */,
 				59567E691C4A50A50042767D /* VEStationAnnotationView.m in Sources */,
 				59567E6B1C4A50A50042767D /* VERouteRenderer.m in Sources */,
-				59567E6D1C4A50A50042767D /* VEAdStationView.m in Sources */,
 				59ABE1DF1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */,
 				59567E6F1C4A50A50042767D /* VEStationsScrollView.m in Sources */,
 				59567E711C4A50A50042767D /* VEStationsView.m in Sources */,
