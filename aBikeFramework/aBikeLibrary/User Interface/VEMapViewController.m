@@ -26,8 +26,6 @@
 
 #import "VETimeFormatter.h"
 
-#import "VEAdStationView.h"
-
 #import "VEStationAnnotationDirectionsAccessoryView.h"
 
 #import "VEStationAnnotationShareAccessoryView.h"
@@ -135,8 +133,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 @property (nonatomic, assign, getter = hasAppeared) BOOL appeared;
 
-- (void) setupUserSettings;
-
 - (void) setupMemoryStore;
 
 - (void) sortStationsByClosestToUserLocation: (CLLocation *) location;
@@ -196,8 +192,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //		[self setCanDisplayBannerAds: YES];
 
 	[self setCanShowUserLocationInCohort: YES];
-	
-	[self setupUserSettings];
 	
 	VEMapContainerView *mapContainerView = [[VEMapContainerView alloc] initWithMapViewDelegate: self];
 
@@ -370,71 +364,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 //	if ([VETimeFormatter includesAdRemover])
 //		[[VEAdStationView sharedAdStationView] canLoad];
-}
-
-- (void) updateAds
-{
-	[self setupUserSettings];
-}
-
-- (void) setupUserSettings
-{
-	if ([self searchResult])
-	{
-		[self setCanDisplayBannerAds: NO];
-
-		return;
-	}
-	
-	[self setCanDisplayBannerAds: YES];
-	
-	__weak VEMapViewController *weakSelf = self;
-	
-	[[[CPCoreDataManager sharedCoreDataManager] userContext] performBlock: ^{
-		
-		__strong VEMapViewController *strongSelf = weakSelf;
-		
-		if (!strongSelf)
-			CPLog(@"nil strong self");
-		
-		BOOL canShowAds = [[UserSettings sharedSettings] canShowAds];
-		
-		CPLog(@"can show ads: %@", canShowAds ? @"YES" : @"NO");
-		
-		dispatch_async(dispatch_get_main_queue(), ^{
-			
-			[strongSelf setCanDisplayBannerAds: canShowAds];
-			
-			#if kEnableCrashlytics
-			
-				NSDictionary *attributes = @{@"Can Show Ads" : canShowAds ? @"YES" : @"NO"};
-			
-				[Answers logCustomEventWithName: @"Can Show Ads"
-							customAttributes: attributes];
-			
-			#endif
-			
-		});
-		
-	}];
-
-	//CPLog(@"can show ads: %@", canShowAds ? @"YES" : @"NO");
-
-	//[self setCanDisplayBannerAds: canShowAds];
-	
-	
-}
-
-- (void) setCanDisplayBannerAds:(BOOL)canDisplayBannerAds
-{
-	if (![NSThread isMainThread])
-		NSAssert(NO, @"Not main thread");
-	
-	//CPLog(@"can show ads: %@", canDisplayBannerAds ? @"YES" : @"NO");
-
-	#if !TARGET_OS_TV
-	[super setCanDisplayBannerAds: canDisplayBannerAds];
-	#endif
 }
 
 - (void) setupMemoryStore
@@ -886,8 +815,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
-	if (index == [[self stationsView] adStationIndex] ||
-	    index == [[self stationsView] searchStationIndex])
+	if (index == [[self stationsView] searchStationIndex])
 	{
 		//CPLog(@"station is ad view");
 		
@@ -899,9 +827,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 		[self setCurrentStation: nil];
 
-		if (index == [[self stationsView] adStationIndex])
-			[[VEAdStationView sharedAdStationView] canLoad];
-		
 		return;
 	}
 	
@@ -1011,9 +936,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	NSUInteger numberOfStations = [VETimeFormatter numberOfBikeStations];
 	
-	if ([VETimeFormatter includesAdRemover])
-		numberOfStations -= 1;
-
 //	if ([self searchResult])
 //		numberOfStations -= 1;
 
@@ -1166,9 +1088,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {
 	NSUInteger realNumberOfStations = [VETimeFormatter numberOfBikeStations];
 	
-	if ([VETimeFormatter includesAdRemover])
-		realNumberOfStations -= 1;
-
 //	if ([self searchResult])
 //		realNumberOfStations -= 1;
 

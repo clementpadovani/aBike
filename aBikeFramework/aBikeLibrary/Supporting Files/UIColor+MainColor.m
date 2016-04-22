@@ -263,22 +263,6 @@ static NSCache *_colorsCache;
 	return color;
 }
 
-+ (UIColor *) ve_disabledTextColor
-{
-	NSString *colorString = NSStringFromSelector(_cmd);
-	
-	UIColor *color = [_colorsCache objectForKey: colorString];
-	
-	if (color)
-		return color;
-	
-	color = [UIColor redColor];
-	
-	[_colorsCache setObject: color forKey: colorString];
-	
-	return color;
-}
-
 #pragma clang diagnostic pop
 
 @end

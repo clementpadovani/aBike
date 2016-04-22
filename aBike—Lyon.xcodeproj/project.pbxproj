@@ -59,7 +59,6 @@
 		59159CC41C6495FF00811AE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59159CC61C6495FF00811AE3 /* InfoPlist.strings */; };
 		59159CC91C64968E00811AE3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
-		59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59159CCC1C64969200811AE3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
 		592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */; };
@@ -142,7 +141,6 @@
 		593ADB061C495394003B686A /* VEConsulDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAB11C495394003B686A /* VEConsulDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADB091C4953F6003B686A /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADB081C4953F6003B686A /* VEAppDelegate.m */; };
 		593ADB0C1C4955BF003B686A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0B1C4955BF003B686A /* Images.xcassets */; };
-		593ADB101C49574F003B686A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 593DF8C91C779C01002F8B07 /* VESearchStationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593DF8CC1C779C01002F8B07 /* VESearchStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593DF8CA1C779C01002F8B07 /* VESearchStationView.m */; };
 		5949F8E71C649A2D008398F4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5949F8E91C649A2D008398F4 /* Localizable.strings */; };
@@ -200,7 +198,6 @@
 		596990CF1C5D091600AEFFBC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596990CE1C5D091600AEFFBC /* Launch Screen.storyboard */; };
 		596990D11C5D0A8900AEFFBC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		596990D21C5D0A8900AEFFBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
-		596990D31C5D0A8900AEFFBC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		596990D61C5D0A9C00AEFFBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
 		596990D71C5D0ACE00AEFFBC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		596990DA1C5D0AFB00AEFFBC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 596990DC1C5D0AFB00AEFFBC /* Localizable.strings */; };
@@ -211,7 +208,6 @@
 		5975F28C1C4BBF5500839B95 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975F28B1C4BBF5500839B95 /* VEAppDelegate.m */; };
 		5975F28D1C4BBF7E00839B95 /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		5975F28E1C4BBF7E00839B95 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5975F2921C4BBF8D00839B95 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		5975F2931C4BC02F00839B95 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		5975F2951C4BC12500839B95 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5975F2941C4BC12500839B95 /* Launch Screen.storyboard */; };
 		5975F29A1C4BC1B300839B95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5975F29C1C4BC1B300839B95 /* InfoPlist.strings */; };
@@ -220,7 +216,6 @@
 		5975F2B71C4BC37C00839B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975F2B61C4BC37C00839B95 /* Assets.xcassets */; };
 		5975F2C11C4BC3C300839B95 /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		5975F2C21C4BC3C300839B95 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5975F2C61C4BC3CA00839B95 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		5975F2C91C4BC41200839B95 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975F2C81C4BC41200839B95 /* VEAppDelegate.m */; };
 		5975F2CE1C4BC43000839B95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5975F2D01C4BC43000839B95 /* InfoPlist.strings */; };
 		5975F2D11C4BC43600839B95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5975F2D31C4BC43600839B95 /* Localizable.strings */; };
@@ -230,7 +225,6 @@
 		5975F2EE1C4BC5DA00839B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975F2ED1C4BC5DA00839B95 /* Assets.xcassets */; };
 		5975F2F81C4BC61400839B95 /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		5975F2F91C4BC61400839B95 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5975F2FD1C4BC61700839B95 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		5975F3001C4BC63300839B95 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975F2FF1C4BC63300839B95 /* VEAppDelegate.m */; };
 		5975F3051C4BC66500839B95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5975F3071C4BC66500839B95 /* InfoPlist.strings */; };
 		5975F3081C4BC66A00839B95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5975F30A1C4BC66A00839B95 /* Localizable.strings */; };
@@ -240,7 +234,6 @@
 		5975F3251C4BC83100839B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975F3241C4BC83100839B95 /* Assets.xcassets */; };
 		5975F32E1C4BC85400839B95 /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		5975F32F1C4BC85400839B95 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5975F3331C4BC85B00839B95 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		5975F3361C4BC89400839B95 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975F3351C4BC89400839B95 /* VEAppDelegate.m */; };
 		5975F3381C4BC92E00839B95 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5975F3371C4BC92E00839B95 /* Launch Screen.storyboard */; };
 		5975F33D1C4BC96400839B95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5975F33F1C4BC96400839B95 /* Localizable.strings */; };
@@ -267,7 +260,6 @@
 		597A409B1C4BAD3200E4B781 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		597E38B11C64987700E98631 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		597E38B21C64987700E98631 /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
-		599CFC3F1C4BB0C300A244B3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		599CFC441C4BB17F00A244B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC461C4BB17F00A244B3 /* InfoPlist.strings */; };
 		599CFC471C4BB18400A244B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC491C4BB18400A244B3 /* Localizable.strings */; };
 		599CFC571C4BB7F700A244B3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
@@ -285,7 +277,6 @@
 		59AB74981C6B484B003EBFF1 /* aBikeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59AB749E1C6B4855003EBFF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59AB749F1C6B4855003EBFF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
-		59AB74A01C6B4855003EBFF1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59AB74A11C6B4857003EBFF1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
 		59AB74A21C6B485A003EBFF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59AB74A71C6B4878003EBFF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74A91C6B4878003EBFF1 /* InfoPlist.strings */; };
@@ -333,7 +324,6 @@
 		59FEC2161C6B437400809D75 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FEC2151C6B437400809D75 /* VEAppDelegate.m */; };
 		59FEC2171C6B43A900809D75 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59FEC2181C6B43A900809D75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
-		59FEC2191C6B43A900809D75 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59FEC21A1C6B43AB00809D75 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
 		59FEC21D1C6B43B600809D75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		5DBC4F9FC2FF48A253D1B2BF /* Pods_aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01924533FB6D38255F9C4899 /* Pods_aBikeFramework.framework */; };
@@ -807,7 +797,6 @@
 		593ADB0A1C495468003B686A /* aBikeFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		593ADB0B1C4955BF003B686A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		593ADB0D1C4955D7003B686A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		593ADB0F1C49574F003B686A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		593DF8C91C779C01002F8B07 /* VESearchStationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VESearchStationView.h; sourceTree = "<group>"; };
 		593DF8CA1C779C01002F8B07 /* VESearchStationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VESearchStationView.m; sourceTree = "<group>"; };
 		5949F8E81C649A2D008398F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -1022,7 +1011,6 @@
 				59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */,
 				59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */,
 				591483F71C649364007EDABB /* aBikeFramework.framework in Frameworks */,
-				59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */,
 				7831083EEF66B53ABC3E07BF /* Pods_aBike_Cr_teil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1043,7 +1031,6 @@
 				59DDA02F1C78A339006A8BAA /* StoreKit.framework in Frameworks */,
 				59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */,
 				59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */,
-				593ADB101C49574F003B686A /* iAd.framework in Frameworks */,
 				593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */,
 				192B456925B12100F4224555 /* Pods_aBike_Lyon.framework in Frameworks */,
 			);
@@ -1084,7 +1071,6 @@
 				596990D61C5D0A9C00AEFFBC /* libc++.tbd in Frameworks */,
 				596990D21C5D0A8900AEFFBC /* SystemConfiguration.framework in Frameworks */,
 				596990C81C5D083A00AEFFBC /* aBikeFramework.framework in Frameworks */,
-				596990D31C5D0A8900AEFFBC /* iAd.framework in Frameworks */,
 				D96E30EA4BC2F683332FF635 /* Pods_aBike_Nantes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1100,7 +1086,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5975F2921C4BBF8D00839B95 /* iAd.framework in Frameworks */,
 				5975F35F1C4BCAB300839B95 /* libc++.tbd in Frameworks */,
 				5975F3571C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F28D1C4BBF7E00839B95 /* aBikeFramework.framework in Frameworks */,
@@ -1113,7 +1098,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5975F2C61C4BC3CA00839B95 /* iAd.framework in Frameworks */,
 				5975F35E1C4BCAB200839B95 /* libc++.tbd in Frameworks */,
 				5975F3561C4BCAA000839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F2C11C4BC3C300839B95 /* aBikeFramework.framework in Frameworks */,
@@ -1126,7 +1110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5975F2FD1C4BC61700839B95 /* iAd.framework in Frameworks */,
 				5975F35D1C4BCAB200839B95 /* libc++.tbd in Frameworks */,
 				5975F3551C4BCA9F00839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F2F81C4BC61400839B95 /* aBikeFramework.framework in Frameworks */,
@@ -1142,7 +1125,6 @@
 				5975F34A1C4BCA7D00839B95 /* libc++.tbd in Frameworks */,
 				5975F3491C4BCA7600839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F3481C4BCA6500839B95 /* Security.framework in Frameworks */,
-				5975F3331C4BC85B00839B95 /* iAd.framework in Frameworks */,
 				5975F32E1C4BC85400839B95 /* aBikeFramework.framework in Frameworks */,
 				D4EAA4C1D41CACB762F9AA63 /* Pods_aBike_Toulouse.framework in Frameworks */,
 			);
@@ -1152,7 +1134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599CFC3F1C4BB0C300A244B3 /* iAd.framework in Frameworks */,
 				5975F3601C4BCAB400839B95 /* libc++.tbd in Frameworks */,
 				5975F3581C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */,
 				597A409A1C4BAD3200E4B781 /* aBikeFramework.framework in Frameworks */,
@@ -1175,7 +1156,6 @@
 				59AB74A11C6B4857003EBFF1 /* libc++.tbd in Frameworks */,
 				59AB749F1C6B4855003EBFF1 /* SystemConfiguration.framework in Frameworks */,
 				59AB74971C6B484B003EBFF1 /* aBikeFramework.framework in Frameworks */,
-				59AB74A01C6B4855003EBFF1 /* iAd.framework in Frameworks */,
 				59AB749E1C6B4855003EBFF1 /* Security.framework in Frameworks */,
 				6B827124594F257BAB247309 /* Pods_aBike_Luxembourg.framework in Frameworks */,
 			);
@@ -1245,7 +1225,6 @@
 				59FEC21A1C6B43AB00809D75 /* libc++.tbd in Frameworks */,
 				59FEC2181C6B43A900809D75 /* SystemConfiguration.framework in Frameworks */,
 				59FEC1FF1C6B424800809D75 /* aBikeFramework.framework in Frameworks */,
-				59FEC2191C6B43A900809D75 /* iAd.framework in Frameworks */,
 				782CBCA57E248907AA6B1F09 /* Pods_aBike_Dublin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1341,7 +1320,6 @@
 				59F9ECB31C54EE0F0007D069 /* aBike—ToulouseUITests */,
 				59ABE1D51C4BA62300108AD4 /* Security.framework */,
 				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
-				593ADB0F1C49574F003B686A /* iAd.framework */,
 				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
 				59A23FC51C53DA1600776B09 /* locations */,
 			);

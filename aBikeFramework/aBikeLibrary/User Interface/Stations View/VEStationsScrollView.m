@@ -14,8 +14,6 @@
 
 #import "VETimeFormatter.h"
 
-#import "VEAdStationView.h"
-
 #import "CPCoreDataManager.h"
 
 #import "VESearchStationView.h"
@@ -84,8 +82,6 @@
 {
 	NSUInteger numberOfStations = [VETimeFormatter numberOfBikeStations];
 	
-	BOOL showAdRemover = [VETimeFormatter includesAdRemover];
-
 //	if (searching)
 //	{
 //		numberOfStations--;
@@ -141,17 +137,10 @@
 //			isSearch = NO;
 //		}
 
-		if (!showAdRemover)
-		{
-			isLast = NO;
-		}
-		else
-		{
-			if ((i + 1) == numberOfStations)
-			{
-				isLast = YES;
-			}
-		}
+//			if ((i + 1) == numberOfStations)
+//			{
+//				isLast = YES;
+//			}
 
 		VEStationView *aStationView;
 		
@@ -172,12 +161,6 @@
 				[aStationView setDirectionsEnabled: ![self isSearching]];
 			}
 			
-		}
-		else
-		{
-			aStationView = (VEStationView *) [VEAdStationView sharedAdStationView];
-
-			[self setAdStationIndex: i];
 		}
 		
 		[self addSubview: aStationView];

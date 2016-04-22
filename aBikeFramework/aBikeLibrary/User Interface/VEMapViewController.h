@@ -19,6 +19,4 @@ static NSString * const kVEMapViewControllerViewGoToBackgroundNotification = @"k
 
 - (void) loadMapData;
 
-- (void) updateAds;
-
 @end

@@ -15,7 +15,6 @@
 @import UIKit;
 @import CoreLocation;
 @import MapKit;
-@import iAd;
 @import CoreData;
 
 static const NSTimeInterval kDefaultAnimationTime = .5;
