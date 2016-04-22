@@ -30,12 +30,6 @@
 
 #import "VEStationAnnotationShareAccessoryView.h"
 
-#if !TARGET_OS_TV
-@import iAd;
-#endif
-
-@import StoreKit;
-
 @import MapKit;
 
 static NSString * const kVEMapViewControllerStationAnnotationViewReuseIdentifier = @"kVEMapViewControllerStationAnnotationViewReuseIdentifier";
@@ -159,25 +153,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	return self;
 }
 
-#if TARGET_OS_TV
-
-- (UIView *) originalContentView
-{
-	return [self view];
-}
-
-#else
-
-- (UIView *) originalContentView
-{
-	if ([self searchResult])
-		return [self view];
-
-	return [super originalContentView];
-}
-
-#endif
-
 - (void) userWantsDismissal
 {
 	[self dismissViewControllerAnimated: YES
@@ -217,13 +192,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //		[[self navigationItem] setRightBarButtonItem: mapBarButtonItem];
 	}
 		
-	[[self originalContentView] addSubview: mapContainerView];
+	[[self view] addSubview: mapContainerView];
 	
-	[[self originalContentView] addSubview: stationsView];
+	[[self view] addSubview: stationsView];
 	
-	[[self originalContentView] setBackgroundColor: [UIColor ve_mapViewControllerBackgroundColor]];
+	[[self view] setBackgroundColor: [UIColor ve_mapViewControllerBackgroundColor]];
 	
-	[[self originalContentView] setOpaque: YES];
+	[[self view] setOpaque: YES];
 	
 	[self setMapContainerView: mapContainerView];
 	
@@ -469,7 +444,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 	CGFloat stationsViewBottomVerticalConstant = keyboardEndVerticalOrigin;
 
-	stationsViewBottomVerticalConstant -= CGRectGetHeight([[self originalContentView] bounds]);
+	stationsViewBottomVerticalConstant -= CGRectGetHeight([[self view] bounds]);
 
 	BOOL keyboardIsDismissing = (VECGFloatIsEqual(screenHeight, keyboardEndVerticalOrigin));
 
@@ -533,7 +508,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSLayoutConstraint *stationsViewBottomVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self stationsView]
 																		   attribute: NSLayoutAttributeBottom
 																		   relatedBy: NSLayoutRelationEqual
-																			 toItem: [self originalContentView]
+																			 toItem: [self view]
 																		   attribute: NSLayoutAttributeBottom
 																		  multiplier: 1
 																		    constant: 0];
@@ -542,7 +517,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 	[self setStationsViewBottomVerticalConstraint: stationsViewBottomVerticalConstraint];
 
-	[[self originalContentView] addConstraints: newConstraints];
+	[[self view] addConstraints: newConstraints];
 }
 
 - (void) dealloc

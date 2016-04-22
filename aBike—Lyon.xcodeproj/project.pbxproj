@@ -297,7 +297,6 @@
 		59C312D01C4A6CF6002F1657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		59C3C2361C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C3C2351C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m */; };
 		59CA2D9C1C949D030025CBAC /* aBikeFramework_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 596488861C949B540060C3A4 /* aBikeFramework_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59DDA02F1C78A339006A8BAA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DDA02E1C78A339006A8BAA /* StoreKit.framework */; };
 		59DDCBCB1C4BADD400E3DA02 /* VEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDCBCA1C4BADD400E3DA02 /* VEAppDelegate.m */; };
 		59DDCBCE1C4BAF8000E3DA02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DDCBCD1C4BAF8000E3DA02 /* Launch Screen.storyboard */; };
 		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
@@ -1028,7 +1027,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59ABE1D81C4BA62A00108AD4 /* libc++.tbd in Frameworks */,
-				59DDA02F1C78A339006A8BAA /* StoreKit.framework in Frameworks */,
 				59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */,
 				59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */,
 				593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */,

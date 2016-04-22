@@ -3,7 +3,7 @@
     // Xcode target to check (String)
     "target": "aBikeFramework",
     // Xcode build configuration to check (String)
-    "buildConfig": "Release",
+    "buildConfig": "Debug",
     // Rules to apply (Array of strings)
     "rules": ["APIAvailability","BuildSettingsSetInGUI","DefaultInExhaustiveSwitch","IBOutletsInPublicInterface","IdentifierNaming","ImplicitAtomicProperty","InstanceMethodWritesToStaticVariable","MacroLiteral","MallocCast","MallocWithoutSizeof","NewInitializer","NonTypedefBlockDeclaration","OrderedComparisonOpDirection","ReservedIdentifierNaming","StrongInsteadOfRetain","ThrowingObjCException","UnusedMethod","UnusedResource","UnusedTranslation","UsedVariableMarkedUnused","XIBUnknownClassReference"],
     // Rules to apply only (Array of strings)
@@ -38,7 +38,7 @@
     // Use our own modules cache (Boolean)
     //"useOwnModulesCache": true,
     // Process only target precompiled headers (Boolean)
-    //"processOnlyTargetPCHs": true,
+    "processOnlyTargetPCHs": false,
     // Verbose output (Boolean)
     "verbose": true,
     // Output format ("human" / "json" / "plist" / "xcode")
@@ -398,7 +398,7 @@
         // Options for rule: Moving common inclusions into prefix header
         "PrefixHeaderIncludeSuggestion": {
             // Show including files (Boolean)
-            //"showFiles": false
+            "showFiles": true
             // Warning threshold percentage (Positive integer)
             //"warningThresholdPercent": 30
             // Regexes for ignored file paths (Array of regular expression
@@ -752,9 +752,9 @@
         // Options for rule: Unprefixed category method
         "UnprefixedCategoryMethod": {
             // Allowed prefixes (Array of strings)
-            //"prefixes": null
+            //"prefixes": null,
             // Ignore setters (Boolean)
-            //"ignoreSetters": true
+            "ignoreSetters": false
             // Regexes for ignored file paths (Array of regular expression
             // strings)
             //"ignoredFileRegexes": null
@@ -781,7 +781,7 @@
         // target
         "APIAvailability": {
             // Avoid false positives (Boolean)
-            //"avoidFalsePositives": true
+            "avoidFalsePositives": false
             // Regexes for ignored file paths (Array of regular expression
             // strings)
             //"ignoredFileRegexes": null

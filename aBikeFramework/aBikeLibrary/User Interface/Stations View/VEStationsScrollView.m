@@ -28,8 +28,6 @@
 
 @property (nonatomic, assign, getter = isSearching) BOOL searching;
 
-@property (nonatomic, assign, readwrite) NSUInteger adStationIndex;
-
 @property (nonatomic, assign, readwrite) NSUInteger searchStationIndex;
 
 - (void) removeDirectionsForStationAtIndex: (NSUInteger) stationIndex;
@@ -49,8 +47,6 @@
 		_searching = searching;
 
 		_stationViewDelegate = stationViewDelegate;
-
-		_adStationIndex = NSNotFound;
 
 		_searchStationIndex = NSNotFound;
 		
