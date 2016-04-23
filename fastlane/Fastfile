@@ -15,7 +15,7 @@ import './Toulouse/Fastfile'
 
 default_platform :ios
 
-def submitForReviewDeliverBlock
+def submit_for_review_deliver_block
 
     currentBuildVersion = get_version_number
     
@@ -41,7 +41,7 @@ before_all do
   # cocoapods
 end
 
-lane :testLyon do
+lane :test_lyon do
 
 cp_appstore(only_lyon: true)
 
@@ -146,11 +146,11 @@ lane :cp_appstore do |actualOptions|
 
 end
 
-lane :submitForReview do
+lane :submit_for_review do
 
     lyon_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     lyon_deleteDeliverfile
 
@@ -158,7 +158,7 @@ lane :submitForReview do
 
     bruxelles_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     bruxelles_deleteDeliverfile
 
@@ -166,7 +166,7 @@ lane :submitForReview do
 
     creteil_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     creteil_deleteDeliverfile
 
@@ -174,7 +174,7 @@ lane :submitForReview do
 
     dublin_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     dublin_deleteDeliverfile
 
@@ -182,7 +182,7 @@ lane :submitForReview do
 
     luxembourg_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     luxembourg_deleteDeliverfile
 
@@ -190,7 +190,7 @@ lane :submitForReview do
 
     marseille_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     marseille_deleteDeliverfile
 
@@ -198,7 +198,7 @@ lane :submitForReview do
 
     mulhouse_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     mulhouse_deleteDeliverfile
 
@@ -206,7 +206,7 @@ lane :submitForReview do
 
     nantes_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     nantes_deleteDeliverfile
 
@@ -214,7 +214,7 @@ lane :submitForReview do
 
     paris_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     paris_deleteDeliverfile
 
@@ -222,7 +222,7 @@ lane :submitForReview do
 
     toulouse_copyDeliverfile
 
-    submitForReviewDeliverBlock
+    submit_for_review_deliver_block
 
     toulouse_deleteDeliverfile
 
@@ -230,7 +230,7 @@ lane :submitForReview do
 
 end
 
-lane :uploadSymbolsToFabric do
+lane :upload_symbols_to_fabric do
 
 clean_build_artifacts
 

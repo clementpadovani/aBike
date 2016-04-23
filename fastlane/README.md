@@ -9,9 +9,9 @@ sudo gem install fastlane
 ----
 
 ## iOS
-### ios testLyon
+### ios test_lyon
 ```
-fastlane ios testLyon
+fastlane ios test_lyon
 ```
 
 ### ios cp_appstore
@@ -19,14 +19,14 @@ fastlane ios testLyon
 fastlane ios cp_appstore
 ```
 
-### ios submitForReview
+### ios submit_for_review
 ```
-fastlane ios submitForReview
+fastlane ios submit_for_review
 ```
 
-### ios uploadSymbolsToFabric
+### ios upload_symbols_to_fabric
 ```
-fastlane ios uploadSymbolsToFabric
+fastlane ios upload_symbols_to_fabric
 ```
 
 
