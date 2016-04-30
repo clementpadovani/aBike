@@ -64,6 +64,7 @@
 		59280A911CD5238D00B603B5 /* VEWatchBikeStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26721CA85A2300D77605 /* VEWatchBikeStation.h */; };
 		592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */; };
 		592ADC8A1C948A39002E1FBE /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
+		592DF3B01CD54FAA000B1F4A /* VEInitialInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DF3AF1CD54FAA000B1F4A /* VEInitialInterfaceController.m */; };
 		593AD9271C4951E7003B686A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593AD9261C4951E7003B686A /* main.m */; };
 		593AD9561C495217003B686A /* aBikeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 593AD9551C495217003B686A /* aBikeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593AD95A1C495217003B686A /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -755,6 +756,8 @@
 		592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aBikeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aBikeFrameworkTests.m; sourceTree = "<group>"; };
 		592ADC891C948A39002E1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		592DF3AE1CD54FAA000B1F4A /* VEInitialInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEInitialInterfaceController.h; sourceTree = "<group>"; };
+		592DF3AF1CD54FAA000B1F4A /* VEInitialInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEInitialInterfaceController.m; sourceTree = "<group>"; };
 		5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_0_6.xcdatamodel; sourceTree = "<group>"; };
 		593AD9221C4951E7003B686A /* aBike_Lyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aBike_Lyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593AD9261C4951E7003B686A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1932,6 +1935,8 @@
 				59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */,
 				59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */,
 				59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */,
+				592DF3AE1CD54FAA000B1F4A /* VEInitialInterfaceController.h */,
+				592DF3AF1CD54FAA000B1F4A /* VEInitialInterfaceController.m */,
 			);
 			path = "aBike—Lyon WatchKit App Extension";
 			sourceTree = "<group>";
@@ -3991,6 +3996,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59EC26741CA85A2300D77605 /* VEWatchBikeStation.m in Sources */,
+				592DF3B01CD54FAA000B1F4A /* VEInitialInterfaceController.m in Sources */,
 				59EC266E1CA8571F00D77605 /* VEMainInterfaceController.m in Sources */,
 				59EC26711CA8573600D77605 /* VEExtensionDelegate.m in Sources */,
 				59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,

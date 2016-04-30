@@ -32,7 +32,14 @@
         <!--initialScene-->
         <scene sceneID="aho-lP-ScR">
             <objects>
-                <controller identifier="initialScene" id="EHM-gd-00A"/>
+                <controller identifier="initialScene" id="EHM-gd-00A" customClass="VEInitialInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="7n3-2h-aki"/>
+                    </items>
+                    <connections>
+                        <outlet property="openMainAppLabel" destination="7n3-2h-aki" id="8mH-3U-LbJ"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
