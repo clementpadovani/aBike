@@ -48,9 +48,9 @@
 
     CLLocationDegrees scalingFactor = ABS((cos(2 * M_PI * location.latitude / 360.0)));
 
-    static CLLocationDistance distance = 1000.;
+    static CLLocationDistance distance = 100.;
 
-    MKCoordinateSpan span = MKCoordinateSpanMake(distance / 111., distance / (scalingFactor * 111.));
+    MKCoordinateSpan span = MKCoordinateSpanMake(distance / 111000., distance / (scalingFactor * 111000.));
 
     MKCoordinateRegion region = MKCoordinateRegionMake(location, span);
 
