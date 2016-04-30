@@ -1164,6 +1164,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) userHasMovedToNewLocation: (CLLocation *) newLocation withForce: (BOOL) withForce
 {
+    NSParameterAssert([NSThread isMainThread]);
+
 	NSUInteger realNumberOfStations = [VETimeFormatter numberOfBikeStations];
 	
 	if ([VETimeFormatter includesAdRemover])
@@ -1195,6 +1197,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	[self setCurrentStation: [self stations][0]];
 	
 	[[self stationsView] setStations: [self stations]];
+
+    [[VEConsul sharedConsul] updateWatchStationsWithStations: [self stations]];
 	
 	[self setCurrentLocation: actualLocation];
 }

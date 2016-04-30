@@ -20,7 +20,7 @@
 {
     VEWatchBikeStation *newStation = [[VEWatchBikeStation alloc] init];
 
-    [newStation setStationName: [station name]];
+    [newStation setStationName: [station processedStationName]];
 
     [newStation setStationLocation: [station location]];
 
@@ -64,6 +64,15 @@
 + (BOOL) supportsSecureCoding
 {
     return YES;
+}
+
+- (NSString *) description
+{
+    NSString *superDescription = [super description];
+
+    superDescription = [superDescription stringByAppendingFormat: @" %@ %@ b: %lu s: %lu", [self stationName], [self stationLocation], (unsigned long) [self availableBikes], (unsigned long) [self availableStands]];
+
+    return superDescription;
 }
 
 @end

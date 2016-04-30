@@ -33,6 +33,13 @@
     }
 }
 
+//- (void) setCurrentBikeStation:(VEWatchBikeStation *)currentBikeStation
+//{
+//    _currentBikeStation = currentBikeStation;
+//
+//    NSLog(@"station: %@", currentBikeStation);
+//}
+
 - (void) didAppear
 {
     [super didAppear];

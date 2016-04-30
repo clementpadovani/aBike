@@ -13,7 +13,7 @@
 
 - (void) sessionReachabilityDidChange: (WCSession *) session
 {
-
+    NSLog(@"reachability: %@", session);
 }
 
 - (void) session: (WCSession *) session didReceiveApplicationContext: (NSDictionary <NSString *, id> *) applicationContext
@@ -36,6 +36,10 @@
         }
     }
 
+//    NSLog(@"received data: %@", stations);
+
+
+
     NSLog(@"did receive data");
 
 //    dispatch_async(dispatch_get_main_queue(), ^{
@@ -53,6 +57,14 @@
     [rootInterfaceController presentControllerWithNames: controllerNames
                                                contexts: stations];
 //    });
+}
+
+- (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError *)error
+{
+    NSLog(@"activate: %ld", (long) activationState);
+
+    if (error)
+        NSLog(@"error: %@", error);
 }
 
 - (void) applicationDidFinishLaunching

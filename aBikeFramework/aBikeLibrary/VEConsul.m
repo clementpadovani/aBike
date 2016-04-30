@@ -276,7 +276,7 @@ static VEConsul *_sharedConsul = nil;
 
                 for (NSManagedObjectID *aStationObjectID in stationsObjectIDs)
                 {
-                    Station *correspondingStation = [tempContext objectRegisteredForID: aStationObjectID];
+                    Station *correspondingStation = [tempContext objectWithID: aStationObjectID];
 
                     VEWatchBikeStation *watchStation = [VEWatchBikeStation watchBikeStationForStation: correspondingStation];
 

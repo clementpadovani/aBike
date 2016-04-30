@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "593AD9211C4951E7003B686A"
-               BuildableName = "aBike&#x2014;Lyon.app"
-               BlueprintName = "aBike&#x2014;Lyon"
+               BlueprintIdentifier = "59EC264E1CA8549400D77605"
+               BuildableName = "aBikeLyonWatchExtension.appex"
+               BlueprintName = "aBike&#x2014;Lyon WatchKit App Extension"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "59EC264E1CA8549400D77605"
-               BuildableName = "aBikeLyonWatchExtension.appex"
-               BlueprintName = "aBike&#x2014;Lyon WatchKit App Extension"
+               BlueprintIdentifier = "593AD9211C4951E7003B686A"
+               BuildableName = "aBike&#x2014;Lyon.app"
+               BlueprintName = "aBike&#x2014;Lyon"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -100,6 +100,13 @@
             ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OBJC_PRINT_REPLACED_METHODS"
+            value = "YES"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
