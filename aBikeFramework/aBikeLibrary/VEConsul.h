@@ -8,11 +8,15 @@
 
 #import "CPCoreDataManager.h"
 
+@import WatchConnectivity;
+
 @class VEConsul;
 
 @class VEWindow;
 
 @class VEMapViewController;
+
+@class Station;
 
 @protocol VEConsulDelegate <NSObject>
 
@@ -62,7 +66,7 @@
 
 @end
 
-@interface VEConsul : NSObject <VEAppDelegate>
+@interface VEConsul : NSObject <VEAppDelegate, WCSessionDelegate>
 
 @property (nonatomic, weak) id <VEConsulDelegate> delegate;
 
@@ -100,6 +104,8 @@
 #endif
 
 + (VEConsul *) sharedConsul;
+
+- (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations;
 
 - (void) setup;
 

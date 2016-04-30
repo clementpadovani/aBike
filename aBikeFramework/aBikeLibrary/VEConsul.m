@@ -6,6 +6,12 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+#if (SCREENSHOTS==1)
+
+@import SimulatorStatusMagic;
+
+#endif
+
 #import "VEConsul.h"
 
 #import "UIColor+MainColor.h"
@@ -26,11 +32,9 @@
 
 #import "UIDevice+Additions.h"
 
-#if (SCREENSHOTS==1)
+#import "VEWatchBikeStation.h"
 
-@import SimulatorStatusMagic;
-
-#endif
+#import "WCSession+VEStateAdditions.h"
 
 static VEConsul *_sharedConsul = nil;
 
@@ -199,7 +203,113 @@ static VEConsul *_sharedConsul = nil;
 	
 	[[VEConnectionManager sharedConnectionManger] setCanCallBack: YES];
 		
+    if ([WCSession isSupported])
+    {
+        WCSession *sharedSession = [WCSession defaultSession];
+
+        [sharedSession setDelegate: self];
+
+        [sharedSession activateSession];
+    }
+
 	return YES;
+}
+
+- (void) sessionReachabilityDidChange: (WCSession *) session
+{
+    if ([session isReachable])
+    {
+        CPLog(@"is reachable");
+    }
+    else
+    {
+        CPLog(@"not reachable");
+}
+}
+
+- (NSData *) archivedStationsForStationObject: (VEWatchBikeStation *) watchStation
+{
+    NSData *archivedStations = [NSKeyedArchiver archivedDataWithRootObject: watchStation];
+
+    return archivedStations;
+}
+
+- (NSDictionary <NSString *, id> *) applicationContextForWatchStations: (NSArray <VEWatchBikeStation *> *) watchStations
+{
+    NSMutableArray *stationsArray = [NSMutableArray arrayWithCapacity: [watchStations count]];
+
+    for (VEWatchBikeStation *aStation in watchStations)
+    {
+        [stationsArray addObject: [NSKeyedArchiver archivedDataWithRootObject: aStation]];
+    }
+
+    return @{@"stations" : stationsArray};
+}
+
+- (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations
+{
+    WCSession *currentSession = [WCSession defaultSession];
+
+    if ([WCSession isSupported])
+    {
+        if ([currentSession ve_sessionActive])
+        {
+            CPLog(@"active");
+
+            NSMutableArray <NSManagedObjectID *> *stationsObjectIDs = [NSMutableArray arrayWithCapacity: [stations count]];
+
+            for (Station *aStation in stations)
+            {
+                [stationsObjectIDs addObject: [aStation objectID]];
+            }
+
+            NSManagedObjectContext *tempContext = [[NSManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
+
+            [tempContext setPersistentStoreCoordinator: [[[CPCoreDataManager sharedCoreDataManager] standardContext] persistentStoreCoordinator]];
+
+            [tempContext performBlock: ^{
+
+                NSMutableArray <VEWatchBikeStation *> *_watchStations = [NSMutableArray arrayWithCapacity: [stations count]];
+
+                for (NSManagedObjectID *aStationObjectID in stationsObjectIDs)
+                {
+                    Station *correspondingStation = [tempContext objectWithID: aStationObjectID];
+
+                    VEWatchBikeStation *watchStation = [VEWatchBikeStation watchBikeStationForStation: correspondingStation];
+
+                    [_watchStations addObject: watchStation];
+                }
+
+                NSArray <VEWatchBikeStation *> *watchStations = [_watchStations copy];
+
+                NSDictionary *applicationContext = [self applicationContextForWatchStations: watchStations];
+
+                NSError *updateError = nil;
+
+                if (![[WCSession defaultSession] updateApplicationContext: applicationContext
+                                                               error: &updateError])
+                {
+                    CPLog(@"update error: %@", updateError);
+                }
+                else
+                {
+                    CPLog(@"updated");
+                }
+            }];
+        }
+        else
+        {
+            CPLog(@"not active");
+        }
+    }
+}
+
+- (void) session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError *)error
+{
+    if (error)
+        CPLog(@"error: %@", error);
+
+    [self sessionReachabilityDidChange: session];
 }
 
 - (BOOL) applicationOpenURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation
@@ -575,6 +685,7 @@ static VEConsul *_sharedConsul = nil;
 			[[Crashlytics sharedInstance] recordError: anError];
 
 #endif
+
         if (!hasSaved)
             CPLog(@"errors: %@", saveErrors);
 

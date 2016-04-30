@@ -401,8 +401,8 @@ static const NSTimeInterval kStationReloadDataThreshold = 60. * 2.;
 											    
 											    CPLog(@"exists: self: %@ context: %@", strongSelf ? @"YES" : @"NO", strongManagedObjectContext ? @"YES" : @"NO");
 											    
-											    NSAssert(NO, @"");
-											    
+//											    NSAssert(NO, @"");
+
 											    return;
 										    }
 										    

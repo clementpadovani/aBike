@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EHM-gd-00A">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--mainScene-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="mainScene" id="AgC-eL-Hgc" customClass="VEMainInterfaceController">
+                    <items>
+                        <map height="100" alignment="left" id="zzD-XN-qFy"/>
+                        <separator alignment="left" id="o2e-3E-TdW"/>
+                        <label alignment="center" text="Label" textAlignment="center" minimumScaleFactor="0.59999999999999998" id="2TR-u1-vCI"/>
+                        <group width="1" alignment="left" id="DPG-Ag-Wja">
+                            <items>
+                                <label alignment="left" text="Label" id="LFr-k0-35S"/>
+                                <label alignment="right" text="Label" id="ijH-p9-oPl"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="availableBikesLabel" destination="LFr-k0-35S" id="TDE-cb-Yux"/>
+                        <outlet property="availableStandsLabel" destination="ijH-p9-oPl" id="Y1d-ju-pIg"/>
+                        <outlet property="stationMap" destination="zzD-XN-qFy" id="PhF-p0-kW4"/>
+                        <outlet property="stationNameLabel" destination="2TR-u1-vCI" id="GD7-yq-i2i"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--initialScene-->
+        <scene sceneID="aho-lP-ScR">
+            <objects>
+                <controller identifier="initialScene" id="EHM-gd-00A"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
