@@ -36,8 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIColor *) ve_mapViewControllerOverlayStrokeColor;
 
-+ (UIColor *) ve_disabledTextColor;
-
 @end
 
 NS_ASSUME_NONNULL_END

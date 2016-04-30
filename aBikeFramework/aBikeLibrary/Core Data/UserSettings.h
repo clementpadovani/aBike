@@ -20,7 +20,6 @@ typedef struct VECityRect VECityRect;
 
 @interface UserSettings : VEBaseModel
 
-@property (nonatomic, retain) NSData *adRemover;
 @property (nonatomic, readonly) BOOL canLoadData;
 @property (nonatomic) MKMapType mapType;
 @property (nonatomic) BOOL setup;

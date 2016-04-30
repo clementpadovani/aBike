@@ -22,21 +22,7 @@ static NSUInteger validNumbers[kNumberOfValidNumbers] = { 3, 5, 7 };
 
 NSUInteger currentNumberOfStations = 0;
 
-BOOL includesAdRemover = YES;
-
 @interface VETimeFormatter ()
-
-+ (MKDistanceFormatterUnits) currentUnitSystem;
-
-+ (MKDistanceFormatterUnits) distanceFormatterUnitForUnitSystem: (NSString *) unitSystem;
-
-+ (void) userSettingsHaveChangedNotification: (NSNotification *) notification;
-
-+ (NSUInteger) sanitizedNumberOfBikeStations;
-
-+ (NSDateComponentsFormatter *) sharedTimeFormatter;
-
-+ (NSString *) ios8_formattedStringForDuration: (NSTimeInterval) duration;
 
 @end
 
@@ -106,13 +92,13 @@ BOOL includesAdRemover = YES;
 
 + (NSString *) formattedStringForDuration: (NSTimeInterval) duration
 {
-	NSTimeInterval goodTimeInterval = (duration / 60);
+	NSTimeInterval goodTimeInterval = (duration / 60.);
 	
 	goodTimeInterval = ceil(goodTimeInterval);
 	
-		goodTimeInterval *= 60;
+    goodTimeInterval *= 60.;
 		
-		return [self ios8_formattedStringForDuration: goodTimeInterval];
+    return [self ios8_formattedStringForDuration: goodTimeInterval];
 }
 
 + (NSString *) ios8_formattedStringForDuration: (NSTimeInterval) duration
@@ -129,8 +115,8 @@ BOOL includesAdRemover = YES;
 
 + (void) userSettingsHaveChangedNotification: (NSNotification *) notification
 {
-	//CPLog(@"settings changed: %@", notification);
-	
+	CPLog(@"settings changed: %@", notification);
+
 	if ([self currentUnitSystem] != [_sharedFormatter units])
 	{
 		[_sharedFormatter setUnits: [self currentUnitSystem]];
@@ -139,29 +125,13 @@ BOOL includesAdRemover = YES;
 		
 		//CPLog(@"units not the same");
 	}
-	else
-	{
-		//CPLog(@"same units");
-	}
-	
-	if (includesAdRemover)
-	{
-		if ((currentNumberOfStations - 1) != [self sanitizedNumberOfBikeStations])
-		{
-			[self updateAdRemover];
-			
-			[[NSNotificationCenter defaultCenter] postNotificationName: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
-		}
-	}
-	else
-	{
-		if (currentNumberOfStations != [self sanitizedNumberOfBikeStations])
-		{
-			[self updateAdRemover];
-			
-			[[NSNotificationCenter defaultCenter] postNotificationName: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
-		}
-	}
+
+        if (currentNumberOfStations != [self sanitizedNumberOfBikeStations])
+        {
+            currentNumberOfStations = [self sanitizedNumberOfBikeStations];
+
+            [[NSNotificationCenter defaultCenter] postNotificationName: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
+        }
 }
 
 + (NSUInteger) numberOfBikeStations
@@ -171,26 +141,6 @@ BOOL includesAdRemover = YES;
 		//CPLog(@"currentNumberOfStations: %lu", currentNumberOfStations);
 		
 		currentNumberOfStations = [self sanitizedNumberOfBikeStations];
-		
-		__block BOOL showAds;
-		
-		[[[CPCoreDataManager sharedCoreDataManager] userContext] performBlockAndWait: ^{
-			
-			showAds = [[UserSettings sharedSettings] canShowAds];
-			
-		}];
-
-//		currentNumberOfStations += 1;
-
-		if (showAds)
-		{
-			currentNumberOfStations += 1;
-			includesAdRemover = YES;
-		}
-		else
-		{
-			includesAdRemover = NO;
-		}
 		
 		return currentNumberOfStations;
 		
@@ -212,41 +162,6 @@ BOOL includesAdRemover = YES;
 	}
 	
 	return currentNumberOfStations;
-}
-
-+ (BOOL) includesAdRemover
-{
-	return includesAdRemover;
-}
-
-+ (void) updateAdRemover
-{
-	//CPLog(@"update ad remover");
-	
-	currentNumberOfStations = [self sanitizedNumberOfBikeStations];
-	
-	__block BOOL showAds;
-	
-	[[[CPCoreDataManager sharedCoreDataManager] userContext] performBlockAndWait: ^{
-		
-		showAds = [[UserSettings sharedSettings] canShowAds];
-		
-	}];
-	
-	if (showAds)
-	{
-		currentNumberOfStations++;
-		includesAdRemover = YES;
-	}
-	else
-	{
-		includesAdRemover = NO;
-	}
-	
-	[[[VEConsul sharedConsul] mapViewController] updateAds];
-	
-	[[NSNotificationCenter defaultCenter] postNotificationName: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
-	
 }
 
 + (NSUInteger) sanitizedNumberOfBikeStations

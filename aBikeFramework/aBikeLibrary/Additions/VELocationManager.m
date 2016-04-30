@@ -186,7 +186,9 @@ static VELocationManager *_sharedLocationManager = nil;
 
 - (void) userCityRectDidChangeNotification: (NSNotification *) notification
 {
-	[self userInCityCheckForLocation: [[self locationManager] location] withAbort: NULL];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self userInCityCheckForLocation: [[self locationManager] location] withAbort: NULL];
+    });
 }
 
 - (void) userInCityCheckForLocation: (CLLocation *) location withAbort: (BOOL *) abort

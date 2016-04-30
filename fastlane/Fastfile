@@ -15,21 +15,20 @@ import './Toulouse/Fastfile'
 
 default_platform :ios
 
-def submitForReviewDeliverBlock
+def submit_for_review_deliver_block
 
-	currentBuildVersion = get_version_number
-	
-	currentBuildNumber = get_build_number
+    currentBuildVersion = get_version_number
+    
+    currentBuildNumber = get_build_number
 
-deliver(
-		automatic_release: true,
-		skip_screenshots: true,
-		skip_metadata: true,
-		submit_for_review: true,
-		skip_binary_upload: true,
-		app_version: currentBuildVersion,
-		build_number: currentBuildNumber
-	)
+deliver(automatic_release: true,
+        skip_screenshots: true,
+        skip_metadata: true,
+        submit_for_review: true,
+        skip_binary_upload: true,
+        app_version: currentBuildVersion,
+        build_number: currentBuildNumber
+    )
 
 end
 
@@ -42,7 +41,7 @@ before_all do
   # cocoapods
 end
 
-lane :testLyon do
+lane :test_lyon do
 
 cp_appstore(only_lyon: true)
 
@@ -50,186 +49,188 @@ end
 
 lane :cp_appstore do |actualOptions|
 
-	clean_build_artifacts
+    clean_build_artifacts
 
-	is_only_lyon = actualOptions[:only_lyon]
-	
-	if is_only_lyon == nil
-	
-		puts "is nil"
-	
-		is_only_lyon = false
-	
-	else
-	
-		puts "not nil"
-	
-	end
-	
-	puts "only lyon #{is_only_lyon}"
+    is_only_lyon = actualOptions[:only_lyon]
+    
+    if is_only_lyon == nil	
+        is_only_lyon = false
+    end
 
-	# verify_xcode
+    # verify_xcode
 
-	ensure_git_branch
+    if (is_only_lyon == false)
+        ensure_git_branch
+    end
 
-	ensure_git_status_clean
+    ensure_git_status_clean
 
-	currentBuildVersion = get_version_number
+    currentBuildVersion = get_version_number
 
-	Helper.log.info "Current build version: #{currentBuildVersion}"
+    Helper.log.info "Current build version: #{currentBuildVersion}"
 
-	buildVersion = prompt(text: "Build Version: ")
+    change_build_version = prompt(text: "Change build version?", boolean: true)
 
-	increment_version_number(version_number: buildVersion)
-	
-	currentBuildVersion = get_version_number
+
+    if (change_build_version == true)
+
+      buildVersion = prompt(text: "Build Version: ")
+
+      increment_version_number(version_number: buildVersion)
+
+    end
+
+    
+    currentBuildVersion = get_version_number
 # 
 # 	updateBuildVersion(buildVersion)
 # 
 # 	bumpBuildNumber
 
-	increment_build_number
-	
-	currentBuildNumber = get_build_number
+    increment_build_number
+    
+    currentBuildNumber = get_build_number
 
-	options = {
-		:automatic_release => true,
-		:skip_screenshots => true
-	}
-	
-	
-	
-	ENV['CP_CURRENT_VERSION'] = currentBuildVersion
-	
-	ENV['CP_CURRENT_BUILD'] = currentBuildNumber
+    options = {
+        :automatic_release => true,
+        :skip_screenshots => true
+    }
+    
+    
+    
+    ENV['CP_CURRENT_VERSION'] = currentBuildVersion
+    
+    ENV['CP_CURRENT_BUILD'] = currentBuildNumber
 
-	if (is_only_lyon == true)
-	
-		options[:is_only_lyon] = true
-	
-	end
+    if (is_only_lyon == true)
+    
+        options[:is_only_lyon] = true
+    
+    end
 
-	lyon_appstore(options)
+	ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
 
-	if (is_only_lyon == false)
-		bruxelles_appstore(options)
+    lyon_appstore(options)
 
-		creteil_appstore(options)
+    if (is_only_lyon == false)
+        bruxelles_appstore(options)
 
-		dublin_appstore(options)
+        creteil_appstore(options)
 
-		luxembourg_appstore(options)
+        dublin_appstore(options)
 
-		marseille_appstore(options)
+        luxembourg_appstore(options)
 
-		mulhouse_appstore(options)
+        marseille_appstore(options)
 
-		nantes_appstore(options)
+        mulhouse_appstore(options)
 
-		paris_appstore(options)
+        nantes_appstore(options)
 
-		toulouse_appstore(options)
-		
-		clean_build_artifacts
-	
-		git_add(path: ".")
+        paris_appstore(options)
 
-		git_commit(path: ".",
-				message: "Version Bump #{currentBuildVersion} (#{currentBuildNumber})")
+        toulouse_appstore(options)
+        
+        clean_build_artifacts
+    
+        git_add(path: ".")
 
-		add_git_tag(prefix: 'v', build_number: currentBuildNumber)
+        git_commit(path: ".",
+                message: "Version Bump #{currentBuildVersion} (#{currentBuildNumber})")
 
-		push_to_git_remote
-	
-	end
+        add_git_tag(prefix: 'v', build_number: currentBuildNumber)
 
-end
-
-lane :submitForReview do
-
-	lyon_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	lyon_deleteDeliverfile
-
-//
-
-	bruxelles_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	bruxelles_deleteDeliverfile
-
-//
-
-	creteil_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	creteil_deleteDeliverfile
-
-//
-
-	dublin_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	dublin_deleteDeliverfile
-
-//
-
-	luxembourg_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	luxembourg_deleteDeliverfile
-
-//
-
-	marseille_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	marseille_deleteDeliverfile
-
-//
-
-	mulhouse_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	mulhouse_deleteDeliverfile
-
-//
-
-	nantes_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	nantes_deleteDeliverfile
-
-//
-
-	paris_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	paris_deleteDeliverfile
-
-//
-
-	toulouse_copyDeliverfile
-
-	submitForReviewDeliverBlock
-
-	toulouse_deleteDeliverfile
-
-//
+        push_to_git_remote
+    
+    end
 
 end
 
-lane :uploadSymbolsToFabric do
+lane :submit_for_review do
+
+    lyon_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    lyon_deleteDeliverfile
+
+//
+
+    bruxelles_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    bruxelles_deleteDeliverfile
+
+//
+
+    creteil_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    creteil_deleteDeliverfile
+
+//
+
+    dublin_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    dublin_deleteDeliverfile
+
+//
+
+    luxembourg_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    luxembourg_deleteDeliverfile
+
+//
+
+    marseille_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    marseille_deleteDeliverfile
+
+//
+
+    mulhouse_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    mulhouse_deleteDeliverfile
+
+//
+
+    nantes_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    nantes_deleteDeliverfile
+
+//
+
+    paris_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    paris_deleteDeliverfile
+
+//
+
+    toulouse_copyDeliverfile
+
+    submit_for_review_deliver_block
+
+    toulouse_deleteDeliverfile
+
+//
+
+end
+
+lane :upload_symbols_to_fabric do
 
 clean_build_artifacts
 
@@ -265,39 +266,39 @@ end
 
 after_all do |lane|
 
-	notificationText = "Finished #{lane}"
-	
-	notificationUsername = ENV['CP_NOTIFICATION_USERNAME']
-	
-	notificationPassword = ENV['CP_NOTIFICATION_PASSWORD']
-	
-	raise "no username or password" if (notificationUsername.nil? || notificationUsername.empty? || notificationPassword.nil? || notificationPassword.empty?)
-	
-	encodedNotificationText = URI::encode(notificationText)
-	
-	notificationURL = "https://smsapi.free-mobile.fr/sendmsg?user=#{notificationUsername}&pass=#{notificationPassword}&msg=#{encodedNotificationText}"
+    notificationText = "Finished #{lane}"
+    
+    notificationUsername = ENV['CP_NOTIFICATION_USERNAME']
+    
+    notificationPassword = ENV['CP_NOTIFICATION_PASSWORD']
+    
+    raise "no username or password" if (notificationUsername.nil? || notificationUsername.empty? || notificationPassword.nil? || notificationPassword.empty?)
+    
+    encodedNotificationText = URI::encode(notificationText)
+    
+    notificationURL = "https://smsapi.free-mobile.fr/sendmsg?user=#{notificationUsername}&pass=#{notificationPassword}&msg=#{encodedNotificationText}"
 
-	sh "curl -X 'GET' '#{notificationURL}'"
+    sh "curl -X 'GET' '#{notificationURL}'"
 
-	puts notificationText
+    puts notificationText
 end
 
 error do |lane, exception|
-	  notificationText = "#{lane} had an error: #{exception}"
-	
-	notificationUsername = ENV['CP_NOTIFICATION_USERNAME']
-	
-	notificationPassword = ENV['CP_NOTIFICATION_PASSWORD']
-	
-	raise "no username or password" if (notificationUsername.nil? || notificationUsername.empty? || notificationPassword.nil? || notificationPassword.empty?)
-	
-	encodedNotificationText = URI::encode(notificationText)
-	
-	notificationURL = "https://smsapi.free-mobile.fr/sendmsg?user=#{notificationUsername}&pass=#{notificationPassword}&msg=#{encodedNotificationText}"
+      notificationText = "#{lane} had an error: #{exception}"
+    
+    notificationUsername = ENV['CP_NOTIFICATION_USERNAME']
+    
+    notificationPassword = ENV['CP_NOTIFICATION_PASSWORD']
+    
+    raise "no username or password" if (notificationUsername.nil? || notificationUsername.empty? || notificationPassword.nil? || notificationPassword.empty?)
+    
+    encodedNotificationText = URI::encode(notificationText)
+    
+    notificationURL = "https://smsapi.free-mobile.fr/sendmsg?user=#{notificationUsername}&pass=#{notificationPassword}&msg=#{encodedNotificationText}"
 
-	sh "curl -X 'GET' '#{notificationURL}'"
+    sh "curl -X 'GET' '#{notificationURL}'"
 
-	puts notificationText
+    puts notificationText
 end
 
 end

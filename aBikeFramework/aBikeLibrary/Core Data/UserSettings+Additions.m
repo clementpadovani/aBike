@@ -157,10 +157,6 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 60. * 2.;
 
 - (void) setLargerCityRect: (VECityRect) largerCityRect withNotification: (BOOL) notifies;
 
-- (NSString *) getSecret;
-
-- (NSData *) makeItSecret: (NSString *) aSecret;
-
 @end
 
 @implementation UserSettings (PrivateAdditions)
@@ -175,59 +171,6 @@ static const NSTimeInterval kUserSettingsReloadDataThreshold = 60. * 2.;
 	
 	if (notifies)
 		[[NSNotificationCenter defaultCenter] postNotificationName: kUserSettingsCityRectChangedValueNotification object: nil userInfo: nil];
-}
-
-- (NSString *) getSecret
-{
-	NSString *secret;
-	
-	NSUUID *aSecret = [[UIDevice currentDevice] identifierForVendor];
-	
-	if (!aSecret)
-		CPLog(@"NIL SECRET!");
-	
-	secret = [aSecret UUIDString];
-	
-	if (!secret)
-		CPLog(@"NIL SECRET");
-	
-	//CPLog(@"uuid: %@", secret);
-	
-	return secret;
-}
-
-- (NSData *) makeItSecret: (NSString *) aSecret
-{
-	NSData *theSecret;
-	
-	const char *something = [aSecret UTF8String];
-	
-	uint8_t anotherThing[CC_MD5_DIGEST_LENGTH];
-	
-	CC_MD5(something, (CC_LONG) strlen(something), anotherThing);
-
-	NSMutableString *somethingElse = [NSMutableString stringWithCapacity: CC_MD5_DIGEST_LENGTH * 2];
-	
-	for (NSUInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-	{
-		[somethingElse appendFormat: @"%02x", anotherThing[i]];
-	}
-	
-	//CPLog(@"something else: %@", somethingElse);
-	
-	theSecret = [somethingElse dataUsingEncoding: NSUTF8StringEncoding];
-	
-//	NSString *testString = [[NSString alloc] initWithData: theSecret encoding: NSUTF8StringEncoding];
-//	
-//	CPLog(@"test: %@", testString);
-//	
-//	CPLog(@"equal: %@", [testString isEqualToString: somethingElse] ? @"YES" : @"NO");
-//	
-//	CPLog(@"lenght: %d", CC_MD5_DIGEST_LENGTH);
-//	
-//	CPLog(@"data length: %lu", [theSecret length]);
-	
-	return theSecret;
 }
 
 @end
@@ -298,100 +241,6 @@ static UserSettings *_sharedSettings = nil;
 - (BOOL) hasValidCityRect
 {
 	return (VECityRectIsValid([self cityRect]) && VECityRectIsValid([self largerCityRect]));
-}
-
-#pragma clang diagnostic push
-
-#pragma clang diagnostic ignored "-Wunreachable-code"
-
-- (BOOL) canShowAds
-{
-	#if !kShowAdRemover
-	
-		return NO;
-	
-	#endif
-	
-	BOOL disableAds = [[NSUserDefaults standardUserDefaults] boolForKey: kDisableAds];
-	
-	if (!disableAds)
-		return YES;
-	
-	NSData *savedData = [self adRemover];
-	
-	if (!savedData || [savedData length] == 0)
-		return YES;
-	
-	NSUInteger length = [savedData length];
-	
-	if (length != (CC_MD5_DIGEST_LENGTH * 2))
-	{
-		[self userIsntANiceOne];
-		
-		return YES;
-	}
-	
-	NSData *someData = [self makeItSecret: [self getSecret]];
-	
-	BOOL dataEqual = [someData isEqualToData: savedData];
-	
-//	CPLog(@"data equal: %@", dataEqual ? @"YES" : @"NO");
-//	
-//	NSString *savedString = [[NSString alloc] initWithData: savedData encoding: NSUTF8StringEncoding];
-//	
-//	NSString *someString = [[NSString alloc] initWithData: someData encoding: NSUTF8StringEncoding];
-//	
-//	CPLog(@"saved: %@", savedString);
-//	
-//	CPLog(@"some: %@", someString);
-//	
-//	BOOL stringsEqual = [someString isEqualToString: savedString];
-//	
-//	CPLog(@"strings equal: %@", stringsEqual ? @"YES" : @"NO");
-	
-	if (!dataEqual)
-		[self userIsntANiceOne];
-	
-	return !dataEqual;
-}
-
-#pragma clang diagnostic pop
-
-- (void) userIsntANiceOne
-{
-	[self setAdRemover: nil];
-	
-	[[NSUserDefaults standardUserDefaults] removeObjectForKey: kDisableAds];
-	
-	[[NSUserDefaults standardUserDefaults] synchronize];
-	
-	#if kEnableCrashlytics
-
-		[Answers logCustomEventWithName: @"User isn't a nice one"
-					customAttributes: nil];
-	
-	#endif
-}
-
-- (void) userIsANiceOne
-{
-	NSData *someData = [self makeItSecret: [self getSecret]];
-	
-	//NSString *dataString = [[NSString alloc] initWithData: someData encoding: NSUTF8StringEncoding];
-	
-	//CPLog(@"data string: %@", dataString);
-	
-	[self setAdRemover: someData];
-	
-	[[NSUserDefaults standardUserDefaults] setBool: YES forKey: kDisableAds];
-	
-	[[NSUserDefaults standardUserDefaults] synchronize];
-	
-	dispatch_async(dispatch_get_main_queue(), ^{
-		
-		[VETimeFormatter updateAdRemover];
-		
-	});
 }
 
 - (void) firstTimeSetup

@@ -51,15 +51,4 @@
 	return (NSURL *__nonnull) [[NSBundle ve_libraryResources] URLForResource: @"aBikeCities" withExtension: @"plist"];
 }
 
-+ (NSString *) ve_adRemoverProductIdentifier
-{
-	NSString *adRemover;
-	
-	NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
-	
-	adRemover = [bundleIdentifier stringByAppendingString: @".ads"];
-	
-	return adRemover;
-}
-
 @end

@@ -194,7 +194,7 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 	
 	void (^animations)() = ^{
 		
-		UIImage *selectedPinImage = [VEStationAnnotationView ve_tintedImage];
+		UIImage *selectedPinImage = [[self class] ve_tintedImage];
 
 		UIImage *pinImage = [UIImage ve_imageNamed: @"pin"];
 

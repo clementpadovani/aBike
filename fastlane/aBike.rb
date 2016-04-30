@@ -4,13 +4,21 @@ require '../Various/version.rb'
 
 module CPaBike
 
-VERSION = '3.0.5'
+VERSION = '3.0.6'
+
+# RELEASE_NOTES = ({
+# 
+# 	'en-US' => "Bug fixes",
+# 	'fr-FR' => "Corrections de bugs",
+# 	'en-GB' => "Bug fixes"
+# 
+# })
 
 RELEASE_NOTES = ({
 
-	'en-US' => "Bug fixes",
-	'fr-FR' => "Corrections de bugs",
-	'en-GB' => "Bug fixes"
+	'en-US' => "- Removed Ads\n- Bug fixes",
+	'fr-FR' => "- Retrait des pubs\n- Corrections de bugs",
+	'en-GB' => "- Removed Ads\n- Bug fixes"
 
 })
 

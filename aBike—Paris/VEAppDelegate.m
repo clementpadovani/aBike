@@ -8,8 +8,6 @@
 
 #import "VEAppDelegate.h"
 
-#import <iAd/iAd.h>
-
 @implementation VEAppDelegate
 
 - (id) init

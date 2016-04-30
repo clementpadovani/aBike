@@ -26,17 +26,9 @@
 
 #import "VETimeFormatter.h"
 
-#import "VEAdStationView.h"
-
 #import "VEStationAnnotationDirectionsAccessoryView.h"
 
 #import "VEStationAnnotationShareAccessoryView.h"
-
-#if !TARGET_OS_TV
-@import iAd;
-#endif
-
-@import StoreKit;
 
 @import MapKit;
 
@@ -135,8 +127,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 @property (nonatomic, assign, getter = hasAppeared) BOOL appeared;
 
-- (void) setupUserSettings;
-
 - (void) setupMemoryStore;
 
 - (void) sortStationsByClosestToUserLocation: (CLLocation *) location;
@@ -163,25 +153,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	return self;
 }
 
-#if TARGET_OS_TV
-
-- (UIView *) originalContentView
-{
-	return [self view];
-}
-
-#else
-
-- (UIView *) originalContentView
-{
-	if ([self searchResult])
-		return [self view];
-
-	return [super originalContentView];
-}
-
-#endif
-
 - (void) userWantsDismissal
 {
 	[self dismissViewControllerAnimated: YES
@@ -196,8 +167,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //		[self setCanDisplayBannerAds: YES];
 
 	[self setCanShowUserLocationInCohort: YES];
-	
-	[self setupUserSettings];
 	
 	VEMapContainerView *mapContainerView = [[VEMapContainerView alloc] initWithMapViewDelegate: self];
 
@@ -223,13 +192,13 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //		[[self navigationItem] setRightBarButtonItem: mapBarButtonItem];
 	}
 		
-	[[self originalContentView] addSubview: mapContainerView];
+	[[self view] addSubview: mapContainerView];
 	
-	[[self originalContentView] addSubview: stationsView];
+	[[self view] addSubview: stationsView];
 	
-	[[self originalContentView] setBackgroundColor: [UIColor ve_mapViewControllerBackgroundColor]];
+	[[self view] setBackgroundColor: [UIColor ve_mapViewControllerBackgroundColor]];
 	
-	[[self originalContentView] setOpaque: YES];
+	[[self view] setOpaque: YES];
 	
 	[self setMapContainerView: mapContainerView];
 	
@@ -372,71 +341,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //		[[VEAdStationView sharedAdStationView] canLoad];
 }
 
-- (void) updateAds
-{
-	[self setupUserSettings];
-}
-
-- (void) setupUserSettings
-{
-	if ([self searchResult])
-	{
-		[self setCanDisplayBannerAds: NO];
-
-		return;
-	}
-	
-	[self setCanDisplayBannerAds: YES];
-	
-	__weak VEMapViewController *weakSelf = self;
-	
-	[[[CPCoreDataManager sharedCoreDataManager] userContext] performBlock: ^{
-		
-		__strong VEMapViewController *strongSelf = weakSelf;
-		
-		if (!strongSelf)
-			CPLog(@"nil strong self");
-		
-		BOOL canShowAds = [[UserSettings sharedSettings] canShowAds];
-		
-		CPLog(@"can show ads: %@", canShowAds ? @"YES" : @"NO");
-		
-		dispatch_async(dispatch_get_main_queue(), ^{
-			
-			[strongSelf setCanDisplayBannerAds: canShowAds];
-			
-			#if kEnableCrashlytics
-			
-				NSDictionary *attributes = @{@"Can Show Ads" : canShowAds ? @"YES" : @"NO"};
-			
-				[Answers logCustomEventWithName: @"Can Show Ads"
-							customAttributes: attributes];
-			
-			#endif
-			
-		});
-		
-	}];
-
-	//CPLog(@"can show ads: %@", canShowAds ? @"YES" : @"NO");
-
-	//[self setCanDisplayBannerAds: canShowAds];
-	
-	
-}
-
-- (void) setCanDisplayBannerAds:(BOOL)canDisplayBannerAds
-{
-	if (![NSThread isMainThread])
-		NSAssert(NO, @"Not main thread");
-	
-	//CPLog(@"can show ads: %@", canDisplayBannerAds ? @"YES" : @"NO");
-
-	#if !TARGET_OS_TV
-	[super setCanDisplayBannerAds: canDisplayBannerAds];
-	#endif
-}
-
 - (void) setupMemoryStore
 {
 	if (![NSThread isMainThread])
@@ -540,7 +444,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 	CGFloat stationsViewBottomVerticalConstant = keyboardEndVerticalOrigin;
 
-	stationsViewBottomVerticalConstant -= CGRectGetHeight([[self originalContentView] bounds]);
+	stationsViewBottomVerticalConstant -= CGRectGetHeight([[self view] bounds]);
 
 	BOOL keyboardIsDismissing = (VECGFloatIsEqual(screenHeight, keyboardEndVerticalOrigin));
 
@@ -604,7 +508,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSLayoutConstraint *stationsViewBottomVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self stationsView]
 																		   attribute: NSLayoutAttributeBottom
 																		   relatedBy: NSLayoutRelationEqual
-																			 toItem: [self originalContentView]
+																			 toItem: [self view]
 																		   attribute: NSLayoutAttributeBottom
 																		  multiplier: 1
 																		    constant: 0];
@@ -613,7 +517,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 	[self setStationsViewBottomVerticalConstraint: stationsViewBottomVerticalConstraint];
 
-	[[self originalContentView] addConstraints: newConstraints];
+	[[self view] addConstraints: newConstraints];
 }
 
 - (void) dealloc
@@ -886,8 +790,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
-	if (index == [[self stationsView] adStationIndex] ||
-	    index == [[self stationsView] searchStationIndex])
+	if (index == [[self stationsView] searchStationIndex])
 	{
 		//CPLog(@"station is ad view");
 		
@@ -899,9 +802,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 		[self setCurrentStation: nil];
 
-		if (index == [[self stationsView] adStationIndex])
-			[[VEAdStationView sharedAdStationView] canLoad];
-		
 		return;
 	}
 	
@@ -1011,9 +911,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	NSUInteger numberOfStations = [VETimeFormatter numberOfBikeStations];
 	
-	if ([VETimeFormatter includesAdRemover])
-		numberOfStations -= 1;
-
 //	if ([self searchResult])
 //		numberOfStations -= 1;
 
@@ -1168,9 +1065,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 	NSUInteger realNumberOfStations = [VETimeFormatter numberOfBikeStations];
 	
-	if ([VETimeFormatter includesAdRemover])
-		realNumberOfStations -= 1;
-
 //	if ([self searchResult])
 //		realNumberOfStations -= 1;
 

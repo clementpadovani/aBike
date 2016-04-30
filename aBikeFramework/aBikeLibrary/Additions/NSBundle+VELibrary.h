@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSURL *) ve_fileURLForCities;
 
-+ (NSString *) ve_adRemoverProductIdentifier;
-
 @end
 
 NS_ASSUME_NONNULL_END

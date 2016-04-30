@@ -66,24 +66,3 @@
 
 /* VELocationManager_open_settings */
 "Settings" = "Settings";
-
-/* VEAdStationView_loading_iap */
-"Loading…" = "Loading…";
-
-/* VEAdStationView_restore_button */
-"Restore" = "Restore";
-
-/* VEAdStationView_load_failed_title */
-"Failed to load product" = "Failed to load product";
-
-/* VEAdStationView_load_failed_description */
-"An error occured while loading the ad remover." = "An error occured while loading the ad remover.";
-
-/* VEAdStationView_disabled_purchases_title */
-"Purchases are disabled on this device due to restrictions." = "Purchases are disabled on this device due to restrictions.";
-
-/* VEAdStationView_alert_title_thanks */
-"Thanks!" = "Thanks!";
-
-/* VEAdStationView_alert_message_thanks */
-"Ads are now disabled, thanks for your support! :-)" = "Ads are now disabled, thanks for your support! :-)";
