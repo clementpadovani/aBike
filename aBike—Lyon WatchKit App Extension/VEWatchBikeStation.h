@@ -10,7 +10,13 @@
 
 @import CoreLocation.CLLocation;
 
+@class Station;
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface VEWatchBikeStation : NSObject <NSSecureCoding>
+
++ (instancetype) watchBikeStationForStation: (Station *) station;
 
 @property (nonatomic, copy) NSString *stationName;
 
@@ -21,3 +27,5 @@
 @property (nonatomic, assign) NSUInteger availableStands;
 
 @end
+
+NS_ASSUME_NONNULL_END
