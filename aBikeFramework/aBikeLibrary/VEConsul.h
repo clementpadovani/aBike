@@ -16,6 +16,8 @@
 
 @class VEMapViewController;
 
+@class Station;
+
 @protocol VEConsulDelegate <NSObject>
 
 - (NSString *) contractNameForConsul: (VEConsul *) consul;
@@ -102,6 +104,8 @@
 #endif
 
 + (VEConsul *) sharedConsul;
+
+- (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations;
 
 - (void) setup;
 

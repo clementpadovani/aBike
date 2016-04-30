@@ -6,8 +6,10 @@
 //  Copyright © 2016 Clement Padovani. All rights reserved.
 //
 
-#import <WatchConnectivity/WatchConnectivity.h>
+@import WatchConnectivity;
 
 @interface WCSession (VEStateAdditions)
+
+- (BOOL) ve_sessionActive;
 
 @end

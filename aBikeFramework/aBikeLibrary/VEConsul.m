@@ -31,6 +31,7 @@
 #if (SCREENSHOTS==1)
 
 @import SimulatorStatusMagic;
+#import "WCSession+VEStateAdditions.h"
 
 #endif
 
@@ -128,7 +129,7 @@ static VEConsul *_sharedConsul = nil;
 
 - (void) setup
 {
-	[[NSUserDefaults standardUserDefaults] registerDefaults: [[self class] registeredDefaults]];
+    [[NSUserDefaults standardUserDefaults] registerDefaults: [[self class] registeredDefaults]];
 	
 	NSAssert([self delegate], @"ABORT. Currently have no delegate");
 	
@@ -216,56 +217,85 @@ static VEConsul *_sharedConsul = nil;
 	return YES;
 }
 
-- (void) sessionReachabilityDidChange:(WCSession *)session
+- (void) sessionReachabilityDidChange: (WCSession *) session
 {
     if ([session isReachable])
     {
-        NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
+        CPLog(@"is reachable");
+    }
+    else
+    {
+        CPLog(@"not reachable");
+    }
+}
 
-        NSManagedObjectContext *parentContext = [[CPCoreDataManager sharedCoreDataManager] standardContext];
+- (NSData *) archivedStationsForStationsArrays: (NSArray <VEWatchBikeStation *> *) watchStations
+{
+    NSParameterAssert([watchStations isKindOfClass: [NSArray class]]);
 
-        [context setParentContext: parentContext];
+    NSParameterAssert([watchStations count] > 0);
 
-        [context performBlock: ^{
+    NSData *archivedStations = [NSKeyedArchiver archivedDataWithRootObject: watchStations];
 
-        NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [Station entityName]];
+    return archivedStations;
+}
 
-        [fetchRequest setFetchLimit: 1];
+- (NSDictionary <NSString *, id> *) applicationContextForWatchStations: (NSArray <VEWatchBikeStation *> *) watchStations
+{
+    NSData *stationsData = [self archivedStationsForStationsArrays: watchStations];
 
-        NSError *fetchError = nil;
+    return @{@"stations" : stationsData};
+}
 
-        NSArray *fetchResults = [context executeFetchRequest: fetchRequest error: &fetchError];
+- (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations
+{
+    WCSession *currentSession = [WCSession defaultSession];
 
-        if (fetchError)
+    if ([WCSession isSupported])
+    {
+        if ([currentSession isReachable])
         {
-            CPLog(@"fetch error: %@", fetchError);
+            NSMutableArray <NSManagedObjectID *> *stationsObjectIDs = [NSMutableArray arrayWithCapacity: [stations count]];
+
+            for (Station *aStation in stations)
+            {
+                [stationsObjectIDs addObject: [aStation objectID]];
+            }
+
+            NSManagedObjectContext *tempContext = [[NSManagedObjectContext alloc] initWithConcurrencyType: NSPrivateQueueConcurrencyType];
+
+            [tempContext setPersistentStoreCoordinator: [[[CPCoreDataManager sharedCoreDataManager] standardContext] persistentStoreCoordinator]];
+
+            [tempContext performBlock: ^{
+
+                NSMutableArray <VEWatchBikeStation *> *_watchStations = [NSMutableArray arrayWithCapacity: [stations count]];
+
+                for (NSManagedObjectID *aStationObjectID in stationsObjectIDs)
+                {
+                    Station *correspondingStation = [tempContext objectRegisteredForID: aStationObjectID];
+
+                    VEWatchBikeStation *watchStation = [VEWatchBikeStation watchBikeStationForStation: correspondingStation];
+
+                    [_watchStations addObject: watchStation];
+                }
+
+                NSArray <VEWatchBikeStation *> *watchStations = [_watchStations copy];
+
+                NSDictionary *applicationContext = [self applicationContextForWatchStations: watchStations];
+
+                NSError *updateError = nil;
+
+                if (![[WCSession defaultSession] updateApplicationContext: applicationContext
+                                                               error: &updateError])
+                {
+                    CPLog(@"update error: %@", updateError);
+                }
+                else
+                {
+                    CPLog(@"updated");
+                }
+            }];
         }
-
-        Station *aStation = [fetchResults firstObject];
-
-        VEWatchBikeStation *station = [[VEWatchBikeStation alloc] init];
-
-        [station setStationName: [aStation processedStationName]];
-
-        [station setStationLocation: [aStation location]];
-
-        [station setAvailableBikes: [aStation availableBikes]];
-
-        [station setAvailableStands: [aStation availableBikeStations]];
-
-        NSData *archivedStation = [NSKeyedArchiver archivedDataWithRootObject: station];
-
-        NSError *updateError = nil;
-
-        NSDictionary *_context = @{@"stations" : @[archivedStation]};
-
-        if (![[WCSession defaultSession] updateApplicationContext: _context
-                                                            error: &updateError])
-            CPLog(@"update error: %@", updateError);
-        else
-            CPLog(@"sent");
-
-        }];
     }
 }
 

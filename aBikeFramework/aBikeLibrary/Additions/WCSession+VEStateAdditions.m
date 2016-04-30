@@ -10,4 +10,16 @@
 
 @implementation WCSession (VEStateAdditions)
 
+- (BOOL) ve_sessionActive
+{
+    if ([self respondsToSelector: @selector(activationState)])
+    {
+        return [self activationState] == WCSessionActivationStateActivated;
+    }
+    else
+    {
+        return [self isPaired] && [self isWatchAppInstalled];
+    }
+}
+
 @end
