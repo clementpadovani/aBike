@@ -40,9 +40,9 @@
 //    NSLog(@"station: %@", currentBikeStation);
 //}
 
-- (void) didAppear
+- (void) willActivate
 {
-    [super didAppear];
+    [super willActivate];
 
     CLLocationCoordinate2D location = [[[self currentBikeStation] stationLocation] coordinate];
 

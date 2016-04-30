@@ -42,9 +42,9 @@
 
     NSLog(@"did receive data");
 
-//    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
 
-    WKInterfaceController *rootInterfaceController = [[WKExtension sharedExtension] rootInterfaceController];
+//    WKInterfaceController *rootInterfaceController = [[WKExtension sharedExtension] rootInterfaceController];
 
     NSMutableArray *controllerNames = [NSMutableArray arrayWithCapacity: [stations count]];
 
@@ -53,10 +53,12 @@
         [controllerNames addObject: @"mainScene"];
     }
 
+    [WKInterfaceController reloadRootControllersWithNames: controllerNames
+                                                 contexts: stations];
 
-    [rootInterfaceController presentControllerWithNames: controllerNames
-                                               contexts: stations];
-//    });
+//    [rootInterfaceController presentControllerWithNames: controllerNames
+//                                               contexts: stations];
+    });
 }
 
 - (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError *)error
