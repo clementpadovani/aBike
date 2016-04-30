@@ -294,6 +294,8 @@
 		59AB74A21C6B485A003EBFF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59AB74A71C6B4878003EBFF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74A91C6B4878003EBFF1 /* InfoPlist.strings */; };
 		59AB74AA1C6B487C003EBFF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74AC1C6B487C003EBFF1 /* Localizable.strings */; };
+		59ABB4381CD5129800570B65 /* WCSession+VEStateAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */; };
+		59ABB4391CD5129800570B65 /* WCSession+VEStateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */; };
 		59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59ABE1D81C4BA62A00108AD4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
@@ -979,6 +981,8 @@
 		59AB74AE1C6B48B9003EBFF1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59AB74AF1C6B48BB003EBFF1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		59AB74B01C6B48BE003EBFF1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCSession+VEStateAdditions.h"; sourceTree = "<group>"; };
+		59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WCSession+VEStateAdditions.m"; sourceTree = "<group>"; };
 		59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		59ABE1D51C4BA62300108AD4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		59ABE1D71C4BA62A00108AD4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -1534,6 +1538,8 @@
 				594D7FEB1C6FEF1900492477 /* VEReachability.m */,
 				593ADA551C495394003B686A /* VETimeFormatter.h */,
 				593ADA561C495394003B686A /* VETimeFormatter.m */,
+				59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */,
+				59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -2093,6 +2099,7 @@
 			files = (
 				593ADB061C495394003B686A /* VEConsulDefines.h in Headers */,
 				593ADAE21C495394003B686A /* UIColor+MainColor.h in Headers */,
+				59ABB4381CD5129800570B65 /* WCSession+VEStateAdditions.h in Headers */,
 				593ADACA1C495394003B686A /* Station+Additions.h in Headers */,
 				593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */,
 				593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */,
@@ -3825,6 +3832,7 @@
 				593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */,
 				593ADAB81C495394003B686A /* NSNumber+Extensions.m in Sources */,
 				593ADAED1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.m in Sources */,
+				59ABB4391CD5129800570B65 /* WCSession+VEStateAdditions.m in Sources */,
 				59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */,
 				593ADAC21C495394003B686A /* VELocationManager.m in Sources */,
 				593ADAD11C495394003B686A /* UserSettings.m in Sources */,
