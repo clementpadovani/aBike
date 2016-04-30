@@ -4,7 +4,7 @@ require '../Various/version.rb'
 
 module CPaBike
 
-VERSION = '3.0.6'
+VERSION = '3.1.0'
 
 # RELEASE_NOTES = ({
 # 
@@ -16,9 +16,9 @@ VERSION = '3.0.6'
 
 RELEASE_NOTES = ({
 
-	'en-US' => "- Removed Ads\n- Bug fixes",
-	'fr-FR' => "- Retrait des pubs\n- Corrections de bugs",
-	'en-GB' => "- Removed Ads\n- Bug fixes"
+	'en-US' => "- Added Apple Watch app",
+	'fr-FR' => "- Ajout d’une app Apple Watch",
+	'en-GB' => "- Added Apple Watch app"
 
 })
 

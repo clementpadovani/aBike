@@ -130,19 +130,22 @@ lane :cp_appstore do |actualOptions|
         paris_appstore(options)
 
         toulouse_appstore(options)
-        
-        clean_build_artifacts
-    
-        git_add(path: ".")
-
-        git_commit(path: ".",
-                message: "Version Bump #{currentBuildVersion} (#{currentBuildNumber})")
-
-        add_git_tag(prefix: 'v', build_number: currentBuildNumber)
-
-        push_to_git_remote
-    
     end
+
+    clean_build_artifacts
+
+    git_add(path: ".")
+
+    git_commit(path: ".",
+            message: "Version Bump #{currentBuildVersion} (#{currentBuildNumber})")
+
+    add_git_tag(prefix: 'v', build_number: currentBuildNumber)
+    
+  if (is_only_lyon == false)
+    
+    push_to_git_remote
+    
+  end
 
 end
 
