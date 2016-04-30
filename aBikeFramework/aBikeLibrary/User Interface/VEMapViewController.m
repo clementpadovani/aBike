@@ -325,6 +325,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) loadMapData
 {
+    if ([self isFullyLoaded])
+    {
+        CPLog(@"already fully loaded");
+    }
+
 	[[VEConsul sharedConsul] startLoadingSpinner];
 	
 	[self setupMemoryStore];
