@@ -63,6 +63,7 @@
 		59159CCB1C64968E00811AE3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593ADB0F1C49574F003B686A /* iAd.framework */; };
 		59159CCC1C64969200811AE3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
+		59280A911CD5238D00B603B5 /* VEWatchBikeStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26721CA85A2300D77605 /* VEWatchBikeStation.h */; };
 		592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */; };
 		592ADC8A1C948A39002E1FBE /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
 		593AD9271C4951E7003B686A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593AD9261C4951E7003B686A /* main.m */; };
@@ -2105,6 +2106,7 @@
 				593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */,
 				593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */,
 				593ADAF41C495394003B686A /* VEAdStationView.h in Headers */,
+				59280A911CD5238D00B603B5 /* VEWatchBikeStation.h in Headers */,
 				593ADAD21C495394003B686A /* VEBaseModel.h in Headers */,
 				593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */,
 				593ADAB71C495394003B686A /* NSNumber+Extensions.h in Headers */,
@@ -6319,6 +6321,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -6340,6 +6343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp;
@@ -6357,6 +6361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp;
@@ -6375,6 +6380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp;
@@ -6392,6 +6398,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -6413,6 +6420,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;
@@ -6430,6 +6438,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;
@@ -6448,6 +6457,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "aBike—Lyon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.velov.watchkitapp.watchkitextension;

@@ -6,6 +6,12 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+#if (SCREENSHOTS==1)
+
+@import SimulatorStatusMagic;
+
+#endif
+
 #import "VEConsul.h"
 
 #import "UIColor+MainColor.h"
@@ -28,12 +34,7 @@
 
 #import "VEWatchBikeStation.h"
 
-#if (SCREENSHOTS==1)
-
-@import SimulatorStatusMagic;
 #import "WCSession+VEStateAdditions.h"
-
-#endif
 
 static VEConsul *_sharedConsul = nil;
 
@@ -229,22 +230,23 @@ static VEConsul *_sharedConsul = nil;
     }
 }
 
-- (NSData *) archivedStationsForStationsArrays: (NSArray <VEWatchBikeStation *> *) watchStations
+- (NSData *) archivedStationsForStationObject: (VEWatchBikeStation *) watchStation
 {
-    NSParameterAssert([watchStations isKindOfClass: [NSArray class]]);
-
-    NSParameterAssert([watchStations count] > 0);
-
-    NSData *archivedStations = [NSKeyedArchiver archivedDataWithRootObject: watchStations];
+    NSData *archivedStations = [NSKeyedArchiver archivedDataWithRootObject: watchStation];
 
     return archivedStations;
 }
 
 - (NSDictionary <NSString *, id> *) applicationContextForWatchStations: (NSArray <VEWatchBikeStation *> *) watchStations
 {
-    NSData *stationsData = [self archivedStationsForStationsArrays: watchStations];
+    NSMutableArray *stationsArray = [NSMutableArray arrayWithCapacity: [watchStations count]];
 
-    return @{@"stations" : stationsData};
+    for (VEWatchBikeStation *aStation in watchStations)
+    {
+        [stationsArray addObject: [NSKeyedArchiver archivedDataWithRootObject: aStation]];
+    }
+
+    return @{@"stations" : stationsArray};
 }
 
 - (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations
@@ -253,8 +255,10 @@ static VEConsul *_sharedConsul = nil;
 
     if ([WCSession isSupported])
     {
-        if ([currentSession isReachable])
+        if ([currentSession ve_sessionActive])
         {
+            CPLog(@"active");
+
             NSMutableArray <NSManagedObjectID *> *stationsObjectIDs = [NSMutableArray arrayWithCapacity: [stations count]];
 
             for (Station *aStation in stations)
@@ -295,6 +299,10 @@ static VEConsul *_sharedConsul = nil;
                     CPLog(@"updated");
                 }
             }];
+        }
+        else
+        {
+            CPLog(@"not active");
         }
     }
 }

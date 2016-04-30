@@ -8,10 +8,14 @@
 
 #import "VEWatchBikeStation.h"
 #import "NSCoder+VEAdditions.h"
+
+#if !TARGET_OS_WATCH
 #import "Station.h"
+#endif
 
 @implementation VEWatchBikeStation
 
+#if !TARGET_OS_WATCH
 + (instancetype) watchBikeStationForStation: (Station *) station
 {
     VEWatchBikeStation *newStation = [[VEWatchBikeStation alloc] init];
@@ -26,6 +30,7 @@
 
     return newStation;
 }
+#endif
 
 - (instancetype) initWithCoder: (NSCoder *) aDecoder
 {

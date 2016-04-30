@@ -16,7 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VEWatchBikeStation : NSObject <NSSecureCoding>
 
+#if !TARGET_OS_WATCH
 + (instancetype) watchBikeStationForStation: (Station *) station;
+#endif
 
 @property (nonatomic, copy) NSString *stationName;
 
