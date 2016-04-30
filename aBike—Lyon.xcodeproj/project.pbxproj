@@ -4655,6 +4655,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wall";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -4708,6 +4709,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -5567,6 +5569,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Tests;
 		};
@@ -6384,7 +6387,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -6404,7 +6407,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Tests;
 		};
@@ -6425,7 +6428,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -6445,7 +6448,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Screenshots;
 		};
@@ -6469,7 +6472,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -6489,7 +6492,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Tests;
 		};
@@ -6510,7 +6513,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -6530,7 +6533,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Screenshots;
 		};
@@ -6804,6 +6807,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Screenshots;
 		};
