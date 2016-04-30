@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "593AD9211C4951E7003B686A"
-               BuildableName = "aBike&#x2014;Lyon.app"
+               BuildableName = "aBike_Lyon.app"
                BlueprintName = "aBike&#x2014;Lyon"
                ReferencedContainer = "container:aBike&#x2014;Lyon.xcodeproj">
             </BuildableReference>
