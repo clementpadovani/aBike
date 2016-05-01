@@ -14,6 +14,20 @@
 - (void) sessionReachabilityDidChange: (WCSession *) session
 {
     NSLog(@"reachability: %@", session);
+
+    if ([session applicationContext])
+    {
+        NSLog(@"has app context");
+
+        [self session: session didReceiveApplicationContext: [session applicationContext]];
+    }
+    else
+    {
+        if ([session receivedApplicationContext])
+        {
+            [self session: session didReceiveApplicationContext: [session receivedApplicationContext]];
+        }
+    }
 }
 
 - (void) session: (WCSession *) session didReceiveApplicationContext: (NSDictionary <NSString *, id> *) applicationContext

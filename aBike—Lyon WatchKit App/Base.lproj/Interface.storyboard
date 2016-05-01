@@ -10,13 +10,30 @@
             <objects>
                 <controller identifier="mainScene" id="AgC-eL-Hgc" customClass="VEMainInterfaceController">
                     <items>
-                        <map height="100" alignment="left" id="zzD-XN-qFy"/>
+                        <map height="0.5" alignment="left" id="zzD-XN-qFy"/>
                         <separator alignment="left" id="o2e-3E-TdW"/>
                         <label alignment="center" text="Label" textAlignment="center" minimumScaleFactor="0.59999999999999998" id="2TR-u1-vCI"/>
                         <group width="1" alignment="left" id="DPG-Ag-Wja">
                             <items>
-                                <label alignment="left" text="Label" id="LFr-k0-35S"/>
-                                <label alignment="right" text="Label" id="ijH-p9-oPl"/>
+                                <group width="0.5" alignment="left" layout="vertical" id="T1H-e4-YL2">
+                                    <items>
+                                        <group alignment="center" id="nG8-gV-xjA">
+                                            <items>
+                                                <imageView alignment="center" image="availableBikesIcon" contentMode="center" id="bsu-zO-zkb"/>
+                                            </items>
+                                        </group>
+                                        <group alignment="center" verticalAlignment="bottom" id="fri-xh-YuB">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="bottom" text="Label" id="LFr-k0-35S"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="right" layout="vertical" id="HXY-HT-qpb">
+                                    <items>
+                                        <label alignment="right" text="Label" id="ijH-p9-oPl"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
@@ -43,4 +60,5 @@
             </objects>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.9882352941176471" green="0.24313725490196078" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
 </document>
