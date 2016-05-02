@@ -10,6 +10,8 @@
 #import "VEWatchBikeStation.h"
 @import CoreLocation;
 
+static const CLLocationDistance kVEMainInterfaceControllerMapDistance = 100.;
+
 @interface VEMainInterfaceController ()
 
 @property (nonatomic, strong) VEWatchBikeStation *currentBikeStation;
@@ -33,24 +35,15 @@
     }
 }
 
-//- (void) setCurrentBikeStation:(VEWatchBikeStation *)currentBikeStation
-//{
-//    _currentBikeStation = currentBikeStation;
-//
-//    NSLog(@"station: %@", currentBikeStation);
-//}
-
 - (void) willActivate
 {
     [super willActivate];
 
     CLLocationCoordinate2D location = [[[self currentBikeStation] stationLocation] coordinate];
 
-    CLLocationDegrees scalingFactor = ABS((cos(2 * M_PI * location.latitude / 360.0)));
+    CLLocationDegrees scalingFactor = ABS((cos(2. * M_PI * location.latitude / 360.)));
 
-    static CLLocationDistance distance = 100.;
-
-    MKCoordinateSpan span = MKCoordinateSpanMake(distance / 111000., distance / (scalingFactor * 111000.));
+    MKCoordinateSpan span = MKCoordinateSpanMake(kVEMainInterfaceControllerMapDistance / 111000., kVEMainInterfaceControllerMapDistance / (scalingFactor * 111000.));
 
     MKCoordinateRegion region = MKCoordinateRegionMake(location, span);
 
