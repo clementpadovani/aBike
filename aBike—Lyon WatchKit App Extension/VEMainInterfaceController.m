@@ -20,6 +20,8 @@ static const CLLocationDistance kVEMainInterfaceControllerMapDistance = 100.;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *stationNameLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *availableBikesLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *availableStandsLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *bikeImage;
+@property (weak, nonatomic) IBOutlet WKInterfaceSeparator *separator;
 
 @end
 

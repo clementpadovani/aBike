@@ -315,7 +315,7 @@
 		59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */; };
 		59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
-		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBF1C54EED10007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };

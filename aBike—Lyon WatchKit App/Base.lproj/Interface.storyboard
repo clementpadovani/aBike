@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EHM-gd-00A">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EHM-gd-00A">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -40,6 +40,8 @@
                     <connections>
                         <outlet property="availableBikesLabel" destination="LFr-k0-35S" id="TDE-cb-Yux"/>
                         <outlet property="availableStandsLabel" destination="ijH-p9-oPl" id="Y1d-ju-pIg"/>
+                        <outlet property="bikeImage" destination="bsu-zO-zkb" id="2Fv-r8-ZoP"/>
+                        <outlet property="separator" destination="o2e-3E-TdW" id="PBQ-be-J6I"/>
                         <outlet property="stationMap" destination="zzD-XN-qFy" id="PhF-p0-kW4"/>
                         <outlet property="stationNameLabel" destination="2TR-u1-vCI" id="GD7-yq-i2i"/>
                     </connections>
