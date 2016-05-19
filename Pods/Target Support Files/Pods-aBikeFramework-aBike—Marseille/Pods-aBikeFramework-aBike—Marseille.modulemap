@@ -1,0 +1,6 @@
+framework module Pods_aBikeFramework_aBike_Marseille {
+  umbrella header "Pods-aBikeFramework-aBike—Marseille-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -202,7 +202,9 @@ static VEConsul *_sharedConsul = nil;
 	[self setWindow: window];
 	
 	[[VEConnectionManager sharedConnectionManger] setCanCallBack: YES];
-		
+
+    #if kEnableWatchSupport == 1
+
     if ([WCSession isSupported])
     {
         WCSession *sharedSession = [WCSession defaultSession];
@@ -212,8 +214,12 @@ static VEConsul *_sharedConsul = nil;
         [sharedSession activateSession];
     }
 
+    #endif
+
 	return YES;
 }
+
+#if kEnableWatchSupport == 1
 
 - (void) sessionReachabilityDidChange: (WCSession *) session
 {
@@ -311,6 +317,8 @@ static VEConsul *_sharedConsul = nil;
 
     [self sessionReachabilityDidChange: session];
 }
+
+#endif
 
 - (BOOL) applicationOpenURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation
 {

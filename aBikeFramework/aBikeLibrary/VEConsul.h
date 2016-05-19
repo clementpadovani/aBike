@@ -8,7 +8,11 @@
 
 #import "CPCoreDataManager.h"
 
+#if kEnableWatchSupport == 1
+
 @import WatchConnectivity;
+
+#endif
 
 @class VEConsul;
 
@@ -66,7 +70,15 @@
 
 @end
 
+#if kEnableWatchSupport == 1
+
 @interface VEConsul : NSObject <VEAppDelegate, WCSessionDelegate>
+
+#else
+
+@interface VEConsul : NSObject <VEAppDelegate>
+
+#endif
 
 @property (nonatomic, weak) id <VEConsulDelegate> delegate;
 
@@ -105,7 +117,11 @@
 
 + (VEConsul *) sharedConsul;
 
+#if kEnableWatchSupport == 1
+
 - (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations;
+
+#endif
 
 - (void) setup;
 

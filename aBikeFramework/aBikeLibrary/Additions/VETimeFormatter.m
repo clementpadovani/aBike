@@ -115,8 +115,6 @@ NSUInteger currentNumberOfStations = 0;
 
 + (void) userSettingsHaveChangedNotification: (NSNotification *) notification
 {
-	CPLog(@"settings changed: %@", notification);
-
 	if ([self currentUnitSystem] != [_sharedFormatter units])
 	{
 		[_sharedFormatter setUnits: [self currentUnitSystem]];

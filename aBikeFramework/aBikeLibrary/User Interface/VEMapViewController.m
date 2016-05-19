@@ -1097,8 +1097,12 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[[self stationsView] setStations: [self stations]];
 
+#if kEnableWatchSupport == 1
+
     [[VEConsul sharedConsul] updateWatchStationsWithStations: [self stations]];
-	
+
+#endif
+
 	[self setCurrentLocation: actualLocation];
 }
 
