@@ -310,7 +310,6 @@
 		59EC26491CA8549400D77605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EC26481CA8549400D77605 /* Assets.xcassets */; };
 		59EC26501CA8549500D77605 /* aBikeLyonWatchExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59EC264F1CA8549400D77605 /* aBikeLyonWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		59EC265B1CA8549500D77605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EC265A1CA8549500D77605 /* Assets.xcassets */; };
-		59EC265F1CA8549500D77605 /* aBike—Lyon WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 59EC26431CA8549400D77605 /* aBike—Lyon WatchKit App.app */; };
 		59EC266E1CA8571F00D77605 /* VEMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC266D1CA8571F00D77605 /* VEMainInterfaceController.m */; };
 		59EC26711CA8573600D77605 /* VEExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26701CA8573600D77605 /* VEExtensionDelegate.m */; };
 		59EC26741CA85A2300D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
@@ -522,13 +521,6 @@
 			remoteGlobalIDString = 59EC264E1CA8549400D77605;
 			remoteInfo = "aBike—Lyon WatchKit App Extension";
 		};
-		59EC265D1CA8549500D77605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59EC26421CA8549400D77605;
-			remoteInfo = "aBike—Lyon WatchKit App";
-		};
 		59F9EC7B1C54ED8D0007D069 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593AD91A1C4951E7003B686A /* Project object */;
@@ -702,17 +694,6 @@
 				59EC26501CA8549500D77605 /* aBikeLyonWatchExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		59EC266B1CA8549500D77605 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				59EC265F1CA8549500D77605 /* aBike—Lyon WatchKit App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		59FEC2031C6B424900809D75 /* Embed Frameworks */ = {
@@ -2334,16 +2315,14 @@
 				593AD91F1C4951E7003B686A /* Frameworks */,
 				593AD9201C4951E7003B686A /* Resources */,
 				593AD94D1C495208003B686A /* Embed Frameworks */,
-				59EC266B1CA8549500D77605 /* Embed Watch Content */,
-				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
 				02573E3DC46A949ED41F6CFF /* 📦 Embed Pods Frameworks */,
 				4785BB9DDB4DFB7CF0852E58 /* 📦 Copy Pods Resources */,
+				59ABE1D01C4BA4BD00108AD4 /* Fabric */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				593AD9591C495217003B686A /* PBXTargetDependency */,
-				59EC265E1CA8549500D77605 /* PBXTargetDependency */,
 			);
 			name = "aBike—Lyon";
 			productName = "aBike—Lyon";
@@ -2857,10 +2836,10 @@
 						DevelopmentTeam = W48L6Z4654;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -4621,11 +4600,6 @@
 			isa = PBXTargetDependency;
 			target = 59EC264E1CA8549400D77605 /* aBike—Lyon WatchKit App Extension */;
 			targetProxy = 59EC26511CA8549500D77605 /* PBXContainerItemProxy */;
-		};
-		59EC265E1CA8549500D77605 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 59EC26421CA8549400D77605 /* aBike—Lyon WatchKit App */;
-			targetProxy = 59EC265D1CA8549500D77605 /* PBXContainerItemProxy */;
 		};
 		59F9EC7C1C54ED8D0007D069 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
