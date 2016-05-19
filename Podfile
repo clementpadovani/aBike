@@ -6,101 +6,92 @@ platform :ios, '8.0'
 
 workspace 'aBike—Lyon.xcworkspace'
 
-xcodeproj 'aBike—Lyon.xcodeproj', 'Screenshots' => :release, 'Tests' => :debug
+project 'aBike—Lyon.xcodeproj', 'Screenshots' => :release, 'Tests' => :debug
 
 use_frameworks!
 
 inhibit_all_warnings!
 
-def normalPods
+target 'aBikeFramework' do
 
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
-	# pod 'WatchdogInspector', :configurations => ['Debug']
+	pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
-# 	pod 'Fabric', :configurations => ['Release']
-#
-# 	pod 'Crashlytics', :configurations => ['Release']
+	pod 'Fabric', :configuration => ['Release']
 
-# 	pod 'Fabric', :configurations => ['Debug']
-#
-# 	pod 'Crashlytics', :configurations => ['Debug']
+	pod 'Crashlytics', :configuration => ['Release']
+
+	target 'aBike—Lyon' do
+		inherit! :search_paths
+
+	end
+
+	target 'aBike—LyonUITests' do
+		# inherit! :search_paths
+	end
 
 
-end
+	target 'aBike—Bruxelles' do
+	end
 
-target 'aBike—Lyon' do
+	target 'aBike—BruxellesUITests' do
+		inherit! :search_paths
+	end
 
-normalPods
+	target 'aBike—Marseille' do
+	end
 
-end
+	target 'aBike—MarseilleUITests' do
+		inherit! :search_paths
+	end
 
-target 'aBikeFramework' do
+	target 'aBike—Mulhouse' do
+	end
 
-     pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
+	target 'aBike—MulhouseUITests' do
+		inherit! :search_paths
+	end
 
-     pod 'Reveal-iOS-SDK', :configuration => ['Debug']
+	target 'aBike—Nantes' do
+	end
 
-     pod 'Fabric', :configuration => ['Release']
+	target 'aBike—NantesUITests' do
+		inherit! :search_paths
+	end
 
-	 pod 'Crashlytics', :configuration => ['Release']
+	target 'aBike—Paris' do
+	end
 
-end
+	target 'aBike—ParisUITests' do
+		inherit! :search_paths
+	end
 
-target 'aBike—LyonUITests' do
+	target 'aBike—Toulouse' do
+	end
 
-end
+	target 'aBike—ToulouseUITests' do
+		inherit! :search_paths
+	end
 
-target 'aBike—Bruxelles' do
+	target 'aBike—Créteil' do
+	end
 
-normalPods
+	target 'aBike—CréteilUITests' do
+		inherit! :search_paths
+	end
 
-end
+	target 'aBike—Dublin' do
+	end
 
-target 'aBike—Marseille' do
+	target 'aBike—DublinUITests' do
+		inherit! :search_paths
+	end
 
-normalPods
+	target 'aBike—Luxembourg' do
+	end
 
-end
-
-target 'aBike—Mulhouse' do
-
-normalPods
-
-end
-
-target 'aBike—Nantes' do
-
-normalPods
-
-end
-
-target 'aBike—Paris' do
-
-normalPods
-
-end
-
-target 'aBike—Toulouse' do
-
-normalPods
-
-end
-
-target 'aBike—Créteil' do
-
-normalPods
-
-end
-
-target 'aBike—Dublin' do
-
-normalPods
-
-end
-
-target 'aBike—Luxembourg' do
-
-normalPods
-
+	target 'aBike—LuxembourgUITests' do
+		inherit! :search_paths
+	end
 end
