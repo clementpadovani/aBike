@@ -1,6 +1,0 @@
-framework module Pods_aBike_NantesUITests {
-  umbrella header "Pods-aBike—NantesUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

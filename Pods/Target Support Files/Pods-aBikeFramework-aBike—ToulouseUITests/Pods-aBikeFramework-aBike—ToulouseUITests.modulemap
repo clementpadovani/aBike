@@ -1,0 +1,6 @@
+framework module Pods_aBikeFramework_aBike_ToulouseUITests {
+  umbrella header "Pods-aBikeFramework-aBike—ToulouseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
