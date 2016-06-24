@@ -27,7 +27,10 @@ SUBMIT_FOR_REVIEW = false
 AUTOMATIC_RELEASE = true
 
 SUBMISSION_INFORMATION = ({
-	add_id_info_uses_idfa: false,
+	add_id_info_uses_idfa: false
+})
+
+APP_REVIEW_INFORMATION = ({
   demo_user: "",
   demo_password: ""
 })

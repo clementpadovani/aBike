@@ -1,5 +1,10 @@
 $:.unshift File.dirname("../.." + __FILE__)
 
+# config = File.expand_path('/', __FILE__)
+# $LOAD_PATH.unshift(config) unless $LOAD_PATH.include?(config)
+
+require './aBike.rb'
+
 # require '../Various/version.rb'
 
 import './Lyon/Fastfile'
@@ -27,7 +32,8 @@ deliver(automatic_release: true,
         submit_for_review: false,
         skip_binary_upload: true,
         app_version: currentBuildVersion,
-        build_number: currentBuildNumber
+        build_number: currentBuildNumber,
+        app_review_information: CPaBike::APP_REVIEW_INFORMATION
     )
 
 end
@@ -44,7 +50,8 @@ deliver(automatic_release: true,
         submit_for_review: true,
         skip_binary_upload: true,
         app_version: currentBuildVersion,
-        build_number: currentBuildNumber
+        build_number: currentBuildNumber,
+        app_review_information: CPaBike::APP_REVIEW_INFORMATION
     )
 
 end
