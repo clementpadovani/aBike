@@ -368,41 +368,4 @@ clean_build_artifacts
 
 end
 
-after_all do |lane|
-
-    notificationText = "Finished #{lane}"
-    
-    notificationUsername = ENV['CP_NOTIFICATION_USERNAME']
-    
-    notificationPassword = ENV['CP_NOTIFICATION_PASSWORD']
-    
-    raise "no username or password" if (notificationUsername.nil? || notificationUsername.empty? || notificationPassword.nil? || notificationPassword.empty?)
-    
-    encodedNotificationText = URI::encode(notificationText)
-    
-    notificationURL = "https://smsapi.free-mobile.fr/sendmsg?user=#{notificationUsername}&pass=#{notificationPassword}&msg=#{encodedNotificationText}"
-
-    sh "curl -X 'GET' '#{notificationURL}'"
-
-    puts notificationText
-end
-
-error do |lane, exception|
-      notificationText = "#{lane} had an error: #{exception}"
-    
-    notificationUsername = ENV['CP_NOTIFICATION_USERNAME']
-    
-    notificationPassword = ENV['CP_NOTIFICATION_PASSWORD']
-    
-    raise "no username or password" if (notificationUsername.nil? || notificationUsername.empty? || notificationPassword.nil? || notificationPassword.empty?)
-    
-    encodedNotificationText = URI::encode(notificationText)
-    
-    notificationURL = "https://smsapi.free-mobile.fr/sendmsg?user=#{notificationUsername}&pass=#{notificationPassword}&msg=#{encodedNotificationText}"
-
-    sh "curl -X 'GET' '#{notificationURL}'"
-
-    puts notificationText
-end
-
 end

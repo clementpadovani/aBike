@@ -16,6 +16,11 @@ fastlane ios test_lyon
 fastlane ios cp_appstore
 ```
 
+### ios update_store_metadata
+```
+fastlane ios update_store_metadata
+```
+
 ### ios submit_for_review
 ```
 fastlane ios submit_for_review
