@@ -1619,7 +1619,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
 		return;
 
-	Station *station = [(VEStationAnnotationView *) view annotation];
+	Station *station = (Station *) [(VEStationAnnotationView *) view annotation];
 	
 	NSUInteger stationIndex = [[self stations] indexOfObject: station];
 	
