@@ -10,7 +10,7 @@ project 'aBike—Lyon.xcodeproj', 'Screenshots' => :release, 'Tests' => :debug
 
 use_frameworks!
 
-inhibit_all_warnings!
+# inhibit_all_warnings!
 
 target 'aBikeFramework' do
 

@@ -2555,8 +2555,8 @@
 				593AD94F1C495217003B686A /* Frameworks */,
 				593AD9501C495217003B686A /* Headers */,
 				593AD9511C495217003B686A /* Resources */,
-				5945D9341C54F08000813FF2 /* Fabric */,
 				E63785D9E6051559F5385A6C /* [CP] Copy Pods Resources */,
+				5945D9341C54F08000813FF2 /* Fabric */,
 			);
 			buildRules = (
 			);
