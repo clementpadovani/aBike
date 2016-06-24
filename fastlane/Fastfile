@@ -15,6 +15,23 @@ import './Toulouse/Fastfile'
 
 default_platform :ios
 
+def update_store_metadata_deliver_block
+
+    currentBuildVersion = get_version_number
+    
+    currentBuildNumber = get_build_number
+
+deliver(automatic_release: true,
+        skip_screenshots: true,
+        skip_metadata: false,
+        submit_for_review: false,
+        skip_binary_upload: true,
+        app_version: currentBuildVersion,
+        build_number: currentBuildNumber
+    )
+
+end
+
 def submit_for_review_deliver_block
 
     currentBuildVersion = get_version_number
@@ -146,6 +163,90 @@ lane :cp_appstore do |actualOptions|
     push_to_git_remote
     
   end
+
+end
+
+lane :update_store_metadata do
+
+    lyon_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    lyon_deleteDeliverfile
+
+//
+
+    bruxelles_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    bruxelles_deleteDeliverfile
+
+//
+
+    creteil_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    creteil_deleteDeliverfile
+
+//
+
+    dublin_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    dublin_deleteDeliverfile
+
+//
+
+    luxembourg_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    luxembourg_deleteDeliverfile
+
+//
+
+    marseille_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    marseille_deleteDeliverfile
+
+//
+
+    mulhouse_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    mulhouse_deleteDeliverfile
+
+//
+
+    nantes_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    nantes_deleteDeliverfile
+
+//
+
+    paris_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    paris_deleteDeliverfile
+
+//
+
+    toulouse_copyDeliverfile
+
+    update_store_metadata_deliver_block
+
+    toulouse_deleteDeliverfile
+
+//
 
 end
 
