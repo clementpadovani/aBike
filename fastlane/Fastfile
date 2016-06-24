@@ -67,7 +67,7 @@ lane :cp_appstore do |actualOptions|
 
     currentBuildVersion = get_version_number
 
-    Helper.log.info "Current build version: #{currentBuildVersion}"
+    UI.message "Current build version: #{currentBuildVersion}"
 
     change_build_version = prompt(text: "Change build version?", boolean: true)
 
