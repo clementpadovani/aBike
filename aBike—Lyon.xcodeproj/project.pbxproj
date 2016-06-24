@@ -13,7 +13,6 @@
 		1A1891658AF4A46E618952DB /* Pods_aBike_Nantes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B04216BDCF3EC239676CD0 /* Pods_aBike_Nantes.framework */; };
 		1F96F8BAFCE9895E5DAFB4FC /* Pods_aBike_ToulouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5012239F4F3055F1197A8E /* Pods_aBike_ToulouseUITests.framework */; };
 		20688FDFB78AFD145E51B554 /* Pods_aBikeFramework_aBike_BruxellesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093E98CDFA379AA9FC88FBD4 /* Pods_aBikeFramework_aBike_BruxellesUITests.framework */; };
-		2B30CD6554F3A22B4EB39677 /* Pods_aBikeFramework_aBike_Bruxelles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF8B190199A8C0243816204 /* Pods_aBikeFramework_aBike_Bruxelles.framework */; };
 		30647B1B6C6D61C7195E4666 /* Pods_aBike_BruxellesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A4BA1DBA40885684E2460C /* Pods_aBike_BruxellesUITests.framework */; };
 		3FB51C29B84BCA0223116256 /* Pods_aBikeFramework_aBike_DublinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B24D845C94B1B2260E3CB3 /* Pods_aBikeFramework_aBike_DublinUITests.framework */; };
 		437D459AD730178FD198B035 /* Pods_aBikeFramework_aBike_LyonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B37EE5C9FAAABDF8D693CD /* Pods_aBikeFramework_aBike_LyonUITests.framework */; };
@@ -348,9 +347,7 @@
 		59FEC21A1C6B43AB00809D75 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
 		59FEC21D1C6B43B600809D75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		5F01C251F7B48D4B181356EF /* Pods_aBike_LuxembourgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5104A3937D218ADE5B39ADE /* Pods_aBike_LuxembourgUITests.framework */; };
-		62B12CC74675853BBCD8C34F /* Pods_aBikeFramework_aBike_Luxembourg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AC2CEF6FAA9254DE059486 /* Pods_aBikeFramework_aBike_Luxembourg.framework */; };
 		651840438A1A607203ABD188 /* Pods_aBikeFramework_aBike_Cr_teilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD09164987E6F2DBA1EFC3C /* Pods_aBikeFramework_aBike_Cr_teilUITests.framework */; };
-		69E0D6A46BCFCD4441D41A5F /* Pods_aBikeFramework_aBike_Paris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82274B1B9609371C5B89D7EC /* Pods_aBikeFramework_aBike_Paris.framework */; };
 		6F222948D3B28E820649FC7B /* Pods_aBikeFramework_aBike_LuxembourgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD412CCE5FC8939C77B0EFE7 /* Pods_aBikeFramework_aBike_LuxembourgUITests.framework */; };
 		7662443DE26CBD3E35FB9055 /* Pods_aBike_Lyon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97C80AEB3223CCAAD237F4F /* Pods_aBike_Lyon.framework */; };
 		7715467608D8D43D1D59C987 /* Pods_aBike_Marseille.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FADB150216CBD7231B49AB9 /* Pods_aBike_Marseille.framework */; };
@@ -360,21 +357,15 @@
 		86D4ED565073EE4000ED50B7 /* Pods_aBikeFramework_aBike_ToulouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F8589C54693D6CA1F78C8C /* Pods_aBikeFramework_aBike_ToulouseUITests.framework */; };
 		8706C6EC2678AE16A27D8941 /* Pods_aBike_Paris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFF17D1D893F12EB686AA5 /* Pods_aBike_Paris.framework */; };
 		87260B1E2424E46B55B7DC07 /* Pods_aBike_Mulhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE76715637203A6CA605316 /* Pods_aBike_Mulhouse.framework */; };
-		8CFCDD31546377976003EE9C /* Pods_aBikeFramework_aBike_Cr_teil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF429BF09717D732F7999F42 /* Pods_aBikeFramework_aBike_Cr_teil.framework */; };
 		8D94DA2D95FE02FDCC40F642 /* Pods_aBike_Dublin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3582C7D035B465E1155AA2B1 /* Pods_aBike_Dublin.framework */; };
-		98E542865D213348ADC22A75 /* Pods_aBikeFramework_aBike_Marseille.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5FF5664DE26A924B8E30B1 /* Pods_aBikeFramework_aBike_Marseille.framework */; };
 		9B4E047880CF33DB0DCDEB1F /* Pods_aBike_DublinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E4FD286122F2F794746CA9 /* Pods_aBike_DublinUITests.framework */; };
-		A1C51D5834CDB3010B24F784 /* Pods_aBikeFramework_aBike_Nantes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F65D3F450184A8A68AF17E /* Pods_aBikeFramework_aBike_Nantes.framework */; };
 		A44B39B2B863D9ACCA97BEB8 /* Pods_aBikeFramework_aBike_MarseilleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878952C33A42A1E396153FBD /* Pods_aBikeFramework_aBike_MarseilleUITests.framework */; };
 		A59A9361B3DA54598EDC543D /* Pods_aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D5854996580A36C56E9B38 /* Pods_aBikeFramework.framework */; };
-		AEFDDB441C3FA84FAAEB7B96 /* Pods_aBikeFramework_aBike_Toulouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1AD5081E579B14A4649A82 /* Pods_aBikeFramework_aBike_Toulouse.framework */; };
-		B7BDE7A9991F113A987DE6F5 /* Pods_aBikeFramework_aBike_Dublin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05DC774382986C3FEF50229 /* Pods_aBikeFramework_aBike_Dublin.framework */; };
 		E018675C695D2AC58FC8DBE2 /* Pods_aBikeFramework_aBike_MulhouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB7798DA67D4CDD19FD846A /* Pods_aBikeFramework_aBike_MulhouseUITests.framework */; };
 		E53AE074D410DA5A6DA07E3E /* Pods_aBike_Cr_teil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727B8993F4D2D02432ABF7C7 /* Pods_aBike_Cr_teil.framework */; };
 		E60D50EE829F339FE3408CB9 /* Pods_aBike_ParisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA57CC514B41853A76FD649 /* Pods_aBike_ParisUITests.framework */; };
 		EFFFCCE67C4A239232F0B93D /* Pods_aBike_Toulouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF98BC57C6DDCD19F4463AC /* Pods_aBike_Toulouse.framework */; };
 		F348331E6F96BF5000BB706B /* Pods_aBike_Luxembourg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB53F0C10A8F7760BCAC4DB /* Pods_aBike_Luxembourg.framework */; };
-		FAD38918F1DDA11046F0E568 /* Pods_aBikeFramework_aBike_Mulhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0004B78BFBD4F164ABB39C59 /* Pods_aBikeFramework_aBike_Mulhouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1230,7 +1221,6 @@
 				59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */,
 				59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */,
 				591483F71C649364007EDABB /* aBikeFramework.framework in Frameworks */,
-				8CFCDD31546377976003EE9C /* Pods_aBikeFramework_aBike_Cr_teil.framework in Frameworks */,
 				E53AE074D410DA5A6DA07E3E /* Pods_aBike_Cr_teil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1290,7 +1280,6 @@
 				596990D61C5D0A9C00AEFFBC /* libc++.tbd in Frameworks */,
 				596990D21C5D0A8900AEFFBC /* SystemConfiguration.framework in Frameworks */,
 				596990C81C5D083A00AEFFBC /* aBikeFramework.framework in Frameworks */,
-				A1C51D5834CDB3010B24F784 /* Pods_aBikeFramework_aBike_Nantes.framework in Frameworks */,
 				1A1891658AF4A46E618952DB /* Pods_aBike_Nantes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1312,7 +1301,6 @@
 				5975F3571C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F28D1C4BBF7E00839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35B1C4BCAAB00839B95 /* Security.framework in Frameworks */,
-				98E542865D213348ADC22A75 /* Pods_aBikeFramework_aBike_Marseille.framework in Frameworks */,
 				7715467608D8D43D1D59C987 /* Pods_aBike_Marseille.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1325,7 +1313,6 @@
 				5975F3561C4BCAA000839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F2C11C4BC3C300839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F35A1C4BCAAA00839B95 /* Security.framework in Frameworks */,
-				FAD38918F1DDA11046F0E568 /* Pods_aBikeFramework_aBike_Mulhouse.framework in Frameworks */,
 				87260B1E2424E46B55B7DC07 /* Pods_aBike_Mulhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1338,7 +1325,6 @@
 				5975F3551C4BCA9F00839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F2F81C4BC61400839B95 /* aBikeFramework.framework in Frameworks */,
 				5975F3591C4BCAA900839B95 /* Security.framework in Frameworks */,
-				69E0D6A46BCFCD4441D41A5F /* Pods_aBikeFramework_aBike_Paris.framework in Frameworks */,
 				8706C6EC2678AE16A27D8941 /* Pods_aBike_Paris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1351,7 +1337,6 @@
 				5975F3491C4BCA7600839B95 /* SystemConfiguration.framework in Frameworks */,
 				5975F3481C4BCA6500839B95 /* Security.framework in Frameworks */,
 				5975F32E1C4BC85400839B95 /* aBikeFramework.framework in Frameworks */,
-				AEFDDB441C3FA84FAAEB7B96 /* Pods_aBikeFramework_aBike_Toulouse.framework in Frameworks */,
 				EFFFCCE67C4A239232F0B93D /* Pods_aBike_Toulouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1364,7 +1349,6 @@
 				5975F3581C4BCAA100839B95 /* SystemConfiguration.framework in Frameworks */,
 				597A409A1C4BAD3200E4B781 /* aBikeFramework.framework in Frameworks */,
 				5975F35C1C4BCAAB00839B95 /* Security.framework in Frameworks */,
-				2B30CD6554F3A22B4EB39677 /* Pods_aBikeFramework_aBike_Bruxelles.framework in Frameworks */,
 				82DED6ABA4E69C1A5B5F60C1 /* Pods_aBike_Bruxelles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1385,7 +1369,6 @@
 				59AB749F1C6B4855003EBFF1 /* SystemConfiguration.framework in Frameworks */,
 				59AB74971C6B484B003EBFF1 /* aBikeFramework.framework in Frameworks */,
 				59AB749E1C6B4855003EBFF1 /* Security.framework in Frameworks */,
-				62B12CC74675853BBCD8C34F /* Pods_aBikeFramework_aBike_Luxembourg.framework in Frameworks */,
 				F348331E6F96BF5000BB706B /* Pods_aBike_Luxembourg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1477,7 +1460,6 @@
 				59FEC21A1C6B43AB00809D75 /* libc++.tbd in Frameworks */,
 				59FEC2181C6B43A900809D75 /* SystemConfiguration.framework in Frameworks */,
 				59FEC1FF1C6B424800809D75 /* aBikeFramework.framework in Frameworks */,
-				B7BDE7A9991F113A987DE6F5 /* Pods_aBikeFramework_aBike_Dublin.framework in Frameworks */,
 				8D94DA2D95FE02FDCC40F642 /* Pods_aBike_Dublin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5112,7 +5094,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5135,7 +5117,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5159,7 +5141,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5362,7 +5344,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5399,7 +5381,7 @@
 				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5437,10 +5419,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5487,10 +5469,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5607,10 +5589,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5634,10 +5616,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5660,10 +5642,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5689,7 +5671,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5712,7 +5694,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5736,7 +5718,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5815,7 +5797,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5838,7 +5820,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5862,7 +5844,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5886,7 +5868,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5908,7 +5890,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5932,7 +5914,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5956,7 +5938,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5978,7 +5960,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6002,7 +5984,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6026,7 +6008,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6048,7 +6030,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6072,7 +6054,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6097,7 +6079,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6120,7 +6102,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6145,7 +6127,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6226,7 +6208,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6265,10 +6247,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6356,10 +6338,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -6387,7 +6369,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6411,7 +6393,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6434,7 +6416,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6457,7 +6439,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6480,7 +6462,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6588,7 +6570,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6630,7 +6612,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6671,7 +6653,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6712,7 +6694,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6828,7 +6810,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6851,7 +6833,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6875,7 +6857,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7037,7 +7019,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -7061,7 +7043,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7081,7 +7063,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7102,7 +7084,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7121,7 +7103,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7145,7 +7127,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7165,7 +7147,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7186,7 +7168,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7501,7 +7483,7 @@
 				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7533,10 +7515,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 466;
+				DYLIB_CURRENT_VERSION = 467;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7575,7 +7557,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7598,7 +7580,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7622,7 +7604,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 466;
+				CURRENT_PROJECT_VERSION = 467;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
