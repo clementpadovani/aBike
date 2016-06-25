@@ -1573,7 +1573,7 @@
 			children = (
 				5924DEA91D1F1A6400E2828C /* VEStationViewProtocol.h */,
 			);
-			name = "Station View Protocol";
+			path = "Station View Protocol";
 			sourceTree = "<group>";
 		};
 		592ADC861C948A39002E1FBE /* aBikeFrameworkTests */ = {
@@ -1876,8 +1876,8 @@
 			children = (
 				5923124F1D1F15EB00BC77B7 /* Classic Station View */,
 				593DF8CF1C779C11002F8B07 /* Search Station View */,
-				5923124E1D1F15E500BC77B7 /* Timer Station View */,
 				5924DEAA1D1F1AB800E2828C /* Station View Protocol */,
+				5923124E1D1F15E500BC77B7 /* Timer Station View */,
 			);
 			path = "Station Views";
 			sourceTree = "<group>";
