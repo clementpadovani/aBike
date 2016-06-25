@@ -67,6 +67,8 @@
 		59159CCA1C64968E00811AE3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59159CCC1C64969200811AE3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599CFC561C4BB7F700A244B3 /* Settings.bundle */; };
 		59159CCD1C64969400811AE3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
+		5923124C1D1F15E200BC77B7 /* VETimerStationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5923124A1D1F15E200BC77B7 /* VETimerStationView.h */; };
+		5923124D1D1F15E200BC77B7 /* VETimerStationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923124B1D1F15E200BC77B7 /* VETimerStationView.m */; };
 		59280A911CD5238D00B603B5 /* VEWatchBikeStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26721CA85A2300D77605 /* VEWatchBikeStation.h */; };
 		592ADC881C948A39002E1FBE /* aBikeFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */; };
 		592ADC8A1C948A39002E1FBE /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -797,6 +799,8 @@
 		59159CC51C6495FF00811AE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59159CC71C64961700811AE3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		59159CC81C64961900811AE3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5923124A1D1F15E200BC77B7 /* VETimerStationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VETimerStationView.h; sourceTree = "<group>"; };
+		5923124B1D1F15E200BC77B7 /* VETimerStationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VETimerStationView.m; sourceTree = "<group>"; };
 		592ADC851C948A39002E1FBE /* aBikeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aBikeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aBikeFrameworkTests.m; sourceTree = "<group>"; };
 		592ADC891C948A39002E1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1545,6 +1549,24 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5923124E1D1F15E500BC77B7 /* Timer Station View */ = {
+			isa = PBXGroup;
+			children = (
+				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
+				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
+			);
+			name = "Timer Station View";
+			sourceTree = "<group>";
+		};
+		5923124F1D1F15EB00BC77B7 /* Classic Station View */ = {
+			isa = PBXGroup;
+			children = (
+				593ADAA51C495394003B686A /* VEStationView.h */,
+				593ADAA61C495394003B686A /* VEStationView.m */,
+			);
+			name = "Classic Station View";
+			sourceTree = "<group>";
+		};
 		592ADC861C948A39002E1FBE /* aBikeFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1844,8 +1866,8 @@
 			isa = PBXGroup;
 			children = (
 				593DF8CF1C779C11002F8B07 /* Search Station View */,
-				593ADAA51C495394003B686A /* VEStationView.h */,
-				593ADAA61C495394003B686A /* VEStationView.m */,
+				5923124F1D1F15EB00BC77B7 /* Classic Station View */,
+				5923124E1D1F15E500BC77B7 /* Timer Station View */,
 			);
 			path = "Station Views";
 			sourceTree = "<group>";
@@ -2399,6 +2421,7 @@
 				593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */,
 				593ADB021C495394003B686A /* VEWindow.h in Headers */,
 				594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */,
+				5923124C1D1F15E200BC77B7 /* VETimerStationView.h in Headers */,
 				593ADAC11C495394003B686A /* VELocationManager.h in Headers */,
 				593ADAD91C495394003B686A /* VEDataImporter.h in Headers */,
 				593ADAF21C495394003B686A /* VERouteRenderer.h in Headers */,
@@ -4437,6 +4460,7 @@
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
 				59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
+				5923124D1D1F15E200BC77B7 /* VETimerStationView.m in Sources */,
 				593ADAD31C495394003B686A /* VEBaseModel.m in Sources */,
 				593ADAEB1C495394003B686A /* VEStationAnnotationAccessoryView.m in Sources */,
 				593ADB031C495394003B686A /* VEWindow.m in Sources */,
