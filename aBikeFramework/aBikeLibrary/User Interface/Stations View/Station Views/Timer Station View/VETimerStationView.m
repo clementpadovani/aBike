@@ -169,9 +169,51 @@
 
 - (void) setupConstraints
 {
-	NSDictionary *viewsDictionary = <#views dictionary#>;
+	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_thirtyMinutesButton,
+                                                                   _hourButton,
+                                                                   _remainingTimeLabel,
+                                                                   _stopButton);
 	
 	NSDictionary *metricsDictionary = nil;
+    
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_hourButton]-(>=0)-[_remainingTimeLabel]-(>=0)-[_stopButton]-|"
+                                                                  options: NSLayoutFormatAlignAllBottom
+                                                                  metrics: metricsDictionary
+                                                                    views: viewsDictionary]];
+    
+    [self addConstraint: [NSLayoutConstraint constraintWithItem: [self remainingTimeLabel]
+                                                      attribute: NSLayoutAttributeCenterX
+                                                      relatedBy: NSLayoutRelationEqual
+                                                         toItem: self
+                                                      attribute: NSLayoutAttributeCenterX
+                                                     multiplier: 1
+                                                       constant: 0]];
+    
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_thirtyMinutesButton]-[_hourButton]"
+                                                                  options: NSLayoutFormatAlignAllCenterX
+                                                                  metrics: metricsDictionary
+                                                                    views: viewsDictionary]];
+    
+    [self addConstraint: [NSLayoutConstraint constraintWithItem: [self thirtyMinutesButton]
+                                                      attribute: NSLayoutAttributeWidth
+                                                      relatedBy: NSLayoutRelationEqual
+                                                         toItem: [self hourButton]
+                                                      attribute: NSLayoutAttributeWidth
+                                                     multiplier: 1
+                                                       constant: 0]];
+    
+    [self addConstraint: [NSLayoutConstraint constraintWithItem: [self hourButton]
+                                                      attribute: NSLayoutAttributeWidth
+                                                      relatedBy: NSLayoutRelationEqual
+                                                         toItem: [self thirtyMinutesButton]
+                                                      attribute: NSLayoutAttributeWidth
+                                                     multiplier: 1
+                                                       constant: 0]];
+    
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-(>=0)-[_remainingTimeLabel]-|"
+                                                                  options: 0
+                                                                  metrics: metricsDictionary
+                                                                    views: viewsDictionary]];
 }
 
 - (void) updateConstraints
