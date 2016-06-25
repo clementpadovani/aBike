@@ -12,6 +12,9 @@
 
 @class Station;
 
+@protocol VEStationView;
+
+
 @interface VEStationsScrollView : UIScrollView
 
 @property (nonatomic, assign) NSUInteger currentStationIndex;
@@ -21,6 +24,8 @@
 - (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching;
 
 - (void) setStations: (NSArray *) stations;
+
+- (__kindof UIView *) stationViewAtIndex: (NSUInteger) index;
 
 - (VEStationView *) stationViewForStation: (Station *) aStation;
 

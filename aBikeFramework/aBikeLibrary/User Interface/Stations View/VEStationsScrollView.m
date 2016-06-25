@@ -233,6 +233,11 @@
 	[self setStationViewsArray: [stationsViewArray copy]];
 }
 
+- (UIView *) stationViewAtIndex: (NSUInteger) index
+{
+    return [self stationViewsArray][index];
+}
+
 - (void) setStations: (NSArray *) stations
 {
 	[stations enumerateObjectsUsingBlock: ^(Station *aStation, NSUInteger index, BOOL *stop) {
@@ -293,7 +298,7 @@
 	}
 }
 
-- (VEStationView  * __nullable) stationViewAtIndex: (NSUInteger) stationIndex
+- (VEStationView  * __nullable) ve_stationViewAtIndex: (NSUInteger) stationIndex
 {
 	VEStationView *stationView = nil;
 
@@ -321,7 +326,7 @@
 		[self removeDirectionsForStationAtIndex: [self currentStationIndex]];
 	}
 
-	VEStationView *newStationView = [self stationViewAtIndex: currentStationIndex];
+	VEStationView *newStationView = [self ve_stationViewAtIndex: currentStationIndex];
 
 	if ([newStationView isKindOfClass: [VESearchStationView class]])
 	{
