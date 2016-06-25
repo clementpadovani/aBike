@@ -199,6 +199,7 @@
 		59567E7F1C4A510A0042767D /* aBikeCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7B1C495394003B686A /* aBikeCities.plist */; };
 		59567E801C4A510A0042767D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7D1C495394003B686A /* Localizable.strings */; };
 		59567E811C4A511E0042767D /* VEConsulDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAB11C495394003B686A /* VEConsulDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59634F6A1D1F22D30083CAA5 /* aBikeFrameworkDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 59634F691D1F22BB0083CAA5 /* aBikeFrameworkDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59664B6F1C5D1D64009A721B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59664B701C5D1D64009A721B /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
 		596990B41C5D080B00AEFFBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 596990B31C5D080B00AEFFBC /* main.m */; };
@@ -916,6 +917,7 @@
 		59567E221C4A50920042767D /* aBikeTVFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFramework.h; sourceTree = "<group>"; };
 		59567E241C4A50920042767D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5960916A1C6F730E00473C8F /* sendToFabric.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sendToFabric.sh; sourceTree = "<group>"; };
+		59634F691D1F22BB0083CAA5 /* aBikeFrameworkDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFrameworkDefines.h; sourceTree = "<group>"; };
 		596488861C949B540060C3A4 /* aBikeFramework_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFramework_Private.h; sourceTree = "<group>"; };
 		596990B01C5D080A00AEFFBC /* aBike_Nantes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aBike_Nantes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596990B31C5D080B00AEFFBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1706,6 +1708,7 @@
 				593ADAAF1C495394003B686A /* VEConsul.h */,
 				593ADAB01C495394003B686A /* VEConsul.m */,
 				593ADAB11C495394003B686A /* VEConsulDefines.h */,
+				59634F691D1F22BB0083CAA5 /* aBikeFrameworkDefines.h */,
 				593ADB0A1C495468003B686A /* aBikeFrameworkPrefixHeader.pch */,
 			);
 			path = aBikeLibrary;
@@ -2441,6 +2444,7 @@
 				593ADAEA1C495394003B686A /* VEStationAnnotationAccessoryView.h in Headers */,
 				593ADAE61C495394003B686A /* VEAlertControllerManager.h in Headers */,
 				593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */,
+				59634F6A1D1F22D30083CAA5 /* aBikeFrameworkDefines.h in Headers */,
 				590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */,
 				593ADAF81C495394003B686A /* VEStationsView.h in Headers */,
 				59CA2D9C1C949D030025CBAC /* aBikeFramework_Private.h in Headers */,

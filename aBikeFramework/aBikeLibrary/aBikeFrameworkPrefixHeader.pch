@@ -17,6 +17,8 @@
 @import MapKit;
 @import CoreData;
 
+#import "aBikeFrameworkDefines.h"
+
 static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #import "NSBundle+VELibrary.h"
@@ -69,8 +71,6 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 #define kDisableAds @"disableAds"
 
 #define kNumberOfBikeStationsDefault 5
-
-#define kEnableTimerStationView 1
 
 //#define kEnableWatchSupport 0
 

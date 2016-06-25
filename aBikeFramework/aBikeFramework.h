@@ -24,6 +24,8 @@ FOUNDATION_EXPORT const unsigned char aBikeFrameworkVersionString[];
 
 @import MapKit;
 
+#import <aBikeFramework/aBikeFrameworkDefines.h>
+
 #import <aBikeFramework/CLLocation+Additions.h>
 #import <aBikeFramework/CPCoreDataManager.h>
 #import <aBikeFramework/LightStation.h>
