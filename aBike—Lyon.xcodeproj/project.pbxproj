@@ -1555,7 +1555,7 @@
 				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
 				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
 			);
-			name = "Timer Station View";
+			path = "Timer Station View";
 			sourceTree = "<group>";
 		};
 		5923124F1D1F15EB00BC77B7 /* Classic Station View */ = {
@@ -1564,17 +1564,17 @@
 				593ADAA51C495394003B686A /* VEStationView.h */,
 				593ADAA61C495394003B686A /* VEStationView.m */,
 			);
-			name = "Classic Station View";
+			path = "Classic Station View";
 			sourceTree = "<group>";
 		};
 		592ADC861C948A39002E1FBE /* aBikeFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */,
 				592ADC891C948A39002E1FBE /* Info.plist */,
-				59A736901C948FE900431FA9 /* aBikeFrameworkTestsPrefixHeader.pch */,
 				59C3C2341C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.h */,
 				59C3C2351C9499570034F228 /* VEaBikeFrameworkTestsConsulDelegate.m */,
+				592ADC871C948A39002E1FBE /* aBikeFrameworkTests.m */,
+				59A736901C948FE900431FA9 /* aBikeFrameworkTestsPrefixHeader.pch */,
 			);
 			path = aBikeFrameworkTests;
 			sourceTree = "<group>";
@@ -1582,13 +1582,12 @@
 		593AD9191C4951E7003B686A = {
 			isa = PBXGroup;
 			children = (
-				592ADC861C948A39002E1FBE /* aBikeFrameworkTests */,
-				59EC26441CA8549400D77605 /* aBike—Lyon WatchKit App */,
-				59EC26531CA8549500D77605 /* aBike—Lyon WatchKit App Extension */,
 				068B773FC6FD206626AF2F3C /* Frameworks */,
+				E89854F3FA882F1283D87BE8 /* Pods */,
 				593AD9231C4951E7003B686A /* Products */,
 				594AC0831C6F7ECF002FE220 /* Various */,
 				593AD9541C495217003B686A /* aBikeFramework */,
+				592ADC861C948A39002E1FBE /* aBikeFrameworkTests */,
 				59567E211C4A50920042767D /* aBikeTVFramework */,
 				597A40831C4BACE800E4B781 /* aBike—Bruxelles */,
 				59F9EC771C54ED8D0007D069 /* aBike—BruxellesUITests */,
@@ -1600,6 +1599,8 @@
 				59BAF6F51C6B4A6A0038B609 /* aBike—LuxembourgUITests */,
 				593AD9241C4951E7003B686A /* aBike—Lyon */,
 				59567E071C4A50850042767D /* aBike—Lyon TV */,
+				59EC26441CA8549400D77605 /* aBike—Lyon WatchKit App */,
+				59EC26531CA8549500D77605 /* aBike—Lyon WatchKit App Extension */,
 				59AAFCC81C497BF800ED7202 /* aBike—LyonUITests */,
 				5975F2731C4BBF2800839B95 /* aBike—Marseille */,
 				59F9EC861C54EDEC0007D069 /* aBike—MarseilleUITests */,
@@ -1615,7 +1616,6 @@
 				59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */,
 				59ABE1D71C4BA62A00108AD4 /* libc++.tbd */,
 				59A23FC51C53DA1600776B09 /* locations */,
-				E89854F3FA882F1283D87BE8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1774,8 +1774,8 @@
 				593ADA7D1C495394003B686A /* Localizable.strings */,
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
-				593ADA7B1C495394003B686A /* aBikeCities.plist */,
 				59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */,
+				593ADA7B1C495394003B686A /* aBikeCities.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -1865,8 +1865,8 @@
 		593DF8CE1C779C0C002F8B07 /* Station Views */ = {
 			isa = PBXGroup;
 			children = (
-				593DF8CF1C779C11002F8B07 /* Search Station View */,
 				5923124F1D1F15EB00BC77B7 /* Classic Station View */,
+				593DF8CF1C779C11002F8B07 /* Search Station View */,
 				5923124E1D1F15E500BC77B7 /* Timer Station View */,
 			);
 			path = "Station Views";
@@ -1875,10 +1875,10 @@
 		593DF8CF1C779C11002F8B07 /* Search Station View */ = {
 			isa = PBXGroup;
 			children = (
-				593DF8C91C779C01002F8B07 /* VESearchStationView.h */,
-				593DF8CA1C779C01002F8B07 /* VESearchStationView.m */,
 				590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */,
 				590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */,
+				593DF8C91C779C01002F8B07 /* VESearchStationView.h */,
+				593DF8CA1C779C01002F8B07 /* VESearchStationView.m */,
 			);
 			path = "Search Station View";
 			sourceTree = "<group>";
@@ -2131,9 +2131,9 @@
 		59EC26441CA8549400D77605 /* aBike—Lyon WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				59EC26451CA8549400D77605 /* Interface.storyboard */,
 				59EC26481CA8549400D77605 /* Assets.xcassets */,
 				59EC264A1CA8549400D77605 /* Info.plist */,
+				59EC26451CA8549400D77605 /* Interface.storyboard */,
 			);
 			path = "aBike—Lyon WatchKit App";
 			sourceTree = "<group>";
@@ -2141,18 +2141,18 @@
 		59EC26531CA8549500D77605 /* aBike—Lyon WatchKit App Extension */ = {
 			isa = PBXGroup;
 			children = (
-				59EC266F1CA8573600D77605 /* VEExtensionDelegate.h */,
-				59EC26701CA8573600D77605 /* VEExtensionDelegate.m */,
 				59EC265A1CA8549500D77605 /* Assets.xcassets */,
 				59EC265C1CA8549500D77605 /* Info.plist */,
+				59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */,
+				59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */,
+				59EC266F1CA8573600D77605 /* VEExtensionDelegate.h */,
+				59EC26701CA8573600D77605 /* VEExtensionDelegate.m */,
+				592DF3AE1CD54FAA000B1F4A /* VEInitialInterfaceController.h */,
+				592DF3AF1CD54FAA000B1F4A /* VEInitialInterfaceController.m */,
 				59EC266C1CA8571F00D77605 /* VEMainInterfaceController.h */,
 				59EC266D1CA8571F00D77605 /* VEMainInterfaceController.m */,
 				59EC26721CA85A2300D77605 /* VEWatchBikeStation.h */,
 				59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */,
-				59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */,
-				59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */,
-				592DF3AE1CD54FAA000B1F4A /* VEInitialInterfaceController.h */,
-				592DF3AF1CD54FAA000B1F4A /* VEInitialInterfaceController.m */,
 			);
 			path = "aBike—Lyon WatchKit App Extension";
 			sourceTree = "<group>";
@@ -5060,6 +5060,7 @@
 				59EC26461CA8549400D77605 /* Base */,
 			);
 			name = Interface.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		59FACE1B1C495873005DB202 /* InfoPlist.strings */ = {
@@ -7949,13 +7950,13 @@
 		593ADA581C495394003B686A /* aBike.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */,
-				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
 				593ADA591C495394003B686A /* aBike.xcdatamodel */,
 				593ADA5A1C495394003B686A /* aBike_1_1.xcdatamodel */,
 				593ADA5B1C495394003B686A /* aBike_1_2.xcdatamodel */,
 				593ADA5C1C495394003B686A /* aBike_2_0.xcdatamodel */,
 				593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */,
+				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
+				5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */,
 			);
 			currentVersion = 5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */;
 			path = aBike.xcdatamodeld;
