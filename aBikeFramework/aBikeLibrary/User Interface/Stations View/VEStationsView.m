@@ -83,6 +83,12 @@
 		
 		NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
 
+#if kEnableTimerStationView
+        
+        numberOfPages++;
+        
+#endif
+        
 //		if ([self isSearching])
 //		{
 //			if ([VETimeFormatter includesAdRemover])
@@ -126,7 +132,6 @@
 		
 		[self setOpaque: NO];
 		
-		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(numberOfBikeStationsHasChangedNotification:) name: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
@@ -134,6 +139,15 @@
 	
 	return self;
 }
+
+#if kEnableTimerStationView
+
+- (NSUInteger) timerStationIndex
+{
+    return [[self stationsScrollView] timerStationIndex];
+}
+
+#endif
 
 - (NSUInteger) searchStationIndex
 {
@@ -153,6 +167,12 @@
 {
 	NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
 
+#if kEnableTimerStationView
+    
+    numberOfPages++;
+    
+#endif
+    
 //	if ([self isSearching])
 //	{
 //		if ([VETimeFormatter includesAdRemover])

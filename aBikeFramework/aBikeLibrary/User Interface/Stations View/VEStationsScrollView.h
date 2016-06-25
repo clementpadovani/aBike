@@ -21,6 +21,12 @@
 
 @property (nonatomic, assign, readonly) NSUInteger searchStationIndex;
 
+#if kEnableTimerStationView
+
+@property (nonatomic, assign, readonly) NSUInteger timerStationIndex;
+
+#endif
+
 - (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching;
 
 - (void) setStations: (NSArray *) stations;
