@@ -53,7 +53,7 @@
 
 - (NSString *) ve_applicationName
 {
-    return [self objectForInfoDictionaryKey: @"CFBundleDisplayName"];
+    return (NSString * __nonnull) [self objectForInfoDictionaryKey: @"CFBundleDisplayName"];
 }
 
 @end
