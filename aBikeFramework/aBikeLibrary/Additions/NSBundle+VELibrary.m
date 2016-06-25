@@ -51,4 +51,9 @@
 	return (NSURL *__nonnull) [[NSBundle ve_libraryResources] URLForResource: @"aBikeCities" withExtension: @"plist"];
 }
 
+- (NSString *) ve_applicationName
+{
+    return [self objectForInfoDictionaryKey: @"CFBundleDisplayName"];
+}
+
 @end
