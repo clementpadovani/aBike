@@ -7,10 +7,11 @@
 //
 
 @import UIKit;
+#import "VEStationViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VETimerStationView : UIView
+@interface VETimerStationView : UIView <VEStationView>
 
 - (instancetype) initWithFrame: (CGRect) frame NS_UNAVAILABLE;
 

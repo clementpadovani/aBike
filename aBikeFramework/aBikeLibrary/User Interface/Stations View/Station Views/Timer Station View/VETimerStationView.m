@@ -115,6 +115,16 @@
     return [UIFont fontWithDescriptor: fontDescriptor size: 0];
 }
 
+- (void) stationViewDidAppear
+{
+    
+}
+
+- (void) stationViewDidDisappear
+{
+    
+}
+
 - (void) timeButtonSelected: (UIButton *) button
 {
     if ([button isEqual: [self thirtyMinutesButton]])
