@@ -97,6 +97,8 @@
 //		showAdRemover = NO;
 //	}
 
+    
+    
 	NSMutableArray *stationsViewArray = [NSMutableArray arrayWithCapacity: numberOfStations];
 	
 	VEStationView *previousStation = nil;
