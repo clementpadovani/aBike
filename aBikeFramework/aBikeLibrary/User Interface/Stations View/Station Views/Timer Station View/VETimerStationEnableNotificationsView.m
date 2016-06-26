@@ -50,6 +50,13 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
     [[self authorizationLabel] setPreferredMaxLayoutWidth: CGRectGetWidth([[self authorizationLabel] bounds])];
 }
 
+- (void) tintColorDidChange
+{
+    [super tintColorDidChange];
+    
+    [[self authorizationLabel] setTextColor: [self tintColor]];
+}
+
 - (void) setupViews
 {
     UILabel *authorizationLabel = [[UILabel alloc] init];
@@ -58,9 +65,11 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
     
     NSString *authorizationText = CPLocalizedString(@"Enable to receive alerts when your free ride is almost over", nil);
     
-    [authorizationLabel setFont: [UIFont preferredFontForTextStyle: UIFontTextStyleBody]];
+    [authorizationLabel setFont: [UIFont preferredFontForTextStyle: UIFontTextStyleCaption1]];
     
     [authorizationLabel setText: authorizationText];
+    
+    [authorizationLabel setTextAlignment: NSTextAlignmentCenter];
     
     [authorizationLabel setNumberOfLines: 0];
     
@@ -71,6 +80,8 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
     [authorizationButton setTitle: CPLocalizedString(@"Enable Alerts", nil) forState: UIControlStateNormal];
     
     [authorizationButton addTarget: self action: @selector(enableNotifications) forControlEvents: UIControlEventTouchUpInside];
+    
+    [authorizationButton setSelected: YES];
     
     [authorizationButton setTranslatesAutoresizingMaskIntoConstraints: NO];
     

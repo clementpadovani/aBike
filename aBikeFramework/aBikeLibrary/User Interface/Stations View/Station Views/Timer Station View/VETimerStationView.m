@@ -18,9 +18,13 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 
 @property (nonatomic, strong) NSDateComponentsFormatter *countdownFormatter;
 
+@property (nonatomic, strong) NSDateComponentsFormatter *durationFormatter;
+
 @property (nonatomic, weak) NSTimer *remainingTimeTimer;
 
 @property (nonatomic, copy) NSDate *finalFireDate;
+
+@property (nonatomic, weak) UILabel *timerHeaderLabel;
 
 @property (nonatomic, weak) UIButton *thirtyMinutesButton;
 
@@ -54,6 +58,8 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 		
         [self setupCountdownFormatter];
         
+        [self setupDurationFormatter];
+        
 		[self setupViews];
         
         [self checkForNotifications];
@@ -75,6 +81,17 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     [self setCountdownFormatter: formatter];
 }
 
+- (void) setupDurationFormatter
+{
+    NSDateComponentsFormatter *formatter = [[NSDateComponentsFormatter alloc] init];
+    
+    [formatter setUnitsStyle: NSDateComponentsFormatterUnitsStyleAbbreviated];
+    
+    [formatter setAllowedUnits: NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond];
+    
+    [self setDurationFormatter: formatter];
+}
+
 - (void) checkForNotifications
 {
     UIUserNotificationSettings *notifications = [[UIApplication sharedApplication] currentUserNotificationSettings];
@@ -92,16 +109,32 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     [[self stopButton] setHidden: !hideNotifications];
 }
 
+- (void) tintColorDidChange
+{
+    [super tintColorDidChange];
+    
+    [[self timerHeaderLabel] setTextColor: [self tintColor]];
+    
+    [[self remainingTimeLabel] setTextColor: [self tintColor]];
+}
+
 - (void) setupViews
 {
+    UILabel *timerHeaderLabel = [[UILabel alloc] init];
+    
+    [timerHeaderLabel setTextAlignment: NSTextAlignmentCenter];
+    
+    [timerHeaderLabel setText: CPLocalizedString(@"Timer", nil)];
+    
+    [timerHeaderLabel setTextColor: [self tintColor]];
+    
+    [timerHeaderLabel setFont: [UIFont preferredFontForTextStyle: UIFontTextStyleHeadline]];
+    
+    [timerHeaderLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
+    
     UIButton *thirtyMinutesButton = [UIButton buttonWithType: UIButtonTypeSystem];
     
-    NSDateComponents *thirtyMinutesComponents = [[NSDateComponents alloc] init];
-    
-    [thirtyMinutesComponents setMinute: 30];
-    
-    NSString *localizedThirtyMinutes = [NSDateComponentsFormatter localizedStringFromDateComponents: thirtyMinutesComponents
-                                                                                         unitsStyle: NSDateComponentsFormatterUnitsStyleAbbreviated];
+    NSString *localizedThirtyMinutes = [[self durationFormatter] stringFromTimeInterval: 30. * 60.];
     
     [thirtyMinutesButton setTitle: localizedThirtyMinutes forState: UIControlStateNormal];
     
@@ -111,12 +144,7 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 
     UIButton *hourButton = [UIButton buttonWithType: UIButtonTypeSystem];
     
-    NSDateComponents *hourComponents = [[NSDateComponents alloc] init];
-    
-    [hourComponents setHour: 1];
-    
-    NSString *localizedHour = [NSDateComponentsFormatter localizedStringFromDateComponents: hourComponents
-                                                                                 unitsStyle: NSDateComponentsFormatterUnitsStyleAbbreviated];
+    NSString *localizedHour = [[self durationFormatter] stringFromTimeInterval: 60. * 60.];
     
     [hourButton setTitle: localizedHour forState: UIControlStateNormal];
     
@@ -128,6 +156,12 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     
     [remainingTimeLabel setTextAlignment: NSTextAlignmentCenter];
     
+    [remainingTimeLabel setContentMode: UIViewContentModeCenter];
+    
+    [remainingTimeLabel setAllowsDefaultTighteningForTruncation: YES];
+    
+    [remainingTimeLabel setTextColor: [self tintColor]];
+    
     [remainingTimeLabel setFont: [self timeRemainingFont]];
     
     [remainingTimeLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
@@ -138,9 +172,15 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     
     [stopButton setTitle: CPLocalizedString(@"Stop", nil) forState: UIControlStateNormal];
     
+    [stopButton setSelected: NO];
+    
+    [stopButton setEnabled: NO];
+    
     [stopButton setTranslatesAutoresizingMaskIntoConstraints: NO];
     
     VETimerStationEnableNotificationsView *notificationsView = [[VETimerStationEnableNotificationsView alloc] init];
+    
+    [self addSubview: timerHeaderLabel];
     
     [self addSubview: thirtyMinutesButton];
     
@@ -151,6 +191,8 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     [self addSubview: stopButton];
     
     [self addSubview: notificationsView];
+    
+    [self setTimerHeaderLabel: timerHeaderLabel];
     
     [self setThirtyMinutesButton: thirtyMinutesButton];
     
@@ -170,6 +212,16 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     [[self remainingTimeTimer] invalidate];
     
     [self setFinalFireDate: nil];
+    
+    [[self remainingTimeLabel] setText: nil];
+    
+    [[self stopButton] setEnabled: NO];
+    
+    [[self stopButton] setSelected: NO];
+    
+    [[self thirtyMinutesButton] setEnabled: YES];
+    
+    [[self hourButton] setEnabled: YES];
 }
 
 - (UIFont *) timeRemainingFont
@@ -181,7 +233,7 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     NSArray *fontFeatureSettings = @[@{UIFontFeatureTypeIdentifierKey: @(kNumberSpacingType),
                                     UIFontFeatureSelectorIdentifierKey: @(kProportionalNumbersSelector)},
                                      @{UIFontFeatureTypeIdentifierKey: @(kCharacterAlternativesType),
-                                       UIFontFeatureSelectorIdentifierKey: @(2)}];
+                                       UIFontFeatureSelectorIdentifierKey: @(1)}];
     
     NSDictionary *fontAttributes = @{UIFontDescriptorFeatureSettingsAttribute : fontFeatureSettings};
     
@@ -234,6 +286,14 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     
 #endif
     
+    [[self stopButton] setEnabled: YES];
+    
+    [[self stopButton] setSelected: YES];
+    
+    [[self thirtyMinutesButton] setEnabled: NO];
+    
+    [[self hourButton] setEnabled: NO];
+    
     [[self remainingTimeTimer] invalidate];
     
     NSDate *finalFireDate = [NSDate dateWithTimeIntervalSinceNow: timerDuration];
@@ -247,7 +307,10 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
                                                          repeats: YES];
     
     [[NSRunLoop currentRunLoop] addTimer: remainingTimeTimer
-                                 forMode: NSDefaultRunLoopMode];
+                                 forMode: NSRunLoopCommonModes];
+    
+    [[NSRunLoop currentRunLoop] addTimer: remainingTimeTimer
+                                 forMode: UITrackingRunLoopMode];
     
     [self setRemainingTimeTimer: remainingTimeTimer];
     
@@ -264,7 +327,11 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     
     [finalNotification setAlertTitle: [[NSBundle mainBundle] ve_applicationName]];
     
-    [finalNotification setAlertBody: @"blabla"];
+    NSString *localizedDuration = [[self durationFormatter] stringFromTimeInterval: timerDuration];
+    
+    NSString *finalNotificationText = [NSString localizedStringWithFormat: CPLocalizedString(@"The free %@ are over!", nil), localizedDuration];
+    
+    [finalNotification setAlertBody: finalNotificationText];
     
     UILocalNotification *reminderNotification = [[UILocalNotification alloc] init];
     
@@ -273,8 +340,12 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     [reminderNotification setFireDate: reminderFireDate];
     
     [reminderNotification setAlertTitle: [[NSBundle mainBundle] ve_applicationName]];
+
+    NSString *reminderDuration = [[self durationFormatter] stringFromTimeInterval: 5. * 60.];
     
-    [reminderNotification setAlertBody: @"blabla"];
+    NSString *reminderNotificationText = [NSString localizedStringWithFormat: CPLocalizedString(@"The free %@ are almost over, only %@ left!", nil), localizedDuration, reminderDuration];
+    
+    [reminderNotification setAlertBody: reminderNotificationText];
     
     [[UIApplication sharedApplication] scheduleLocalNotification: finalNotification];
     
@@ -284,6 +355,8 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 - (void) remainingTimerDidFire: (NSTimer *) timer
 {
     NSTimeInterval remainingTime = [[self finalFireDate] timeIntervalSinceNow];
+    
+    remainingTime = ceil(remainingTime);
     
     if (remainingTime < 0)
     {
@@ -308,7 +381,8 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 
 - (void) setupConstraints
 {
-	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_thirtyMinutesButton,
+	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_timerHeaderLabel,
+                                                                   _thirtyMinutesButton,
                                                                    _hourButton,
                                                                    _remainingTimeLabel,
                                                                    _stopButton,
@@ -316,7 +390,15 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 	
 	NSDictionary *metricsDictionary = nil;
     
-    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_hourButton]-(>=0)-[_remainingTimeLabel]-(>=0)-[_stopButton]-|"
+    [self addConstraint: [NSLayoutConstraint constraintWithItem: [self timerHeaderLabel]
+                                                      attribute: NSLayoutAttributeCenterX
+                                                      relatedBy: NSLayoutRelationEqual
+                                                         toItem: self
+                                                      attribute: NSLayoutAttributeCenterX
+                                                     multiplier: 1
+                                                       constant: 0]];
+    
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_hourButton][_remainingTimeLabel][_stopButton]-|"
                                                                   options: NSLayoutFormatAlignAllBottom
                                                                   metrics: metricsDictionary
                                                                     views: viewsDictionary]];
@@ -360,7 +442,7 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
                                                                   metrics: metricsDictionary
                                                                     views: viewsDictionary]];
     
-    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[_notificationsView]-|"
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[_timerHeaderLabel][_notificationsView]-|"
                                                                   options: 0
                                                                   metrics: metricsDictionary
                                                                     views: viewsDictionary]];
