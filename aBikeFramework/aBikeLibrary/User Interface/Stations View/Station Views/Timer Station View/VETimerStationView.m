@@ -10,8 +10,17 @@
 
 @import CoreText;
 #import "NSBundle+VELibrary.h"
+#import "VETimerStationEnableNotificationsView.h"
+
+static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
 
 @interface VETimerStationView ()
+
+@property (nonatomic, strong) NSDateComponentsFormatter *countdownFormatter;
+
+@property (nonatomic, weak) NSTimer *remainingTimeTimer;
+
+@property (nonatomic, copy) NSDate *finalFireDate;
 
 @property (nonatomic, weak) UIButton *thirtyMinutesButton;
 
@@ -20,6 +29,8 @@
 @property (nonatomic, weak) UILabel *remainingTimeLabel;
 
 @property (nonatomic, weak) UIButton *stopButton;
+
+@property (nonatomic, weak) VETimerStationEnableNotificationsView *notificationsView;
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
@@ -35,23 +46,64 @@
 	{
 		[self setBackgroundColor: [UIColor clearColor]];
 		
-        [self setLayoutMargins: UIEdgeInsetsMake(15, 15, 15, 15)];
+        [self setLayoutMargins: UIEdgeInsetsMake(15, 15, 40, 15)];
         
 		[self setOpaque: NO];
 		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
 		
+        [self setupCountdownFormatter];
+        
 		[self setupViews];
+        
+        [self checkForNotifications];
 	}
 	
 	return self;
+}
+
+- (void) setupCountdownFormatter
+{
+    NSDateComponentsFormatter *formatter = [[NSDateComponentsFormatter alloc] init];
+    
+    [formatter setUnitsStyle: NSDateComponentsFormatterUnitsStylePositional];
+    
+    [formatter setAllowedUnits: NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond];
+    
+    [formatter setZeroFormattingBehavior: NSDateComponentsFormatterZeroFormattingBehaviorPad];
+    
+    [self setCountdownFormatter: formatter];
+}
+
+- (void) checkForNotifications
+{
+    UIUserNotificationSettings *notifications = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    
+    BOOL hideNotifications = ([notifications types] != UIUserNotificationTypeNone);
+    
+    [[self notificationsView] setHidden: hideNotifications];
+    
+    [[self thirtyMinutesButton] setHidden: !hideNotifications];
+    
+    [[self hourButton] setHidden: !hideNotifications];
+    
+    [[self remainingTimeLabel] setHidden: !hideNotifications];
+    
+    [[self stopButton] setHidden: !hideNotifications];
 }
 
 - (void) setupViews
 {
     UIButton *thirtyMinutesButton = [UIButton buttonWithType: UIButtonTypeSystem];
     
-    [thirtyMinutesButton setTitle: @"30" forState: UIControlStateNormal];
+    NSDateComponents *thirtyMinutesComponents = [[NSDateComponents alloc] init];
+    
+    [thirtyMinutesComponents setMinute: 30];
+    
+    NSString *localizedThirtyMinutes = [NSDateComponentsFormatter localizedStringFromDateComponents: thirtyMinutesComponents
+                                                                                         unitsStyle: NSDateComponentsFormatterUnitsStyleAbbreviated];
+    
+    [thirtyMinutesButton setTitle: localizedThirtyMinutes forState: UIControlStateNormal];
     
     [thirtyMinutesButton addTarget: self action: @selector(timeButtonSelected:) forControlEvents: UIControlEventTouchUpInside];
     
@@ -59,13 +111,22 @@
 
     UIButton *hourButton = [UIButton buttonWithType: UIButtonTypeSystem];
     
-    [hourButton setTitle: @"1h" forState: UIControlStateNormal];
+    NSDateComponents *hourComponents = [[NSDateComponents alloc] init];
+    
+    [hourComponents setHour: 1];
+    
+    NSString *localizedHour = [NSDateComponentsFormatter localizedStringFromDateComponents: hourComponents
+                                                                                 unitsStyle: NSDateComponentsFormatterUnitsStyleAbbreviated];
+    
+    [hourButton setTitle: localizedHour forState: UIControlStateNormal];
     
     [hourButton addTarget: self action: @selector(timeButtonSelected:) forControlEvents: UIControlEventTouchUpInside];
     
     [hourButton setTranslatesAutoresizingMaskIntoConstraints: NO];
     
     UILabel *remainingTimeLabel = [[UILabel alloc] init];
+    
+    [remainingTimeLabel setTextAlignment: NSTextAlignmentCenter];
     
     [remainingTimeLabel setFont: [self timeRemainingFont]];
     
@@ -75,9 +136,11 @@
     
     [stopButton addTarget: self action: @selector(stoppedPressed) forControlEvents: UIControlEventTouchUpInside];
     
-    [stopButton setTitle: @"Stop" forState: UIControlStateNormal];
+    [stopButton setTitle: CPLocalizedString(@"Stop", nil) forState: UIControlStateNormal];
     
     [stopButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    
+    VETimerStationEnableNotificationsView *notificationsView = [[VETimerStationEnableNotificationsView alloc] init];
     
     [self addSubview: thirtyMinutesButton];
     
@@ -87,6 +150,8 @@
     
     [self addSubview: stopButton];
     
+    [self addSubview: notificationsView];
+    
     [self setThirtyMinutesButton: thirtyMinutesButton];
     
     [self setHourButton: hourButton];
@@ -94,35 +159,61 @@
     [self setRemainingTimeLabel: remainingTimeLabel];
     
     [self setStopButton: stopButton];
+    
+    [self setNotificationsView: notificationsView];
 }
 
 - (void) stoppedPressed
 {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    [[self remainingTimeTimer] invalidate];
+    
+    [self setFinalFireDate: nil];
 }
 
 - (UIFont *) timeRemainingFont
 {
-    UIFontDescriptor *fontDescriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle: UIFontTextStyleBody];
+    UIFont *font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    
+    UIFontDescriptor *fontDescriptor = [font fontDescriptor];
     
     NSArray *fontFeatureSettings = @[@{UIFontFeatureTypeIdentifierKey: @(kNumberSpacingType),
-                                    UIFontFeatureSelectorIdentifierKey: @(kProportionalNumbersSelector)}];
+                                    UIFontFeatureSelectorIdentifierKey: @(kProportionalNumbersSelector)},
+                                     @{UIFontFeatureTypeIdentifierKey: @(kCharacterAlternativesType),
+                                       UIFontFeatureSelectorIdentifierKey: @(2)}];
     
     NSDictionary *fontAttributes = @{UIFontDescriptorFeatureSettingsAttribute : fontFeatureSettings};
     
     fontDescriptor = [fontDescriptor fontDescriptorByAddingAttributes: fontAttributes];
     
-    return [UIFont fontWithDescriptor: fontDescriptor size: 0];
+    UIFont *theFont = [UIFont fontWithDescriptor: fontDescriptor size: 0];
+    
+    return theFont;
+}
+
+- (void) notifications_applicationDidBecomeActive: (NSNotification *) notification
+{
+    [self checkForNotifications];
+    
+    [self performSelectorOnMainThread: @selector(checkForNotifications) withObject: nil waitUntilDone: NO];
 }
 
 - (void) stationViewDidAppear
 {
+    [self checkForNotifications];
     
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(notifications_applicationDidBecomeActive:)
+                                                 name: UIApplicationDidBecomeActiveNotification
+                                               object: nil];
 }
 
 - (void) stationViewDidDisappear
 {
-    
+    [[NSNotificationCenter defaultCenter] removeObserver: self
+                                                    name: UIApplicationDidBecomeActiveNotification
+                                                  object: nil];
 }
 
 - (void) timeButtonSelected: (UIButton *) button
@@ -137,7 +228,30 @@
 
 - (void) scheduleTimeForDuration: (NSTimeInterval) timerDuration
 {
+#if DEBUG == 1
+    
+    timerDuration /= 60.;
+    
+#endif
+    
+    [[self remainingTimeTimer] invalidate];
+    
     NSDate *finalFireDate = [NSDate dateWithTimeIntervalSinceNow: timerDuration];
+    
+    [self setFinalFireDate: finalFireDate];
+    
+    NSTimer *remainingTimeTimer = [NSTimer timerWithTimeInterval: kVETimerStationViewRemainingTimeTimerInterval
+                                                          target: self
+                                                        selector: @selector(remainingTimerDidFire:)
+                                                        userInfo: nil
+                                                         repeats: YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer: remainingTimeTimer
+                                 forMode: NSDefaultRunLoopMode];
+    
+    [self setRemainingTimeTimer: remainingTimeTimer];
+    
+    [self updateRemainingTimeForRemainingDuration: timerDuration];
     
     // 5 mins prior
     NSDate *reminderFireDate = [NSDate dateWithTimeIntervalSinceNow: (timerDuration - (5. * 60.))];
@@ -167,12 +281,38 @@
     [[UIApplication sharedApplication] scheduleLocalNotification: reminderNotification];
 }
 
+- (void) remainingTimerDidFire: (NSTimer *) timer
+{
+    NSTimeInterval remainingTime = [[self finalFireDate] timeIntervalSinceNow];
+    
+    if (remainingTime < 0)
+    {
+        [timer invalidate];
+        
+        [self setRemainingTimeTimer: nil];
+        
+        [self setFinalFireDate: nil];
+        
+        remainingTime = 0;
+    }
+    
+    [self updateRemainingTimeForRemainingDuration: remainingTime];
+}
+
+- (void) updateRemainingTimeForRemainingDuration: (NSTimeInterval) remainingDuration
+{
+    NSString *remainingTimeString = [[self countdownFormatter] stringFromTimeInterval: remainingDuration];
+    
+    [[self remainingTimeLabel] setText: remainingTimeString];
+}
+
 - (void) setupConstraints
 {
 	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_thirtyMinutesButton,
                                                                    _hourButton,
                                                                    _remainingTimeLabel,
-                                                                   _stopButton);
+                                                                   _stopButton,
+                                                                   _notificationsView);
 	
 	NSDictionary *metricsDictionary = nil;
     
@@ -211,6 +351,16 @@
                                                        constant: 0]];
     
     [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-(>=0)-[_remainingTimeLabel]-|"
+                                                                  options: 0
+                                                                  metrics: metricsDictionary
+                                                                    views: viewsDictionary]];
+    
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-[_notificationsView]-|"
+                                                                  options: 0
+                                                                  metrics: metricsDictionary
+                                                                    views: viewsDictionary]];
+    
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[_notificationsView]-|"
                                                                   options: 0
                                                                   metrics: metricsDictionary
                                                                     views: viewsDictionary]];

@@ -337,6 +337,8 @@
 		59FACE191C495873005DB202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1B1C495873005DB202 /* InfoPlist.strings */; };
 		59FACE1C1C495877005DB202 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		59FACE251C495E29005DB202 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE241C495E29005DB202 /* Launch Screen.storyboard */; };
+		59FEA5D31D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59FEA5D11D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h */; };
+		59FEA5D41D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FEA5D21D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m */; };
 		59FEC1EB1C6B41F500809D75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FEC1EA1C6B41F500809D75 /* main.m */; };
 		59FEC1F61C6B41F500809D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FEC1F51C6B41F500809D75 /* Assets.xcassets */; };
 		59FEC1FF1C6B424800809D75 /* aBikeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593AD9531C495217003B686A /* aBikeFramework.framework */; };
@@ -1073,6 +1075,8 @@
 		59FACE221C49588A005DB202 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		59FACE231C49588B005DB202 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59FACE241C495E29005DB202 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		59FEA5D11D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VETimerStationEnableNotificationsView.h; sourceTree = "<group>"; };
+		59FEA5D21D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VETimerStationEnableNotificationsView.m; sourceTree = "<group>"; };
 		59FEC1E71C6B41F500809D75 /* aBike_Dublin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aBike_Dublin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEC1EA1C6B41F500809D75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		59FEC1F51C6B41F500809D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1557,6 +1561,8 @@
 			children = (
 				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
 				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
+				59FEA5D11D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h */,
+				59FEA5D21D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m */,
 			);
 			path = "Timer Station View";
 			sourceTree = "<group>";
@@ -2431,6 +2437,7 @@
 				593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */,
 				593ADACC1C495394003B686A /* Station.h in Headers */,
 				59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */,
+				59FEA5D31D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h in Headers */,
 				593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */,
 				593ADB021C495394003B686A /* VEWindow.h in Headers */,
 				594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */,
@@ -4473,6 +4480,7 @@
 				593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */,
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
 				59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,
+				59FEA5D41D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
 				5923124D1D1F15E200BC77B7 /* VETimerStationView.m in Sources */,
 				593ADAD31C495394003B686A /* VEBaseModel.m in Sources */,
