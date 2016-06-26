@@ -12,15 +12,26 @@
 
 @class Station;
 
+@protocol VEStationView;
+
+
 @interface VEStationsScrollView : UIScrollView
 
 @property (nonatomic, assign) NSUInteger currentStationIndex;
 
 @property (nonatomic, assign, readonly) NSUInteger searchStationIndex;
 
+#if kEnableTimerStationView
+
+@property (nonatomic, assign, readonly) NSUInteger timerStationIndex;
+
+#endif
+
 - (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching;
 
 - (void) setStations: (NSArray *) stations;
+
+- (__kindof UIView *) stationViewAtIndex: (NSUInteger) index;
 
 - (VEStationView *) stationViewForStation: (Station *) aStation;
 

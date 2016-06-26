@@ -19,6 +19,7 @@
 #import "VEStationsScrollView.h"
 
 #import "VETimeFormatter.h"
+#import "VEStationViewProtocol.h"
 
 @interface VEStationsView () <UIScrollViewDelegate>
 
@@ -82,6 +83,12 @@
 		
 		NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
 
+#if kEnableTimerStationView
+        
+        numberOfPages++;
+        
+#endif
+        
 //		if ([self isSearching])
 //		{
 //			if ([VETimeFormatter includesAdRemover])
@@ -125,7 +132,6 @@
 		
 		[self setOpaque: NO];
 		
-		
 		[self setTranslatesAutoresizingMaskIntoConstraints: NO];
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(numberOfBikeStationsHasChangedNotification:) name: kVETimeFormatterNumberOfBikeStationsHasChangedNotification object: nil];
@@ -133,6 +139,15 @@
 	
 	return self;
 }
+
+#if kEnableTimerStationView
+
+- (NSUInteger) timerStationIndex
+{
+    return [[self stationsScrollView] timerStationIndex];
+}
+
+#endif
 
 - (NSUInteger) searchStationIndex
 {
@@ -152,6 +167,12 @@
 {
 	NSInteger numberOfPages = (NSInteger) [VETimeFormatter numberOfBikeStations];
 
+#if kEnableTimerStationView
+    
+    numberOfPages++;
+    
+#endif
+    
 //	if ([self isSearching])
 //	{
 //		if ([VETimeFormatter includesAdRemover])
@@ -173,11 +194,23 @@
 }
 
 - (void) pageControlDidChangeValue
-{	
+{
 	NSUInteger newPage = (NSUInteger) [[self pager] currentPage];
 	
 	CGRect newRect = [[self stationsScrollView] bounds];
-	
+
+    NSUInteger oldPage = (NSUInteger) (newRect.origin.x / CGRectGetWidth(newRect));
+    
+    UIView *view = [[self stationsScrollView] stationViewAtIndex: newPage];
+    
+    UIView *previousView = [[self stationsScrollView] stationViewAtIndex: oldPage];
+    
+    if ([view conformsToProtocol: @protocol(VEStationView)])
+        [(id <VEStationView>) view stationViewDidAppear];
+    
+    if ([previousView conformsToProtocol: @protocol(VEStationView)])
+        [(id <VEStationView>) previousView stationViewDidDisappear];
+    
 	newRect.origin.x = CGRectGetWidth(newRect) * newPage;
 	
 	[[self delegate] userDidScrollToNewStationForIndex: newPage];
@@ -195,7 +228,7 @@
 	CGFloat pageWidth = CGRectGetWidth([[self stationsScrollView] bounds]);
 	
 	CGFloat horizontalOffset = [scrollView contentOffset].x;
-	
+    
 	NSUInteger page = (NSUInteger) (round(horizontalOffset / pageWidth));
 	
 	NSUInteger currentPage = (NSUInteger) [[self pager] currentPage];
@@ -203,6 +236,16 @@
 	if (page == currentPage)
 		return;
 	
+    UIView *view = [[self stationsScrollView] stationViewAtIndex: page];
+    
+    UIView *previousView = [[self stationsScrollView] stationViewAtIndex: currentPage];
+    
+    if ([view conformsToProtocol: @protocol(VEStationView)])
+        [(id <VEStationView>) view stationViewDidAppear];
+
+    if ([previousView conformsToProtocol: @protocol(VEStationView)])
+        [(id <VEStationView>) previousView stationViewDidDisappear];
+    
 	[[self pager] setCurrentPage: (NSInteger) page];
 	
 	[self setCurrentStationIndex: page withNotification: NO];

@@ -17,6 +17,8 @@
 @import MapKit;
 @import CoreData;
 
+#import "aBikeFrameworkDefines.h"
+
 static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #import "NSBundle+VELibrary.h"
