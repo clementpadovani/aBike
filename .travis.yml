@@ -34,6 +34,7 @@ env:
         - CP_IOS_SIMULATOR="iphonesimulator9.3" CP_IOS_SIMULATOR_OS="platform=iOS Simulator,name=iPhone 5s,OS=9.3"
 before_install:
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+	- gem cleanup
     - ./Vendor/upgrade-xctool.sh
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/certificate.cer.enc -d -a -out Vendor/certificate.cer
