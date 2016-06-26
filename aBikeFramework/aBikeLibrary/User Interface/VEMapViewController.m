@@ -795,7 +795,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
-	if (index == [[self stationsView] searchStationIndex])
+	if (index == [[self stationsView] searchStationIndex]
+#if kEnableTimerStationView
+        || index == [[self stationsView] timerStationIndex]
+#endif
+        )
 	{
 		//CPLog(@"station is ad view");
 		

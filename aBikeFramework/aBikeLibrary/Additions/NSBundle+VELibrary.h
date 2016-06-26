@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSURL *) ve_fileURLForCities;
 
+- (NSString *) ve_applicationName;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,6 +17,7 @@
 #import "CPCoreDataManager.h"
 
 #import "VESearchStationView.h"
+#import "VETimerStationView.h"
 
 @class Station;
 
@@ -29,6 +30,13 @@
 @property (nonatomic, assign, getter = isSearching) BOOL searching;
 
 @property (nonatomic, assign, readwrite) NSUInteger searchStationIndex;
+
+#if kEnableTimerStationView
+
+@property (nonatomic, assign, readwrite) NSUInteger timerStationIndex;
+
+#endif
+
 
 - (void) removeDirectionsForStationAtIndex: (NSUInteger) stationIndex;
 
@@ -97,6 +105,12 @@
 //		showAdRemover = NO;
 //	}
 
+#if kEnableTimerStationView
+    
+    numberOfStations++;
+    
+#endif
+    
 	NSMutableArray *stationsViewArray = [NSMutableArray arrayWithCapacity: numberOfStations];
 	
 	VEStationView *previousStation = nil;
@@ -106,7 +120,9 @@
 		BOOL isLast = NO;
 
 		BOOL isSearch = NO;
-		
+        
+        BOOL isTimer = NO;
+        
 //		if (!showAdRemover)
 //		{
 //			isLast = NO;
@@ -138,9 +154,15 @@
 //				isLast = YES;
 //			}
 
-		VEStationView *aStationView;
+#if kEnableTimerStationView
+        
+        isTimer = ((i + 1) == numberOfStations);
+
+#endif
+        
+        VEStationView *aStationView = nil;
 		
-		if (!isLast)
+		if (!isLast && !isTimer)
 		{
 			if (isSearch)
 			{
@@ -158,7 +180,18 @@
 			}
 			
 		}
-		
+
+#if kEnableTimerStationView
+        
+        if (isTimer)
+        {
+            aStationView = (VEStationView *) [[VETimerStationView alloc] init];
+            
+            [self setTimerStationIndex: i];
+        }
+
+#endif
+        
 		[self addSubview: aStationView];
 		
 		[stationsViewArray addObject: aStationView];
@@ -223,14 +256,17 @@
 			[self addConstraint: lastHorizontalConstraint];
 		}
 		
-		
-		
 		[self addConstraint: horizontalConstraint];
 		
 		previousStation = aStationView;
 	}
 
 	[self setStationViewsArray: [stationsViewArray copy]];
+}
+
+- (UIView *) stationViewAtIndex: (NSUInteger) index
+{
+    return [self stationViewsArray][index];
 }
 
 - (void) setStations: (NSArray *) stations
@@ -293,7 +329,7 @@
 	}
 }
 
-- (VEStationView  * __nullable) stationViewAtIndex: (NSUInteger) stationIndex
+- (VEStationView  * __nullable) ve_stationViewAtIndex: (NSUInteger) stationIndex
 {
 	VEStationView *stationView = nil;
 
@@ -321,7 +357,7 @@
 		[self removeDirectionsForStationAtIndex: [self currentStationIndex]];
 	}
 
-	VEStationView *newStationView = [self stationViewAtIndex: currentStationIndex];
+	VEStationView *newStationView = [self ve_stationViewAtIndex: currentStationIndex];
 
 	if ([newStationView isKindOfClass: [VESearchStationView class]])
 	{
