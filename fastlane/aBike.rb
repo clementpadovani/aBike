@@ -4,13 +4,13 @@ require '../Various/version.rb'
 
 module CPaBike
 
-VERSION = '3.1.0'
+VERSION = '3.2.0'
 
 RELEASE_NOTES = ({
 
-  'en-US' => "Bug fixes",
-  'fr-FR' => "Corrections de bugs",
-  'en-GB' => "Bug fixes"
+  'en-US' => "Added timer\nBug fixes",
+  'fr-FR' => "Rajout d'un chrono\nCorrections de bugs",
+  'en-GB' => "Added timer\nBug fixes"
 
 })
 
