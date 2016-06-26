@@ -66,3 +66,15 @@
 
 /* VELocationManager_open_settings */
 "Settings" = "Réglages";
+
+"Stop" = "Arrêter";
+
+"Enable to receive alerts when your free ride is almost over" = "Activer pour recevoir des alertes lorsque le trajet gratuit est presque fini";
+
+"Enable Alerts" = "Activer les Alertes";
+
+"Enable Alerts for the ride timer" = "Activer les Alertes pour le minuteur de trajet";
+
+"Cancel" = "Annuler";
+
+"Enable" = "Activer";

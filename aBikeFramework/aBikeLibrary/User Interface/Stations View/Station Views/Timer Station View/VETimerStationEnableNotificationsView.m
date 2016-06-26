@@ -56,7 +56,7 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
     
     [authorizationLabel setTextColor: [self tintColor]];
     
-    NSString *authorizationText = CPLocalizedString(@"Enable Alerts to receive alerts when your free ride is almost over", nil);
+    NSString *authorizationText = CPLocalizedString(@"Enable to receive alerts when your free ride is almost over", nil);
     
     [authorizationLabel setFont: [UIFont preferredFontForTextStyle: UIFontTextStyleBody]];
     
