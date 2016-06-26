@@ -80,3 +80,7 @@
 "Enable" = "Enable";
 
 "Timer" = "Timer";
+
+"The free %@ are over!" = "The free %@ are over!";
+
+"The free %@ are almost over, only %@ left!" = "The free %@ are almost over, only %@ left!";

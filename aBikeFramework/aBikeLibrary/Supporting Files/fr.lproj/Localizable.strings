@@ -80,3 +80,7 @@
 "Enable" = "Activer";
 
 "Timer" = "Minuteur";
+
+"The free %@ are over!" = "Les %@ gratuites sont écoulées !";
+
+"The free %@ are almost over, only %@ left!" = "Les %@ gratuites sont presques écoulées, plus que %@ !";
