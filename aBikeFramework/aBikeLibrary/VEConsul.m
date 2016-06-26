@@ -320,21 +320,6 @@ static VEConsul *_sharedConsul = nil;
 
 #endif
 
-- (void) applicationDidRegisterUserNotificationSettings: (UIUserNotificationSettings *) settings
-{
-    
-}
-
-- (void) applicationDidFailToRegisterForRemoteNotificationsWithError: (NSError *) error
-{
-    CPLog(@"error: %@", error);
-}
-
-- (void) applicationDidRegisterForRemoteNotificationsWithDeviceToken: (NSData *) deviceToken
-{
-    CPLog(@"did register: %@", deviceToken);
-}
-
 
 - (BOOL) applicationOpenURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation
 {

@@ -83,21 +83,6 @@
 	return [[VEConsul sharedConsul] applicationDidFinishLaunchingWithOptions: launchOptions];
 }
 
-- (void) application: (UIApplication *) application didRegisterUserNotificationSettings: (UIUserNotificationSettings *) notificationSettings
-{
-    [[VEConsul sharedConsul] applicationDidRegisterUserNotificationSettings: notificationSettings];
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
-{
-    [[VEConsul sharedConsul] applicationDidFailToRegisterForRemoteNotificationsWithError: error];
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    [[VEConsul sharedConsul] applicationDidRegisterForRemoteNotificationsWithDeviceToken: deviceToken];
-}
-
 - (BOOL) application: (UIApplication *) application openURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation
 {
 	return [[VEConsul sharedConsul] applicationOpenURL: url sourceApplication: sourceApplication annotation: annotation];
