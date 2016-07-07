@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>2E91297B-C165-4632-82F1-3D109928711A</UUID>
-        <nextObjectID>112</nextObjectID>
+        <nextObjectID>114</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -79,7 +79,7 @@
     </object>
     <object type="LMREQUEST" id="z105">
         <attribute name="uuid" type="string">ECED28D0-D2D9-421F-9AE5-6ADC590A31C5</attribute>
-        <attribute name="url" type="string">["https:\\/\\/api.jcdecaux.com\\/vls\\/v1\\/stations?contract=lyon\u2600apiKey=",{"data":{"value":"0301DEB51644EDAA3618F7A2B225EA8797030D71ADDD23A33C63CA79F9E71EEB44C9217377562960C685A7F7732F3C69FB5CAC5B74772F2E4785D4A3EA50B485DFC21F3DE2D3A61D5AC13B8472E6DE11E2AC06C225A72FEF79A4BBFCA7DF63FC0ECC797E8ACED85F1AF0C88C094848CEF9E9","keyUUID":"21DFB3A2-5880-4E46-93D7-2356185CEA58","mode":0},"identifier":"com.luckymarmot.SecureDynamicValue"}]</attribute>
+        <attribute name="url" type="string">["https:\\/\\/api.jcdecaux.com\\/vls\\/v1\\/stations?contract=lyon\u2600apiKey=",{"data":{"value":"0301DEB51644EDAA3618F7A2B225EA879703C1103B2B4F6DA990699D1E53FE84AB1FF255A342DE330911CAB963A83980EBDCECC4B6722B8EA204B9724645158E0F2B8CB168FDFBED6AB0CC2201C2564F917A201C4DE0C4976DAD91B8BEE56142F7F987FFB92BECABF82D0A09411ADB2BE8A2","keyUUID":"654F3EC7-F5A5-4B73-85C5-DE1A8F205292","mode":0},"identifier":"com.luckymarmot.SecureDynamicValue"}]</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -106,14 +106,14 @@
     </object>
     <object type="LMREQUEST" id="z109">
         <attribute name="uuid" type="string">5321E7C9-C9E4-43C1-B859-B9AC173CEC04</attribute>
-        <attribute name="url" type="string">["https:\\/\\/api.jcdecaux.com\\/vls\\/v1\\/stations\\/2005?contract=lyon\u2600apiKey=",{"data":{"value":"0301DF1CCA9BC9C475B78302E3BE3210EE2CDA40B613F20E1552374D9D68D51533228AF8C6E65C2E4D1B24B21D2843658D5985996EA8379CD7F3471387CD452FD1B9700C7F162BD103D472F7BE5BEECCC549A1F113E697A9D09827BB2F213BFADC76D08B46C4FD1D0F94EDFA08C8CB45E6C9","keyUUID":"21DFB3A2-5880-4E46-93D7-2356185CEA58","mode":0},"identifier":"com.luckymarmot.SecureDynamicValue"}]</attribute>
+        <attribute name="url" type="string">["https:\\/\\/api.jcdecaux.com\\/vls\\/v1\\/stations\\/2005?contract=lyon\u2600apiKey=",{"data":{"value":"0301DF1CCA9BC9C475B78302E3BE3210EE2C0A4CEE7A7F014DE40F03E1DDF7B02A219BCE905A22CD3F17EFE2AD0A92B618686DB4895EAA1D58F0752C55D5E637D392A3F7D8434C6D9EDC7FDEE8052DF3513B","keyUUID":"654F3EC7-F5A5-4B73-85C5-DE1A8F205292","mode":0},"identifier":"com.luckymarmot.SecureDynamicValue"}]</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">GET</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="order" type="int64">1</attribute>
+        <attribute name="order" type="int64">2</attribute>
         <attribute name="name" type="string">Station Information</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
         <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
@@ -140,5 +140,30 @@
         <attribute name="value" type="string"></attribute>
         <relationship name="environment" type="1/1" destination="LMENVIRONMENT" idrefs="z103"></relationship>
         <relationship name="variable" type="1/1" destination="LMENVIRONMENTVARIABLE" idrefs="z111"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z113">
+        <attribute name="uuid" type="string">A1A9B485-B57D-4845-BA20-1EE7B9AA9A0F</attribute>
+        <attribute name="url" type="string">["https:\\/\\/api.jcdecaux.com\\/vls\\/v1\\/contracts?apiKey=",{"data":{"value":"0301DEB51644EDAA3618F7A2B225EA879703C1103B2B4F6DA990699D1E53FE84AB1FF255A342DE330911CAB963A83980EBDCECC4B6722B8EA204B9724645158E0F2B8CB168FDFBED6AB0CC2201C2564F917A201C4DE0C4976DAD91B8BEE56142F7F987FFB92BECABF82D0A09411ADB2BE8A2","keyUUID":"654F3EC7-F5A5-4B73-85C5-DE1A8F205292","mode":0},"identifier":"com.luckymarmot.SecureDynamicValue"}]</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">GET</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">My API (2)</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z114"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z114">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z113"></relationship>
     </object>
 </database>
