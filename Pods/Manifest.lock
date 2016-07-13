@@ -2,21 +2,18 @@ PODS:
   - Crashlytics (3.7.2):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
-  - Reveal-iOS-SDK (1.6.2)
   - SimulatorStatusMagic (1.8)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
-  - Reveal-iOS-SDK
   - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
   Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SimulatorStatusMagic: 4dbf0faa0208e9ac0d56cea06eaa5f7a5f3d02fb
 
-PODFILE CHECKSUM: 756d6d1c72a58bea24100f5907feee4dd21e6b09
+PODFILE CHECKSUM: b0701369a6cccc74b699db9b8d12b39c5293e2ba
 
 COCOAPODS: 1.0.1
