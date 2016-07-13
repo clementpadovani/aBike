@@ -37,6 +37,6 @@ CLANG_WARN_EMPTY_BODY = YES
 CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
 CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES
 CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES
-OTHER_CFLAGS = $(inherited) -Wextra -Wno-unused-parameter -Wformat=2 -Wunreachable-code -Wno-format-nonliteral -Wundef -Wfloat-equal
+OTHER_CFLAGS = $(inherited) -Wextra -Wno-unused-parameter -Wformat=2 -Wunreachable-code -Wno-format-nonliteral -Wundef -Wfloat-equal -Wno-unused-property-ivar
 GCC_TREAT_WARNINGS_AS_ERRORS = YES
 RUN_CLANG_STATIC_ANALYZER = YES
