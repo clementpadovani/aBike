@@ -2371,9 +2371,9 @@
 				591483DC1C649313007EDABB /* Frameworks */,
 				591483DD1C649313007EDABB /* Resources */,
 				591483FB1C649365007EDABB /* Embed Frameworks */,
-				5949F8E41C649A06008398F4 /* Fabric */,
 				3BC8BA825004075BA42C310C /* [CP] Embed Pods Frameworks */,
 				B85E7094A109798F5C562746 /* [CP] Copy Pods Resources */,
+				5949F8E41C649A06008398F4 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2495,9 +2495,9 @@
 				596990AD1C5D080A00AEFFBC /* Frameworks */,
 				596990AE1C5D080A00AEFFBC /* Resources */,
 				596990CC1C5D083A00AEFFBC /* Embed Frameworks */,
-				596990D01C5D0A4400AEFFBC /* Fabric */,
 				7EF5A528DF6B700094009774 /* [CP] Embed Pods Frameworks */,
 				0251E22899BA5CEA23786D63 /* [CP] Copy Pods Resources */,
+				596990D01C5D0A4400AEFFBC /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2538,9 +2538,9 @@
 				5975F26F1C4BBF2800839B95 /* Frameworks */,
 				5975F2701C4BBF2800839B95 /* Resources */,
 				5975F2911C4BBF7E00839B95 /* Embed Frameworks */,
-				5975F3641C4BCAF200839B95 /* Fabric */,
 				A1FB72CC96219DDBD2B20B07 /* [CP] Embed Pods Frameworks */,
 				EE98B1D8B20309C35542426F /* [CP] Copy Pods Resources */,
+				5975F3641C4BCAF200839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2561,9 +2561,9 @@
 				5975F2A51C4BC37C00839B95 /* Frameworks */,
 				5975F2A61C4BC37C00839B95 /* Resources */,
 				5975F2C51C4BC3C400839B95 /* Embed Frameworks */,
-				5975F3631C4BCAEB00839B95 /* Fabric */,
 				B8675C4D1265EB4ED3F292C8 /* [CP] Embed Pods Frameworks */,
 				6907B969B9BA9054D8CF8F9D /* [CP] Copy Pods Resources */,
+				5975F3631C4BCAEB00839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2584,9 +2584,9 @@
 				5975F2DC1C4BC5DA00839B95 /* Frameworks */,
 				5975F2DD1C4BC5DA00839B95 /* Resources */,
 				5975F2FC1C4BC61400839B95 /* Embed Frameworks */,
-				5975F3621C4BCAE300839B95 /* Fabric */,
 				4DA1580171976530E5181383 /* [CP] Embed Pods Frameworks */,
 				5AAAEF81FA63A3239523D291 /* [CP] Copy Pods Resources */,
+				5975F3621C4BCAE300839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2607,9 +2607,9 @@
 				5975F3131C4BC83100839B95 /* Frameworks */,
 				5975F3141C4BC83100839B95 /* Resources */,
 				5975F3321C4BC85400839B95 /* Embed Frameworks */,
-				5975F3611C4BCAD900839B95 /* Fabric */,
 				37E279672A7A8910480FB388 /* [CP] Embed Pods Frameworks */,
 				AEA75EE365513E22B9A0665F /* [CP] Copy Pods Resources */,
+				5975F3611C4BCAD900839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2630,9 +2630,9 @@
 				597A407F1C4BACE800E4B781 /* Frameworks */,
 				597A40801C4BACE800E4B781 /* Resources */,
 				597A409E1C4BAD3300E4B781 /* Embed Frameworks */,
-				5975F3651C4BCAFA00839B95 /* Fabric */,
 				E45FD1CA95E577950AEA5C89 /* [CP] Embed Pods Frameworks */,
 				620831CB7154702ACBADDA11 /* [CP] Copy Pods Resources */,
+				5975F3651C4BCAFA00839B95 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2679,9 +2679,9 @@
 				59AB74771C6B4691003EBFF1 /* Frameworks */,
 				59AB74781C6B4691003EBFF1 /* Resources */,
 				59AB749B1C6B484C003EBFF1 /* Embed Frameworks */,
-				59AB74B11C6B48E7003EBFF1 /* Fabric */,
 				CB93E5938150CE53CA00A223 /* [CP] Embed Pods Frameworks */,
 				CC06114606005BD89A332E64 /* [CP] Copy Pods Resources */,
+				59AB74B11C6B48E7003EBFF1 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -2897,9 +2897,9 @@
 				59FEC1E41C6B41F500809D75 /* Frameworks */,
 				59FEC1E51C6B41F500809D75 /* Resources */,
 				59FEC2031C6B424900809D75 /* Embed Frameworks */,
-				59FEC21E1C6B464300809D75 /* Fabric */,
 				1AB5BBE8F5DF02071F7FCAF9 /* [CP] Embed Pods Frameworks */,
 				315DC05DDBA5D5FEC9EE6AA4 /* [CP] Copy Pods Resources */,
+				59FEC21E1C6B464300809D75 /* Fabric */,
 			);
 			buildRules = (
 			);
