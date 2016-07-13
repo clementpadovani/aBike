@@ -5148,7 +5148,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5171,7 +5171,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5195,7 +5195,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5314,7 +5314,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -5369,7 +5369,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
@@ -5399,7 +5399,7 @@
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_PEDANTIC = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -5435,7 +5435,7 @@
 				);
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -5482,7 +5482,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -5531,7 +5531,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -5725,7 +5725,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Nantes/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5748,7 +5748,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Nantes/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5774,7 +5774,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "aBike—Nantes/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5850,7 +5850,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Marseille/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5874,7 +5874,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Marseille/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5898,7 +5898,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Marseille/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5921,7 +5921,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Mulhouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5944,7 +5944,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Mulhouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5968,7 +5968,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Mulhouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -5991,7 +5991,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Paris/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6014,7 +6014,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Paris/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6038,7 +6038,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Paris/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6061,7 +6061,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Toulouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6084,7 +6084,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Toulouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6108,7 +6108,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Toulouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6132,7 +6132,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Bruxelles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6156,7 +6156,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Bruxelles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6181,7 +6181,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Bruxelles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6232,7 +6232,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
@@ -6262,7 +6262,7 @@
 				);
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -6309,7 +6309,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -6422,7 +6422,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Bruxelles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.bruxelles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6446,7 +6446,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Marseille/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.marseille;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6469,7 +6469,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Mulhouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.mulhouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6492,7 +6492,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Paris/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.paris;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6515,7 +6515,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Toulouse/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.toulouse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6624,7 +6624,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Nantes/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.nantes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6666,7 +6666,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Créteil/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.creteil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6707,7 +6707,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Dublin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6748,7 +6748,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Luxembourg/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6864,7 +6864,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Luxembourg/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6887,7 +6887,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Luxembourg/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -6911,7 +6911,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Luxembourg/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.luxembourg;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -7507,7 +7507,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
@@ -7539,7 +7539,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "aBike—Lyon/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -7577,7 +7577,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				INFOPLIST_FILE = aBikeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -7611,7 +7611,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Dublin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -7634,7 +7634,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Dublin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -7658,7 +7658,7 @@
 					"$(PROJECT_DIR)/aBike—Lyon",
 				);
 				INFOPLIST_FILE = "aBike—Dublin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clement.padovani.dublin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
