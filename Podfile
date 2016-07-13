@@ -16,7 +16,7 @@ target 'aBikeFramework' do
 
 	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
 
-	pod 'Reveal-iOS-SDK', :configuration => ['Debug']
+  # pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
 	pod 'Fabric', :configuration => ['Release']
 
