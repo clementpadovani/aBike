@@ -72,7 +72,7 @@ private_lane :creteil_appstore do |options|
 	     include_bitcode: true,
 	     export_team_id: "W48L6Z4654",
 		 output_directory: "./build",
-		 output_name: "aBike—Créteil",
+		 output_name: "aBike—Creteil",
 		 export_method: "app-store"
 	)
 
