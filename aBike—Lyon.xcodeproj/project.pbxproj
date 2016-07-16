@@ -50,7 +50,6 @@
 		5906FC0E1C4A617A00A2D3D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */; };
-		5911B34C1D3A8AE600416016 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5911B34B1D3A8AE600416016 /* Localizable.stringsdict */; };
 		5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		591483E31C649313007EDABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591483E21C649313007EDABB /* main.m */; };
 		591483EE1C649313007EDABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591483ED1C649313007EDABB /* Assets.xcassets */; };
@@ -317,6 +316,7 @@
 		59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */; };
 		59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
+		59ECB6E31D3AA7FD0094AA68 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */; };
 		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
 		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
@@ -761,7 +761,6 @@
 		590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+VEAdditions.h"; sourceTree = "<group>"; };
 		590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+VEAdditions.m"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
-		5911B34B1D3A8AE600416016 /* Localizable.stringsdict */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		591483DF1C649313007EDABB /* aBike_Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike_Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		591483ED1C649313007EDABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1030,6 +1029,9 @@
 		59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEWatchBikeStation.m; sourceTree = "<group>"; };
 		59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+VEAdditions.h"; sourceTree = "<group>"; };
 		59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+VEAdditions.m"; sourceTree = "<group>"; };
+		59ECB6E41D3AA7FD0094AA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		59ECB6E61D3AA8070094AA68 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "en-GB"; path = "en-GB.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		59ECB6E71D3AA8080094AA68 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMainThreadGuard.m; sourceTree = "<group>"; };
 		59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_2_0.xcdatamodel; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1711,7 +1713,7 @@
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
 				59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */,
-				5911B34B1D3A8AE600416016 /* Localizable.stringsdict */,
+				59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */,
 				593ADA7B1C495394003B686A /* aBikeCities.plist */,
 			);
 			path = "Supporting Files";
@@ -3132,7 +3134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */,
-				5911B34C1D3A8AE600416016 /* Localizable.stringsdict in Resources */,
+				59ECB6E31D3AA7FD0094AA68 /* Localizable.stringsdict in Resources */,
 				593ADADE1C495394003B686A /* aBikeCities.plist in Resources */,
 				593ADADF1C495394003B686A /* Localizable.strings in Resources */,
 			);
@@ -4952,6 +4954,16 @@
 			);
 			name = Interface.storyboard;
 			path = .;
+			sourceTree = "<group>";
+		};
+		59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59ECB6E41D3AA7FD0094AA68 /* en */,
+				59ECB6E61D3AA8070094AA68 /* en-GB */,
+				59ECB6E71D3AA8080094AA68 /* fr */,
+			);
+			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 		59FACE1B1C495873005DB202 /* InfoPlist.strings */ = {

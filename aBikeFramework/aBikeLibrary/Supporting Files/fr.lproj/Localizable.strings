@@ -40,18 +40,6 @@
 /* No comment provided by engineer. */
 "WiFi" = "WiFi";
 
-/* VEStationView_available_bike */
-"%lu Available Bike" = "%lu vélo disponible";
-
-/* VEStationView_available_bikes */
-"%lu Available Bikes" = "%lu vélos disponibles";
-
-/* VEStationView_available_stand */
-"%lu Available Stand" = "%lu place disponible";
-
-/* VEStationView_available_stands */
-"%lu Available Stands" = "%lu places disponibles";
-
 /* VEStationView_directions_error */
 "An error occured." = "Une erreur est survenue.";
 
