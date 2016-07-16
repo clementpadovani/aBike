@@ -46,7 +46,7 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 @property (nonatomic, strong) MKRoute *currentStationRoute;
 
-@property (nonatomic, strong) CLLocation *currentDirectionsOriginLocation;
+@property (nonatomic, copy) CLLocation *currentDirectionsOriginLocation;
 
 @property (nonatomic, weak) UIButton *directionsButton;
 
@@ -634,6 +634,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	if ([[self currentStationDirections] isCalculating])
 	{
 		[[self currentStationDirections] cancel];
+        
+        [self setCurrentStationDirections: nil];
 		
 		[[VEConsul sharedConsul] stopLoadingSpinner];
 		
