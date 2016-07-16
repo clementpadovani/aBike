@@ -48,12 +48,6 @@
 
 - (BOOL) applicationDidFinishLaunchingWithOptions: (NSDictionary *) launchOptions;
 
-- (void) applicationDidRegisterUserNotificationSettings: (UIUserNotificationSettings *) settings;
-
-- (void) applicationDidFailToRegisterForRemoteNotificationsWithError: (NSError *) error;
-
-- (void) applicationDidRegisterForRemoteNotificationsWithDeviceToken: (NSData *) deviceToken;
-
 - (BOOL) applicationOpenURL: (NSURL *) url sourceApplication: (NSString *) sourceApplication annotation: (id) annotation;
 
 - (void) applicationWillResignActive;

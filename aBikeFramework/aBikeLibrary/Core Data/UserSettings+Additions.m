@@ -180,62 +180,64 @@ static UserSettings *_sharedSettings = nil;
 @implementation UserSettings (Additions)
 
 + (UserSettings *) sharedSettings
-{	
-	if (!_sharedSettings)
-	{
-		NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [self entityName]];
-		
-		[fetchRequest setReturnsObjectsAsFaults: NO];
-		
-		[fetchRequest setFetchLimit: 1];
-		
-		__block NSArray *fetchedResults;
-		
-		__block NSError *fetchError;
-		
-		VEManagedObjectContext *userContext = [[CPCoreDataManager sharedCoreDataManager] userContext];
-		
-		[userContext performBlockAndWait: ^{
-			
-			fetchedResults = [userContext executeFetchRequest: fetchRequest error: &fetchError];
-			
-		}];
+{
+    @synchronized(self)
+    {
+        if (!_sharedSettings)
+        {
+            NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName: [self entityName]];
+            
+            [fetchRequest setReturnsObjectsAsFaults: NO];
+            
+            [fetchRequest setFetchLimit: 1];
+            
+            __block NSArray *fetchedResults;
+            
+            __block NSError *fetchError;
+            
+            VEManagedObjectContext *userContext = [[CPCoreDataManager sharedCoreDataManager] userContext];
+            
+            [userContext performBlockAndWait: ^{
+                
+                fetchedResults = [userContext executeFetchRequest: fetchRequest error: &fetchError];
+                
+            }];
 
-		#if kEnableCrashlytics
+            #if kEnableCrashlytics
 
-			if (fetchError)
-				[[Crashlytics sharedInstance] recordError: fetchError];
+                if (fetchError)
+                    [[Crashlytics sharedInstance] recordError: fetchError];
 
-		#endif
+            #endif
 
 
-		NSAssert(!fetchError, @"Fetch error: %@", fetchError);
-		
-		UserSettings *fetchedUserSettings = [fetchedResults firstObject];
-		
-		if (fetchedUserSettings)
-		{
-			_sharedSettings = fetchedUserSettings;
-		}
-		else
-		{
-			__block UserSettings *sharedSettings;
-			
-			[userContext performBlockAndWait: ^{
-				
-				sharedSettings = [self newEntityInManagedObjectContext: userContext];
-				
-				[sharedSettings firstTimeSetup];
-				
-			}];
-			
-			_sharedSettings = sharedSettings;
-		}
-		
-//		[[NSNotificationCenter defaultCenter] addObserver: _sharedSettings selector: @selector(userSettingsHaveChanged:) name: NSUserDefaultsDidChangeNotification object: nil];
-	}
-	
-	return _sharedSettings;
+            NSAssert(!fetchError, @"Fetch error: %@", fetchError);
+            
+            UserSettings *fetchedUserSettings = [fetchedResults firstObject];
+            
+            if (fetchedUserSettings)
+            {
+                _sharedSettings = fetchedUserSettings;
+            }
+            else
+            {
+                __block UserSettings *sharedSettings;
+                
+                [userContext performBlockAndWait: ^{
+                    
+                    sharedSettings = [self newEntityInManagedObjectContext: userContext];
+                    
+                    [sharedSettings firstTimeSetup];
+                    
+                }];
+                
+                _sharedSettings = sharedSettings;
+            }
+            
+    //		[[NSNotificationCenter defaultCenter] addObserver: _sharedSettings selector: @selector(userSettingsHaveChanged:) name: NSUserDefaultsDidChangeNotification object: nil];
+        }
+        return _sharedSettings;
+    }
 }
 
 - (BOOL) hasValidCityRect

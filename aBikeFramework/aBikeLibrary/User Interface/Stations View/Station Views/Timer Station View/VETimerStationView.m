@@ -158,7 +158,8 @@ static const NSTimeInterval kVETimerStationViewRemainingTimeTimerInterval = .5;
     
     [remainingTimeLabel setContentMode: UIViewContentModeCenter];
     
-    [remainingTimeLabel setAllowsDefaultTighteningForTruncation: YES];
+    if ([remainingTimeLabel respondsToSelector: @selector(setAllowsDefaultTighteningForTruncation:)])
+        [remainingTimeLabel setAllowsDefaultTighteningForTruncation: YES];
     
     [remainingTimeLabel setTextColor: [self tintColor]];
     

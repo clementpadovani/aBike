@@ -80,7 +80,8 @@ private_lane :toulouse_appstore do |options|
 
 	deliver(
 		automatic_release: options[:automatic_release],
-		skip_screenshots: options[:skip_screenshots]
+		skip_screenshots: options[:skip_screenshots],
+    app_review_information: CPaBike::APP_REVIEW_INFORMATION
 	)
 
 	toulouse_deleteDeliverfile
