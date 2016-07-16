@@ -30,8 +30,6 @@
 
 #import "VETimeFormatter.h"
 
-#import "UIDevice+Additions.h"
-
 #import "VEWatchBikeStation.h"
 
 #import "WCSession+VEStateAdditions.h"
@@ -793,15 +791,6 @@ static VEConsul *_sharedConsul = nil;
 	CPLog(@"received low memory warning");
 	
 	[self saveContext];
-	
-	CPLog(@"free mem: %@", [UIDevice ve_freeMemory]);
-	
-	#if kEnableCrashlytics
-	
-		[Answers logCustomEventWithName: @"low memory event"
-					customAttributes: @{@"memory" : [UIDevice ve_freeMemory]}];
-	
-	#endif
 }
 
 - (void) dealloc

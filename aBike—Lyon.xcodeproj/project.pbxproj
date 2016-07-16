@@ -22,7 +22,6 @@
 		5906FBEA1C4A5FBB00A2D3D1 /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA491C495394003B686A /* NSNumber+Extensions.h */; };
 		5906FBEB1C4A5FBB00A2D3D1 /* NSString+NumberOfLines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4B1C495394003B686A /* NSString+NumberOfLines.h */; };
 		5906FBEC1C4A5FBB00A2D3D1 /* NSString+ProcessedStationName.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */; };
-		5906FBED1C4A5FBB00A2D3D1 /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4F1C495394003B686A /* UIDevice+Additions.h */; };
 		5906FBEE1C4A5FBB00A2D3D1 /* VEConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA511C495394003B686A /* VEConnectionManager.h */; };
 		5906FBEF1C4A5FBB00A2D3D1 /* VELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA531C495394003B686A /* VELocationManager.h */; };
 		5906FBF01C4A5FBB00A2D3D1 /* VETimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA551C495394003B686A /* VETimeFormatter.h */; };
@@ -82,8 +81,6 @@
 		593ADABA1C495394003B686A /* NSString+NumberOfLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */; };
 		593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */; };
-		593ADABD1C495394003B686A /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4F1C495394003B686A /* UIDevice+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADABE1C495394003B686A /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA501C495394003B686A /* UIDevice+Additions.m */; };
 		593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA511C495394003B686A /* VEConnectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC01C495394003B686A /* VEConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA521C495394003B686A /* VEConnectionManager.m */; };
 		593ADAC11C495394003B686A /* VELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA531C495394003B686A /* VELocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,7 +149,6 @@
 		59567E331C4A50A50042767D /* NSNumber+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4A1C495394003B686A /* NSNumber+Extensions.m */; };
 		59567E351C4A50A50042767D /* NSString+NumberOfLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */; };
 		59567E371C4A50A50042767D /* NSString+ProcessedStationName.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */; };
-		59567E391C4A50A50042767D /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA501C495394003B686A /* UIDevice+Additions.m */; };
 		59567E3B1C4A50A50042767D /* VEConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA521C495394003B686A /* VEConnectionManager.m */; };
 		59567E3D1C4A50A50042767D /* VELocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA541C495394003B686A /* VELocationManager.m */; };
 		59567E3F1C4A50A50042767D /* VETimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA561C495394003B686A /* VETimeFormatter.m */; };
@@ -793,8 +789,6 @@
 		593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NumberOfLines.m"; sourceTree = "<group>"; };
 		593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ProcessedStationName.h"; sourceTree = "<group>"; };
 		593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ProcessedStationName.m"; sourceTree = "<group>"; };
-		593ADA4F1C495394003B686A /* UIDevice+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Additions.h"; sourceTree = "<group>"; };
-		593ADA501C495394003B686A /* UIDevice+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Additions.m"; sourceTree = "<group>"; };
 		593ADA511C495394003B686A /* VEConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEConnectionManager.h; sourceTree = "<group>"; };
 		593ADA521C495394003B686A /* VEConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEConnectionManager.m; sourceTree = "<group>"; };
 		593ADA531C495394003B686A /* VELocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VELocationManager.h; sourceTree = "<group>"; };
@@ -1660,8 +1654,6 @@
 				593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */,
 				593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */,
 				593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */,
-				593ADA4F1C495394003B686A /* UIDevice+Additions.h */,
-				593ADA501C495394003B686A /* UIDevice+Additions.m */,
 				59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */,
 				59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */,
 				593ADA511C495394003B686A /* VEConnectionManager.h */,
@@ -2298,7 +2290,6 @@
 				59609E441D3A7C4A00A18EED /* VELightStation.h in Headers */,
 				593ADAFC1C495394003B686A /* VEMapContainerView.h in Headers */,
 				593ADAEE1C495394003B686A /* VEStationAnnotationShareAccessoryView.h in Headers */,
-				593ADABD1C495394003B686A /* UIDevice+Additions.h in Headers */,
 				593ADAF61C495394003B686A /* VEStationsScrollView.h in Headers */,
 				593ADAB51C495394003B686A /* NSBundle+VELibrary.h in Headers */,
 				593ADB001C495394003B686A /* VEMapViewController.h in Headers */,
@@ -2346,7 +2337,6 @@
 				5906FBEA1C4A5FBB00A2D3D1 /* NSNumber+Extensions.h in Headers */,
 				5906FBEB1C4A5FBB00A2D3D1 /* NSString+NumberOfLines.h in Headers */,
 				5906FBEC1C4A5FBB00A2D3D1 /* NSString+ProcessedStationName.h in Headers */,
-				5906FBED1C4A5FBB00A2D3D1 /* UIDevice+Additions.h in Headers */,
 				5906FBEE1C4A5FBB00A2D3D1 /* VEConnectionManager.h in Headers */,
 				5906FBEF1C4A5FBB00A2D3D1 /* VELocationManager.h in Headers */,
 				5906FBF01C4A5FBB00A2D3D1 /* VETimeFormatter.h in Headers */,
@@ -4367,7 +4357,6 @@
 				593ADAC01C495394003B686A /* VEConnectionManager.m in Sources */,
 				593ADAFD1C495394003B686A /* VEMapContainerView.m in Sources */,
 				593ADAC51C495394003B686A /* aBike.xcdatamodeld in Sources */,
-				593ADABE1C495394003B686A /* UIDevice+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4390,7 +4379,6 @@
 				59567E331C4A50A50042767D /* NSNumber+Extensions.m in Sources */,
 				59567E351C4A50A50042767D /* NSString+NumberOfLines.m in Sources */,
 				59567E371C4A50A50042767D /* NSString+ProcessedStationName.m in Sources */,
-				59567E391C4A50A50042767D /* UIDevice+Additions.m in Sources */,
 				59567E3B1C4A50A50042767D /* VEConnectionManager.m in Sources */,
 				59567E3D1C4A50A50042767D /* VELocationManager.m in Sources */,
 				59567E3F1C4A50A50042767D /* VETimeFormatter.m in Sources */,

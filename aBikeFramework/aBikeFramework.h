@@ -36,7 +36,6 @@ FOUNDATION_EXPORT const unsigned char aBikeFrameworkVersionString[];
 #import <aBikeFramework/VEStation.h>
 #import <aBikeFramework/UIAlertAction+VEAdditions.h>
 #import <aBikeFramework/UIColor+MainColor.h>
-#import <aBikeFramework/UIDevice+Additions.h>
 #import <aBikeFramework/UIImage+VEImageAdditions.h>
 #import <aBikeFramework/VEUserSettings.h>
 #import <aBikeFramework/VEAlertControllerManager.h>
