@@ -286,7 +286,6 @@
 		59AB74A71C6B4878003EBFF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74A91C6B4878003EBFF1 /* InfoPlist.strings */; };
 		59AB74AA1C6B487C003EBFF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74AC1C6B487C003EBFF1 /* Localizable.strings */; };
 		59ABB4381CD5129800570B65 /* WCSession+VEStateAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */; };
-		59ABB4391CD5129800570B65 /* WCSession+VEStateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */; };
 		59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59ABE1D81C4BA62A00108AD4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
@@ -312,9 +311,7 @@
 		59EC266E1CA8571F00D77605 /* VEMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC266D1CA8571F00D77605 /* VEMainInterfaceController.m */; };
 		59EC26711CA8573600D77605 /* VEExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26701CA8573600D77605 /* VEExtensionDelegate.m */; };
 		59EC26741CA85A2300D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
-		59EC26751CA8645E00D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
 		59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */; };
-		59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59ECB6E31D3AA7FD0094AA68 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */; };
 		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
@@ -4341,14 +4338,12 @@
 				593ADAB81C495394003B686A /* NSNumber+Extensions.m in Sources */,
 				59609E451D3A7C4A00A18EED /* VELightStation.m in Sources */,
 				593ADAED1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.m in Sources */,
-				59ABB4391CD5129800570B65 /* WCSession+VEStateAdditions.m in Sources */,
 				59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */,
 				593ADAC21C495394003B686A /* VELocationManager.m in Sources */,
 				594D7FED1C6FEF1900492477 /* VEReachability.m in Sources */,
 				59609E471D3A7C4A00A18EED /* VEStation+CoreDataProperties.m in Sources */,
 				593ADAE71C495394003B686A /* VEAlertControllerManager.m in Sources */,
 				593ADB011C495394003B686A /* VEMapViewController.m in Sources */,
-				59EC26751CA8645E00D77605 /* VEWatchBikeStation.m in Sources */,
 				593ADAB61C495394003B686A /* NSBundle+VELibrary.m in Sources */,
 				593ADADA1C495394003B686A /* VEDataImporter.m in Sources */,
 				593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */,
@@ -4356,7 +4351,6 @@
 				590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */,
 				593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */,
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
-				59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,
 				59FEA5D41D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
 				5923124D1D1F15E200BC77B7 /* VETimerStationView.m in Sources */,
