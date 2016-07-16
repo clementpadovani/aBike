@@ -12,7 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VEStation : VEBaseModel
 
-// Insert code here to declare functionality of your managed object subclass
+- (BOOL) isAvailable;
+
+- (BOOL) isBonusStation;
+
+- (BOOL) isBankingAvailable;
 
 @end
 

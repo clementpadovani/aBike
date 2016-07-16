@@ -10,6 +10,19 @@
 
 @implementation VEStation
 
-// Insert code here to add functionality to your managed object subclass
+- (BOOL) isAvailable
+{
+    return [self available];
+}
+
+- (BOOL) isBonusStation
+{
+    return [self bonusStation];
+}
+
+- (BOOL) isBankingAvailable
+{
+    return [self bankingAvailable];
+}
 
 @end

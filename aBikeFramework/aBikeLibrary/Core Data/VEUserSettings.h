@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VEUserSettings : VEBaseModel
 
-// Insert code here to declare functionality of your managed object subclass
+- (BOOL) isSetup;
 
 @end
 

@@ -10,6 +10,9 @@
 
 @implementation VEUserSettings
 
-// Insert code here to add functionality to your managed object subclass
+- (BOOL) isSetup
+{
+    return [self setup];
+}
 
 @end
