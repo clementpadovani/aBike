@@ -2,7 +2,7 @@
 <model userDefinedModelVersionIdentifier="5" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 4.3">
     <entity name="VELightStation" representedClassName="LightStation" elementID="LightStation" syncable="YES">
         <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="stationID" optional="YES" attributeType="Integer 16" defaultValueString="0" elementID="number" syncable="YES"/>
     </entity>
     <entity name="VEStation" representedClassName="Station" elementID="Station" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -18,8 +18,8 @@
         <attribute name="mapItem" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="mapItemPlacemark" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="processedStationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationID" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" elementID="number" syncable="YES"/>
     </entity>
     <entity name="VEUserSettings" representedClassName="UserSettings" elementID="UserSettings" syncable="YES">
         <attribute name="canLoadData" transient="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
