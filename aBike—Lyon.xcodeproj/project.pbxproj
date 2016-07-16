@@ -1484,10 +1484,10 @@
 		5923124E1D1F15E500BC77B7 /* Timer Station View */ = {
 			isa = PBXGroup;
 			children = (
-				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
-				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
 				59FEA5D11D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h */,
 				59FEA5D21D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m */,
+				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
+				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
 			);
 			path = "Timer Station View";
 			sourceTree = "<group>";
@@ -1863,6 +1863,7 @@
 		59609E351D3A7AC000A18EED /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				59609E4F1D3A7CF500A18EED /* Additions */,
 				59609E361D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h */,
 				59609E371D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m */,
 				59609E381D3A7C4A00A18EED /* VELightStation.h */,
@@ -1875,9 +1876,8 @@
 				59609E3F1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m */,
 				59609E401D3A7C4A00A18EED /* VEUserSettings.h */,
 				59609E411D3A7C4A00A18EED /* VEUserSettings.m */,
-				59609E4F1D3A7CF500A18EED /* Additions */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		59609E4F1D3A7CF500A18EED /* Additions */ = {
@@ -1885,7 +1885,7 @@
 			children = (
 				59609E4E1D3A7CF100A18EED /* VEGeometry.h */,
 			);
-			name = Additions;
+			path = Additions;
 			sourceTree = "<group>";
 		};
 		596990B11C5D080A00AEFFBC /* aBike—Nantes */ = {
@@ -7837,7 +7837,6 @@
 		593ADA581C495394003B686A /* aBike.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */,
 				593ADA591C495394003B686A /* aBike.xcdatamodel */,
 				593ADA5A1C495394003B686A /* aBike_1_1.xcdatamodel */,
 				593ADA5B1C495394003B686A /* aBike_1_2.xcdatamodel */,
@@ -7845,6 +7844,7 @@
 				593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */,
 				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
 				5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */,
+				59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */,
 			);
 			currentVersion = 59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */;
 			path = aBike.xcdatamodeld;
