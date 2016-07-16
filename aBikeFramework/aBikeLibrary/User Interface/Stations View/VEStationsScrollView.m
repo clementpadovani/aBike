@@ -18,6 +18,7 @@
 
 #import "VESearchStationView.h"
 #import "VETimerStationView.h"
+#import "VEStation.h"
 
 @class Station;
 
@@ -269,9 +270,9 @@
     return [self stationViewsArray][index];
 }
 
-- (void) setStations: (NSArray *) stations
+- (void) setStations: (NSArray <VEStation *> *) stations
 {
-	[stations enumerateObjectsUsingBlock: ^(Station *aStation, NSUInteger index, BOOL *stop) {
+	[stations enumerateObjectsUsingBlock: ^(VEStation *aStation, NSUInteger index, BOOL *stop) {
 		
 		#if !(enableNumberOfStations)
 		
@@ -390,7 +391,7 @@
 	[self layoutIfNeeded];
 }
 
-- (VEStationView *) stationViewForStation: (Station *) aStation
+- (VEStationView *) stationViewForStation: (VEStation *) aStation
 {
 	for (VEStationView *aStationView in [self stationViewsArray])
 	{

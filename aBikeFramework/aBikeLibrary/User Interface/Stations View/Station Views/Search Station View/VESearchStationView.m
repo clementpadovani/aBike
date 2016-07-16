@@ -10,7 +10,7 @@
 
 #import "UIColor+MainColor.h"
 
-#import "UserSettings+Additions.h"
+#import "VEUserSettings.h"
 
 #import "VEConsul.h"
 

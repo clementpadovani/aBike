@@ -22,16 +22,10 @@
 		5906FBEA1C4A5FBB00A2D3D1 /* NSNumber+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA491C495394003B686A /* NSNumber+Extensions.h */; };
 		5906FBEB1C4A5FBB00A2D3D1 /* NSString+NumberOfLines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4B1C495394003B686A /* NSString+NumberOfLines.h */; };
 		5906FBEC1C4A5FBB00A2D3D1 /* NSString+ProcessedStationName.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */; };
-		5906FBED1C4A5FBB00A2D3D1 /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4F1C495394003B686A /* UIDevice+Additions.h */; };
 		5906FBEE1C4A5FBB00A2D3D1 /* VEConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA511C495394003B686A /* VEConnectionManager.h */; };
 		5906FBEF1C4A5FBB00A2D3D1 /* VELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA531C495394003B686A /* VELocationManager.h */; };
 		5906FBF01C4A5FBB00A2D3D1 /* VETimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA551C495394003B686A /* VETimeFormatter.h */; };
 		5906FBF11C4A5FBB00A2D3D1 /* CPCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA5E1C495394003B686A /* CPCoreDataManager.h */; };
-		5906FBF21C4A5FBB00A2D3D1 /* LightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA601C495394003B686A /* LightStation.h */; };
-		5906FBF31C4A5FBB00A2D3D1 /* Station+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA621C495394003B686A /* Station+Additions.h */; };
-		5906FBF41C4A5FBB00A2D3D1 /* Station.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA641C495394003B686A /* Station.h */; };
-		5906FBF51C4A5FBB00A2D3D1 /* UserSettings+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA661C495394003B686A /* UserSettings+Additions.h */; };
-		5906FBF61C4A5FBB00A2D3D1 /* UserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA681C495394003B686A /* UserSettings.h */; };
 		5906FBF71C4A5FBB00A2D3D1 /* VEBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6A1C495394003B686A /* VEBaseModel.h */; };
 		5906FBF81C4A5FBB00A2D3D1 /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; };
 		5906FBFA1C4A5FBB00A2D3D1 /* VEDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA721C495394003B686A /* VEDataImporter.h */; };
@@ -87,8 +81,6 @@
 		593ADABA1C495394003B686A /* NSString+NumberOfLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */; };
 		593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */; };
-		593ADABD1C495394003B686A /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA4F1C495394003B686A /* UIDevice+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADABE1C495394003B686A /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA501C495394003B686A /* UIDevice+Additions.m */; };
 		593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA511C495394003B686A /* VEConnectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC01C495394003B686A /* VEConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA521C495394003B686A /* VEConnectionManager.m */; };
 		593ADAC11C495394003B686A /* VELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA531C495394003B686A /* VELocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,16 +90,6 @@
 		593ADAC51C495394003B686A /* aBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA581C495394003B686A /* aBike.xcdatamodeld */; };
 		593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA5E1C495394003B686A /* CPCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA5F1C495394003B686A /* CPCoreDataManager.m */; };
-		593ADAC81C495394003B686A /* LightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA601C495394003B686A /* LightStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADAC91C495394003B686A /* LightStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA611C495394003B686A /* LightStation.m */; };
-		593ADACA1C495394003B686A /* Station+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA621C495394003B686A /* Station+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADACB1C495394003B686A /* Station+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA631C495394003B686A /* Station+Additions.m */; };
-		593ADACC1C495394003B686A /* Station.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA641C495394003B686A /* Station.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADACD1C495394003B686A /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA651C495394003B686A /* Station.m */; };
-		593ADACE1C495394003B686A /* UserSettings+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA661C495394003B686A /* UserSettings+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADACF1C495394003B686A /* UserSettings+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA671C495394003B686A /* UserSettings+Additions.m */; };
-		593ADAD01C495394003B686A /* UserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA681C495394003B686A /* UserSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		593ADAD11C495394003B686A /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA691C495394003B686A /* UserSettings.m */; };
 		593ADAD21C495394003B686A /* VEBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6A1C495394003B686A /* VEBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		593ADAD31C495394003B686A /* VEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6B1C495394003B686A /* VEBaseModel.m */; };
 		593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADA6C1C495394003B686A /* VEManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -167,16 +149,10 @@
 		59567E331C4A50A50042767D /* NSNumber+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4A1C495394003B686A /* NSNumber+Extensions.m */; };
 		59567E351C4A50A50042767D /* NSString+NumberOfLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */; };
 		59567E371C4A50A50042767D /* NSString+ProcessedStationName.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */; };
-		59567E391C4A50A50042767D /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA501C495394003B686A /* UIDevice+Additions.m */; };
 		59567E3B1C4A50A50042767D /* VEConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA521C495394003B686A /* VEConnectionManager.m */; };
 		59567E3D1C4A50A50042767D /* VELocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA541C495394003B686A /* VELocationManager.m */; };
 		59567E3F1C4A50A50042767D /* VETimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA561C495394003B686A /* VETimeFormatter.m */; };
 		59567E421C4A50A50042767D /* CPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA5F1C495394003B686A /* CPCoreDataManager.m */; };
-		59567E441C4A50A50042767D /* LightStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA611C495394003B686A /* LightStation.m */; };
-		59567E461C4A50A50042767D /* Station+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA631C495394003B686A /* Station+Additions.m */; };
-		59567E481C4A50A50042767D /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA651C495394003B686A /* Station.m */; };
-		59567E4A1C4A50A50042767D /* UserSettings+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA671C495394003B686A /* UserSettings+Additions.m */; };
-		59567E4C1C4A50A50042767D /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA691C495394003B686A /* UserSettings.m */; };
 		59567E4E1C4A50A50042767D /* VEBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6B1C495394003B686A /* VEBaseModel.m */; };
 		59567E501C4A50A50042767D /* VEManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA6D1C495394003B686A /* VEManagedObjectContext.m */; };
 		59567E541C4A50A50042767D /* VEDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 593ADA731C495394003B686A /* VEDataImporter.m */; };
@@ -199,6 +175,19 @@
 		59567E7F1C4A510A0042767D /* aBikeCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7B1C495394003B686A /* aBikeCities.plist */; };
 		59567E801C4A510A0042767D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593ADA7D1C495394003B686A /* Localizable.strings */; };
 		59567E811C4A511E0042767D /* VEConsulDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAB11C495394003B686A /* VEConsulDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59609E421D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E361D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h */; };
+		59609E431D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E371D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m */; };
+		59609E441D3A7C4A00A18EED /* VELightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E381D3A7C4A00A18EED /* VELightStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59609E451D3A7C4A00A18EED /* VELightStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E391D3A7C4A00A18EED /* VELightStation.m */; };
+		59609E461D3A7C4A00A18EED /* VEStation+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3A1D3A7C4A00A18EED /* VEStation+CoreDataProperties.h */; };
+		59609E471D3A7C4A00A18EED /* VEStation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E3B1D3A7C4A00A18EED /* VEStation+CoreDataProperties.m */; };
+		59609E481D3A7C4A00A18EED /* VEStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3C1D3A7C4A00A18EED /* VEStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59609E491D3A7C4A00A18EED /* VEStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E3D1D3A7C4A00A18EED /* VEStation.m */; };
+		59609E4A1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3E1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h */; };
+		59609E4B1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E3F1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m */; };
+		59609E4C1D3A7C4A00A18EED /* VEUserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E401D3A7C4A00A18EED /* VEUserSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59609E4D1D3A7C4A00A18EED /* VEUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E411D3A7C4A00A18EED /* VEUserSettings.m */; };
+		59609E501D3A7D9200A18EED /* VEGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E4E1D3A7CF100A18EED /* VEGeometry.h */; };
 		59634F6A1D1F22D30083CAA5 /* aBikeFrameworkDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 59634F691D1F22BB0083CAA5 /* aBikeFrameworkDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59664B6F1C5D1D64009A721B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59664B701C5D1D64009A721B /* aBike_LyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCC91C497BF800ED7202 /* aBike_LyonUITests.swift */; };
@@ -293,7 +282,6 @@
 		59AB74A71C6B4878003EBFF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74A91C6B4878003EBFF1 /* InfoPlist.strings */; };
 		59AB74AA1C6B487C003EBFF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59AB74AC1C6B487C003EBFF1 /* Localizable.strings */; };
 		59ABB4381CD5129800570B65 /* WCSession+VEStateAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */; };
-		59ABB4391CD5129800570B65 /* WCSession+VEStateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */; };
 		59ABE1D41C4BA61C00108AD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D31C4BA61C00108AD4 /* SystemConfiguration.framework */; };
 		59ABE1D61C4BA62300108AD4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D51C4BA62300108AD4 /* Security.framework */; };
 		59ABE1D81C4BA62A00108AD4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ABE1D71C4BA62A00108AD4 /* libc++.tbd */; };
@@ -319,10 +307,9 @@
 		59EC266E1CA8571F00D77605 /* VEMainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC266D1CA8571F00D77605 /* VEMainInterfaceController.m */; };
 		59EC26711CA8573600D77605 /* VEExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26701CA8573600D77605 /* VEExtensionDelegate.m */; };
 		59EC26741CA85A2300D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
-		59EC26751CA8645E00D77605 /* VEWatchBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */; };
 		59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */; };
-		59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
+		59ECB6E31D3AA7FD0094AA68 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */; };
 		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
 		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
@@ -802,8 +789,6 @@
 		593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NumberOfLines.m"; sourceTree = "<group>"; };
 		593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ProcessedStationName.h"; sourceTree = "<group>"; };
 		593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ProcessedStationName.m"; sourceTree = "<group>"; };
-		593ADA4F1C495394003B686A /* UIDevice+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Additions.h"; sourceTree = "<group>"; };
-		593ADA501C495394003B686A /* UIDevice+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Additions.m"; sourceTree = "<group>"; };
 		593ADA511C495394003B686A /* VEConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEConnectionManager.h; sourceTree = "<group>"; };
 		593ADA521C495394003B686A /* VEConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEConnectionManager.m; sourceTree = "<group>"; };
 		593ADA531C495394003B686A /* VELocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VELocationManager.h; sourceTree = "<group>"; };
@@ -817,16 +802,6 @@
 		593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_2_6.xcdatamodel; sourceTree = "<group>"; };
 		593ADA5E1C495394003B686A /* CPCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCoreDataManager.h; sourceTree = "<group>"; };
 		593ADA5F1C495394003B686A /* CPCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCoreDataManager.m; sourceTree = "<group>"; };
-		593ADA601C495394003B686A /* LightStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStation.h; sourceTree = "<group>"; };
-		593ADA611C495394003B686A /* LightStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightStation.m; sourceTree = "<group>"; };
-		593ADA621C495394003B686A /* Station+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Station+Additions.h"; sourceTree = "<group>"; };
-		593ADA631C495394003B686A /* Station+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Station+Additions.m"; sourceTree = "<group>"; };
-		593ADA641C495394003B686A /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
-		593ADA651C495394003B686A /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
-		593ADA661C495394003B686A /* UserSettings+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserSettings+Additions.h"; sourceTree = "<group>"; };
-		593ADA671C495394003B686A /* UserSettings+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserSettings+Additions.m"; sourceTree = "<group>"; };
-		593ADA681C495394003B686A /* UserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettings.h; sourceTree = "<group>"; };
-		593ADA691C495394003B686A /* UserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettings.m; sourceTree = "<group>"; };
 		593ADA6A1C495394003B686A /* VEBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBaseModel.h; sourceTree = "<group>"; };
 		593ADA6B1C495394003B686A /* VEBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBaseModel.m; sourceTree = "<group>"; };
 		593ADA6C1C495394003B686A /* VEManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEManagedObjectContext.h; sourceTree = "<group>"; };
@@ -894,6 +869,19 @@
 		59567E221C4A50920042767D /* aBikeTVFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFramework.h; sourceTree = "<group>"; };
 		59567E241C4A50920042767D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5960916A1C6F730E00473C8F /* sendToFabric.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sendToFabric.sh; sourceTree = "<group>"; };
+		59609E361D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VELightStation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		59609E371D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VELightStation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		59609E381D3A7C4A00A18EED /* VELightStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VELightStation.h; sourceTree = "<group>"; };
+		59609E391D3A7C4A00A18EED /* VELightStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VELightStation.m; sourceTree = "<group>"; };
+		59609E3A1D3A7C4A00A18EED /* VEStation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VEStation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		59609E3B1D3A7C4A00A18EED /* VEStation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VEStation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		59609E3C1D3A7C4A00A18EED /* VEStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEStation.h; sourceTree = "<group>"; };
+		59609E3D1D3A7C4A00A18EED /* VEStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEStation.m; sourceTree = "<group>"; };
+		59609E3E1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VEUserSettings+CoreDataProperties.h"; sourceTree = "<group>"; };
+		59609E3F1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VEUserSettings+CoreDataProperties.m"; sourceTree = "<group>"; };
+		59609E401D3A7C4A00A18EED /* VEUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEUserSettings.h; sourceTree = "<group>"; };
+		59609E411D3A7C4A00A18EED /* VEUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEUserSettings.m; sourceTree = "<group>"; };
+		59609E4E1D3A7CF100A18EED /* VEGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VEGeometry.h; sourceTree = "<group>"; };
 		59634F691D1F22BB0083CAA5 /* aBikeFrameworkDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFrameworkDefines.h; sourceTree = "<group>"; };
 		596488861C949B540060C3A4 /* aBikeFramework_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeFramework_Private.h; sourceTree = "<group>"; };
 		596990B01C5D080A00AEFFBC /* aBike_Nantes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aBike_Nantes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1032,7 +1020,11 @@
 		59EC26731CA85A2300D77605 /* VEWatchBikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEWatchBikeStation.m; sourceTree = "<group>"; };
 		59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+VEAdditions.h"; sourceTree = "<group>"; };
 		59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+VEAdditions.m"; sourceTree = "<group>"; };
+		59ECB6E41D3AA7FD0094AA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		59ECB6E61D3AA8070094AA68 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "en-GB"; path = "en-GB.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		59ECB6E71D3AA8080094AA68 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMainThreadGuard.m; sourceTree = "<group>"; };
+		59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_2_0.xcdatamodel; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MarseilleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1487,10 +1479,10 @@
 		5923124E1D1F15E500BC77B7 /* Timer Station View */ = {
 			isa = PBXGroup;
 			children = (
-				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
-				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
 				59FEA5D11D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h */,
 				59FEA5D21D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m */,
+				5923124A1D1F15E200BC77B7 /* VETimerStationView.h */,
+				5923124B1D1F15E200BC77B7 /* VETimerStationView.m */,
 			);
 			path = "Timer Station View";
 			sourceTree = "<group>";
@@ -1662,8 +1654,6 @@
 				593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */,
 				593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */,
 				593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */,
-				593ADA4F1C495394003B686A /* UIDevice+Additions.h */,
-				593ADA501C495394003B686A /* UIDevice+Additions.m */,
 				59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */,
 				59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */,
 				593ADA511C495394003B686A /* VEConnectionManager.h */,
@@ -1683,18 +1673,9 @@
 		593ADA571C495394003B686A /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				59609E351D3A7AC000A18EED /* Entities */,
 				593ADA5E1C495394003B686A /* CPCoreDataManager.h */,
 				593ADA5F1C495394003B686A /* CPCoreDataManager.m */,
-				593ADA601C495394003B686A /* LightStation.h */,
-				593ADA611C495394003B686A /* LightStation.m */,
-				593ADA621C495394003B686A /* Station+Additions.h */,
-				593ADA631C495394003B686A /* Station+Additions.m */,
-				593ADA641C495394003B686A /* Station.h */,
-				593ADA651C495394003B686A /* Station.m */,
-				593ADA661C495394003B686A /* UserSettings+Additions.h */,
-				593ADA671C495394003B686A /* UserSettings+Additions.m */,
-				593ADA681C495394003B686A /* UserSettings.h */,
-				593ADA691C495394003B686A /* UserSettings.m */,
 				593ADA6A1C495394003B686A /* VEBaseModel.h */,
 				593ADA6B1C495394003B686A /* VEBaseModel.m */,
 				593ADA6C1C495394003B686A /* VEManagedObjectContext.h */,
@@ -1721,6 +1702,7 @@
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
 				59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */,
+				59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */,
 				593ADA7B1C495394003B686A /* aBikeCities.plist */,
 			);
 			path = "Supporting Files";
@@ -1870,6 +1852,34 @@
 				59567E221C4A50920042767D /* aBikeTVFramework.h */,
 			);
 			path = aBikeTVFramework;
+			sourceTree = "<group>";
+		};
+		59609E351D3A7AC000A18EED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				59609E4F1D3A7CF500A18EED /* Additions */,
+				59609E361D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h */,
+				59609E371D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m */,
+				59609E381D3A7C4A00A18EED /* VELightStation.h */,
+				59609E391D3A7C4A00A18EED /* VELightStation.m */,
+				59609E3A1D3A7C4A00A18EED /* VEStation+CoreDataProperties.h */,
+				59609E3B1D3A7C4A00A18EED /* VEStation+CoreDataProperties.m */,
+				59609E3C1D3A7C4A00A18EED /* VEStation.h */,
+				59609E3D1D3A7C4A00A18EED /* VEStation.m */,
+				59609E3E1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h */,
+				59609E3F1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m */,
+				59609E401D3A7C4A00A18EED /* VEUserSettings.h */,
+				59609E411D3A7C4A00A18EED /* VEUserSettings.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		59609E4F1D3A7CF500A18EED /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				59609E4E1D3A7CF100A18EED /* VEGeometry.h */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 		596990B11C5D080A00AEFFBC /* aBike—Nantes */ = {
@@ -2267,8 +2277,8 @@
 			files = (
 				593ADB061C495394003B686A /* VEConsulDefines.h in Headers */,
 				593ADAE21C495394003B686A /* UIColor+MainColor.h in Headers */,
+				59609E461D3A7C4A00A18EED /* VEStation+CoreDataProperties.h in Headers */,
 				59ABB4381CD5129800570B65 /* WCSession+VEStateAdditions.h in Headers */,
-				593ADACA1C495394003B686A /* Station+Additions.h in Headers */,
 				593ADAB91C495394003B686A /* NSString+NumberOfLines.h in Headers */,
 				593DF8CB1C779C01002F8B07 /* VESearchStationView.h in Headers */,
 				593ADAD41C495394003B686A /* VEManagedObjectContext.h in Headers */,
@@ -2277,11 +2287,9 @@
 				593ADABF1C495394003B686A /* VEConnectionManager.h in Headers */,
 				593ADAB71C495394003B686A /* NSNumber+Extensions.h in Headers */,
 				59ABE1DC1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h in Headers */,
-				593ADAD01C495394003B686A /* UserSettings.h in Headers */,
+				59609E441D3A7C4A00A18EED /* VELightStation.h in Headers */,
 				593ADAFC1C495394003B686A /* VEMapContainerView.h in Headers */,
 				593ADAEE1C495394003B686A /* VEStationAnnotationShareAccessoryView.h in Headers */,
-				593ADACE1C495394003B686A /* UserSettings+Additions.h in Headers */,
-				593ADABD1C495394003B686A /* UIDevice+Additions.h in Headers */,
 				593ADAF61C495394003B686A /* VEStationsScrollView.h in Headers */,
 				593ADAB51C495394003B686A /* NSBundle+VELibrary.h in Headers */,
 				593ADB001C495394003B686A /* VEMapViewController.h in Headers */,
@@ -2291,26 +2299,29 @@
 				593ADAF01C495394003B686A /* VEStationAnnotationView.h in Headers */,
 				593ADB041C495394003B686A /* VEConsul.h in Headers */,
 				593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */,
-				593ADACC1C495394003B686A /* Station.h in Headers */,
 				59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */,
+				59609E481D3A7C4A00A18EED /* VEStation.h in Headers */,
 				59FEA5D31D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h in Headers */,
 				593ADAC61C495394003B686A /* CPCoreDataManager.h in Headers */,
 				593ADB021C495394003B686A /* VEWindow.h in Headers */,
 				594D7FEC1C6FEF1900492477 /* VEReachability.h in Headers */,
 				5923124C1D1F15E200BC77B7 /* VETimerStationView.h in Headers */,
 				593ADAC11C495394003B686A /* VELocationManager.h in Headers */,
+				59609E4C1D3A7C4A00A18EED /* VEUserSettings.h in Headers */,
 				593ADAD91C495394003B686A /* VEDataImporter.h in Headers */,
 				593ADAF21C495394003B686A /* VERouteRenderer.h in Headers */,
 				593ADAFA1C495394003B686A /* VEStationView.h in Headers */,
-				593ADAC81C495394003B686A /* LightStation.h in Headers */,
 				593ADAFE1C495394003B686A /* VEMapViewBlurImageView.h in Headers */,
 				593ADAEA1C495394003B686A /* VEStationAnnotationAccessoryView.h in Headers */,
 				593ADAE61C495394003B686A /* VEAlertControllerManager.h in Headers */,
+				59609E4A1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h in Headers */,
+				59609E501D3A7D9200A18EED /* VEGeometry.h in Headers */,
 				593ADABB1C495394003B686A /* NSString+ProcessedStationName.h in Headers */,
 				59634F6A1D1F22D30083CAA5 /* aBikeFrameworkDefines.h in Headers */,
 				590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */,
 				593ADAF81C495394003B686A /* VEStationsView.h in Headers */,
 				59CA2D9C1C949D030025CBAC /* aBikeFramework_Private.h in Headers */,
+				59609E421D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h in Headers */,
 				593AD9561C495217003B686A /* aBikeFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2326,16 +2337,10 @@
 				5906FBEA1C4A5FBB00A2D3D1 /* NSNumber+Extensions.h in Headers */,
 				5906FBEB1C4A5FBB00A2D3D1 /* NSString+NumberOfLines.h in Headers */,
 				5906FBEC1C4A5FBB00A2D3D1 /* NSString+ProcessedStationName.h in Headers */,
-				5906FBED1C4A5FBB00A2D3D1 /* UIDevice+Additions.h in Headers */,
 				5906FBEE1C4A5FBB00A2D3D1 /* VEConnectionManager.h in Headers */,
 				5906FBEF1C4A5FBB00A2D3D1 /* VELocationManager.h in Headers */,
 				5906FBF01C4A5FBB00A2D3D1 /* VETimeFormatter.h in Headers */,
 				5906FBF11C4A5FBB00A2D3D1 /* CPCoreDataManager.h in Headers */,
-				5906FBF21C4A5FBB00A2D3D1 /* LightStation.h in Headers */,
-				5906FBF31C4A5FBB00A2D3D1 /* Station+Additions.h in Headers */,
-				5906FBF41C4A5FBB00A2D3D1 /* Station.h in Headers */,
-				5906FBF51C4A5FBB00A2D3D1 /* UserSettings+Additions.h in Headers */,
-				5906FBF61C4A5FBB00A2D3D1 /* UserSettings.h in Headers */,
 				5906FBF71C4A5FBB00A2D3D1 /* VEBaseModel.h in Headers */,
 				5906FBF81C4A5FBB00A2D3D1 /* VEManagedObjectContext.h in Headers */,
 				5906FBFA1C4A5FBB00A2D3D1 /* VEDataImporter.h in Headers */,
@@ -3116,6 +3121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */,
+				59ECB6E31D3AA7FD0094AA68 /* Localizable.stringsdict in Resources */,
 				593ADADE1C495394003B686A /* aBikeCities.plist in Resources */,
 				593ADADF1C495394003B686A /* Localizable.strings in Resources */,
 			);
@@ -4313,47 +4319,44 @@
 				593ADABA1C495394003B686A /* NSString+NumberOfLines.m in Sources */,
 				593ADAC41C495394003B686A /* VETimeFormatter.m in Sources */,
 				593ADB051C495394003B686A /* VEConsul.m in Sources */,
+				59609E4B1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m in Sources */,
 				593ADAD51C495394003B686A /* VEManagedObjectContext.m in Sources */,
 				593ADAF11C495394003B686A /* VEStationAnnotationView.m in Sources */,
 				593DF8CC1C779C01002F8B07 /* VESearchStationView.m in Sources */,
 				593ADAFB1C495394003B686A /* VEStationView.m in Sources */,
 				593ADABC1C495394003B686A /* NSString+ProcessedStationName.m in Sources */,
 				593ADAB81C495394003B686A /* NSNumber+Extensions.m in Sources */,
+				59609E451D3A7C4A00A18EED /* VELightStation.m in Sources */,
 				593ADAED1C495394003B686A /* VEStationAnnotationDirectionsAccessoryView.m in Sources */,
-				59ABB4391CD5129800570B65 /* WCSession+VEStateAdditions.m in Sources */,
 				59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */,
 				593ADAC21C495394003B686A /* VELocationManager.m in Sources */,
-				593ADAD11C495394003B686A /* UserSettings.m in Sources */,
-				593ADACB1C495394003B686A /* Station+Additions.m in Sources */,
 				594D7FED1C6FEF1900492477 /* VEReachability.m in Sources */,
+				59609E471D3A7C4A00A18EED /* VEStation+CoreDataProperties.m in Sources */,
 				593ADAE71C495394003B686A /* VEAlertControllerManager.m in Sources */,
 				593ADB011C495394003B686A /* VEMapViewController.m in Sources */,
-				59EC26751CA8645E00D77605 /* VEWatchBikeStation.m in Sources */,
 				593ADAB61C495394003B686A /* NSBundle+VELibrary.m in Sources */,
 				593ADADA1C495394003B686A /* VEDataImporter.m in Sources */,
 				593ADAC71C495394003B686A /* CPCoreDataManager.m in Sources */,
+				59609E431D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m in Sources */,
 				590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */,
 				593ADAF31C495394003B686A /* VERouteRenderer.m in Sources */,
 				593ADAB41C495394003B686A /* CLLocation+Additions.m in Sources */,
-				59EC26791CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */,
 				59FEA5D41D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.m in Sources */,
 				593ADAE91C495394003B686A /* VEAlertManager.m in Sources */,
 				5923124D1D1F15E200BC77B7 /* VETimerStationView.m in Sources */,
 				593ADAD31C495394003B686A /* VEBaseModel.m in Sources */,
 				593ADAEB1C495394003B686A /* VEStationAnnotationAccessoryView.m in Sources */,
+				59609E4D1D3A7C4A00A18EED /* VEUserSettings.m in Sources */,
 				593ADB031C495394003B686A /* VEWindow.m in Sources */,
 				593ADAFF1C495394003B686A /* VEMapViewBlurImageView.m in Sources */,
+				59609E491D3A7C4A00A18EED /* VEStation.m in Sources */,
 				593ADAF71C495394003B686A /* VEStationsScrollView.m in Sources */,
 				593ADAE31C495394003B686A /* UIColor+MainColor.m in Sources */,
 				59ABE1DE1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */,
-				593ADAC91C495394003B686A /* LightStation.m in Sources */,
 				593ADAF91C495394003B686A /* VEStationsView.m in Sources */,
-				593ADACD1C495394003B686A /* Station.m in Sources */,
 				593ADAC01C495394003B686A /* VEConnectionManager.m in Sources */,
 				593ADAFD1C495394003B686A /* VEMapContainerView.m in Sources */,
-				593ADACF1C495394003B686A /* UserSettings+Additions.m in Sources */,
 				593ADAC51C495394003B686A /* aBike.xcdatamodeld in Sources */,
-				593ADABE1C495394003B686A /* UIDevice+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4376,16 +4379,10 @@
 				59567E331C4A50A50042767D /* NSNumber+Extensions.m in Sources */,
 				59567E351C4A50A50042767D /* NSString+NumberOfLines.m in Sources */,
 				59567E371C4A50A50042767D /* NSString+ProcessedStationName.m in Sources */,
-				59567E391C4A50A50042767D /* UIDevice+Additions.m in Sources */,
 				59567E3B1C4A50A50042767D /* VEConnectionManager.m in Sources */,
 				59567E3D1C4A50A50042767D /* VELocationManager.m in Sources */,
 				59567E3F1C4A50A50042767D /* VETimeFormatter.m in Sources */,
 				59567E421C4A50A50042767D /* CPCoreDataManager.m in Sources */,
-				59567E441C4A50A50042767D /* LightStation.m in Sources */,
-				59567E461C4A50A50042767D /* Station+Additions.m in Sources */,
-				59567E481C4A50A50042767D /* Station.m in Sources */,
-				59567E4A1C4A50A50042767D /* UserSettings+Additions.m in Sources */,
-				59567E4C1C4A50A50042767D /* UserSettings.m in Sources */,
 				59567E4E1C4A50A50042767D /* VEBaseModel.m in Sources */,
 				59567E501C4A50A50042767D /* VEManagedObjectContext.m in Sources */,
 				59567E541C4A50A50042767D /* VEDataImporter.m in Sources */,
@@ -4941,6 +4938,16 @@
 			path = .;
 			sourceTree = "<group>";
 		};
+		59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59ECB6E41D3AA7FD0094AA68 /* en */,
+				59ECB6E61D3AA8070094AA68 /* en-GB */,
+				59ECB6E71D3AA8080094AA68 /* fr */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		59FACE1B1C495873005DB202 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -4997,7 +5004,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5020,7 +5027,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5044,7 +5051,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5247,7 +5254,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5284,7 +5291,7 @@
 				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5322,10 +5329,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5372,10 +5379,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5492,10 +5499,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5519,10 +5526,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5545,10 +5552,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5574,7 +5581,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5597,7 +5604,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5621,7 +5628,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5700,7 +5707,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5723,7 +5730,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5747,7 +5754,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5771,7 +5778,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5793,7 +5800,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5817,7 +5824,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5841,7 +5848,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5863,7 +5870,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5887,7 +5894,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5911,7 +5918,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -5933,7 +5940,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5957,7 +5964,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5982,7 +5989,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6005,7 +6012,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6030,7 +6037,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6111,7 +6118,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6150,10 +6157,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6241,10 +6248,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -6272,7 +6279,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6296,7 +6303,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6319,7 +6326,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6342,7 +6349,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6365,7 +6372,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/aBike—Lyon",
@@ -6473,7 +6480,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6515,7 +6522,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6556,7 +6563,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6597,7 +6604,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6713,7 +6720,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6736,7 +6743,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6760,7 +6767,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6922,7 +6929,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -6946,7 +6953,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -6966,7 +6973,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -6987,7 +6994,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7006,7 +7013,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7030,7 +7037,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7050,7 +7057,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7071,7 +7078,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7386,7 +7393,7 @@
 				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7418,10 +7425,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 483;
+				DYLIB_CURRENT_VERSION = 485;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7460,7 +7467,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7483,7 +7490,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7507,7 +7514,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 483;
+				CURRENT_PROJECT_VERSION = 485;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7835,8 +7842,9 @@
 				593ADA5D1C495394003B686A /* aBike_2_6.xcdatamodel */,
 				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
 				5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */,
+				59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */,
 			);
-			currentVersion = 5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */;
+			currentVersion = 59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */;
 			path = aBike.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
