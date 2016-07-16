@@ -17,9 +17,9 @@
         <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="mapItem" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="mapItemPlacemark" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="processedStationName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stationID" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" elementID="number" syncable="YES"/>
+        <attribute name="stationName" optional="YES" attributeType="String" elementID="name" syncable="YES"/>
     </entity>
     <entity name="VEUserSettings" representedClassName="UserSettings" elementID="UserSettings" syncable="YES">
         <attribute name="canLoadData" transient="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
