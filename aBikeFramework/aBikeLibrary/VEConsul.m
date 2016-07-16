@@ -35,6 +35,10 @@
 #import "VEWatchBikeStation.h"
 
 #import "WCSession+VEStateAdditions.h"
+#import "CPCoreDataManager.h"
+#import "VEStation.h"
+#import "VEManagedObjectContext.h"
+#import "VEUserSettings.h"
 
 static VEConsul *_sharedConsul = nil;
 
@@ -62,7 +66,7 @@ static VEConsul *_sharedConsul = nil;
 
 @property (nonatomic, copy, readwrite) NSString *cityRegionName;
 
-@property (nonatomic, strong, readwrite) UIColor *mainColor;
+@property (nonatomic, copy, readwrite) UIColor *mainColor;
 
 @property (nonatomic) NSUInteger loadingSpinnerCounter;
 
@@ -135,7 +139,7 @@ static VEConsul *_sharedConsul = nil;
 	
 	[UIColor ve_setupColorsCache];
 	
-	[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(stationUpdateErrorNotification:) name: kStationUpdateErrorNotification object: nil];
+	[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(stationUpdateErrorNotification:) name: kVEStationUpdateErrorNotification object: nil];
 	
 	[VETimeFormatter startNotifications];
 }
@@ -531,7 +535,7 @@ static VEConsul *_sharedConsul = nil;
 	
 	[[[CPCoreDataManager sharedCoreDataManager] userContext] performBlockAndWait: ^{
 		
-		cityRect = [[UserSettings sharedSettings] cityRect];
+		cityRect = [[VEUserSettings sharedSettings] cityRect];
 		
 	}];
 	
@@ -544,7 +548,7 @@ static VEConsul *_sharedConsul = nil;
 	
 	[[[CPCoreDataManager sharedCoreDataManager] userContext] performBlockAndWait: ^{
 		
-		largerCurrentCityRect = [[UserSettings sharedSettings] largerCityRect];
+		largerCurrentCityRect = [[VEUserSettings sharedSettings] largerCityRect];
 		
 	}];
 	
@@ -772,7 +776,7 @@ static VEConsul *_sharedConsul = nil;
 	//CPLog(@"has saved");
 	
 	[[NSNotificationCenter defaultCenter] removeObserver: self
-										   name: kStationUpdateErrorNotification
+										   name: kVEStationUpdateErrorNotification
 										 object: nil];
 	
 	[UIColor ve_stripColorsCache];

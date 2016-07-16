@@ -31,6 +31,10 @@
 #import "VEStationAnnotationShareAccessoryView.h"
 
 @import MapKit;
+#import "VEStation.h"
+#import "VEManagedObjectContext.h"
+#import "CPCoreDataManager.h"
+#import "VELightStation.h"
 
 static NSString * const kVEMapViewControllerStationAnnotationViewReuseIdentifier = @"kVEMapViewControllerStationAnnotationViewReuseIdentifier";
 
@@ -101,9 +105,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 @property (copy, nonatomic) NSArray *stations;
 
-@property (weak, nonatomic) Station *currentStation;
+@property (weak, nonatomic) VEStation *currentStation;
 
-@property (weak, nonatomic) Station *directionsStation;
+@property (weak, nonatomic) VEStation *directionsStation;
 
 @property (strong, nonatomic) MKDirections *directions;
 
@@ -351,11 +355,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	if (![NSThread isMainThread])
 		CPLog(@"NOT MAIN THREAD");
 	
-	NSArray *stationPropertiesToFetchArray = @[kLightStationNumber, kLightStationLocation];
+	NSArray *stationPropertiesToFetchArray = @[NSStringFromSelector(@selector(stationID)), NSStringFromSelector(@selector(location))];
 	
-	NSFetchRequest *stationsFetchRequest = [NSFetchRequest fetchRequestWithEntityName: @"Station"];
+	NSFetchRequest *stationsFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [VEStation entityName]];
 
-	NSPredicate *openPredicate = [NSPredicate predicateWithFormat: @"%K == YES", kStationOpenKey];
+	NSPredicate *openPredicate = [NSPredicate predicateWithFormat: @"%K == YES", NSStringFromSelector(@selector(available))];
 	
 	[stationsFetchRequest setPredicate: openPredicate];
 	
@@ -396,7 +400,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 		for (NSDictionary *aStationDictionary in fetchResults)
 		{
-			[LightStation lightStationFromStationDictionary: aStationDictionary inContext: temporaryContext];
+			[VELightStation lightStationFromStationDictionary: aStationDictionary inContext: temporaryContext];
 		}
 		
 	}];
@@ -567,7 +571,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //	return polyline;
 //}
 
-- (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (Station *) aStation
+- (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (VEStation *) aStation
 {	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
@@ -791,7 +795,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) userDidScrollToNewStationForIndex: (NSUInteger) index
 {
-	Station *oldStation = [self currentStation];
+	VEStation *oldStation = [self currentStation];
 	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
@@ -814,7 +818,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		return;
 	}
 	
-	Station *newStation = [self stations][index];
+	VEStation *newStation = [self stations][index];
 	
 	if ([newStation isEqual: [self currentStation]])
 		return;
@@ -874,9 +878,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 		
 		//[standardContext performBlockAndWait: ^{
 			
-		for (Station *aStation in [self stations])
+		for (VEStation *aStation in [self stations])
 		{
-			if ([aStation isKindOfClass: [Station class]])
+			if ([aStation isKindOfClass: [VEStation class]])
 				[aStation fetchContentWithUserForceReload: NO];
 		}
 
@@ -923,7 +927,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //	if ([self searchResult])
 //		numberOfStations -= 1;
 
-	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [LightStation entityName]];
+	NSFetchRequest *sortFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [VELightStation entityName]];
 	
 	#if enableNumberOfStations
 		
@@ -990,9 +994,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[memoryContext performBlockAndWait: ^{
 		
-		for (LightStation *aLightStation in resultsArray)
+		for (VELightStation *aLightStation in resultsArray)
 		{
-			[tempNumbersToFetch addObject: [aLightStation number]];
+			[tempNumbersToFetch addObject: @([aLightStation stationID])];
 		}
 		
 	}];
@@ -1002,7 +1006,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSAssert(!resultsError, @"Fetch error: %@", resultsError);
 	
 	
-	NSFetchRequest *stationFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [Station entityName]];
+	NSFetchRequest *stationFetchRequest = [NSFetchRequest fetchRequestWithEntityName: [VEStation entityName]];
 	
 	[stationFetchRequest setReturnsObjectsAsFaults: NO];
 	
@@ -1012,7 +1016,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	#endif
 	
-	NSPredicate *stationFetchRequestPredicate = [NSPredicate predicateWithFormat: @"%K in %@", NSStringFromSelector(@selector(number)), sortedNumbersToFetch];
+	NSPredicate *stationFetchRequestPredicate = [NSPredicate predicateWithFormat: @"%K in %@", NSStringFromSelector(@selector(stationID)), sortedNumbersToFetch];
 	
 	[stationFetchRequest setPredicate: stationFetchRequestPredicate];
 	
@@ -1623,7 +1627,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	else if ([[view annotation] isKindOfClass: [MKPlacemark class]])
 		return;
 
-	Station *station = (Station *) [(VEStationAnnotationView *) view annotation];
+	VEStation *station = (VEStation *) [(VEStationAnnotationView *) view annotation];
 	
 	NSUInteger stationIndex = [[self stations] indexOfObject: station];
 	

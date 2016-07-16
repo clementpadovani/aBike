@@ -11,7 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+static NSString * const kVEUserSettingsCityRectChangedValueNotification = @"kVEUserSettingsCityRectChangedValueNotification";
+
 @interface VEUserSettings : VEBaseModel
+
++ (instancetype) sharedSettings;
+
+- (BOOL) hasValidCityRect;
 
 - (BOOL) isSetup;
 

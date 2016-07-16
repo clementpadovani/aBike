@@ -393,7 +393,7 @@
 	[[self stationsScrollView] setCurrentStationIndex: currentStationIndex];
 }
 
-- (VEStationView *) stationViewForStation: (Station *) aStation
+- (VEStationView *) stationViewForStation: (VEStation *) aStation
 {
 	return [[self stationsScrollView] stationViewForStation: aStation];
 }

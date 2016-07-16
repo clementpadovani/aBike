@@ -10,7 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VEStation : VEBaseModel
+static NSString * const kVEStationUpdateErrorNotification = @"kVEStationUpdateErrorNotification";
+
+@interface VEStation : VEBaseModel <MKAnnotation>
+
++ (instancetype) stationFromStationDictionary: (NSDictionary <NSString *, id> *) stationDictionary inContext: (NSManagedObjectContext *) context;
+
+@property (nonatomic) CLLocationCoordinate2D privateCoordinate;
+
+- (void) fetchContentWithUserForceReload: (BOOL) userForceReload;
 
 - (NSString *) availableBikesString;
 

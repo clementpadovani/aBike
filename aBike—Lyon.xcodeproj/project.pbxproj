@@ -50,6 +50,7 @@
 		5906FC0E1C4A617A00A2D3D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59FACE1E1C495877005DB202 /* Localizable.strings */; };
 		590C498D1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		590C498E1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */; };
+		5911B34C1D3A8AE600416016 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5911B34B1D3A8AE600416016 /* Localizable.stringsdict */; };
 		5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593ADB0D1C4955D7003B686A /* Images.xcassets */; };
 		591483E31C649313007EDABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591483E21C649313007EDABB /* main.m */; };
 		591483EE1C649313007EDABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591483ED1C649313007EDABB /* Assets.xcassets */; };
@@ -181,15 +182,15 @@
 		59567E811C4A511E0042767D /* VEConsulDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 593ADAB11C495394003B686A /* VEConsulDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59609E421D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E361D3A7C4A00A18EED /* VELightStation+CoreDataProperties.h */; };
 		59609E431D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E371D3A7C4A00A18EED /* VELightStation+CoreDataProperties.m */; };
-		59609E441D3A7C4A00A18EED /* VELightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E381D3A7C4A00A18EED /* VELightStation.h */; };
+		59609E441D3A7C4A00A18EED /* VELightStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E381D3A7C4A00A18EED /* VELightStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59609E451D3A7C4A00A18EED /* VELightStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E391D3A7C4A00A18EED /* VELightStation.m */; };
 		59609E461D3A7C4A00A18EED /* VEStation+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3A1D3A7C4A00A18EED /* VEStation+CoreDataProperties.h */; };
 		59609E471D3A7C4A00A18EED /* VEStation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E3B1D3A7C4A00A18EED /* VEStation+CoreDataProperties.m */; };
-		59609E481D3A7C4A00A18EED /* VEStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3C1D3A7C4A00A18EED /* VEStation.h */; };
+		59609E481D3A7C4A00A18EED /* VEStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3C1D3A7C4A00A18EED /* VEStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59609E491D3A7C4A00A18EED /* VEStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E3D1D3A7C4A00A18EED /* VEStation.m */; };
 		59609E4A1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E3E1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.h */; };
 		59609E4B1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E3F1D3A7C4A00A18EED /* VEUserSettings+CoreDataProperties.m */; };
-		59609E4C1D3A7C4A00A18EED /* VEUserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E401D3A7C4A00A18EED /* VEUserSettings.h */; };
+		59609E4C1D3A7C4A00A18EED /* VEUserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E401D3A7C4A00A18EED /* VEUserSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59609E4D1D3A7C4A00A18EED /* VEUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609E411D3A7C4A00A18EED /* VEUserSettings.m */; };
 		59609E501D3A7D9200A18EED /* VEGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 59609E4E1D3A7CF100A18EED /* VEGeometry.h */; };
 		59634F6A1D1F22D30083CAA5 /* aBikeFrameworkDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 59634F691D1F22BB0083CAA5 /* aBikeFrameworkDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -760,6 +761,7 @@
 		590C498B1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+VEAdditions.h"; sourceTree = "<group>"; };
 		590C498C1C77DAF3008DBEB2 /* UIAlertAction+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+VEAdditions.m"; sourceTree = "<group>"; };
 		590E93281C4A51F300593D0F /* aBikeTVFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aBikeTVFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
+		5911B34B1D3A8AE600416016 /* Localizable.stringsdict */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		591483DF1C649313007EDABB /* aBike_Créteil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aBike_Créteil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		591483E21C649313007EDABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		591483ED1C649313007EDABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1709,6 +1711,7 @@
 				593ADA851C495394003B686A /* UIColor+MainColor.h */,
 				593ADA861C495394003B686A /* UIColor+MainColor.m */,
 				59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */,
+				5911B34B1D3A8AE600416016 /* Localizable.stringsdict */,
 				593ADA7B1C495394003B686A /* aBikeCities.plist */,
 			);
 			path = "Supporting Files";
@@ -3129,6 +3132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5913CFE11C53E7A800D965F1 /* Images.xcassets in Resources */,
+				5911B34C1D3A8AE600416016 /* Localizable.stringsdict in Resources */,
 				593ADADE1C495394003B686A /* aBikeCities.plist in Resources */,
 				593ADADF1C495394003B686A /* Localizable.strings in Resources */,
 			);

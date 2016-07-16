@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VELightStation : VEBaseModel
 
-// Insert code here to declare functionality of your managed object subclass
++ (instancetype) lightStationFromStationDictionary: (NSDictionary <NSString *, id> *) stationDictionary inContext: (NSManagedObjectContext *) context;
 
 @end
 

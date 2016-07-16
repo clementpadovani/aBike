@@ -10,13 +10,13 @@
 #import "NSCoder+VEAdditions.h"
 
 #if !TARGET_OS_WATCH
-#import "Station.h"
+#import "VEStation.h"
 #endif
 
 @implementation VEWatchBikeStation
 
 #if !TARGET_OS_WATCH
-+ (instancetype) watchBikeStationForStation: (Station *) station
++ (instancetype) watchBikeStationForStation: (VEStation *) station
 {
     VEWatchBikeStation *newStation = [[VEWatchBikeStation alloc] init];
 
@@ -24,9 +24,9 @@
 
     [newStation setStationLocation: [station location]];
 
-    [newStation setAvailableBikes: [station availableBikes]];
+    [newStation setAvailableBikes: (NSUInteger) [station availableBikes]];
 
-    [newStation setAvailableStands: [station availableBikeStations]];
+    [newStation setAvailableStands: (NSUInteger) [station availableBikeStations]];
 
     return newStation;
 }

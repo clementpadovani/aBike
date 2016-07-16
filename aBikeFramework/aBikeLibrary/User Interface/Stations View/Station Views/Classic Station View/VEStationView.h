@@ -20,13 +20,13 @@ static NSString * const kVEStationViewDidLoadDirectionsNotification = @"kVEStati
 
 @required
 
-- (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (VEStation *) aStation;
+- (void) loadDirectionsInfoWithRoute: (MKRoute * __nullable) directionsRoute forStation: (VEStation *) aStation;
 
 @end
 
 @interface VEStationView : UIView
 
-@property (nonatomic, weak) VEStation *currentStation;
+@property (nonatomic, strong) VEStation *currentStation;
 
 @property (nonatomic, assign, getter = isShowingDirections) BOOL showingDirections;
 

@@ -28,19 +28,17 @@ FOUNDATION_EXPORT const unsigned char aBikeFrameworkVersionString[];
 
 #import <aBikeFramework/CLLocation+Additions.h>
 #import <aBikeFramework/CPCoreDataManager.h>
-#import <aBikeFramework/LightStation.h>
+#import <aBikeFramework/VELightStation.h>
 #import <aBikeFramework/NSBundle+VELibrary.h>
 #import <aBikeFramework/NSNumber+Extensions.h>
 #import <aBikeFramework/NSString+NumberOfLines.h>
 #import <aBikeFramework/NSString+ProcessedStationName.h>
-#import <aBikeFramework/Station+Additions.h>
-#import <aBikeFramework/Station.h>
+#import <aBikeFramework/VEStation.h>
 #import <aBikeFramework/UIAlertAction+VEAdditions.h>
 #import <aBikeFramework/UIColor+MainColor.h>
 #import <aBikeFramework/UIDevice+Additions.h>
 #import <aBikeFramework/UIImage+VEImageAdditions.h>
-#import <aBikeFramework/UserSettings+Additions.h>
-#import <aBikeFramework/UserSettings.h>
+#import <aBikeFramework/VEUserSettings.h>
 #import <aBikeFramework/VEAlertControllerManager.h>
 #import <aBikeFramework/VEAlertManager.h>
 #import <aBikeFramework/VEBaseModel.h>
