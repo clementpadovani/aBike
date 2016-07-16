@@ -17,7 +17,7 @@
 @dynamic available;
 @dynamic availableBikes;
 @dynamic availableBikeStations;
-@dynamic banking;
+@dynamic bankingAvailable;
 @dynamic bonusStation;
 @dynamic canLoadData;
 @dynamic contractIdentifier;

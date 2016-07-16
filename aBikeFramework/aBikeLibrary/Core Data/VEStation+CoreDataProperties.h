@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL available;
 @property (nonatomic, assign) int16_t availableBikes;
 @property (nonatomic, assign) int16_t availableBikeStations;
-@property (nonatomic, assign) BOOL banking;
+@property (nonatomic, assign) BOOL bankingAvailable;
 @property (nonatomic, assign) BOOL bonusStation;
 @property (nonatomic, assign) BOOL canLoadData;
 @property (nullable, nonatomic, retain) NSString *contractIdentifier;

@@ -9,7 +9,7 @@
         <attribute name="available" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="availableBikes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="availableBikeStations" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="banking" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="bankingAvailable" optional="YES" attributeType="Boolean" elementID="banking" syncable="YES"/>
         <attribute name="bonusStation" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="canLoadData" optional="YES" transient="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="contractIdentifier" optional="YES" attributeType="String" syncable="YES"/>
