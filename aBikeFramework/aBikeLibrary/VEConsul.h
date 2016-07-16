@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
-#import "CPCoreDataManager.h"
-
 #if kEnableWatchSupport == 1
 
 @import WatchConnectivity;
 
 #endif
+
+#import "VEGeometry.h"
 
 @class VEConsul;
 
@@ -20,7 +20,9 @@
 
 @class VEMapViewController;
 
-@class Station;
+@class VEStation;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol VEConsulDelegate <NSObject>
 
@@ -91,25 +93,26 @@
 @property (nonatomic, copy, readonly) NSString *cityName;
 
 @property (nonatomic, copy, readonly) NSString *cityServiceName;
+
 @property (nonatomic, copy, readonly) NSString *cityRegionName;
 
-@property (nonatomic, strong, readonly) UIColor *mainColor;
+@property (nonatomic, copy, readonly) UIColor *mainColor;
 
-@property (nonatomic, readonly, getter = isReachable) BOOL reachable;
+@property (nonatomic, assign, readonly, getter = isReachable) BOOL reachable;
 
-@property (atomic) BOOL canSave;
+@property (atomic, assign) BOOL canSave;
 
-@property (nonatomic, readonly) VECityRect currentCityRect;
+@property (nonatomic, assign, readonly) VECityRect currentCityRect;
 
-@property (nonatomic, readonly) VECityRect largerCurrentCityRect;
+@property (nonatomic, assign, readonly) VECityRect largerCurrentCityRect;
 
-@property (nonatomic, readonly) BOOL canUpdateStations;
+@property (nonatomic, assign, readonly) BOOL canUpdateStations;
 
-@property (nonatomic, readonly, getter = isInBackground) BOOL inBackground;
+@property (nonatomic, assign, readonly, getter = isInBackground) BOOL inBackground;
 
-@property (NS_NONATOMIC_IOSONLY, readonly) MKCoordinateRegion initialMapRegion;
+@property (nonatomic, assign, readonly) MKCoordinateRegion initialMapRegion;
 
-@property (NS_NONATOMIC_IOSONLY, readonly) CGFloat statusBarHeight;
+@property (nonatomic, assign, readonly) CGFloat statusBarHeight;
 
 #if (SCREENSHOTS==1)
 - (CLLocation *) screenshotsLocation;
@@ -119,7 +122,7 @@
 
 #if kEnableWatchSupport == 1
 
-- (void) updateWatchStationsWithStations: (NSArray <Station *> *) stations;
+- (void) updateWatchStationsWithStations: (NSArray <VEStation *> *) stations;
 
 #endif
 
@@ -138,3 +141,5 @@
 - (void) stopLoadingSpinner;
 
 @end
+
+NS_ASSUME_NONNULL_END

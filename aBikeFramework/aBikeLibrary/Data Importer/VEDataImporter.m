@@ -12,7 +12,7 @@
 
 #import "CPCoreDataManager.h"
 
-#import "UserSettings+Additions.h"
+#import "VEUserSettings.h"
 
 #import "NSString+ProcessedStationName.h"
 
@@ -21,6 +21,10 @@
 #import "VEConnectionManager.h"
 
 #import "VEConstants.h"
+
+#import "VEManagedObjectContext.h"
+
+#import "VEStation.h"
 
 static NSString * const kVEDataImporterStationListURL = @"https://api.jcdecaux.com/vls/v1/stations?contract=%@&apiKey=%@";
 
@@ -183,6 +187,7 @@ static BOOL _isImportingData;
 	[self setImportingData: YES];
 	
 	//CPLog(@"starting import");
+
 	
 	dispatch_async(dispatch_get_main_queue(), ^{
 		
@@ -239,7 +244,7 @@ static BOOL _isImportingData;
 	
 	[userContext performBlock: ^{
 		
-		[[UserSettings sharedSettings] setContractIdentifier: contractIdentifier];
+		[[VEUserSettings sharedSettings] setContractIdentifier: contractIdentifier];
 		
 	}];
 	
@@ -312,7 +317,7 @@ static BOOL _isImportingData;
 //				continue;
 //			}
 			
-			[Station stationFromStationDictionary: aStationDictionary inContext: importContext];
+			[VEStation stationFromStationDictionary: aStationDictionary inContext: importContext];
 			
 			minLat = fmin(minLat, latitude);
 			
@@ -354,11 +359,11 @@ static BOOL _isImportingData;
 		
 		[userContext performBlockAndWait: ^{
 			
-			[[UserSettings sharedSettings] setCityRect: cityRect];
+			[[VEUserSettings sharedSettings] setCityRect: cityRect];
 			
-			[[UserSettings sharedSettings] setLargerCityRect: marginalizedCityRect];
+			[[VEUserSettings sharedSettings] setLargerCityRect: marginalizedCityRect];
 
-            [[UserSettings sharedSettings] setLastDataImportDate: [NSDate date]];
+            [[VEUserSettings sharedSettings] setLastDataImportDate: [NSDate date]];
 		}];
 
         NSManagedObjectContext *parentContext = [importContext parentContext];
@@ -414,7 +419,7 @@ static BOOL _isImportingData;
 	
 	[userContext performBlockAndWait: ^{
 		
-		canLoadData = [[UserSettings sharedSettings] canLoadData];
+		canLoadData = [[VEUserSettings sharedSettings] canLoadData];
 		
 	}];
 	
@@ -445,16 +450,16 @@ static BOOL _isImportingData;
 
 + (NSURL *) dataURLForIdentifier: (NSString *) identifier
 {
-	return [NSURL URLWithString: [NSString stringWithFormat: kVEDataImporterStationListURL, identifier, kJCDecauxAPIKey]];
+	return (NSURL * __nonnull) [NSURL URLWithString: [NSString stringWithFormat: kVEDataImporterStationListURL, identifier, kJCDecauxAPIKey]];
 }
 
-+ (NSURL *) stationDataURLForStation: (Station *) aStation
++ (NSURL *) stationDataURLForStation: (VEStation *) aStation
 {
 	NSURL *dataURL;
 
 	//dataURL = [NSURL URLWithString: [NSString stringWithFormat: kVEDataImporterStationInformationURL, [[aStation number] stringValue]]];
 	
-	dataURL = [NSURL URLWithString: [NSString stringWithFormat: kVEDataImporterStationInformationURL, [[aStation number] stringValue], [aStation contractIdentifier], kJCDecauxAPIKey]];
+	dataURL = [NSURL URLWithString: [NSString stringWithFormat: kVEDataImporterStationInformationURL, [@([aStation stationID]) stringValue], [aStation contractIdentifier], kJCDecauxAPIKey]];
 	
 	return dataURL;
 }

@@ -14,8 +14,6 @@
 
 #import "VEConsul.h"
 
-#import "UIDevice+Additions.h"
-
 #import "CPCoreDataManager.h"
 
 @interface VEMapContainerView ()

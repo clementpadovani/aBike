@@ -6,7 +6,9 @@
 //  Copyright (c) 2013 Clément Padovani. All rights reserved.
 //
 
-@class Station;
+@class VEStation;
+
+NS_ASSUME_NONNULL_BEGIN
 
 extern NSString * const kStationNumber;
 
@@ -48,10 +50,12 @@ extern NSString * const kStationContentAge;
 
 + (NSURL *) dataURLForIdentifier: (NSString *) identifier;
 
-+ (NSURL *) stationDataURLForStation: (Station *) aStation;
++ (NSURL *) stationDataURLForStation: (VEStation *) aStation;
 
 + (void) importStationListDataWithStationsData: (NSData *) stationsData withCompletionHandler: (void(^)()) completionHandler;
 
-+ (void) attemptToDownloadStationListForIdentifier: (NSString *) identifier withCompletionHandler: (void (^)(NSError *error, NSData *stationData)) completionHandler;
++ (void) attemptToDownloadStationListForIdentifier: (NSString *) identifier withCompletionHandler: (void (^)(NSError * __nullable error, NSData * __nullable stationData)) completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

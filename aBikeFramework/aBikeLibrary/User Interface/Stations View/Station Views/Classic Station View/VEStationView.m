@@ -16,7 +16,7 @@
 
 #import "VELocationManager.h"
 
-#import "Station+Additions.h"
+#import "VEStation.h"
 
 #import "VEMapViewController.h"
 
@@ -46,13 +46,13 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 @property (nonatomic, strong) MKRoute *currentStationRoute;
 
-@property (nonatomic, strong) CLLocation *currentDirectionsOriginLocation;
+@property (nonatomic, copy) CLLocation *currentDirectionsOriginLocation;
 
 @property (nonatomic, weak) UIButton *directionsButton;
 
 @property (nonatomic, assign) BOOL directionsAreDisabled;
 
-@property (nonatomic, readwrite) BOOL loadedDirections;
+@property (nonatomic, assign, readwrite) BOOL loadedDirections;
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
@@ -555,7 +555,7 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	[super layoutSubviews];
 }
 
-- (void) setCurrentStation: (Station *) currentStation
+- (void) setCurrentStation: (VEStation *) currentStation
 {
 	_currentStation = currentStation;
 	
@@ -578,8 +578,10 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
 	//[[self stationNameLabel] sizeToFit];
 	
-	NSString *stationNumberString = [[[self currentStation] number] stringValue];
-	
+//	NSString *stationNumberString = [[[self currentStation] number] stringValue];
+
+    NSString *stationNumberString = [NSString stringWithFormat: @"%d", [[self currentStation] stationID]];
+    
 	[[self stationNumberLabel] setText: stationNumberString];
 	
 	//[[self stationNumberLabel] sizeToFit];
@@ -632,6 +634,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	if ([[self currentStationDirections] isCalculating])
 	{
 		[[self currentStationDirections] cancel];
+        
+        [self setCurrentStationDirections: nil];
 		
 		[[VEConsul sharedConsul] stopLoadingSpinner];
 		

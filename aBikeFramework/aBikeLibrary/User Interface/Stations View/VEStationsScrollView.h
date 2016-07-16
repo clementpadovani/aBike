@@ -10,7 +10,7 @@
 
 @class VEStationView;
 
-@class Station;
+@class VEStation;
 
 @protocol VEStationView;
 
@@ -29,10 +29,10 @@
 
 - (instancetype) initWithStationDelegate: (id <VEStationViewDelegate>) stationViewDelegate isSearching: (BOOL) searching;
 
-- (void) setStations: (NSArray *) stations;
+- (void) setStations: (NSArray <VEStation *> *) stations;
 
 - (__kindof UIView *) stationViewAtIndex: (NSUInteger) index;
 
-- (VEStationView *) stationViewForStation: (Station *) aStation;
+- (VEStationView *) stationViewForStation: (VEStation *) aStation;
 
 @end

@@ -22,6 +22,8 @@
 
 #endif
 
+#import "VEUserSettings.h"
+
 /**
  *
  *	LYON GPS COORDINATES (FOR USE IN SIMULATOR)
@@ -178,7 +180,7 @@ static VELocationManager *_sharedLocationManager = nil;
 
 		#endif
 
-		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(userCityRectDidChangeNotification:) name: kUserSettingsCityRectChangedValueNotification object: nil];
+		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(userCityRectDidChangeNotification:) name: kVEUserSettingsCityRectChangedValueNotification object: nil];
 	}
 	
 	return self;

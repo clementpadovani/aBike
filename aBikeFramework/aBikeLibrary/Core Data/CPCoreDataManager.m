@@ -11,6 +11,7 @@
 #import "VEConsul.h"
 
 #import "NSBundle+VELibrary.h"
+#import "VEManagedObjectContext.h"
 
 static CPCoreDataManager *_sharedCoreDataManager = nil;
 
