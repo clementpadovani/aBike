@@ -1,9 +1,3 @@
-/* VETimeFormatter_FormattedDurationSingularMinute */
-"%.0f minute" = "%.0f minute";
-
-/* VETimeFormatter_FormattedDurationPlurialMinutes */
-"%.0f minutes" = "%.0f minutes";
-
 /* VELocationManager_not_userincity_can_geodecode */
 "aBike—%@ is designed for the %@ area but feel free to roam around.\nIt’s a long way from %@, good luck!" = "aBike—%@ est conçu pour la région %@ mais n’hésitez pas à la découvrir.\nLe trajet est long depuis %@, bonne chance !";
 
