@@ -98,6 +98,9 @@
       </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
+      <DeviceAppData
+         resolvedPath = "../aBikeFramework/aBikeLibrary/com.clement.padovani.velov 2016-07-16 16:14.43.893.xcappdata">
+      </DeviceAppData>
       <LocationScenarioReference
          identifier = "../locations/Lyon.gpx"
          referenceType = "0">

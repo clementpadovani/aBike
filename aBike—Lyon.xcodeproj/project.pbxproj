@@ -1033,6 +1033,7 @@
 		59EC26761CA86D7200D77605 /* NSCoder+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+VEAdditions.h"; sourceTree = "<group>"; };
 		59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+VEAdditions.m"; sourceTree = "<group>"; };
 		59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMainThreadGuard.m; sourceTree = "<group>"; };
+		59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_2_0.xcdatamodel; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F9EC851C54EDEC0007D069 /* aBike—MarseilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—MarseilleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -7828,6 +7829,7 @@
 		593ADA581C495394003B686A /* aBike.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */,
 				593ADA591C495394003B686A /* aBike.xcdatamodel */,
 				593ADA5A1C495394003B686A /* aBike_1_1.xcdatamodel */,
 				593ADA5B1C495394003B686A /* aBike_1_2.xcdatamodel */,
@@ -7836,7 +7838,7 @@
 				599365351C95F84900E24619 /* aBike_3_0_3.xcdatamodel */,
 				5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */,
 			);
-			currentVersion = 5937C3311CCAA03B00C47426 /* aBike_3_0_6.xcdatamodel */;
+			currentVersion = 59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */;
 			path = aBike.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

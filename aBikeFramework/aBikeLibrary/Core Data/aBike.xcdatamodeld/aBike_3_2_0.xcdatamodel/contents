@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="5" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 4.3">
+    <entity name="VELightStation" representedClassName="LightStation" elementID="LightStation" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="VEStation" representedClassName="Station" elementID="Station" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="available" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="availableBikes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="availableBikeStations" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="banking" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="bonusStation" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="canLoadData" optional="YES" transient="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="contractIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataContentAge" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mapItem" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mapItemPlacemark" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="processedStationName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="VEUserSettings" representedClassName="UserSettings" elementID="UserSettings" syncable="YES">
+        <attribute name="canLoadData" transient="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="cityRect" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="contractIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="largerCityRect" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="lastDataImportDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mapType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="setup" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+    </entity>
+    <configuration name="Memory">
+        <memberEntity name="VELightStation"/>
+    </configuration>
+    <configuration name="Stations">
+        <memberEntity name="VEStation"/>
+    </configuration>
+    <configuration name="User">
+        <memberEntity name="VEUserSettings"/>
+    </configuration>
+    <elements>
+        <element name="VELightStation" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="VEStation" positionX="0" positionY="0" width="128" height="270"/>
+        <element name="VEUserSettings" positionX="0" positionY="0" width="128" height="150"/>
+    </elements>
+</model>
