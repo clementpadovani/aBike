@@ -17,7 +17,7 @@
 
 + (instancetype) newEntityInManagedObjectContext: (NSManagedObjectContext *) context
 {
-	return [NSEntityDescription insertNewObjectForEntityForName: [self entityName] inManagedObjectContext: context];
+    return [NSEntityDescription insertNewObjectForEntityForName: [self entityName] inManagedObjectContext: context];
 }
 
 

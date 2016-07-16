@@ -6,28 +6,36 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+@class VEStation;
+
+@class MKRoute;
+
+NS_ASSUME_NONNULL_BEGIN
+
 static NSString * const kVEStationViewDidStartLoadingDirectionsNotification = @"kVEStationViewDidStartLoadingDirectionsNotification";
 
 static NSString * const kVEStationViewDidLoadDirectionsNotification = @"kVEStationViewDidLoadDirectionsNotification";
 
-@class Station;
-
 @protocol VEStationViewDelegate <NSObject>
 
-- (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (Station *) aStation;
+@required
+
+- (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (VEStation *) aStation;
 
 @end
 
 @interface VEStationView : UIView
 
-@property (nonatomic, weak) Station *currentStation;
+@property (nonatomic, weak) VEStation *currentStation;
 
-@property (nonatomic, getter = isShowingDirections) BOOL showingDirections;
+@property (nonatomic, assign, getter = isShowingDirections) BOOL showingDirections;
 
-@property (nonatomic, readonly) BOOL loadedDirections;
+@property (nonatomic, assign, readonly) BOOL loadedDirections;
 
 @property (nonatomic, assign, getter = areDirectionsEnabled) BOOL directionsEnabled;
 
 @property (nonatomic, weak) id <VEStationViewDelegate> delegate;
 
 @end
+
+NS_ASSUME_NONNULL_END

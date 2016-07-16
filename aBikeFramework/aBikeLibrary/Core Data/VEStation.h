@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VEStation : VEBaseModel
 
+- (NSString *) availableBikesString;
+
+- (NSString *) availableBikeStationsString;
+
 - (BOOL) isAvailable;
 
 - (BOOL) isBonusStation;

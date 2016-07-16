@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface VEBaseModel : NSManagedObject
 
 + (NSString *) entityName;
@@ -13,3 +15,5 @@
 + (instancetype) newEntityInManagedObjectContext: (NSManagedObjectContext *) context;
 
 @end
+
+NS_ASSUME_NONNULL_END

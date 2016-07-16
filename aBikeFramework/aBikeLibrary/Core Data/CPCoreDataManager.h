@@ -6,12 +6,13 @@
 //  Copyright (c) 2013 Clément Padovani. All rights reserved.
 //
 
-#import "Station+Additions.h"
-#import "UserSettings+Additions.h"
-#import "LightStation.h"
-#import "VEManagedObjectContext.h"
+@import CoreData;
 
-typedef void (^CPCoreDataManagerSaveCompletionBlock)(BOOL hasSaved, NSArray <NSError *> *errors);
+@class VEManagedObjectContext;
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void (^CPCoreDataManagerSaveCompletionBlock)(BOOL hasSaved, NSArray <NSError *> *__nullable errors);
 
 @interface CPCoreDataManager : NSObject
 
@@ -24,10 +25,12 @@ typedef void (^CPCoreDataManagerSaveCompletionBlock)(BOOL hasSaved, NSArray <NSE
 
 + (CPCoreDataManager *) sharedCoreDataManager;
 
-- (instancetype) init NS_UNAVAILABLE;
-
 - (void) performSaveWithCompletionBlock: (CPCoreDataManagerSaveCompletionBlock) completionBlock;
 
 - (VEManagedObjectContext *) newImportManagedObjectContext;
 
+- (instancetype) init NS_UNAVAILABLE;
+
 @end
+
+NS_ASSUME_NONNULL_END
