@@ -50,7 +50,7 @@ static const NSTimeInterval kVEStationReloadDataThreshold = 60. * 2.;
     
     [stationFetchRequest setFetchLimit: 1];
     
-    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat: @"%K == %@", NSStringFromSelector(@selector(stationID)), stationDictionary[NSStringFromSelector(@selector(stationID))]];
+    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat: @"%K == %@", NSStringFromSelector(@selector(stationID)), stationDictionary[kStationNumber]];
     
     [stationFetchRequest setPredicate: fetchPredicate];
     
@@ -75,7 +75,7 @@ static const NSTimeInterval kVEStationReloadDataThreshold = 60. * 2.;
     
     if (!station)
     {
-        //CPLog(@"don't have the station... making it");
+//        CPLog(@"don't have the station... making it");
         
         station = [self internal_stationFromStationDictionary: stationDictionary inContext: context];
     }
