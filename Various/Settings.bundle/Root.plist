@@ -12,7 +12,7 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<string>3.2.2 (490)</string>
+			<string>3.2.3 (492)</string>
 			<key>Key</key>
 			<string>appVersion</string>
 			<key>Title</key>
