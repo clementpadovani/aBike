@@ -59,7 +59,7 @@
 
 - (void) testURLSession
 {
-	NSURL *stationsDownloadURL = [VEDataImporter dataURLForIdentifier: [[VEaBikeFrameworkTestsConsulDelegate sharedDelegate] contractNameForConsul: nil]];
+	NSURL *stationsDownloadURL = [VEDataImporter dataURLForIdentifier: [[VEaBikeFrameworkTestsConsulDelegate sharedDelegate] contractNameForConsul: (VEConsul * __nonnull) nil]];
 
 	XCTAssertNotNil(stationsDownloadURL);
 
@@ -84,9 +84,9 @@
 
 	NSNumber *stationNumber = @(941);
 
-	Station *fakeStation = [Station newEntityInManagedObjectContext: [[CPCoreDataManager sharedCoreDataManager] standardContext]];
+	VEStation *fakeStation = [VEStation newEntityInManagedObjectContext: [[CPCoreDataManager sharedCoreDataManager] standardContext]];
 
-	[fakeStation setNumber: stationNumber];
+	[fakeStation setStationID: [stationNumber shortValue]];
 
 	[fakeStation setContractIdentifier: contractName];
 
@@ -117,16 +117,16 @@
 
 	XCTAssertTrue(serializedDataIsADictionary, @"Serialized data isn't a dictionary; is of class: %@", NSStringFromClass([serializedStationDictionary class]));
 
-	Station *fakeStation = [Station stationFromStationDictionary: serializedStationDictionary
+	VEStation *fakeStation = [VEStation stationFromStationDictionary: serializedStationDictionary
 											 inContext: [[CPCoreDataManager sharedCoreDataManager] standardContext]];
 
 	XCTAssertNotNil(fakeStation);
 
-	XCTAssertEqualObjects([fakeStation number], @(2005));
+	XCTAssertEqualObjects(@([fakeStation stationID]), @(2005));
 
 	NSString *stationName = @"CONFLUENCE HÔTEL DE RÉGION";
 
-	XCTAssertEqualObjects([fakeStation name], stationName);
+	XCTAssertEqualObjects([fakeStation stationName], stationName);
 
 	NSString *processedStationName = @"Confluence Hôtel De Région";
 
@@ -143,7 +143,7 @@
 
 	XCTAssertTrue(areStationCoordinatesEqual, @"Coordinates differ; station: { %f : %f } correct: { %f : %f }", stationCoordinates.latitude, stationCoordinates.longitude, correctStationCoordinates.latitude, correctStationCoordinates.longitude);
 
-	XCTAssertEqual([fakeStation banking], YES);
+	XCTAssertEqual([fakeStation bankingAvailable], YES);
 
 	XCTAssertEqual([fakeStation bonusStation], NO);
 
