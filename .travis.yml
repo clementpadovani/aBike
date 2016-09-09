@@ -40,6 +40,8 @@ before_install:
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - gem cleanup
     - ./Vendor/upgrade-xctool.sh
+    - brew update
+    - brew outdated xctool || brew upgrade xctool
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/Travis_Provisioning_Profile.mobileprovision.enc -d -a -out Vendor/Travis_Provisioning_Profile.mobileprovision
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/certificate.cer.enc -d -a -out Vendor/certificate.cer
     - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in Vendor/key.p12.enc -d -a -out Vendor/key.p12
