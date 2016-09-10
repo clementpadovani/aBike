@@ -3637,7 +3637,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\nbuiltInfoPlistPath=${PRODUCT_SETTINGS_PATH}\n\nversionString=${CP_CURRENT_VERSION}\n\nversionString+=\" (\"\n\nversionString+=${CP_CURRENT_BUILD}\n\nversionString+=\")\"\n\nsettingsRootPlistPath=${PROJECT_DIR}\n\nsettingsRootPlistPath+=\"/Various\"\n\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $versionString\" \"${settingsRootPlistPath}/Settings.bundle/Root.plist\"";
+			shellScript = "#!/bin/bash\n\nif [ -z ${CP_CURRENT_VERSION} ]; then\n\nexit;\n\nfi\n\nbuiltInfoPlistPath=${PRODUCT_SETTINGS_PATH}\n\nversionString=${CP_CURRENT_VERSION}\n\nversionString+=\" (\"\n\nversionString+=${CP_CURRENT_BUILD}\n\nversionString+=\")\"\n\nsettingsRootPlistPath=${PROJECT_DIR}\n\nsettingsRootPlistPath+=\"/Various\"\n\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $versionString\" \"${settingsRootPlistPath}/Settings.bundle/Root.plist\"";
 		};
 		59AB74B11C6B48E7003EBFF1 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
