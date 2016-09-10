@@ -78,25 +78,25 @@ private_lane :lyon_appstore do |options|
 		 export_method: "app-store"
 	)
 	
-  # is_only_lyon = options[:is_only_lyon]
-  #
-  # if (is_only_lyon == nil)
-  #
-  #   is_only_lyon = false
-  #
-  # end
-  #
-  # if (is_only_lyon == false)
-	lyon_copyDeliverfile
+  is_only_lyon = options[:is_only_lyon]
 
-	deliver(
-		automatic_release: options[:automatic_release],
-		skip_screenshots: options[:skip_screenshots],
-    app_review_information: CPaBike::APP_REVIEW_INFORMATION
-	)
+  if (is_only_lyon == nil)
 
-	lyon_deleteDeliverfile
-  # end
+    is_only_lyon = false
+
+  end
+
+  if (is_only_lyon == false)
+  	lyon_copyDeliverfile
+
+  	deliver(
+  		automatic_release: options[:automatic_release],
+  		skip_screenshots: options[:skip_screenshots],
+      app_review_information: CPaBike::APP_REVIEW_INFORMATION
+  	)
+
+  	lyon_deleteDeliverfile
+  end
 
 end
 

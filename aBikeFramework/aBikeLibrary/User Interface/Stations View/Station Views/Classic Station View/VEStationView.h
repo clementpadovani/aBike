@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+@import UIKit;
+
 @class VEStation;
 
 @class MKRoute;

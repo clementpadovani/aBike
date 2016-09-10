@@ -7,6 +7,7 @@
 //
 
 @import QuartzCore;
+@import UIKit;
 
 #import <tgmath.h>
 
@@ -36,6 +37,8 @@
 @property (nonatomic, assign, getter = isSearching) BOOL searching;
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
+
+@property (nonatomic, strong) UISelectionFeedbackGenerator *feedbackGenerator;
 
 - (void) setCurrentStationIndex: (NSUInteger) currentStationIndex withNotification: (BOOL) notifies;
 
@@ -218,6 +221,19 @@
 	[self setCurrentStationIndex: newPage withNotification: NO];
 	
 	[[self stationsScrollView] scrollRectToVisible: newRect animated: YES];
+    
+    if (newPage != oldPage)
+    {
+        if ([UISelectionFeedbackGenerator class])
+        {
+            if (![self feedbackGenerator])
+            {
+                [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+            }
+            
+            [[self feedbackGenerator] selectionChanged];
+        }
+    }
 }
 
 - (void) scrollViewDidScroll: (UIScrollView *) scrollView
@@ -225,6 +241,16 @@
 	if (![scrollView isDragging])
 		return;
 	
+    if ([UISelectionFeedbackGenerator class])
+    {
+        if (![self feedbackGenerator])
+        {
+            [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+        }
+        
+        [[self feedbackGenerator] prepare];
+    }
+    
 	CGFloat pageWidth = CGRectGetWidth([[self stationsScrollView] bounds]);
 	
 	CGFloat horizontalOffset = [scrollView contentOffset].x;
@@ -235,6 +261,8 @@
 	
 	if (page == currentPage)
 		return;
+    
+    [[self feedbackGenerator] selectionChanged];
 	
     UIView *view = [[self stationsScrollView] stationViewAtIndex: page];
     
@@ -374,6 +402,19 @@
 		[self setCurrentStationIndex: currentStationIndex];
 	else
 	{
+        if (currentStationIndex != _currentStationIndex)
+        {
+            if ([UISelectionFeedbackGenerator class])
+            {
+                if (![self feedbackGenerator])
+                {
+                    [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+                }
+                
+                [[self feedbackGenerator] selectionChanged];
+            }
+        }
+        
 		_currentStationIndex = currentStationIndex;
 		
 		[[self stationsScrollView] setCurrentStationIndex: currentStationIndex];
@@ -384,6 +425,19 @@
 {
 	//CPLog(@"index: %ld", currentStationIndex);
 	
+    if (currentStationIndex != _currentStationIndex)
+    {
+        if ([UISelectionFeedbackGenerator class])
+        {
+            if (![self feedbackGenerator])
+            {
+                [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+            }
+            
+            [[self feedbackGenerator] selectionChanged];
+        }
+    }
+    
 	_currentStationIndex = currentStationIndex;
 	
 	[[self pager] setCurrentPage: (NSInteger) currentStationIndex];

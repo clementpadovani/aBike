@@ -8,28 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		007052F879003B11B758AADC876E4E82 /* Pods-aBikeFramework-aBike—LuxembourgUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEBD23F6316BDECB09D9A07200368F42 /* Pods-aBikeFramework-aBike—LuxembourgUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		012714493F837D6563B2F4E54C2C1B59 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 670AD4D02BB331867B2FDC5D81319C84 /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E5417280C3E97A56E479EAE10EE7AA /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = A615FD67F4F76200ACD5AC848B1268B5 /* SDStatusBarOverriderPost8_3.m */; };
 		0712BEFA23C1C9FE0A519DEAD4354832 /* Pods-aBikeFramework-aBike—ToulouseUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F935BDA47DCD0FC55E78E5B61F39D6 /* Pods-aBikeFramework-aBike—ToulouseUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07997548C48FD1DF38BE0991F5E15B9B /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579E70D1E04DA142EB789A94968441D /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF5366A7895AE8EB645697850E899BF /* Pods-aBike—Marseille-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A08DB36D44CF8C74A37D2D2DA9B65A /* Pods-aBike—Marseille-dummy.m */; };
-		0E07884D1F5D28870B95CAD74EFF026E /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B3C40675751A3828F2BB87C4C1A94 /* SDStatusBarOverriderPost9_0.m */; };
 		0F96073CC461AF6EFD97D509FBC59234 /* Pods-aBike—Dublin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD33F55B85A6D96A392F142726D674C /* Pods-aBike—Dublin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		101FC78FE83D0AA7CEAB977F4035D357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		17285918AA1B0467D9E716E566A87C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		1A3EBA9A4196CB5CDC87C848CE5B6053 /* Pods-aBikeFramework-aBike—ParisUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E219A0ACEE69E44D632BB35FAEE99F /* Pods-aBikeFramework-aBike—ParisUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B21C8B202CA9443A7DE12DC15A0B63F /* Pods-aBikeFramework-aBike—NantesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91323AD0A515A6BF5F9693AB79BD2C16 /* Pods-aBikeFramework-aBike—NantesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		216FD1C4F7A92B9473ED5265D28BCF0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		237B01E08E0A0AC98885340CE0846289 /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = B7754EEA4A51CA4689A3B0AB3C2057E8 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F3DBE18CF49D056E3AA17EF1B1273B /* Pods-aBike—Lyon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF5AE2A952705AB688A89B6B8F54FA3C /* Pods-aBike—Lyon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B605A5D9C2693308AFF0A02F878438A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		2F1B11C3D64C2850280156BCF386DD34 /* Pods-aBike—Luxembourg-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1A6F3A9BC1AF6B9A4AE6B2AE2A08BF /* Pods-aBike—Luxembourg-dummy.m */; };
-		384DEDF24A11E586135CCBF1640D82C8 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E6F9DABE650D24B6E58AC24843EFA /* SDStatusBarOverriderPre8_3.m */; };
+		38E63A579B8FABDBC4642598C755EBA7 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F2306FCA4FEF46F3A576BAAF2418D5 /* SimulatorStatusMagic-dummy.m */; };
 		3AC95D34D7429247938929A2C380936E /* Pods-aBike—Lyon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA26D06F5B74C16D8507ECE5A3FC96A /* Pods-aBike—Lyon-dummy.m */; };
 		3E8CBCBB87086D6EDD39A747FCE475C4 /* Pods-aBikeFramework-aBike—MulhouseUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAB029177E1C88D89790BBD255B5875 /* Pods-aBikeFramework-aBike—MulhouseUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EB0CB7F3C6A51A6F48751E30E5C1BE3 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F414385CB545F7CA97828EA6E2D9C /* SimulatorStatusMagic-dummy.m */; };
 		40B6F9B91656CCF928CC116F4E7CF228 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		44CBB49CEE9CDF8CC4DED888AFF7EFF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4593C734619523656C5A69245C8836C2 /* Pods-aBike—Paris-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE19542228C79AE22E511B42E5BCCB4F /* Pods-aBike—Paris-dummy.m */; };
-		4653023FCE9D86F4BA9615E8DB2DB8A4 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 346D7444C26E9C4F98694F29CC0BDCFC /* SDStatusBarManager.m */; };
+		4832FA9F01E29E033C8A5B4B7C9EF513 /* SDStatusBarOverriderPost10_0.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA2385226CF413C441E5254956E758B /* SDStatusBarOverriderPost10_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48A4A8DF0BC8CC6B9F5908256F1A37FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4A2CB6CBE3CD903312B1DCFCB339E718 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4C829177C2C00B77919AA98B93BC56A6 /* Pods-aBikeFramework-aBike—MulhouseUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64453FF981E4EFF575C03C83A2DED53B /* Pods-aBikeFramework-aBike—MulhouseUITests-dummy.m */; };
@@ -38,47 +36,51 @@
 		549AA4045BF754E3004EC536CA88A988 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		56E3F2899902000C2F38D8DF2F7D3215 /* Pods-aBike—Paris-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51FAE26BB0E838454B27D23E3A72A2D9 /* Pods-aBike—Paris-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57A818A21C6524159BFFF196C450551B /* Pods-aBikeFramework-aBike—ParisUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C92776397B750BBA18D49901B9102552 /* Pods-aBikeFramework-aBike—ParisUITests-dummy.m */; };
-		5A335503F50DA689160A8A0FDA63F35A /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 9840B4D1D80573AC90F8A2BBF1F2E2B8 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B6857E15983A72565A6E6CA05CC2A3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		5EB096A3C46CF46CDC4BEA396F1D88C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		5F62E661A5A47123A6CE236979082187 /* Pods-aBike—Dublin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAFD0218CC82862FE94496945A8E6AD /* Pods-aBike—Dublin-dummy.m */; };
-		6A4981047620BE55D0C52788217E7C0B /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0015FC80F03B21739E8708A27022DE49 /* SDStatusBarOverriderPost8_3.m */; };
+		618BDAC1D4E545BDA08C1810F1BEA71B /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E7D44348DB66C067BD128D5438AB16 /* SDStatusBarOverriderPost9_0.m */; };
 		6DDBB0BD300E66D2BCAA1C2A2C8F0419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		6E854E6CD4E6259A1BD46F3806D19E34 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F14E0B3B31DFD5D6EA898ECB7B1D3E86 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		715AD9EDE9E61ED55660A98C80421E94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		749493DDA24B177A950F2F490B0FECBA /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DCEB82C4307935954EC2055D632E94 /* SDStatusBarOverriderPost9_3.m */; };
 		7D59B072508F3BA34CEDD4C62D43A1AE /* Pods-aBikeFramework-aBike—NantesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF14A4446FABB889B018F8A06822CFB6 /* Pods-aBikeFramework-aBike—NantesUITests-dummy.m */; };
+		7D7046B9686B0B1486D70CDD0A5CC929 /* SDStatusBarOverriderPost10_0.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C872C31482ACE58757A8C7A04B9546 /* SDStatusBarOverriderPost10_0.m */; };
 		7D8B34A10E8EC1F947F566ED1BA2539F /* Pods-aBikeFramework-aBike—ToulouseUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B28B88BB6516BE47306D209B165BA7DE /* Pods-aBikeFramework-aBike—ToulouseUITests-dummy.m */; };
 		7F28D9F0D1BF6686D15575AFEA115D1C /* Pods-aBikeFramework-aBike—CréteilUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 555DC16006C8FE862ED951F3A8487426 /* Pods-aBikeFramework-aBike—CréteilUITests-dummy.m */; };
 		8044746ED38DC6CDF5C6670D1AC4BB87 /* Pods-aBikeFramework-aBike—DublinUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A361942A38AF91060CF2681A1FF65D /* Pods-aBikeFramework-aBike—DublinUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80A02D2EC5A68B7514F955DC49D1B7EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		814B566E7154D4A4AD951307FE38AB7E /* Pods-aBike—Créteil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9539AF07EA532ACDCA9FCEC0BEEB5D8A /* Pods-aBike—Créteil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8869417B0FE563B7D9198F35A04DC4B5 /* SDStatusBarOverriderPost9_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A22952FA0835C55AFBACA4568D74367 /* SDStatusBarOverriderPost9_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D5863D2037DB1A2D03D3076400B725C /* Pods-aBikeFramework-aBike—BruxellesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE24CCD4F78ACD84246CF93EA7604A56 /* Pods-aBikeFramework-aBike—BruxellesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D78C13BEA38045CF8A5330A34D06433 /* Pods-aBikeFramework-aBike—BruxellesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D5960E023D51A5C90B761DE15BCA0 /* Pods-aBikeFramework-aBike—BruxellesUITests-dummy.m */; };
-		8FBD4547A2055017771A556D226538D9 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3015A8D2D332BAA0BFB5A0F1C73E53A /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91FB578BC45C68FB5B8C9AE430987B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		933F58A5BC54BCBD08DA0038BEAF3017 /* Pods-aBike—Toulouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F0DBCDE7D148E9103AB0876ED20346 /* Pods-aBike—Toulouse-dummy.m */; };
-		9A38B58D381E2010AF86FD738C45C0FD /* SDStatusBarOverriderPost9_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E41A60A7A5456973363D869582EC8F /* SDStatusBarOverriderPost9_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0104E1D6D0B180EC6BE0A2B7124E7C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		A89F3A447588F0FAAF3DA5E336ADCB99 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEB26FA0B9E1AEAC6D1C48128BAABC8 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8A5678956804840F25E100C0D86A8B2 /* Pods-aBikeFramework-aBike—LyonUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E54F74B82C1F23C91EC9CD15A8AA4 /* Pods-aBikeFramework-aBike—LyonUITests-dummy.m */; };
 		A90C1A25004F172D0FA1A24C02703729 /* Pods-aBike—Nantes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1666BFDBC949D57F2EA307E8986727A3 /* Pods-aBike—Nantes-dummy.m */; };
+		AD861CCCB4D0CF564A803AA6867F3C74 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BF55D3AC7E9D1D532A96C267CA0AF6 /* SDStatusBarManager.m */; };
+		AE54474AE1757A5449C99156386B2A6F /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD07C12ADB0B804AC4442529FC7A714 /* SDStatusBarOverriderPre8_3.m */; };
 		AF12CDEC336570718CEC3CA571661514 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		B210CEDB3CAF822630DB88BA45B5E7E8 /* Pods-aBike—Bruxelles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF22F455673E483936F4A9EB7A7844 /* Pods-aBike—Bruxelles-dummy.m */; };
 		B61668829EB6190351A492EEC2233BFE /* Pods-aBike—Nantes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7BD3015E63AECE0AE5DCF454ADDE59 /* Pods-aBike—Nantes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67F314A8F16412BA5ACBBF18E002223 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB32363C3B07229C396A724A47EFB16 /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7835B6488E2CCC6BD06EE80E1D61CF6 /* Pods-aBike—Mulhouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8402E7F3A8281ACA2241AA1F00FADA0 /* Pods-aBike—Mulhouse-dummy.m */; };
 		B89ABD335878018FB4DB5334409DA571 /* Pods-aBike—Marseille-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB908E0B849F9EACBEF84FBD329DE2B /* Pods-aBike—Marseille-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEC84D84B48EB0D6C8BD38FBD41B66B /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 270841E0EF814C36DB4F7A2296D2B3BE /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCC3A92DB46B7819238448BAF76C2EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		BD4DFBEE42596F9855895630081AE9C2 /* Pods-aBikeFramework-aBike—LuxembourgUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCC0CB7EFC332804573FBA736C9CF3 /* Pods-aBikeFramework-aBike—LuxembourgUITests-dummy.m */; };
+		BEA5FAA71044B1B83F7E2CA8A46A2C26 /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B562D697086D89BD35DBC8DB1DEE5D /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6EE2925B01955F3723127A16B5A8E /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ACFD4A2FF308EAD213072487BA22D8 /* SDStatusBarOverriderPost9_3.m */; };
 		C1B4CFC000156C253CBFE0C4C226F520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		C296C3E7D16E561DDA6A3685E9704E7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		C7E75B9B556CD2D5A36B3F55EF7A3A9F /* Pods-aBike—Créteil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 625CAACA13BD7F319A5199384A8460F1 /* Pods-aBike—Créteil-dummy.m */; };
 		CE122DECDE901B0C3D71DACAF0791411 /* Pods-aBike—Bruxelles-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 101C16FA3633B7B77E98B31317E1B4D7 /* Pods-aBike—Bruxelles-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF8A9CCD9A61493F58E9EA1579A6FEF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		D6424649A92A478FAEF1EC0EF3276408 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = F96B72230DB931700CD9A7A6AD585CF6 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6F351D818637ED04ACA18C7D13F6AB8 /* Pods-aBikeFramework-aBike—MarseilleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A330C9E285D598ECBD9D8C5220D6EC /* Pods-aBikeFramework-aBike—MarseilleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73DA6C48F68AAAA6711D019812E58D2 /* Pods-aBike—Luxembourg-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C3C275733707142AD6AE2C142C54272 /* Pods-aBike—Luxembourg-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9818B0C338AFD5080A1AA8DCC7529AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		DD996E75C2C8C56850BF0BE343874041 /* Pods-aBikeFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3245E3472789B08EF75075615F7F7E22 /* Pods-aBikeFramework-dummy.m */; };
-		E4850CF8BF50102438D7A41A061FEFF3 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09958DCD24B11DB520294122B3F01DCC /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4B149FEF3953E2216D6B50E02F1CA93 /* Pods-aBikeFramework-aBike—DublinUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E78A9B6586567873BB8EA93F12CA9EA /* Pods-aBikeFramework-aBike—DublinUITests-dummy.m */; };
 		E545D6AE1676618CAA9F6D626E9353D5 /* Pods-aBikeFramework-aBike—MarseilleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC52F56ED847025811D3CDF932997D55 /* Pods-aBikeFramework-aBike—MarseilleUITests-dummy.m */; };
 		EC92037631FE4212212126E7B9F42B2D /* Pods-aBikeFramework-aBike—LyonUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F49A997180E3CD8A173A439ECEFB25 /* Pods-aBikeFramework-aBike—LyonUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,7 +170,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0015FC80F03B21739E8708A27022DE49 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
 		00F935BDA47DCD0FC55E78E5B61F39D6 /* Pods-aBikeFramework-aBike—ToulouseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—ToulouseUITests-umbrella.h"; sourceTree = "<group>"; };
 		01B9E7D8FBB4B83ECB9D7C3A3254665A /* Pods-aBike—Luxembourg-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Luxembourg-resources.sh"; sourceTree = "<group>"; };
 		021653DD692FD719BD503054C509A3FA /* Pods-aBike—Toulouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,9 +182,7 @@
 		083CFD88352F269EC9BAEF2DE66BDE98 /* Pods-aBike—Lyon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Lyon-acknowledgements.plist"; sourceTree = "<group>"; };
 		091E044F4E800DE7128BA50383F9CD1C /* Pods-aBikeFramework-aBike—MarseilleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—MarseilleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		0977BCBA971545193A95AEA4271CFFA3 /* Pods-aBike—Mulhouse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Mulhouse-acknowledgements.markdown"; sourceTree = "<group>"; };
-		09958DCD24B11DB520294122B3F01DCC /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
 		0B0C56E38D557E43EF5176826E0DAB59 /* Pods-aBikeFramework-aBike—CréteilUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—CréteilUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0BECFD19D20F87B51FE730EDE8760D8C /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
 		0D4E8DB6C9F12008DAB3404F6B21E34C /* Pods-aBikeFramework-aBike—CréteilUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—CréteilUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		0E2220C18970B6F3B29B978EF4110A9D /* Pods-aBikeFramework-aBike—CréteilUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-aBike—CréteilUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0E4C659CF9D5B40B8775B5EDFB311D3D /* Pods-aBikeFramework-aBike—ParisUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-aBike—ParisUITests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -193,7 +192,6 @@
 		11D791FE94AB92CAE755EC30FE3515B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		139002227E3AED5508B2EACFE2D2E4D1 /* Pods-aBike—Paris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.debug.xcconfig"; sourceTree = "<group>"; };
 		13B37431C52D7CA12C960AB6BC248194 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14027D036712752C9B16FB1B65252547 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		1421977B9D9845935740D1A1E22CC538 /* Pods-aBike—Luxembourg-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Luxembourg-acknowledgements.plist"; sourceTree = "<group>"; };
 		14BC9EEA7922A2C16DA3461DDEBCE5A0 /* Pods-aBike—Marseille.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.release.xcconfig"; sourceTree = "<group>"; };
 		15CC2ABCD29EA1B2B32ADF6877DD5DE4 /* Pods-aBikeFramework-aBike—CréteilUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—CréteilUITests.tests.xcconfig"; sourceTree = "<group>"; };
@@ -202,17 +200,21 @@
 		17CAFF3A02DBDCF5E6A6F683E90EC35B /* Pods-aBikeFramework-aBike—LuxembourgUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-aBike—LuxembourgUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1854C3070BE90265528D72B3F3C16B89 /* Pods-aBike—Nantes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Nantes-resources.sh"; sourceTree = "<group>"; };
 		196344B0834B57597DE701E22B68FA25 /* Pods-aBike—Paris-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Paris-frameworks.sh"; sourceTree = "<group>"; };
+		1A22952FA0835C55AFBACA4568D74367 /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
 		1BD33F55B85A6D96A392F142726D674C /* Pods-aBike—Dublin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Dublin-umbrella.h"; sourceTree = "<group>"; };
 		1C1D77A50C56AA7B10D1103D8C845662 /* Pods-aBike—Marseille.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.tests.xcconfig"; sourceTree = "<group>"; };
 		1C2E1AEA5E3F73F9EC3E9DA24F3E2EB4 /* Pods-aBike—Paris-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Paris-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C3C275733707142AD6AE2C142C54272 /* Pods-aBike—Luxembourg-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Luxembourg-umbrella.h"; sourceTree = "<group>"; };
 		1E6CCCA9F848973E17C5C0BA1634A576 /* Pods-aBike—Toulouse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Toulouse-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E6F454352381F9B257DF91DFA580D43 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		20EE2AA71E71F187C2E121CABC64F3DB /* Pods_aBikeFramework_aBike_ParisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_ParisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2220A3611C719E46A9516389F13E78FD /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		232BACBD77DFB2E48CAAEB6D7DA18F6E /* Pods-aBike—Luxembourg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Luxembourg.debug.xcconfig"; sourceTree = "<group>"; };
+		24E7D44348DB66C067BD128D5438AB16 /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
 		25672A1BD9B5659D9BDE475215161817 /* Pods-aBikeFramework-aBike—CréteilUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—CréteilUITests-frameworks.sh"; sourceTree = "<group>"; };
 		268AD0F57DFDC2E960B10A8D7323E53F /* Pods-aBike—Bruxelles-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Bruxelles-acknowledgements.markdown"; sourceTree = "<group>"; };
+		270841E0EF814C36DB4F7A2296D2B3BE /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
 		277F6B39B559D7A5325FF8750FB9D96E /* Pods-aBike—Dublin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.debug.xcconfig"; sourceTree = "<group>"; };
+		27ACFD4A2FF308EAD213072487BA22D8 /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
 		27F5D650A395F01C61CF498AB2567525 /* Pods-aBikeFramework-aBike—MulhouseUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—MulhouseUITests-frameworks.sh"; sourceTree = "<group>"; };
 		2A090CE5427D4D98AC3D8D88695DD2B1 /* Pods_aBike_Mulhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Mulhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0E8046EFFC66B364975843EF443B10 /* Pods-aBike—Dublin.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.tests.xcconfig"; sourceTree = "<group>"; };
@@ -222,14 +224,14 @@
 		2DAFD0218CC82862FE94496945A8E6AD /* Pods-aBike—Dublin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Dublin-dummy.m"; sourceTree = "<group>"; };
 		2E78A9B6586567873BB8EA93F12CA9EA /* Pods-aBikeFramework-aBike—DublinUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—DublinUITests-dummy.m"; sourceTree = "<group>"; };
 		306B04CEEA467321EDA512DD7711680B /* Pods-aBikeFramework-aBike—NantesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—NantesUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		30E41A60A7A5456973363D869582EC8F /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
+		30F2306FCA4FEF46F3A576BAAF2418D5 /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
 		3245E3472789B08EF75075615F7F7E22 /* Pods-aBikeFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-dummy.m"; sourceTree = "<group>"; };
 		32797C8DD373209535AD97049CAC0B40 /* Pods-aBike—Toulouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.debug.xcconfig"; sourceTree = "<group>"; };
 		3325C7E45AB161379C487EA059A1E1F8 /* Pods-aBikeFramework.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.screenshots.xcconfig"; sourceTree = "<group>"; };
-		346D7444C26E9C4F98694F29CC0BDCFC /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
 		35A330C9E285D598ECBD9D8C5220D6EC /* Pods-aBikeFramework-aBike—MarseilleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—MarseilleUITests-umbrella.h"; sourceTree = "<group>"; };
 		35AE53E4E3DB4C48AAE1E72BA71F7404 /* Pods-aBikeFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-umbrella.h"; sourceTree = "<group>"; };
 		366A3595075FDFDE8A5F4984610C6883 /* Pods-aBikeFramework-aBike—MulhouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—MulhouseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3821E8D81D4D7855A1EA3AEF99C3B003 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		39E41B662AB2C135703B455F1B41D18F /* Pods-aBike—Bruxelles.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.tests.xcconfig"; sourceTree = "<group>"; };
 		3AAD6F2444189E08519CBBE8FA7528C1 /* Pods-aBikeFramework-aBike—ParisUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—ParisUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		3C5F320CEE7C4FC1BFBF1922B32171DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -242,14 +244,13 @@
 		4209E23A1697929AB2071A1DD38F0D51 /* Pods-aBikeFramework-aBike—NantesUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—NantesUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		43AB41D0B3280E3C5B8DF4828DBC238F /* Pods_aBikeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FB8F382125E13DBF3C39F180A47E54 /* Pods-aBike—Bruxelles-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Bruxelles-frameworks.sh"; sourceTree = "<group>"; };
+		4579E70D1E04DA142EB789A94968441D /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
 		45A5A33996C91B4DD68B166336C4036F /* Pods-aBike—Mulhouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.screenshots.xcconfig"; sourceTree = "<group>"; };
 		47621B04F8D06CA089BADFBB7A2D7F48 /* Pods-aBike—Créteil.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.screenshots.xcconfig"; sourceTree = "<group>"; };
 		47F82EBB8291A40EA0024CF0FEFB8F78 /* Pods-aBikeFramework-aBike—MulhouseUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework-aBike—MulhouseUITests.modulemap"; sourceTree = "<group>"; };
 		494F405B91DB9E57C1676BECAA6B2DD0 /* Pods-aBike—Dublin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Dublin-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A749579CFB6657EB05BFF36DBD9C0CB /* Pods-aBike—Lyon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Lyon-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4CEAA540E890B17E31198A4872C5DD90 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		4D8AE4BBB255186369E7CE317BD949CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F3F414385CB545F7CA97828EA6E2D9C /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
 		50679BB0BB459BE7AAFA38D580DB445C /* Pods-aBike—Lyon-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Lyon-resources.sh"; sourceTree = "<group>"; };
 		51F0DBCDE7D148E9103AB0876ED20346 /* Pods-aBike—Toulouse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Toulouse-dummy.m"; sourceTree = "<group>"; };
 		51FAE26BB0E838454B27D23E3A72A2D9 /* Pods-aBike—Paris-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Paris-umbrella.h"; sourceTree = "<group>"; };
@@ -258,23 +259,23 @@
 		550C7EA57EA99E5EDCD8578334978397 /* Pods-aBike—Marseille.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Marseille.debug.xcconfig"; sourceTree = "<group>"; };
 		555DC16006C8FE862ED951F3A8487426 /* Pods-aBikeFramework-aBike—CréteilUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—CréteilUITests-dummy.m"; sourceTree = "<group>"; };
 		55E0BE460BBF110EB111B0A54B93796E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E30C2366052840E62A28E1BA49E4AE /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		57EA50E968AE5C5D347EEF8C6EA0C28F /* Pods-aBikeFramework-aBike—BruxellesUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—BruxellesUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		57ED93B54B327FD6EB94B899404DBFAB /* Pods-aBike—Marseille-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Marseille-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A6FE62E032CF0A3BB14B11F808E3475 /* Pods-aBike—Nantes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Nantes-acknowledgements.plist"; sourceTree = "<group>"; };
 		5ABB8706315F2AD7E343B6A7250B26A2 /* Pods-aBikeFramework-aBike—LuxembourgUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—LuxembourgUITests-resources.sh"; sourceTree = "<group>"; };
-		5AEEEEA0DBB8C52187F3C912FEE629DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC9D1220772611401753A165542CDFD /* Pods-aBikeFramework-aBike—MarseilleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—MarseilleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C11145F3B40DE8BF4D160547F4EEBCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1B81BB908B948ABD561750492E27E6 /* Pods_aBike_Paris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Paris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE2DEA176D62AF78D47980D1010614F /* Pods-aBike—Bruxelles-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Bruxelles-resources.sh"; sourceTree = "<group>"; };
-		5F4E6F9DABE650D24B6E58AC24843EFA /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
 		613C73A875952602C8348C2ACF436E0D /* Pods-aBikeFramework-aBike—CréteilUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—CréteilUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		625CAACA13BD7F319A5199384A8460F1 /* Pods-aBike—Créteil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Créteil-dummy.m"; sourceTree = "<group>"; };
 		62A361942A38AF91060CF2681A1FF65D /* Pods-aBikeFramework-aBike—DublinUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—DublinUITests-umbrella.h"; sourceTree = "<group>"; };
 		64453FF981E4EFF575C03C83A2DED53B /* Pods-aBikeFramework-aBike—MulhouseUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—MulhouseUITests-dummy.m"; sourceTree = "<group>"; };
+		647B5944043AA89768D8D52873B3DBDF /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		6500E9A9E4DBCC41C2BD09A2B6C3F162 /* Pods-aBikeFramework-aBike—LyonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—LyonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		656554B0AE2A8F7CEC463229391C8986 /* Pods-aBike—Dublin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Dublin.modulemap"; sourceTree = "<group>"; };
 		668B003384AA020DBA3459889E550548 /* Pods-aBikeFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.release.xcconfig"; sourceTree = "<group>"; };
-		670AD4D02BB331867B2FDC5D81319C84 /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
 		68A1DE27D185A3B35B2C29398B387D62 /* Pods-aBikeFramework-aBike—MarseilleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—MarseilleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6958A2E71D1275B60E151BB2DA9E38FA /* Pods-aBikeFramework-aBike—NantesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—NantesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		69B069F6752EFEE3750FB950DFCB9B93 /* Pods-aBike—Bruxelles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.release.xcconfig"; sourceTree = "<group>"; };
@@ -286,7 +287,6 @@
 		6D814CEFB39817C907A72068CBBE7F93 /* Pods-aBikeFramework-aBike—BruxellesUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—BruxellesUITests.tests.xcconfig"; sourceTree = "<group>"; };
 		6DB59F86170FFEC9BF8BA20D490AF3C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC32C59C78B399CC1089D6D6EF3CB4F /* Pods-aBike—Créteil.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.tests.xcconfig"; sourceTree = "<group>"; };
-		6EE5758C58B6CCD9EC608A52FCE6402E /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
 		717F01EBD391F614D4815AED9496B6CA /* Pods_aBike_Toulouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Toulouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		736044997F14B185A00EE4D86F7FACB0 /* Pods-aBike—Mulhouse.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.tests.xcconfig"; sourceTree = "<group>"; };
 		73C612D20042091C68FA1A293C93BD64 /* Pods-aBikeFramework-aBike—BruxellesUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—BruxellesUITests-resources.sh"; sourceTree = "<group>"; };
@@ -307,10 +307,12 @@
 		7F47C70091D5D08D00FD93B85E7B69AE /* Pods-aBikeFramework-aBike—NantesUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—NantesUITests.tests.xcconfig"; sourceTree = "<group>"; };
 		7F682CC105BB48A8632D03C349254EC2 /* Pods-aBike—Toulouse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Toulouse.modulemap"; sourceTree = "<group>"; };
 		83E22BEEDA743397509A09241296D17A /* Pods-aBikeFramework-aBike—MulhouseUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-aBike—MulhouseUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		84EF786B38595871855A31AC15807D99 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		86692A1B149FD6F4D16574A61925A6B8 /* Pods-aBike—Mulhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Mulhouse.release.xcconfig"; sourceTree = "<group>"; };
 		86F12F3ACF0B2B66C0F13C36009A95A4 /* Pods-aBikeFramework-aBike—MulhouseUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—MulhouseUITests.tests.xcconfig"; sourceTree = "<group>"; };
 		877DB50117B0D695A561B7742BD38AF4 /* Pods-aBike—Dublin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Dublin-resources.sh"; sourceTree = "<group>"; };
 		8898539D46C775AE948E18D31CFB1D35 /* Pods-aBike—Luxembourg-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBike—Luxembourg-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A01DE00D0430595428C145C121BD44A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		8AA2B312DE21070A100535B47CF1C88E /* Pods-aBikeFramework-aBike—LyonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—LyonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B2A471AC0636E32980CBA1E9577760B /* Pods-aBike—Mulhouse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Mulhouse-frameworks.sh"; sourceTree = "<group>"; };
 		8B31662C9B41154791DADA26F0D3C6F6 /* Pods-aBikeFramework-aBike—ToulouseUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—ToulouseUITests.tests.xcconfig"; sourceTree = "<group>"; };
@@ -326,12 +328,11 @@
 		931BC0CCF149E6AE285A62DF4228DD41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93721A3C19EE8CE4C30ABBABAA5DC138 /* Pods-aBikeFramework-aBike—ToulouseUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework-aBike—ToulouseUITests.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B562D697086D89BD35DBC8DB1DEE5D /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
 		942A692459E6B81EB53D49D8DD23594C /* Pods-aBike—Dublin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Dublin-acknowledgements.plist"; sourceTree = "<group>"; };
 		94C6FE7663A523A2B463B108A02CC5A7 /* Pods-aBike—Dublin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Dublin-frameworks.sh"; sourceTree = "<group>"; };
-		94DCEB82C4307935954EC2055D632E94 /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
 		951683FAFFA7490BCBB9147411D15010 /* Pods-aBike—Toulouse.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.screenshots.xcconfig"; sourceTree = "<group>"; };
 		9539AF07EA532ACDCA9FCEC0BEEB5D8A /* Pods-aBike—Créteil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Créteil-umbrella.h"; sourceTree = "<group>"; };
-		9840B4D1D80573AC90F8A2BBF1F2E2B8 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
 		9894425691147DDD99BEC8352781F78B /* Pods-aBikeFramework-aBike—LuxembourgUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—LuxembourgUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		990B0F39876C819F03CD85FED5F592A8 /* Pods-aBike—Mulhouse-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Mulhouse-acknowledgements.plist"; sourceTree = "<group>"; };
 		99B0E0D5B0BBB336B63988C3E98B5058 /* Pods-aBikeFramework-aBike—NantesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—NantesUITests-frameworks.sh"; sourceTree = "<group>"; };
@@ -341,6 +342,7 @@
 		9C5392C05447447E511658028BE4C030 /* Pods_aBikeFramework_aBike_BruxellesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_BruxellesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8DD7712006D549729BF5AE2BD0CF89 /* Pods-aBikeFramework-aBike—LyonUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—LyonUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		9D0F304F7115A77516361D6A56789230 /* Pods_aBike_Luxembourg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Luxembourg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E7B077E9537AB6E63122654858B8F88 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		A0ABDBC66488B8884A9791EAFA600DD9 /* Pods_aBike_Dublin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Dublin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1573B19F02DC8220504247DE4E419D6 /* Pods-aBikeFramework-aBike—ToulouseUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—ToulouseUITests-frameworks.sh"; sourceTree = "<group>"; };
 		A17957540C1C39FE809DC817BF36B10A /* Pods-aBikeFramework-aBike—BruxellesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework-aBike—BruxellesUITests.modulemap"; sourceTree = "<group>"; };
@@ -350,11 +352,13 @@
 		A4D16A3BAB315FB50C7F10720612FF0E /* Pods-aBike—Bruxelles-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Bruxelles-acknowledgements.plist"; sourceTree = "<group>"; };
 		A5ACCA699D8FC28C6F1557BAEF7E22F1 /* Pods-aBike—Toulouse.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Toulouse.tests.xcconfig"; sourceTree = "<group>"; };
 		A5F7499751AA930A08C3D19919D29306 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A615FD67F4F76200ACD5AC848B1268B5 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
 		A722B13BB9C7086F7534C99DE0CED85F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BF55D3AC7E9D1D532A96C267CA0AF6 /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
+		A96C86DF213EEE2A79D7B12F99A3239C /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
 		AC8BE962E810CB92A947FA619D985A08 /* Pods-aBike—Luxembourg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Luxembourg.release.xcconfig"; sourceTree = "<group>"; };
 		AC92413B163A691EA2CA760E5E2BD544 /* Pods-aBikeFramework-aBike—LyonUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-aBike—LyonUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACE1401F569F1AB41AB5F4887621E58A /* Pods_aBike_Lyon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Lyon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEAC98D1EE6D06660BF5353DA229F06D /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		AF03F6CE03F3A2E17233A4C91548C218 /* Pods-aBike—Lyon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Lyon.debug.xcconfig"; sourceTree = "<group>"; };
 		AF14A4446FABB889B018F8A06822CFB6 /* Pods-aBikeFramework-aBike—NantesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—NantesUITests-dummy.m"; sourceTree = "<group>"; };
 		AFE09B0569F5DC3CFD9D38699A669A57 /* Pods-aBikeFramework-aBike—BruxellesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—BruxellesUITests-frameworks.sh"; sourceTree = "<group>"; };
@@ -366,28 +370,26 @@
 		B4CD895C3963098CCBF1BE28245BD104 /* Pods-aBikeFramework.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework.tests.xcconfig"; sourceTree = "<group>"; };
 		B50C40CCBE3E8A207941363007ABA523 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54F5566C6C4F9ED4F745FC5C8EAA6FF /* Pods-aBike—Créteil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Créteil.release.xcconfig"; sourceTree = "<group>"; };
-		B7754EEA4A51CA4689A3B0AB3C2057E8 /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
 		B88D7C1D0E0C5F454EF3384A11287D10 /* Pods-aBike—Bruxelles.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Bruxelles.modulemap"; sourceTree = "<group>"; };
 		B8FA9965814C7E1E7B51E30FA66BE08C /* Pods-aBikeFramework-aBike—MulhouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—MulhouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB1A6F3A9BC1AF6B9A4AE6B2AE2A08BF /* Pods-aBike—Luxembourg-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Luxembourg-dummy.m"; sourceTree = "<group>"; };
+		BBD07C12ADB0B804AC4442529FC7A714 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
 		BCD21B853D3811B1E7BE11021A3C1B9E /* Pods-aBikeFramework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-resources.sh"; sourceTree = "<group>"; };
 		BCDDA4BFC87C2103293DD4A0AE3CAB97 /* Pods-aBike—Lyon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Lyon.modulemap"; sourceTree = "<group>"; };
 		BCF07F3DA5B6AF59FEFB0B1D03861CC8 /* Pods-aBike—Dublin.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Dublin.screenshots.xcconfig"; sourceTree = "<group>"; };
-		BD60EBBB97624FB6914582A726C6E2F7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		BF4F41C7C2F31A3A139E0817AB53D73B /* Pods-aBikeFramework-aBike—BruxellesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-aBike—BruxellesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0A08DB36D44CF8C74A37D2D2DA9B65A /* Pods-aBike—Marseille-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Marseille-dummy.m"; sourceTree = "<group>"; };
 		C17C295D51FB9195DAAE66A00E870409 /* Pods-aBikeFramework-aBike—ParisUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—ParisUITests-frameworks.sh"; sourceTree = "<group>"; };
 		C1ED63B91D2614AF5E29B4851936B972 /* Pods_aBikeFramework_aBike_MulhouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_MulhouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F4837BEB7FD189AA072D4D9969132F /* Pods-aBikeFramework-aBike—ParisUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework-aBike—ParisUITests.modulemap"; sourceTree = "<group>"; };
-		C54B3C40675751A3828F2BB87C4C1A94 /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
 		C55217D32C4B828D7C1A383C5A8FAD1A /* Pods-aBikeFramework-aBike—MarseilleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—MarseilleUITests-resources.sh"; sourceTree = "<group>"; };
 		C612652C58378BA051CFBC5FF38D6DBC /* Pods_aBikeFramework_aBike_MarseilleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_MarseilleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C667E97FA21925C7B5045853599041FA /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		C6AEEDAD3CA35E79B68E0260F6206757 /* Pods-aBike—Paris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.release.xcconfig"; sourceTree = "<group>"; };
 		C6CF22F455673E483936F4A9EB7A7844 /* Pods-aBike—Bruxelles-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBike—Bruxelles-dummy.m"; sourceTree = "<group>"; };
 		C767BA6B5EA9781A06D8A4CCF3053434 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8AE19718A06F50119B0D75346AA34F6 /* Pods-aBikeFramework-aBike—LyonUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—LyonUITests.tests.xcconfig"; sourceTree = "<group>"; };
 		C8BD32A112443C0A0188E16B94504090 /* Pods-aBike—Lyon-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Lyon-frameworks.sh"; sourceTree = "<group>"; };
+		C8C872C31482ACE58757A8C7A04B9546 /* SDStatusBarOverriderPost10_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.m; sourceTree = "<group>"; };
 		C92776397B750BBA18D49901B9102552 /* Pods-aBikeFramework-aBike—ParisUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—ParisUITests-dummy.m"; sourceTree = "<group>"; };
 		C9ACC5395F8F8B66550D349A2A34FB5E /* Pods-aBikeFramework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBCED6BAA04C50306E5C233FBD058D30 /* Pods-aBikeFramework-aBike—ParisUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—ParisUITests-resources.sh"; sourceTree = "<group>"; };
@@ -396,19 +398,19 @@
 		CDAB029177E1C88D89790BBD255B5875 /* Pods-aBikeFramework-aBike—MulhouseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—MulhouseUITests-umbrella.h"; sourceTree = "<group>"; };
 		CF7757CCAEA6F2EB9B25CA3CE35D448A /* Pods-aBikeFramework-aBike—MarseilleUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—MarseilleUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		D06C2550FBBA092DD18BFCE4DE4C60BA /* Pods-aBikeFramework-aBike—DublinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—DublinUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D1361521F6025C0A63F631256899B58E /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
 		D19879830A07A33F62C2961117454273 /* Pods-aBikeFramework-aBike—DublinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—DublinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2540B5F173F6ED6AC9E8A1379B04D24 /* Pods_aBikeFramework_aBike_DublinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_DublinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B5E8E0FF835046E106D6E48027CEE3 /* Pods-aBike—Lyon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Lyon.release.xcconfig"; sourceTree = "<group>"; };
-		D416C4BDB9B7CF98BD76D84004754797 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		D2EC37CF5EBC4F061D0AA6B499BAEC9F /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
 		D4D14E0FE1FC9E7F0D7E38980DDEC9E6 /* Pods-aBikeFramework-aBike—ToulouseUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-aBike—ToulouseUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D69F46A1F72057E28FDF33D4787FFC4D /* Pods_aBike_Bruxelles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Bruxelles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F49A997180E3CD8A173A439ECEFB25 /* Pods-aBikeFramework-aBike—LyonUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—LyonUITests-umbrella.h"; sourceTree = "<group>"; };
 		D7A8861A1B491DCFEB2E8B6086AB0967 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D84F0255C57EE2381E0735087559A2B3 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		D7D5DC73E8846AB78A41E82FA63A9A37 /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
 		D9E8106BA9444E630AD2797D19EB47F6 /* Pods-aBike—Nantes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Nantes-frameworks.sh"; sourceTree = "<group>"; };
 		DAB7E562214577AC7465AD3719698F1F /* Pods-aBikeFramework-aBike—ToulouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—ToulouseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DB097A5D9E14EAC78A988A37D0873D1F /* Pods-aBikeFramework-aBike—DublinUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-aBike—DublinUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DB756B3071C470E268B75B5E7AB8654D /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		DB8161C373EA70645953A789AC885DD6 /* Pods-aBike—Paris-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Paris-resources.sh"; sourceTree = "<group>"; };
 		DC446F726C563212A116A275481E50B6 /* Pods-aBikeFramework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBikeFramework-frameworks.sh"; sourceTree = "<group>"; };
 		DD32E92F0C18D25946FB542777FC3E05 /* Pods-aBike—Nantes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Nantes.modulemap"; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 		DEF69B081BB99367DB8AC29D08934FC0 /* Pods-aBike—Nantes.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Nantes.tests.xcconfig"; sourceTree = "<group>"; };
 		DF9A5733FD347B6910A51F0782E06027 /* Pods_aBike_Cr_teil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Cr_teil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCC1C488C10DA785D67A529CC153B3E /* Pods-aBikeFramework-aBike—BruxellesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—BruxellesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0CB6F06DB7C61538C37E9A61DD961B2 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		E12841FC60074CF9CF2AC233B95D92DE /* Pods-aBike—Marseille-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Marseille-frameworks.sh"; sourceTree = "<group>"; };
 		E1312F0C315A25BDD1A593A3041AEC97 /* Pods-aBike—Toulouse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Toulouse-frameworks.sh"; sourceTree = "<group>"; };
 		E1E3710B98C1BD0A92FE4D3B1FE3D411 /* Pods-aBike—Paris-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Paris-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -426,7 +429,6 @@
 		E40EA3649C362C88F26B017885190A7F /* Pods-aBike—Marseille-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Marseille-resources.sh"; sourceTree = "<group>"; };
 		E5084F0A909818ABA6751A6573DA9298 /* Pods-aBikeFramework-aBike—CréteilUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—CréteilUITests-umbrella.h"; sourceTree = "<group>"; };
 		E52BBD74F0CB0AFB22C3F600DACE66CF /* Pods-aBike—Marseille.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Marseille.modulemap"; sourceTree = "<group>"; };
-		E52FB2C7E95690B38087960D33D4F271 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		E53E066AC83517C88257930B6B06E962 /* Pods-aBike—Créteil-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Créteil-resources.sh"; sourceTree = "<group>"; };
 		E6315014BA07F9773876DDAC4E4343AC /* Pods-aBike—Nantes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Nantes.debug.xcconfig"; sourceTree = "<group>"; };
 		E689A4123CC3C87AB256674D10D34458 /* Pods-aBikeFramework-aBike—LuxembourgUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—LuxembourgUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -437,9 +439,9 @@
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E99B6DF5DEC194105301C753375AC9FC /* Pods-aBike—Toulouse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Toulouse-umbrella.h"; sourceTree = "<group>"; };
 		EBA04DBA36409B31F2CDD8C510AE3986 /* Pods_aBike_Marseille.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBike_Marseille.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA2385226CF413C441E5254956E758B /* SDStatusBarOverriderPost10_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.h; sourceTree = "<group>"; };
 		ECCF69A177B20117FC96C02290D2D154 /* Pods-aBikeFramework-aBike—NantesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-aBike—NantesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EDB908E0B849F9EACBEF84FBD329DE2B /* Pods-aBike—Marseille-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Marseille-umbrella.h"; sourceTree = "<group>"; };
-		EDEB26FA0B9E1AEAC6D1C48128BAABC8 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
 		EE53889685591FEC06E85B0A24C352DB /* Pods-aBikeFramework-aBike—DublinUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aBikeFramework-aBike—DublinUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EF2DDA783C7EF353C284D9548C45F2D4 /* Pods-aBikeFramework-aBike—DublinUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—DublinUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		EF5AE2A952705AB688A89B6B8F54FA3C /* Pods-aBike—Lyon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBike—Lyon-umbrella.h"; sourceTree = "<group>"; };
@@ -447,10 +449,12 @@
 		F0C5008CE7383A6D7693C77467BF9522 /* Pods-aBike—Mulhouse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Mulhouse.modulemap"; sourceTree = "<group>"; };
 		F13C41A1677C7F0612567F7ABF7E7B52 /* Pods-aBike—Paris.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Paris.screenshots.xcconfig"; sourceTree = "<group>"; };
 		F13EBC68D7EFA5936D2012B5775542FF /* Pods-aBike—Lyon.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Lyon.tests.xcconfig"; sourceTree = "<group>"; };
+		F14E0B3B31DFD5D6EA898ECB7B1D3E86 /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
+		F187FB4FFFBD5A02CAC969DB902FA556 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		F1DB5D0C45AD0B2983D1CAC03DDDF980 /* Pods-aBike—Paris.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Paris.modulemap"; sourceTree = "<group>"; };
 		F1F7BB20C98945C382590FF0ACBC5D7B /* Pods-aBike—Luxembourg.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBike—Luxembourg.modulemap"; sourceTree = "<group>"; };
 		F2893658C3A9051AA515384D7EEC5D08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3015A8D2D332BAA0BFB5A0F1C73E53A /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
+		F2A3AD7913FA55B39759575460E504EB /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		F513C94367AD9D7965DDDF88AB8B45EA /* Pods_aBikeFramework_aBike_LuxembourgUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aBikeFramework_aBike_LuxembourgUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A71598F9096C15CAD763A99D0EBE85 /* Pods-aBike—Luxembourg-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aBike—Luxembourg-frameworks.sh"; sourceTree = "<group>"; };
 		F5F921F017384B443042D13A4E88C664 /* Pods-aBikeFramework-aBike—DublinUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—DublinUITests.tests.xcconfig"; sourceTree = "<group>"; };
@@ -458,6 +462,7 @@
 		F6A063B4ABC974C2EE6226CA295F6A4E /* Pods-aBike—Bruxelles.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBike—Bruxelles.screenshots.xcconfig"; sourceTree = "<group>"; };
 		F81D5960E023D51A5C90B761DE15BCA0 /* Pods-aBikeFramework-aBike—BruxellesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—BruxellesUITests-dummy.m"; sourceTree = "<group>"; };
 		F8E7B0107229786413D77046F55F7856 /* Pods-aBikeFramework-aBike—LuxembourgUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBikeFramework-aBike—LuxembourgUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F96B72230DB931700CD9A7A6AD585CF6 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
 		FA4E39B1E6D2BB4AEA9A30EFC49D96ED /* Pods-aBike—Créteil-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aBike—Créteil-acknowledgements.plist"; sourceTree = "<group>"; };
 		FB2ED4473959B19A8C7634B8405AFD1F /* Pods-aBikeFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework.modulemap"; sourceTree = "<group>"; };
 		FBDC54E8ACBA66DB6779837ADFA0A30D /* Pods-aBikeFramework-aBike—ParisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—ParisUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -466,6 +471,7 @@
 		FC2197B79889C669EB3C560A11FC410B /* Pods-aBikeFramework-aBike—ToulouseUITests.screenshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—ToulouseUITests.screenshots.xcconfig"; sourceTree = "<group>"; };
 		FC31D339A6760F09DD4FAEDFD8BE7563 /* Pods-aBikeFramework-aBike—ParisUITests.tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aBikeFramework-aBike—ParisUITests.tests.xcconfig"; sourceTree = "<group>"; };
 		FC52F56ED847025811D3CDF932997D55 /* Pods-aBikeFramework-aBike—MarseilleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aBikeFramework-aBike—MarseilleUITests-dummy.m"; sourceTree = "<group>"; };
+		FDB32363C3B07229C396A724A47EFB16 /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
 		FDEFCE8B5102B3DBD1B1619C36A0DCD6 /* Pods-aBikeFramework-aBike—DublinUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-aBikeFramework-aBike—DublinUITests.modulemap"; sourceTree = "<group>"; };
 		FE24CCD4F78ACD84246CF93EA7604A56 /* Pods-aBikeFramework-aBike—BruxellesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—BruxellesUITests-umbrella.h"; sourceTree = "<group>"; };
 		FEBD23F6316BDECB09D9A07200368F42 /* Pods-aBikeFramework-aBike—LuxembourgUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aBikeFramework-aBike—LuxembourgUITests-umbrella.h"; sourceTree = "<group>"; };
@@ -674,23 +680,19 @@
 			path = "Target Support Files/Pods-aBike—Dublin";
 			sourceTree = "<group>";
 		};
-		30EE52F38F73E37DED297AEB48EB2BB2 /* SimulatorStatusMagic */ = {
+		31D577DFFFCDD1EA507E29DF3903C6DC /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				09958DCD24B11DB520294122B3F01DCC /* SDStatusBarManager.h */,
-				346D7444C26E9C4F98694F29CC0BDCFC /* SDStatusBarManager.m */,
-				B7754EEA4A51CA4689A3B0AB3C2057E8 /* SDStatusBarOverrider.h */,
-				670AD4D02BB331867B2FDC5D81319C84 /* SDStatusBarOverriderPost8_3.h */,
-				0015FC80F03B21739E8708A27022DE49 /* SDStatusBarOverriderPost8_3.m */,
-				EDEB26FA0B9E1AEAC6D1C48128BAABC8 /* SDStatusBarOverriderPost9_0.h */,
-				C54B3C40675751A3828F2BB87C4C1A94 /* SDStatusBarOverriderPost9_0.m */,
-				30E41A60A7A5456973363D869582EC8F /* SDStatusBarOverriderPost9_3.h */,
-				94DCEB82C4307935954EC2055D632E94 /* SDStatusBarOverriderPost9_3.m */,
-				9840B4D1D80573AC90F8A2BBF1F2E2B8 /* SDStatusBarOverriderPre8_3.h */,
-				5F4E6F9DABE650D24B6E58AC24843EFA /* SDStatusBarOverriderPre8_3.m */,
-				8F4E5B047996E4C5094DEDB9ED9228A1 /* Support Files */,
+				3821E8D81D4D7855A1EA3AEF99C3B003 /* ANSCompatibility.h */,
+				84EF786B38595871855A31AC15807D99 /* Answers.h */,
+				F2A3AD7913FA55B39759575460E504EB /* CLSAttributes.h */,
+				1E6F454352381F9B257DF91DFA580D43 /* CLSLogging.h */,
+				56E30C2366052840E62A28E1BA49E4AE /* CLSReport.h */,
+				9E7B077E9537AB6E63122654858B8F88 /* CLSStackFrame.h */,
+				F187FB4FFFBD5A02CAC969DB902FA556 /* Crashlytics.h */,
+				4A7FD93307A3E4A02FE07AECE79FDDDB /* Frameworks */,
 			);
-			path = SimulatorStatusMagic;
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		32CE9EBD722AB89B9255DF0884E2E972 /* Pods-aBikeFramework-aBike—MarseilleUITests */ = {
@@ -742,19 +744,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D3B8DC240E4BA572DBFE5F104BCDE56 /* Crashlytics */ = {
+		39A36FB36ED6DD55245BA250263899F0 /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				4CEAA540E890B17E31198A4872C5DD90 /* ANSCompatibility.h */,
-				C667E97FA21925C7B5045853599041FA /* Answers.h */,
-				14027D036712752C9B16FB1B65252547 /* CLSAttributes.h */,
-				AEAC98D1EE6D06660BF5353DA229F06D /* CLSLogging.h */,
-				D84F0255C57EE2381E0735087559A2B3 /* CLSReport.h */,
-				D416C4BDB9B7CF98BD76D84004754797 /* CLSStackFrame.h */,
-				2220A3611C719E46A9516389F13E78FD /* Crashlytics.h */,
-				778E321F98AFAD8B95D3EEFA38BBDBFA /* Frameworks */,
+				E0CB6F06DB7C61538C37E9A61DD961B2 /* FABAttributes.h */,
+				DB756B3071C470E268B75B5E7AB8654D /* Fabric.h */,
+				FAF7A278E6941918543D54EEB5EEC374 /* Frameworks */,
 			);
-			path = Crashlytics;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -765,14 +762,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5FC2FD33A331B6E7B6BEF5015BFE20D5 /* Pods */ = {
+		499D457A6F2FBF0FDD3A9943A2F65C86 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D3B8DC240E4BA572DBFE5F104BCDE56 /* Crashlytics */,
-				F76D26149393FDE6E3D0AA09B4519987 /* Fabric */,
-				30EE52F38F73E37DED297AEB48EB2BB2 /* SimulatorStatusMagic */,
+				5C11145F3B40DE8BF4D160547F4EEBCF /* Info.plist */,
+				A96C86DF213EEE2A79D7B12F99A3239C /* SimulatorStatusMagic.modulemap */,
+				D2EC37CF5EBC4F061D0AA6B499BAEC9F /* SimulatorStatusMagic.xcconfig */,
+				30F2306FCA4FEF46F3A576BAAF2418D5 /* SimulatorStatusMagic-dummy.m */,
+				D7D5DC73E8846AB78A41E82FA63A9A37 /* SimulatorStatusMagic-prefix.pch */,
+				F14E0B3B31DFD5D6EA898ECB7B1D3E86 /* SimulatorStatusMagic-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SimulatorStatusMagic";
+			sourceTree = "<group>";
+		};
+		4A7FD93307A3E4A02FE07AECE79FDDDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				647B5944043AA89768D8D52873B3DBDF /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		636800BF9FD60DF4CD201EC67AF80ABA /* Targets Support Files */ = {
@@ -843,37 +852,15 @@
 			path = "Target Support Files/Pods-aBike—Paris";
 			sourceTree = "<group>";
 		};
-		778E321F98AFAD8B95D3EEFA38BBDBFA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BD60EBBB97624FB6914582A726C6E2F7 /* Crashlytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				5FC2FD33A331B6E7B6BEF5015BFE20D5 /* Pods */,
+				D90953A1DDFD6F3EF48A32D8D9686315 /* Pods */,
 				387B841191D9B9A221F83D089996237D /* Products */,
 				636800BF9FD60DF4CD201EC67AF80ABA /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8F4E5B047996E4C5094DEDB9ED9228A1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5AEEEEA0DBB8C52187F3C912FEE629DC /* Info.plist */,
-				6EE5758C58B6CCD9EC608A52FCE6402E /* SimulatorStatusMagic.modulemap */,
-				0BECFD19D20F87B51FE730EDE8760D8C /* SimulatorStatusMagic.xcconfig */,
-				4F3F414385CB545F7CA97828EA6E2D9C /* SimulatorStatusMagic-dummy.m */,
-				D1361521F6025C0A63F631256899B58E /* SimulatorStatusMagic-prefix.pch */,
-				F3015A8D2D332BAA0BFB5A0F1C73E53A /* SimulatorStatusMagic-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SimulatorStatusMagic";
 			sourceTree = "<group>";
 		};
 		935464F6057D9D50FC93DB620B536B51 /* Pods-aBikeFramework-aBike—NantesUITests */ = {
@@ -1076,14 +1063,6 @@
 			path = "Target Support Files/Pods-aBikeFramework-aBike—ParisUITests";
 			sourceTree = "<group>";
 		};
-		D1B0DBF435A78040BB92F53BE9272006 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E52FB2C7E95690B38087960D33D4F271 /* Fabric.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D8033A9CB36AA016FD4DA7026BC3B11D /* Pods-aBikeFramework-aBike—LyonUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1102,6 +1081,16 @@
 			);
 			name = "Pods-aBikeFramework-aBike—LyonUITests";
 			path = "Target Support Files/Pods-aBikeFramework-aBike—LyonUITests";
+			sourceTree = "<group>";
+		};
+		D90953A1DDFD6F3EF48A32D8D9686315 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D577DFFFCDD1EA507E29DF3903C6DC /* Crashlytics */,
+				39A36FB36ED6DD55245BA250263899F0 /* Fabric */,
+				E3C96C5632B4E986EF4AE475A9FAF6A2 /* SimulatorStatusMagic */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D92A45D6C8D4E32508CB1D9AE89C90A0 /* Pods-aBikeFramework-aBike—DublinUITests */ = {
@@ -1162,6 +1151,27 @@
 			);
 			name = "Pods-aBikeFramework";
 			path = "Target Support Files/Pods-aBikeFramework";
+			sourceTree = "<group>";
+		};
+		E3C96C5632B4E986EF4AE475A9FAF6A2 /* SimulatorStatusMagic */ = {
+			isa = PBXGroup;
+			children = (
+				FDB32363C3B07229C396A724A47EFB16 /* SDStatusBarManager.h */,
+				A8BF55D3AC7E9D1D532A96C267CA0AF6 /* SDStatusBarManager.m */,
+				93B562D697086D89BD35DBC8DB1DEE5D /* SDStatusBarOverrider.h */,
+				ECA2385226CF413C441E5254956E758B /* SDStatusBarOverriderPost10_0.h */,
+				C8C872C31482ACE58757A8C7A04B9546 /* SDStatusBarOverriderPost10_0.m */,
+				4579E70D1E04DA142EB789A94968441D /* SDStatusBarOverriderPost8_3.h */,
+				A615FD67F4F76200ACD5AC848B1268B5 /* SDStatusBarOverriderPost8_3.m */,
+				F96B72230DB931700CD9A7A6AD585CF6 /* SDStatusBarOverriderPost9_0.h */,
+				24E7D44348DB66C067BD128D5438AB16 /* SDStatusBarOverriderPost9_0.m */,
+				1A22952FA0835C55AFBACA4568D74367 /* SDStatusBarOverriderPost9_3.h */,
+				27ACFD4A2FF308EAD213072487BA22D8 /* SDStatusBarOverriderPost9_3.m */,
+				270841E0EF814C36DB4F7A2296D2B3BE /* SDStatusBarOverriderPre8_3.h */,
+				BBD07C12ADB0B804AC4442529FC7A714 /* SDStatusBarOverriderPre8_3.m */,
+				499D457A6F2FBF0FDD3A9943A2F65C86 /* Support Files */,
+			);
+			path = SimulatorStatusMagic;
 			sourceTree = "<group>";
 		};
 		EBC95ADB7E1695F676249F4E0C998AC7 /* Pods-aBikeFramework-aBike—ToulouseUITests */ = {
@@ -1233,12 +1243,12 @@
 			path = "Target Support Files/Pods-aBikeFramework-aBike—MulhouseUITests";
 			sourceTree = "<group>";
 		};
-		F76D26149393FDE6E3D0AA09B4519987 /* Fabric */ = {
+		FAF7A278E6941918543D54EEB5EEC374 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1B0DBF435A78040BB92F53BE9272006 /* Frameworks */,
+				8A01DE00D0430595428C145C121BD44A /* Fabric.framework */,
 			);
-			path = Fabric;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1284,25 +1294,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B3D6299AAB01945C07B2B82520DBF52 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4850CF8BF50102438D7A41A061FEFF3 /* SDStatusBarManager.h in Headers */,
-				237B01E08E0A0AC98885340CE0846289 /* SDStatusBarOverrider.h in Headers */,
-				012714493F837D6563B2F4E54C2C1B59 /* SDStatusBarOverriderPost8_3.h in Headers */,
-				A89F3A447588F0FAAF3DA5E336ADCB99 /* SDStatusBarOverriderPost9_0.h in Headers */,
-				9A38B58D381E2010AF86FD738C45C0FD /* SDStatusBarOverriderPost9_3.h in Headers */,
-				5A335503F50DA689160A8A0FDA63F35A /* SDStatusBarOverriderPre8_3.h in Headers */,
-				8FBD4547A2055017771A556D226538D9 /* SimulatorStatusMagic-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		33B4E49F70871A183ED47A1B4508B8A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4CC53605992A00C0F45D8E69622AD764 /* Pods-aBikeFramework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E0B6AA5486AD7151715AA3A19E8936F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67F314A8F16412BA5ACBBF18E002223 /* SDStatusBarManager.h in Headers */,
+				BEA5FAA71044B1B83F7E2CA8A46A2C26 /* SDStatusBarOverrider.h in Headers */,
+				4832FA9F01E29E033C8A5B4B7C9EF513 /* SDStatusBarOverriderPost10_0.h in Headers */,
+				07997548C48FD1DF38BE0991F5E15B9B /* SDStatusBarOverriderPost8_3.h in Headers */,
+				D6424649A92A478FAEF1EC0EF3276408 /* SDStatusBarOverriderPost9_0.h in Headers */,
+				8869417B0FE563B7D9198F35A04DC4B5 /* SDStatusBarOverriderPost9_3.h in Headers */,
+				BBEC84D84B48EB0D6C8BD38FBD41B66B /* SDStatusBarOverriderPre8_3.h in Headers */,
+				6E854E6CD4E6259A1BD46F3806D19E34 /* SimulatorStatusMagic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1731,9 +1742,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BD0BEBBDF9F406875B6186E015E9F7F /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
 			buildPhases = (
-				C6A415332A599825EF85F5593B3BC09E /* Sources */,
+				6AE145E6D52DB88D7FC0883B063C3394 /* Sources */,
 				D7BDFD66B6CE0E80B5585E3284CA0369 /* Frameworks */,
-				2B3D6299AAB01945C07B2B82520DBF52 /* Headers */,
+				3E0B6AA5486AD7151715AA3A19E8936F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1942,6 +1953,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AE145E6D52DB88D7FC0883B063C3394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD861CCCB4D0CF564A803AA6867F3C74 /* SDStatusBarManager.m in Sources */,
+				7D7046B9686B0B1486D70CDD0A5CC929 /* SDStatusBarOverriderPost10_0.m in Sources */,
+				00E5417280C3E97A56E479EAE10EE7AA /* SDStatusBarOverriderPost8_3.m in Sources */,
+				618BDAC1D4E545BDA08C1810F1BEA71B /* SDStatusBarOverriderPost9_0.m in Sources */,
+				BFA6EE2925B01955F3723127A16B5A8E /* SDStatusBarOverriderPost9_3.m in Sources */,
+				AE54474AE1757A5449C99156386B2A6F /* SDStatusBarOverriderPre8_3.m in Sources */,
+				38E63A579B8FABDBC4642598C755EBA7 /* SimulatorStatusMagic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7016A3C2D42DC44D5ED294FB40A3C049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1995,19 +2020,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B149FEF3953E2216D6B50E02F1CA93 /* Pods-aBikeFramework-aBike—DublinUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6A415332A599825EF85F5593B3BC09E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4653023FCE9D86F4BA9615E8DB2DB8A4 /* SDStatusBarManager.m in Sources */,
-				6A4981047620BE55D0C52788217E7C0B /* SDStatusBarOverriderPost8_3.m in Sources */,
-				0E07884D1F5D28870B95CAD74EFF026E /* SDStatusBarOverriderPost9_0.m in Sources */,
-				749493DDA24B177A950F2F490B0FECBA /* SDStatusBarOverriderPost9_3.m in Sources */,
-				384DEDF24A11E586135CCBF1640D82C8 /* SDStatusBarOverriderPre8_3.m in Sources */,
-				3EB0CB7F3C6A51A6F48751E30E5C1BE3 /* SimulatorStatusMagic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2526,7 +2538,7 @@
 		};
 		314C762B0700E9DE80955F19CC8648C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BECFD19D20F87B51FE730EDE8760D8C /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = D2EC37CF5EBC4F061D0AA6B499BAEC9F /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -3723,7 +3735,7 @@
 		};
 		80F41E7CF39DDE2E708A315BF0416E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BECFD19D20F87B51FE730EDE8760D8C /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = D2EC37CF5EBC4F061D0AA6B499BAEC9F /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -4742,7 +4754,7 @@
 		};
 		D63553ABFCA86A1BD770BAFCD4936410 /* Tests */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BECFD19D20F87B51FE730EDE8760D8C /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = D2EC37CF5EBC4F061D0AA6B499BAEC9F /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -4771,7 +4783,7 @@
 		};
 		E0934D94E1DF951270CDCF4B1E864665 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BECFD19D20F87B51FE730EDE8760D8C /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = D2EC37CF5EBC4F061D0AA6B499BAEC9F /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
