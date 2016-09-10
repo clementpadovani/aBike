@@ -311,6 +311,8 @@
 		59EC267A1CA86D7200D77605 /* NSCoder+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC26771CA86D7200D77605 /* NSCoder+VEAdditions.m */; };
 		59ECB6E31D3AA7FD0094AA68 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 59ECB6E51D3AA7FD0094AA68 /* Localizable.stringsdict */; };
 		59F16B761C8A2A2800607B80 /* VEMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		59F24FBD1D84520800A0A500 /* UILabel+VEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F24FBB1D84520800A0A500 /* UILabel+VEAdditions.h */; };
+		59F24FBE1D84520800A0A500 /* UILabel+VEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F24FBC1D84520800A0A500 /* UILabel+VEAdditions.m */; };
 		59F9ECBD1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBE1C54EED00007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
 		59F9ECBF1C54EED10007D069 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AAFCD21C497C4100ED7202 /* SnapshotHelper.swift */; };
@@ -1024,6 +1026,8 @@
 		59ECB6E61D3AA8070094AA68 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "en-GB"; path = "en-GB.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
 		59ECB6E71D3AA8080094AA68 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		59F16B751C8A2A2800607B80 /* VEMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMainThreadGuard.m; sourceTree = "<group>"; };
+		59F24FBB1D84520800A0A500 /* UILabel+VEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VEAdditions.h"; sourceTree = "<group>"; };
+		59F24FBC1D84520800A0A500 /* UILabel+VEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VEAdditions.m"; sourceTree = "<group>"; };
 		59F263801D3A79A50093F417 /* aBike_3_2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aBike_3_2_0.xcdatamodel; sourceTree = "<group>"; };
 		59F9EC761C54ED8D0007D069 /* aBike—BruxellesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aBike—BruxellesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F9EC7A1C54ED8D0007D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1666,6 +1670,8 @@
 				593ADA561C495394003B686A /* VETimeFormatter.m */,
 				59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */,
 				59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */,
+				59F24FBB1D84520800A0A500 /* UILabel+VEAdditions.h */,
+				59F24FBC1D84520800A0A500 /* UILabel+VEAdditions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -2299,6 +2305,7 @@
 				593ADAF01C495394003B686A /* VEStationAnnotationView.h in Headers */,
 				593ADB041C495394003B686A /* VEConsul.h in Headers */,
 				593ADAC31C495394003B686A /* VETimeFormatter.h in Headers */,
+				59F24FBD1D84520800A0A500 /* UILabel+VEAdditions.h in Headers */,
 				59EC26781CA86D7200D77605 /* NSCoder+VEAdditions.h in Headers */,
 				59609E481D3A7C4A00A18EED /* VEStation.h in Headers */,
 				59FEA5D31D1FFB6F000F0B1C /* VETimerStationEnableNotificationsView.h in Headers */,
@@ -4352,6 +4359,7 @@
 				59609E491D3A7C4A00A18EED /* VEStation.m in Sources */,
 				593ADAF71C495394003B686A /* VEStationsScrollView.m in Sources */,
 				593ADAE31C495394003B686A /* UIColor+MainColor.m in Sources */,
+				59F24FBE1D84520800A0A500 /* UILabel+VEAdditions.m in Sources */,
 				59ABE1DE1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m in Sources */,
 				593ADAF91C495394003B686A /* VEStationsView.m in Sources */,
 				593ADAC01C495394003B686A /* VEConnectionManager.m in Sources */,
