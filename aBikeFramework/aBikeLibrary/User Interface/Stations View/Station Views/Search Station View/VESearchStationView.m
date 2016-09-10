@@ -90,6 +90,9 @@
 	[searchLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
 
 	UISearchBar *searchBar = [[UISearchBar alloc] init];
+    
+    if ([searchBar respondsToSelector: @selector(setTextContentType:)])
+        [searchBar setTextContentType: UITextContentTypeLocation];
 
 	[searchBar setSearchBarStyle: UISearchBarStyleMinimal];
 
