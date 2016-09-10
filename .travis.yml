@@ -46,7 +46,7 @@ before_install:
     - ./Vendor/add-key.sh
     - ./Vendor/add-constants.sh
 script:
-    - xcodebuild test -scheme "aBikeFramework" -workspace "aBike—Lyon.xcworkspace" -sdk $CP_IOS_SIMULATOR -destination "$CP_IOS_SIMULATOR_OS"
+    - xcodebuild test -quiet -scheme "aBikeFramework" -workspace "aBike—Lyon.xcworkspace" -sdk $CP_IOS_SIMULATOR -destination "$CP_IOS_SIMULATOR_OS"
 after_script:
     - ./Vendor/remove-key.sh
     - ./Vendor/remove-constants.sh
