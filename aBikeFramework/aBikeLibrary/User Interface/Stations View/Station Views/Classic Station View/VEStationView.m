@@ -110,7 +110,10 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(userInCityRectValueChanged:) name: kVELocationManagerUserInCityRectDidChangeNotification object: nil];
 		
-		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(contentSizeDidChange:) name: UIContentSizeCategoryDidChangeNotification object: nil];
+        if (![UILabel conformsToProtocol: @protocol(UIContentSizeCategoryAdjusting)])
+        {
+            [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(contentSizeDidChange:) name: UIContentSizeCategoryDidChangeNotification object: nil];
+        }
 		
 		[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(unitSystemDidChange:) name: kVETimeFormatterUnitsChangedNotification object: nil];
 		

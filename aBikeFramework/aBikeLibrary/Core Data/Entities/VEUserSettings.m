@@ -362,7 +362,11 @@ static VEUserSettings *_sharedSettings = nil;
     [self didChangeValueForKey: NSStringFromSelector(@selector(largerCityRect))];
     
     if (notifies)
-        [[NSNotificationCenter defaultCenter] postNotificationName: kVEUserSettingsCityRectChangedValueNotification object: nil userInfo: nil];
+    {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter] postNotificationName: kVEUserSettingsCityRectChangedValueNotification object: nil userInfo: nil];
+        });
+    }
 }
 
 - (BOOL) hasValidCityRect
