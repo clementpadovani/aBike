@@ -29,7 +29,11 @@
 
 - (void) ve_setTransitionProgress: (CGFloat) ve_transitionProgress
 {
+    [self willChangeValueForKey: NSStringFromSelector(@selector(ve_transitionProgress))];
+    
     objc_setAssociatedObject(self, @selector(ve_transitionProgress), @(ve_transitionProgress), OBJC_ASSOCIATION_COPY_NONATOMIC);
+    
+    [self didChangeValueForKey: NSStringFromSelector(@selector(ve_transitionProgress))];
 }
 
 @end
