@@ -68,6 +68,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 @property (nonatomic, strong) UIPreviewInteraction *previewInteraction;
 
+@property (nonatomic, assign) BOOL hasInteractionStarted;
+
 #endif
 
 - (void) setupStationNameAndNumberLabels;
@@ -357,7 +359,7 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
     #if TARGET_OS_IOS
     
-        [directionsButton addTarget: self action: @selector(directionsDidCancel) forControlEvents: UIControlEventTouchCancel];
+//        [directionsButton addTarget: self action: @selector(directionsDidCancel) forControlEvents: UIControlEventTouchCancel];
     
     #endif
     
@@ -389,9 +391,27 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 - (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
 {
-    [self setShowingDirections: YES];
+    if ([self hasInteractionStarted])
+    {
+        [self setHasInteractionStarted: NO];
+        
+        if (![self isShowingDirections])
+            [self toggleDirections];
+        else if ([self isShowingDirections] &&
+                 ended)
+            [self toggleDirections];
+        else
+            [self setHasInteractionStarted: YES];
+    }
     
     [[self delegate] previewInteraction: previewInteraction didUpdatePreviewTransition: transitionProgress ended: ended];
+}
+
+- (BOOL) previewInteractionShouldBegin: (UIPreviewInteraction *) previewInteraction
+{
+    [self setHasInteractionStarted: YES];
+    
+    return YES;
 }
 
 - (void) previewInteractionDidCancel: (UIPreviewInteraction *) previewInteraction
@@ -927,7 +947,6 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	[[self directionsButton] setSelected: showingDirections];
 	
 	[[self delegate] loadDirectionsInfoWithRoute: showingDirections ? [self currentStationRoute] : nil forStation: [self currentStation]];
-
 }
 
 - (UIFont *) availableFont

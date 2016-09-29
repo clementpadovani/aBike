@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign, setter = ve_setTransitionProgress:) CGFloat ve_transitionProgress;
 
+@property (nonatomic, assign, setter = ve_setHasFullyShown:) BOOL ve_hasFullyShown;
+
 @end

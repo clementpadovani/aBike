@@ -585,12 +585,22 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 - (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
 {
-    [[self currentDirectionsPolyline] ve_setTransitionProgress: ended ? 1.f : transitionProgress];
+    if (![[self currentDirectionsPolyline] ve_hasFullyShown])
+    {
+        if (ended)
+            [[self currentDirectionsPolyline] ve_setHasFullyShown: YES];
+        
+        [[self currentDirectionsPolyline] ve_setTransitionProgress: ended ? 1.f : transitionProgress];
+    }
+    else
+    {
+        [[self currentDirectionsPolyline] ve_setTransitionProgress: ended ? .0f : 1.f - transitionProgress];
+    }
 }
 
 - (void) previewInteractionDidCancel: (UIPreviewInteraction *) previewInteraction
 {
-    [self loadDirectionsInfoWithRoute: nil forStation: [self currentStation]];
+//    [self loadDirectionsInfoWithRoute: nil forStation: [self currentStation]];
 }
 
 #endif
