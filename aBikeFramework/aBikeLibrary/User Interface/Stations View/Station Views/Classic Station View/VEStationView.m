@@ -22,7 +22,15 @@
 
 static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
+#if TARGET_OS_IOS
+
+@interface VEStationView () <UIPreviewInteractionDelegate>
+
+#else
+
 @interface VEStationView ()
+
+#endif
 
 @property (nonatomic, weak) UILabel *stationNameLabel;
 @property (nonatomic, weak) UILabel *stationNumberLabel;
@@ -361,7 +369,7 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
         {
             UIPreviewInteraction *previewInteraction = [[UIPreviewInteraction alloc] initWithView: directionsButton];
             
-            [previewInteraction setDelegate: [self delegate]];
+            [previewInteraction setDelegate: self];
             
             [self setPreviewInteraction: previewInteraction];
         }
@@ -379,15 +387,24 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 #if TARGET_OS_IOS
 
-- (void) setDelegate: (id <VEStationViewDelegate>) delegate
+- (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
 {
-    _delegate = delegate;
+    [self setShowingDirections: YES];
     
-    [[self previewInteraction] setDelegate: delegate];
+    [[self delegate] previewInteraction: previewInteraction didUpdatePreviewTransition: transitionProgress ended: ended];
+}
+
+- (void) previewInteractionDidCancel: (UIPreviewInteraction *) previewInteraction
+{
+    [self setShowingDirections: NO];
+    
+    [[self delegate] previewInteractionDidCancel: previewInteraction];
 }
 
 - (void) directionsDidCancel
 {
+    [self setShowingDirections: NO];
+    
     [[self previewInteraction] cancelInteraction];
 }
 
