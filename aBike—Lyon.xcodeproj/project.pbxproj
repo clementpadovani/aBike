@@ -1646,31 +1646,16 @@
 		593ADA441C495394003B686A /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				593ADA451C495394003B686A /* CLLocation+Additions.h */,
-				593ADA461C495394003B686A /* CLLocation+Additions.m */,
-				59BA8FD11C4BE5CE0053C37E /* CLSimulationManager.h */,
-				593ADA471C495394003B686A /* NSBundle+VELibrary.h */,
-				593ADA481C495394003B686A /* NSBundle+VELibrary.m */,
-				593ADA491C495394003B686A /* NSNumber+Extensions.h */,
-				593ADA4A1C495394003B686A /* NSNumber+Extensions.m */,
-				593ADA4B1C495394003B686A /* NSString+NumberOfLines.h */,
-				593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */,
-				593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */,
-				593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */,
-				59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */,
-				59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */,
-				593ADA511C495394003B686A /* VEConnectionManager.h */,
-				593ADA521C495394003B686A /* VEConnectionManager.m */,
-				593ADA531C495394003B686A /* VELocationManager.h */,
-				593ADA541C495394003B686A /* VELocationManager.m */,
-				594D7FEA1C6FEF1900492477 /* VEReachability.h */,
-				594D7FEB1C6FEF1900492477 /* VEReachability.m */,
-				593ADA551C495394003B686A /* VETimeFormatter.h */,
-				593ADA561C495394003B686A /* VETimeFormatter.m */,
-				59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */,
-				59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */,
-				59F24FBB1D84520800A0A500 /* UILabel+VEAdditions.h */,
-				59F24FBC1D84520800A0A500 /* UILabel+VEAdditions.m */,
+				59D5D3B21D9C9C9400F7BAA1 /* Core Location */,
+				59D5D3B31D9C9C9A00F7BAA1 /* NSBundle */,
+				59D5D3B41D9C9CA100F7BAA1 /* NSNumber */,
+				59D5D3B51D9C9CA700F7BAA1 /* NSString */,
+				59D5D3B81D9C9CBE00F7BAA1 /* UIImage */,
+				59D5D3BA1D9C9CCB00F7BAA1 /* Connection Manager */,
+				59D5D3BC1D9C9CDC00F7BAA1 /* Reachability */,
+				59D5D3BD1D9C9CEA00F7BAA1 /* Time Formatter */,
+				59D5D3BE1D9C9CF000F7BAA1 /* WCSession */,
+				59D5D3BF1D9C9CF500F7BAA1 /* UILabel */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -2088,6 +2073,133 @@
 				59BE2E441C64984C00D5718B /* Info.plist */,
 			);
 			path = "aBike—CréteilUITests";
+			sourceTree = "<group>";
+		};
+		59D5D3B21D9C9C9400F7BAA1 /* Core Location */ = {
+			isa = PBXGroup;
+			children = (
+				59D5D3BB1D9C9CD500F7BAA1 /* Location Manager */,
+				59BA8FD11C4BE5CE0053C37E /* CLSimulationManager.h */,
+				59D5D3B91D9C9CC500F7BAA1 /* Circa Equal */,
+			);
+			name = "Core Location";
+			sourceTree = "<group>";
+		};
+		59D5D3B31D9C9C9A00F7BAA1 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA471C495394003B686A /* NSBundle+VELibrary.h */,
+				593ADA481C495394003B686A /* NSBundle+VELibrary.m */,
+			);
+			name = NSBundle;
+			sourceTree = "<group>";
+		};
+		59D5D3B41D9C9CA100F7BAA1 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA491C495394003B686A /* NSNumber+Extensions.h */,
+				593ADA4A1C495394003B686A /* NSNumber+Extensions.m */,
+			);
+			name = NSNumber;
+			sourceTree = "<group>";
+		};
+		59D5D3B51D9C9CA700F7BAA1 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				59D5D3B61D9C9CAD00F7BAA1 /* Number of Lines */,
+				59D5D3B71D9C9CB700F7BAA1 /* Station Name */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		59D5D3B61D9C9CAD00F7BAA1 /* Number of Lines */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA4B1C495394003B686A /* NSString+NumberOfLines.h */,
+				593ADA4C1C495394003B686A /* NSString+NumberOfLines.m */,
+			);
+			name = "Number of Lines";
+			sourceTree = "<group>";
+		};
+		59D5D3B71D9C9CB700F7BAA1 /* Station Name */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA4D1C495394003B686A /* NSString+ProcessedStationName.h */,
+				593ADA4E1C495394003B686A /* NSString+ProcessedStationName.m */,
+			);
+			name = "Station Name";
+			sourceTree = "<group>";
+		};
+		59D5D3B81D9C9CBE00F7BAA1 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				59ABE1DA1C4BA82D00108AD4 /* UIImage+VEImageAdditions.h */,
+				59ABE1DB1C4BA82D00108AD4 /* UIImage+VEImageAdditions.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		59D5D3B91D9C9CC500F7BAA1 /* Circa Equal */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA451C495394003B686A /* CLLocation+Additions.h */,
+				593ADA461C495394003B686A /* CLLocation+Additions.m */,
+			);
+			name = "Circa Equal";
+			sourceTree = "<group>";
+		};
+		59D5D3BA1D9C9CCB00F7BAA1 /* Connection Manager */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA511C495394003B686A /* VEConnectionManager.h */,
+				593ADA521C495394003B686A /* VEConnectionManager.m */,
+			);
+			name = "Connection Manager";
+			sourceTree = "<group>";
+		};
+		59D5D3BB1D9C9CD500F7BAA1 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA531C495394003B686A /* VELocationManager.h */,
+				593ADA541C495394003B686A /* VELocationManager.m */,
+			);
+			name = "Location Manager";
+			sourceTree = "<group>";
+		};
+		59D5D3BC1D9C9CDC00F7BAA1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				594D7FEA1C6FEF1900492477 /* VEReachability.h */,
+				594D7FEB1C6FEF1900492477 /* VEReachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		59D5D3BD1D9C9CEA00F7BAA1 /* Time Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				593ADA551C495394003B686A /* VETimeFormatter.h */,
+				593ADA561C495394003B686A /* VETimeFormatter.m */,
+			);
+			name = "Time Formatter";
+			sourceTree = "<group>";
+		};
+		59D5D3BE1D9C9CF000F7BAA1 /* WCSession */ = {
+			isa = PBXGroup;
+			children = (
+				59ABB4361CD5129800570B65 /* WCSession+VEStateAdditions.h */,
+				59ABB4371CD5129800570B65 /* WCSession+VEStateAdditions.m */,
+			);
+			name = WCSession;
+			sourceTree = "<group>";
+		};
+		59D5D3BF1D9C9CF500F7BAA1 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				59F24FBB1D84520800A0A500 /* UILabel+VEAdditions.h */,
+				59F24FBC1D84520800A0A500 /* UILabel+VEAdditions.m */,
+			);
+			name = UILabel;
 			sourceTree = "<group>";
 		};
 		59EC26441CA8549400D77605 /* aBike—Lyon WatchKit App */ = {
