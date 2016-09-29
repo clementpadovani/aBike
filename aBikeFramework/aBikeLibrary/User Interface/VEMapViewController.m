@@ -1135,15 +1135,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	return mapViewHeight;
 }
 
-- (void) setCurrentStation: (VEStation *) currentStation
-{
-    _currentStation = currentStation;
-    
-    
-    
-//    NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:<#(nonnull NSString *)#>]
-}
-
 - (void) takeScreenshot: (void (^)(UIImage *image)) completion
 {
 	MKMapView *mapView = [[self mapContainerView] mapView];
@@ -1639,8 +1630,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	VEStation *station = (VEStation *) [(VEStationAnnotationView *) view annotation];
 	
 	NSUInteger stationIndex = [[self stations] indexOfObject: station];
-    
-    [self setCurrentStation: station];
 	
 	[[self stationsView] setCurrentStationIndex: stationIndex];
 }
