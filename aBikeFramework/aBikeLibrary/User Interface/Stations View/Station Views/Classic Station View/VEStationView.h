@@ -18,7 +18,15 @@ static NSString * const kVEStationViewDidStartLoadingDirectionsNotification = @"
 
 static NSString * const kVEStationViewDidLoadDirectionsNotification = @"kVEStationViewDidLoadDirectionsNotification";
 
+#if TARGET_OS_IOS
+
+@protocol VEStationViewDelegate <UIPreviewInteractionDelegate>
+
+#else
+
 @protocol VEStationViewDelegate <NSObject>
+
+#endif
 
 @required
 
