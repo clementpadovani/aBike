@@ -47,6 +47,8 @@ static const CGFloat kVERouteRendererDirectionsRouteAlpha = .85f;
             [self setAlpha: kVERouteRendererDirectionsRouteAlpha];
         else
             [self setAlpha: [[self polyline] ve_transitionProgress]];
+        
+        CPLog(@"set alpha: %f", [self alpha]);
     }
     else
     {

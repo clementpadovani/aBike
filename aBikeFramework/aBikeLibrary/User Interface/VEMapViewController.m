@@ -35,6 +35,7 @@
 #import "VEManagedObjectContext.h"
 #import "CPCoreDataManager.h"
 #import "VELightStation.h"
+#import "MKPolyline+VETransitionAdditions.h"
 
 static NSString * const kVEMapViewControllerStationAnnotationViewReuseIdentifier = @"kVEMapViewControllerStationAnnotationViewReuseIdentifier";
 
@@ -112,6 +113,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 @property (strong, nonatomic) MKDirections *directions;
 
 @property (strong, nonatomic) MKRoute *directionsRoute;
+
+@property (nonatomic, strong) MKPolyline *currentDirectionsPolyline;
 
 @property (nonatomic, getter = isShowingDirections) BOOL showingDirections;
 
@@ -571,6 +574,27 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //	return polyline;
 //}
 
+#if TARGET_OS_IOS
+
+- (BOOL) previewInteractionShouldBegin: (UIPreviewInteraction *) previewInteraction
+{
+    CPLog(@"%@ will begin", previewInteraction);
+    
+    return YES;
+}
+
+- (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
+{
+    [[self currentDirectionsPolyline] ve_setTransitionProgress: ended ? 1.f : transitionProgress];
+}
+
+- (void) previewInteractionDidCancel: (UIPreviewInteraction *) previewInteraction
+{
+    [self loadDirectionsInfoWithRoute: nil forStation: [self currentStation]];
+}
+
+#endif
+
 - (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (VEStation *) aStation
 {	
 	MKMapView *mapView = [[self mapContainerView] mapView];
@@ -585,8 +609,12 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //		
 //		[mapView addOverlay: polyline level: MKOverlayLevelAboveRoads];
 		
-		[mapView addOverlay: [directionsRoute polyline] level: MKOverlayLevelAboveRoads];
+        MKPolyline *currentPolyline = [directionsRoute polyline];
+        
+		[mapView addOverlay: currentPolyline level: MKOverlayLevelAboveRoads];
 		
+        [self setCurrentDirectionsPolyline: currentPolyline];
+        
 		[self setShowingDirections: YES];
 		
 		[self performMapViewAction: VEMapViewControllerMapActionShowOverlay];
@@ -597,8 +625,10 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	}
 	else
 	{		
-		[mapView removeOverlay: [[self directionsRoute] polyline]];
+		[mapView removeOverlay: [self currentDirectionsPolyline]];
 		
+        [self setCurrentDirectionsPolyline: nil];
+        
 		[self setDirectionsRoute: nil];
 		
 		[self performMapViewAction: VEMapViewControllerMapActionShowAnnotations];

@@ -58,7 +58,7 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 #if TARGET_OS_IOS
 
-@property (nonatomic, weak) UIPreviewInteraction *previewInteraction;
+@property (nonatomic, strong) UIPreviewInteraction *previewInteraction;
 
 #endif
 
@@ -378,6 +378,13 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 }
 
 #if TARGET_OS_IOS
+
+- (void) setDelegate: (id <VEStationViewDelegate>) delegate
+{
+    _delegate = delegate;
+    
+    [[self previewInteraction] setDelegate: delegate];
+}
 
 - (void) directionsDidCancel
 {
