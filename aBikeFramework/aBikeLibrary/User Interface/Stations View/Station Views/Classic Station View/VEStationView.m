@@ -56,6 +56,12 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
+#if TARGET_OS_IOS
+
+@property (nonatomic, weak) UIPreviewInteraction *previewInteraction;
+
+#endif
+
 - (void) setupStationNameAndNumberLabels;
 
 - (void) setupHorizontalSeperatorView;
@@ -341,8 +347,27 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
 	[directionsButton addTarget: self action: @selector(toggleDirections) forControlEvents: UIControlEventTouchUpInside];
 	
+    #if TARGET_OS_IOS
+    
+        [directionsButton addTarget: self action: @selector(directionsDidCancel) forControlEvents: UIControlEventTouchCancel];
+    
+    #endif
+    
 	[directionsButton setTranslatesAutoresizingMaskIntoConstraints: NO];
+    
+    #if TARGET_OS_IOS
+    
+        if ([UIPreviewInteraction class])
+        {
+            UIPreviewInteraction *previewInteraction = [[UIPreviewInteraction alloc] initWithView: directionsButton];
+            
+            [previewInteraction setDelegate: [self delegate]];
+            
+            [self setPreviewInteraction: previewInteraction];
+        }
 	
+    #endif
+    
 	[self addSubview: directionsLabel];
 	
 	[self addSubview: directionsButton];
@@ -351,6 +376,15 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
 	_directionsButton = directionsButton;
 }
+
+#if TARGET_OS_IOS
+
+- (void) directionsDidCancel
+{
+    [[self previewInteraction] cancelInteraction];
+}
+
+#endif
 
 - (void) updateConstraints
 {
