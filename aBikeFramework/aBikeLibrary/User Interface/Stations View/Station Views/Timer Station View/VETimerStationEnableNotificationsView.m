@@ -43,7 +43,7 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
 	return self;
 }
 
-- (void)layoutSubviews
+- (void) layoutSubviews
 {
     [super layoutSubviews];
     
@@ -98,6 +98,15 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
 {
     NSString *alertMessage = CPLocalizedString(@"Enable Alerts for the ride timer", nil);
     
+    UINotificationFeedbackGenerator *feedbackGenerator = nil;
+    
+    if ([UINotificationFeedbackGenerator class])
+    {
+        feedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];
+        
+        [feedbackGenerator prepare];
+    }
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle: [[NSBundle mainBundle] ve_applicationName]
                                                                              message: alertMessage
                                                                       preferredStyle: UIAlertControllerStyleAlert];
@@ -110,6 +119,8 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
                                                         style: UIAlertActionStyleDefault
                                                       handler: ^(UIAlertAction * _Nonnull action) {
                                                           
+                                                          [feedbackGenerator notificationOccurred: UINotificationFeedbackTypeSuccess];
+                                                          
                                                           [self registerForNotifications];
                                                           
                                                       }];
@@ -120,6 +131,8 @@ static NSString * const kVETimerStationEnableNotificationsViewHasRegisteredForNo
     
     if ([alertController respondsToSelector: @selector(setPreferredAction:)])
         [alertController setPreferredAction: yesAction];
+    
+    [feedbackGenerator notificationOccurred: UINotificationFeedbackTypeWarning];
     
     UIViewController *topViewController = [[VEConsul sharedConsul] mapViewController];
     
