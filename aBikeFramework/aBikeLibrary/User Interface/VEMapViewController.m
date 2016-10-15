@@ -574,7 +574,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 //	return polyline;
 //}
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && kEnablePreviewInteractions
 
 - (BOOL) previewInteractionShouldBegin: (UIPreviewInteraction *) previewInteraction
 {
@@ -614,11 +614,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
-    if (!directionsRoute)
-        CPLog(@"remove route");
-    else
-        CPLog(@"add route");
-    
 	if (directionsRoute)
 	{
 		[self setDirectionsRoute: directionsRoute];

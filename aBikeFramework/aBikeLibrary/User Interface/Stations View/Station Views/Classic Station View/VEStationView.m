@@ -21,7 +21,7 @@
 #import "VEMapViewController.h"
 #import "VEDirectionsButton.h"
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && kEnablePreviewInteractions
 
 @interface VEStationView () <UIPreviewInteractionDelegate>
 
@@ -63,7 +63,7 @@
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && kEnablePreviewInteractions
 
 @property (nonatomic, strong) UIPreviewInteraction *previewInteraction;
 
@@ -324,12 +324,6 @@
 	
 	[directionsButton addTarget: self action: @selector(toggleDirections) forControlEvents: UIControlEventTouchUpInside];
 	
-    #if TARGET_OS_IOS
-    
-//        [directionsButton addTarget: self action: @selector(directionsDidCancel) forControlEvents: UIControlEventTouchCancel];
-    
-    #endif
-    
 	[directionsButton setTranslatesAutoresizingMaskIntoConstraints: NO];
     
 	[self addSubview: directionsLabel];
@@ -340,7 +334,7 @@
 	
 	_directionsButton = directionsButton;
     
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && kEnablePreviewInteractions
     
     if ([UIPreviewInteraction class])
     {
@@ -354,7 +348,7 @@
 #endif
 }
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && kEnablePreviewInteractions
 
 - (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
 {
