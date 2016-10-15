@@ -62,3 +62,4 @@ FOUNDATION_EXPORT const unsigned char aBikeFrameworkVersionString[];
 #import <aBikeFramework/VEStationsView.h>
 #import <aBikeFramework/VETimeFormatter.h>
 #import <aBikeFramework/VEWindow.h>
+#import <aBikeFramework/VEDirectionsButton.h>

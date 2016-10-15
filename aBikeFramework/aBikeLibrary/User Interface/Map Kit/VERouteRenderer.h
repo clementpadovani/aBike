@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+@import MapKit;
+
 @interface VERouteRenderer : MKPolylineRenderer
 
 @end

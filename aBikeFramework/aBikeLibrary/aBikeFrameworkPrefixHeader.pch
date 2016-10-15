@@ -72,6 +72,8 @@ static const NSTimeInterval kDefaultAnimationTime = .5;
 
 #define kNumberOfBikeStationsDefault 5
 
+#define kEnablePreviewInteractions 0
+
 //#define kEnableWatchSupport 0
 
 #if !(TARGET_IPHONE_SIMULATOR)

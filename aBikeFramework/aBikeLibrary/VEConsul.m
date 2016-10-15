@@ -430,6 +430,7 @@ static VEConsul *_sharedConsul = nil;
 		};
 		
 		[VEAlertManager showAlertOfType: VEAlertTypeNoButtons
+                   withNotificationType: UINotificationFeedbackTypeError
 							withConfigurationBlock: configurationBlock
 								withHasSetupBlock: hasSetupBlock
 				  withCompletionBlock: NULL];
@@ -481,9 +482,10 @@ static VEConsul *_sharedConsul = nil;
 				
 				
 				[VEAlertManager showAlertOfType: VEAlertTypeNoButtons
-									withConfigurationBlock: configurationBlock
-										withHasSetupBlock: NULL
-						  withCompletionBlock: NULL];
+                 withNotificationType: UINotificationFeedbackTypeError
+                         withConfigurationBlock: configurationBlock
+                              withHasSetupBlock: NULL
+                            withCompletionBlock: NULL];
 				
 			});
 			

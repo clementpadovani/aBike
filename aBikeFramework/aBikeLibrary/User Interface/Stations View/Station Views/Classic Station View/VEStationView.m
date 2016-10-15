@@ -19,10 +19,17 @@
 #import "VEStation.h"
 
 #import "VEMapViewController.h"
+#import "VEDirectionsButton.h"
 
-static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
+#if TARGET_OS_IOS && kEnablePreviewInteractions
+
+@interface VEStationView () <UIPreviewInteractionDelegate>
+
+#else
 
 @interface VEStationView ()
+
+#endif
 
 @property (nonatomic, weak) UILabel *stationNameLabel;
 @property (nonatomic, weak) UILabel *stationNumberLabel;
@@ -55,6 +62,14 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 @property (nonatomic, assign, readwrite) BOOL loadedDirections;
 
 @property (nonatomic, assign) BOOL hasSetupConstraints;
+
+#if TARGET_OS_IOS && kEnablePreviewInteractions
+
+@property (nonatomic, strong) UIPreviewInteraction *previewInteraction;
+
+@property (nonatomic, assign) BOOL hasInteractionStarted;
+
+#endif
 
 - (void) setupStationNameAndNumberLabels;
 
@@ -304,45 +319,13 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
 	[directionsLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
 	
-	UIButton *directionsButton = [UIButton buttonWithType: UIButtonTypeCustom];
-
-	[directionsButton setEnabled: NO];
-	
-	UIImage *directionsImage = [UIImage imageNamed: @"directionsIcon"
-								   inBundle: [NSBundle ve_libraryResources]
-				  compatibleWithTraitCollection: nil];
-	
-	UIImage *disabledDirectionsImage = [UIImage imageNamed: @"noDirectionsIcon"
-										 inBundle: [NSBundle ve_libraryResources]
-						compatibleWithTraitCollection: nil];
-	
-	UIImage *templateDirectionsImage = [directionsImage imageWithRenderingMode: UIImageRenderingModeAlwaysTemplate];
-
-
-	#if (SCREENSHOTS==1)
-
-	[directionsButton setAccessibilityIdentifier: @"directionsIcon"];
-
-	#endif
-
-	[directionsButton setImage: disabledDirectionsImage forState: UIControlStateDisabled];
-	
-	[directionsButton setImage: templateDirectionsImage forState: UIControlStateNormal];
-	
-	[directionsButton setImage: directionsImage forState: UIControlStateSelected];
-	
-	//[directionsButton setImageEdgeInsets: kDirectionsButtonInsets];
-	
-	[directionsButton setContentEdgeInsets: kDirectionsButtonInsets];
-	
-	//[directionsButton setBackgroundColor: [UIColor greenColor]];
-	
-	//[[directionsButton imageView] setBackgroundColor: [UIColor greenColor]];
+	UIButton *directionsButton = [VEDirectionsButton directionsButton];
+    
 	
 	[directionsButton addTarget: self action: @selector(toggleDirections) forControlEvents: UIControlEventTouchUpInside];
 	
 	[directionsButton setTranslatesAutoresizingMaskIntoConstraints: NO];
-	
+    
 	[self addSubview: directionsLabel];
 	
 	[self addSubview: directionsButton];
@@ -350,7 +333,64 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	_directionsLabel = directionsLabel;
 	
 	_directionsButton = directionsButton;
+    
+#if TARGET_OS_IOS && kEnablePreviewInteractions
+    
+    if ([UIPreviewInteraction class])
+    {
+        UIPreviewInteraction *previewInteraction = [[UIPreviewInteraction alloc] initWithView: directionsButton];
+        
+        [previewInteraction setDelegate: self];
+        
+        [self setPreviewInteraction: previewInteraction];
+    }
+    
+#endif
 }
+
+#if TARGET_OS_IOS && kEnablePreviewInteractions
+
+- (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
+{
+    if (![self hasInteractionStarted])
+    {
+        [[self delegate] loadDirectionsInfoWithRoute: [self currentStationRoute] forStation: [self currentStation]];
+
+        [self setHasInteractionStarted: YES];
+    }
+    else if ([self hasInteractionStarted] &&
+        ended)
+    {
+        [[self delegate] loadDirectionsInfoWithRoute: nil forStation: [self currentStation]];
+        
+        [self setHasInteractionStarted: NO];
+    }
+    
+    [[self delegate] previewInteraction: previewInteraction didUpdatePreviewTransition: transitionProgress ended: ended];
+}
+
+- (BOOL) previewInteractionShouldBegin: (UIPreviewInteraction *) previewInteraction
+{
+//    [self setHasInteractionStarted: YES];
+    
+    return YES;
+}
+
+- (void) previewInteractionDidCancel: (UIPreviewInteraction *) previewInteraction
+{
+    [self setShowingDirections: ![self isShowingDirections]];
+    
+    [[self delegate] previewInteractionDidCancel: previewInteraction];
+}
+
+- (void) directionsDidCancel
+{
+    [self setShowingDirections: NO];
+    
+    [[self previewInteraction] cancelInteraction];
+}
+
+#endif
 
 - (void) updateConstraints
 {
@@ -869,7 +909,6 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	[[self directionsButton] setSelected: showingDirections];
 	
 	[[self delegate] loadDirectionsInfoWithRoute: showingDirections ? [self currentStationRoute] : nil forStation: [self currentStation]];
-
 }
 
 - (UIFont *) availableFont

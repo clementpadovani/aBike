@@ -7,8 +7,8 @@
 //
 
 #import "VERouteRenderer.h"
-
 #import "UIColor+MainColor.h"
+#import "MKPolyline+VETransitionAdditions.h"
 
 static const CGFloat kVERouteRendererDirectionsRouteAlpha = .85f;
 
@@ -23,9 +23,37 @@ static const CGFloat kVERouteRendererDirectionsRouteAlpha = .85f;
 		[self setStrokeColor: [UIColor ve_mapViewControllerOverlayStrokeColor]];
 		
 		[self setAlpha: kVERouteRendererDirectionsRouteAlpha];
+        
+        [polyline addObserver: self
+                   forKeyPath: NSStringFromSelector(@selector(ve_transitionProgress))
+                      options: NSKeyValueObservingOptionNew
+                      context: NULL];
 	}
 	
 	return self;
+}
+
+- (void) dealloc
+{
+    [[self polyline] removeObserver: self
+                         forKeyPath: NSStringFromSelector(@selector(ve_transitionProgress))];
+}
+
+- (void) observeValueForKeyPath: (NSString *) keyPath ofObject: (id) object change: (NSDictionary <NSKeyValueChangeKey, id> *) change context: (void *) context
+{
+    if ([keyPath isEqualToString: NSStringFromSelector(@selector(ve_transitionProgress))])
+    {
+        if ([[self polyline] ve_transitionProgress] > kVERouteRendererDirectionsRouteAlpha)
+            [self setAlpha: kVERouteRendererDirectionsRouteAlpha];
+        else
+            [self setAlpha: [[self polyline] ve_transitionProgress]];
+        
+        CPLog(@"set alpha: %f", [self alpha]);
+    }
+    else
+    {
+        [super observeValueForKeyPath: keyPath ofObject: object change: change context: context];
+    }
 }
 
 - (BOOL) canDrawMapRect: (MKMapRect) mapRect zoomScale: (MKZoomScale) zoomScale

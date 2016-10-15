@@ -11,4 +11,8 @@
 
 #define kEnableTimerStationView 1
 
+#ifndef kEnablePreviewInteractions
+    #define kEnablePreviewInteractions 0
+#endif
+
 #endif /* aBikeFrameworkDefines_h */

@@ -59,3 +59,4 @@ VEConstants.h
 
 Deliverfile
 fastlane/report.xml
+/infer-out
