@@ -229,6 +229,8 @@
             if (![self feedbackGenerator])
             {
                 [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+                
+                [[self feedbackGenerator] prepare];
             }
             
             [[self feedbackGenerator] selectionChanged];
@@ -409,6 +411,8 @@
                 if (![self feedbackGenerator])
                 {
                     [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+                    
+                    [[self feedbackGenerator] prepare];
                 }
                 
                 [[self feedbackGenerator] selectionChanged];
@@ -432,6 +436,8 @@
             if (![self feedbackGenerator])
             {
                 [self setFeedbackGenerator: [[UISelectionFeedbackGenerator alloc] init]];
+                
+                [[self feedbackGenerator] prepare];
             }
             
             [[self feedbackGenerator] selectionChanged];
