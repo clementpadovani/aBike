@@ -19,8 +19,7 @@
 #import "VEStation.h"
 
 #import "VEMapViewController.h"
-
-static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
+#import "VEDirectionsButton.h"
 
 #if TARGET_OS_IOS
 
@@ -320,40 +319,8 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	
 	[directionsLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
 	
-	UIButton *directionsButton = [UIButton buttonWithType: UIButtonTypeCustom];
-
-	[directionsButton setEnabled: NO];
-	
-	UIImage *directionsImage = [UIImage imageNamed: @"directionsIcon"
-								   inBundle: [NSBundle ve_libraryResources]
-				  compatibleWithTraitCollection: nil];
-	
-	UIImage *disabledDirectionsImage = [UIImage imageNamed: @"noDirectionsIcon"
-										 inBundle: [NSBundle ve_libraryResources]
-						compatibleWithTraitCollection: nil];
-	
-	UIImage *templateDirectionsImage = [directionsImage imageWithRenderingMode: UIImageRenderingModeAlwaysTemplate];
-
-
-	#if (SCREENSHOTS==1)
-
-	[directionsButton setAccessibilityIdentifier: @"directionsIcon"];
-
-	#endif
-
-	[directionsButton setImage: disabledDirectionsImage forState: UIControlStateDisabled];
-	
-	[directionsButton setImage: templateDirectionsImage forState: UIControlStateNormal];
-	
-	[directionsButton setImage: directionsImage forState: UIControlStateSelected];
-	
-	//[directionsButton setImageEdgeInsets: kDirectionsButtonInsets];
-	
-	[directionsButton setContentEdgeInsets: kDirectionsButtonInsets];
-	
-	//[directionsButton setBackgroundColor: [UIColor greenColor]];
-	
-	//[[directionsButton imageView] setBackgroundColor: [UIColor greenColor]];
+	UIButton *directionsButton = [VEDirectionsButton directionsButton];
+    
 	
 	[directionsButton addTarget: self action: @selector(toggleDirections) forControlEvents: UIControlEventTouchUpInside];
 	
@@ -365,19 +332,6 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
     
 	[directionsButton setTranslatesAutoresizingMaskIntoConstraints: NO];
     
-    #if TARGET_OS_IOS
-    
-        if ([UIPreviewInteraction class])
-        {
-            UIPreviewInteraction *previewInteraction = [[UIPreviewInteraction alloc] initWithView: directionsButton];
-            
-            [previewInteraction setDelegate: self];
-            
-            [self setPreviewInteraction: previewInteraction];
-        }
-	
-    #endif
-    
 	[self addSubview: directionsLabel];
 	
 	[self addSubview: directionsButton];
@@ -385,23 +339,37 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 	_directionsLabel = directionsLabel;
 	
 	_directionsButton = directionsButton;
+    
+#if TARGET_OS_IOS
+    
+    if ([UIPreviewInteraction class])
+    {
+        UIPreviewInteraction *previewInteraction = [[UIPreviewInteraction alloc] initWithView: directionsButton];
+        
+        [previewInteraction setDelegate: self];
+        
+        [self setPreviewInteraction: previewInteraction];
+    }
+    
+#endif
 }
 
 #if TARGET_OS_IOS
 
 - (void) previewInteraction: (UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition: (CGFloat) transitionProgress ended: (BOOL) ended
 {
-    if ([self hasInteractionStarted])
+    if (![self hasInteractionStarted])
     {
-        [self setHasInteractionStarted: NO];
+        [[self delegate] loadDirectionsInfoWithRoute: [self currentStationRoute] forStation: [self currentStation]];
+
+        [self setHasInteractionStarted: YES];
+    }
+    else if ([self hasInteractionStarted] &&
+        ended)
+    {
+        [[self delegate] loadDirectionsInfoWithRoute: nil forStation: [self currentStation]];
         
-        if (![self isShowingDirections])
-            [self toggleDirections];
-        else if ([self isShowingDirections] &&
-                 ended)
-            [self toggleDirections];
-        else
-            [self setHasInteractionStarted: YES];
+        [self setHasInteractionStarted: NO];
     }
     
     [[self delegate] previewInteraction: previewInteraction didUpdatePreviewTransition: transitionProgress ended: ended];
@@ -409,14 +377,14 @@ static const UIEdgeInsets kDirectionsButtonInsets = {14, 16, 14, 16};
 
 - (BOOL) previewInteractionShouldBegin: (UIPreviewInteraction *) previewInteraction
 {
-    [self setHasInteractionStarted: YES];
+//    [self setHasInteractionStarted: YES];
     
     return YES;
 }
 
 - (void) previewInteractionDidCancel: (UIPreviewInteraction *) previewInteraction
 {
-    [self setShowingDirections: NO];
+    [self setShowingDirections: ![self isShowingDirections]];
     
     [[self delegate] previewInteractionDidCancel: previewInteraction];
 }

@@ -587,14 +587,19 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {
     if (![[self currentDirectionsPolyline] ve_hasFullyShown])
     {
-        if (ended)
-            [[self currentDirectionsPolyline] ve_setHasFullyShown: YES];
-        
-        [[self currentDirectionsPolyline] ve_setTransitionProgress: ended ? 1.f : transitionProgress];
+        [[self currentDirectionsPolyline] ve_setTransitionProgress: transitionProgress];
     }
     else
     {
-        [[self currentDirectionsPolyline] ve_setTransitionProgress: ended ? .0f : 1.f - transitionProgress];
+        [[self currentDirectionsPolyline] ve_setTransitionProgress: (1. - transitionProgress)];
+    }
+    
+    if (ended)
+    {
+        if ((1. - fabs(transitionProgress)) < DBL_EPSILON)
+            [[self currentDirectionsPolyline] ve_setHasFullyShown: YES];
+        else
+            [[self currentDirectionsPolyline] ve_setHasFullyShown: NO];
     }
 }
 
@@ -609,6 +614,11 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 {	
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
+    if (!directionsRoute)
+        CPLog(@"remove route");
+    else
+        CPLog(@"add route");
+    
 	if (directionsRoute)
 	{
 		[self setDirectionsRoute: directionsRoute];
