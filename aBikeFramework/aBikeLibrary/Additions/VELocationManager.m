@@ -395,10 +395,11 @@ static VELocationManager *_sharedLocationManager = nil;
 			
 			VEAlertType alertType = goodCityDict ? VEAlertTypeWithAction : VEAlertTypeWithButtons;
 			
-			[VEAlertManager showAlertOfType: alertType
-				    withConfigurationBlock: configurationBlock
-					    withHasSetupBlock: NULL
-					  withCompletionBlock: completionBlock];
+            [VEAlertManager showAlertOfType: alertType
+                       withNotificationType: UINotificationFeedbackTypeWarning
+                     withConfigurationBlock: configurationBlock
+                          withHasSetupBlock: NULL
+                        withCompletionBlock: completionBlock];
 			//});
 			
 		}];
@@ -593,9 +594,10 @@ static VELocationManager *_sharedLocationManager = nil;
 	};
 	
 	[VEAlertManager showAlertOfType: alertType
-						withConfigurationBlock: configurationBlock
-							withHasSetupBlock: setupBlock
-			  withCompletionBlock: openSettingsBlock];
+               withNotificationType: UINotificationFeedbackTypeError
+             withConfigurationBlock: configurationBlock
+                  withHasSetupBlock: setupBlock
+                withCompletionBlock: openSettingsBlock];
 }
 
 - (void) locationManager: (CLLocationManager *) manager didFailWithError: (NSError *) error

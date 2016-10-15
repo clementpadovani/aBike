@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Clément Padovani. All rights reserved.
 //
 
+@import UIKit;
+
 typedef NS_ENUM(NSUInteger, VEAlertStringType) {
 	VEAlertStringTypeTitle = 0,
 	VEAlertStringTypeMessage,
@@ -33,6 +35,6 @@ typedef void (^VEAlertManagerHasSetupBlock) (id alertView);
 
 @interface VEAlertManager : NSObject
 
-+ (void) showAlertOfType: (VEAlertType) alertType withConfigurationBlock: (VEAlertManagerConfigurationBlock) configurationBlock withHasSetupBlock: (VEAlertManagerHasSetupBlock) setupBlock withCompletionBlock: (VEAlertManagerCompletionBlock) completionBlock;
++ (void) showAlertOfType: (VEAlertType) alertType withNotificationType: (UINotificationFeedbackType) feedbackType withConfigurationBlock: (VEAlertManagerConfigurationBlock) configurationBlock withHasSetupBlock: (VEAlertManagerHasSetupBlock) setupBlock withCompletionBlock: (VEAlertManagerCompletionBlock) completionBlock;
 
 @end

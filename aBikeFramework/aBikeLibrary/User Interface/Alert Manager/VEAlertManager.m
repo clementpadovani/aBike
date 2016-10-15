@@ -10,7 +10,11 @@
 
 #import "VEAlertControllerManager.h"
 
+static UINotificationFeedbackGenerator *_feedbackGenerator = nil;
+
 @interface VEAlertManager ()
+
+@property (class, nonatomic, strong, readonly) UINotificationFeedbackGenerator *feedbackGenerator;
 
 + (void) ios8_showAlertOfType: (VEAlertType) alertType withConfigurationBlock: (VEAlertManagerConfigurationBlock) configurationBlock withHasSetupBlock: (VEAlertManagerHasSetupBlock) setupBlock withCompletionBlock: (VEAlertManagerCompletionBlock) completionBlock;
 
@@ -18,9 +22,25 @@
 
 @implementation VEAlertManager
 
-+ (void) showAlertOfType: (VEAlertType) alertType withConfigurationBlock: (VEAlertManagerConfigurationBlock) configurationBlock withHasSetupBlock: (VEAlertManagerHasSetupBlock) setupBlock withCompletionBlock: (VEAlertManagerCompletionBlock) completionBlock
++ (UINotificationFeedbackGenerator *) feedbackGenerator
 {
-		[self ios8_showAlertOfType: alertType withConfigurationBlock: configurationBlock withHasSetupBlock: setupBlock withCompletionBlock: completionBlock];
+    if (!_feedbackGenerator)
+    {
+        UINotificationFeedbackGenerator *feedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];
+        
+        [feedbackGenerator prepare];
+        
+        _feedbackGenerator = feedbackGenerator;
+    }
+    
+    return _feedbackGenerator;
+}
+
++ (void) showAlertOfType: (VEAlertType) alertType withNotificationType: (UINotificationFeedbackType) feedbackType withConfigurationBlock: (VEAlertManagerConfigurationBlock) configurationBlock withHasSetupBlock: (VEAlertManagerHasSetupBlock) setupBlock withCompletionBlock: (VEAlertManagerCompletionBlock) completionBlock
+{
+    [[self feedbackGenerator] notificationOccurred: feedbackType];
+    
+    [self ios8_showAlertOfType: alertType withConfigurationBlock: configurationBlock withHasSetupBlock: setupBlock withCompletionBlock: completionBlock];
 }
 
 + (void) ios8_showAlertOfType: (VEAlertType) alertType withConfigurationBlock: (VEAlertManagerConfigurationBlock) configurationBlock withHasSetupBlock: (VEAlertManagerHasSetupBlock) setupBlock withCompletionBlock: (VEAlertManagerCompletionBlock) completionBlock
