@@ -82,3 +82,16 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/SimulatorStatusMagic/SimulatorStatusMagic.framework"
+fi
+if [[ "$CONFIGURATION" == "Tests" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/SimulatorStatusMagic/SimulatorStatusMagic.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/SimulatorStatusMagic/SimulatorStatusMagic.framework"
+fi
+if [[ "$CONFIGURATION" == "Screenshots" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/SimulatorStatusMagic/SimulatorStatusMagic.framework"
+fi
