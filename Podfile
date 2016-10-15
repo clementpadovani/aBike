@@ -14,16 +14,16 @@ use_frameworks!
 
 target 'aBikeFramework' do
 
-	pod 'SimulatorStatusMagic', :configuration => ['Screenshots']
+	pod 'SimulatorStatusMagic', :configuration => 'Screenshots'
 
   # pod 'Reveal-iOS-SDK', :configuration => ['Debug']
 
-	pod 'Fabric', :configuration => ['Release']
+	pod 'Fabric', :configuration => 'Release'
 
-	pod 'Crashlytics', :configuration => ['Release']
+	pod 'Crashlytics', :configuration => 'Release'
 
 	target 'aBike—Lyon' do
-		inherit! :search_paths
+		inherit! :complete
 
 	end
 
@@ -33,7 +33,7 @@ target 'aBikeFramework' do
 
 
 	target 'aBike—Bruxelles' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—BruxellesUITests' do
@@ -41,7 +41,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Marseille' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—MarseilleUITests' do
@@ -49,7 +49,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Mulhouse' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—MulhouseUITests' do
@@ -57,7 +57,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Nantes' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—NantesUITests' do
@@ -65,7 +65,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Paris' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—ParisUITests' do
@@ -73,7 +73,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Toulouse' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—ToulouseUITests' do
@@ -81,7 +81,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Créteil' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—CréteilUITests' do
@@ -89,7 +89,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Dublin' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—DublinUITests' do
@@ -97,7 +97,7 @@ target 'aBikeFramework' do
 	end
 
 	target 'aBike—Luxembourg' do
-    inherit! :search_paths
+    inherit! :complete
 	end
 
 	target 'aBike—LuxembourgUITests' do
