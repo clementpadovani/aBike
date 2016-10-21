@@ -1538,6 +1538,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	}
 	else if ([control isKindOfClass: [VEStationAnnotationShareAccessoryView class]])
 	{
+        [[self selectionFeedbackGenerator] selectionChanged];
+        
 		#if !TARGET_OS_TV
 		//CPLog(@"share");
 		
