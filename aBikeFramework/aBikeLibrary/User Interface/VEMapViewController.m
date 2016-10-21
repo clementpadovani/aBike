@@ -134,6 +134,8 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 @property (nonatomic, assign, getter = hasAppeared) BOOL appeared;
 
+@property (nonatomic, strong) UISelectionFeedbackGenerator *selectionFeedbackGenerator;
+
 - (void) setupMemoryStore;
 
 - (void) sortStationsByClosestToUserLocation: (CLLocation *) location;
@@ -231,6 +233,15 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 
 		[self setAppeared: YES];
 	}
+    
+    if ([UISelectionFeedbackGenerator class])
+    {
+        UISelectionFeedbackGenerator *selectionFeedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+        
+        [selectionFeedbackGenerator prepare];
+        
+        [self setSelectionFeedbackGenerator: selectionFeedbackGenerator];
+    }
 }
 
 //- (BOOL) shouldAutorotate
@@ -611,7 +622,9 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 #endif
 
 - (void) loadDirectionsInfoWithRoute: (MKRoute *) directionsRoute forStation: (VEStation *) aStation
-{	
+{
+    [[self selectionFeedbackGenerator] selectionChanged];
+    
 	MKMapView *mapView = [[self mapContainerView] mapView];
 	
 	if (directionsRoute)
