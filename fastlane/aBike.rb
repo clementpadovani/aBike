@@ -4,7 +4,7 @@ require '../Various/version.rb'
 
 module CPaBike
 
-VERSION = '3.4.0'
+VERSION = '3.4.1'
 
 RELEASE_NOTES = ({
 
