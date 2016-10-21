@@ -5310,7 +5310,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5336,7 +5336,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5364,7 +5364,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5575,7 +5575,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5615,7 +5615,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5657,11 +5657,11 @@
 				COPY_PHASE_STRIP = NO;
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5711,11 +5711,11 @@
 				COPY_PHASE_STRIP = NO;
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5834,10 +5834,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5862,10 +5862,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5889,10 +5889,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -5919,7 +5919,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5945,7 +5945,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5973,7 +5973,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_TESTABILITY = YES;
@@ -6054,7 +6054,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6079,7 +6079,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6107,7 +6107,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6133,7 +6133,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6158,7 +6158,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6186,7 +6186,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6212,7 +6212,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6237,7 +6237,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6265,7 +6265,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6291,7 +6291,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6316,7 +6316,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6344,7 +6344,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6371,7 +6371,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6397,7 +6397,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6426,7 +6426,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6511,7 +6511,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6553,11 +6553,11 @@
 				COPY_PHASE_STRIP = NO;
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6646,10 +6646,10 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = aBikeTVFramework/aBikeTVFrameworkPrefixHeader.pch;
 				INFOPLIST_FILE = aBikeTVFramework/Info.plist;
@@ -6678,7 +6678,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6704,7 +6704,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6729,7 +6729,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6754,7 +6754,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6779,7 +6779,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6889,7 +6889,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6933,7 +6933,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6976,7 +6976,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7019,7 +7019,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7137,7 +7137,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7163,7 +7163,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7191,7 +7191,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7354,7 +7354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clement Padovani (L4ZPL65Y4M)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -7378,7 +7378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7398,7 +7398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7419,7 +7419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				IBSC_MODULE = aBike_Lyon_WatchKit_App_Extension;
@@ -7438,7 +7438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7462,7 +7462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7482,7 +7482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Clement Padovani (W48L6Z4654)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7503,7 +7503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_NAME = aBikeLyonWatchExtension;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -7822,7 +7822,7 @@
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7858,11 +7858,11 @@
 				COPY_PHASE_STRIP = NO;
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_CURRENT_VERSION)";
-				DYLIB_CURRENT_VERSION = 501;
+				DYLIB_CURRENT_VERSION = 502;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = VEMainThreadGuard.m;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7903,7 +7903,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7929,7 +7929,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = W48L6Z4654;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7957,7 +7957,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CP_CURRENT_BUILD = "$(inherited)";
 				CP_CURRENT_VERSION = "$(inherited)";
-				CURRENT_PROJECT_VERSION = 501;
+				CURRENT_PROJECT_VERSION = 502;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
