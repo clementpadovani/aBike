@@ -34,7 +34,7 @@ class aBike_LyonUITests: XCTestCase {
 	{
 		let app = XCUIApplication()
 
-		addUIInterruptionMonitorWithDescription("Location Alert") { (alert) -> Bool in
+		addUIInterruptionMonitor(withDescription: "Location Alert") { (alert) -> Bool in
 			alert.buttons["Allow"].tap()
 
 			app.tap()

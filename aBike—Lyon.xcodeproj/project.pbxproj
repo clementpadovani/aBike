@@ -3139,6 +3139,7 @@
 					};
 					59AAFCC61C497BF800ED7202 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = 593AD9211C4951E7003B686A;
 					};
 					59AB74791C6B4691003EBFF1 = {
@@ -6604,6 +6605,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LyonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "aBike—Lyon";
 				USES_XCTRUNNER = YES;
 			};
@@ -7087,6 +7089,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LyonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "aBike—Lyon";
 				USES_XCTRUNNER = YES;
 			};
@@ -7102,6 +7105,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LyonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "aBike—Lyon";
 				USES_XCTRUNNER = YES;
 			};
@@ -7122,6 +7126,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clement.padovani.aBike-LyonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "aBike—Lyon";
 				USES_XCTRUNNER = YES;
 			};
