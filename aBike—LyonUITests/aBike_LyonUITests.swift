@@ -59,7 +59,7 @@ class aBike_LyonUITests: XCTestCase {
 
 
 
-		let scrollViewsQuery = app.scrollViews.matchingIdentifier("Stations Scroll View")
+		let scrollViewsQuery = app.scrollViews.matching(identifier: "Stations Scroll View")
 
 		scrollViewsQuery.element.swipeLeft()
 
