@@ -165,7 +165,7 @@ static BOOL _isImportingData;
 	return configuration;
 }
 
-+ (void) importStationListDataWithStationsData: (NSData *) stationsData withCompletionHandler: (void(^)()) completionHandler
++ (void) importStationListDataWithStationsData: (NSData *) stationsData withCompletionHandler: (void(^)(void)) completionHandler
 {
 	if ([self isImportingData])
 	{

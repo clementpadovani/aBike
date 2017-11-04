@@ -510,7 +510,7 @@ static VEConsul *_sharedConsul = nil;
 
         __weak typeof(self) weakSelf = self;
 
-        void (^completionBlock)() = ^{
+        void (^completionBlock)(void) = ^{
 
             __strong VEConsul *strongSelf = weakSelf;
 

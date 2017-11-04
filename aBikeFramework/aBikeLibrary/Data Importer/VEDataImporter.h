@@ -52,7 +52,7 @@ extern NSString * const kStationContentAge;
 
 + (NSURL *) stationDataURLForStation: (VEStation *) aStation;
 
-+ (void) importStationListDataWithStationsData: (NSData *) stationsData withCompletionHandler: (void(^)()) completionHandler;
++ (void) importStationListDataWithStationsData: (NSData *) stationsData withCompletionHandler: (void(^)(void)) completionHandler;
 
 + (void) attemptToDownloadStationListForIdentifier: (NSString *) identifier withCompletionHandler: (void (^)(NSError * __nullable error, NSData * __nullable stationData)) completionHandler;
 

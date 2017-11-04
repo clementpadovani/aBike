@@ -192,7 +192,7 @@ static const CGPoint kVEStationAnnotationViewCalloutOffset = { 0, -1.5 };
 
 	_tableViewSelected = tableViewSelected;
 	
-	void (^animations)() = ^{
+	void (^animations)(void) = ^{
 		
 		UIImage *selectedPinImage = [[self class] ve_tintedImage];
 
