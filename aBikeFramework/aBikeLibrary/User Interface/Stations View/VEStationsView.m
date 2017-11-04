@@ -327,13 +327,22 @@
 	
 	[newConstraints addObjectsFromArray: pagerHorizontalConstraints];
 	
-	NSArray *pagerVerticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_pager]|"
-																 options: 0
-																 metrics: metricsDictionary
-																   views: viewsDictionary];
-	
-	[newConstraints addObjectsFromArray: pagerVerticalConstraints];
-	
+//    NSArray *pagerVerticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_pager]|"
+//                                                                 options: 0
+//                                                                 metrics: metricsDictionary
+//                                                                   views: viewsDictionary];
+//
+//    [newConstraints addObjectsFromArray: pagerVerticalConstraints];
+
+    [[NSLayoutConstraint constraintWithItem: [self pager]
+                                  attribute: NSLayoutAttributeBottom
+                                  relatedBy: NSLayoutRelationEqual
+                                     toItem: self
+                                  attribute: NSLayoutAttributeBottomMargin
+                                 multiplier: 1
+                                   constant: 0] setActive: YES];
+
+    
 	NSArray *stationViewHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[_stationsScrollView]|"
 																	    options: 0
 																	    metrics: metricsDictionary
@@ -341,11 +350,19 @@
 	
 	[newConstraints addObjectsFromArray: stationViewHorizontalConstraints];
 	
-	NSArray *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[_shadowView(==shadowViewHeight)][_stationsScrollView]|"
+	NSArray *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[_shadowView(==shadowViewHeight)][_stationsScrollView(==152)]"
 															 options: 0
 															 metrics: metricsDictionary
 															   views: viewsDictionary];
-	
+
+    [[NSLayoutConstraint constraintWithItem: [self stationsScrollView]
+                                  attribute: NSLayoutAttributeBottom
+                                  relatedBy: NSLayoutRelationEqual
+                                     toItem: [self pager]
+                                  attribute: NSLayoutAttributeTop
+                                 multiplier: 1
+                                   constant: 0] setActive: YES];
+    
 	[newConstraints addObjectsFromArray: verticalConstraints];
 
 		[self addConstraints: newConstraints];

@@ -490,12 +490,7 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	NSDictionary *viewsDictionary = @{@"_mapContainerView" : [self mapContainerView],
 							    @"_stationsView" : [self stationsView]};
 
-
-	CGFloat shadowViewHeight = 1.f / (float) [[UIScreen mainScreen] scale];
-
-	CGFloat stationsViewHeight = 152.f + shadowViewHeight;
-
-	NSDictionary *metricsDictionary = @{@"stationsViewHeight" : @(stationsViewHeight)};
+    NSDictionary *metricsDictionary = nil;
 
 		NSMutableArray *newConstraints = [@[] mutableCopy];
 
@@ -521,13 +516,6 @@ typedef NS_ENUM(NSUInteger, VEMapViewControllerMapAction) {
 	
 	[newConstraints addObjectsFromArray: stationViewHorizontalConstraints];
 	
-	NSArray *stationViewVerticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_stationsView(stationsViewHeight)]"
-																	  options: 0
-																	  metrics: metricsDictionary
-																	    views: viewsDictionary];
-	
-	[newConstraints addObjectsFromArray: stationViewVerticalConstraints];
-
 	NSLayoutConstraint *stationsViewBottomVerticalConstraint = [NSLayoutConstraint constraintWithItem: [self stationsView]
 																		   attribute: NSLayoutAttributeBottom
 																		   relatedBy: NSLayoutRelationEqual
